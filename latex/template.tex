@@ -1,4 +1,3 @@
-
 \documentclass[a4paper]{article}
 \usepackage[margin=2cm]{geometry}
 \usepackage[italian]{babel}
@@ -11,8 +10,14 @@
 %\usepackage{float}  
 %\pagestyle{fancy}
 \pagestyle{fancy}
-\lhead{\includegraphics[scale=0.4]{images/logo8.png}}
-
+\lhead{\includegraphics[scale=0.3]{images/logo8.png}}
+\rhead{DocTitle}
+\lfoot{\rightmark}
+\rfoot{\thepage}
+\cfoot{}
+\makeindex
 \begin{document}
-\include{title.tex}
+\input{title.tex}
+\pagebreak
+\tableofcontents
 \end{document}
