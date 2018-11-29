@@ -7,17 +7,20 @@
 %\usepackage{amsmath, amssymb}
 %\usepackage{caption}
 \usepackage{graphicx}
-%\usepackage{float}  
-%\pagestyle{fancy}
+%\usepackage{float}
 \pagestyle{fancy}
-\lhead{\includegraphics[scale=0.3]{images/logo8.png}}
-\rhead{DocTitle}
+\lhead{\includegraphics[scale=0.07]{images/logo8_crop.png}}
+%Titolo del documento
+\rhead{[DocTitle]}
 \lfoot{\rightmark}
 \rfoot{\thepage}
 \cfoot{}
+\setlength{\headheight}{35pt}
 \makeindex
 \begin{document}
 \input{title.tex}
-\pagebreak
 \tableofcontents
+\pagebreak
+\input{test.tex}
+\pagebreak
 \end{document}
