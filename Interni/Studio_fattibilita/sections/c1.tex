@@ -3,7 +3,7 @@
 % ------ Inserire qui testo ------
 \begin{itemize}
 \item
-\textbf{Nome:} Butterfly \texttt{da verificare}
+\textbf{Nome:} Butterfly 
 \item
 \textbf{Proponente:} \textit{Imola Informatica} 
 \item
@@ -12,26 +12,37 @@
 \subsubsection{Descrizione}
 \textit{Butterfly} mira allo sviluppo di una piattaforma che permette di
  accentrare, standardizzare, automatizzare e personalizzare le segnalazioni di
- diversi strumenti di versionamento, di continuos integration e continuos delivery.
+ diversi strumenti di versionamento, di continuos integration e continuos
+ delivery, così da permettere all'utente di interfacciarsi ad un unica 
+ dashboard.
 \subsubsection{Studio del dominio}
 \paragraph{Dominio applicativo}
-\paragraph{Dominio tecnologico}
+Il prodotto finale, integrando al suo interno le segnalazioni delle diverse 
+applicazioni, semplifica e organizza il lavoro dell'utente. L'azienda propone,
+per la realizzazione di questa soluzione, l'utilizzo di quattro componenti:
 \begin{itemize}
-	\item 
-	\textbf{GitLab: }
-	\item
-	\textbf{RedMine:}
-	\item
-	\textbf{SonarQube:}
-	\item
-	\textbf{Docker: }
-	\item
-	\textbf{A scelta tra:}
-		\begin{itemize}
-			\item\textbf{Java: }
-			\item\textbf{Python: }
-			\item\textbf{NodeJS: }
-		\end{itemize}
+	\item \textbf{Producers}, che hanno la funzionalità di recuperare le
+	segnalazioni e mostrarle come messaggi nei rispettivi Topic;
+	\item \textbf{Broker}, come strumento per istanziare e gestire i Topic;
+	\item \textbf{Consumers}, che hanno il compito di allacciarsi ai Topic
+    specifici così da "smistare" i messaggi verso gli utenti finali;
+    \item \textbf{Componente custom specifico}, inteso come un componente da
+    implementare per l'azienda che permetta di indirizzare la notifica alla
+    persona più idonea.
+\end{itemize}
+\paragraph{Dominio tecnologico}
+L'azienda lascia liberà scelta su alcune preferenze tecniche come l'utilizzo di
+Java, python o nedejs per lo sviluppo dei componenti applicativi e Apache Kafka 
+come Broker, anche se ne consiglio l'uso.
+Altre preferenze tecniche sono, invece, obbligatoriamente richieste, come
+\begin{itemize}
+	\item rispettare i 12 fattori presenti in "The Twelve-Factor App" nelle 
+	applicazioni sviluppate;
+	\item utilizzare Docker come container per l'istanziazione dei componenti;
+	\item esporre le API Rest dei componenti per l'utilizzo dell'applicazione; 
+	\item utilizzare test unitari e d'integrazione per ogni componente 
+	realizzato.
+
 \end{itemize}
 \subsubsection{Aspetti positivi}
 
