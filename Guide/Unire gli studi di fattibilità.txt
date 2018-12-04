@@ -1,0 +1,5 @@
+Come ottenere il documento completo degli studi di fattibilità
+
+in Soldino/Interni/Studio_fattibilità:
+- aprite template.tex in TexMaker
+- Esegui
