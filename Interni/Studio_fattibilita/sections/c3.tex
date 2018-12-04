@@ -1,23 +1,24 @@
 % NOTE: Descrizione e dominio applicativo, che differenza?
 % La descrizione va bene?
-\section{Capitolato C2 - Colletta}
-\subsection{Informazioni sul capitolato}
+\subsection{Capitolato C3 - C\&B}
+\subsubsection{Informazioni sul capitolato}
 \begin{itemize}
-	\item \textbf{Nome}: G&B: monitoraggio intelligente di processi DevOps
+	\item \textbf{Nome}: G\&B: monitoraggio intelligente di processi DevOps
 	\item \textbf{Proponente}: Zucchetti
 	\item \textbf{Committente}: Prof. Tullio Vardanega e Prof. Riccardo Cardin
 \end{itemize}
 \subsubsection{Descrizione}
 Il capitolato prevede la costruzione di un software per monitorare un sistema DevOps, cioè un sistema in cui, a livello aziendale, chi produce il software e chi lo usa collaborano strettamente. Per migliorare ulteriormente il servizio erogato si richiede un secondo software che supporti il primo visualizzando, analizzando, misurando e controllando i dati forniti dal primo.
-\subsection{Studio del dominio}
-\subsubsection{Dominio applicativo}
+\subsubsection{Studio del dominio}
+\paragraph{Dominio applicativo} \mbox{}\\
 La struttura del software da realizzare è conforme ai seguenti punti: 
 \begin{itemize}
 	\item un flusso di dati in input viene associato a una rete Bayesiana: questa rete è composta di nodi contenenti informazioni di probabilità
 	\item la rete riceve il flusso e lo usa per fare dei calcoli, aggiornando quindi le probabilità dei propri nodi
 	\item sia il flusso dati che la rete sono monitorati in un cruscotto;
 	\item l'andamento dei dati determina l'eventuale generazione di allarmi e notifiche.
-\subsubsection{Dominio tecnologico}
+\end{itemize}
+\paragraph {Dominio tecnologico} \mbox{} \\
 Le tecnologie proposte per lo sviluppo del progetto sono:
 \begin{itemize}
 	\item Grafana: software \textit{open-source} che, ricevuti i dati in input, consente di raccoglierli in un cruscotto, visualizzarli, analizzarli, misurarli e controllarli;
@@ -31,12 +32,12 @@ Le tecnologie proposte per lo sviluppo del progetto sono:
 	\item Il dominio del problema è chiaro e circoscritto;
 	\item I requisiti sono ben manifesti e comprensibili nel capitolato;
 	\item Le tecnologie riguardano vari ambiti (database, linguaggi, probabilità, monitoraggio) e sono in numero ragionevole da apprendere.
-\begin{itemize}
+\end{itemize}
 \subsubsection{Criticità e fattori di rischio}
 \begin{itemize}
 	\item il capitolato è fortemente conteso tra i gruppi appaltatori: la probabilità di aggiudicarselo è inferiore a quella desiderata.
 \end{itemize}
-\subsection{Conclusioni}
+\subsubsection{Conclusioni}
 Il capitolato è stato escluso dalle preferenze. Ci sono dei fattori positivi riguardo questo capitolato: in particolare, la definizione chiara del dominio e dei requisiti del software.
 Tuttavia, questi non sono sufficienti.
 Si ritiene che l'insieme delle tecnologie non sia il migliore disponibile: alcune di esse (es. Reti di Bayes) sono circoscritte, altre (Grafana) sono di dubbia diffusione. Inoltre, il capitolato è fortemente conteso tra i gruppi. 
