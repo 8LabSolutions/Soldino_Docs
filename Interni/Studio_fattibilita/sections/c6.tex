@@ -13,27 +13,21 @@
 \textbf{Committente:} Prof.Tullio Vardanega e Prof. Riccardo Cardin
 \end{itemize}
 \subsection{Descrizione}
-Attualmente il sistema di pagamento dell'IVA prevede che siano le aziende a registrare i loro acquisti/vendite, ed a cadenza trimestrale viene calcolato il saldo IVA. Se l'azienda risulta debitrice allora deve versare all'ente governativo il rispettivo ammontare, altrimenti ottiene un credito IVA da poter utilizzare successivamente. \\Soldino nasce per automatizzare questo processo , proponendo una piattaforma di e-commerce gestita dall'Agenzia delle entrate, nella quale le aziende e i cittadini possono comprare e/o vendere beni e servizi per mezzo di una criptovaluta.
+Attualmente il sistema di pagamento dell'IVA prevede che siano le aziende a registrare i loro acquisti/vendite, e che con cadenza trimestrale venga calcolato il saldo. Se l'azienda risulta debitrice allora deve versare allo stato il rispettivo ammontare, altrimenti ottiene un credito IVA da poter utilizzare successivamente. \\Soldino nasce per automatizzare la gestione di questo processo, proponendo una piattaforma di e-commerce controllata dal governo, nella quale le aziende e i cittadini possano comprare e/o vendere beni e servizi per mezzo di una criptovaluta.
 
 \subsection{Obiettivo finale}
 
-L'obiettivo di Soldino è sviluppare una piattaforma di e-commerce, in cui i pagamenti sono gestiti per mezzo della blockchain "Ethereum", che sfrutta l'omonima criptovaluta. Le transazioni sfrutteranno il meccanismo degli Smart Contracts$_{G}$ per garantirne la sicurezza, e saranno sviluppate come  ÐApps$_{G}$
+L'obiettivo di Soldino è sviluppare una piattaforma di e-commerce, in cui i pagamenti sono gestiti per mezzo della blockchain "Ethereum", sfruttando come criptovaluta il Cubit$_{G}$. Le transazioni sfrutteranno il meccanismo degli Smart Contracts$_{G}$ per garantirne la sicurezza, e saranno sviluppate come  ÐApps$_{G}$.
 
-L'obiettivo di Soldino è quello di costruire il sistema con un insieme di ÐApps 
-che girano su EVM.
 
 \subsection{Studio del dominio}
 \subsubsection{Dominio applicativo}
 Si individuano tre attori:
 \begin{itemize}	
 	\item \textbf{Ente governativo: }\`E in grado di coniare e distribuire la 
-	criptovaluta utilizzata in Soldino. Trimestralmente riceve il saldo IVA 
-	delle aziende iscritte.
-	\item \textbf{Azienda: } L'azienda iscritta al sito può comprare e vendere 
-	beni e servizi. %Ogni tre mesi versa automaticamente attraverso l'ausilio di Smart Contract
-	% l'IVA a debito al netto dell'IVA a credito (attendere risposta red babel)
-	\item \textbf{Persona fisica$_{G}$: }Può convertire Euro in Cubit e successivamente acquistare
-	i beni e servizi offerti sulla piattaforma.
+	criptovaluta utilizzata in Soldino. Potrà inoltre accedere e gestire la lista delle aziende iscritte alla piattaforma, e controllare che a cadenza trimestrale esse abbiano pagato in caso di stato di debito
+	\item \textbf{Proprietario di un'azienda: } deve poter registrare la propria impresa nell'e-commerce, gestire i prodotti/servizi offerti ed acquistare prodotti da altre aziende. Inoltre deve poter gestire tutto ciò che riguarda l'IVA, ovvero pagare l'eventuale saldo a cadenza trimestrale (in caso di debito), creare un documento di resoconto di periodo e gestire le ricevute IVA
+	\item \textbf{Persona fisica$_{G}$: }Può convertire Euro in Cubit e successivamente acquistare i beni e servizi offerti sulla piattaforma.
 \end{itemize}
 \subsubsection{Dominio tecnologico}
 Per lo sviluppo del lato backend si individuano le seguenti tecnologie:
@@ -48,14 +42,16 @@ Per lo sviluppo del lato backend si individuano le seguenti tecnologie:
 	compratore e venditore. [da finire]
 	\item \textbf{Solidity: }linguaggio orientato ai contratti. \`E utilizzato per implementare smart contracts.
 	\item \textbf{ÐApps: }è una web application che si interfaccia con uno o più smart contract
-	\item \textbf{Metamask: }plugin browser che permette di accedere alla rete Ethereum
+	\item \textbf{Metamask:} plugin browser che permette di autenticarsi alla rete Ethereum
 
 \end{itemize}
 Per lo sviluppo del lato front-end:
 \begin{itemize}
 	\item \textbf{Javascript:} linguaggio di scripting client-side. Il proponente impone di sottostare allo standard esposto nella "Airbnb Javascript style guide", e di utilizzare un toll di analisi statica del codice e syntax checking, "ESlint";
-	\item \textbf{React/Redux:} framework utilizzati per sviluppare l'interfaccia dell'applicativo;
-	\item \textbf{SCSS:} linguaggio-estensione per CSS, che ne aumenta le funzionalità ed espressività.
+	\item \textbf{React:}  libreria open source JavaScript per la creazione di interfacce grafiche e la gestione delle interazioni in ambito web
+	\item \textbf {Redux:} libreria open source Javascript per la gestione degli stati di React;
+	
+	\item \textbf{SCSS:} estensione del linguaggio CSS, che ne aumenta le funzionalità ed espressività.
 \end{itemize}
 
 
@@ -63,4 +59,5 @@ Per lo sviluppo del lato front-end:
 
 \subsection{Criticità e fattori di rischio}
 
-\subsection{Conclusioni}
+\subsection{Conclusioni} Il gruppo ha accolto con entusiasmo il capitolato, in quanto tra tutte le proposte è quella che copre più tecnologie innovative, ma che sono già ampiamente sfruttate e che probabilmente avranno un impatto sempre maggiore nel mercato. Con questo progetto avremo l'opportunità di studiare un campo dell'informatica che all'università è poco trattato, potendo aggiungere al nostro bagaglio curricolare delle voci particolarmente interessanti. Inoltre il gruppo ha apprezzato che RedBabel abbia proposto un approccio moderno allo sviluppo delle interfacce web, scegliendo tecnologie quali React e Redux, sempre più diffuse e richieste anche in ambito lavorativo.\\
+ L'interesse verso queste nuove tecnologie ha spinto il gruppo 8labsolutions ad optare per questa scelta nonostante la consapevolezza che, essendo tecnologie a noi quasi sconosciute, il loro studio richiederà un impegno notevole. Siamo inoltre consci del fatto che la documentazione/risorse disponibili potranno essere inferiori a tecnologie già consolidate.
