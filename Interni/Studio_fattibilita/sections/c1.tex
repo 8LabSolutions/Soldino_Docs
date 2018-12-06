@@ -3,18 +3,18 @@
 % ------ Inserire qui testo ------
 \begin{itemize}
 \item
-\textbf{Nome:} Butterfly 
+\textbf{Nome:} Butterfly;
 \item
-\textbf{Proponente:} \textit{Imola Informatica} 
+\textbf{Proponente:} Imola Informatica;
 \item
-\textbf{Committente:} Prof.Tullio Vardanega e Prof. Riccardo Cardin
+\textbf{Committente:} Prof. Tullio Vardanega e Prof. Riccardo Cardin.
 \end{itemize}
 \subsubsection{Descrizione}
 \textit{Butterfly} mira allo sviluppo di una piattaforma che permette di
  accentrare, standardizzare, automatizzare e personalizzare le segnalazioni di
  diversi strumenti di versionamento, di continuos integration e continuos
  delivery, così da permettere all'utente di interfacciarsi ad un unica 
- dashboard.
+ dashboard per la gestione di queste.
 \subsubsection{Studio del dominio}
 \paragraph{Dominio applicativo}\mbox{}\\
 Il prodotto finale, integrando al suo interno le segnalazioni delle diverse 
@@ -23,9 +23,10 @@ per la realizzazione di questa soluzione, l'utilizzo di quattro componenti:
 \begin{itemize}
 	\item \textbf{Producers}, che hanno la funzionalità di recuperare le
 	segnalazioni e mostrarle come messaggi nei rispettivi Topic;
-	\item \textbf{Broker}, come strumento per istanziare e gestire i Topic;
-	\item \textbf{Consumers}, che hanno il compito di iscriversi a diversi Topic
-    specifici così da reindirizzare i messaggi verso gli utenti finali;
+	\item \textbf{Broker}, ovvero uno strumento per istanziare e gestire i
+	 Topic;
+	\item \textbf{Consumers}, che hanno il compito di iscriversi a diversi
+	Topic specifici così da reindirizzare i messaggi verso gli utenti finali;
     \item \textbf{Componente custom specifico}, inteso come un componente da
     implementare per l'azienda che permetta di indirizzare la notifica alla
     persona più idonea.
@@ -33,13 +34,12 @@ per la realizzazione di questa soluzione, l'utilizzo di quattro componenti:
 \paragraph{Dominio tecnologico}\mbox{}\\
 Per lo sviluppo dei componenti applicativi, l'azienda proponente consiglia:
 \begin{itemize}
-	\item \textbf{Java}
-	\item \textbf{Python}
-	\item \textbf{Nodejs}
-	\item \textbf{Apache Kafka:} è uno piattaforma stream processing di software
-	 consigliato per lo sviluppo del componente broker;
+	\item uno dei linguaggi di programmazione tra \textbf{Java},
+	\textbf{Python} o \textbf{Nodejs};
+	\item il sistema open source \textbf{Apache Kafka} per la gestione delle
+	operazioni tra i vari client, da utilizzare come Broker.
 \end{itemize}
-Mentre i requisiti obbligatori sono:
+I requisiti obbligatori, invece, sono:
 \begin{itemize}
 	\item rispettare i 12 fattori presenti in "The Twelve-Factor App" nelle 
 	applicazioni sviluppate;
@@ -49,24 +49,29 @@ Mentre i requisiti obbligatori sono:
 	realizzato.
 \end{itemize}
 \subsubsection{Aspetti positivi}
+Gli aspetti positivi emersi sono:
 \begin{itemize}
 	\item Le tecnologie proposte hanno larga diffusione nel mondo lavorativo ed
 	 approfondire la conoscenza su di esse è un aspetto apprezzato dal gruppo.
-	\item Java è materiale di studio per cui il capitolato offre la possibilità di 
-	migliorare la padronanza di questo linguaggio.
+	\item Java è materia di studio nel nostro corso di laurea, per cui il
+	 capitolato offre la possibilità di migliorare la padronanza di questo
+	 linguaggio.
 \end{itemize}
 \subsubsection{Criticità}
+Gli aspetti negativi affiorati sono: 
 \begin{itemize}
-	\item L'apprendimento delle tecnologie coinvolte nel lato 
-	Producer coprirebbe solo aspetti marginali (le segnalazioni) delle
-	suddette, senza conferire capacità estese. 
+	\item L'apprendimento delle tecnologie coinvolte nel lato Producer che
+	 coprirebbe solo aspetti marginali (le segnalazioni) delle suddette, 
+	 senza conferire capacità estese. 
 	\item Il lavoro per la raccolta dati appare ripetitivo e le
 	 API da imparare ad usare sono molto specifiche, quindi sarebbero 
-	 circoscritte al progetto e non più utilizzate in futuro$_{G}$. 
+	 circoscritte al progetto e non più utilizzate in futuro$_{G}$;
+	\item L'interesse da parte del gruppo di lavoro si è dimostrato scarso.
 	
 \end{itemize}
 \subsubsection{Conclusioni}
-Lo scopo del capitolato non è risultato molto interessante, in quanto lo sviluppo 
- di alcune componenti sembra caratterizzato da attività ripetitive. Inoltre il dover
- apprendere tecnologie per le quali è solamente richiesto l'integrazione di un 
- sottoinsieme di funzionalità non ha suscitato un forte interesse.
+Lo scopo del capitolato non è risultato molto stimolante, in quanto lo
+sviluppo di alcune componenti sembra caratterizzato da attività ripetitive.
+Inoltre, il dover apprendere tecnologie, per le quali è solamente richiesto
+l'integrazione di un sottoinsieme di funzionalità, ha demotivato il gruppo
+a scegliere questo progetto.
