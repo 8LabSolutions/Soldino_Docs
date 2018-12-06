@@ -3,9 +3,9 @@
 \subsection{Capitolato C3 - G\&B}
 \subsubsection{Informazioni sul capitolato}
 \begin{itemize}
-	\item \textbf{Nome}: G\&B: monitoraggio intelligente di processi DevOps
-	\item \textbf{Proponente}: Zucchetti
-	\item \textbf{Committente}: Prof. Tullio Vardanega e Prof. Riccardo Cardin
+	\item \textbf{Nome}: G\&B: monitoraggio intelligente di processi DevOps;
+	\item \textbf{Proponente}: Zucchetti;
+	\item \textbf{Committente}: Prof. Tullio Vardanega e Prof. Riccardo Cardin.
 \end{itemize}
 \subsubsection{Descrizione}
 Il capitolato prevede la costruzione di un software per monitorare un sistema 
@@ -18,9 +18,9 @@ analizzando, misurando e controllando i dati forniti dal primo.
 La struttura del software da realizzare è conforme ai seguenti punti: 
 \begin{itemize}
 	\item un flusso di dati in input viene associato a una rete Bayesiana: 
-	questa rete è composta di nodi contenenti informazioni di probabilità
+	questa rete è composta di nodi contenenti informazioni di probabilità;
 	\item la rete riceve il flusso e lo usa per fare dei calcoli, aggiornando
-	 quindi le probabilità dei propri nodi
+	 quindi le probabilità dei propri nodi;
 	\item sia il flusso dati che la rete sono monitorati in un cruscotto;
 	\item l'andamento dei dati determina l'eventuale generazione di allarmi
 	 e notifiche.
@@ -28,36 +28,37 @@ La struttura del software da realizzare è conforme ai seguenti punti:
 \paragraph {Dominio tecnologico} \mbox{} \\
 Le tecnologie proposte per lo sviluppo del progetto sono:
 \begin{itemize}
-	\item Grafana: software \textit{open-source} che, ricevuti i dati in input,
+	\item \textbf{Grafana}: software \textit{open-source} che, ricevuti i dati in input,
 	 consente di raccoglierli in un cruscotto, visualizzarli, analizzarli, 
 	 misurarli e controllarli;
-	\item InfluxDB: database di tipo \textit{Time Series}, generati con continuità
+	\item \textbf{InfluxDB}: database di tipo \textit{Time Series}, generati con continuità
 	 temporale e atti a essere letti e monitorati costantemente per misurarne 
 	 le variazioni;
-	\item JavaScript: Linguaggio di programmazione richiesto per costruire i 
+	\item \textbf{JavaScript}: Linguaggio di programmazione richiesto per costruire i 
 	\textit{plug-in} di Grafana e per definire la rete di Bayes in formato .json;
-	\item Rete di Bayes: rete di nodi che contengono informazioni di probabilità;
+	\item \textbf{Rete di Bayes}: rete di nodi che contengono informazioni di probabilità;
 	 quando un evento significativo si verifica, le probabilità dei nodi si aggiornano 
 	 conseguentemente.
 \end{itemize}
 \subsubsection{Aspetti positivi}
+L'analisi di questo capitolato ha portato a considerare diversi aspetti positivi:
 \begin{itemize}
-	\item L'azienda è grande e possiede esperienza utile al nostro apprendimento;
-	\item Il dominio del problema è chiaro e circoscritto;
-	\item I requisiti sono ben manifesti e comprensibili nel capitolato;
+	\item L'azienda si presenta come la prima software house italiana e il gruppo mostra 
+	notevole interesse a collaborare con essa;
+	\item La presentazione del problema è chiara e i requisiti sono ben definiti;
 	\item Le tecnologie riguardano vari ambiti (database, linguaggi, probabilità, 
 	monitoraggio) e sono in numero ragionevole da apprendere.
 \end{itemize}
-\subsubsection{Criticità e fattori di rischio}
+\subsubsection{Criticità}
+Oltre ai punti a favore citati in precedenza, sono emersi anche dei fattori a sfavore per
+questo progetto:
 \begin{itemize}
-	\item il capitolato è fortemente conteso tra i gruppi appaltatori: la probabilità
-	 di aggiudicarselo è inferiore a quella desiderata.
+	\item Per alcuni componenti del gruppo, determinate tecnologie da  utilizzare 
+	sono sconosciute;
+	\item L'apprendimento dell'utilizzo di \textbf{Grafana} non ha suscito molto 
+	entusiasmo all'interno del team di lavoro.
 \end{itemize}
 \subsubsection{Conclusioni}
-Il capitolato è stato escluso dalle preferenze. Ci sono dei fattori positivi riguardo
- questo capitolato: in particolare, la definizione chiara del dominio e dei requisiti 
- del software.
-Tuttavia, questi non sono sufficienti.
-Si ritiene che l'insieme delle tecnologie non sia il migliore disponibile: alcune di 
-esse (es. Reti di Bayes) sono circoscritte, altre (Grafana) sono di dubbia diffusione.
-Inoltre, il capitolato è fortemente conteso tra i gruppi. 
+Dopo un'attenta valutazione, il capitolato è stato escluso dalle preferenze. Ci sono stati diversi 
+elementi positivi che hanno portato il gruppo a considerarlo, ma non sono stati abbastanza
+determinanti da poterlo preferire ad altri.
