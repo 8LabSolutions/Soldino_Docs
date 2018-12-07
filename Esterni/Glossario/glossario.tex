@@ -1,0 +1,37 @@
+\documentclass[a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+%\usepackage{amsmath, amssymb}
+%\usepackage{caption}
+\usepackage{graphicx}
+%\usepackage{float}
+\pagestyle{fancy}
+\lhead{\includegraphics[scale=0.07]{images/logo8_crop.png}}
+\usepackage{makeidx}
+%Titolo del documento
+\rhead{Glossario}
+\lfoot{\rightmark}
+\rfoot{\thepage}
+\cfoot{}
+\setlength{\headheight}{35pt}
+\makeindex
+\usepackage{hyperref}
+\begin{document}
+\input{title.tex}
+\pagebreak
+\input{changelog.tex}
+\pagebreak
+\tableofcontents
+%indice analitico dopo l'indice(da inserire)
+\pagebreak
+\input{pages/A.tex}
+\addcontentsline{toc}{section}{A}
+\pagebreak
+\input{pages/B.tex}
+\addcontentsline{toc}{section}{B}
+\printindex
+\end{document}
