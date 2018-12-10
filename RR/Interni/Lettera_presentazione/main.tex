@@ -1,0 +1,85 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thin Formal Letter
+% LaTeX Template
+% Version 2.0 (7/2/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% WikiBooks (http://en.wikibooks.org/wiki/LaTeX/Letters) with modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{letter} % Copiata dal nostro stile
+
+\usepackage{geometry} % Per modificare margini e dimensioni varie
+\usepackage{graphicx} % Per inserire immagini
+
+\geometry{
+	paper=a4paper, % Change to letterpaper for US letter
+	top=3cm, % Top margin
+	bottom=1.5cm, % Bottom margin
+	left=2.2cm, % Left margin
+	right=2.2cm, % Right margin
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage{charter} % stix di default, copiato dagli answer credo
+\usepackage{scrextend} % indentazione per il corpo della lettera
+\usepackage{microtype} % Improve justification
+\usepackage{eurosym} % wanna see the muney
+
+\date{15/01/2018} % comment to show today date
+
+\signature{
+	Project manager 8Lab Solutions \\
+    %\includegraphics[width=4cm]{firma.png}
+} % firma a piè di pagina
+
+%\address{123 Broadway \\ City, State 12345 \\ (000) 111-1111} % Your address and phone number
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	INDIRIZZO
+%----------------------------------------------------------------------------------------
+
+
+
+\begin{letter}{Professore Tullio Vardanega \\ Università degli studi di Padova \\ Dipartimento di Matematica "Tullio Levi-Civita" \\ Via Trieste 63 \\ 35121 Padova} % Name/title of the addressee
+
+\begin{center}
+\includegraphics{res/images/logo8.png}
+8labsolutions@gmail.com
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	CONTENUTO
+%----------------------------------------------------------------------------------------
+\opening{\textbf{Egregio Professor Tullio Vardanega,}}
+
+
+%\vspace{2\parskip} % Extra whitespace for aesthetics
+\closing{Distinti saluti,}
+%\vspace{2\parskip} % Extra whitespace for aesthetics
+
+%\ps{P.S. You can find additional information attached to this letter.} % Postscript text, comment this line to remove it
+
+%\encl{Copyright permission form} % Enclosures with the letter, comment this line to remove it
+
+%----------------------------------------------------------------------------------------
+
+\end{letter}
+ 
+\end{document}
