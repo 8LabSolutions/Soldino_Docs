@@ -1,5 +1,69 @@
 \section{Processi di Supporto}
-	\subsection{Docuentazione}
+	\subsection{Documentazione}
+		Ogni processo e attività significativi svolti per lo sviluppo del progetto sono documentati. Lo scopo della documentazione è rendere questi processi e attività chiari, trasparenti, registrarli e facilitare il processo di manutenzione. I documenti sono consultabili nell'apposita \href {https://github.com/8LabSolutions/Soldino}{ \underline{sezione della repository} }. 
+		\subsubsection{Strumenti di scrittura}
+		Lo strumento scelto per la scrittura di documenti è \LaTeX. La sua utilità sta nel permettere di scrivere documenti in modo ordinato, modulare, collaborativo e scalabile.
+		\subsubsection{Tipologie di documenti}
+		Il progetto prevede la redazione di un insieme di documenti, suddivisi in documenti interni e documenti esterni. Essi sono elencati di seguito con le rispettive sigle.\newline
+		I documenti esterni sono:		
+		\begin{itemize}
+			\item \textbf{AdR}: Analisi dei Requisiti: stabilisce le caratteristiche che il software deve rispettare;
+			\item \textbf{MU}: Manuale Utente: ad uso degli utilizzatori del software;
+			\item \textbf{MS}: Manuale Sviluppatore: per gli sviluppatori e manutentori;
+			\item \textbf{PdP}: Piano di Progetto: concerne la gestione del progetto, evidenziandone la fattibilità e le criticità; tratta di tempi, costi, obiettivi, rischi, vincoli;
+			\item \textbf{PdQ}: Piano di Qualifica: descrive la qualità del software e dei processi, e come la si intende raggiungere mediante l'uso di strumenti, metriche e processi;
+			\item \textbf{RA}: Revisione di Accettazione: determina l'entrata;
+			\item \textbf{RP}: Revisione di Progettazione;
+			\item \textbf{RQ}: Revisione di Qualifica;
+			\item \textbf{RR}: Revisione dei Requisiti.
+		\end{itemize}	
+		I documenti interni sono:
+		\begin{itemize}
+			\item \textbf{G}: Glossario: raccoglie i termini di interesse per il team di sviluppo e sui quali il team vuole concordare;
+			\item \textbf{NdP}: Norme di Progetto: sono un riferimento per lo svolgimento delle attività di progetto;
+			\item \textbf{SdF}: Studio di Fattibilità: descrive sommariamente i capitolati e spiega la loro scelta o esclusione;
+			\item \textbf{V}: Verbale: descrizione le interazioni e i loro prodotti avvenuti durante un incontro con il proponente o un incontro interno di interesse per il progetto; sono orientati a dare informazioni semplici e immediatamente fruibili. 
+		\end{itemize}
+		\subsubsection{Ciclo di vita del documento}
+		Ogni documento segue le fasi del seguente ciclo di vita:
+		\begin{enumerate}
+			\item Creazione del documento: dopo attenta valutazione, nel momento in cui diventa necessario, il documento viene creato, applicando le norme per i documenti e adeguandosi a documenti precedenti dello stesso tipo; si usa un template se disponibile;
+			\item Creazione della struttura: se il documento è sufficientemente grande, viene creato il suo indice, che traccia gli argomenti trattati nel documento;
+			\item In lavorazione: il documento viene scritto in modo incrementale e per moduli;
+			\item In revisione: ogni voce del documento è stata prodotta interamente, ma è soggetta a revisioni per correggere, ampliare, semplificare quanto presente; se possibile, la revisione di ciascun frammento è svolta da almeno una persona diversa da chi ha scritto quel frammento;
+			\item Approvato: il responsabile di progetto sancisce che il documento è stato completato; esso è pronto per il rilascio.
+		\end{enumerate}
+		Le fasi sono ordinate, ma non sono strettamente sequenziali. Sono consentiti ritorni a fasi precedenti.
+		\subsubsection{Struttura del documento}
+		\paragraph{Prima pagina}
+		Nella prima pagina di ogni documento si trovano:
+		\begin{itemize}
+			\item logo del team, nome del team e nome del progetto;
+			\item nome del documento;
+			\item tabella contenente informazioni sul documento, la sua versione, chi ci ha lavorato e a chi è destinato;
+			\item descrizione sommaria;
+			\item email del team.
+		\end{itemize}
+		\subsubsection{Norme tipografiche}
+			\paragraph{Formati}
+			\subparagraph{Data}
+			La data è scritta secondo il formato:\newline
+			\centerline{YYYY-MM-DD}\newline
+			che rappresenta la sequenza anno-mese-giorno.
+			\subparagraph{Versione}
+			Ogni documento ha una storia, ricostruibile attraverso le sue versioni. Ogni documento ha un numero di versione composto da tre cifre:
+			\begin{center}
+				X.Y.Z
+			\end{center}
+			dove:
+			\begin{itemize}
+				\item \textbf{X}: rappresenta una versione stabile del documento, resa tale dopo approvazione del responsabile di progetto;
+				\item \textbf{Y}: rappresenta una versione parzialmente stabile del documento che è stata soggetta a verifica da parte di un verificatore;
+				\item \textbf{Z}: rappresenta una versione instabile del documento in fase di lavorazione da parte dei redattori.
+			\end{itemize}
+			\paragraph{Elenchi e sottoelenchi}
+			Ogni voce di un elenco comincia per lettera minuscola e termina per "\textbf{;}" eccetto l'ultima che termina per "\textbf{.}". I sottoelenchi sono innestati dentro una voce di elenco e rispettano le medesime regole, poiché la loro funzione è analoga.
+			
 	\subsection{Verifica}
 	\subsection{Validazione}
 	\subsection{Strumenti utilizzati}
