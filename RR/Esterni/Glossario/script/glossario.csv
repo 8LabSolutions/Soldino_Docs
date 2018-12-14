@@ -1,0 +1,19 @@
+termine,definizione
+Apache Kafka,Piattaforma open source per lo stream processing
+API REST,"Representational State Transfer, stile architetturale per esporre programmi per mezzo di protocolli esistenti, tipicamente HTTP."
+Changelog,"Tabella delle modifiche di un documento. Indica la versione del documento, la data di modifica, chi ha prodotto
+la modifica e una descrizione della stessa."
+Continuous delivery,"E’ una pratica di sviluppo che consiste nell’integrare frequentemente le modifiche locali degli sviluppatori al
+ramo condiviso principale. Questa pratica permette di minimizzare problemi integrazione corposa."
+Continuous integration,"E’ una pratica di sviluppo che consiste nell’integrare frequentemente le modifiche locali degli sviluppatori al
+ramo condiviso principale. Questa pratica permette di minimizzare problemi integrazione corposa."
+Cubit,Custom token di Ethereum previsto nel capitolato C6.
+Documento interno,Documento a uso del team di sviluppo e del committente (Vardanega Tullio e Cardin Riccardo)
+Documento esterno,"Documento a uso di team, committente e proponente (RedBabel)"
+Docker,"Software per la creazione, sviluppo ed esecuzione di applicazione attraverso l’uso di container. I Container
+permettono di incorporare un’applicazione e tutte le parti necessarie ad essa in un unico pacchetto."
+ECR20,"È lo standard per i token, definisce le funzioni e gli eventi che un contratto token di Ethereum deve implementare."
+ESlint,Strumento per l’analisi del codice e per l’identificazione di pattern in JavaScript.
+Gamification,
+JSON,JavaScript Object Notation. E’ una sintassi per il salvataggio e scambio di dati.
+Node.js,

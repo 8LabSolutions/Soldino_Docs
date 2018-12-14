@@ -1,0 +1,14 @@
+apache kafka
+api rest
+changelog
+continuous delivery
+continuous integration
+cubit
+documento interno
+documento esterno
+docker
+ecr20
+eslint
+gamification
+json
+node.js
