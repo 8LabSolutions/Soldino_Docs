@@ -16,7 +16,7 @@ def listaPresenti():
 def aggiungiVoce(titolo, descrizione):
 
     presenti = listaPresenti()
-
+    print(presenti)
     if len(str(titolo)) == 0:
         print("--- Errore: titolo vuoto ---")
         exit()
@@ -24,7 +24,7 @@ def aggiungiVoce(titolo, descrizione):
     if titolo == 'q':
         print('End')
         exit()
-    if str(titolo) in presenti:
+    if str(titolo).lower() in presenti:
         print('--- Errore, termine '+titolo+' già presente ---')
         exit()
     if titolo[0].capitalize() not in 'QWERTYUIOPASDFGHJKLZXCVBNM':
@@ -63,7 +63,7 @@ elif len(sys.argv) ==2 and sys.argv[1] == '-a':
     while True:
         print('=> Inserire il nome del NUOVO TERMINE (\'q\' per uscire ):\n')
         titolo = input()
-        print('=> inserisci la descrizione come scriveresti su Latex (eventuali caratteri speciali)')
+        print('=> inserisci la descrizione ')
         descrizione = input()
 
         aggiungiVoce(titolo, descrizione)
@@ -86,6 +86,9 @@ elif len(sys.argv) ==3 and sys.argv[1] == '-f':
                 print('Apertura del documento..')
                 intestazione = False
             else:
+                if row[1] == "":
+                    print(row[0]+' non ha una descrizione! Impossibile proseguire')
+                    exit()
                 aggiungiVoce(row[0], row[1])
 
         print('Finito')
