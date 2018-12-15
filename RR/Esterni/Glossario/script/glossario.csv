@@ -1,20 +1,50 @@
 termine,definizione
-Apache Kafka,Piattaforma open source per lo stream processing
+Apache Kafka,Piattaforma open source per lo stream processing.
 API REST,"Representational State Transfer, stile architetturale per esporre programmi per mezzo di protocolli esistenti, tipicamente HTTP."
+Blockchain,"Struttura dati condivisa ed immutabile, composta da un registro di blocchi concatenati in ordine cronologico. I blocchi una volta inseriti non sono più modificabili. Questa tecnologia, assimilabile ad un database distribuito, è gestito da una rete di nodi, ognuno dei quali possiede una copia dei dati.  Ogni transazione è regolata da un protocollo che ne verifica l'autenticità e la approva o meno. Una transazione approvata non è più modificabile e viene aggiunta alla blockchain. Con questo sistema non è necessaria la presenza di un'autorità esterna alla transazione che faccia da garante."
 Changelog,"Tabella delle modifiche di un documento. Indica la versione del documento, la data di modifica, chi ha prodotto
 la modifica e una descrizione della stessa."
-Continuous delivery,"E’ una pratica di sviluppo che consiste nell’integrare frequentemente le modifiche locali degli sviluppatori al
-ramo condiviso principale. Questa pratica permette di minimizzare problemi integrazione corposa."
+Continuous delivery,Definisce la metodologia attraverso la quale si hanno brevi cicli di rilascio. In questo modo è possibile rilasciare in modo affidabile il software in qualsiasi momento.
 Continuous integration,"E’ una pratica di sviluppo che consiste nell’integrare frequentemente le modifiche locali degli sviluppatori al
 ramo condiviso principale. Questa pratica permette di minimizzare problemi integrazione corposa."
 Cubit,Custom token di Ethereum previsto nel capitolato C6.
-Documento interno,Documento a uso del team di sviluppo e del committente (Vardanega Tullio e Cardin Riccardo)
-Documento esterno,"Documento a uso di team, committente e proponente (RedBabel)"
+DApp/ÐApp,"Applicazione decentralizzata che gestisce gli smart contract, arricchendo le transazioni con regole user-defined, garantendo maggiore sicurezza e controllo. Solitamente una ÐApp è open-source e  gestisce operazioni con dati criptati."
+Dashboard,"È una postazione o a una pagina web basata su una tecnologia che visualizza informazioni relative a un business, raccolte in tempo reale da varie fonti nel settore. I dati vengono visualizzati in tempo reale nella pagina usando grafici, riepiloghi e liste."
+DevOps,"Nasce dalla sinergia tra cultura aziendale, pratiche e strumenti e fornisce a un'organizzazione l'abilità di sviluppare applicazioni e servizi con la massima agilità."
 Docker,"Software per la creazione, sviluppo ed esecuzione di applicazione attraverso l’uso di container. I Container
 permettono di incorporare un’applicazione e tutte le parti necessarie ad essa in un unico pacchetto."
+Documento esterno,"Documento a uso di team, committente e proponente (RedBabel)."
+Documento interno,Documento a uso del team di sviluppo e del committente (Vardanega Tullio e Cardin Riccardo).
 ECR20,"È lo standard per i token, definisce le funzioni e gli eventi che un contratto token di Ethereum deve implementare."
-ESlint,Strumento per l’analisi del codice e per l’identificazione di pattern in JavaScript.
-Gamification,
+ESlint,"Strumento per l’analisi statica del codice e per l’identificazione di pattern in JavaScript, per ottenere più facilmente codice corretto e facilmente comprensibile."
+Ethereum,Blockchain per la creazione e pubblicazione di Smart Contracts. Uno smart contract che vuole girare su questa rete peer-to-peer deve pagare la sua potenza computazionale tramite una valuta chiamata Ether. Come le altre blockchain permette anche lo scambio di valore monetario.
+Ethereum Virtual Machine,"Macchina virtuale decentralizzata sulla rete Ethereum, che permette di eseguire ÐApps."
+Event-driven,Il flusso del programma è largamente determinato dal verificarsi di eventi esterni.
+Firebase Storage,"Piattaforma offerta da Google che permette a siti web ed applicazioni di salvare i dati dell'utente in diversi formati. Consente upload e download sicuri, anche con una connessione di scarsa qualità."
+Framework,Piattaforma che funge da strato intermedio tra un sistema operativo e il software che lo utilizza.
+Freeling,software specializzato nel Part of Speech (PoS) tagging. Il software sfrutta delle tecniche di apprendimento automatico supervisionato per tale classificazione.  
+Front-end,Parte visibile all'utente e con cui egli può interagire (interfaccia utente).
+Gamification,"Riutilizzo di concetti ed elementi tipici dei giochi in applicazioni di diverso contesto. Utilizzando questi principi si ottengono sia maggiore coinvolgimento degli utenti dell'applicazione, sia maggiore produttività ed organizzazione nel lavoro."
+GitLab,"Sistema di gestione repository online, che integra servizi quali issue tracking system e l'integrazione di pipeline volte a continuos delivery e continuos integration."
+Hunpos,software specializzato nel Part of Speech (PoS) tagging. Il software sfrutta delle tecniche di apprendimento automatico supervisionato per tale classificazione.  
 JSON,JavaScript Object Notation. E’ una sintassi per il salvataggio e scambio di dati.
-Node.js,
-ECR20,"È lo standard per i token, definisce le funzioni e gli eventi che un contratto token di Ethereum deve implementare."
+Metamask,"Add-on disponibile nei browser Chrome, Firefox, Opera e Brave che permette agli utenti di interfacciarsi con la rete Ethereum senza ospitare un nodo della rete. Permette di autenticarsi in maniera sicura e di eseguire ÐApps sul proprio browser. Fornisce un'interfaccia utente per gestire più wallet/account e salvare tutti i dati direttamente nel browser. "
+Node.js,"Ambiente open-source per l'esecuzione di codice Javascript a run-time, al di fuori dei browser. Ciò permette l'esecuzione di codice Javascript server-side."
+Open-Source,Software non protetto da copyright e liberamente modificabile dagli utenti.
+Peer-to-peer,"Nelle reti telematiche, architettura in cui tutti i computer connessi svolgono la funzione sia di client che di server."
+Plug-in,Componente aggiuntivo che può essere installato in un software per ampliarne le funzionalità.
+PoS tagging,Interpretazione di un testo etichettando ciascuna parola con il relativo significato grammaticale.
+Python,"Linguaggio di scripting interpretato, ad alto livello."
+React,Libreria open source per JavaScript per la creazione di interfacce grafiche e la gestione delle interazioni in ambito web.
+Redmine,"Piattaforma open source che permette la gestione di più progetti contemporaneamente, offrendo funzionalità di project management e issue tracking."
+Redux,Libreria open source Javascript per la gestione degli stati di React.
+Rete Bayesiana,Modello grafico probabilistico che rappresenta un insieme di variabili stocastiche con le loro dipendenze condizionali.
+SCSS,"estensione del linguaggio CSS, che ne aumenta le funzionalità e l'espressività."
+Server-side,Fa riferimento a operazioni compiute dal server in un ambito client-server contrapponendosi a tutto ciò che viene eseguito sul client.
+Skill,Funzioni aggiuntive per Amazon Alexa non previste nel pacchetto base.
+Slack,"Sistema di messaggistica cloud-based orientato al mondo lavorativo. Permette la creazioni di diversi team di lavoro, ulteriormente suddivi in ""canali"" che trattano un particolare topic."
+Smart Contract,"Protocolli per facilitare, attuare e verificare la negoziazione di un contratto in versione digitale. Permettono di ottenere lo stesso valore di un contratto reale senza l'ausilio di un garante esterno. Le transazioni che avvengono con questo protocollo sono tracciabili e irreversibili. Uno smart contract rappresenta del codice che può essere eseguito."
+SonarQube,"Piattaforma open source che permette disvolgere una continua revisione del codice caricato in una repository, svolgendo analisi statica per individuare possibili bug e vulnerabilità in sicurezza."
+Telegram,Servizio di messaggistica istantanea  e VoIP cloud-based.
+Time Series,"Insieme di variabili casuali ordinate rispetto al tempo, esprimendo quindi la dinamica di un certo fenomeno nel tempo."
+Workflow,Gestione dei processi lavorativi attraverso la creazione di modelli e il management informatico dell'insieme dei task da svolgere per raggiungere specifici obiettivi di business.
