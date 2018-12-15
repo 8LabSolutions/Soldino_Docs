@@ -10,60 +10,51 @@
 \textbf{Committente:} Prof. Tullio Vardanega e Prof. Riccardo Cardin.
 \end{itemize}
 \subsubsection{Descrizione}
-\textit{Butterfly} mira allo sviluppo di una piattaforma che permette di
+\textit{Butterfly} mira allo sviluppo di una piattaforma che permetta di
  accentrare, standardizzare, automatizzare e personalizzare le segnalazioni di
- diversi strumenti di versionamento, di continuous integration\glosp e continuous delivery\glo , così da permettere all'utente di interfacciarsi ad un'unica dashboard per la gestione di queste.
-\subsubsection{Studio del dominio}
-\paragraph{Dominio applicativo}\mbox{}\\
+ diversi strumenti di versionamento, di continuous integration\glosp e continuous delivery\glo , così da permettere all'utente di interfacciarsi ad un'unica dashboard per la loro gestione.
+\subsubsection{Finalità del progetto}
 Il prodotto finale, integrando al suo interno le segnalazioni delle diverse 
-applicazioni, semplifica e organizza il lavoro dell'utente. L'azienda propone,
+applicazioni, semplifica e organizza il lavoro in un progetto. L'azienda propone,
 per la realizzazione di questa soluzione, l'utilizzo di quattro componenti:
 \begin{itemize}
-	\item \textbf{Producers}, che hanno la funzionalità di recuperare le
-	segnalazioni e mostrarle come messaggi nei rispettivi Topic;
-	\item \textbf{Broker}, ovvero uno strumento per istanziare e gestire i
-	 Topic;
-	\item \textbf{Consumers}, che hanno il compito di iscriversi a diversi
-	Topic specifici così da reindirizzare i messaggi verso gli utenti finali;
-    \item \textbf{Componente custom specifico}, inteso come un componente da
-    implementare per l'azienda che permetta di indirizzare la notifica alla
-    persona più idonea.
+	\item \textbf{Producers}, che hanno la funzionalità di recuperare le segnalazioni dalle applicazioni interessate e di pubblicarle, associandole ad un Topic;
+	\item \textbf{Broker}, uno strumento per istanziare e gestire i Topic;
+	\item \textbf{Consumers}, che dovranno abbonarsi a dei Topic, recuperarne i messaggi e procedere al loro invio ai destinatari finali;
+    \item \textbf{Componente custom specifico}, applicativo che permetta, previa lettura di metadati relativi agli utenti, di decidere quali tra questi sono i più appropriati a ricevere la notifica.
 \end{itemize}
-\paragraph{Dominio tecnologico}\mbox{}\\
+\subsubsection{Tecnologie interessate}
 Per lo sviluppo dei componenti applicativi, l'azienda proponente consiglia:
 \begin{itemize}
-	\item uno dei linguaggi di programmazione tra \textbf{Java}\glo,
+	\item uno dei linguaggi di programmazione tra \textbf{Java},
 	\textbf{Python}\glosp o \textbf{Node.js}\glo;
 	\item il sistema open source \textbf{Apache Kafka}\glosp per la gestione delle
 	operazioni tra i vari client, da utilizzare come Broker.
+	\item \textbf{Docker}\glosp per creare i container relativi alle diverse componenti;
+	\item \textbf{API Redmine}\glo,  \textbf{GitLab}\glo,  \textbf{SonarQube}\glo,  \textbf{Telegram}\glo, \textbf{Slack}\glo, per potersi interfacciare con queste applicazioni.
 \end{itemize}
-I requisiti obbligatori, invece, sono:
+Inoltre il proponente richiede di:
 \begin{itemize}
-	\item rispettare i 12 fattori presenti in "The Twelve-Factor App" nelle 
-	applicazioni sviluppate;
-	\item utilizzare \textbf{Docker}\glosp come container per l'istanziazione dei componenti;
-	\item esporre le \textbf{API Rest}\glosp dei componenti per l'utilizzo dell'applicazione; 
-	\item utilizzare test unitari e d'integrazione per ogni componente 
-	realizzato.
+	\item fornire delle \textbf{API Rest}\glosp per ognuna delle componenti utilizzate nell'applicazione; 
+	\item utilizzare test unitari e d'integrazione per ogni componente; 
+	\item rispettare i 12 fattori presenti in "The Twelve-Factor App" nelle applicazioni sviluppate.
 \end{itemize}
 \subsubsection{Aspetti positivi}
-Gli aspetti positivi emersi sono:
+
 \begin{itemize}
 	\item Le tecnologie proposte hanno larga diffusione nel mondo lavorativo ed
-	 approfondire la conoscenza su di esse è un aspetto apprezzato dal gruppo.
+	 approfondire la conoscenza su di esse è un aspetto apprezzato dal gruppo;
 	\item Java è materia di studio nel nostro corso di laurea, per cui il
 	 capitolato offre la possibilità di migliorare la padronanza di questo
 	 linguaggio.
 \end{itemize}
-\subsubsection{Criticità}
-Gli aspetti negativi affiorati sono: 
+\subsubsection{Criticità e fattori di rischio}
+
 \begin{itemize}
 	\item Lo sviluppo del componente Producer permetterebbe solamente l'apprendimento di aspetti marginali delle tecnologie coinvolte.
 	\item Il lavoro per la raccolta dati appare ripetitivo 
-	 e le API da utilizzare sembrano altamente specifiche per il progetto, senza l'opportunità di acquisire esperienza spendibile in futuro.
-	\item L'interesse da parte del gruppo di lavoro per questo capitolato si è 
-dimostrato scarso.
-	
+	 e le API da utilizzare sembrano altamente specifiche per il progetto. Probabilmente queste conoscenze acquisite saranno poco spendibili nel futuro, specie se comparate alle offerte di altri capitolati;
+	\item L'interesse da parte del gruppo di lavoro per questo capitolato si è dimostrato scarso.
 \end{itemize}
 
 \subsubsection{Conclusioni}
