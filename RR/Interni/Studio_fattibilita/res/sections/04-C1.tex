@@ -2,35 +2,33 @@
 \subsubsection{Informazioni generali}
 \begin{itemize}
 \item
-\textbf{Nome:} Butterfly;
+\textbf{Nome}: Butterfly: monitor per processi CI/CD;
 \item
-\textbf{Proponente:} Imola Informatica;
+\textbf{Proponente}: Imola Informatica;
 \item
-\textbf{Committente:} Prof. Tullio Vardanega e Prof. Riccardo Cardin.
+\textbf{Committente}: Prof. Tullio Vardanega e Prof. Riccardo Cardin.
 \end{itemize}
 \subsubsection{Descrizione}
 \textit{Butterfly} mira allo sviluppo di una piattaforma che permetta di
- accentrare, standardizzare, automatizzare e personalizzare le segnalazioni di diversi strumenti di versionamento, di continuous integration\glosp e continuous delivery\glo , così da permettere all'utente di interfacciarsi ad un'unica dashboard per la loro gestione.
+ accentrare, standardizzare, automatizzare e personalizzare le segnalazioni di diversi strumenti di versionamento, di continuous integration\glosp e continuous delivery\glo , così da permettere all'utente di interfacciarsi ad un'unica dashboard\glosp per la loro gestione.
 
 \subsubsection{Finalità del progetto}
 Il prodotto finale, integrando al suo interno le segnalazioni delle diverse 
 applicazioni, semplifica e organizza il lavoro in un progetto. L'azienda propone,
 per la realizzazione di questa soluzione, l'utilizzo di quattro componenti:
 \begin{itemize}
-	\item \textbf{Producers}, che hanno la funzionalità di recuperare le segnalazioni dalle applicazioni interessate e di pubblicarle, associandole ad un Topic;
-	\item \textbf{Broker}, uno strumento per istanziare e gestire i Topic;
-	\item \textbf{Consumers}, che dovranno abbonarsi a dei Topic, recuperarne i messaggi e procedere al loro invio ai destinatari finali;
-    \item \textbf{Componente custom specifico}, applicativo che permetta, previa lettura di metadati relativi agli utenti, di decidere quali tra questi sono i più appropriati a ricevere la notifica.
+	\item \textbf{Producers}: hanno la funzionalità di recuperare le segnalazioni dalle applicazioni interessate e di pubblicarle, associandole ad un Topic;
+	\item \textbf{Broker}: uno strumento per istanziare e gestire i Topic;
+	\item \textbf{Consumers}: dovranno abbonarsi a dei Topic, recuperarne i messaggi e procedere al loro invio ai destinatari finali;
+    \item \textbf{Componente custom specifico}: applicativo che permetta, previa lettura di metadati relativi agli utenti, di decidere quali tra questi sono i più appropriati a ricevere la notifica.
 \end{itemize}
 \subsubsection{Tecnologie interessate}
 Per lo sviluppo dei componenti applicativi, l'azienda proponente consiglia:
 \begin{itemize}
-	\item uno dei linguaggi di programmazione tra \textbf{Java},
-	\textbf{Python}\glosp o \textbf{Node.js}\glo;
-	\item il sistema open source \textbf{Apache Kafka}\glosp per la gestione delle
-	operazioni tra i vari client, da utilizzare come Broker.
-	\item \textbf{Docker}\glosp per creare i container relativi alle diverse componenti;
-	\item \textbf{API Redmine}\glo,  \textbf{GitLab}\glo,  \textbf{SonarQube}\glo,  \textbf{Telegram}\glo, \textbf{Slack}\glo, per potersi interfacciare con queste applicazioni.
+	\item \textbf{Java}, \textbf{Python}\glo, \textbf{Node.js}\glo: alternative di linguaggi per lo sviluppo dell'applicativo suggerite dal proponente; 
+	\item\textbf{Apache Kafka}\glo : software open-source per la gestione delle operazioni tra i vari client, da utilizzare come Broker;
+	\item \textbf{Docker}\glo: per creare i container relativi alle diverse componenti;
+	\item \textbf{API Redmine}\glo,  \textbf{GitLab}\glo,  \textbf{SonarQube}\glo,  \textbf{Telegram}\glo, \textbf{Slack}\glo: utilizzate per potersi interfacciarsi con omonime applicazioni.
 \end{itemize}
 Inoltre il proponente richiede di:
 \begin{itemize}

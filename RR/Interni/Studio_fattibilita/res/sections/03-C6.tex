@@ -5,32 +5,32 @@
 % campione)
 % 
 \begin{itemize}
-\item \textbf{Nome:} Soldino;
-\item \textbf{Proponente:} Red Babel;
-\item \textbf{Committente:} Prof. Tullio Vardanega e Prof. Riccardo Cardin.
+\item \textbf{Nome}: Soldino: piattaforma Ethereum per pagamenti IVA;
+\item \textbf{Proponente}: Red Babel;
+\item \textbf{Committente}: Prof. Tullio Vardanega e Prof. Riccardo Cardin.
 \end{itemize}
 
 \subsection{Descrizione}
-Soldino prevede lo sviluppo di una piattaforma di e-commerce con lo scopo di automatizzare la gestione dell'IVA tra governo, aziende e cittadini. Cittadini ed aziende devono poter acquistare e vendere prodotti e/o servizi. Trimestralmente avviene il saldo dell'IVA: se l'azienda è in stato di debito allora deve poter versare la relativa somma, e viceversa lo stato deve risarcire le aziende in stato di credito. Inoltre il governo deve poter accedere a tutte le informazioni riguardanti le aziende iscritte alla piattaforma.
+\textit{Soldino} prevede lo sviluppo di una piattaforma di e-commerce con lo scopo di automatizzare la gestione dell'IVA tra governo, aziende e cittadini. Cittadini ed aziende devono poter acquistare e vendere prodotti e/o servizi. Trimestralmente avviene il saldo dell'IVA: se l'azienda è in stato di debito, allora deve poter versare la relativa somma, mentre se le aziende sono in stato di credito, allora è lo stato a risarcirle. Inoltre il governo deve poter accedere a tutte le informazioni riguardanti le aziende iscritte alla piattaforma.
 
 \subsection{Finalità del progetto}
-L’obiettivo finale è la creazione di un e-commerce con il back end che si appoggia alla rete Ethereum\glo. La business logic deve affidarsi al meccanismo degli Smart Contracts\glo, gestiti attraverso delle ÐApps\glo. I diversi
-attori potranno accedere alla piattaforma attraverso un’interfaccia web dedicata, sviluppata per interagire con l'add-on per browser "Metamask"\glosp (su Chrome e Firefox). Il mezzo di pagamento sarà un token basato sullo standard ECR20\glo, denominato "Cubit"\glo.
+L’obiettivo finale è la creazione di un e-commerce il quale back end si affida alla blockchain\glosp Ethereum\glo. La business logic deve affidarsi al meccanismo degli Smart Contracts\glo, gestiti attraverso delle ÐApps\glo. I diversi
+attori potranno accedere alla piattaforma attraverso un’interfaccia web dedicata, sviluppata per interagire con l'add-on\glosp per browser "Metamask"\glosp (su Chrome e Firefox). Il mezzo di pagamento sarà un token basato sullo standard ECR20\glo, denominato \textit{Cubit}\glo.
 
 
 \subsection{Tecnologie interessate}
 \begin{itemize}
   
-	\item \textbf{Ethereum\glo:} blockchain\glosp che verrà utilizzata per approvare e archiviare le transazioni che avvengono sulla piattaforma;
-	\item \textbf{Ethereum Virtual Machine\glosp (EVM):} macchina virtuale distribuita sulla rete Ethereum\glo, verrà utilizzata per eseguire le ÐApps\glo; 
-	\item \textbf{Smart Contracts\glo:} utilizzati per amministrare i contratti e/o transazioni trai vari attori;
-	\item \textbf{Solidity:} linguaggio utilizzato per programmare gli smart-contracts\glo;
-	\item \textbf{ÐApps\glo:} è un acronimo per indicare un'applicazione decentralizzata, ovvero un software creato attraverso i contratti intelligenti nella blockchain di Ethereum\glo;
-	\item \textbf{Metamask\glo:} add-on che permette agli utenti di gestire i propri account/wallet ed interagire con la rete Ethereum\glo. Verrà utilizzato per verificare l'identità degli utenti ed approvare le transazioni; 
+	\item \textbf{Ethereum\glo}: nel progetto useremo questa blockchain\glosp per approvare ed archiviare le transazioni che avvengono sulla piattaforma;
+	\item \textbf{Ethereum Virtual Machine\glosp (EVM)}: macchina virtuale distribuita sulla rete Ethereum\glo, verrà utilizzata per eseguire le ÐApps\glo; 
+	\item \textbf{Smart Contracts\glo}: utilizzati per amministrare i contratti e/o transazioni trai vari attori;
+	\item \textbf{Solidity}: linguaggio utilizzato per programmare gli smart-contracts\glo;
+	\item \textbf{ÐApps\glo}: è un acronimo per indicare un'applicazione decentralizzata, ovvero un software creato attraverso i contratti intelligenti nella blockchain di Ethereum\glo;
+	\item \textbf{Metamask\glo}: add-on che permette agli utenti di gestire i propri account/wallet ed interagire con la rete Ethereum\glo. Verrà utilizzato per verificare l'identità degli utenti ed approvare le transazioni; 
 	\item \textbf{Web3}: API JavaScript per effettuare chiamate remote a un nodo Ethereum\glo;
 	\item \textbf{Truffle}: framework\glosp per lo sviluppo di smart contracts\glosp su rete Ethereum\glo, verrà utilizzato per lo sviluppo iniziale e per il testing;
-	\item \textbf {Ropsten}: rete che esegue gli stessi protocolli di Ethereum\glo, utilizzata per la fase di staging;
-	\item \textbf{Javascript, React\glo, Redux\glo, SCSS\glo, HTML}: linguaggi e framework\glosp per l'implementazione della parte di front end. Il proponente impone di sottostare alle linee guida esposte nella "Airbnb Javascript style guide"\footnote{https://github.com/airbnb/javascript};
+	\item \textbf {Ropsten}: rete che esegue gli stessi protocolli di Ethereum\glo, utilizzata per la fase di staging\glo;
+	\item \textbf{Javascript, React\glo, Redux\glo, SCSS\glo, HTML}: linguaggi e framework\glosp per l'implementazione del front end. Il proponente impone di sottostare alle linee guida esposte nella "Airbnb Javascript style guide"\footnote{https://github.com/airbnb/javascript};
 	\item \textbf{ESlint\glo}: tool di analisi statica del codice e syntax checking.
 
 \end{itemize}
@@ -43,8 +43,7 @@ attori potranno accedere alla piattaforma attraverso un’interfaccia web dedica
 suscitando nel gruppo un forte interesse nell'approfondire il loro utilizzo;
 	
 	\item Il fatto di utilizzare librerie come React e SCSS permetterà di
-	sperimentare come realmente si lavora nelle aziende, distaccandoci così dalle 
-tecniche puramente accademiche.
+	apprendere nuove conoscenze fortemente richieste nel mondo del lavoro.
 \end{itemize}
 
 
