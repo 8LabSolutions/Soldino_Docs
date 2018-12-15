@@ -9,32 +9,32 @@
 \end{itemize}
 \subsubsection{Descrizione}
 Il capitolato prevede la costruzione di un software per monitorare un sistema 
-DevOps, cioè un sistema in cui, a livello aziendale, chi produce il software 
+DevOps\glo{}, cioè un sistema in cui, a livello aziendale, chi produce il software 
 e chi lo usa collaborano strettamente. Per migliorare ulteriormente il servizio 
 erogato si richiede un secondo software che permetta di visualizzare, 
 analizzare, misurare e controllare i dati forniti dal primo.
 \subsubsection{Finalità del progetto}
 La struttura del software da realizzare è conforme ai seguenti punti: 
 \begin{itemize}
-	\item un flusso di dati in input viene associato a una rete Bayesiana, 
+	\item un flusso di dati in input viene associato a una rete Bayesiana\glo{}, 
 	composta di nodi contenenti informazioni di probabilità;
 	\item la rete riceve il flusso e lo usa per fare dei calcoli, aggiornando
 	 quindi le probabilità dei propri nodi;
-	\item sia il flusso di dati che la rete sono monitorati in una dashboard;
+	\item sia il flusso di dati che la rete sono monitorati in una dashboard\glo{};
 	\item l'andamento dei dati determina l'eventuale generazione di allarmi
 	 e notifiche.
 \end{itemize}
 \subsubsection{Tecnologie interessate}
 \begin{itemize}
-	\item \textbf{Grafana}: software \textit{open-source} che, ricevuti i dati in 
+	\item \textbf{Grafana}: software open-source\glo{} che, ricevuti i dati in 
 input,
 	 consente di raccoglierli in un cruscotto, visualizzarli, analizzarli, 
 	 misurarli e controllarli;
-	\item \textbf{InfluxDB}: database di tipo \textit{Time Series}, generati con 
+	\item \textbf{InfluxDB}: database di tipo Time Series\glo{}, generati con 
 continuità
 	 temporale e atti a essere letti e monitorati costantemente per misurarne 
 	 le variazioni;
-	\item \textbf{JavaScript}: Linguaggio di programmazione richiesto per costruire i \textit{plug-in} di Grafana e per definire la rete di Bayes in formato JSON\glo;
+	\item \textbf{JavaScript}: Linguaggio di programmazione richiesto per costruire i plug-in\glo{} di Grafana e per definire la rete di Bayes in formato JSON\glo;
 	\item \textbf{Rete di Bayes}: rete di nodi che contengono informazioni di 
 probabilità; quando un evento significativo si verifica, le probabilità dei nodi si aggiornano di conseguenza.
 \end{itemize}
