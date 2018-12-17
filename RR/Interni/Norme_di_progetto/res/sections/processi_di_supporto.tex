@@ -116,15 +116,72 @@
 			\paragraph{Analisi} \mbox{}\\
 			Il processo di analisi si suddivide in analisi statica e analisi dinamica.
 				\subparagraph{Analisi statica} \mbox{}\\
-				L'analisi statica effettua controlli sui documenti e sul codice. Di essi valuta e applica la correttezza (intesa come assenza di errori e difetti), la conformità a regole e proprietà desiderate desiderate, la coesione dei componenti.
-				%Per effettuare analisi statica
+				L'analisi statica effettua controlli sui due oggetti: documenti e sul codice. Di essi valuta e applica la correttezza (intesa come assenza di errori e difetti), la conformità a regole e la coesione dei componenti.\newline Per effettuare analisi statica esistono metodi manuali di lettura (attuati da persone) e metodi formali (attuati da macchine). I metodi manuali sono due:
+				\begin{itemize}
+					\item \textbf{Walkthrough}: i vari componenti del team analizzano gli oggetti nella loro totalità per cercare difetti ad ampio spettro, non sapendo dove questi possano essere;
+					\item \textbf{Inspection}: i verificatori fanno ispezione sugli oggetti in cui si cercano difetti specifici, noti prima dell'ispezione e raggruppati in checklist;
+				\end{itemize}
+				A seguire sono descritte le liste di controllo per le ispezioni.
+				
+				\begin{table}[!h]
+					\centering
+					\begin{tabular}{|l|l|}
+						\hline
+					\textbf{Difetto} & \textbf{Descrizione}\\
+					\hline
+					Errore di conformità & Formato di documento, data o nome errato\\
+					\hline
+					Errore di sintassi & Sintassi scorretta o poco leggibile\\
+					\hline
+					Errore di contenuto & Contenuto errato\\
+					\hline
+					Parte mancante & Manca una parte. Controllare titoli vuoti e PLACEHOLDER\\
+					\hline			
+					\end{tabular}
+					\caption{elenca gli errori più frequenti nei documenti}
+					\label{Tabella 1:}
+				\end{table}
+				
+				\begin{table}[!h]
+					\centering
+					\begin{tabular}{|l|l|}
+						\hline
+					\textbf{Errore} & \textbf{Descrizione}\\
+					\hline
+					Errore di nomenclatura & Il nome non rispetta la rispettiva norma o non è dichiarativo della propria funzione\\
+					\hline
+					Eccesso di responsabilità & La classe o il metodo può essere suddiviso in parti più piccole\\
+					\hline			
+					\end{tabular}
+					\caption{elenca gli errori più frequenti nel codice}
+					\label{Tabella 2:}
+				\end{table}
+											
+				
 				\subparagraph{Analisi dinamica} \mbox{}\\
+				% PLACEHOLDER
 			\paragraph{Test} \mbox{}\\	
+			I test sono l'attività fondamentale dell'analisi dinamica: verificano che il codice scritto funzioni correttamente. Dei test ben scritti devono:
+			\begin{itemize}
+				\item Essere ripetibili;
+				\item Specificare l'ambiente di esecuzione;
+				\item Specificare input, output richiesti;
+				\item Avvertire di possibili side-effect;
+				\item Fornire informazioni sui risultati dell'esecuzione per futura analisi.
+
+			\end{itemize}			
+			Tale verifica è eseguita a vari livelli all'interno del software.
+			\begin{itemize}
 				\subparagraph{Test di unità} \mbox{}\\
+				I test di unità si eseguono su unità di software. Un unità di software è atomica, coesa e viene scritta da un singolo individuo: quindi, per costruzione, tende ad essere ben leggibile e di facile verifica. Le singole unità possono essere testate con l'ausilio di driver e stub.
 				\subparagraph{Test di integrazione} \mbox{}\\
+				Dopo aver superato i test di unità, le unità vengono assemblate in gruppi progressivamente più grandi per testare le relazioni tra le parti. Un agglomerato che supera il test di integrazione costituisce quindi una nuova unità per un agglomerato di grandezza maggiore. Questa procedura si ripete fino a raggiungere la grandezza totale del sistema.
 				\subparagraph{Test di sistema} \mbox{}\\\\
+				Una volta raggiunta la grandezza del sistema, esso viene testato nella sua interezza. In questa fase ci si assicura che il sistema rispetti tutte le specifiche definite nell'\textit{AdR}.
 				\subparagraph{Test di regressione} \mbox{}\\
-				\subparagraph{Test di accettazione} \mbox{}\\
+				Si effettua di seguito a una modifica del sistema, e consiste nella riesecuzione dei test esistenti.
+				\subparagraph{Test di collaudo} \mbox{}\\
+				Simile al test di sistema, ma eseguito con la collaborazione dei committenti, si occupa di verificare il prodotto intero, e in particolare la sua conformità alle aspettative. Il superamento del test di collaudo dichiara che il software è pronto per essere rilasciato.
 		\subsubsection{Strumenti}
 			\paragraph{Verifica ortografica} \mbox{}\\
 			\paragraph{Validazione W3C} \mbox{}\\
