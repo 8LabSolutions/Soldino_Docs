@@ -17,9 +17,9 @@ Il prodotto finale, integrando al suo interno le segnalazioni delle diverse
 applicazioni, semplifica e organizza il lavoro in un progetto. L'azienda propone,
 per la realizzazione di questa soluzione, l'utilizzo di quattro componenti:
 \begin{itemize}
-	\item \textbf{Producers}: hanno la funzionalità di recuperare le segnalazioni dalle applicazioni interessate e di pubblicarle, associandole ad un Topic;
-	\item \textbf{Broker}: uno strumento per istanziare e gestire i Topic;
-	\item \textbf{Consumers}: dovranno abbonarsi a dei Topic, recuperarne i messaggi e procedere al loro invio ai destinatari finali;
+	\item \textbf{Producers}: hanno la funzionalità di recuperare le segnalazioni dalle applicazioni interessate e di pubblicarle, associandole ad un topic;
+	\item \textbf{Broker}: uno strumento per istanziare e gestire i topic;
+	\item \textbf{Consumers}: dovranno abbonarsi a dei topic, recuperarne i messaggi e procedere al loro invio ai destinatari finali;
     \item \textbf{Componente custom specifico}: applicativo che permetta, previa lettura di metadati relativi agli utenti, di decidere quali tra questi sono i più appropriati a ricevere la notifica.
 \end{itemize}
 \subsubsection{Tecnologie interessate}
@@ -28,11 +28,11 @@ Per lo sviluppo dei componenti applicativi, l'azienda proponente consiglia:
 	\item \textbf{Java}, \textbf{Python}\glo, \textbf{Node.js}\glo: alternative di linguaggi per lo sviluppo dell'applicativo suggerite dal proponente; 
 	\item\textbf{Apache Kafka}\glo : software open-source per la gestione delle operazioni tra i vari client, da utilizzare come Broker;
 	\item \textbf{Docker}\glo: per creare i container relativi alle diverse componenti;
-	\item \textbf{API Redmine}\glo,  \textbf{GitLab}\glo,  \textbf{SonarQube}\glo,  \textbf{Telegram}\glo, \textbf{Slack}\glo: utilizzate per potersi interfacciarsi con omonime applicazioni.
+	\item \textbf{API\glosp Redmine}\glo,  \textbf{GitLab}\glo,  \textbf{SonarQube}\glo,  \textbf{Telegram}\glo, \textbf{Slack}\glo: utilizzate per potersi interfacciarsi con omonime applicazioni.
 \end{itemize}
 Inoltre il proponente richiede di:
 \begin{itemize}
-	\item fornire delle \textbf{API Rest}\glosp per ognuna delle componenti utilizzate nell'applicazione; 
+	\item fornire delle \textbf{API\glosp Rest}\glosp per ognuna delle componenti utilizzate nell'applicazione; 
 	\item utilizzare test unitari e d'integrazione per ogni componente; 
 	\item rispettare i 12 fattori presenti in "The Twelve-Factor App"\footnote{https://12factor.net/} nelle applicazioni sviluppate.
 \end{itemize}
@@ -49,7 +49,7 @@ Inoltre il proponente richiede di:
 \begin{itemize}
 	\item Lo sviluppo del componente Producer permetterebbe solamente l'apprendimento di aspetti marginali delle tecnologie coinvolte;
 	\item Il lavoro per la raccolta dati appare ripetitivo 
-	 e le API da utilizzare sembrano altamente specifiche per il progetto. Probabilmente queste conoscenze acquisite saranno poco spendibili nel futuro, specie se comparate alle offerte di altri capitolati;
+	 e le API\glosp da utilizzare sembrano altamente specifiche per il progetto. Probabilmente queste conoscenze acquisite saranno poco spendibili nel futuro, specie se comparate alle offerte di altri capitolati;
 	\item L'interesse da parte del gruppo di lavoro per questo capitolato\glosp si è dimostrato scarso.
 \end{itemize}
 
