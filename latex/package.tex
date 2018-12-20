@@ -6,14 +6,6 @@
 \usepackage[T1]{fontenc}
 \usepackage{tabularx}
 \usepackage{longtable}
-\usepackage{hyperref}
-\hypersetup{
-	colorlinks=true,
-	linkcolor=black,
-	filecolor=magenta,      
-	urlcolor=cyan,
-}
-\usepackage[bottom]{footmisc}
 \usepackage{fancyhdr}
 \usepackage{titlesec}
 \setcounter{secnumdepth}{4}
@@ -22,7 +14,11 @@
 \usepackage{graphicx}
 %\usepackage{float}
 \usepackage{layouts}
-
+%per mettere le note in fondo alla pagina
+\usepackage[bottom]{footmisc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{sectsty}
+\sectionfont{\centering\underline}
 
 %Comandi di impaginazione uguale per tutti i documenti
 \pagestyle{fancy}

@@ -1,6 +1,12 @@
+add-on
+agile
 apache kafka
+api
 api rest
+aws
+back end
 blockchain
+capitolato
 changelog
 continuous delivery
 continuous integration
@@ -19,12 +25,14 @@ event-driven
 firebase storage
 framework
 freeling
-front-end
+front end
 gamification
 gitlab
+governo
 hunpos
 json
 metamask
+milestone
 node.js
 open-source
 peer-to-peer
@@ -37,10 +45,14 @@ redux
 rete bayesiana
 scss
 server-side
+shortcut
 skill
 slack
 smart contract
 sonarqube
+staging
+stand-up
 telegram
 time series
+token
 workflow
