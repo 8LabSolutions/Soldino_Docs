@@ -124,7 +124,7 @@ I requisiti si raccolgono secondo modalità predefinite:
 	\item lettura del capitolato, analisi e approfondimento dello stesso;
 	\item confronto con il proponente;
 	\item confronto tra membri del team di progetto;
-	\item possono inoltre emergere dall'analisi di uno o più casi d'uso.
+	\item possono emergere dall'analisi di uno o più casi d'uso.
 \end{itemize}
 \subparagraph{Casi d'uso} \mbox{}\\
 Rappresenta un diagramma che esprime un comportamento,
@@ -139,18 +139,19 @@ La struttura dei casi d'uso è così suddivisa:
 	\item scopo e descrizione;
 	\item precondizione;
 	\item postcondizione;
-	\item flusso ase degli eventi;
+	\item flusso base degli eventi;
 	\item inclusioni(se presenti);
 	\item esclusioni(se presenti).
 \end{itemize}
 \subparagraph{Codice identificativo dei casi d'uso} \mbox{}\\
-Il codice di ogni caso d'uso seguirà questo formalismo:
-\textbf{UC\{codice\_padre\}.\{codice\_livello\}} \\
+Il codice di ogni caso d'uso seguirà questo formalismo: \\
+\centerline{\textbf{UC\{codice\_padre\}.\{codice\_livello\}}} \\
 Dove:
 \begin{itemize}
 	\item \textbf{codice\_padre}: numero che identifica univocamente i casi d'uso;
 	\item \textbf{codice\_livello}: numero progressivo che identifica i sottocasi. Può a sua volta includere altri livelli.
 \end{itemize}
+%esempio di caso d'uso?(immagine)
 \subparagraph{Requisiti} \mbox{}\\
 Ogni requisito è composto dalla seguente struttura:
 \begin{itemize}
@@ -160,7 +161,7 @@ Ogni requisito è composto dalla seguente struttura:
 \end{itemize}
 \subparagraph{Codice identificativo dei requisiti} \mbox{}\\
 Ogni requisito è conforme alla seguente codifica:\newline
-\centerline{R[Importanza][Tipo][Codice]}\newline
+\centerline{R[Importanza][Tipologia][Codice]}\newline
 Il significato delle cui voci è:
 \begin{itemize}
 	\item \textbf{Importanza} distingue i requisiti in:
@@ -169,45 +170,88 @@ Il significato delle cui voci è:
 		\item[2] Desiderabile;
 		\item[3] Opzionale.
 	\end{itemize}
-	\item \textbf{Tipo} distingue i requisiti in:
+	\item \textbf{Tipologia} distingue i requisiti in:
 	\begin{itemize}
 		\item[F] Funzionale;
 		\item[P] Prestazionale;
 		\item[Q] Qualitativo;
 		\item[V] Vincolo.
 	\end{itemize}
+	\item \textbf{Codice} è un identificatore univoco del requisito in forma gerarchica padre/figlio.
 \end{itemize}
 Ogni requisito contiene inoltre una descrizione testuale.
 \subparagraph{UML} \mbox{}\\
 I diagrammi UML devono essere realizzati usando la versione del linguaggio v2.0.
+
 \paragraph{Progettazione} \mbox{}\\
 \subparagraph{Scopo} \mbox{}\\
+L'attività di progettazione definisce, in funzione dei requisiti specificati nel documento "Analisi dei requisiti", le caratteristiche del prodotto software richiesto. Il compito di questa fase è di definire una soluzione del problema che sia soddisfacente per tutti gli stackeholders. La progettazione segue il procedimento inverso rispetto all'Analisi dei requisiti che divide il problema in parti per capirne completamente il dominio applicativo. La progettazione, infatti, rimette insieme le parti specificando le funzionalità dei sottosistemi in modo da ricondurre ad un'unica possibile soluzione.
 \subparagraph{Aspettative} \mbox{}\\
+Il processo ha come risultato la redazione dei documenti sopra citati. Ciò permetterà
+coerenza ed affidabilità in funzione del prodotto finale.
 \subparagraph{Descrizione} \mbox{}\\
+Le parti principali della Progettazione sono due:
+\begin{itemize}
+	\item \textbf{specifica tecnica}: contiene le specifiche della progettazione ad alto livello del prodotto e delle sue componenti; vengono elencati i diagrammi UML che verranno utilizzati per la realizzazione dell'architettura e i test di verifica.
+	\item \textbf{definizione di prodotto}: dettaglia ulteriormente l'attività di progettazione, integrando ciò che è riportato nella specifica tecnica. Definisce infine, i test necessari alla verifica.
+\end{itemize}
 \subparagraph{Specifica tecnica} \mbox{}\\
+Redatta dal progettista, dovrà includere:
+\begin{itemize}
+	\item \textbf{Diagrammi UML}:
+	\begin{itemize}
+		\item Diagrammi delle classi;
+		\item Diagrammi dei package;
+		\item Diagrammi di attività;
+		\item Diagrammi di sequenza.
+	\end{itemize}
+	\item \textbf{Tecnologie utilizzate}: devono essere descritte le tecnologie adottate specificandone l’utilizzo nel progetto, i vantaggi e gli svantaggi;
+	\item \textbf{Design pattern}: devono essere descritti i design pattern utilizzati per realizzare l’architettura. Ogni design pattern deve essere accompagnato da una descrizione ed un diagramma, che ne esponga il significato e la struttura;
+	\item \textbf{Tracciamento delle componenti}: ogni requisito deve riferirsi al componente che lo soddisfa.
+	\item \textbf{Test di integrazione}: l'unione delle parti, intese come classi di verifica, permette di verificare che ogni componente del sistema funzioni nella maniera voluta.
+\end{itemize}
 \subparagraph{Definizione di prodotto} \mbox{}\\
-% PLACEHOLDER da completare
+A carico del progettista c'è anche la definizione di prodotto che si sofferma su diversi aspetti tra i quali:
+\begin{itemize}
+	\item \textbf{Definizione delle classi}: ogni	classe deve essere descritta in modo da spiegarne in maniera esaustiva lo scopo e le funzionalità, evitando ridondanze;
+	\item \textbf{Tracciamento delle classi}: ogni requisito deve essere tracciato in modo da garantire che ogni classe ne soddisfi almeno uno e poter risalire alle classi a esso associate.
+	\item \textbf{Test di unità}: devono essere definiti al fine di verificare che le parti funzionino individualmente nel modo stabilito.
+\end{itemize}
 \paragraph{Codifica} \mbox{}\\
 \subparagraph{Scopo} \mbox{}\\
+Questa attività ha come scopo quello di normare l’effettiva realizzazione del prodotto software richiesto. In questa fase si concretizza la soluzione attraverso la programmazione. I programmatori dovranno attenersi a queste norme durante la fase di programmazione e implementazione.
 \subparagraph{Aspettative} \mbox{}\\
+L’uso di norme e convenzioni in questa fase, è fondamentale per permettere la generazione di codice leggibile e uniforme,  agevolare le fasi di manutenzione,  verifica e validazione e migliorare la qualità di prodotto.
 \subparagraph{Descrizione} \mbox{}\\
+La scrittura del codice dovrà rispettare quanto stabilito nella documentazione di prodotto e dovrà perseguire gli obiettivi di qualità definiti all’interno del documento "Piano di qualifica" per poter garantire una buona qualità al codice.
 \subparagraph{Stile di codifica} \mbox{}\\
-\subparagraph{Intestazione} \mbox{}\\
-\subparagraph{Versionamento} \mbox{}\\
-\subparagraph{Ricorsione} \mbox{}\\
-Nel codice sorgente si rispettano le seguenti convenzioni:
+Al fine di garantire uniformità nel codice del progetto ciascun membro del gruppo è
+tenuto a rispettare le seguenti norme:
 \begin{itemize}
-	\item Parentesi graffe: si segue lo stile di indentazione Stroustroup;
-	\item Tabulazioni: l'indentazione del codice si effettua mediante tabulazioni;
-	\item Nomi: 
-	\begin{itemize}
-		\item i nomi di classe cominciano per maiuscola;
-		\item i nomi di funzioni cominciano per lettera minuscola;
-		\item i nomi di variabili cominciano per lettera minuscola, a eccezione delle costanti, che sono scritte interamente in maiuscolo;
-		\item ogni nome composto da più parole è scritto tutto attaccato, con le iniziali dei nomi successivi al primo in maiuscolo; fanno 							eccezione i nomi composti di costanti, da separare con underscore.
-	\end{itemize}
+	\item \textbf{Indentazione}: I blocchi innestati devono essere correttamente indentati, usando per ciascun livello di indentazione quattro (4) spazi(fanno eccezione i commenti). Al fine di assicurare il rispetto di questa regola si consiglia di configurare adeguatamente il proprio editor o IDE; %IntelliJIDEA
+	%PLACEHOLDER immagine d'esempio
+	\item \textbf{Parentesizzazione}: è richiesto di inserire le parentesi di delimitazione dei costrutti in linea e non al di sotto di essi;
+	\item \textbf{Scrittura dei metodi}: quando possibile mantenere i metodi brevi. Spesso però, metodi "lunghi" sono più appropriati, quindi questa regola è da considerare fra quelle consigliate;
+	\item \textbf{Univocità dei nomi}: classi, metodi, variabili devono avere un nome univoco	ed esplicativo al fine di evitare quanto più possibile ambiguità di comprensione.
+	\item \textbf{Classi}: i nomi delle classi iniziano sempre con una lettera maiuscola;
+	\item \textbf{Costanti}: inomi delle costanti vanno scritte usando solo maiuscole;
+	\item \textbf{Metodi}: i nomi dei metodi iniziano con una lettera minuscola;
+	se sono composti da più parole le successive devono iniziare con una lettera
+	maiuscola.
+	\item \textbf{Lingua}: il codice, come anche i commenti deve essere scritto in lingua inglese;
 \end{itemize}
+%\subparagraph{Intestazione} \mbox{}\\
+%\subparagraph{Versionamento} \mbox{}\\
+\subparagraph{Ricorsione} \mbox{}\\
+L’uso della ricorsione va evitato quanto più possibile in  quanto  potrebbe
+indurre  ad  una  maggiore  occupazione  di  memoria  rispetto  a  soluzioni
+iterative.
 \subsubsection{Strumenti}
+Di seguito sono elencati gli strumenti utilizzati dal gruppo durante il progetto.
+\paragraph{???} \mbox{}\\
+
+\paragraph{Draw.io} \mbox{}\\
+Per la produzione dei diagrammi UML viene utilizzato Draw.io in quanto offre molte agevolazioni per la produzione veloce dei diagrammi e risulta semplice da usare.
 \paragraph{IntelliJ IDEA} \mbox{}\\
-\paragraph{IntelliJ IDEA} \mbox{}\\
-\paragraph{IntelliJ IDEA} \mbox{}\\
+IntelliJ IDEA viene utilizzato per la codifica in Java e JavaScript. Questo IDE offre piena compatibilità con Linux, Windows, macOS, oltre ad essere un potente editor con molte funzionalità integrate.
+\url{https://www.jetbrains.com/idea/}
