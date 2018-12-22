@@ -1,0 +1,46 @@
+apache kafka
+api rest
+blockchain
+changelog
+continuous delivery
+continuous integration
+cubit
+dapp/ðapp
+dashboard
+devops
+docker
+documento esterno
+documento interno
+ecr20
+eslint
+ethereum
+ethereum virtual machine
+event-driven
+firebase storage
+framework
+freeling
+front-end
+gamification
+gitlab
+hunpos
+json
+metamask
+node.js
+open-source
+peer-to-peer
+plug-in
+pos tagging
+python
+react
+redmine
+redux
+rete bayesiana
+scss
+server-side
+skill
+slack
+smart contract
+sonarqube
+telegram
+time series
+workflow
