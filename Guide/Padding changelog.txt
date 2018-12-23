@@ -1,4 +1,0 @@
-Per modificare il padding:
-- Vai nel file changelog.tex
-- Sotto \section{Tabelle delle modifiche} porre il seguente comando \renewcommand{\arraystretch}{1.5}
-- Alla fine di changelog.tex porre il comando \renewcommand{\arraystretch}{1} (resetta il padding a default)
