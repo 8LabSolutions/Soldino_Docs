@@ -18,7 +18,7 @@
 	\item[Governo\glo] Si riferisce ad un utente che si è autenticato al sistema con il ruolo di governo\glo.
 \end{description}
 \subsubsection{Attori secondari}\begin{description}[style=nextline]
-	\item[MetaMask]
+	\item[MetaMask\glo]
 	Plug-in per browser che permette di interfacciarsi con la rete Ethereum\glosp e di validare le transazioni con la propria chiave privata.
 
 \end{description}
@@ -57,9 +57,9 @@ In questa sezione vi sono elencati tutti i casi d'uso individuati. Ogni caso d'u
 	\item \textbf{Attori Primari}
 	Utente non autenticato
 	\item \textbf{Attori Secondari}
-	MetaMask\glo{}
+	MetaMask\glo
 	\item \textbf{Descrizione}
-	L'utente prova a farsi identificare tramite l'interfaccia web per mezzo di MetaMask\glo{}.
+	L'utente prova a farsi identificare tramite l'interfaccia web per mezzo di MetaMask\glo.
 	\item \textbf{Precondizione}
 	L'utente non è identificato dalla piattaforma web.
 	\item \textbf{Postcondizione}
@@ -67,24 +67,76 @@ In questa sezione vi sono elencati tutti i casi d'uso individuati. Ogni caso d'u
 	\item \textbf{Scenario}
 	L'utente non è identificato dal sito ed esegue il login.
 \end{itemize}
+\subsubsection{UC3.1 - Login automatico}
+\begin{itemize}
+	\item \textbf{Attori Primari}
+	Utente non autenticato
+	\item \textbf{Attori Secondari}
+	MetaMask\glo
+	\item \textbf{Descrizione}
+	In modo automatico, il sistema procede all'identificazione dell'utente.
+	\item \textbf{Precondizione}
+	L'utente richiede alla piattaforma di venire identificato.
+	\item \textbf{Postcondizione}
+	Tramite il plugin MetaMask\glo l'utente viene riconosciuto.
+	\item \textbf{Scenario}
+	L'utente non ancora autenticato richiede il login.
+	\item \textbf{Estensioni}
+	\begin{itemize}
+		\item \textbf{UC3.2}: Se l'utente non dispone di MetaMask o ha disabilitato l'estensione, viene visualizzato un messaggio di errore a riguardo.
+		\item \textbf{UC3.3}: Se l'utente tenta di accedere al sito tramite MetaMask senza aver mai provveduto a registrarsi, riceverà un messaggio di errore a riguardo.
+		\item \textbf{UC3.4}: Se l'utente tenta di accedere al sito senza inserire alcuna chiave, visualizzerà un messaggio di errore a riguardo.
+		\item \textbf{UC3.5}: Se l'utente si è registarto sul sito da poco ma non gli è ancora stato validato l'account, visualizzerà un messaggio di errore a riguardo.
+	\end{itemize}
+\end{itemize}
+\subsubsection{UC3.2 - Visualizzazione messaggio di errore relativo a MetaMask\glo non installato o bloccato}
+\begin{itemize}
+	\item \textbf{Attori Primari}
+	Utente non autenticato
+	\item \textbf{Descrizione}
+	\item \textbf{Precondizione}
+	\item \textbf{Postcondizione}
+	\item \textbf{Scenario}
+\end{itemize}
+\subsubsection{UC3.3 - Visualizzazione messaggio di errore relativo a chiave non registrata}
+\begin{itemize}
+	\item \textbf{Attori Primari}
+	Utente non autenticato
+	\item \textbf{Descrizione}
+	\item \textbf{Precondizione}
+	\item \textbf{Postcondizione}
+	\item \textbf{Scenario}
+\end{itemize}
+\subsubsection{UC3.4 - Visualizzazione messaggio di errore relativo a chiave nulla}
+\begin{itemize}
+	\item \textbf{Attori Primari}
+	Utente non autenticato
+	\item \textbf{Descrizione}
+	\item \textbf{Precondizione}
+	\item \textbf{Postcondizione}
+	\item \textbf{Scenario}
+\end{itemize}
+\subsubsection{UC3.5 - Visualizzazione schermata relativa a utente non verificato}
+\begin{itemize}
+	\item \textbf{Attori Primari}
+	Utente non autenticato
+	\item \textbf{Descrizione}
+	\item \textbf{Precondizione}
+	\item \textbf{Postcondizione}
+	\item \textbf{Scenario}
+\end{itemize}
 \subsubsection{UC4 - Logout}
-\begin{figure}[h]
-	\includegraphics[width=14.5cm]{res/images/UC4Logout.png}
-	\centering
-	\caption{UC4 - Logout}
-	
-\end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}
 	Utente autenticato
 	\item \textbf{Attori Secondari}
-	MetaMask\glo{}
+	MetaMask\glo
 	\item \textbf{Descrizione}
-	L'utente richiede il logout dalla piattaforma web ed effettua ciò tramite MetaMask\glo{}.
+	L'utente richiede il logout dalla piattaforma web ed effettua ciò tramite MetaMask\glo.
 	\item \textbf{Precondizione}
 	L'utente è identificato dalla piattaforma web e richiede di essere disconnesso dal sito.
 	\item \textbf{Postcondizione}
-	Vengono fornite le istruzioni necessarie per affrontare il Logout tramite MetaMask\glo{}. 
+	Vengono fornite le istruzioni necessarie per affrontare il Logout tramite MetaMask\glo. 
 	\item \textbf{Scenario}
 	L'utente è identificato dal sito ed esegue il logout.
 \end{itemize}
