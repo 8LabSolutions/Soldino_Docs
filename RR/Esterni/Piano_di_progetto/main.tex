@@ -11,19 +11,19 @@
 
 \tableofcontents
 \pagebreak
-
-\input{res/sections/11-Changelog.tex}
-
-
+\input{res/sections/01-Changelog.tex}
 
 \pagebreak
-\input{res/sections/01-Introduction.tex}
+
+\counterwithin{table}{subsection}
+\counterwithin{figure}{subsection}
+\input{res/sections/02-Introduction.tex}
 
 \pagebreak
 \input{res/sections/03-RisksAnalysis.tex}
 
 \pagebreak
-\input{res/sections/04-DevelopmentCycle.tex}
+\input{res/sections/04-DevelopmentModel.tex}
 
 \pagebreak
 \input{res/sections/05-Planning.tex}
@@ -37,11 +37,6 @@
 \pagebreak
 \input{res/sections/08-OrganizationChart.tex}
 
-\pagebreak
-\input{res/sections/09-FiguresList.tex}
-
-\pagebreak
-\input{res/sections/10-TablesList.tex}
-
-
+\listoffigures
+\listoftables
 \end{document}
