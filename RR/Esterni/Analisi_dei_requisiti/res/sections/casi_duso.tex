@@ -26,7 +26,7 @@
 \subsection{Elenco dei casi d'uso}
 In questa sezione vi sono elencati tutti i casi d'uso individuati. Ogni caso d'uso rappresenta uno scenario per uno o più attori, ovviamente applicabile anche ad eventuali attori derivati. Un singolo caso d'uso inoltre viene esplicato tramite diagrammi dei casi d'uso e possiede una precondizione seguida da una postcondizione.
 \begin{figure}[h]
-	\includegraphics[width=11cm]{res/images/Elenco_casi_d_uso.png}
+	\includegraphics[width=9.38cm]{res/images/Elenco_casi_d_uso.png}
 	\centering
 	\caption{Elenco dei casi d'uso}
 \end{figure}
@@ -39,8 +39,16 @@ In questa sezione vi sono elencati tutti i casi d'uso individuati. Ogni caso d'u
 	\item \textbf{Scenario}
 \end{itemize}
 \subsubsection{UC2 - Registrazione}
+\begin{itemize}
+	\item \textbf{Attori Primari}
+	\item \textbf{Descrizione}
+	\item \textbf{Precondizione}
+	\item \textbf{Postcondizione}
+	\item \textbf{Scenario}
+\end{itemize}
+\subsubsection{UC3 - Login}
 \begin{figure}[h]
-\includegraphics[width=15cm]{res/images/UC3Login.png}
+\includegraphics[width=14.5cm]{res/images/UC3Login.png}
 \centering
 \caption{UC3 - Login}
 
@@ -48,27 +56,31 @@ In questa sezione vi sono elencati tutti i casi d'uso individuati. Ogni caso d'u
 \begin{itemize}
 	\item \textbf{Attori Primari}
 	Utente non autenticato
+	\item \textbf{Attori Secondari}
+	MetaMask\glo{}
 	\item \textbf{Descrizione}
-	
+	L'utente prova a farsi identificare tramite l'interfaccia web per mezzo di MetaMask\glo{}.
 	\item \textbf{Precondizione}
+	L'utente non è identificato dalla piattaforma web.
 	\item \textbf{Postcondizione}
+	L'utente è identificato dalla piattaforma web. 
 	\item \textbf{Scenario}
-\end{itemize}
-\subsubsection{UC3 - Login}
-\begin{itemize}
-	\item \textbf{Attori Primari}
-	\item \textbf{Descrizione}
-	\item \textbf{Precondizione}
-	\item \textbf{Postcondizione}
-	\item \textbf{Scenario}
+	L'utente non è identificato dal sito ed esegue il Login.
 \end{itemize}
 \subsubsection{UC4 - Logout}
 \begin{itemize}
 	\item \textbf{Attori Primari}
+	Utente autenticato
+	\item \textbf{Attori Secondari}
+	MetaMask\glo{}
 	\item \textbf{Descrizione}
+	L'utente esegue il logout dalla piattaforma web.
 	\item \textbf{Precondizione}
+	L'utente è identificato dalla piattaforma web.
 	\item \textbf{Postcondizione}
+	L'utente non è più identificato dalla piattaforma web. 
 	\item \textbf{Scenario}
+	L'utente è identificato dal sito ed esegue il Logout.
 \end{itemize}
 \subsubsection{UC5 - Acquisto Beni}
 \begin{itemize}
