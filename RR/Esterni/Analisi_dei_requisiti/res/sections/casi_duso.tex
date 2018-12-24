@@ -94,36 +94,52 @@ In questa sezione vi sono elencati tutti i casi d'uso individuati. Ogni caso d'u
 	\item \textbf{Attori Primari}
 	Utente non autenticato
 	\item \textbf{Descrizione}
+	L'utente visualizza un errore relativo al fatto che non possiede MetaMask\glo o che lo ha disattivato.
 	\item \textbf{Precondizione}
+	L'utente richiede l'accesso al sito senza MetaMask\glo o con esso disattivato.
 	\item \textbf{Postcondizione}
+	L'utente è a conoscenza che è necessario attivare o installare MetaMask\glo per proseguire.
 	\item \textbf{Scenario}
+	L'utente non ancora identificato dal sistema tenta l'accesso senza aver prima installato MetaMask\glo oppure tenta il login con l'estensione disabilitata.
 \end{itemize}
 \subsubsection{UC3.3 - Visualizzazione messaggio di errore relativo a chiave non registrata}
 \begin{itemize}
 	\item \textbf{Attori Primari}
 	Utente non autenticato
 	\item \textbf{Descrizione}
+	L'utente visualizza un messaggio di errore dovuto al fatto che ha tentato il login senza essersi registrato in precedenza.
 	\item \textbf{Precondizione}
+	L'utente richiede l'accesso al sito.
 	\item \textbf{Postcondizione}
+	L'utente è consapevole di dover registrarsi per poter poi accedere.
 	\item \textbf{Scenario}
+	L'utente tenta il login alla piattaforma senza aver effettuato la registrazione.
 \end{itemize}
 \subsubsection{UC3.4 - Visualizzazione messaggio di errore relativo a chiave nulla}
 \begin{itemize}
 	\item \textbf{Attori Primari}
 	Utente non autenticato
 	\item \textbf{Descrizione}
+	L'utente visualizza un messaggio di errore relativo al fatto che ha provato ad accedere senza inserire alcuna chiave.
 	\item \textbf{Precondizione}
+	L'utente richiede il login al sito web.
 	\item \textbf{Postcondizione}
+	L'utente è consapevole di aver lasciato il form di login vuoto.
 	\item \textbf{Scenario}
+	L'utente prova a farsi identificare dal sito senza immettere le credenziali nell'apposito form di login.
 \end{itemize}
 \subsubsection{UC3.5 - Visualizzazione schermata relativa a utente non verificato}
 \begin{itemize}
 	\item \textbf{Attori Primari}
 	Utente non autenticato
 	\item \textbf{Descrizione}
+	L'utente visualizza una schermata che esplica il fatto che il proprio account non è ancora stato verificato in seguito alla registrazione.
 	\item \textbf{Precondizione}
+	L'utente richiede il login alla piattaforma.
 	\item \textbf{Postcondizione}
+	L'utente sa che dovrà attendere la validazione del propio account prima di procedere con il prossimo login.
 	\item \textbf{Scenario}
+	L'utente registrato da non molto tenta il login ma la richiesta viene rigettata, in quanto è a disposizione di un account non ancora validato.
 \end{itemize}
 \subsubsection{UC4 - Logout}
 \begin{itemize}
