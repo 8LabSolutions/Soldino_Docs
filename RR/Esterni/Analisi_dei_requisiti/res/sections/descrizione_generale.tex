@@ -1,12 +1,14 @@
 \section{Descrizione generale} 
 \subsection{Obiettivi del prodotto}
 
+Il progetto \textit{Soldino} si pone come obiettivo finale dimostrare la possibilità di creare una piattaforma che permetta il tracciamento dell'IVA in maniera automatica. Sfruttando le potenzialità della blockchain\glosp Ethereum\glo, mediante l'uso degli smart contracts\glosp e di un token\glosp coniato e distribuito dal governo\glo, verrà semplificato nettamente l'attuale sistema per la gestione dell'IVA.
+
 \subsection{Funzioni del prodotto}
-L'applicativo devo offrire funzionalità differenti ai diversi attori. In particolare: 
+L'applicativo deve offrire oltre alle funzionalità di compravendita di servizi e prodotti, la possibilità di controllare e gestire il pagamento dell'IVA. In particolare: 
 \begin{itemize}
 	\item il governo\glosp può:
 	\begin{enumerate}[label=\alph*.]
-		\item coniare e distribuire i \textit{Cubit} alle aziende ed ai cittadini;
+		\item coniare e distribuire i \textit{Cubit}\glosp alle aziende ed ai cittadini;
 		\item visualizzare la lista di tutte le aziende registrate alla piattaforma, e, per ognuna di esse, la relativa situazione sul pagamento dell'IVA (stato di debito o di credito); 
 	\end{enumerate}
 	
@@ -15,18 +17,32 @@ L'applicativo devo offrire funzionalità differenti ai diversi attori. In partic
 		\item registrare la propria attività commerciale sulla piattaforma;
 		\item gestire i prodotti e/o servizi offerti, ovvero devono essere disponibili le funzionalità di inserimento, rimozione e modifica;
 		\item scaricare le informazioni relative al saldo IVA trimestrale sotto forma di documento PDF;
-		\item ROBA DEL PUT ON HOLD CHE MANCO LORO SANNO
+		\item ASPETTARE LA RISPOSTA
 		\item effettuare il versamento dell'IVA al governo\glosp nel caso in cui il saldo trimestrale evidenti una situazione di debito.
 	\end{enumerate}
 	\item cittadini e proprietari di un'azienda possono:
 		\begin{enumerate}[label=\alph*.]
-			\item autenticarsi alla piattaforma utilizzando il plug-in Metamask\glo;
+			\item autenticarsi alla piattaforma utilizzando il plug-in MetaMask\glo;
 			\item acquistare prodotti offerti dalle aziende presenti sulla piattaforma.
 	\end{enumerate}
 \end{itemize}
 \subsection{Caratteristiche degli utenti}
-descrivere gli utenti e dire che requisiti dovrebbero avere per poter usufruire della piattaforma
+Si evidenziano sin da subito tre categorie di utenti:
+\begin{itemize}
+	\item cittadino;
+	\item azienda;
+	\item governo\glo.
+\end{itemize}
+Ai cittadini ed ai funzionari rappresentanti il governo\glosp è richiesta la conoscenza delle funzioni base, ovvero saper utilizzare un browser internet ed autenticarsi attraverso MetaMask\glo. In questa maniera sarà loro possibile usufruire  della piattaforma dopo l'autenticazione. Per i proprietari di aziende è richiesta inoltre la conoscenza dei principi base per la gestione dell'IVA. A tutti gli utenti è messa a disposizione una breve guida per facilitare l'installazione e l'utilizzo del plug-in sopracitato. 
+
 \subsection{Piattaforme di esecuzione}
+\subsubsection{Back end}
+Il back end\glosp sarà ospitato dalla rete Ethereum\glo. In particolare i dati riguardanti l'autenticazione degli utenti e le transazioni verranno salvati nella blockchain per mezzo degli smart contracts\glo. Eventuali dati aggiuntivi sugli utenti e sui prodotti/servizi verranno salvati utilizzando un database distribuito.
+
+\subsubsection{Front end}
+Come piattaforme per il front end\glosp verranno utilizzati i browser web Mozilla Firefox e Google Chrome, nella loro versione desktop. La piattaforma potrebbe risultare compatibile anche con i browser Opera e Brave, sebbene ciò esuli dagli scopi e requisiti del progetto.
+
 \subsection{Vincoli generali}
+L’utente, per usufruire del servizio, deve possedere un browser con installato il plug-in MetaMask\glo, una connessione internet ed una coppia di chiavi (pubblica-privata) compatibile con la rete Ethereum\glo. La coppia di chiavi viene fornita automaticamente all'accettazione della licenza di MetaMask\glo, ma se l’utente desidera può utilizzare chiavi già in suo possesso o generate attraverso altre procedure.
 
  
