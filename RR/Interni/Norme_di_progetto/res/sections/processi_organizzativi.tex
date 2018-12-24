@@ -74,7 +74,7 @@
 			\subparagraph{Comunicazioni interne} \mbox{}\\
 			Le comunicazioni interne al gruppo avvengono utilizzando Slack. Slack è un software di collaborazione aziendale adatto al lavoro di gruppo: permette di separare i vari argomenti di discussione in canali e i team in workspace; permette anche di integrare servizi di terze parti utili al team, tra cui bot e chiamate. Le sue funzionalità e la sua conformità agli scopi del progetto ne hanno favorito la scelta.
 			\subparagraph{Comunicazioni esterne} \mbox{}\\
-				Le comunicazioni con soggetti esterni al gruppo sono di competenza del responsabile. Gli strumenti predefiniti sono la posta elettronica, che utlizza l'indirizzo 8labsolutions@gmail.com creata in fase di creazione del team e, su suggerimento del proponente, un canale Slack creato proprio da Red Babel. Il responsabile ha il compito di tenere informati gli altri componenti del gruppo.
+			Le comunicazioni con soggetti esterni al gruppo sono di competenza del responsabile. Gli strumenti predefiniti sono la posta elettronica, che utlizza l'indirizzo 8labsolutions@gmail.com creata in fase di creazione del team e, su suggerimento del proponente, un canale Slack creato proprio da Red Babel. Il responsabile ha il compito di tenere informati gli altri componenti del gruppo.
 			\paragraph{Gestione degli incontri} \mbox{}\\
 			\subparagraph{Incontri interni del team} \mbox{}\\
 			Le riunioni interne del team sono organizzate dal responsabile in accordo con i membri del team. Per stabilire data e ora viene utilizzato Google Calendar, dove ogni membro segnala gli orari nel quale ha impegni.
@@ -96,10 +96,52 @@
 			La scelta di Trello è stata determinata dalla sua facilità di apprendimento, di controllo, dall'usabilità e dalla trasparenza che fornisce. La gestione dei ticket dev'essere scrupolosa, perché la lavagna di Trello tende ad affollarsi velocemente.
 			\paragraph{Gestione degli strumenti di versionamento} \mbox{}\\
 			\subparagraph{Repository} \mbox{}\\
+			Il sistema di versionamento usato è \textit{git}, noto sistema di controllo versione distribuito. In locale, ogni studente possiede una copia locale del prodotto del progetto, su cui lavora abitualmente. Sono consentiti vari programmi per lavorare nel modo più comodo con \textit{git}: linea di comando, GitFlow, GitKraken.\newline La versione comune e ufficiale del progetto è invece ospitata in una repository remota su Github all'indirizzo  
+			\url{https://github.com/8LabSolutions/Soldino}. Questa repository remota è pubblica quindi accessibile a tutti, inclusi cliente e committente.
 			\subparagraph{Struttura del repository} \mbox{}\\
+			La repository remota è divisa in cartelle:
+			\begin{itemize}
+				\item latex: qui risiedono i file di carattere generale, come i file relativi a package, che vengono inseriti in tutti i documenti, e i template, che sono usati come riferimento per nuovi documenti di struttura già definita;
+				\item guide: qui si trovano delle brevi guide di carattere pratico, come brevi spiegazioni per applicare comandi latex poco conosciuti;
+				\item \textit{RR}: qui si trovano i documenti, suddivisi tra esterni ed interni, la cui consegna è dovuta alla Revisione dei Requisiti;
+				\item Saranno aggiunte in futuro cartelle distinte nominate \textbf{RP}, \textbf{RQ} e \textbf{RA} contenenti i file delle rispettive consegne.
+			\end{itemize}
+			Lo scopo della suddivisione dei file per revisioni è di evidenziare il lavoro svolto per ogni milestone maggiore, e di rendere ben tracciabili i file che le riguardano.
 			\subparagraph{Tipi di file e .gitignore} \mbox{}\\
-			\subparagraph{Norme sui commit} \mbox{}\\
+			I file di interesse per il progetto sono:
+			\begin{itemize}
+				\item file .tex di \LaTeX{};
+				\item file .pdf che sono oggetto di consegna;
+				\item alcuni file testuali e immagini di supporto ai precedenti.
+			\end{itemize}			
+			Il file .gitignore presente al livello più esterno della repository elenca ed esclude tutti i file che vengono prodotti durante lo sviluppo del progetto ma non sono rilevanti per la consegna.
+			\subparagraph{Lavoro collaborativo e versionamento} \mbox{}\\
+			La repository \textit{git} è composta di vari rami per organizzare il lavoro e renderlo modulare e collaborativo. Ogni membro del team lavora in locale su un branch della repository; si può lavorare in più su uno stesso ramo; è auspicabile lavorare parallelamente su rami differenti a diverse attività parallele.\newline La sequenza di attività che un membro del team usa produrre un incremento da aggiungere al progetto è la seguente:
+			\begin{enumerate}
+				\item scelta del branch corretto;
+				\item pull dalla repository remota per aggiornare il proprio branch locale;
+				\item svolgimento del lavoro, che risulta nella modifica dei propri file locali;
+				\item aggiunta dei file al sistema di versionamento;
+				\item commit dei file aggiunti, corredato di un messaggio che identifica le modifiche;
+				\item push del commit nella repository remota;
+			\end{enumerate}
+			La routine serve massimizzare la consistenza e minimizzare i conflitti tra le repository locali e quelle remote, così da rendere il lavoro il più possibile piacevole e snello.
 			\paragraph{Gestione dei rischi} \mbox{}\\
+			Il Responsabile di Progetto ha il compito di rilevare i rischi e manutenerli, documentando quest'attività nel Piano di Progetto. La procedura da seguire per la gestione dei rischi è la seguente:
+			\begin{itemize}
+				\item individuare nuovi problemi e monitorare i rischi già previsti;
+				% PLACEHOLDER: sostituire la frase sottostante, in particolare 'riscontro'
+				\item registrare ogni riscontro previsto dei rischi nel Piano di Progetto;
+				\item aggiungere i nuovi rischi individuati nel Piano di Progetto;
+				\item ridefinire, se necessario, le strategie di progetto.
+			\end{itemize}
+				\subparagraph{Codifica dei rischi}
+				Le tipologie di rischi sono così codificate:
+				\begin{itemize}
+					\item \textbf{RT}: Rischi Tecnologici;
+					\item \textbf{RO}: Rischi Organizzativi;
+					\item \textbf{RI}: Rischi Interpersonali.
+				\end{itemize}
 			\paragraph{Gestione di progetto}
 			Per dividere le attività da svolgere e per assicurarsi che tutto venga svolto entro una deadline si è scelto di utilizzare Trello. Questo permette di assegnare una specifica attività ad un membro e impostare anche una scadenza entro la quale l'attività dovrà essere terminata. Sarà il responsabile a gestire la suddivisione degli incarichi tra i membri e a determinare le scadenze per queste.
 		\subsubsection{Strumenti utilizzati}
@@ -108,11 +150,13 @@
 			\item \textbf{Telegram}: strumento di messaggistica utilizzato per un'iniziale gestione del gruppo;
 			\item \textbf{Slack}: per la comunicazione interna del team ed eventuali comunicazioni col proponente;
 			\item \textbf{Trello}: per assegnare determinate attività e imporre una scadenza;
-			\item \textbf{GitHub}: per il versionamento e il salvataggio di tutti i file riguardanti il progetto.
+			\item \textbf{Git}: sistema di controllo di versionamento;
+			\item \textbf{Gitflow, GitKraken}: interfacce per utilizzare Git più comodamente sul proprio desktop;
+			\item \textbf{GitHub}: per il versionamento e il salvataggio in remoto di tutti i file riguardanti il progetto.
 			\item \textbf{Google Drive e Documenti}: utilizzato per la stesura di file che sono soggetti a molti cambiamenti e devono essere visibili a tutti nella sua versione più aggiornata come ad esempio il glossario;
 			\item \textbf{Google Calendar}: per facilitare il lavoro al responsabile ogni settimana ciascun membro indica quando non è disponibile per un incontro;
 			\item \textbf{Skype}: servizio che offre possibilità di fare video conferenze e chiamate VoIP, utilizzato per il primo contatto con il proponente;
-			\item \textbf{Sistemi operativi}: i requisiti non indicano la necessità di usare un sistema operativo specifico, verranno quindi utilizzati sia Windows sia Linux dai diversi membri del team; %se qualcuno usa MacOS aggiungerlo non so neanche se ha senso aggiungerlo nella lista. Nessuno usa Mac, che poveri che siamo :(
+			\item \textbf{Sistemi operativi}: i requisiti non indicano la necessità di usare un sistema operativo specifico, verranno quindi utilizzati sia Windows sia Linux dai diversi membri del team; %niente mac perché viva la povertà!
 		\end{itemize}
 	\subsection{Formazione del team}
-	Per quando riguarda l'apprendimento basilare delle tecnologie richieste per il progetto, il gruppo ha optato per l'auto-formazione. Nel caso di necessità membri con più conoscenze o esperienze in materia offriranno aiuto a chi ne ha necessità.			
+	Per quando riguarda l'apprendimento basilare delle tecnologie richieste per il progetto, il gruppo ha optato per l'auto-formazione. Le conoscenze acquisite sono condivise in maniera informale e consolidate o migliorate; le conoscenze più critiche sono condivise anche in forma scritta: nella repository si trovano infatti una Wiki per gli argomenti più comune e la cartella guide per alcune utilità pratiche minori. In caso di membri del team in difficoltà, i membri più esperti offrono spiegazioni,riferimenti o chi ne ha bisogno.			
