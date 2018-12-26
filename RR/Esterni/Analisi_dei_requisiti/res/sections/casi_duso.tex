@@ -285,40 +285,36 @@ In questa sezione vi sono elencati tutti i casi d'uso individuati. Ogni caso d'u
 
 \subsubsection{UC3 - Login}
 \begin{figure}[h]
-	\includegraphics[width=14.5cm]{res/images/UC3Login.png}
+	\includegraphics[width=9.5cm]{res/images/UC3Login.png} %da adattare in larghezza
 	\centering
 	\caption{UC3 - Login}
 	
 \end{figure}
 \begin{itemize}
-	\item \textbf{Attori Primari}
-	Utente non autenticato
-	\item \textbf{Attori Secondari}
+	\item \textbf{Attori Primari}:
+	utente non autenticato
+	\item \textbf{Attori Secondari}:
 	MetaMask\glo
-	\item \textbf{Descrizione}
-	L'utente prova a farsi identificare tramite l'interfaccia web per mezzo di MetaMask\glo.
-	\item \textbf{Precondizione}
-	L'utente non è identificato dalla piattaforma web.
-	\item \textbf{Postcondizione}
-	L'utente è identificato dalla piattaforma web. 
-	\item \textbf{Scenario}
-	L'utente non è identificato dal sito ed esegue il login.
+	\item \textbf{Descrizione}:
+	l'utente prova a farsi identificare tramite l'interfaccia web per mezzo di MetaMask\glo.
+	\item \textbf{Scenario}:
+	l'utente non è identificato dal sito ed esegue il login.
+	\item \textbf{Precondizione}:
+	l'utente non è identificato dalla piattaforma web.
+	\item \textbf{Postcondizione}:
+	l'utente è identificato dalla piattaforma web. 
 \end{itemize}
 \subsubsection{UC3.1 - Login automatico}
 \begin{itemize}
-	\item \textbf{Attori Primari}
+	\item \textbf{Attori Primari}:
 	Utente non autenticato
-	\item \textbf{Attori Secondari}
+	\item \textbf{Attori Secondari}:
 	MetaMask\glo
-	\item \textbf{Descrizione}
+	\item \textbf{Descrizione}:
 	In modo automatico, il sistema procede all'identificazione dell'utente.
-	\item \textbf{Precondizione}
-	L'utente richiede alla piattaforma di venire identificato.
-	\item \textbf{Postcondizione}
-	Tramite il plugin MetaMask\glo l'utente viene riconosciuto.
-	\item \textbf{Scenario}
+	\item \textbf{Scenario}:
 	L'utente non ancora autenticato richiede il login.
-	\item \textbf{Estensioni}
+	\item \textbf{Estensioni}:
 	\begin{itemize}
 		\item \textbf{UC2.5}: se l'utente non dispone di MetaMask o ha disabilitato l'estensione, viene visualizzato un messaggio di errore a riguardo;
 		\item \textbf{UC2.6}: se l'utente non possiede una chiave\glosp su MetaMask\glo, esso viene avvisato tramite l'apposito messaggio di errore;
@@ -326,109 +322,113 @@ In questa sezione vi sono elencati tutti i casi d'uso individuati. Ogni caso d'u
 		
 		\item \textbf{UC3.5}: Se l'utente si è registarto sul sito da poco ma non gli è ancora stato validato l'account, visualizzerà un messaggio di errore a riguardo.
 	\end{itemize}
+	\item \textbf{Precondizione}:
+	L'utente richiede alla piattaforma di venire identificato.
+	\item \textbf{Postcondizione}:
+	Tramite il plugin MetaMask\glo l'utente viene riconosciuto.
 \end{itemize}
 \subsubsection{UC3.2 - Visualizzazione messaggio di errore relativo a chiave non registrata}
 \begin{itemize}
-	\item \textbf{Attori Primari}
+	\item \textbf{Attori Primari}:
 	Utente non autenticato
-	\item \textbf{Descrizione}
+	\item \textbf{Descrizione}:
 	L'utente visualizza un messaggio di errore dovuto al fatto che ha tentato il login senza essersi registrato in precedenza.
-	\item \textbf{Precondizione}
-	L'utente richiede l'accesso al sito.
-	\item \textbf{Postcondizione}
-	L'utente è consapevole di dover registrarsi per poter poi accedere.
-	\item \textbf{Scenario}
+	\item \textbf{Scenario}:
 	L'utente tenta il login alla piattaforma senza aver effettuato la registrazione.
+	\item \textbf{Precondizione}:
+	L'utente richiede l'accesso al sito.
+	\item \textbf{Postcondizione}:
+	L'utente è consapevole di dover registrarsi per poter poi accedere.
 \end{itemize}
 \subsubsection{UC3.3 - Visualizzazione schermata relativa a utente non verificato}
 \begin{itemize}
-	\item \textbf{Attori Primari}
+	\item \textbf{Attori Primari}:
 	Utente non autenticato
-	\item \textbf{Descrizione}
+	\item \textbf{Descrizione}:
 	L'utente visualizza una schermata che esplica il fatto che il proprio account non è ancora stato verificato in seguito alla registrazione.
-	\item \textbf{Precondizione}
-	L'utente richiede il login alla piattaforma.
-	\item \textbf{Postcondizione}
-	L'utente sa che dovrà attendere la validazione del propio account prima di procedere con il prossimo login.
-	\item \textbf{Scenario}
+	\item \textbf{Scenario}:
 	L'utente registrato da non molto tenta il login ma la richiesta viene rigettata, in quanto è a disposizione di un account non ancora validato.
+	\item \textbf{Precondizione}:
+	L'utente richiede il login alla piattaforma.
+	\item \textbf{Postcondizione}:
+	L'utente sa che dovrà attendere la validazione del propio account prima di procedere con il prossimo login.
 \end{itemize}
 \subsubsection{UC4 - Logout}
 \begin{itemize}
-	\item \textbf{Attori Primari}
+	\item \textbf{Attori Primari}:
 	Utente autenticato
-	\item \textbf{Attori Secondari}
+	\item \textbf{Attori Secondari}:
 	MetaMask\glo
-	\item \textbf{Descrizione}
+	\item \textbf{Descrizione}:
 	L'utente richiede il logout dalla piattaforma web ed effettua ciò tramite MetaMask\glo.
-	\item \textbf{Precondizione}
-	L'utente è identificato dalla piattaforma web e richiede di essere disconnesso dal sito.
-	\item \textbf{Postcondizione}
-	Vengono fornite le istruzioni necessarie per affrontare il Logout tramite MetaMask\glo. 
-	\item \textbf{Scenario}
+	\item \textbf{Scenario}:
 	L'utente è identificato dal sito ed esegue il logout.
+	\item \textbf{Precondizione}:
+	L'utente è identificato dalla piattaforma web e richiede di essere disconnesso dal sito.
+	\item \textbf{Postcondizione}:
+	Vengono fornite le istruzioni necessarie per affrontare il Logout tramite MetaMask\glo. 
 \end{itemize}
 \subsubsection{UC5 - Acquisto Beni}
 \begin{itemize}
-	\item \textbf{Attori Primari}
-	\item \textbf{Descrizione}
-	\item \textbf{Precondizione}
-	\item \textbf{Postcondizione}
-	\item \textbf{Scenario}
+	\item \textbf{Attori Primari}:
+	\item \textbf{Descrizione}:
+	\item \textbf{Scenario}:
+	\item \textbf{Precondizione}:
+	\item \textbf{Postcondizione}:
 \end{itemize}
 \subsubsection{UC6 - Vendita Beni}
 \begin{itemize}
-	\item \textbf{Attori Primari}
-	\item \textbf{Descrizione}
-	\item \textbf{Precondizione}
-	\item \textbf{Postcondizione}
-	\item \textbf{Scenario}
+	\item \textbf{Attori Primari}:
+	\item \textbf{Descrizione}:
+	\item \textbf{Scenario}:
+	\item \textbf{Precondizione}:
+	\item \textbf{Postcondizione}:
 \end{itemize}
 \subsubsection{UC7 - Gestione Fatture}
 \begin{itemize}
-	\item \textbf{Attori Primari}
-	\item \textbf{Descrizione}
-	\item \textbf{Precondizione}
-	\item \textbf{Postcondizione}
-	\item \textbf{Scenario}
+	\item \textbf{Attori Primari}:
+	\item \textbf{Descrizione}:
+	\item \textbf{Scenario}:
+	\item \textbf{Precondizione}:
+	\item \textbf{Postcondizione}:
 \end{itemize}
 \subsubsection{UC8 - Gestione Beni}
 \begin{itemize}
-	\item \textbf{Attori Primari}
-	\item \textbf{Descrizione}
-	\item \textbf{Precondizione}
-	\item \textbf{Postcondizione}
-	\item \textbf{Scenario}
+	\item \textbf{Attori Primari}:
+	\item \textbf{Descrizione}:
+	\item \textbf{Scenario}:
+	\item \textbf{Precondizione}:
+	\item \textbf{Postcondizione}:
 \end{itemize}
 \subsubsection{UC9 -  Coniazione Cubit}
 \begin{itemize}
-	\item \textbf{Attori Primari}
-	\item \textbf{Descrizione}
-	\item \textbf{Precondizione}
-	\item \textbf{Postcondizione}
-	\item \textbf{Scenario}
+	\item \textbf{Attori Primari}:
+	\item \textbf{Descrizione}:
+	\item \textbf{Scenario}:
+	\item \textbf{Precondizione}:
+	\item \textbf{Postcondizione}:
 \end{itemize}
 \subsubsection{UC10 - Distribuzione Cubit}
 \begin{itemize}
-	\item \textbf{Attori Primari}
-	\item \textbf{Descrizione}
-	\item \textbf{Precondizione}
-	\item \textbf{Postcondizione}
-	\item \textbf{Scenario}
+	\item \textbf{Attori Primari}:
+	\item \textbf{Descrizione}:
+	\item \textbf{Scenario}:
+	\item \textbf{Precondizione}:
+	\item \textbf{Postcondizione}:
 \end{itemize}
 \subsubsection{UC11 - Visualizzazione Lista Aziende}
 \begin{itemize}
-	\item \textbf{Attori Primari}
-	\item \textbf{Descrizione}
-	\item \textbf{Precondizione}
-	\item \textbf{Postcondizione}
-	\item \textbf{Scenario}
+	\item \textbf{Attori Primari}:
+	\item \textbf{Descrizione}:
+	\item \textbf{Scenario}:
+	\item \textbf{Precondizione}:
+	\item \textbf{Postcondizione}:
 \end{itemize}
 \subsubsection{UC12 - Validazione Nuovo Account Registrato}
 \begin{itemize}
-	\item \textbf{Attori Primari}
-	\item \textbf{Descrizione}
-	\item \textbf{Precondizione}
-	\item \textbf{Postcondizione}
-	\item \textbf{Scenario}
+	\item \textbf{Attori Primari}:
+	\item \textbf{Descrizione}:
+	\item \textbf{Scenario}:
+	\item \textbf{Precondizione}:
+	\item \textbf{Postcondizione}:
 \end{itemize}
