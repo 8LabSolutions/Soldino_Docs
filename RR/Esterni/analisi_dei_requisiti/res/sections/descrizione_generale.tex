@@ -10,6 +10,7 @@ L'applicativo deve offrire oltre alle funzionalità di compravendita di servizi 
 	\begin{enumerate}[label=\alph*.]
 		\item coniare e distribuire i \textit{Cubit}\glosp alle aziende ed ai cittadini;
 		\item visualizzare la lista di tutte le aziende registrate alla piattaforma, e, per ognuna di esse, la relativa situazione sul pagamento dell'IVA (stato di debito o di credito); 
+		\item rimborsare le aziende che al saldo dell'IVA trimestrale risultano in stato di credito.
 	\end{enumerate}
 	\item cittadini ed aziende:
 	\begin{enumerate}[label=\alph*.]
@@ -20,14 +21,14 @@ L'applicativo deve offrire oltre alle funzionalità di compravendita di servizi 
 	\begin{enumerate}[label=\alph*.]
 		\item registrare la propria attività commerciale sulla piattaforma;
 		\item gestire i prodotti e/o servizi offerti, ovvero devono essere disponibili le funzionalità di inserimento, rimozione e modifica;
-		\item scaricare le informazioni relative al saldo IVA trimestrale sotto forma di documento PDF;
 		\item acquistare un prodotto/servizio richiedendo una dilazione\glosp del pagamento;
-		\item calcolare la ricevuta IVA e consegnarla al venditore. Al compratore viene recapitata automaticamente la conferma dell'ordine. Dunque possono verificarsi due situazioni distinte:
+		\item calcolare la ricevuta IVA riguardante una vendita ed inviarla al compratore: successivamente all'acquisto viene recapitata automaticamente, al compratore, la conferma dell'ordine. Dunque possono verificarsi due situazioni distinte:
 		\begin{enumerate}[label=\roman*.]
-			\item \textbf{l'azienda ha selezionato come metodo di pagamento il versamento immediato}: il sistema provvede a sottrarre la somma dovuta al compratore, che viene trattenuta nel sistema. Successivamente, dopo la ricezione della conferma dell'ordine, può confermare il pagamento, con successiva ricezione della fattura IVA e inoltro del pagamento al venditore. 
-			\item \textbf{l'azienda ha selezionato la dilazione\glosp del pagamento}: viene inviata la conferma dell'ordine. Successivamente l'azienda può confermare o rifiutare l'ordine. In caso di conferma il venditore procede con la consegna del prodotto/servizio, mentre il compratore è legalmente vincolato al pagamento futuro.  
+			\item \textbf{l'azienda-cliente ha selezionato come metodo di pagamento il versamento immediato}: il sistema provvede a sottrarre la somma dovuta al compratore, che viene trattenuta nel sistema. Successivamente, dopo la ricezione della conferma dell'ordine, può a sua volta confermare il pagamento. In tal caso riceverà la fattura IVA ed il pagamento verrà inoltrato al venditore. 
+			\item \textbf{l'azienda-cliente ha selezionato la dilazione\glosp del pagamento}: viene inviata la conferma dell'ordine. Successivamente l'azienda può confermare o rifiutare l'ordine. In caso di conferma il venditore procede con la consegna del prodotto/servizio, mentre il compratore è legalmente vincolato al pagamento futuro.  
 		\end{enumerate}
-		In entrambi i casi, in caso di rifiuto della proposta d'ordine, i soldi trattenuti vengono restituiti al compratore, mentre il venditore non invia nessun prodotto/servizio.
+		In entrambi i casi, al verificarsi del rifiuto della proposta d'ordine, la somma trattenuta viene restituita al compratore, mentre il venditore non invia nessun prodotto/servizio;
+		\item scaricare le informazioni relative al saldo IVA trimestrale sotto forma di documento PDF;
 		\item effettuare il versamento dell'IVA al governo\glosp nel caso in cui il saldo trimestrale evidenzi una situazione di debito.
 	\end{enumerate}
 
