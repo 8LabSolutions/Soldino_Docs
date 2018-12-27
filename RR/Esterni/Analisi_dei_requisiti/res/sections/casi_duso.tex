@@ -285,89 +285,117 @@ In questa sezione vi sono elencati tutti i casi d'uso individuati. Ogni caso d'u
 
 \subsubsection{UC3 - Login}
 \begin{figure}[h]
-	\includegraphics[width=9.5cm]{res/images/UC3Login.png} %da adattare in larghezza
+	\includegraphics[width=10.5cm]{res/images/UC3Login.png} %da adattare in larghezza
 	\centering
 	\caption{UC3 - Login}
 	
 \end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}:
-	utente non autenticato
+	utente non autenticato;
 	\item \textbf{Attori Secondari}:
-	MetaMask\glo
+	MetaMask\glo;
 	\item \textbf{Descrizione}:
-	l'utente prova a farsi identificare tramite l'interfaccia web per mezzo di MetaMask\glo.
+	l'utente prova a farsi identificare tramite l'interfaccia web per mezzo di MetaMask\glo;
 	\item \textbf{Scenario}:
-	l'utente non è identificato dal sito ed esegue il login.
+	l'utente non è identificato dal sito ed esegue il login;
 	\item \textbf{Precondizione}:
-	l'utente non è identificato dalla piattaforma web.
+	l'utente non è identificato dalla piattaforma web;
 	\item \textbf{Postcondizione}:
 	l'utente è identificato dalla piattaforma web. 
 \end{itemize}
 \subsubsection{UC3.1 - Login automatico}
 \begin{itemize}
 	\item \textbf{Attori Primari}:
-	Utente non autenticato
+	utente non autenticato;
 	\item \textbf{Attori Secondari}:
-	MetaMask\glo
+	MetaMask\glo;
 	\item \textbf{Descrizione}:
-	In modo automatico, il sistema procede all'identificazione dell'utente.
+	in modo automatico, il sistema procede all'identificazione dell'utente;
 	\item \textbf{Scenario}:
-	L'utente non ancora autenticato richiede il login.
+	l'utente non ancora autenticato richiede il login;
 	\item \textbf{Estensioni}:
 	\begin{itemize}
 		\item \textbf{UC2.5}: se l'utente non dispone di MetaMask o ha disabilitato l'estensione, viene visualizzato un messaggio di errore a riguardo;
 		\item \textbf{UC2.6}: se l'utente non possiede una chiave\glosp su MetaMask\glo, esso viene avvisato tramite l'apposito messaggio di errore;
-		\item \textbf{UC3.3}: Se l'utente tenta di accedere al sito tramite MetaMask senza aver mai provveduto a registrarsi, riceverà un messaggio di errore a riguardo.
-		
-		\item \textbf{UC3.5}: Se l'utente si è registarto sul sito da poco ma non gli è ancora stato validato l'account, visualizzerà un messaggio di errore a riguardo.
+		\item \textbf{UC3.3}: se l'utente tenta di accedere al sito tramite MetaMask senza aver mai provveduto a registrarsi, riceverà un messaggio di errore a riguardo;
+		\item \textbf{UC3.5}: se l'utente si è registarto sul sito da poco ma non gli è ancora stato validato l'account, visualizzerà un messaggio di errore a riguardo.
 	\end{itemize}
 	\item \textbf{Precondizione}:
-	L'utente richiede alla piattaforma di venire identificato.
+	l'utente richiede alla piattaforma di venire identificato;
 	\item \textbf{Postcondizione}:
-	Tramite il plugin MetaMask\glo l'utente viene riconosciuto.
+	tramite il plugin MetaMask\glo l'utente viene riconosciuto.
 \end{itemize}
 \subsubsection{UC3.2 - Visualizzazione messaggio di errore relativo a chiave non registrata}
 \begin{itemize}
 	\item \textbf{Attori Primari}:
-	Utente non autenticato
+	utente non autenticato;
 	\item \textbf{Descrizione}:
-	L'utente visualizza un messaggio di errore dovuto al fatto che ha tentato il login senza essersi registrato in precedenza.
+	l'utente visualizza un messaggio di errore dovuto al fatto che ha tentato il login senza essersi registrato in precedenza;
 	\item \textbf{Scenario}:
-	L'utente tenta il login alla piattaforma senza aver effettuato la registrazione.
+	l'utente tenta il login alla piattaforma senza aver effettuato la registrazione;
 	\item \textbf{Precondizione}:
-	L'utente richiede l'accesso al sito.
+	l'utente richiede l'accesso al sito;
 	\item \textbf{Postcondizione}:
-	L'utente è consapevole di dover registrarsi per poter poi accedere.
+	l'utente è consapevole di dover registrarsi per poter poi accedere.
 \end{itemize}
 \subsubsection{UC3.3 - Visualizzazione schermata relativa a utente non verificato}
 \begin{itemize}
 	\item \textbf{Attori Primari}:
-	Utente non autenticato
+	utente non autenticato;
 	\item \textbf{Descrizione}:
-	L'utente visualizza una schermata che esplica il fatto che il proprio account non è ancora stato verificato in seguito alla registrazione.
+	l'utente visualizza una schermata che esplica il fatto che il proprio account non è ancora stato verificato in seguito alla registrazione;
 	\item \textbf{Scenario}:
-	L'utente registrato da non molto tenta il login ma la richiesta viene rigettata, in quanto è a disposizione di un account non ancora validato.
+	l'utente registrato da non molto tenta il login ma la richiesta viene rigettata, in quanto è a disposizione di un account non ancora validato;
 	\item \textbf{Precondizione}:
-	L'utente richiede il login alla piattaforma.
-	\item \textbf{Postcondizione}:
-	L'utente sa che dovrà attendere la validazione del propio account prima di procedere con il prossimo login.
+	l'utente richiede il login alla piattaforma;
+	\item \textbf{Postcondizione}: l'utente sa che dovrà attendere la validazione del propio account prima di procedere con il prossimo login.
 \end{itemize}
 \subsubsection{UC4 - Logout}
+\begin{figure}[h]
+	\includegraphics[width=15.5cm]{res/images/UC4Logout.png} %da adattare in larghezza
+	\centering
+	\caption{UC4 - Logout}
+	
+\end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}:
-	Utente autenticato
+	utente autenticato;
 	\item \textbf{Attori Secondari}:
-	MetaMask\glo
-	\item \textbf{Descrizione}:
-	L'utente richiede il logout dalla piattaforma web ed effettua ciò tramite MetaMask\glo.
-	\item \textbf{Scenario}:
-	L'utente è identificato dal sito ed esegue il logout.
-	\item \textbf{Precondizione}:
-	L'utente è identificato dalla piattaforma web e richiede di essere disconnesso dal sito.
-	\item \textbf{Postcondizione}:
-	Vengono fornite le istruzioni necessarie per affrontare il Logout tramite MetaMask\glo. 
+	MetaMask\glo;
+	\item \textbf{Descrizione}: l'utente richiede il logout dalla piattaforma web ed effettua ciò tramite MetaMask\glo;
+	\item \textbf{Scenario}: l'utente è identificato dal sito ed esegue il logout.
+	\item \textbf{Precondizione}: l'utente è identificato dalla piattaforma web e richiede di essere disconnesso dal sito;
+	\item \textbf{Postcondizione}: vengono fornite le istruzioni necessarie per affrontare il Logout tramite MetaMask\glo. 
 \end{itemize}
+\subsubsection{UC4.1 - Richiesta disconnessione}
+\begin{itemize}
+	\item \textbf{Attori Primari}:
+	utente autenticato;
+	\item \textbf{Attori Secondari}:
+	MetaMask\glo;
+	\item \textbf{Descrizione}: l'utente clicca sul bottone dedicato al logout e si appresta a leggere le istruzioni per farlo tramite MetaMask\glo;
+	\item \textbf{Scenario}: l'utente richiede la disconnessione dalla piattaforma web;
+	\item \textbf{Estensioni}:
+	\begin{itemize}
+		\item \textbf{UC4.2}: al conseguimento della richiesta di logout, l'utente riceve informazioni sul da farsi per procedere a completare ciò;
+	\end{itemize}
+	\item \textbf{Precondizione}: l'utente autenticato dal sistema non ha idea di come disconnettersi dal sito;
+	\item \textbf{Postcondizione}: l'utente può visualizzare il modo corretto per eseguire la disconnessione dalla piattaforma.
+	
+\end{itemize}
+\subsubsection{UC4.2 - Visualizzazione istruzioni per disconnettersi tramite MetaMask\glo}
+\begin{itemize}
+	\item \textbf{Attori Primari}:
+	utente autenticato;
+	\item \textbf{Attori Secondari}:
+	MetaMask\glo;
+	\item \textbf{Descrizione}: l'utente visualizza le istruzioni per procedere al logout tramite MetaMask\glo;
+	\item \textbf{Scenario}: in seguito alla richiesta di disconnessione, l'utente riceve le informazioni necessarie per effettuare tale operazione;
+	\item \textbf{Precondizione}:l 'utente non ha idea di come disconnettersi tramite MetaMask\glo;
+	\item \textbf{Postcondizione}: l'utente ha le abilità necessarie al conseguimento di un logout eseguito in modo corretto e sicuro tramite il plugin MetaMask\glo.
+\end{itemize}
+
 \subsubsection{UC5 - Acquisto Beni}
 \begin{itemize}
 	\item \textbf{Attori Primari}:
