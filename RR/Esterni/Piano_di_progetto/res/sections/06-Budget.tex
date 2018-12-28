@@ -749,7 +749,9 @@ I dati ottenuti si possono riassumere nel seguente areogramma:
 \end{figure}
 
 
-\subsection{Totale}
+\subsection{Riepilogo}
+\subsubsection{Ore totali}
+\paragraph{Suddivisione del lavoro}\mbox{}\\
 Vengono riportate il totale delle ore del progetto in cui sono presenti le ore di investimento e le ore rendicontate a carico del committente:
 \begin{table}[H]
 				\centering\renewcommand{\arraystretch}{1.5}
@@ -827,9 +829,14 @@ Vengono riportate il totale delle ore del progetto in cui sono presenti le ore d
 \end{table}
 
 Una rappresentazione visiva della suddivisione oraria viene data dal seguente grafico:
-%aggiungere immagine del diagramma
+\begin{figure}[H] 
+			\centering 
+				\includegraphics[width=0.5\textwidth]{res/images/istogramma_riepilogo.png}\\
+				\caption{Istogramma della ripartizione di ore totali di investimento e rendicontate}
+			\label{IstogrammaRiepilogo}
+\end{figure}
 
-\subsubsection{Prospetto economico}
+\paragraph{Prospetto economico}\mbox{}\\
 In questa fase il costo per ogni ruolo è il seguente:
 \begin{table}[H]
 				\centering\renewcommand{\arraystretch}{1.5}
@@ -884,4 +891,163 @@ In questa fase il costo per ogni ruolo è il seguente:
 \end{table}
 
 I dati ottenuti si possono riassumere nel seguente diagramma:
-%aggiungere immagine del diagramma
+\begin{figure}[H] 
+			\centering 
+				\includegraphics[width=0.5\textwidth]{res/images/areogramma_riepilogo.png}\\
+				\caption{Areogramma delle ore totali per ruolo}
+			\label{AreogrammaRiepilogoRuoli}
+\end{figure}
+
+
+\subsubsection{Ore rendicontate}
+\paragraph{Suddivisione del lavoro}\mbox{}\\
+\linebreak
+Le ore rendicontate sono riassunte nella seguente tabella:
+\begin{table}[H]
+				\centering\renewcommand{\arraystretch}{1.5}
+				\arrayrulecolor{white}
+                \begin{tabular}{c|c|c|c|c|c|c|c}
+                               
+                \rowcolorhead
+                 {\colorhead \textbf{Nominativo}} &
+                 {\colorhead \textbf{Re}} & 
+                 {\colorhead \textbf{Am}} & 
+                 {\colorhead\textbf{An}} & 
+                 {\colorhead \textbf{Pt}} & 
+                 {\colorhead\textbf{Pr}} & 
+                 {\colorhead \textbf{Ve}} & 
+                 {\colorhead \textbf{Ore totali} }\\
+				
+                \rowcolorlight
+                 {\colorbody Federico Bicciato} & {\colorbody 6} & 
+                 {\colorbody 3} & {\colorbody 17} & {\colorbody 20} & 
+                 {\colorbody 15} & {\colorbody 30} & {\colorbody 91} 
+				\\
+				
+				\rowcolordark
+                 {\colorbody Mattia Bolzonella} & {\colorbody 5} & 
+                 {\colorbody 6} & {\colorbody 12} & {\colorbody 23} & 
+                 {\colorbody 16} & {\colorbody 28} & {\colorbody 90} 
+				\\	
+				
+				\rowcolorlight
+                 {\colorbody Francesco Donè} & {\colorbody 8} & 
+                 {\colorbody 5} & {\colorbody 10} & {\colorbody 20} & 
+                 {\colorbody 20} & {\colorbody 27} & {\colorbody 90} 
+				\\
+				
+				\rowcolordark
+                 {\colorbody Sara Feltrin} & {\colorbody 6} & 
+                 {\colorbody 9} & {\colorbody 20} & {\colorbody 12} & 
+                 {\colorbody 17} & {\colorbody 26} & {\colorbody 90} 
+				\\
+                
+                \rowcolorlight
+                 {\colorbody Giacomo Greggio} & {\colorbody 6} & 
+                 {\colorbody 4} & {\colorbody 13} & {\colorbody 23} & 
+                 {\colorbody 12} & {\colorbody 32} & {\colorbody 90} 
+				\\
+				
+				\rowcolordark
+                 {\colorbody Samuele Piazzetta} & {\colorbody 8} & 
+                 {\colorbody 6} & {\colorbody 12} & {\colorbody 25} & 
+                 {\colorbody 17} & {\colorbody 22} & {\colorbody 90} 
+				\\	
+				
+				\rowcolorlight
+                 {\colorbody Paolo Pozzan} & {\colorbody 7} & 
+                 {\colorbody 9} & {\colorbody 18} & {\colorbody 15} & 
+                 {\colorbody 9} & {\colorbody 32} & {\colorbody 90} 
+				\\
+				
+				\rowcolordark
+                 {\colorbody Matteo Santinon} & {\colorbody 4} & 
+                 {\colorbody 8} & {\colorbody 11} & {\colorbody 26} & 
+                 {\colorbody 16} & {\colorbody251} & {\colorbody 90} 
+				\\
+				
+				\rowcolorlight
+                 {\colorbody \textbf{Ore totali ruolo}} & {\colorbody 50} & 
+                 {\colorbody 50} & {\colorbody 96} & {\colorbody 175} & 
+                 {\colorbody 128 } & {\colorbody 222} & {\colorbody 721} 
+				\\
+
+                \end{tabular}
+                \caption{Distribuzione delle ore nel periodo di Progettazione di 
+				dettaglio e codifica}
+
+\end{table}
+
+\begin{figure}[H] 
+			\centering 
+				\includegraphics[width=0.5\textwidth]{res/images/istogramma_rendicontate.pdf}\\
+				\caption{Istogramma della ripartizione di ore rendicontate}
+			\label{IstogrammaOreRendicontate}
+\end{figure}
+
+\paragraph{Prospetto economico}\mbox{}\\
+\linebreak
+Il totale rendicontato dei costi sostenuti per ogni ruolo è riassunto nella seguente tabella:
+
+\begin{table}[H]
+				\centering\renewcommand{\arraystretch}{1.5}
+				\arrayrulecolor{white}
+                \begin{tabular}{c|c|c}
+                               
+                \rowcolorhead
+                 {\colorhead \textbf{Ruolo}} &
+                 {\colorhead \textbf{Ore}} & 
+                 {\colorhead \textbf{Costo}} \\
+				
+                \rowcolorlight
+                 {\colorbody Responsabile} & {\colorbody 50} & 
+                 {\colorbody \EUR{1,500.00}}  
+				\\
+				
+				\rowcolordark
+                 {\colorbody Amministratore} & {\colorbody 50} & 
+                 {\colorbody \EUR{1,000.00}}
+				\\	
+				
+				\rowcolorlight
+                 {\colorbody Analista} & {\colorbody 96} & 
+                 {\colorbody \EUR{2,400.00}} 
+				\\
+				
+				\rowcolordark
+                 {\colorbody Progettista} & {\colorbody 175} & 
+                 {\colorbody \EUR{3,850.00}} 
+				\\
+				
+				\rowcolorlight
+                 {\colorbody Programmatore} & {\colorbody 128} & 
+                 {\colorbody \EUR{1,920.00}} 
+				\\
+				
+				\rowcolordark
+                 {\colorbody Verificatore} & {\colorbody 222} & 
+                 {\colorbody \EUR{3,330.00}} 
+				\\
+				
+				\rowcolorlight
+                 {\colorbody \textbf{Totale}} & {\colorbody 721} & 
+                 {\colorbody \EUR{14,000.00}} 
+				\\
+                
+
+                \end{tabular}
+                \caption{Prospetto dei costi delle ore rendicontate}
+
+\end{table}
+
+I dati ottenuti si possono riassumere nel seguente diagramma:
+\begin{figure}[H] 
+			\centering 
+				\includegraphics[width=0.5\textwidth]{res/images/areogramma_rendicontate.pdf}\\
+				\caption{Areogramma delle ore rendicontate per ruolo}
+			\label{AreogrammaOreRendicontate}
+\end{figure}
+
+\subsubsection{Conclusioni}
+Il costo totale preventivato per il progetto è \EUR{14,000.00}.
+
