@@ -79,7 +79,7 @@
 		\paragraph{Processo di versionamento} \mbox{}\\
 		Per le parti versionabili del progetto e documenti ufficiali si è scelto l’utilizzo della tecnologia Git, usando il servizio di GitHub. La condivisione dei documenti informali e delle parti non versionabili è invece effettuata tramite l’uso di una cartella su Google Drive.
 		\paragraph{Codice per la versione} \mbox{}\\
-		Ogni documento, verbali esclusi, deve avere una "history", ricostruibile attraverso le sue versioni. Ogni versione deve corrispondere a una riga del registro delle modifiche. Ogni numero di versione è composto da tre cifre:
+		Ogni documento, verbali esclusi, deve avere una storia, ricostruibile attraverso le sue versioni. Ogni versione deve corrispondere a una riga del registro delle modifiche. Ogni numero di versione è composto da tre cifre:
 		\begin{center}
 			X.Y.Z
 		\end{center}
@@ -104,8 +104,24 @@
 			\end{itemize}			
 		\end{itemize}
 		\subsubsection{Norme tipografiche}
-		\paragraph{Convenzione sui nomi dei file}
-		%PLACEHOLDER Camelcase
+		\paragraph{Convenzioni sui nomi dei file}
+		I nomi di file (escludendo l'estensione) e cartelle utilizzano la convenzione \textbf{snake case} e alcune regole aggiuntive elencate a seguito:
+		\begin{enumerate}
+			\item i nomi dei file composti da più parole usano underscore come carattere separatore;
+			\item i nomi sono scritti interamente in minuscolo;
+			\item le preposizioni non si omettono.
+		\end{enumerate}
+		Alcuni esempi \textbf{corretti} sono:
+		\begin{itemize}
+			\item studio\_di\_fattibilità;
+			\item analisi\_dei\_requisiti.
+		\end{itemize}	 	
+		Alcuni esempi \textbf{non corretti} sono: 
+		\begin{itemize}
+			\item Norme\_di\_progetto (usa maiuscole);
+			\item norme-di-progetto (carattere separatore errato);
+			\item norme\_progetto (omette 'di').
+		\end{itemize}			
 		\paragraph{Stile del testo}
 		\begin{itemize}
 			\item \textbf{Glossario}: ogni che dovrà essere riportata nel glossario sarà marcata con una "G" a pedice per ogni sua occorrenza all'interno di tutti i documenti;

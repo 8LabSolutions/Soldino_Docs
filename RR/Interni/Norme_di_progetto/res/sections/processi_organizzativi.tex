@@ -96,10 +96,15 @@
 			La scelta di Trello è stata determinata dalla sua facilità di apprendimento, di controllo, dall'usabilità e dalla trasparenza che fornisce. La gestione dei ticket dev'essere scrupolosa, perché la lavagna di Trello tende ad affollarsi velocemente.
 			\paragraph{Gestione degli strumenti di versionamento} \mbox{}\\
 			\subparagraph{Repository} \mbox{}\\
-			Il sistema di versionamento usato è \textit{git}, noto sistema di controllo versione distribuito. In locale, ogni studente possiede una copia locale del prodotto del progetto, su cui lavora abitualmente. Sono consentiti vari programmi per lavorare nel modo più comodo con \textit{git}: linea di comando, GitFlow, GitKraken.\newline La versione comune e ufficiale del progetto è invece ospitata in una repository remota su Github all'indirizzo  
+			Il sistema di versionamento usato è \textit{Git}, noto sistema di controllo versione distribuito. I membri del team possono usare lo strumento sia da linea di comando sia attraverso software che ne migliorano l'usabilità, come GitFlow, GitKraken. La versione comune e ufficiale del progetto è  ospitata in una repository remota su Github all'indirizzo  
 			\url{https://github.com/8LabSolutions/Soldino}. Questa repository remota è pubblica quindi accessibile a tutti, inclusi cliente e committente.
 			\subparagraph{Struttura del repository} \mbox{}\\
-			La repository remota è divisa in cartelle:
+			Ci sono due tipi di repository:
+			\begin{itemize}
+				\item remota: ospitata su \textit{GitHub}, è la versione di riferimento e quella disponibile all'esterno del team;
+				\item locale: ogni studente possiede una copia locale del progetto su cui lavorare;
+			\end{itemize}						
+			Entrambe i tipi di repository sono organizzati in cartelle:
 			\begin{itemize}
 				\item latex: qui risiedono i file di carattere generale, come i file relativi a package, che vengono inseriti in tutti i documenti, e i template, che sono usati come riferimento per nuovi documenti di struttura già definita;
 				\item guide: qui si trovano delle brevi guide di carattere pratico, come brevi spiegazioni per applicare comandi latex poco conosciuti;
@@ -126,6 +131,7 @@
 				\item push del commit nella repository remota;
 			\end{enumerate}
 			La routine serve massimizzare la consistenza e minimizzare i conflitti tra le repository locali e quelle remote, così da rendere il lavoro il più possibile piacevole e snello.
+
 			\paragraph{Gestione dei rischi} \mbox{}\\
 			Il Responsabile di Progetto ha il compito di rilevare i rischi e manutenerli, documentando quest'attività nel Piano di Progetto. La procedura da seguire per la gestione dei rischi è la seguente:
 			\begin{itemize}
