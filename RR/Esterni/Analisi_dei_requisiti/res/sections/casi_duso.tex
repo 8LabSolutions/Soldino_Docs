@@ -187,6 +187,7 @@ In questa sezione vi sono elencati tutti i casi d'uso individuati. Ogni caso d'u
 \end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: proprietario d'azienda;
+	\item \textbf{Attori Secondari}: azienda;
 	\item \textbf{Descrizione}: l'utente compila i campi relativi alla registrazione della propria azienda sulla piattaforma;
 	\item \textbf{Scenario}: l'utente ha cliccato sul pulsante di registrazione di un'azienda, il sistema rende disponibile il form di registrazione relativo e l'utente compila tutti i campi necessari;
 	\item \textbf{Precondizione}: l'utente ha espresso la volontà di iscriversi alla piattaforma cliccando il link per la registrazione di un'azienda. Il sistema ha rilevato e salvato una chiave\glosp valida attraverso il plug-in MetaMask\glo;
@@ -316,15 +317,15 @@ In questa sezione vi sono elencati tutti i casi d'uso individuati. Ogni caso d'u
 	l'utente non ancora autenticato richiede il login;
 	\item \textbf{Estensioni}:
 	\begin{itemize}
-		\item \textbf{UC2.5}: se l'utente non dispone di MetaMask o ha disabilitato l'estensione, viene visualizzato un messaggio di errore a riguardo;
+		\item \textbf{UC2.5}: se l'utente non dispone di MetaMask\glosp o ha disabilitato l'estensione, viene visualizzato un messaggio di errore a riguardo;
 		\item \textbf{UC2.6}: se l'utente non possiede una chiave\glosp su MetaMask\glo, esso viene avvisato tramite l'apposito messaggio di errore;
-		\item \textbf{UC3.2}: se l'utente tenta di accedere al sito tramite MetaMask senza aver mai provveduto a registrarsi, riceverà un messaggio di errore a riguardo;
+		\item \textbf{UC3.2}: se l'utente tenta di accedere al sito tramite MetaMask\glosp senza aver mai provveduto a registrarsi, riceverà un messaggio di errore a riguardo;
 		\item \textbf{UC3.3}: se l'utente si è registarto sul sito da poco ma non gli è ancora stato validato l'account, visualizzerà un messaggio di errore a riguardo.
 	\end{itemize}
 	\item \textbf{Precondizione}:
 	l'utente richiede alla piattaforma di venire identificato;
 	\item \textbf{Postcondizione}:
-	tramite il plugin MetaMask\glo l'utente viene riconosciuto.
+	tramite il plugin MetaMask\glosp l'utente viene riconosciuto.
 \end{itemize}
 \subsubsection{UC3.2 - Visualizzazione messaggio di errore relativo a chiave non registrata}
 \begin{itemize}
@@ -392,7 +393,7 @@ In questa sezione vi sono elencati tutti i casi d'uso individuati. Ogni caso d'u
 	MetaMask\glo;
 	\item \textbf{Descrizione}: l'utente visualizza le istruzioni per procedere al logout tramite MetaMask\glo;
 	\item \textbf{Scenario}: in seguito alla richiesta di disconnessione, l'utente riceve le informazioni necessarie per effettuare tale operazione;
-	\item \textbf{Precondizione}:l 'utente non ha idea di come disconnettersi tramite MetaMask\glo;
+	\item \textbf{Precondizione}: l 'utente non ha idea di come disconnettersi tramite MetaMask\glo;
 	\item \textbf{Postcondizione}: l'utente ha le abilità necessarie al conseguimento di un logout eseguito in modo corretto e sicuro tramite il plugin MetaMask\glo.
 \end{itemize}
 
@@ -432,18 +433,18 @@ In questa sezione vi sono elencati tutti i casi d'uso individuati. Ogni caso d'u
 \begin{itemize}
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Descrizione}: viene coniata una quantità definita di Cubit\glo;
-	\item \textbf{Scenario}: il governo ritiene necessario coniare ulteriori Cubit\glo rispetto a quelli attualmente presenti sul mercato;
-	\item \textbf{Precondizione}: siano \texttt{x} i Cubit\glo che il governo vuole coniare e \texttt{n} i Cubit\glo attualmente in circolo;
-	\item \textbf{Postcondizione}: i Cubit\glo in circolo sono \texttt{n+x}.
+	\item \textbf{Scenario}: il governo ritiene necessario coniare ulteriori Cubit\glosp rispetto a quelli attualmente presenti sul mercato;
+	\item \textbf{Precondizione}: siano \texttt{x} i Cubit\glosp che il governo vuole coniare e \texttt{n} i Cubit\glosp attualmente in circolo;
+	\item \textbf{Postcondizione}: i Cubit\glosp in circolo sono \texttt{n+x}.
 \end{itemize}
 \subsubsection{UC10 - Distribuzione Cubit}
 \begin{itemize}
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Attori Secondari}: cittadino, business owner;
-	\item \textbf{Descrizione}: uno o più  utenti, che siano essi cittadini o business owners, riceveno una quantità di Cubit\glo da parte del governo;
-	\item \textbf{Scenario}: il governo clicca sull'apposito pulsante per distribuire una somma di Cubit definita, ad una o più persone specificate; 
-	\item \textbf{Precondizione}: il governo viene notificato di dover distribuire una quantità specifica di Cubit\glo ad uno o più utenti specifici;
-	\item \textbf{Postcondizione}: tali utenti ricevono i Cubit\glo da parte del governo.
+	\item \textbf{Descrizione}: uno o più  utenti, che siano essi cittadini o business owners, ricevono una quantità di Cubit\glosp da parte del governo;
+	\item \textbf{Scenario}: il governo clicca sull'apposito pulsante per distribuire una somma di Cubit\glosp definita, ad una o più persone specificate; 
+	\item \textbf{Precondizione}: il governo viene notificato di dover distribuire una quantità specifica di Cubit\glosp ad uno o più utenti specifici;
+	\item \textbf{Postcondizione}: tali utenti ricevono i Cubit\glosp da parte del governo.
 \end{itemize}
 \subsubsection{UC11 - Visualizzazione lista aziende}
 \begin{figure}[h]
@@ -547,6 +548,6 @@ In questa sezione vi sono elencati tutti i casi d'uso individuati. Ogni caso d'u
 	utente non autenticato;
 	\item \textbf{Descrizione}: l'utente visualizza le informazioni aggiuntive relative al rigetto del proprio account;
 	\item \textbf{Scenario}: in seguito al rifiuto dell'account, l'utente riceve le informazioni relative a tale rigetto da parte del governo;
-	\item \textbf{Precondizione}:l 'utente non ha idea del perchè non è stato accettato;
+	\item \textbf{Precondizione}: l 'utente non ha idea del perchè non è stato accettato;
 	\item \textbf{Postcondizione}: l'utente riconosce di aver inserito dati falsi o contenenti errori, pertanto dovrà riprovare la registrazione.
 \end{itemize}
