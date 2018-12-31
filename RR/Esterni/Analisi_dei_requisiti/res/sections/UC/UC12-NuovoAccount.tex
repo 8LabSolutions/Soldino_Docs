@@ -11,7 +11,11 @@
 	\item \textbf{Attori Secondari}:
 	utente non autenticato;
 	\item \textbf{Descrizione}: l'account utente può venire rigettato o approvato dal governo;
-	\item \textbf{Scenario}: l'utente si è registrato da poco ed attente una risposta da parte del governo in merito alla validazione del proprio account;
+	\item \textbf{Scenario principale}: l'utente si è registrato al sistema ma è ancora in attesa di una risposta da parte del governo in merito alla validazione del proprio account. Il flusso degli eventi è il seguente:
+	\begin{itemize}
+		\item il governo ottiene la lista delle aziende in lista di attesa [UC11.3] o dei cittadini in lista di attesa [UC11.4];
+		\item il governo approva [UC12.1] o rifiuta [UC12.2] la richiesta di iscrizione;
+	\end{itemize}
 	\item \textbf{Precondizione}: l'utente è in coda di attesa per la validazione dell'account;
 	\item \textbf{Postcondizione}: l'account utente viene approvato o rigettato. 
 \end{itemize}
@@ -27,8 +31,8 @@
 	\begin{itemize}
 		\item \textbf{UC12.3}: in seguito all'approvazione dell'account, l'utente visualizza una breve e concisa guida su come loggarsi al sito;
 	\end{itemize}
-	\item \textbf{Precondizione}: l'utente non ha i permessi per loggarsi al sito;
-	\item \textbf{Postcondizione}: l'utente può visualizzare il modo corretto per eseguire il login alla piattaforma.
+	\item \textbf{Precondizione}: l'utente ha portato a termine la richiesta di registrazione ed è ancora in attesa di verifica;
+	\item \textbf{Postcondizione}: l'utente è stato verificato e può visualizzare il modo corretto per eseguire il login alla piattaforma.
 	
 \end{itemize}
 \subsubsection{UC12.2 - Rifiuto nuovo account}
@@ -43,8 +47,8 @@
 	\begin{itemize}
 		\item \textbf{UC12.4}: in seguito al rigetto  dell'account, l'utente visualizza dettagli aggiuntivi del perchè non è stato accettato;
 	\end{itemize}
-	\item \textbf{Precondizione}: l'utente è in attesa di approvazione;
-	\item \textbf{Postcondizione}: l'utente può visualizzare ulteriori dettagli in seguito al rifiuto dell'approvazione di validità proprio account.
+	\item \textbf{Precondizione}: l'utente ha portato a termine la richiesta di registrazione ed è ancora in attesa di verifica;
+	\item \textbf{Postcondizione}: l'utente risulta rifiutato e riceve le informazioni relative a tale rifiuto.
 	
 \end{itemize}
 \subsubsection{UC12.3 - Visualizzazione istruzioni per loggarsi tramite MetaMask\glosp}
@@ -53,10 +57,10 @@
 	governo;
 	\item \textbf{Attori Secondari}:
 	utente non autenticato;
-	\item \textbf{Descrizione}: l'utente visualizza le istruzioni per procedere al login tramite MetaMask\glosp;
-	\item \textbf{Scenario}: in seguito all'approvazione dell'account, l'utente riceve le informazioni necessarie per effettuare tale operazione;
-	\item \textbf{Precondizione}:l 'utente non ha idea di come connettersi tramite MetaMask\glosp;
-	\item \textbf{Postcondizione}: l'utente ha le abilità necessarie al conseguimento di un login eseguito in modo corretto e sicuro tramite il plugin MetaMask\glosp.
+	\item \textbf{Descrizione}: l'utente, durante il primo tentativo di accesso alla piattaforma dopo l'approvazione dell'account, visualizza una guida contenente le istruzioni per procedere al login tramite MetaMask\glosp;
+	\item \textbf{Scenario}: in seguito all'approvazione dell'account, l'utente cerca di effettuare il suo primo login, e gli vengono fornite tutte le istruzioni necessarie;
+	\item \textbf{Precondizione}: l'utente è stato verificato e tenta di eseguire per la prima volta il login;
+	\item \textbf{Postcondizione}: l'utente possiede le conoscenze necessarie al fine di conseguire un login corretto e sicuro tramite il plugin MetaMask\glosp.
 \end{itemize}
 \subsubsection{UC12.4 - Visualizzazione informazioni aggiuntive in merito al rigetto dell'account}
 \begin{itemize}

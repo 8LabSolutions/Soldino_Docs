@@ -24,7 +24,14 @@
  \begin{itemize}
  	\item \textbf{Attori Primari}: governo;
  	\item \textbf{Descrizione}: il governo accede ad una lista di aziende, nella quale vengono mostrate tutte le informazioni utili ed operazioni disponibili;
- 	\item \textbf{Scenario principale}: il governo può voler ottenere la lista di tutte le aziende iscritte alla piattaforma con le relative informazioni riguardanti l'IVA [UC11.2], oppure può voler controllare, per poi gestire, tutte le aziende che attualmente hanno fatto richiesta di registrazione alla piattaforma [UC11.3]; 
+ 	\item \textbf{Scenario principale}: il governo può voler ottenere la lista di tutte le aziende iscritte alla piattaforma con le relative informazioni riguardanti l'IVA [UC11.2], oppure può voler controllare, per poi gestire, tutte le aziende che attualmente hanno fatto richiesta di registrazione alla piattaforma [UC11.3]. In generale sono disponibili le seguenti informazioni:
+ 	\begin{itemize}
+ 		\item visualizzazione della chiave\glosp Ethereum [UC11.1.1];
+ 		\item visualizzazione del nome [UC11.1.2];
+ 		\item visualizzazione della partita IVA [UC11.1.3];
+ 		\item visualizzazione dell'indirizzo di residenza [UC11.1.4];
+ 		
+ 	\end{itemize}
 	\item \textbf{Specializzazione}:
 	\begin{itemize}
 	 	\item \textbf{UC11.2}: il governo vuole ottenere le informazioni relative alle aziende che sono già registrate alla piattaforma. In questo caso saranno presenti anche delle informazioni riguardati la situazione IVA delle aziende;
@@ -38,7 +45,7 @@
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Descrizione}: il governo visualizza una lista con tutte le chiavi\glosp Ethereum riguardanti le aziende;
 	\item \textbf{Scenario principale}: il governo richiede la lista delle chiavi\glosp relative alle aziende, eventualmente per poi eseguire delle operazioni;
-	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere le chiavi\glosp delle aziende;
+	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere le informazioni sulle aziende;
 	\item \textbf{Postcondizione}: il governo ottiene dal sistema la lista contenente tutte le aziende, con associate le relative chiavi\glo.
 \end{itemize}
 \subsubsection{UC11.1.2 - Visualizzazione nome aziendale}
@@ -46,7 +53,7 @@
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Descrizione}: il governo visualizza una lista con tutti i nomi delle aziende interessate nella piattaforma;
 	\item \textbf{Scenario principale}: il governo richiede la lista dei nomi relativi alle aziende, eventualmente per poi eseguire delle operazioni;
-	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere tutti i nomi delle aziende;
+	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ed ha richiesto di ottenere le informazioni sulle aziende;
 	\item \textbf{Postcondizione}: il governo ottiene dal sistema la lista contenente tutte le aziende, con associati i rispettivi nomi.
 \end{itemize}
 \subsubsection{UC11.1.3 - Visualizzazione partita IVA}
@@ -54,7 +61,7 @@
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Descrizione}: il governo visualizza una lista con tutte le partite IVA delle aziende interessate nella piattaforma;
 	\item \textbf{Scenario principale}: il governo richiede la lista delle partite IVA relative alle aziende, eventualmente per poi eseguire delle operazioni;
-	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere tutte le partite IVA delle aziende;
+	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere le informazioni sulle aziende;
 	\item \textbf{Postcondizione}: il governo ottiene dal sistema la lista contenente tutte le aziende, con associate le partite IVA.
 \end{itemize}
 \subsubsection{UC11.1.4 - Visualizzazione indirizzo di residenza}
@@ -62,7 +69,7 @@
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Descrizione}: il governo visualizza una lista con tutti gli indirizzi di residenza delle aziende interessate nella piattaforma;
 	\item \textbf{Scenario principale}: il governo richiede la lista degli indirizzi di residenza delle aziende, eventualmente per poi eseguire delle operazioni;
-	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere tutti gli indirizzi di residenza delle aziende
+	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere le informazioni sulle aziende;
 	\item \textbf{Postcondizione}: il governo ottiene dal sistema la lista contenente tutte le aziende, con associati gli indirizzi di residenza.
 \end{itemize}
 
@@ -85,7 +92,7 @@
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Descrizione}: il governo ottiene la lista dello stato della partita IVA relativo alle aziende registrate alla piattaforma e già verificate. In particolare può osservare se un'azienda è in stato di credito o debito;
 	\item \textbf{Scenario principale}: il governo richiede la lista dello stato IVA delle aziende registrate e  già verificate;
-	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere tutte le situazioni dell'IVA per ogni azienda;
+	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere la lista di tutte aziende già verificate;
 	\item \textbf{Postcondizione}: il governo ottiene dal sistema la lista della situazione IVA delle aziende registrate alla piattaforma. Vengono rese disponibili le operazioni che posso essere attuate su di esse.
 \end{itemize}
 \subsubsection{UC11.3 - Visualizzazione lista aziende in attesa di verifica}
@@ -106,7 +113,15 @@
 \begin{itemize}
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Descrizione}: il governo ottiene la lista dei cittadini che sono in attesa di essere verificati per poter poi usufruire della piattaforma;
-	\item \textbf{Scenario}: il governo richiede la lista dei cittadini che sono in attesa di essere verificati;
+	\item \textbf{Scenario}: il governo richiede la lista dei cittadini che sono in attesa di essere verificati. Le informazioni che vengono rese disponibili sono:
+	\begin{itemize}
+		\item visualizzazione della chiave\glosp Ethereum [UC11.4.1];
+		\item visualizzazione del nome [UC11.4.2];
+		\item visualizzazione del cognome [UC11.4.3];
+		\item visualizzazione della codice fiscale [UC11.4.4];
+		\item visualizzazione dell'indirizzo di residenza [UC11.4.5];
+		
+	\end{itemize}
 	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere la lista di tutti i cittadini in attesa di verifica;
 	\item \textbf{Postcondizione}: il governo ottiene dal sistema la lista dei cittadini in attesa di verifica, con associate le operazioni che può effettuare su di essi.
 \end{itemize}
@@ -115,7 +130,7 @@
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Descrizione}: il governo visualizza una lista con tutte le chiavi\glosp Ethereum dei cittadini in attesa di verifica della registrazione;
 	\item \textbf{Scenario principale}: il governo richiede la lista dei cittadini in attesa di verifica della registrazione, per poterne visualizzare le chiavi\glosp Ethereum;
-	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha ricevuto la richiesta di visualizzazione delle chiavi\glosp dei cittadini in attesa di verifica;
+	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere la lista di tutti i cittadini in attesa di verifica;
 	\item \textbf{Postcondizione}: il governo ottiene dal sistema la lista contenente tutti i cittadini con indicate le chiavi\glosp Ethereum. 
 \end{itemize}
 \subsubsection{UC11.4.2 - Visualizzazione nome cittadino}
@@ -123,7 +138,7 @@
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Descrizione}: il governo visualizza una lista con tutti i nomi dei cittadini in attesa di verifica della registrazione;
 	\item \textbf{Scenario principale}: il governo richiede la lista dei cittadini in attesa di verifica della registrazione, per poterne visualizzare il nome;
-	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha ricevuto la richiesta di visualizzazione dei nomi dei cittadini in attesa di verifica;
+	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere la lista di tutti i cittadini in attesa di verifica;
 	\item \textbf{Postcondizione}: il governo ottiene dal sistema la lista contenente tutti i cittadini con indicati i rispettivi nomi.
 \end{itemize}
 \subsubsection{UC11.4.3 - Visualizzazione cognome cittadino}
@@ -131,7 +146,7 @@
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Descrizione}: il governo visualizza una lista con tutti i cognomi dei cittadini in attesa di verifica della registrazione;
 	\item \textbf{Scenario principale}: il governo richiede la lista dei cittadini in attesa di verifica della registrazione, per poterne visualizzare il cognome;
-	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha ricevuto la richiesta di visualizzazione dei cognomi dei cittadini in attesa di verifica;
+	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere la lista di tutti i cittadini in attesa di verifica;
 	\item \textbf{Postcondizione}: il governo ottiene dal sistema la lista contenente tutti i cittadini con indicati i rispettivi cognomi.
 \end{itemize}
 \subsubsection{UC11.4.4 - Visualizzazione codice fiscale}
@@ -139,7 +154,7 @@
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Descrizione}: il governo visualizza una lista con tutti i codici fiscali dei cittadini in attesa di verifica della registrazione;
 	\item \textbf{Scenario principale}: il governo richiede la lista dei cittadini in attesa di verifica della registrazione, per poterne visualizzare il codice fiscale;
-	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha ricevuto la richiesta di visualizzazione dei codici fiscali dei cittadini in attesa di verifica;
+	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere la lista di tutti i cittadini in attesa di verifica;
 	\item \textbf{Postcondizione}: il governo ottiene dal sistema la lista contenente tutti i cittadini con indicati i rispettivi codici fiscali.
 \end{itemize}
 \subsubsection{UC11.4.5 - Visualizzazione indirizzo di residenza}
@@ -147,6 +162,6 @@
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Descrizione}: il governo visualizza una lista con tutti gli indirizzi di residenza dei cittadini in attesa di verifica della registrazione;
 	\item \textbf{Scenario principale}: il governo richiede la lista dei cittadini in attesa di verifica della registrazione, per poterne visualizzare l'indirizzo di residenza;
-	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha ricevuto la richiesta di visualizzazione degli indirizzi di residenza dei cittadini in attesa di verifica;
+	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere la lista di tutti i cittadini in attesa di verifica;
 	\item \textbf{Postcondizione}: il governo ottiene dal sistema la lista contenente tutti i cittadini con indicati i rispettivi indirizzi di residenza.
 \end{itemize}
