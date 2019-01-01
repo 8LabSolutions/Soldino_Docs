@@ -70,6 +70,25 @@
 	utente non autenticato;
 	\item \textbf{Descrizione}: l'utente visualizza le informazioni aggiuntive relative al rigetto del proprio account;
 	\item \textbf{Scenario}: in seguito al rifiuto dell'account, l'utente riceve le informazioni relative a tale rigetto da parte del governo;
-	\item \textbf{Precondizione}: l 'utente non ha idea del perchè non è stato accettato;
+	\item \textbf{Precondizione}: l'utente non ha idea del perchè non è stato accettato;
 	\item \textbf{Postcondizione}: l'utente riconosce di aver inserito dati falsi o contenenti errori, pertanto dovrà riprovare la registrazione.
+\end{itemize} 
+\subsubsection{UC13 - Rimborso IVA}
+\begin{itemize}
+	\item \textbf{Attori Primari}:
+	governo;
+	\item \textbf{Attori Secondari}:
+	azienda, MetaMask\glo;
+	\item \textbf{Descrizione}: il governo rimborsa l'IVA ad un'azienda che risulta in stato di credito al momento del saldo trimestrale;
+	\item \textbf{Scenario}: dopo aver visualizzato lo stato dell'IVA di un'azienda [UC11.2.1] il governo decide di effettuare il rimborso cliccando sul pulsante dedicato. Dovrà confermare la transazione attraverso il plugin MetaMask\glo;
+	\item \textbf{Estensioni}: 
+	\begin{itemize}
+		\item \textbf{UC7.5}: l'utente tenta il pagamento ma l'esito non va a buon fine. La causa del fallimento dell'operazione è gestito dal plugin stesso.
+	\end{itemize}
+	\item \textbf{Inclusioni}: 
+	\begin{itemize}
+		\item \textbf{UC11.2}: l'utente per poter accedere al pulsante per il rimborso dell'azienda deve visualizzare la lista delle aziende verificate;
+	\end{itemize}
+	\item \textbf{Precondizione}: il sistema ha mostrato la lista delle aziende già verificate, con il relativo stato dell'IVA. L'utente ha premuto il pulsante per il rimborso e confermato l'operazione;
+	\item \textbf{Postcondizione}: il sistema avvisa l'utente che l'operazione è avvenuta con successo. Il rimborso è stato versato all'azienda.
 \end{itemize} 
