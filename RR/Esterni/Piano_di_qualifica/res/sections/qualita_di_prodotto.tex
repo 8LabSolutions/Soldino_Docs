@@ -1,1 +1,60 @@
 \section{Qualità di prodotto}
+Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento allo standard ISO/IEC 9126\glosp{} che definisce le caratteristiche di cui tener conto nel momento in cui si voglia produrre un prodotto di buona qualità. Le caratteristiche sono descritte attraverso dei parametri misurabili che permettono di quantificare il raggiungimento della caratteristica in questione. Di seguito vengono citate le voci che il gruppo ha ritenuto rilevanti in relazione al contesto.
+	\subsection{Funzionalità}
+	Capacità del prodotto di fornire funzioni che riescano a soddisfare tutti i requisiti, sia quelli espliciti che quelli impliciti, presenti nell'Analisi dei Requisiti.
+		\subsubsection{Obiettivi}
+		\begin{itemize}
+			\item \textbf{Appropriatezza}: il prodotto deve mettere a disposizione un insieme di funzioni conformi agli obiettivi richiesti;
+			\item \textbf{Accuratezza}: il prodotto deve fornire risultati attesti con il grado di precisione richiesto;
+			\item \textbf{Conformità}: il prodotto deve aderire a determinati standard. %PLACEHOLDER è forse troppo ovvio?
+		\end{itemize}
+		\subsubsection{Metriche}
+			\paragraph{Completezza dell'implementazione}
+			La completezza del prodotto e il rispetto dei requisiti viene indicato da una percentuale che si calcola con la seguente formula: \\
+			\centerline { C = (1 - \(\frac{N\textsubscript{FNI}}{N\textsubscript{FI}} \))$ \cdot  100$ } \\
+			dove N\textsubscript{FNI} indica il numero di funzionalità non implementate e N\textsubscript{FI} indica il numero di funzionalità individuate dall'analisi. Il valore di accettazione di C è 100\%, a indicare quindi che tutte le funzionalità, individuate dai requisiti obbligatori, sono state implementate.
+	\subsection{Affidabilità}
+	Capacità del prodotto di mantenere prestazioni elevate anche in caso di situazioni non normali o critiche.
+		\subsubsection{Obiettivi}
+		\begin{itemize}
+			\item \textbf{Maturità}: il prodotto deve evitare che si verifichino errori e malfunzionamenti;
+			\item \textbf{Tolleranza agli errori}: il prodotto mantiene alte prestazioni anche in caso di malfunzionamenti o di un uso scorretto;
+		\end{itemize}
+		\subsubsection{Metriche}
+			\paragraph{Densità errori}
+			L'abilità del prodotto di resistere a malfunzionamenti viene indicata con una percentuale che si calcola con la seguente formula: \\
+			\centerline{ M =  \(\frac{N\textsubscript{ER}}{N\textsubscript{TE}} \)$ \cdot 100$ }
+			dove N\textsubscript{ER} indica il numero di errori rilevati durante il testing e N\textsubscript{TE} indica il numero di test eseguiti. Il valore ottimale è 0\% ma viene accettato un qualsiasi valore che non superi il 10\%.
+	\subsection{Usabilità}
+	Capacità del prodotto di essere di facile comprensione e utilizzo da parte degli utenti.
+		\subsubsection{Obiettivi}
+		\begin{itemize}
+			\item \textbf{Comprensibilità}: l'utente deve essere in grado di comprendere le funzionalità offerte dal prodotto e ad utilizzarle;
+			\item \textbf{Apprendibilità}: l'utente deve poter imparare facilmente ad utilizzare il prodotto;
+			\item \textbf{Attrattività}: il prodotto deve essere piacevole per chi ne fa utilizzo;
+		\end{itemize}
+		\subsubsection{Metriche}
+			\paragraph{Facilità di utilizzo}
+			La facilità con cui l'utente raggiunge ciò che vuole viene rappresentata tramite il numero di click che sono necessari per arrivare ad esempio alla pagina di fine ordine. Il valore ideale è 10 click ma viene accettato qualsiasi valore che non superi i 15.
+			\paragraph{Facilità di apprendimento}
+			La facilità con cui l'utente riesce ad imparare ad usare le funzionalità del prodotto viene rappresentata tramite il tempo medio che serve per comprenderle. Il valore ottimale è 3 minuti ma viene accettato qualsiasi valore sotto i 5.
+	\subsection{Manutenibilità}
+	Capacità del prodotto di essere modificato, includendo correzioni, miglioramenti o adattamenti.
+		\subsubsection{Obiettivi}
+		\begin{itemize}
+			\item \textbf{Analizzabilità}: facilità con la quale è possibile analizzare il codice per localizzare un errore;
+			\item \textbf{Modificabilità}: capacità del prodotto di permettere l'implementazione di una modifica;
+		\end{itemize}
+		\subsubsection{Metriche}
+			\paragraph{Facilità di comprensione 1}
+			La facilità con cui è possibile comprendere cosa fa il codice può rappresentata dalla seguente formula: \\
+			\centerline{R = \(\frac{N\textsubscript{LCOM}}{N\textsubscript{LCOD}} \) }
+			dove N\textsubscript{LCOM} indica le linee di commento e N\textsubscript{LCOD} indica le linee di codice. Il valore ottimale di R è superiore a 0.20 ma sono accettati valori superiori a 0.10
+			\paragraph{Facilità di comprensione 2}
+			La facilità con cui è possibile comprendere cosa fa il codice può rappresentata anche dal numero di parametri per metodo: meno parametri ha una funzione più è semplice e intuitiva. Il valore ottimale è inferiore o uguale ai 3 parametri per metodo ma vengono accettati anche valori non superiori a 6.
+			\paragraph{Facilità di comprensione 3}
+			La facilità con cui è possibile comprendere cosa fa il codice può rappresentata anche dal numero di metodi per classe: una classe con pochi metodi ha uno scopo ben preciso e facilmente comprensibile. Il valore ottimale di metodi per classe è inferiore a 8 ma si accettano valori non superiori a 15. 
+
+
+		
+
