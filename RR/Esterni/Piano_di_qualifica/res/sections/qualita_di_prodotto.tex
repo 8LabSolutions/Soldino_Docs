@@ -10,21 +10,28 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 		\end{itemize}
 		\subsubsection{Metriche}
 			\paragraph{Completezza dell'implementazione}
-			La completezza del prodotto e il rispetto dei requisiti viene indicato da una percentuale che si calcola con la seguente formula: \\
+			\begin{itemize}
+			\item La completezza del prodotto e il rispetto dei requisiti viene indicato da una percentuale che si calcola con la seguente formula: \\
 			\centerline { C = (1 - \(\frac{N\textsubscript{FNI}}{N\textsubscript{FI}} \))$ \cdot  100$ } \\
-			dove N\textsubscript{FNI} indica il numero di funzionalità non implementate e N\textsubscript{FI} indica il numero di funzionalità individuate dall'analisi. Il valore di accettazione di C è 100\%, a indicare quindi che tutte le funzionalità, individuate dai requisiti obbligatori, sono state implementate.
+			dove N\textsubscript{FNI} indica il numero di funzionalità non implementate e N\textsubscript{FI} indica il numero di funzionalità individuate dall'analisi.
+			\item Il valore di accettazione di C è 100\%, a indicare quindi che tutte le funzionalità, individuate dai requisiti obbligatori, sono state implementate
+			\end{itemize}
 	\subsection{Affidabilità}
 	Capacità del prodotto di mantenere prestazioni elevate anche in caso di situazioni non normali o critiche.
 		\subsubsection{Obiettivi}
 		\begin{itemize}
 			\item \textbf{Maturità}: il prodotto deve evitare che si verifichino errori e malfunzionamenti;
-			\item \textbf{Tolleranza agli errori}: il prodotto mantiene alte prestazioni anche in caso di malfunzionamenti o di un uso scorretto;
+			\item \textbf{Tolleranza agli errori}: il prodotto mantiene alte prestazioni anche in caso di malfunzionamenti o di un uso scorretto.
 		\end{itemize}
 		\subsubsection{Metriche}
 			\paragraph{Densità errori}
-			L'abilità del prodotto di resistere a malfunzionamenti viene indicata con una percentuale che si calcola con la seguente formula: \\
+			\begin{itemize}
+			\item L'abilità del prodotto di resistere a malfunzionamenti viene indicata con una percentuale che si calcola con la seguente formula: \\
 			\centerline{ M =  \(\frac{N\textsubscript{ER}}{N\textsubscript{TE}} \)$ \cdot 100$ }
-			dove N\textsubscript{ER} indica il numero di errori rilevati durante il testing e N\textsubscript{TE} indica il numero di test eseguiti. Il valore ottimale è 0\% ma vengono accettati valori non superiori al 10\%.
+			dove N\textsubscript{ER} indica il numero di errori rilevati durante il testing e N\textsubscript{TE} indica il numero di test eseguiti;
+			\item Il valore preferibile è 0\%;
+			\item Un valore accettabile è non superiore al 10\%.
+			\end{itemize}
 	\subsection{Usabilità}
 	Capacità del prodotto di essere di facile comprensione e utilizzo da parte degli utenti.
 		\subsubsection{Obiettivi}
@@ -35,9 +42,23 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 		\end{itemize}
 		\subsubsection{Metriche}
 			\paragraph{Facilità di utilizzo}
-			La facilità con cui l'utente raggiunge ciò che vuole viene rappresentata tramite il numero di click che sono necessari per arrivare ad esempio alla pagina di fine ordine. Il valore ideale è 10 click ma vengono accettati valori non superiori a 15.
+			\begin{itemize}
+			\item La facilità con cui l'utente raggiunge ciò che vuole viene rappresentata tramite il numero di click che sono necessari per arrivare ad esempio alla pagina di fine ordine;
+			\item Il valore preferibile è 10 click;
+			\item Un valore accettabile è non superiore a 15.
+			\end{itemize}
 			\paragraph{Facilità di apprendimento}
-			La facilità con cui l'utente riesce ad imparare ad usare le funzionalità del prodotto viene rappresentata tramite il tempo medio che serve per comprenderle. Il valore ottimale è 3 minuti ma vengono accettati valori non superiori a 5.
+			\begin{itemize}
+			\item La facilità con cui l'utente riesce ad imparare ad usare le funzionalità del prodotto viene rappresentata tramite il tempo medio che serve per comprenderle;
+			\item Il valore preferibile è 3 minuti;
+			\item Un valore accettabile è non superiori a 5.
+			\end{itemize}
+			\paragraph{Profondità della gerarchia}
+			\begin{itemize}
+			\item La profondità del sito. Un sito sito per essere facile da utilizzare non deve essere troppo profondo;
+			\item Il valore preferibile è 4;
+			\item Un valore accettabile è inferiore a 7.
+			\end{itemize}
 	\subsection{Manutenibilità}
 	Capacità del prodotto di essere modificato, includendo correzioni, miglioramenti o adattamenti.
 		\subsubsection{Obiettivi}
@@ -46,26 +67,42 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 			\item \textbf{Modificabilità}: capacità del prodotto di permettere l'implementazione di una modifica;
 		\end{itemize}
 		\subsubsection{Metriche}
-			\paragraph{Facilità di comprensione 1}
-			La facilità con cui è possibile comprendere cosa fa il codice può rappresentata dalla seguente formula: \\
+			\paragraph{Facilità di comprensione}
+			\begin{itemize}
+			\item La facilità con cui è possibile comprendere cosa fa il codice può rappresentata dalla seguente formula: \\
 			\centerline{R = \(\frac{N\textsubscript{LCOM}}{N\textsubscript{LCOD}} \) }
-			dove N\textsubscript{LCOM} indica le linee di commento e N\textsubscript{LCOD} indica le linee di codice. Il valore ottimale di R è superiore a 0.20 ma sono accettati valori superiori a 0.10
-			\paragraph{Facilità di comprensione 2}
-			La facilità con cui è possibile comprendere cosa fa il codice può rappresentata anche dal numero di parametri per metodo: meno parametri ha una funzione più è semplice e intuitiva. Il valore ottimale è inferiore o uguale ai 3 parametri per metodo ma vengono accettati valori non superiori a 6.
-			\paragraph{Facilità di comprensione 3}
-			La facilità con cui è possibile comprendere cosa fa il codice può rappresentata anche dal numero di metodi per classe: una classe con pochi metodi ha uno scopo ben preciso e facilmente comprensibile. Il valore ottimale di metodi per classe è inferiore a 8 ma si accettano valori non superiori a 15. 
+			dove N\textsubscript{LCOM} indica le linee di commento e N\textsubscript{LCOD} indica le linee di codice;
+			\item Il valore ottimale di R è superiore a 0.20;
+			\item Un  valore accettabile è superiore a 0.10.
+			\end{itemize}
+			\paragraph{Facilità delle funzioni}
+			\begin{itemize}
+			\item La facilità di un metodo può essere rappresentata dal numero di parametri per metodo: meno parametri ha una funzione più è semplice e intuitiva;
+			\item Il valore preferibile è inferiore o uguale ai 3 parametri per metodo;
+			\item Un valore accettabile  è non superiore a 6.
+			\end{itemize}
+			\paragraph{Facilità delle classi}
+			\begin{itemize}
+			\item La facilità di una classe può essere rappresentata dal numero di metodi per classe: una classe con pochi metodi ha uno scopo ben preciso e facilmente comprensibile;
+			\item Il valore ottimale di metodi per classe è inferiore a 8;
+			\item Un valore accettabile è non superiore a 15.
+			\end{itemize}
 	\subsection{Metriche per i documenti}
 	Per assicurare che tutti i documenti prodotti siano leggibili, comprensibili e corretti sotto tutti i punti di vista questi devono rispettare determinate metriche.
 	\subsubsection{Correttezza ortografica}
-	Tutti i documenti, sia quelli in italiano che quelli in inglese, non devono assolutamente contenere errori grammaticali o errori ortografici. Verranno accettati solamente documenti che non presentano gli errori precedentemente citati.
+	Tutti i documenti, sia quelli in italiano che quelli in inglese, non devono assolutamente contenere errori grammaticali o errori ortografici. 
+	\begin{itemize}
+		\item Saranno accettati solamente documenti privi di errori grammaticali o ortografici.
+	\end{itemize}
 	\subsubsection{Indice di Gulpease}
-	L'indice di Gulpease fornisce una misura della leggibilità di un documento scritto italiano. La formula che calcola questo indice è la seguente:\\
+	Il gruppo si impegna a scrivere documenti facilmente leggibili.
+	\begin{itemize}
+	\item L'indice di Gulpease fornisce una misura della leggibilità di un documento scritto italiano. La formula che calcola questo indice è la seguente:\\
 	\centerline{ 89 + \(\frac{ {330 \cdot (numero \thinspace delle \thinspace frasi) - 10 \cdot (numero \thinspace delle \thinspace lettere)}}{numero \thinspace delle \thinspace parole} \)} 
-	Questa formula produce un risultato compreso tra 0 e 100 dove 100 indica la leggibilità più alta. Per i documenti il valore ottimale sarà superiore a 80 ma vengono accettati valori superiori a 40.
-
-
-%$330 \cdot 3$ (numero delle frasi)
-%- $10 \cdot $ (numero delle lettere)
+	Questa formula produce un risultato compreso tra 0 e 100 dove 100 indica la leggibilità più alta;
+	\item Il valore ottimale sarà superiore a 80;
+	\item Un valore accettabile è superiore a 40.
+	\end{itemize}
 
 		
 
