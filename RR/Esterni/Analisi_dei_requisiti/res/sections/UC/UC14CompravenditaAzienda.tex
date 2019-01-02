@@ -91,7 +91,54 @@
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, e mette a disposizione tutte le pagine necessarie alla visualizzazione e gestione delle vendite;
 	\item \textbf{Postcondizione}: l'azienda ha visualizzato e/o gestitole proprie vendite.
 \end{itemize} 
-
+\subsubsection{UC14.2.1 - Visualizzazione proposte d'acquisto in attesa di conferma}
+\begin{itemize}
+	\item \textbf{Attori Primari}: azienda;
+	\item \textbf{Descrizione}: l'azienda può visualizzare delle proposte d'acquisto che necessitano di conferma;
+	\item \textbf{Scenario principale}: l'utente visualizza la lista delle proposte d'acquisto che necessitano di conferma. Per ognuna di esse ha a possibilità di confermare la proposta [UC14.2.3] o di rifiutarla [UC14.2.2];
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, e questo ha espresso la volontà di visualizzare la lista delle proposte d'acquisto che necessitano di conferma;
+	\item \textbf{Postcondizione}: l'azienda visualizza tale lista.
+\end{itemize}
+\subsubsection{UC14.2.2 - Rifiuto di una proposta di acquisto}
+\begin{itemize}
+	\item \textbf{Attori Primari}: azienda;
+	\item \textbf{Descrizione}: l'azienda può rifiutare una proposta d'acquisto. Per confermare l'operazione verrà utilizzato MetaMask\glo;
+	\item \textbf{Scenario principale}: l'utente visualizza una proposta d'acquisto che necessitano di conferma e decide di rifiutarla;
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, ed ha mostrato la lista delle proposte d'acquisto che necessitano di conferma;
+	\item \textbf{Postcondizione}: l'azienda ha rifiutato la proposta d'acquisto. La proposta non sarà più presente nella lista di attesa per la conferma. L'acquisto comparirà come acquisto concluso, con esito negativo, nella lista delle vendite dell'azienda-venditrice [UC14.1.5]. Il sistema ritorna l'ammontare trattenuto per l'ordine all'azienda-cliente.
+\end{itemize}
+\subsubsection{UC14.2.3 - Conferma di una proposta di acquisto}
+\begin{itemize}
+	\item \textbf{Attori Primari}: azienda;
+	\item \textbf{Descrizione}: l'azienda può confermare una proposta d'acquisto. . Per confermare l'operazione verrà utilizzato MetaMask\glo;
+	\item \textbf{Scenario principale}: l'utente visualizza una proposta d'acquisto che necessitano di conferma e decide di confermarla;
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, ed ha mostrato la lista delle proposte d'acquisto che necessitano di conferma;
+	\item \textbf{Postcondizione}: l'azienda ha confermato la proposta d'acquisto. La proposta non sarà più presente nella lista di attesa per la conferma, comparirà invece sulla lista degli acquisti conclusi [UC14.2.4]. L'acquisto comparirà come acquisto concluso, con esito positivo, nella lista delle vendite dell'azienda-venditrice [UC14.1.5]. Il sistema trasferisce l'ammontare trattenuto per l'ordine all'azienda-venditrice. L'azienda-cliente riceve nella pagina dedicata la fattura IVA relativa a questo ordine.
+\end{itemize}
+\subsubsection{UC14.2.4 - Visualizzazione acquisti conclusi}
+\begin{itemize}
+	\item \textbf{Attori Primari}: azienda;
+	\item \textbf{Descrizione}: l'azienda può visualizzare la lista degli acquisti conclusi;
+	\item \textbf{Scenario principale}: l'utente visualizza la lista degli acquisti conclusi;
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, e questo ha espresso la volontà di visualizzare la lista degli acquisti conclusi;
+	\item \textbf{Postcondizione}: l'azienda visualizza tale lista.
+\end{itemize}
+\subsubsection{UC14.2.5 - Visualizzazione vendite concluse}
+\begin{itemize}
+	\item \textbf{Attori Primari}: azienda;
+	\item \textbf{Descrizione}: l'azienda può visualizzare la lista delle vendite concluse;
+	\item \textbf{Scenario principale}: l'utente visualizza la lista delle vendite concluse, con specificato l'avvenuto successo o meno (rifiuto della proposta d'ordine da parte dell'azienda cliente);
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, e questo ha espresso la volontà di visualizzare la lista delle vendite concluse;
+	\item \textbf{Postcondizione}: l'azienda visualizza tale lista.
+\end{itemize}
+\subsubsection{UC14.2.6 - Visualizzazione vendite concluse}
+\begin{itemize}
+	\item \textbf{Attori Primari}: azienda;
+	\item \textbf{Descrizione}: l'azienda può visualizzare la lista delle vendite concluse;
+	\item \textbf{Scenario principale}: l'utente visualizza la lista delle vendite concluse, con specificato l'avvenuto successo o meno (rifiuto della proposta d'ordine da parte dell'azienda cliente);
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, e questo ha espresso la volontà di visualizzare la lista delle vendite concluse;
+	\item \textbf{Postcondizione}: l'azienda visualizza tale lista.
+\end{itemize}
 
 
 \subsubsection{UC14.3 - Gestione Fatture}
