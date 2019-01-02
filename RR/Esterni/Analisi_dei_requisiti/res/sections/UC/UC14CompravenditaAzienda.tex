@@ -63,7 +63,7 @@
 \subsubsection{UC14.1.4 - Visualizzazione vendite con pagamento dilazionato non concluse}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: l'azienda può visualizzare la lista delle vendite con pagamento dilazionato\glosp non ancora concluse, ovvero l'azienda-cliente deve ancora effettuare il pagamento;
+	\item \textbf{Descrizione}: l'azienda può visualizzare la lista delle vendite con pagamento dilazionato\glosp approvate, ma non ancora concluse, ovvero l'azienda-cliente deve ancora effettuare il pagamento;
 	\item \textbf{Scenario principale}: l'utente visualizza la lista delle vendite con modalità di pagamento dilazionato\glosp accettate ma non ancora concluse;
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, e questo ha espresso la volontà di visualizzare la lista delle vendite con modalità di pagamento dilazionato\glosp accettate ma non ancora concluse;
 	\item \textbf{Postcondizione}: l'azienda visualizza tale lista.
@@ -110,7 +110,7 @@
 \subsubsection{UC14.2.3 - Conferma di una proposta di acquisto}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: l'azienda può confermare una proposta d'acquisto. . Per confermare l'operazione verrà utilizzato MetaMask\glo;
+	\item \textbf{Descrizione}: l'azienda può confermare una proposta d'acquisto. Per confermare l'operazione verrà utilizzato MetaMask\glo;
 	\item \textbf{Scenario principale}: l'utente visualizza una proposta d'acquisto che necessitano di conferma e decide di confermarla;
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, ed ha mostrato la lista delle proposte d'acquisto che necessitano di conferma;
 	\item \textbf{Postcondizione}: l'azienda ha confermato la proposta d'acquisto. La proposta non sarà più presente nella lista di attesa per la conferma, comparirà invece sulla lista degli acquisti conclusi [UC14.2.4]. L'acquisto comparirà come acquisto concluso, con esito positivo, nella lista delle vendite dell'azienda-venditrice [UC14.1.5]. Il sistema trasferisce l'ammontare trattenuto per l'ordine all'azienda-venditrice. L'azienda-cliente riceve nella pagina dedicata la fattura IVA relativa a questo ordine.
@@ -123,30 +123,35 @@
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, e questo ha espresso la volontà di visualizzare la lista degli acquisti conclusi;
 	\item \textbf{Postcondizione}: l'azienda visualizza tale lista.
 \end{itemize}
-\subsubsection{UC14.2.5 - Visualizzazione vendite concluse}
+\subsubsection{UC14.2.5 - Visualizzazione acquisti con pagamento dilazionato non conclusi}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: l'azienda può visualizzare la lista delle vendite concluse;
-	\item \textbf{Scenario principale}: l'utente visualizza la lista delle vendite concluse, con specificato l'avvenuto successo o meno (rifiuto della proposta d'ordine da parte dell'azienda cliente);
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, e questo ha espresso la volontà di visualizzare la lista delle vendite concluse;
+	\item \textbf{Descrizione}: l'azienda può visualizzare la lista dei pagamenti dilazionati\glosp ancora non conclusi, ovvero quelli dai quali l'azienda-venditrice si aspetta un pagamento entro il periodo stabilito;
+	\item \textbf{Scenario principale}: l'utente visualizza la lista dei pagamenti dilazionati\glosp non ancora conclusi. Ha la possibilità di effettuare il versamento all'azienda-venditrice;
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, e questo ha espresso la volontà di visualizzare la lista degli acquisti a pagamento dilazionato\glosp non ancora conclusi;
 	\item \textbf{Postcondizione}: l'azienda visualizza tale lista.
 \end{itemize}
-\subsubsection{UC14.2.6 - Visualizzazione vendite concluse}
+\subsubsection{UC14.2.6 - Effettuazione pagamento dilazionato}
 \begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: l'azienda può visualizzare la lista delle vendite concluse;
-	\item \textbf{Scenario principale}: l'utente visualizza la lista delle vendite concluse, con specificato l'avvenuto successo o meno (rifiuto della proposta d'ordine da parte dell'azienda cliente);
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, e questo ha espresso la volontà di visualizzare la lista delle vendite concluse;
-	\item \textbf{Postcondizione}: l'azienda visualizza tale lista.
+	\item \textbf{Attori Primari}: azienda-cliente;
+	\item \textbf{Attori Secondaari}: azienda-venditrice, MetaMask\glo;
+	\item \textbf{Descrizione}: l'azienda può effettuare il versamento della somma dovuta all'azienda-venditrice, relativa ad un pagamento dilazionato non ancora saldato. In questa maniera l'azienda-cliente può ricevere la fattura relativa a suddetto ordine;
+	\item \textbf{Scenario principale}: l'utente visualizza la lista dei pagamenti dilazionati non ancora conclusi, preme sul tasto per il pagamento e segue la procedura attraverso MetaMask\glosp per effettuare il versamento;
+	\item \textbf{Inclusione}: 
+	\begin{itemize}
+		\item \textbf{UC14.2.5}: l'utente che preme il pulsante per effettuare il pagamento deve obbligatoriamente aver richiesto la visualizzazione della lista dei pagamenti dilazionati non ancora conclusi;
+	\end{itemize}
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, e questo ha espresso la volontà effettuare il pagamento per saldare l'importo dovuto riguardante un pagamento dilazionato;
+	\item \textbf{Postcondizione}: l'azienda-cliente ha effettuato il versamento della somma dovuta all'azienda-venditrice. L'azienda-cliente ha ricevuto la fattura per tale ordine è la può reperire nella sezione dedicata [UC14.3]. L'azienda-venditrice può ottenere le informazioni relative all'acquisto nell'apposita sezione [UC14.1.5].
 \end{itemize}
 
 
-\subsubsection{UC14.3 - Gestione Fatture}
+\subsubsection{UC14.3 - Visualizzazione Fatture}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: alle aziende sono messe a disposizione diverse operazione per visualizzare e gestire le fatture riguardanti gli acquisti e le vendite all'interno della piattaforma.
+	\item \textbf{Descrizione}: alle aziende sono messe a disposizione diverse operazione per visualizzare le fatture riguardanti gli acquisti e le vendite all'interno della piattaforma.
 	\item \textbf{Scenario principale}: l'utente visualizza le fatture riguardanti gli acquisti e le vendite;
 	 
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, l'utente ha espresso la volontà di visualizzare le fatture;
-	\item \textbf{Postcondizione}: l'azienda ha visualizzato e/o gestitole proprie vendite.
+	\item \textbf{Postcondizione}: l'azienda ha visualizzato le proprie fatture.
 \end{itemize} 
