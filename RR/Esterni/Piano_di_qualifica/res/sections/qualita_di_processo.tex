@@ -4,7 +4,6 @@ Il risultato sono i processi esposti a seguito.
 
 %\subsection{Processo di Costruzione del Software}. Opzione per il futuro.
 
-
 \subsection{Processi Primari}
 	\subsubsection{Processo di Analisi dei Requisiti}
 	Mediante il processo le informazioni ottenute dalle varie fonti sono trasformate in forma di casi d'uso e requisiti.
@@ -26,7 +25,7 @@ Il risultato sono i processi esposti a seguito.
 		\paragraph{Metriche}
 			\subparagraph{Percentuale di requisiti obbligatori soddisfatti - PROS} Indica appunto la percentuale di requisiti obbligatori soddisfatti.
 			\begin{itemize}
-				\item misurazione: valore percentuale: $ PROS = \frac{requisiti obbligatori soddisfatti}{requisiti obbligatori totali}$;
+				\item misurazione: valore percentuale: $ PROS = \frac{requisiti\ obbligatori\ soddisfatti}{requisiti\ obbligatori\ totali}$;
 				\item valore preferibile: $100\%$;
 				\item valore accettabile: $100\%$.
 			\end{itemize}
@@ -37,13 +36,18 @@ Il risultato sono i processi esposti a seguito.
 	Nel processo vanno considerati in particolare il tipo di software da produrre, le caratteristiche desiderate e i suoi requisiti non funzionali per scegliere l'architettura più adatta.
 		\paragraph{Obiettivi}
 		\begin{itemize}
+			\item agevolare la realizzazione fornendo un'architettura adeguata;
+			\item perseguire la correttezza per costruzione;
+			\item comprendere meglio il sistema scomponendolo in parti;
+			\item progettare adoperando stili architetturali e design pattern.
+		\end{itemize}
+		\paragraph{Strategia}
+		\begin{itemize}
 			\item valutare il tipo di software da produrre, le caratteristiche desiderate, i casi d'uso e i requisiti da soddisfare;
 			\item valutare i modelli architetturali secondo il punto precedente e scegliere il più adeguato;
 			\item individuare nel modello i macro-componenti del sistema;
 			\item comprendere e definire le relazioni tra i componenti.
 		\end{itemize}
-		\paragraph{Strategia}
-		Tracciare le componenti del sistema.
 		\paragraph{Metriche}
 			\subparagraph{Structural Fan-in \textbf{SFIN}}
 			Indica quante componenti utilizzano un dato modulo. Un alto valore indica un alto riuso della componente.
@@ -62,19 +66,33 @@ accoppiamento della componente.
 			\end{itemize}
 			
 	\subsubsection{Processo di Progettazione di Design}
-	La Progettazione di Design segue la Definizione dell'Architettura e prevede la scomposizione delle macro-componenti in componenti più piccole che sono:
+	\textit{Nota: in questo contesto si usano i termini componente, modulo e unità alternandoli. Lo stesso oggetto possiede le proprietà espresse dai tre termini (unitarietà, modularità e composizione), e a seconda del contesto si preferisce l'uno all'altro termine.}\newline 
+	La Progettazione di Design segue la Definizione dell'Architettura e prevede la scomposizione delle macro-componenti in moduli più piccoli che sono:
 	\begin{itemize}
-		\item immediatamente comprensibili;
-		\item strettamente collegate ai requisiti funzionali;
-		\item sviluppabili da un singolo programmatore.
+		\item facilmente comprensibili;
+		\item strettamente collegati ai requisiti funzionali;
+		\item implementabili da un singolo programmatore.
 	\end{itemize}
 		\paragraph{Obiettivi}
-			Ottenere unità software atomiche dette componenti, facili da tradurre in codice e da testare.
+		\begin{itemize}
+			\item tradurre i requisiti in unità di codice, i moduli;
+			\item favorire il lavoro dei programmatori con compiti individuali relativi ai singoli moduli;
+			\item produrre un sistema software fatto di componenti ed utilizzabile;
+			\item mantenere il tracciamento tra requisiti e componenti;
+		\end{itemize}
 		\paragraph{Strategia}
-		
+		\begin{itemize}
+			\item scomporre le componenti architetturali in componenti piccole;
+			\item implementare le componenti individuate;
+		\end{itemize}
 		\paragraph{Metriche}
-			\subparagraph{Numero di metodi per classe}
-			\subparagraph{Numero di parametri per metodo}
+			\subparagraph{Accoppiamento tra le classi di oggetti - CBO} 
+			Una classe è accoppiata a una seconda se usa metodi o variabili definiti nella seconda. 
+			\begin{itemize}
+				\item misurazione: valore intero: $CBO$;
+				\item valore preferibile: $0 \leq CBO \leq 1$;
+				\item valore accettabile: $0 \leq CBO \leq 6$.
+			\end{itemize}
 		
 \subsection{Processi di Supporto}
 	\subsubsection{Processo di Verifica}
@@ -123,7 +141,20 @@ accoppiamento della componente.
 			\item ospitati in una repository pubblica su Github;
 		\end{itemize}
 		\paragraph{Metriche}
-			% indice di fog omesso: contiene il parametro "numero parole complesse" che non è automatizzabile
+			\subparagraph{Indice Gunning fog}
+			Indice della leggibilità del testo. Stima gli anni di educazione scolastica richiesti per comprendere il testo a una prima lettura.\newline
+			Ha dei limiti: uno di questi è la sua definizione di \textit{parola complessa}, intesa come una parola di tre o più sillabe eccetto alcuni suffissi comuni.
+			\begin{itemize}
+				\item misurazione: valore intero: $ I_{GF} = 0.4 *
+				(
+				\frac{numero\ di\ parole}{numero\ di\  frasi}
+				+ 100 *
+				\frac{numero\ di\ parole\ complesse}{numero\ di\  frasi}
+				) $;
+				\item valore preferibile: $I_{GF} \leq 12$;
+				\item valore accettabile: $I_{GF} \leq 16$.
+			\end{itemize}
+
 			\subparagraph{Indice di Gulpease}
 			Indice della leggibilità del testo. Valuta la lunghezza delle parole e delle frasi rispetto al numero totale di lettere. 
 			\begin{itemize}
