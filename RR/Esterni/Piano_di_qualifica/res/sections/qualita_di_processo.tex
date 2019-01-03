@@ -1,48 +1,141 @@
 \section{Qualità di processo}
-Per ricercare qualità nello svolgimento del progetto si adoperano dei processi. Inizialmente, tali processi sono stati scelti tra quelli proposti nello standard ISO/IEC/IEEE 12207:2017. Successivamente, essi sono stati adattati, semplificati e suddivisi in categorie (primari, di supporto, organizzativi).\newline 
-Il risultato sono i processi esposti a seguito. 
+Per ricercare qualità nello svolgimento del progetto si adoperano dei processi. Inizialmente, tali processi sono stati scelti tra quelli proposti nello standard ISO/IEC/IEEE 12207:2017; successivamente sono stati semplificati.\newline 
+Il risultato sono i processi esposti a seguito.
 
 \subsection{Processi Primari}
 	\subsubsection{Processo di Analisi dei Requisiti}
-		\paragraph{Scopo}
-		\paragraph{Attività}
+	Mediante il processo le informazioni ottenute dalle varie fonti sono trasformate in forma di casi d'uso e requisiti.
+	Questa forma fornisce una descrizione dettagliata del sistema e definisce il funzionamento e le caratteristiche di ogni sua parte.
+		\paragraph{Obiettivi}
+		\begin{itemize}
+			\item definire casi d'uso e requisiti;
+			\item ottenere la loro approvazione;
+			\item tracciare il loro cambiamento nel tempo.
+		\end{itemize}		
+		\paragraph{Strategia}
+		Tracciare i requisiti del sistema.
 		\paragraph{Metriche}
+			\subparagraph{Numero di requisiti obbligatori soddisfatti} Indica la percentuale di requisiti obbligatori soddisfatti.
+			\begin{itemize}
+				\item \textbf{Misurazione}
+				\item \textbf{Valore preferibile}
+				\item \textbf{Valore accettabile}
+			\end{itemize}
+			
 	\subsection{Processo di Progettazione Architetturale}
-		\paragraph{Scopo}
-		\paragraph{Attività}
+	Tradurre i requisiti in un modello architetturale del sistema.
+	Il modello è ad alto livello di dettaglio: in esso il sistema è costituito da macro-componenti, utili a capire il funzionamento delle parti, ma non ancora realizzabili nella pratica.\newline
+	Nel processo vanno considerati in particolare il tipo di software da produrre, le caratteristiche desiderate e i suoi requisiti non funzionali per scegliere l'architettura più adatta.
+		\paragraph{Obiettivi}
+		\begin{itemize}
+			\item valutare il tipo di software da produrre, le caratteristiche desiderate, i casi d'uso e i requisiti da soddisfare;
+			\item valutare i modelli architetturali secondo il punto precedente e scegliere il più adeguato;
+			\item individuare nel modello i macro-componenti del sistema;
+			\item comprendere e definire le relazioni tra i componenti.
+		\end{itemize}
+		\paragraph{Strategia}
+		Tracciare le componenti del sistema.
 		\paragraph{Metriche}
+			\subparagraph{Structural Fan-in \textbf{SFIN}}
+			Indica quante componenti utilizzano un dato modulo. Un alto valore indica un alto riuso della componente.
+			\begin{itemize}
+				\item \textbf{Misurazione}: numero intero;
+				\item \textbf{Valore preferibile}: $\geq 1$;
+				\item \textbf{Valore accettabile}: $\geq 0$.
+			\end{itemize}
+			\subparagraph{Structural Fan-out \textbf{SFOUT}}
+			Indica quante componenti vengono utilizzate dalla componente in esame. Un alto valore indica un alto
+accoppiamento della componente.
+			\begin{itemize}
+				\item \textbf{Misurazione}: numero intero;
+				\item \textbf{Valore preferibile}: $=0$;
+				\item \textbf{Valore accettabile}: $<=6$.
+			\end{itemize}
+			
 	\subsection{Processo di Progettazione di Dettaglio}
-		\paragraph{Scopo}
-		\paragraph{Attività}
+	La progettazione di dettaglio segue la progettazione architetturale, e prevede la scomposizione delle macro-componenti in componenti più piccole che sono:
+	\begin{itemize}
+		\item immediatamente comprensibili;
+		\item strettamente collegate ai requisiti funzionali;
+		\item sviluppabili da un singolo programmatore.
+	\end{itemize}
+		\paragraph{Obiettivi}
+		Arrivare alla definizione di dettaglio del sistema, cioè scomporlo in unità software dette componenti.
+		\paragraph{Strategia}
 		\paragraph{Metriche}
+			\subparagraph{Numero di metodi per classe}
+			\subparagraph{Numero di parametri per metodo}
+		
 \subsection{Processi di Supporto}
-	\subsection{Processo di Verifica del Software}
-		\paragraph{Scopo}
-		\paragraph{Attività}
+	\subsection{Processo di Verifica}
+	Il processo consiste nella ricerca e correzione di anomalie nei processi e nei prodotti del progetto, mediante tecniche definite.
+		\paragraph{Obiettivi}
+		\begin{itemize}
+			\item individuare e correggere le anomalie;
+			\item provare che il sistema soddisfi i requisiti.
+		\end{itemize}	
+		\paragraph{Strategia}
+		\begin{itemize}
+			\item individuare tecniche e strumenti di verifica;
+			\item affinare tecniche e strumenti con l'esperienza;
+		\end{itemize}	
 		\paragraph{Metriche}
+			\subparagraph{Code Coverage}
+				Indica il numero di righe di codice percorse dai test durante la loro esecuzione. 
+				\begin{itemize}
+					\item misurazione: $Le/Lt$;
+					\item valore preferibile: $100\%$;
+					\item valore accettabile: $75\%$.
+				\end{itemize}
+			% a grana più fine ci sarebbero: function coverage, loop coverage, branch coverage
 	\subsubsection{Processo di Gestione della Documentazione}
-		\paragraph{Scopo}
-		\paragraph{Attività}
+		\paragraph{Obiettivi}
+		\paragraph{Stragegia}
 		\paragraph{Metriche}
+			\subparagraph{} 
+			\begin{itemize}
+				\item \textbf{}
+				\item \textbf{}
+				\item \textbf{}
+			\end{itemize}
+		
 \subsection{Processi Organizzativi}
 	\subsection{Processo di Pianificazione di Progetto}	
-		\paragraph{Scopo}
-		\paragraph{Attività}
+		\paragraph{Obiettivi}
+		\paragraph{Strategia}
 		\paragraph{Metriche}
+			\subparagraph{} 
+			\begin{itemize}
+				\item \textbf{}
+				\item \textbf{}
+				\item \textbf{}
+			\end{itemize}
 	\subsection{Processo di Gestione della Qualità}
-		\paragraph{Scopo}
-		\paragraph{Attività}
+		\paragraph{Obiettivi}
+		\paragraph{Strategia}
 		\paragraph{Metriche}
-	\subsection{Processo di Misurazione}
-		\paragraph{Scopo}
+			\subparagraph{} 
+			\begin{itemize}
+				\item \textbf{}
+				\item \textbf{}
+				\item \textbf{}
+			\end{itemize}
+	\subsection{Processo di Misurazione} % cambia con qta
+		\paragraph{Obiettivi}
 		Scegliere metriche adeguate, effettuare misurazioni basate su tali metriche per migliorare, controllare e garandire la qualità di prodotto e processo.
-		\paragraph{Attività}
+		\paragraph{Strategia}
 		\begin{itemize}
 			\item definire gli oggetti di interesse da misurare;
 			\item scegliere metriche appropriate;
 			\item effettuare le misurazioni nel modo più possibile automatizzato;
 		\end{itemize}
-		%\paragraph{Metriche}
+		\paragraph{Metriche}
+			\subparagraph{} 
+			\begin{itemize}
+				\item \textbf{}
+				\item \textbf{}
+				\item \textbf{}
+			\end{itemize}
 		
 %\subsection{Project Assessment and Control Process}
 %\subsection{Processo di Costruzione del Software}
