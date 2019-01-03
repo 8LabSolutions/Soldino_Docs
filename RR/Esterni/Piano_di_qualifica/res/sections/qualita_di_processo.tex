@@ -83,33 +83,99 @@ accoppiamento della componente.
 			\subparagraph{Code Coverage}
 				Indica il numero di righe di codice percorse dai test durante la loro esecuzione. 
 				\begin{itemize}
-					\item misurazione: $Le/Lt$;
+					\item misurazione: $L_e/L_t$;
 					\item valore preferibile: $100\%$;
 					\item valore accettabile: $75\%$.
 				\end{itemize}
 			% a grana più fine ci sarebbero: function coverage, loop coverage, branch coverage
-	\subsubsection{Processo di Gestione della Documentazione}
+
+	\subsubsection{Processo di Gestione dell'Informazione}
+	Il processo consiste nella produzione di informazioni e nella loro gestione. Con informazioni ci si riferisce in particolar modo ai documenti che sono prodotti a supporto di tutte le attività di progetto.
 		\paragraph{Obiettivi}
-		\paragraph{Stragegia}
-		\paragraph{Metriche}
-			\subparagraph{} 
+			Si costruisce la documentazione affinché sia un body of knowledge % PLACEHOLDER: glossario
+			che raccoglie la conoscenza in modo:
 			\begin{itemize}
-				\item \textbf{}
-				\item \textbf{}
-				\item \textbf{}
+				\item completo;
+				\item non ambiguo;
+				\item modulare e fatto di parti coese;
+				\item trasparente, adatto alla trasmissione delle informazioni;
+				\item disponibile esternamente.
+			\end{itemize}
+		\paragraph{Strategia}
+		I documenti sono:
+		\begin{itemize}
+			\item prodotti in concomitanza con tutte le attività di sviluppo;
+			\item prodotti in modo collaborativo;
+			\item supportati da un glossario;
+			\item supportati da Norme di Progetto;
+			\item prodotti con strumenti software adatti alla collaborazione e alla modularità in \LaTeX{};
+			\item ospitati in una repository pubblica su Github;
+		\end{itemize}
+		\paragraph{Metriche}
+			\subparagraph{Indice di Gulpease}
+			Indice della leggibilità del testo. Valuta la lunghezza delle parole e delle frasi rispetto al numero totale di lettere. 
+			\begin{itemize}
+				\item misurazione: valore intero da 0 a 100:\newline 
+				
+				$I_G = 89+ \frac{(300 * numero\ di\ frasi - 10 * numero\ di\ lettere)}{/numero\ di\ parole}$	
+				\item valore preferibile: $80 < I_G < 100$;
+				\item valore accettabile: $40 < I_G < 100$	
 			\end{itemize}
 		
 \subsection{Processi Organizzativi}
-	\subsection{Processo di Pianificazione di Progetto}	
+	\subsection{Processo di Pianificazione di Progetto}
+	Il processo consiste nella produzione di un Piano di Progetto e nella sua manutenzione. Il piano governa le risorse a disposizione, ovvero tempi, costi e ruoli.
 		\paragraph{Obiettivi}
+		\begin{itemize}
+			\item produrre la pianificazione delle attività;
+			\item mantenerla aggiornata mentre esse vengono svolte;
+			\item usarla come riferimento e supporto.
+		\end{itemize}
 		\paragraph{Strategia}
 		\paragraph{Metriche}
-			\subparagraph{} 
+			\subparagraph{BAC: Budget at Completion}
+			Budget totale allocato per il progetto
 			\begin{itemize}
-				\item \textbf{}
-				\item \textbf{}
-				\item \textbf{}
+				\item misurazione: numero intero;
+				\item valore preferibile: $BAC>0$ durante il progetto, $BAC=0$ al termine;
+				\item valore accettabile: $BAC>0$ durante il progetto, $BAC=0$ al termine.
 			\end{itemize}
+			\subparagraph{AC: Actual Cost}
+			Il denaro speso fino al momento del calcolo.
+			\begin{itemize}
+				\item  misurazione: numero intero;
+				\item  valore preferibile: $0 \leq AC < PV$;
+				\item  valore accettabile: $0 \leq AC \leq budget totale$;
+			\end{itemize}
+			\subparagraph{EV - Earned Value}
+			Si tratta del valore del lavoro fatto fino al momento del calcolo; corrisponde al denaro guadagnato fino a quel momento.
+			\begin{itemize}
+				\item  misurazione: $BAC * \% di lavoro completato$;
+				\item  valore preferibile: $EV \geq 0$;
+				\item  valore accettabile: $EV \geq 0$.
+			\end{itemize}
+			\subparagraph{PV: Planned Value}
+			Si tratta del valore del lavoro pianificato al momento del calcolo: corrisponde al denaro che si dovrebbe aver guadagnato in quel momento.
+			\begin{itemize}
+				\item  misurazione: $BAC * \% di lavoro pianificato$;
+				\item  valore preferibile: $PV \geq 0$;
+				\item  valore accettabile: $PV \geq 0$;
+			\end{itemize}			
+			\subparagraph{SV: Schedule Variance}
+			Dice se si è avanti o indietro nello svolgimento del progetto rispetto alla pianificazione.
+			\begin{itemize}
+				\item misurazione: $SV = EV - PV$
+				\item valore preferibile: $SV > 0$;
+				\item valore accettabile: $SV = 0$;
+			\end{itemize}
+			\subparagraph{Cost Variance}
+			Differenza tra il costo del lavoro effettivamente completato e quello pianificato. Una CV positiva indica che si sta rispettando il budget.
+			\begin{itemize}
+				\item misurazione: $CV = EV - AC$;
+				\item valore preferibile: $CV > 0$
+				\item valore accettabile: $CV \geq 0$
+			\end{itemize}
+		
 	\subsection{Processo di Gestione della Qualità}
 		\paragraph{Obiettivi}
 		\paragraph{Strategia}
@@ -122,7 +188,7 @@ accoppiamento della componente.
 			\end{itemize}
 	\subsection{Processo di Misurazione} % cambia con qta
 		\paragraph{Obiettivi}
-		Scegliere metriche adeguate, effettuare misurazioni basate su tali metriche per migliorare, controllare e garandire la qualità di prodotto e processo.
+		Scegliere metriche adeguate, con queste effettuare misurazioni per migliorare, controllare e garantire la qualità di prodotto e processo.
 		\paragraph{Strategia}
 		\begin{itemize}
 			\item definire gli oggetti di interesse da misurare;
