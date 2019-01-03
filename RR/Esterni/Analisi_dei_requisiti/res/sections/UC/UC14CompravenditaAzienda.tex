@@ -11,8 +11,10 @@
 	\begin{itemize}
 		\item visualizzazione della data dell'ordine [UC14.1.1];
 		\item visualizzazione del numero dell'ordine [UC14.1.2];
-		\item visualizzazione dell'importo totale dell'ordine [UC14.1.3];
-		\item visualizzazione dei prodotti inclusi nell'ordine [UC14.1.4].
+		\item visualizzazione dell'importo netto dell'ordine [UC14.1.3];
+		\item visualizzazione dei prodotti inclusi nell'ordine [UC14.1.4];
+		\item visualizzazione dell'importo dell'IVA dell'ordine [UC14.1.5];
+		\item visualizzazione dell'importo lordo dell'ordine [UC14.1.6].
 	\end{itemize}
 Inoltre per le vendite in attesa di approvazione è disponibile la data ultima per la conferma [UC14.2.1] e per quanto riguarda gli ordini con pagamento dilazionato,  la data ultima per il pagamento [UC14.3.1].
 	\item \textbf{Specializzazione}
@@ -55,12 +57,12 @@ Inoltre per le vendite in attesa di approvazione è disponibile la data ultima p
 	\item \textbf{Postcondizione}: l'utente visualizza tale numero.
 \end{itemize}
 
-\subsubsection{UC14.1.3 - Importo totale}
+\subsubsection{UC14.1.3 - Importo netto}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda, cittadino;
-	\item \textbf{Descrizione}: l'utente può visualizzare l'importo totale dell'ordine in questione;
+	\item \textbf{Descrizione}: l'utente può visualizzare l'importo netto dell'ordine in questione;
 	\item \textbf{Scenario principale}: l'utente visualizza la lista degli ordini;
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e questo ha espresso la volontà di visualizzare la lista degli ordini per vedere gli importi totali degli stessi;
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e questo ha espresso la volontà di visualizzare la lista degli ordini per vedere gli importi netti degli stessi;
 	\item \textbf{Postcondizione}: l'utente visualizza tale importo.
 \end{itemize}
 
@@ -73,6 +75,24 @@ Inoltre per le vendite in attesa di approvazione è disponibile la data ultima p
 	\item \textbf{Postcondizione}: l'utente visualizza tali prodotti.
 \end{itemize}
 
+\subsubsection{UC14.1.5 - IVA}
+\begin{itemize}
+	\item \textbf{Attori Primari}: azienda, cittadino;
+	\item \textbf{Descrizione}: l'utente può visualizzare l'importo dell'IVA dell'ordine in questione;
+	\item \textbf{Scenario principale}: l'utente visualizza la lista degli ordini;
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e questo ha espresso la volontà di visualizzare la lista degli ordini per vedere gli importi riguardanti l'IVA degli stessi;
+	\item \textbf{Postcondizione}: l'utente visualizza tale importo.
+\end{itemize}
+
+\subsubsection{UC14.1.6 - Importo lordo}
+\begin{itemize}
+	\item \textbf{Attori Primari}: azienda, cittadino;
+	\item \textbf{Descrizione}: l'utente può visualizzare l'importo lordo dell'ordine in questione;
+	\item \textbf{Scenario principale}: l'utente visualizza la lista degli ordini;
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e questo ha espresso la volontà di visualizzare la lista degli ordini per vedere gli importi lordi degli stessi;
+	\item \textbf{Postcondizione}: l'utente visualizza tale importo.
+\end{itemize}
+
 \subsubsection{UC14.2 - Visualizzazione ordini in attesa di approvazione}
 \begin{figure}[H]
 	\includegraphics[width=5cm]{res/images/UC14-2.png}
@@ -80,24 +100,24 @@ Inoltre per le vendite in attesa di approvazione è disponibile la data ultima p
 	\caption{Visualizzazione degli ordini in attesa di approazione}
 \end{figure}
 \begin{itemize}
-	\item \textbf{Attori Primari}: azienda, cittadino;
-	\item \textbf{Descrizione}: agli utenti è messa a disposizione la possibilità di visualizzare e gestire gli ordini in attesa di approvazione, visualizzando la data ultima per la conferma;
+	\item \textbf{Attori Primari}: azienda;
+	\item \textbf{Descrizione}: all'azienda è messa a disposizione la possibilità di visualizzare e gestire gli ordini in attesa di approvazione, visualizzando la data ultima per la conferma;
 	\item \textbf{Scenario principale}: l'utente visualizza gli ordini in attesa di approvazione;
 		\item \textbf{Specializzazione}
 	\begin{itemize}
 		\item \textbf{UC14.4}: Visualizzazione degli ordini con modalità di pagamento immediato;
 		\item \textbf{UC14.5}: Visualizzazione degli ordini con modalità di pagamento dilazionato.
 	\end{itemize}
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e mette a disposizione tutte le pagine necessarie alla visualizzazione di questo tipo di ordini;
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda e mette a disposizione tutte le pagine necessarie alla visualizzazione di questo tipo di ordini;
 	\item \textbf{Postcondizione}: l'utente ha visualizzato e/o gestito i propri ordini in attesa di approvazione.
 \end{itemize} 
 
 \subsubsection{UC14.2.1 - Data ultima per la conferma}
 \begin{itemize}
-	\item \textbf{Attori Primari}: azienda, cittadino;
-	\item \textbf{Descrizione}: l'utente può visualizzare la data ultima per la conferma dell'ordine in questione;
+	\item \textbf{Attori Primari}: azienda;
+	\item \textbf{Descrizione}: l'azienda può visualizzare la data ultima per la conferma dell'ordine in questione;
 	\item \textbf{Scenario principale}: l'utente visualizza la lista degli ordini;
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e questo ha espresso la volontà di visualizzare la lista degli ordini per vedere le date di scadenza per l'ultima possibilità di esprimere la conferma;
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda e questo ha espresso la volontà di visualizzare la lista degli ordini per vedere le date di scadenza per l'ultima possibilità di esprimere la conferma;
 	\item \textbf{Postcondizione}: l'utente visualizza tale data.
 \end{itemize}
 
@@ -108,8 +128,8 @@ Inoltre per le vendite in attesa di approvazione è disponibile la data ultima p
 	\caption{Visualizzazione degli ordini con pagamento dilazionato}
 \end{figure}
 \begin{itemize}
-	\item \textbf{Attori Primari}: azienda, cittadino;
-	\item \textbf{Descrizione}: alle aziende e ai cittadini è messa a disposizione la possibilità di visualizzare e gestire gli ordini con pagamento dilazionato, visualizzando la data ultima per il pagamento;
+	\item \textbf{Attori Primari}: azienda;
+	\item \textbf{Descrizione}: alle aziende è messa a disposizione la possibilità di visualizzare e gestire gli ordini con pagamento dilazionato, visualizzando la data ultima per il pagamento;
 	\item \textbf{Scenario principale}: l'utente visualizza gli ordini con modalità di pagamento dilazionato;
 			\item \textbf{Specializzazione}
 	\begin{itemize}
@@ -118,16 +138,16 @@ Inoltre per le vendite in attesa di approvazione è disponibile la data ultima p
 		\item \textbf{UC14.8}: Visualizzazione degli acquisti con modalità di pagamento dilazionato non concluse;
 		\item \textbf{UC14.10}: Visualizzazione delle proposte d'acquisto in attesa di conferma.
 	\end{itemize}
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e mette a disposizione tutte le pagine necessarie alla visualizzazione di questo tipo ordini;
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda e mette a disposizione tutte le pagine necessarie alla visualizzazione di questo tipo ordini;
 	\item \textbf{Postcondizione}: l'utente ha visualizzato e/o gestito i propri acquisti con pagamento dilazionato.
 \end{itemize} 
 
 \subsubsection{UC14.3.1 - Data ultima per il pagamento}
 \begin{itemize}
-	\item \textbf{Attori Primari}: azienda, cittadino;
+	\item \textbf{Attori Primari}: azienda;
 	\item \textbf{Descrizione}: l'utente può visualizzare la data ultima per il pagamento dell'ordine in questione;
 	\item \textbf{Scenario principale}: l'utente visualizza la lista degli ordini;
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e questo ha espresso la volontà di visualizzare la lista degli ordini per vedere le date di scadenza per l'ultima possibilità di effettuare il pagamento;
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda e questo ha espresso la volontà di visualizzare la lista degli ordini per vedere le date di scadenza per l'ultima possibilità di effettuare il pagamento;
 	\item \textbf{Postcondizione}: l'utente visualizza tale data.
 \end{itemize}
 
@@ -196,10 +216,10 @@ Inoltre per le vendite in attesa di approvazione è disponibile la data ultima p
 \end{itemize}
 \subsubsection{UC14.8 - Visualizzazione acquisti con pagamento dilazionato non concluse}
 \begin{itemize}
-	\item \textbf{Attori Primari}: azienda, cittadino;
+	\item \textbf{Attori Primari}: azienda;
 	\item \textbf{Descrizione}: l'azienda può visualizzare la lista degli acquisti con pagamento dilazionato\glosp approvate, ma non ancora concluse, ovvero l'azienda-cliente deve ancora effettuare il pagamento;
 	\item \textbf{Scenario principale}: l'utente visualizza la lista degli acquisti con modalità di pagamento dilazionato\glosp accettate ma non ancora concluse;
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e questo ha espresso la volontà di visualizzare la lista degli acquisti con modalità di pagamento dilazionato\glosp accettate ma non ancora concluse;
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda e questo ha espresso la volontà di visualizzare la lista degli acquisti con modalità di pagamento dilazionato\glosp accettate ma non ancora concluse;
 	\item \textbf{Postcondizione}: l'utente visualizza tale lista.
 \end{itemize}
 \subsubsection{UC14.9 - Esecuzione pagamento dilazionato}
