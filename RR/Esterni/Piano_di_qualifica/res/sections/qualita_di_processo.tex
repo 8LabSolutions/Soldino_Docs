@@ -2,27 +2,36 @@
 Per ricercare qualità nello svolgimento del progetto si adoperano dei processi. Inizialmente, tali processi sono stati scelti tra quelli proposti nello standard ISO/IEC/IEEE 12207:2017; successivamente sono stati semplificati.\newline 
 Il risultato sono i processi esposti a seguito.
 
+%\subsection{Processo di Costruzione del Software}. Opzione per il futuro.
+
+
 \subsection{Processi Primari}
 	\subsubsection{Processo di Analisi dei Requisiti}
 	Mediante il processo le informazioni ottenute dalle varie fonti sono trasformate in forma di casi d'uso e requisiti.
 	Questa forma fornisce una descrizione dettagliata del sistema e definisce il funzionamento e le caratteristiche di ogni sua parte.
 		\paragraph{Obiettivi}
 		\begin{itemize}
-			\item definire casi d'uso e requisiti;
+			\item formulare la definizione di casi d'uso e requisiti;
 			\item ottenere la loro approvazione;
 			\item tracciare il loro cambiamento nel tempo.
 		\end{itemize}		
 		\paragraph{Strategia}
-		Tracciare i requisiti del sistema.
+		\begin{itemize}
+			\item considerare lo scopo del progetto e le richieste degli stakeholder;
+			\item esprimere ciò in forma di requisiti, classificati in obbligatori, desiderabili e opzionali;
+			\item valutare il corpo dei requisiti e negoziare cambiamenti se necessario;
+			\item ottenere la loro approvazione da parte del proponente;
+		\end{itemize}
+		Disporre del tracciamento dei requisiti del sistema.
 		\paragraph{Metriche}
-			\subparagraph{Numero di requisiti obbligatori soddisfatti} Indica la percentuale di requisiti obbligatori soddisfatti.
+			\subparagraph{Percentuale di requisiti obbligatori soddisfatti - PROS} Indica appunto la percentuale di requisiti obbligatori soddisfatti.
 			\begin{itemize}
-				\item \textbf{Misurazione}
-				\item \textbf{Valore preferibile}
-				\item \textbf{Valore accettabile}
+				\item misurazione: valore percentuale: $ PROS = \frac{requisiti obbligatori soddisfatti}{requisiti obbligatori totali}$;
+				\item valore preferibile: $100\%$;
+				\item valore accettabile: $100\%$.
 			\end{itemize}
-			
-	\subsection{Processo di Progettazione Architetturale}
+		
+	\subsubsection{Processo di Definizione dell'Architettura}
 	Tradurre i requisiti in un modello architetturale del sistema.
 	Il modello è ad alto livello di dettaglio: in esso il sistema è costituito da macro-componenti, utili a capire il funzionamento delle parti, ma non ancora realizzabili nella pratica.\newline
 	Nel processo vanno considerati in particolare il tipo di software da produrre, le caratteristiche desiderate e i suoi requisiti non funzionali per scegliere l'architettura più adatta.
@@ -39,36 +48,37 @@ Il risultato sono i processi esposti a seguito.
 			\subparagraph{Structural Fan-in \textbf{SFIN}}
 			Indica quante componenti utilizzano un dato modulo. Un alto valore indica un alto riuso della componente.
 			\begin{itemize}
-				\item \textbf{Misurazione}: numero intero;
-				\item \textbf{Valore preferibile}: $\geq 1$;
-				\item \textbf{Valore accettabile}: $\geq 0$.
+				\item \textbf{Misurazione}: valore intero: conteggio delle componenti;
+				\item \textbf{Valore preferibile}: $SFIN \geq 1$;
+				\item \textbf{Valore accettabile}: $SFIN \geq 0$.
 			\end{itemize}
 			\subparagraph{Structural Fan-out \textbf{SFOUT}}
 			Indica quante componenti vengono utilizzate dalla componente in esame. Un alto valore indica un alto
 accoppiamento della componente.
 			\begin{itemize}
-				\item \textbf{Misurazione}: numero intero;
-				\item \textbf{Valore preferibile}: $=0$;
-				\item \textbf{Valore accettabile}: $<=6$.
+				\item \textbf{Misurazione}: valore intero: conteggio delle componenti;
+				\item \textbf{Valore preferibile}: $SFOUT = 0$;
+				\item \textbf{Valore accettabile}: $SFOUT \leq 6$.
 			\end{itemize}
 			
-	\subsection{Processo di Progettazione di Dettaglio}
-	La progettazione di dettaglio segue la progettazione architetturale, e prevede la scomposizione delle macro-componenti in componenti più piccole che sono:
+	\subsubsection{Processo di Progettazione di Design}
+	La Progettazione di Design segue la Definizione dell'Architettura e prevede la scomposizione delle macro-componenti in componenti più piccole che sono:
 	\begin{itemize}
 		\item immediatamente comprensibili;
 		\item strettamente collegate ai requisiti funzionali;
 		\item sviluppabili da un singolo programmatore.
 	\end{itemize}
 		\paragraph{Obiettivi}
-		Arrivare alla definizione di dettaglio del sistema, cioè scomporlo in unità software dette componenti.
+			Ottenere unità software atomiche dette componenti, facili da tradurre in codice e da testare.
 		\paragraph{Strategia}
+		
 		\paragraph{Metriche}
 			\subparagraph{Numero di metodi per classe}
 			\subparagraph{Numero di parametri per metodo}
 		
 \subsection{Processi di Supporto}
-	\subsection{Processo di Verifica}
-	Il processo consiste nella ricerca e correzione di anomalie nei processi e nei prodotti del progetto, mediante tecniche definite.
+	\subsubsection{Processo di Verifica}
+	Il processo consiste nella ricerca e correzione di anomalie e difetti nei processi e prodotti del progetto, mediante tecniche predefinite e se possibile automatiche.
 		\paragraph{Obiettivi}
 		\begin{itemize}
 			\item individuare e correggere le anomalie;
@@ -77,20 +87,21 @@ accoppiamento della componente.
 		\paragraph{Strategia}
 		\begin{itemize}
 			\item individuare tecniche e strumenti di verifica;
-			\item affinare tecniche e strumenti con l'esperienza;
+			\item applicarli;
+			\item affinarli con l'esperienza;
 		\end{itemize}	
 		\paragraph{Metriche}
-			\subparagraph{Code Coverage}
-				Indica il numero di righe di codice percorse dai test durante la loro esecuzione. 
+			\subparagraph{Code Coverage - CC}
+				Indica il numero di righe di codice percorse dai test durante la loro esecuzione. Per linee di codice totali si intende tutte quelle appartenenti all'unità in fase di test.
 				\begin{itemize}
-					\item misurazione: $L_e/L_t$;
+					\item misurazione: valore percentuale: $CC = \frac{linee\ di\ codice\ percorse}{linee\ di\ codice\ totali}$;
 					\item valore preferibile: $100\%$;
 					\item valore accettabile: $75\%$.
 				\end{itemize}
 			% a grana più fine ci sarebbero: function coverage, loop coverage, branch coverage
 
 	\subsubsection{Processo di Gestione dell'Informazione}
-	Il processo consiste nella produzione di informazioni e nella loro gestione. Con informazioni ci si riferisce in particolar modo ai documenti che sono prodotti a supporto di tutte le attività di progetto.
+	Il processo consiste nella produzione di informazioni, la cui forma tipica è  documentale, e nella loro gestione. I documenti sono prodotti a supporto di tutte le attività di progetto.
 		\paragraph{Obiettivi}
 			Si costruisce la documentazione affinché sia un body of knowledge % PLACEHOLDER: glossario
 			che raccoglie la conoscenza in modo:
@@ -112,18 +123,18 @@ accoppiamento della componente.
 			\item ospitati in una repository pubblica su Github;
 		\end{itemize}
 		\paragraph{Metriche}
+			% indice di fog omesso: contiene il parametro "numero parole complesse" che non è automatizzabile
 			\subparagraph{Indice di Gulpease}
 			Indice della leggibilità del testo. Valuta la lunghezza delle parole e delle frasi rispetto al numero totale di lettere. 
 			\begin{itemize}
-				\item misurazione: valore intero da 0 a 100:\newline 
-				
+				\item misurazione: valore intero da 0 a 100:\newline 	
 				$I_G = 89+ \frac{(300 * numero\ di\ frasi - 10 * numero\ di\ lettere)}{/numero\ di\ parole}$	
 				\item valore preferibile: $80 < I_G < 100$;
 				\item valore accettabile: $40 < I_G < 100$	
 			\end{itemize}
 		
 \subsection{Processi Organizzativi}
-	\subsection{Processo di Pianificazione di Progetto}
+	\subsubsection{Processo di Pianificazione di Progetto}
 	Il processo consiste nella produzione di un Piano di Progetto e nella sua manutenzione. Il piano governa le risorse a disposizione, ovvero tempi, costi e ruoli.
 		\paragraph{Obiettivi}
 		\begin{itemize}
@@ -137,8 +148,9 @@ accoppiamento della componente.
 			Budget totale allocato per il progetto
 			\begin{itemize}
 				\item misurazione: numero intero;
-				\item valore preferibile: $BAC>0$ durante il progetto, $BAC=0$ al termine;
-				\item valore accettabile: $BAC>0$ durante il progetto, $BAC=0$ al termine.
+				% PLACEHOLDER: Aggiornare i 2 item qui sotto
+				\item valore preferibile: $pari al preventivo$;
+				\item valore accettabile: $di poco maggiore o pari al preventivo$.
 			\end{itemize}
 			\subparagraph{AC: Actual Cost}
 			Il denaro speso fino al momento del calcolo.
@@ -148,7 +160,7 @@ accoppiamento della componente.
 				\item  valore accettabile: $0 \leq AC \leq budget totale$;
 			\end{itemize}
 			\subparagraph{EV - Earned Value}
-			Si tratta del valore del lavoro fatto fino al momento del calcolo; corrisponde al denaro guadagnato fino a quel momento.
+			Metrica di utilità. Si tratta del valore del lavoro fatto fino al momento del calcolo; corrisponde al denaro guadagnato fino a quel momento.
 			\begin{itemize}
 				\item  misurazione: $BAC * \% di lavoro completato$;
 				\item  valore preferibile: $EV \geq 0$;
@@ -176,32 +188,26 @@ accoppiamento della componente.
 				\item valore accettabile: $CV \geq 0$
 			\end{itemize}
 		
-	\subsection{Processo di Gestione della Qualità}
+	\subsubsection{Processo di Gestione della Qualità}
+	Tale processo ha per scopo il raggiungimento di un grado soddisfacente di qualità nel progetto. Fornisce:
+	\begin{itemize}
+		\item obiettivi da perseguire;
+		\item strumenti tecnici, come procedure e metriche.
+	\end{itemize}
 		\paragraph{Obiettivi}
-		\paragraph{Strategia}
-		\paragraph{Metriche}
-			\subparagraph{} 
-			\begin{itemize}
-				\item \textbf{}
-				\item \textbf{}
-				\item \textbf{}
-			\end{itemize}
-	\subsection{Processo di Misurazione} % cambia con qta
-		\paragraph{Obiettivi}
-		Scegliere metriche adeguate, con queste effettuare misurazioni per migliorare, controllare e garantire la qualità di prodotto e processo.
+		Garantire che i prodotti e processi rispettino gli standard di qualità richiesti.
 		\paragraph{Strategia}
 		\begin{itemize}
-			\item definire gli oggetti di interesse da misurare;
-			\item scegliere metriche appropriate;
-			\item effettuare le misurazioni nel modo più possibile automatizzato;
+			\item pianificare le proprie azioni perseguendo gli obiettivi;
+			\item utilizzare gli strumenti forniti per misurare e monitorare i risultati;
+			\item reagire ai risultati aggiornando obiettivi, strategia e strumenti.
 		\end{itemize}
 		\paragraph{Metriche}
-			\subparagraph{} 
+			\subparagraph{Percentuale di metriche soddisfatte - PMS}
+			La percentuale di metriche soddisfatte valuta quante metriche raggiungono soglie accettabili sul numero totale delle metriche calcolate. Una bassa percentuale di soddisfazione può indicare poca qualità, metriche inadeguate o mancata correttezza nel calcolo.
 			\begin{itemize}
-				\item \textbf{}
-				\item \textbf{}
-				\item \textbf{}
+				\item misurazione: $\frac{numero\ di\ metriche\ soddisfatte}{numero\ di\ metriche\ totali} $;
+				\item valore preferibile: $PMS \geq 80\%$;
+				\item valore accettabile: $PMS \geq 60\%$;
 			\end{itemize}
-		
-%\subsection{Project Assessment and Control Process}
-%\subsection{Processo di Costruzione del Software}
+	
