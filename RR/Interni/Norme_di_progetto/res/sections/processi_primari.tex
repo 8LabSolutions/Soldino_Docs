@@ -156,32 +156,36 @@ Dove:
 \subparagraph{Requisiti} \mbox{}\\
 Ogni requisito è composto dalla seguente struttura:
 \begin{itemize}
-	\item codice;
-	\item classificazione;
-	\item descrizione;
-	\item fonti.
-\end{itemize}
-\subparagraph{Codice identificativo dei requisiti} \mbox{}\\
-Ogni requisito è conforme alla seguente codifica:\newline
-\centerline{R[Importanza][Tipologia][Codice]}\newline
-Il significato delle cui voci è:
-\begin{itemize}
-	\item \textbf{Importanza} distingue i requisiti in:
+	\item \textbf{codice identificativo}: ogni codice identificativo è univoco e conforme alla seguente codifica: \\
+	\centerline{R[Importanza][Tipologia][Codice]} \\ \\
+	Il significato delle cui voci è:
 	\begin{itemize}
-		\item[1] Obbligatorio;
-		\item[2] Desiderabile;
-		\item[3] Opzionale.
+		\item \textbf{Importanza}: ogni requisito può assumere uno dei seguenti valori:
+		\begin{itemize}
+			\item \textit{1}: requisito obbligatorio;
+			\item \textit{2}: requisito desiderabile;
+			\item \textit{3}: requisito opzionale.
+		\end{itemize}
+		\item \textbf{Tipologia}: ogni requisito può assumere uno dei seguenti valori:
+		\begin{itemize}
+			\item \textit{F}: funzionale;
+			\item \textit{Q}: prestazionale;
+			\item \textit{P}: qualitativo;
+			\item \textit{V}: vincolo.
+		\end{itemize}
+		\item \textbf{Codice} è un identificatore univoco del requisito in forma gerarchica padre/figlio.
 	\end{itemize}
-	\item \textbf{Tipologia} distingue i requisiti in:
+	\item \textbf{classificazione}: viene riportata l'importanza del requisito. Sebbene questa sia un'informazione ridondante ne facilita la lettura;
+	\item \textbf{descrizione}: descrizione breve ma completa del requisito, meno ambigua possibile;
+	\item \textbf{fonti}: ogni requisito può derivare da una o più tra le seguenti opzioni:
 	\begin{itemize}
-		\item[F] Funzionale;
-		\item[P] Prestazionale;
-		\item[Q] Qualitativo;
-		\item[V] Vincolo.
+		\item \textit{capitolato}: si tratta di un requisito individuato dalla lettura del capitolato;
+		\item \textit{interno}: si tratta di un requisito che gli analisti hanno ritenuto opportuno aggiungere;
+		\item \textit{caso d'uso}: il requisito è estrapolato da uno o più casi d'uso. In questo caso deve essere riportato il codice univoco del caso d'uso;
+		\item \textit{verbale}: si tratta di un requisito individuato in seguito ad una richiesta di chiarimento con il proponente. Tali informazioni sono riportate nei verbali.
 	\end{itemize}
-	\item \textbf{Codice} è un identificatore univoco del requisito in forma gerarchica padre/figlio.
 \end{itemize}
-Ogni requisito contiene inoltre una descrizione testuale.
+
 \subparagraph{UML} \mbox{}\\
 I diagrammi UML devono essere realizzati usando la versione del linguaggio v2.0.
 
