@@ -1,5 +1,5 @@
 \section{Qualità di prodotto}
-Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento allo standard ISO/IEC 9126\glosp{} che definisce le caratteristiche di cui tener conto nel momento in cui si voglia produrre un prodotto di buona qualità. Le caratteristiche sono descritte attraverso dei parametri misurabili che permettono di quantificare il raggiungimento della caratteristica in questione. Di seguito vengono citate le voci che il gruppo ha ritenuto rilevanti in relazione al contesto.
+Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento allo standard ISO/IEC 9126\glosp{} che definisce le caratteristiche di cui tener conto nel momento in cui si voglia produrre un prodotto di buona qualità. Le caratteristiche sono descritte attraverso dei parametri misurabili che permettono di quantificare il raggiungimento della caratteristica in questione. Di seguito vengono citate le voci che il gruppo ha ritenuto rilevanti in relazione al contesto del progetto.
 	\subsection{Funzionalità}
 	Capacità del prodotto di fornire funzioni che riescano a soddisfare tutti i requisiti, sia quelli espliciti che quelli impliciti, presenti nell'Analisi dei Requisiti.
 		\subsubsection{Obiettivi}
@@ -10,11 +10,13 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 		\end{itemize}
 		\subsubsection{Metriche}
 			\paragraph{Completezza dell'implementazione}
+			La completezza del prodotto e il rispetto dei requisiti viene indicato da una percentuale.
 			\begin{itemize}
-			\item La completezza del prodotto e il rispetto dei requisiti viene indicato da una percentuale che si calcola con la seguente formula: \\
+			\item \textbf{Misurazione}: Si calcola con la seguente formula: \\
 			\centerline { C = (1 - \(\frac{N\textsubscript{FNI}}{N\textsubscript{FI}} \))$ \cdot  100$ } \\
-			dove N\textsubscript{FNI} indica il numero di funzionalità non implementate e N\textsubscript{FI} indica il numero di funzionalità individuate dall'analisi.
-			\item Il valore di accettazione di C è 100\%, a indicare quindi che tutte le funzionalità, individuate dai requisiti obbligatori, sono state implementate
+			dove N\textsubscript{FNI} indica il numero di funzionalità non implementate e N\textsubscript{FI} indica il numero di funzionalità individuate dall'analisi;
+			\item \textbf{Valore accettabile}: 100\%;
+			\item \textbf{Valore accettabile}: 100\%.
 			\end{itemize}
 	\subsection{Affidabilità}
 	Capacità del prodotto di mantenere prestazioni elevate anche in caso di situazioni non normali o critiche.
@@ -25,12 +27,13 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 		\end{itemize}
 		\subsubsection{Metriche}
 			\paragraph{Densità errori}
+			L'abilità del prodotto di resistere a malfunzionamenti viene indicata con una percentuale.
 			\begin{itemize}
-			\item L'abilità del prodotto di resistere a malfunzionamenti viene indicata con una percentuale che si calcola con la seguente formula: \\
+			\item \textbf{Misurazione}: Si calcola con la seguente formula: \\
 			\centerline{ M =  \(\frac{N\textsubscript{ER}}{N\textsubscript{TE}} \)$ \cdot 100$ }
 			dove N\textsubscript{ER} indica il numero di errori rilevati durante il testing e N\textsubscript{TE} indica il numero di test eseguiti;
-			\item Il valore preferibile è 0\%;
-			\item Un valore accettabile è non superiore al 10\%.
+			\item\textbf{Valore preferibile}: 0\%;
+			\item \textbf{Valore accettabile}: $\leq$ 10\%.
 			\end{itemize}
 	\subsection{Usabilità}
 	Capacità del prodotto di essere di facile comprensione e utilizzo da parte degli utenti.
@@ -38,54 +41,60 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 		\begin{itemize}
 			\item \textbf{Comprensibilità}: l'utente deve essere in grado di comprendere le funzionalità offerte dal prodotto e ad utilizzarle;
 			\item \textbf{Apprendibilità}: l'utente deve poter imparare facilmente ad utilizzare il prodotto;
-			\item \textbf{Attrattività}: il prodotto deve essere piacevole all'utente che ne fa utilizzo;
+			\item \textbf{Attrattività}: il prodotto deve essere piacevole all'utente che ne fa utilizzo.
 		\end{itemize}
 		\subsubsection{Metriche}
 			\paragraph{Facilità di utilizzo}
+			La facilità con cui l'utente raggiunge ciò che vuole viene rappresentata tramite il numero di click che sono necessari per arrivare al contenuto desiderato.
 			\begin{itemize}
-			\item La facilità con cui l'utente raggiunge ciò che vuole viene rappresentata tramite il numero di click che sono necessari per arrivare ad esempio alla pagina di fine ordine;
-			\item Il valore preferibile è 10 click;
-			\item Un valore accettabile è non superiore a 15.
+			\item \textbf{Misurazione}: Click per raggiungere la schermata di checkout;
+			\item \textbf{Valore preferibile}: 10;
+			\item \textbf{Valore accettabile}: $\leq$ 15.
 			\end{itemize}
 			\paragraph{Facilità di apprendimento}
+			La facilità con cui l'utente riesce ad imparare ad usare le funzionalità del prodotto viene rappresentata tramite il tempo medio che serve per comprenderle.
 			\begin{itemize}
-			\item La facilità con cui l'utente riesce ad imparare ad usare le funzionalità del prodotto viene rappresentata tramite il tempo medio che serve per comprenderle;
-			\item Il valore preferibile è 3 minuti;
-			\item Un valore accettabile è non superiori a 5.
+			\item \textbf{Misurazione}: Minuti per raggiungere pagina di checkout;
+			\item \textbf{Valore preferibile} 3;
+			\item\textbf{Valore accettabile} $\leq$ 5.
 			\end{itemize}
 			\paragraph{Profondità della gerarchia}
+			La profondità del sito. Un sito sito per essere facile da utilizzare non deve essere troppo profondo.
 			\begin{itemize}
-			\item La profondità del sito. Un sito sito per essere facile da utilizzare non deve essere troppo profondo;
-			\item Il valore preferibile è 4;
-			\item Un valore accettabile è inferiore a 7.
+			\item \textbf{Misurazione}: Livello di profondità della pagina di un oggetto;
+			\item \textbf{Valore preferibile}: 4;
+			\item \textbf{Valore accettabile}: $\leq$ 7.
 			\end{itemize}
 	\subsection{Manutenibilità}
 	Capacità del prodotto di essere modificato, includendo correzioni, miglioramenti o adattamenti.
 		\subsubsection{Obiettivi}
 		\begin{itemize}
 			\item \textbf{Analizzabilità}: facilità con la quale è possibile analizzare il codice per localizzare un errore;
-			\item \textbf{Modificabilità}: capacità del prodotto di permettere l'implementazione di una modifica;
+			\item \textbf{Modificabilità}: capacità del prodotto di permettere l'implementazione di una modifica.
 		\end{itemize}
 		\subsubsection{Metriche}
 			\paragraph{Facilità di comprensione}
+			La facilità con cui è possibile comprendere cosa fa il codice può rappresentata dal numero di linee di commento nel codice.
 			\begin{itemize}
-			\item La facilità con cui è possibile comprendere cosa fa il codice può rappresentata dalla seguente formula: \\
+			\item \textbf{Misurazione}: Si può calcolare con la seguente formula: \\
 			\centerline{R = \(\frac{N\textsubscript{LCOM}}{N\textsubscript{LCOD}} \) }
 			dove N\textsubscript{LCOM} indica le linee di commento e N\textsubscript{LCOD} indica le linee di codice;
-			\item Il valore ottimale di R è superiore a 0.20;
-			\item Un  valore accettabile è superiore a 0.10.
+			\item\textbf{Valore preferibile}: $\geq$ 0.20;
+			\item \textbf{Valore accettabile}: $\geq$ 0.10.
 			\end{itemize}
 			\paragraph{Semplicità delle funzioni}
+			La facilità di un metodo può essere rappresentata dal numero di parametri per metodo: meno parametri ha una funzione più è semplice e intuitiva.
 			\begin{itemize}
-			\item La facilità di un metodo può essere rappresentata dal numero di parametri per metodo: meno parametri ha una funzione più è semplice e intuitiva;
-			\item Il valore preferibile è inferiore o uguale ai 3 parametri per metodo;
-			\item Un valore accettabile  è non superiore a 6.
+			\item \textbf{Misurazione}: Numero di parametri per metodo;
+			\item\textbf{Valore preferibile} $\leq$ 3;
+			\item \textbf{Valore accettabile} $\leq$ 6.
 			\end{itemize}
 			\paragraph{Semplicità delle classi}
+			La facilità di una classe può essere rappresentata dal numero di metodi per classe: una classe con pochi metodi ha uno scopo ben preciso e facilmente comprensibile.
 			\begin{itemize}
-			\item La facilità di una classe può essere rappresentata dal numero di metodi per classe: una classe con pochi metodi ha uno scopo ben preciso e facilmente comprensibile;
-			\item Il valore ottimale di metodi per classe è inferiore a 8;
-			\item Un valore accettabile è non superiore a 15.
+			\item \textbf{Misurazione}: Numero di metodi per classe;
+			\item\textbf{Valore preferibile} $\leq$ 8;
+			\item \textbf{Valore accettabile} $\leq$ 15.
 			\end{itemize}
 \pagebreak
 	\subsection{Metriche per i documenti}
@@ -93,16 +102,19 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 	\subsubsection{Correttezza ortografica}
 	Tutti i documenti, sia quelli in italiano che quelli in inglese, non devono assolutamente contenere errori grammaticali o errori ortografici. 
 	\begin{itemize}
-		\item Saranno accettati solamente documenti privi di errori grammaticali o ortografici.
+		\item \textbf{Misurazione}:Numero di errori grammaticali o ortografici;
+		\item \textbf{Valore preferibile} 0;
+		\item \textbf{Valore accettabile} 0.
 	\end{itemize}
 	\subsubsection{Indice di Gulpease}
 	Il gruppo si impegna a scrivere documenti facilmente leggibili.
+	L'indice di Gulpease fornisce una misura della leggibilità di un documento scritto italiano.
 	\begin{itemize}
-	\item L'indice di Gulpease fornisce una misura della leggibilità di un documento scritto italiano. La formula che calcola questo indice è la seguente:\\
+	\item \textbf{Misurazione}: La formula che calcola questo indice è la seguente:\\
 	\centerline{ 89 + \(\frac{ {330 \cdot (numero \thinspace delle \thinspace frasi) - 10 \cdot (numero \thinspace delle \thinspace lettere)}}{numero \thinspace delle \thinspace parole} \)} 
 	Questa formula produce un risultato compreso tra 0 e 100 dove 100 indica la leggibilità più alta;
-	\item Il valore ottimale sarà superiore a 80;
-	\item Un valore accettabile è superiore a 40.
+	\item \textbf{Valore preferibile}: $\geq$ 80;
+	\item \textbf{Valore accettabile}: $\geq$ 40.
 	\end{itemize}
 
 		
