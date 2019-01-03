@@ -1,8 +1,8 @@
 \subsubsection{UC14 - Gestione acquisti e vendite}
 \begin{figure}[h]
-	\includegraphics[width=6cm]{res/images/UC14-Generale.png}
+	\includegraphics[width=8cm]{res/images/UC14-Generale.png}
 	\centering
-	\caption{Gestione degli acquisti e delle vendite da parte delle aziende}
+	\caption{UC14 - Gestione degli acquisti e delle vendite da parte delle aziende}
 \end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
@@ -11,18 +11,18 @@
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, e mette a disposizione tutte le pagine necessarie alla visualizzazione e gestione degli acquisti, vendite e fatture.
 	\item \textbf{Postcondizione}: l'azienda ha visualizzato e/o gestito i propri acquisti, vendite e fatture.
 \end{itemize} 
-\subsubsection{UC14.1 - Gestione vendite}
+\subsubsection{UC14.1 - Visualizzazione vendite}
 \begin{figure}[H]
-	\includegraphics[width=8cm]{res/images/UC14-Vendite.png}
+	\includegraphics[width=9cm]{res/images/UC14-VisualizzazioneVendite.png}
 	\centering
-	\caption{Gestione delle vendite da parte delle aziende}
+	\caption{UC14.1 - Visualizzazione delle vendite da parte delle aziende}
 \end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: alle aziende sono messe a disposizione diverse operazione per visualizzare e gestire le vendite all'interno della piattaforma. Esse comprendono la visualizzazione dello stato di approvazione/rifiuto di proposte d'ordine verso altre aziende, l'approvazione/rifiuto di proposte di pagamento dilazionato, e la visualizzazione delle aziende che devono ancora pagare una somma dilazionata come precedentemente accordato;
-	\item \textbf{Scenario principale}: l'utente visualizza e svolge alcune operazioni per gestire le vendite;
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, e mette a disposizione tutte le pagine necessarie alla visualizzazione e gestione delle vendite;
-	\item \textbf{Postcondizione}: l'azienda ha visualizzato e/o gestitole proprie vendite.
+	\item \textbf{Descrizione}: alle aziende sono messe a disposizione diverse operazione per visualizzare le diverse tipologie di operazioni di vendita; 
+	\item \textbf{Scenario principale}: l'utente visualizza i diversi tipi di vendita accedendo a delle pagine dedicate;
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, e mette a disposizione tutte le pagine necessarie alla visualizzazione delle vendite;
+	\item \textbf{Postcondizione}: l'azienda ha visualizzato ed ottenuto informazioni relative alle proprie vendite.
 \end{itemize} 
 
 \subsubsection{UC14.1.1 - Visualizzazione vendite in attesa di approvazione}
@@ -82,7 +82,7 @@
 \begin{figure}[h]
 	\includegraphics[width=8cm]{res/images/UC14-Acquisti.png}
 	\centering
-	\caption{Gestione degli acquisti da parte delle aziende}
+	\caption{UC14.2 - Gestione degli acquisti da parte delle aziende}
 \end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
@@ -131,7 +131,7 @@
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, e questo ha espresso la volontà di visualizzare la lista degli acquisti a pagamento dilazionato\glosp non ancora conclusi;
 	\item \textbf{Postcondizione}: l'azienda visualizza tale lista.
 \end{itemize}
-\subsubsection{UC14.2.6 - Effettuazione pagamento dilazionato}
+\subsubsection{UC14.2.6 - Esecuzione pagamento dilazionato}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda-cliente;
 	\item \textbf{Attori Secondaari}: azienda-venditrice, MetaMask\glo;
@@ -146,12 +146,4 @@
 \end{itemize}
 
 
-\subsubsection{UC14.3 - Visualizzazione Fatture}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: alle aziende sono messe a disposizione diverse operazione per visualizzare le fatture riguardanti gli acquisti e le vendite all'interno della piattaforma.
-	\item \textbf{Scenario principale}: l'utente visualizza le fatture riguardanti gli acquisti e le vendite;
-	 
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, l'utente ha espresso la volontà di visualizzare le fatture;
-	\item \textbf{Postcondizione}: l'azienda ha visualizzato le proprie fatture.
-\end{itemize} 
+
