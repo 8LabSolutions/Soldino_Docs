@@ -22,6 +22,10 @@
 	\item \textbf{Attori Primari}: cittadino, azienda;
 	\item \textbf{Descrizione}: l'utente effettua il checkout per poter poi acquistare i prodotti inseriti nel carrello;
 	\item \textbf{Scenario}: l'utente preme il pulsante per effettuare il checkout;
+	\item \textbf{Inclusioni}: 
+	\begin{itemize}
+		\item \textbf{UC7.6}: l'utente inserisce l'indirizzo di spedizione;
+	\end{itemize}
 	\item \textbf{Estensioni}: 
 	\begin{itemize}
 		\item \textbf{UC7.4}: l'utente preme il pulsante di checkout senza aver ancora inserito almeno un prodotto/servizio nel carrello;
@@ -119,4 +123,15 @@
 	\item \textbf{Precondizione}: il sistema permette all'utente di procedere con il pagamento, ovvero l'ordine è stato confermato da parte dell'utente;
 	\item \textbf{Postcondizione}:
 	l'utente è consapevole che l'acquisto non è andato a buon fine, e che ottenere informazioni più precise dovrà riferirsi al messaggio di errore riportato dal plugin. 
+\end{itemize}
+
+\subsubsection{UC7.6 - Inserimento indirizzo spedizione}
+\begin{itemize}
+	\item \textbf{Attori Primari}: azienda, cittadino;
+	\item \textbf{Descrizione}:
+	l'utente visualizza un form dove inserire l'indirizzo di spedizione.
+	\item \textbf{Scenario}: l'utente sta eseguendo la fase di checkout e per continuare deve inserire tale indirizzo;
+	\item \textbf{Precondizione}: non è stato fornito alcun indirizzo pertanto per continuare è necessario inserirlo nell'apposito form;
+	\item \textbf{Postcondizione}:
+	l'utente ha inserito l'indirizzo di spedizione e può continuare concludendo il checkout. 
 \end{itemize}
