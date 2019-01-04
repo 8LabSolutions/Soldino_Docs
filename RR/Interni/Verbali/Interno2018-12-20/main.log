@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.5)  4 JAN 2019 09:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.5)  4 JAN 2019 16:32
 entering extended mode
 **./main.tex
 (main.tex
@@ -545,15 +545,29 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [1
 
 {C:/Users/Matteo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./res/imag
-es/logo8_crop.png>]) (main.toc)
+es/logo8_crop.png>]) (res/sections/changelog.tex
+Overfull \hbox (17.32259pt too wide) in alignment at lines 5--29
+ [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 29
+ []
+
+)
+File: res/images/logo8_crop.png Graphic file (type png)
+<use res/images/logo8_crop.png>
+Package pdftex.def Info: res/images/logo8_crop.png  used on input line 13.
+(pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
+ [1] (main.toc)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
 File: res/images/logo8_crop.png Graphic file (type png)
 <use res/images/logo8_crop.png>
-Package pdftex.def Info: res/images/logo8_crop.png  used on input line 16.
+Package pdftex.def Info: res/images/logo8_crop.png  used on input line 17.
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
- [1] (res/sections/01-Introduction.tex
+ [2] (res/sections/01-Introduction.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 5.
 
 ("C:\Users\Matteo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
@@ -562,7 +576,20 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
 ) (res/sections/02-Content.tex
-Overfull \hbox (32.53764pt too wide) in alignment at lines 16--54
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \end{itemize}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (32.53764pt too wide) in alignment at lines 10--54
  [] [] 
  []
 
@@ -574,33 +601,34 @@ File: res/images/logo8_crop.png Graphic file (type png)
 <use res/images/logo8_crop.png>
 Package pdftex.def Info: res/images/logo8_crop.png  used on input line 54.
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
-[2])
+[3])
 File: res/images/logo8_crop.png Graphic file (type png)
 <use res/images/logo8_crop.png>
-Package pdftex.def Info: res/images/logo8_crop.png  used on input line 21.
+Package pdftex.def Info: res/images/logo8_crop.png  used on input line 22.
 (pdftex.def)             Requested size: 52.70226pt x 31.12946pt.
- [3] (main.aux) ) 
+ [4] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 5476 strings out of 492970
- 73784 string characters out of 3126150
- 190621 words of memory out of 3000000
- 9203 multiletter control sequences out of 15000+200000
- 17230 words of font info for 50 fonts, out of 3000000 for 9000
+ 5482 strings out of 492970
+ 73950 string characters out of 3126150
+ 191756 words of memory out of 3000000
+ 9205 multiletter control sequences out of 15000+200000
+ 17916 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,16n,43p,836b,422s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Matteo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
-appen\ec\dpi600\ecbx1440.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\2.9\fonts\pk
-\ljfour\jknappen\ec\dpi600\ectt0900.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\2
-.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\Matteo\AppData\Loc
-al\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\Matteo\
-AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Us
-ers\Matteo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488
+appen\ec\dpi600\ecti1000.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\2.9\fonts\pk
+\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\2
+.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt0900.pk> <C:\Users\Matteo\AppData\Loc
+al\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\Matteo\
+AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Us
+ers\Matteo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200
 .pk> <C:\Users\Matteo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
-00\ecbx1200.pk><C:/Users/Matteo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (4 pages, 113477 bytes).
+00\ecbx2488.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
+pen\ec\dpi600\ecbx1200.pk><C:/Users/Matteo/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on main.pdf (5 pages, 124089 bytes).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
+ 291 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

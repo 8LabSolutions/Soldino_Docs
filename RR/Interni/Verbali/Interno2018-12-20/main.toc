@@ -1,8 +1,7 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
-\contentsline {section}{\numberline {1}Informazioni generali}{2}
-\contentsline {subsection}{\numberline {1.1}Informazioni incontro}{2}
-\contentsline {subsection}{\numberline {1.2}Argomenti affrontati}{2}
-\contentsline {section}{\numberline {2}Verbale della riunione}{2}
-\contentsline {subsection}{\numberline {2.1}Descrizione}{2}
-\contentsline {subsection}{\numberline {2.2}Riepilogo tracciamenti}{2}
+\contentsline {section}{\numberline {1}Informazioni generali}{3}
+\contentsline {subsection}{\numberline {1.1}Informazioni incontro}{3}
+\contentsline {subsection}{\numberline {1.2}Argomenti affrontati}{3}
+\contentsline {section}{\numberline {2}Verbale della riunione}{3}
+\contentsline {section}{\numberline {3}Riepilogo tracciamenti}{3}
