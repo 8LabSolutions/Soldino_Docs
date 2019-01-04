@@ -47,7 +47,7 @@
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Attori Secondari}: MetaMask\glo;
-	\item \textbf{Descrizione}: il sistema verifica la presenza del plug-in MetaMask\glo, al quale richiede la chiave pubblica che l'utente desidera usare come identificativo e metodo di pagamento. Essendo la chiave univoca, il sistema controlla che nessun utente registrato stia attualmente utilizzandola. Il sistema mostra infine l'interfaccia contente il form di registrazione;
+	\item \textbf{Descrizione}: il sistema verifica la presenza del plug-in MetaMask\glo, al quale richiede la chiave\glosp che l'utente desidera usare come identificativo e metodo di pagamento. Essendo la chiave\glosp univoca, il sistema controlla che nessun utente registrato stia attualmente utilizzandola. Il sistema mostra infine l'interfaccia contente il form di registrazione;
 	\item \textbf{Scenario principale}: il sistema, prima di mostrare il form per la registrazione, controlla la presenza di una chiave\glosp utilizzabile attraverso il plug-in MetaMask\glosp.
 	\item \textbf{Estensioni}:
 	\begin{itemize}
@@ -96,7 +96,14 @@
 \subsubsection{UC2.2.2 - Inserimento indirizzo di residenza}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: al fine di portare a termine il processo di registrazione l'utente deve inserire un indirizzo di residenza, campo ritenuto obbligatorio;
+	\item \textbf{Descrizione}: al fine di portare a termine il processo di registrazione l'utente deve inserire un indirizzo di residenza, valore ritenuto obbligatorio. Esso è composto da: 
+	\begin{itemize}
+	\item nome della via e numero civico;
+	\item paese;
+	\item provincia;
+	\item CAP;
+
+	\end{itemize}
 	\item \textbf{Scenario principale}: l'utente compila il campo relativo all'indirizzo di residenza;
 	\item \textbf{Precondizione}: il sistema ha reso disponibile il campo per l'inserimento dell'indirizzo di residenza;
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo con l'indirizzo relativo alla residenza.
