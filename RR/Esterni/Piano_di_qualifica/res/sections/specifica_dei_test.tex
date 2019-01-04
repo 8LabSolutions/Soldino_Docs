@@ -40,8 +40,8 @@ Vengono individuate quattro tipologie di test:
 \subsubsection{Test di Accettazione}
 I test di accettazione hanno lo scopo di dimostrare che il software sviluppato 
 soddisfi le richieste del proponente ed essi vengono eseguiti durante il
-collaudo finale. Tali test verranno indicati nel seguente modo:
-	\centerline{TA[Tipo][Importanza][Codice]}
+collaudo finale. Tali test verranno indicati nel seguente modo: \\
+	\centerline{\textbf{TA[Tipo][Importanza][Codice]}}
 dove:
 \begin{itemize}
 	\item \textbf{Tipo}: indica di che tipo si tratta il requisito. Può
@@ -63,16 +63,14 @@ dove:
 		del componente da verificare.
 \end{itemize}
 
-\renewcommand{\arraystretch}{1.5}
 
-
-\begin{center}
-	
+\begin{table}[H]
+	%\renewcommand{\arraystretch}{1.5}
 	\rowcolors{2}{pari}{dispari}
 	
 	\begin{longtable}{ >{\centering}p{0.20\textwidth} >{\centering}p{0.25\textwidth}
-			>{\raggedright}p{0.30\textwidth} >{\centering}p{0.14\textwidth}}
-		
+			>{\centering}p{0.30\textwidth} >{\centering}p{0.14\textwidth}}
+			
 		\hline
 		\rowcolorhead
 		\textbf{\color{white}Requisito} 
@@ -82,18 +80,19 @@ dove:
 		\tabularnewline \hline 	
 		
 		
-		 Prov 
-		& Provaaaa
-		& Prova 
-		& Prova 
+		Prov & Provaaaa & Prova & Prova 
+		
 		\tabularnewline 
-		R1 & Cl & Desc & In
+		R1 & Cl & Desc & In 
 		
 		\tabularnewline 
 		R1 & Cl & Desc & In
-		
+	
+	
 	\end{longtable}
-\end{center}
+	%\caption{Riepilogo test di accettazione}	
+
+\end{table}
 
 
 %\subsubsection{Test di Sistema}
