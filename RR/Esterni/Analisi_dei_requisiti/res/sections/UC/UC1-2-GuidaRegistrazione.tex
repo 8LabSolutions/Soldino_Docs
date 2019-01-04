@@ -111,7 +111,7 @@
 \end{itemize}
 \subsubsection{UC2.3 - Inserimento dati anagrafici}
 \begin{figure}[h]
-	\includegraphics[width=6cm]{res/images/UC2-3Registrazione-cliente.png}
+	\includegraphics[width=5cm]{res/images/UC2-3Registrazione-cliente.png}
 	\centering
 	\caption{UC2.3 - Registrazione cittadino}
 \end{figure}
@@ -142,14 +142,6 @@
 	\item \textbf{Scenario principale}: l'utente compila il campo relativo al cognome;
 	\item \textbf{Precondizione}: il sistema ha reso disponibile il campo per l'inserimento del cognome;
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo con il proprio cognome.
-\end{itemize}
-\subsubsection{UC2.3.3 - Inserimento codice fiscale}
-\begin{itemize}
-	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: al fine di portare a termine il processo di registrazione di un nuovo cittadino, l'utente deve inserire il proprio codice fiscale;
-	\item \textbf{Scenario principale}: l'utente compila il campo relativo al codice fiscale;
-	\item \textbf{Precondizione}: il sistema ha reso disponibile il campo per l'inserimento del codice fiscale;
-	\item \textbf{Postcondizione}: l'utente ha compilato il campo con il proprio codice fiscale.
 \end{itemize}
 \subsubsection{UC2.4 - Inserimento dati aziendali}
 \begin{figure}[h]
@@ -231,7 +223,7 @@
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato, eventualmente proprietario d'azienda;
 	\item \textbf{Descrizione}:
-	l'utente preme il pulsante per la conferma e l'invio dei dati. A schermo viene mostrato un messaggio che conferma il successo dell'operazione e spiega di attendere la verifica da parte del governo\glosp prima di poter effettivamente accedere alla piattaforma.
+	l'utente preme il pulsante per la conferma e l'invio dei dati. A schermo viene mostrato un messaggio che conferma il successo dell'operazione e spiega, nel caso la registrazione sia relativa ad un'azienda, di attendere la verifica da parte del governo\glosp prima di poter effettivamente accedere alla piattaforma.
 	\item \textbf{Scenario principale}: l'utente preme il pulsante di verifica ed invio dei dati dopo aver compilato i campi del form;
 	\item \textbf{Estensioni}: 
 	\begin{itemize}
@@ -239,7 +231,7 @@
 	\end{itemize}
 	\item \textbf{Precondizione}: il sistema permette all'utente di compilare il form di registrazione. \`E presente il pulsante per la conferma dei dati;
 	\item \textbf{Postcondizione}:
-	l'utente è consapevole che la richiesta di registrazione è avvenuta con successo ed è consapevole del fatto che dovrà attendere la verifica dell'account da parte del governo\glosp.
+	l'utente è consapevole che la richiesta di registrazione è avvenuta con successo. Nel caso della registrazione di un'azienda, il proprietario è consapevole del fatto che dovrà attendere la verifica dell'account da parte del governo\glosp.
 \end{itemize}
 
 \subsubsection{UC2.9 - Visualizzazione errore campo non compilato}
