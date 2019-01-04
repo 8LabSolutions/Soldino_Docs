@@ -1,7 +1,0 @@
-Suddivisione ruoli RR
-PM / Responsabile -> Federico
-Analisti -> Tutti gli altri
-Verificatore -> Sara, Matteo
-
-Norme di progetto (non più di 10 facciate)
-
