@@ -1,10 +1,15 @@
 \subsubsection{UC9 - Coniazione Cubit}
 \begin{itemize}
 	\item \textbf{Attori Primari}: governo;
+	\item \textbf{Attori Secondari}: MetaMask\glo;
 	\item \textbf{Descrizione}: viene coniata una quantità definita di Cubit\glo;
 	
-	\item \textbf{Scenario}: il governo ritiene necessario coniare ulteriori Cubit\glosp rispetto a quelli attualmente presenti sul mercato;
-	\item \textbf{Precondizione}: siano \texttt{x} i Cubit\glosp che il governo vuole coniare e \texttt{n} i Cubit\glosp attualmente in circolo;
+	\item \textbf{Scenario principale}: il governo ritiene necessario coniare ulteriori Cubit\glosp rispetto a quelli attualmente presenti sul mercato. Per fare ciò deve accedere alla pagina dedicata in cui, attraverso un form dovrà:
+	 \begin{enumerate}[label=\alph*.]
+		\item inserire la quantità di Cubit \texttt{x} da coniare;
+		\item confermare tale operazione attraverso l'utilizzo di MetaMask\glo;
+	\end{enumerate}
+	\item \textbf{Precondizione}: siano \texttt{x} i Cubit\glosp che il governo vuole coniare e \texttt{n} i Cubit\glosp attualmente in circolo. L'utente governativo è acceduto alla pagina per la coniazione ed ha compilato e confermato il form;
 	\item \textbf{Postcondizione}: i Cubit\glosp in circolo sono \texttt{n+x}.
 \end{itemize}
 \subsubsection{UC10 - Distribuzione Cubit}
@@ -18,7 +23,7 @@
 \begin{itemize}
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Attori Secondari}: MetaMask\glo, cittadino, azienda\glo;
-	\item \textbf{Descrizione}: uno o più  utenti, che siano essi cittadini o aziende, riceveno una quantità di Cubit\glosp da parte del governo;
+	\item \textbf{Descrizione}: il governo versa una quantità di Cubit\glosp sull'account di uno o più  utenti, che siano essi cittadini o aziende. Questi ricevono la quantità di Cubit\glosp definita da parte del governo;
 	\item \textbf{Scenario}: il governo clicca sull'apposito pulsante per distribuire una somma di Cubit definita, ad uno o più utenti specificati; 
 	\item \textbf{Precondizione}: il governo viene notificato di dover distribuire una quantità specifica di Cubit\glosp ad uno o più utenti specifici;
 	\item \textbf{Postcondizione}: tali utenti ricevono i Cubit\glosp da parte del governo.
