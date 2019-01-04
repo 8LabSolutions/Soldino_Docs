@@ -23,8 +23,8 @@ Inoltre per lo stato dei test si usano le seguenti abbreviazioni:
 \subsection{Tipi di test}
 Vengono individuate quattro tipologie di test:
 \begin{itemize}
-	\item \textbf{Test di Accettazione [TA]}: essi vengono fatti alla fine per 
-		verificare che il prodotto finale soddisfi quanto richiesto dal proponente;
+	\item \textbf{Test di Accettazione[TA]}: essi vengono fatti per verificare 
+		che il prodotto soddisfi quanto richiesto dal proponente;
 	\item \textbf{Test di Sistema [TS]}: questi test vengono utilizzati quando il 
 		sistema viene installato su una piattaforma e verificano che esso raggiunga gli 
 		obiettivi fissati e soddisfi le richieste formulate in partenza;
@@ -40,31 +40,47 @@ Vengono individuate quattro tipologie di test:
 \subsubsection{Test di Accettazione}
 I test di accettazione hanno lo scopo di dimostrare che il software sviluppato 
 soddisfi le richieste del proponente ed essi vengono eseguiti durante il
-collaudo finale.
+collaudo finale. Tali test verranno indicati nel seguente modo:
+	\centerline{TA[Tipo][Importanza][Codice]}
+dove:
+\begin{itemize}
+	\item \textbf{Tipo}: indica di che tipo si tratta il requisito. Può
+		appartenere a una delle seguenti categorie indicate con:
+		\begin{itemize}
+			\item \textbf{O} per i requisiti obbligatori;
+			\item \textbf{D} per i requisiti desiderabili;
+			\item \textbf{F} per i requisiti facoltativi.			
+		\end{itemize}
+	\item \textbf{Importanza}: indica l'importanza del requisito. L'importanza
+		che può assumere un requisito viene indicata con:
+		\begin{itemize}
+			\item \textbf{F} per indicare un requisito funzionale;
+			\item \textbf{V} per indicare un requisito di vincolo;
+			\item \textbf{Q} per indicare un requisito di qualità;
+			\item \textbf{P} per indicare un requisito prestazionale. 
+		\end{itemize}
+	\item \textbf{Codice}: rappresenta il codice identificativo crescente
+		del componente da verificare.
+\end{itemize}
 
-\subsubsection{Test di Sistema}
-I test di sistema sono impiegati per garantire il corretto funzionamento delle 
-componenti dell'intero sistema. Tali test verranno indicati nel seguente modo:
-	\centerline{\textbf{TS[id]}}
-dove \textit{id} rappresenta il codice identificativo crescente del componente da
-verificare.
+%\subsubsection{Test di Sistema}
+%I test di sistema sono impiegati per garantire il corretto funzionamento delle 
+%componenti dell'intero sistema. Tali test verranno indicati nel seguente modo:
+%	\centerline{\textbf{TS[id]}}
+%dove \textit{id} rappresenta il codice identificativo crescente del componente da
+%verificare.
 
 
-\subsubsection{Test di Integrazione}
-I test di integrazione sono usati per verificare il corretto funzionamento tra le
-varie unità dell'architettura. Tali test verranno indicati nel seguente modo:
-	\centerline{\textbf{TI[id]}}
-dove \textit{id} rappresenta il codice identificativo crescente del componente da
-verificare.
+%\subsubsection{Test di Integrazione}
+%I test di integrazione sono usati per verificare il corretto funzionamento tra le
+%varie unità dell'architettura. Tali test verranno indicati nel seguente modo:
+%	\centerline{\textbf{TI[id]}}
+%dove \textit{id} rappresenta il codice identificativo crescente del componente da
+%verificare.
 
-\subsubsection{Test di Unità}
-I test di unità hanno l'obiettivo di verificare il corretto funzionamento della 
-parte più piccola autonoma del lavoro realizzato. Tali test verranno indicati nel
-seguente modo:
-	\centerline{\textbf{TU[id]}}
-dove \textit{id} rappresenta il codice identificativo crescente dell'unità da verificare.
-
-
-
-
-
+%\subsubsection{Test di Unità}
+%I test di unità hanno l'obiettivo di verificare il corretto funzionamento della 
+%parte più piccola autonoma del lavoro realizzato. Tali test verranno indicati nel
+%seguente modo:
+%	\centerline{\textbf{TU[id]}}
+%dove \textit{id} rappresenta il codice identificativo crescente dell'unità da verificare.
