@@ -24,33 +24,39 @@
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Attori Secondari}: MetaMask\glo, cittadino, azienda\glo;
 	\item \textbf{Descrizione}: il governo versa una quantità di Cubit\glosp sull'account di uno o più  utenti, che siano essi cittadini o aziende. Questi ricevono la quantità di Cubit\glosp definita da parte del governo;
-	\item \textbf{Scenario}: il governo clicca sull'apposito pulsante per distribuire una somma di Cubit definita, ad uno o più utenti specificati; 
-	\item \textbf{Precondizione}: il governo viene notificato di dover distribuire una quantità specifica di Cubit\glosp ad uno o più utenti specifici;
+	\item \textbf{Scenario principale}: il governo deve:
+	 \begin{enumerate}[label=\alph*.]
+		\item scegliere la quantità di Cubit pro capite da distribuire [UC10.1];
+		\item inserire la lista degli utenti che riceveranno tale quantità [UC10.2];
+		\item confermare l'operazione [UC10.3];
+	\end{enumerate}
+
+	\item \textbf{Precondizione}: il governo accede alla pagina contenente il form per la distribuzione di Cubit\glosp agli utenti e compila il suddetto form;
 	\item \textbf{Postcondizione}: tali utenti ricevono i Cubit\glosp da parte del governo.
 \end{itemize}
 \subsubsection{UC10.1 - Inserimento quantità}
 \begin{itemize}
 	\item \textbf{Attori Primari}: governo;
-	\item \textbf{Descrizione}: il governo inserisce nell'apposito form la quantità di Cubit\glosp da distribuire, ritenendo la quantità inserita come quantità da inviare ad ogni singolo utente;
-	\item \textbf{Scenario}: il governo inserisce una quantità \texttt{x} di Cubit\glosp da inviare;
-	\item \textbf{Precondizione}: il governo sa quanti Cubit\glosp deve distribuire ad ogni singolo utente;
-	\item \textbf{Postcondizione}: il governo può procedere a selezionare gli utenti desiderati.
+	\item \textbf{Descrizione}: il governo inserisce nell'apposito campo del form la quantità di Cubit\glosp da distribuire, ritenendo la quantità inserita come quantità da inviare ad ogni singolo utente;
+	\item \textbf{Scenario principale}: il governo inserisce una quantità \texttt{x} di Cubit\glosp da inviare;
+	\item \textbf{Precondizione}: il governo accede alla pagina contenente il form per la distribuzione di Cubit\glosp agli utenti e compila il campo relativo alla quantità;
+	\item \textbf{Postcondizione}: il campo relativo alla quantità di Cubit\glosp da distribuire pro capite è stato compilato. 
 \end{itemize}
 \subsubsection{UC10.2 - Inserimento destinatari}
 \begin{itemize}
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Attori Secondari}: cittadino, azienda;
-	\item \textbf{Descrizione}: il governo inserisce nell'apposito form la lista di destinatari che intendono ricevere la quantità di Cubit\glosp precedentemente inserita;
-	\item \textbf{Scenario}: il governo inserisce una lista di destinatari;
+	\item \textbf{Descrizione}: il governo inserisce nell'apposito form la lista dei destinatari della quantità di Cubit\glosp precedentemente inserita;
+	\item \textbf{Scenario principale}: il governo inserisce una lista di destinatari, identificati dalle proprie chiavi\glo;
 	\item \textbf{Precondizione}: il governo sa quanti e quali utenti riceveranno la somma di Cubit\glosp selezionata, è necessario quindi aver inserito una quantità di Cubit\glosp da distribuire;
-	\item \textbf{Postcondizione}: il governo può procedere ad approvare la transazione.
+	\item \textbf{Postcondizione}: il governo ha inserito la lista dei destinatati e può procedere con l'approvazione della transazione.
 \end{itemize}
 \subsubsection{UC10.3 - Approvazione transazione}
 \begin{itemize}
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Attori Secondari}: MetaMask\glo, cittadino, azienda\glo;
 	\item \textbf{Descrizione}: il governo decide se approvare o rifiutare la transazione;
-	\item \textbf{Scenario}: il governo ha appena inserito una quantità \texttt{x} di Cubit\glosp da distribuire ad ogni singolo utente e ha pure selezionato una lista di \texttt{y} utenti;
+	\item \textbf{Scenario principale}: il governo ha appena inserito una quantità \texttt{x} di Cubit\glosp da distribuire ad ogni singolo utente e ha inoltre selezionato una lista di \texttt{y} utenti;
 	\item \textbf{Estensioni}:
 	\begin{itemize}
 		\item \textbf{UC10.4}: il governo vedrà un messaggio di errore se \texttt{x*y} supera la quantità di Cubit\glosp disponibili alla distribuzione;
@@ -58,12 +64,12 @@
 	\item \textbf{Precondizione}: è necessario aver selezionato una lista di utenti e una quantità da distribuire ad ogni singolo utente;
 	\item \textbf{Postcondizione}: ogni utente riceverà nel proprio wallet\glosp la quantità di Cubit\glosp distribuita dal governo.
 \end{itemize}
-\subsubsection{UC10.4 - Visualizzazione messaggio di errore relativo al raggiungimento della soglia massima di Cubit\glosp distribuiti}
+\subsubsection{UC10.4 - Visualizzazione messaggio di errore relativo al raggiungimento della soglia massima di Cubit distribuiti}
 \begin{itemize}
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Descrizione}: il governo riceve un messaggio di errore relativo al fatto che ha selezionato una quantità di Cubit\glosp superiore a quella disponibile alla distribuzione;
-	\item \textbf{Scenario}: il governo clicca sull'apposito pulsante per confermare la transazione di distribuzione ma non ha sufficienti fondi per completare tale operazione;
-	\item \textbf{Precondizione}: il governo deve aver inserito una quantità di Cubit\glosp superiore a quella disponibile;
+	\item \textbf{Scenario principale}: il governo clicca sull'apposito pulsante per confermare la transazione di distribuzione ma non ha sufficienti fondi per completare tale operazione;
+	\item \textbf{Precondizione}: il governo deve aver inserito una quantità di Cubit\glosp superiore a quella disponibile ed ha cercato di approvare la transazione;
 	\item \textbf{Postcondizione}: il governo ora è a conoscenza del fatto che se vorrà distribuire la somma selezionata, dovrà avere sufficienti fondi.
 	
 \end{itemize} 

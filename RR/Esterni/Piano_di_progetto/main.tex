@@ -9,9 +9,23 @@
 
 \input{../../../latex/frontispiece.tex}
 
-\tableofcontents
 \pagebreak
 \input{res/sections/01-Changelog.tex}
+
+\counterwithin{table}{subsection}
+\counterwithin{figure}{subsection}
+
+\pagebreak
+
+\tableofcontents
+
+\pagebreak
+
+\listoffigures
+
+\pagebreak
+
+\listoftables
 
 \pagebreak
 
@@ -35,8 +49,8 @@
 \input{res/sections/07-PeriodicReport.tex}
 
 \pagebreak
+\appendix
 \input{res/sections/08-OrganizationChart.tex}
 
-\listoffigures
-\listoftables
+
 \end{document}
