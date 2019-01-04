@@ -63,41 +63,38 @@ dove:
 		del componente da verificare.
 \end{itemize}
 
-\begin{table}[H]
-				\centering\renewcommand{\arraystretch}{1.5}
-				\arrayrulecolor{white}
-                \begin{tabular}{c|c|c|c|c}
-                               
-                \rowcolorhead
-                 {\colorhead \textbf{Test}} &
-                 {\colorhead \textbf{Descrizione}} & 
-                 {\colorhead \textbf{Operazioni}} & 
-                 {\colorhead\textbf{Stato}} & 
-                 {\colorhead \textbf{Esito}} 	\\
-				
-                \rowcolorlight
-                 {\colorbody 1} & {\colorbody Blabla} & 
-                 {\colorbody Blabla} & {\colorbody Si} & {\colorbody No} 
-				\\
-				
-				\rowcolordark
-                 {\colorbody 2} & {\colorbody Blabla} & 
-                 {\colorbody Blabla} & {\colorbody Si} & {\colorbody No} 
-				\\	
-				
-				\rowcolorlight
-                 {\colorbody 3} & {\colorbody Blabla} & 
-                 {\colorbody Blabla} & {\colorbody Si} & {\colorbody No} 
-				\\
-				              
-                \rowcolordark
-                 {\colorbody 4} & {\colorbody Blabla} & 
-                 {\colorbody Blabla} & {\colorbody Si} & {\colorbody No} 
-				\\            
+\renewcommand{\arraystretch}{1.5}
 
-                \end{tabular}
-                \caption{Riepilogo test di accettazione}
-\end{table}
+
+\begin{center}
+	
+	\rowcolors{2}{pari}{dispari}
+	
+	\begin{longtable}{ >{\centering}p{0.20\textwidth} >{\centering}p{0.25\textwidth}
+			>{\raggedright}p{0.30\textwidth} >{\centering}p{0.14\textwidth}}
+		
+		\hline
+		\rowcolorhead
+		\textbf{\color{white}Requisito} 
+		& \textbf{\color{white}Classificazione} 
+		& \centering\textbf{\color{white}Descrizione}
+		& \textbf{\color{white}Fonti} 
+		\tabularnewline \hline 	
+		
+		
+		 Prov 
+		& Provaaaa
+		& Prova 
+		& Prova 
+		\tabularnewline 
+		R1 & Cl & Desc & In
+		
+		\tabularnewline 
+		R1 & Cl & Desc & In
+		
+	\end{longtable}
+\end{center}
+
 
 %\subsubsection{Test di Sistema}
 %I test di sistema sono impiegati per garantire il corretto funzionamento delle 
