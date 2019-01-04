@@ -3,9 +3,13 @@ Per modificare il padding:
 - Sotto \section{Tabelle delle modifiche} porre il seguente comando \renewcommand{\arraystretch}{1.5}
 - Alla fine di changelog.tex porre il comando \renewcommand{\arraystretch}{1} (resetta il padding a default)
 
-Per il caption:
+
+
+Per il caption*:
 Al fine di evitare che il caption globale intacchi il changelog (quindi evitare che venga visualizzato: Figura 0.0.1: ...)
 è necessario:
 - Nel main.tex inserire i seguenti comandi subito dopo l'input del changelog.tex e prima di tutti gli altri input:
 \counterwithin{table}{subsection}
 \counterwithin{figure}{subsection}
+
+*BASTA NON METTERE \CAPTION{} SOTTO LA TABELLA:) EASY PEASY :D
