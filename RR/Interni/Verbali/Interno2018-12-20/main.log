@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.5)  3 JAN 2019 16:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.5)  4 JAN 2019 09:48
 entering extended mode
 **./main.tex
 (main.tex
@@ -583,7 +583,7 @@ Package pdftex.def Info: res/images/logo8_crop.png  used on input line 21.
 Here is how much of TeX's memory you used:
  5476 strings out of 492970
  73784 string characters out of 3126150
- 191634 words of memory out of 3000000
+ 190621 words of memory out of 3000000
  9203 multiletter control sequences out of 15000+200000
  17230 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -598,9 +598,9 @@ ers\Matteo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488
 .pk> <C:\Users\Matteo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
 00\ecbx1200.pk><C:/Users/Matteo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (4 pages, 115662 bytes).
+Output written on main.pdf (4 pages, 113477 bytes).
 PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
+ 256 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
