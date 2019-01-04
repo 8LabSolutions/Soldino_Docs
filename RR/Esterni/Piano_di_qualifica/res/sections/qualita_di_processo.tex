@@ -53,16 +53,16 @@ Il risultato sono i processi esposti a seguito.
 			Indica quante componenti utilizzano un dato modulo. Un alto valore indica un alto riuso della componente.
 			\begin{itemize}
 				\item \textbf{Misurazione}: valore intero: conteggio delle componenti;
-				\item \textbf{Valore preferibile}: $SFIN \geq 1$;
-				\item \textbf{Valore accettabile}: $SFIN \geq 0$.
+				\item \textbf{Valore preferibile}: $ \geq 1$;
+				\item \textbf{Valore accettabile}: $ \geq 0$.
 			\end{itemize}
 			\subparagraph{Structural Fan-out \textbf{SFOUT}}
 			Indica quante componenti vengono utilizzate dalla componente in esame. Un alto valore indica un alto
 accoppiamento della componente.
 			\begin{itemize}
 				\item \textbf{Misurazione}: valore intero: conteggio delle componenti;
-				\item \textbf{Valore preferibile}: $SFOUT = 0$;
-				\item \textbf{Valore accettabile}: $SFOUT \leq 6$.
+				\item \textbf{Valore preferibile}: $ = 0$;
+				\item \textbf{Valore accettabile}: $ \leq 6$.
 			\end{itemize}
 			
 	\subsubsection{Processo di Progettazione di Design}
@@ -116,43 +116,43 @@ accoppiamento della componente.
 		\begin{itemize}
 			\item misurazione: numero intero;
 			% PLACEHOLDER: Aggiornare i 2 item qui sotto
-			\item valore preferibile: $pari al preventivo$;
-			\item valore accettabile: $di poco maggiore o pari al preventivo$.
+			\item valore preferibile: $pari\ al\ preventivo$;
+			\item valore accettabile: $di\ poco\ maggiore\ o\ pari\ al\ preventivo$.
 		\end{itemize}
 			\subparagraph{AC: Actual Cost}
 			Il denaro speso fino al momento del calcolo.
 			\begin{itemize}
 				\item  misurazione: numero intero;
 				\item  valore preferibile: $0 \leq AC < PV$;
-				\item  valore accettabile: $0 \leq AC \leq budget totale$;
+				\item  valore accettabile: $0 \leq AC \leq budget\ totale\ $;
 			\end{itemize}
 			\subparagraph{EV - Earned Value}
 			Metrica di utilità. Si tratta del valore del lavoro fatto fino al momento del calcolo; corrisponde al denaro guadagnato fino a quel momento.
 			\begin{itemize}
-				\item  misurazione: $BAC * \% di lavoro completato$;
-				\item  valore preferibile: $EV \geq 0$;
-				\item  valore accettabile: $EV \geq 0$.
+				\item  misurazione: $BAC \cdot \%\ di\ lavoro\ completato\ $;
+				\item  valore preferibile: $ \geq 0$;
+				\item  valore accettabile: $ \geq 0$.
 			\end{itemize}
 			\subparagraph{PV: Planned Value}
 			Si tratta del valore del lavoro pianificato al momento del calcolo: corrisponde al denaro che si dovrebbe aver guadagnato in quel momento.
 			\begin{itemize}
-				\item  misurazione: $BAC * \% di lavoro pianificato$;
-				\item  valore preferibile: $PV \geq 0$;
-				\item  valore accettabile: $PV \geq 0$;
+				\item  misurazione: $BAC \cdot \%\ di\ lavoro\ pianificato\ $;
+				\item  valore preferibile: $ \geq 0$;
+				\item  valore accettabile: $ \geq 0$;
 			\end{itemize}			
 			\subparagraph{SV: Schedule Variance}
 			Dice se si è avanti o indietro nello svolgimento del progetto rispetto alla pianificazione.
 			\begin{itemize}
 				\item misurazione: $SV = EV - PV$
-				\item valore preferibile: $SV > 0$;
-				\item valore accettabile: $SV = 0$;
+				\item valore preferibile: $ > 0$;
+				\item valore accettabile: 0;
 			\end{itemize}
 			\subparagraph{Cost Variance}
 			Differenza tra il costo del lavoro effettivamente completato e quello pianificato. Una CV positiva indica che si sta rispettando il budget.
 			\begin{itemize}
 				\item misurazione: $CV = EV - AC$;
-				\item valore preferibile: $CV > 0$
-				\item valore accettabile: $CV \geq 0$
+				\item valore preferibile: $ > 0$
+				\item valore accettabile: $ \geq 0$
 			\end{itemize}
 
 	\subsubsection{Processo di Verifica}
@@ -205,20 +205,20 @@ accoppiamento della componente.
 			Indice della leggibilità del testo. Stima gli anni di educazione scolastica richiesti per comprendere il testo a una prima lettura.\newline
 			Ha dei limiti: uno di questi è la sua definizione di \textit{parola complessa}, intesa come una parola di tre o più sillabe eccetto alcuni suffissi comuni.
 			\begin{itemize}
-				\item misurazione: valore intero: $ I_{GF} = 0.4 *
+				\item misurazione: valore intero: $ I_{GF} = 0.4 \cdot
 				(
 				\frac{numero\ di\ parole}{numero\ di\  frasi}
-				+ 100 *
+				+ 100 \cdot
 				\frac{numero\ di\ parole\ complesse}{numero\ di\  frasi}
 				) $;
-				\item valore preferibile: $I_{GF} \leq 12$;
-				\item valore accettabile: $I_{GF} \leq 16$.
+				\item valore preferibile: $ \leq 12$;
+				\item valore accettabile: $ \leq 16$.
 			\end{itemize}
 			\subparagraph{Indice di Gulpease}
 			Indice della leggibilità del testo. Valuta la lunghezza delle parole e delle frasi rispetto al numero totale di lettere. 
 			\begin{itemize}
 				\item misurazione: valore intero da 0 a 100:\newline 	
-				$I_G = 89+ \frac{(300 * numero\ di\ frasi - 10 * numero\ di\ lettere)}{/numero\ di\ parole}$	
+				$I_G = 89+ \frac{(300 \cdot numero\ di\ frasi - 10 \cdot numero\ di\ lettere)}{numero\ di\ parole}$	
 				\item valore preferibile: $80 < I_G < 100$;
 				\item valore accettabile: $40 < I_G < 100$	
 			\end{itemize}
@@ -250,7 +250,7 @@ accoppiamento della componente.
 			La percentuale di metriche soddisfatte valuta quante metriche raggiungono soglie accettabili sul numero totale delle metriche calcolate. Una bassa percentuale di soddisfazione può indicare poca qualità, metriche inadeguate o mancata correttezza nel calcolo.
 			\begin{itemize}
 				\item misurazione: $\frac{numero\ di\ metriche\ soddisfatte}{numero\ di\ metriche\ totali} $;
-				\item valore preferibile: $PMS \geq 80\%$;
-				\item valore accettabile: $PMS \geq 60\%$;
+				\item valore preferibile: $ \geq 80\%$;
+				\item valore accettabile: $ \geq 60\%$;
 			\end{itemize}
 		
