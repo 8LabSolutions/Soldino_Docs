@@ -1,0 +1,55 @@
+\section{Descrizione generale} 
+\subsection{Obiettivi del prodotto}
+
+Il progetto \textit{Soldino} si pone come obiettivo finale dimostrare la possibilità di creare una piattaforma che permetta il tracciamento dell'IVA in maniera automatica. Sfruttando le potenzialità della blockchain\glosp Ethereum\glo, mediante l'uso degli smart contracts\glosp e di un token\glosp coniato e distribuito dal governo\glo, verrà semplificato nettamente l'attuale sistema per la gestione dell'IVA.
+
+\subsection{Funzioni del prodotto}
+L'applicativo deve offrire oltre alle funzionalità di compravendita di servizi e prodotti, la possibilità di controllare e gestire il pagamento dell'IVA. In particolare: 
+\begin{itemize}
+	\item il governo\glosp può:
+	\begin{enumerate}[label=\alph*.]
+		\item coniare e distribuire i \textit{Cubit}\glosp alle aziende ed ai cittadini;
+		\item visualizzare la lista di tutte le aziende registrate alla piattaforma, e, per ognuna di esse, la relativa situazione sul pagamento dell'IVA (stato di debito o di credito); 
+		\item rimborsare le aziende che al saldo dell'IVA trimestrale risultano in stato di credito.
+	\end{enumerate}
+	\item cittadini ed aziende:
+	\begin{enumerate}[label=\alph*.]
+		\item autenticarsi alla piattaforma utilizzando il plug-in MetaMask\glo;
+		\item acquistare prodotti offerti dalle aziende presenti sulla piattaforma, con pagamento immediato. 
+	\end{enumerate}
+	\item le aziende possono:
+	\begin{enumerate}[label=\alph*.]
+		\item registrare la propria attività commerciale sulla piattaforma;
+		\item gestire i prodotti e/o servizi offerti, ovvero devono essere disponibili le funzionalità di inserimento, rimozione e modifica;
+		\item acquistare un prodotto/servizio richiedendo una dilazione\glosp del pagamento;
+		\item calcolare la ricevuta IVA riguardante una vendita ed inviarla al compratore: successivamente all'acquisto viene recapitata automaticamente, al compratore, la conferma dell'ordine. Dunque possono verificarsi due situazioni distinte:
+		\begin{enumerate}[label=\roman*.]
+			\item \textbf{l'azienda-cliente ha selezionato come metodo di pagamento il versamento immediato}: il sistema provvede a sottrarre la somma dovuta al compratore, che viene trattenuta nel sistema. Successivamente, dopo la ricezione della conferma dell'ordine, può a sua volta confermare il pagamento. In tal caso riceverà la fattura IVA ed il pagamento verrà inoltrato al venditore. 
+			\item \textbf{l'azienda-cliente ha selezionato la dilazione\glosp del pagamento}: viene inviata la conferma dell'ordine. Successivamente l'azienda può confermare o rifiutare l'ordine. In caso di conferma il venditore procede con la consegna del prodotto/servizio, mentre il compratore è legalmente vincolato al pagamento futuro.  
+		\end{enumerate}
+		In entrambi i casi, al verificarsi del rifiuto della proposta d'ordine, la somma trattenuta viene restituita al compratore, mentre il venditore non invia nessun prodotto/servizio;
+		\item scaricare le informazioni relative al saldo IVA trimestrale sotto forma di documento PDF;
+		\item effettuare il versamento dell'IVA al governo\glosp nel caso in cui il saldo trimestrale evidenzi una situazione di debito.
+	\end{enumerate}
+
+\end{itemize}
+\subsection{Caratteristiche degli utenti}
+Si evidenziano sin da subito tre categorie di utenti:
+\begin{itemize}
+	\item cittadino;
+	\item azienda;
+	\item governo\glo.
+\end{itemize}
+Ai cittadini ed ai funzionari rappresentanti il governo\glosp è richiesta la conoscenza delle funzioni base, ovvero saper utilizzare un browser internet ed autenticarsi attraverso MetaMask\glo. In questa maniera sarà loro possibile usufruire  della piattaforma dopo l'autenticazione. Per i proprietari di aziende è richiesta inoltre la conoscenza dei principi base per la gestione dell'IVA. A tutti gli utenti è messa a disposizione una breve guida per facilitare l'installazione e l'utilizzo del plug-in sopracitato. 
+
+\subsection{Piattaforme di esecuzione}
+\subsubsection{Back end}
+Il back end\glosp sarà ospitato dalla rete Ethereum\glo. In particolare i dati riguardanti l'autenticazione degli utenti e le transazioni verranno salvati nella blockchain per mezzo degli smart contracts\glo. Eventuali dati aggiuntivi sugli utenti e sui prodotti/servizi verranno salvati utilizzando un database distribuito.
+
+\subsubsection{Front end}
+Come piattaforme per il front end\glosp verranno utilizzati i browser web Mozilla Firefox e Google Chrome, nella loro versione desktop. La piattaforma potrebbe risultare compatibile anche con i browser Opera e Brave, sebbene ciò esuli dagli scopi e requisiti del progetto.
+
+\subsection{Vincoli generali}
+L’utente, per usufruire del servizio, deve possedere un browser con installato il plug-in MetaMask\glo, una connessione internet ed una coppia di chiavi (pubblica-privata) compatibile con la rete Ethereum\glo. La coppia di chiavi viene fornita automaticamente all'accettazione della licenza di MetaMask\glo, ma se l’utente desidera può utilizzare chiavi già in suo possesso o generate attraverso altre procedure.
+
+ 
