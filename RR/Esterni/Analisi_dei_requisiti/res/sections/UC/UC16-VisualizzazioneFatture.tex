@@ -129,7 +129,7 @@
 	\item \textbf{Attori Primari}: azienda;
 	\item \textbf{Descrizione}: l'azienda può leggere tutti i dettagli di una fattura;
 	\item \textbf{Scenario principale}: l'azienda seleziona una fattura da una lista e può leggere tutti i dettagli di tale fattura. Essi sono:
-	\begin{itemize}
+		\begin{enumerate}[label=\alph*.]
 		\item la data dell'ordine relativo alla fattura [UC14.1.1];
 		\item il numero identificativo dell'ordine relativo alla fattura [14.1.2];
 		\item visualizzazione dei beni in formato fattura [UC17];
@@ -138,8 +138,8 @@
 		\item la partita IVA dell'azienda emittente [UC16.3.2];
 		\item il nome dell'azienda destinataria [UC16.2.1];
 		\item la partita IVA dell'azienda destinataria [UC16.2.2];
-		\item indirizzo di spedizione dell'ordine [UC16.4.1]
-	\end{itemize}
+		\item indirizzo di spedizione dell'ordine [UC16.4.1];
+	\end{enumerate}
 	\item \textbf{Inclusioni}:
 	\begin{itemize}
 		\item \textbf{UC16.3}: per poter accedere ai dettagli di una particolare fattura è necessario selezionarla da una delle liste disponibili;
@@ -151,7 +151,7 @@
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
 	\item \textbf{Descrizione}: l'azienda visualizza l'indirizzo di spedizione relativo all'ordine nella fattura;
-	\item \textbf{Scenario principale}: l'utente visualizza una fattura in dettaglio. Trai dati è presente l'indirizzo di spedizione dell'ordine a cui si riferisce la fattura;
+	\item \textbf{Scenario principale}: l'utente visualizza una fattura in dettaglio. Tra i dati è presente l'indirizzo di spedizione dell'ordine a cui si riferisce la fattura;
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, l'utente ha espresso la volontà di visualizzare una fattura in dettaglio;
 	\item \textbf{Postcondizione}: l'azienda ha visualizzato tale fattura in dettaglio, in particolare ha visualizzato l'indirizzo di spedizione dell'ordine.
 \end{itemize} 
