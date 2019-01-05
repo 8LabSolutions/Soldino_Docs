@@ -42,6 +42,10 @@
 	\end{itemize}
 	
 	\item \textbf{Scenario principale}: il governo richiede la lista delle aziende registrate;
+	\item \textbf{Inclusioni}:
+	\begin{itemize}
+		\item \textbf{UC11.3}: l'utente può filtrare i risultati visualizzati inserendo una parola chiave;
+	\end{itemize}
 	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere la lista di tutte aziende;
 	\item \textbf{Postcondizione}: il governo ottiene dal sistema la lista delle aziende registrate, con associate le operazioni che può effettuare su di esse.
 \end{itemize}
@@ -57,6 +61,22 @@
 		\item visualizzazione dell'indirizzo di residenza;
 	\end{itemize}
 	\item \textbf{Scenario principale}: il governo richiede la lista dei cittadini. Per ognuno di essi visualizza le rispettive informazioni;
+	\item \textbf{Inclusioni}:
+	\begin{itemize}
+		\item \textbf{UC11.3}: l'utente può filtrare i risultati visualizzati inserendo una parola chiave;
+	\end{itemize}
 	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere la lista di tutti i cittadini;
 	\item \textbf{Postcondizione}: il governo ottiene dal sistema la lista dei cittadini, con associate le operazioni che può effettuare su di essi.
 \end{itemize}
+
+
+\subsubsection{UC11.3 - Ricerca}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente autenticato;
+	\item \textbf{Descrizione}: l'utente può filtrare i risultati le informazioni che sta visualizzando inserendo una parola per la ricerca;
+	\item \textbf{Scenario principale}: l'utente sta visualizzando una lista di informazioni, digita una parola chiave per la ricerca nella barra apposita per filtrare i risultati e poter trovare delle informazioni più specifiche;
+	\item \textbf{Precondizione}: il sistema ha reso disponibile la barra di ricerca per filtrare i risultati;
+	\item \textbf{Postcondizione}: i risultati sono stati filtrati. Vengono mostrati solo i risultati che contengono la parola inserita nella barra di ricerca.
+\end{itemize}
+
+
