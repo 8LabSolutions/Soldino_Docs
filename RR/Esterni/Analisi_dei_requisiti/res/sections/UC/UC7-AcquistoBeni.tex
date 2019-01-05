@@ -12,112 +12,27 @@
 	\begin{enumerate}[label=\alph*.]
 		\item l'utente inserisce dei prodotti nel carrello [UC6.1];
 		\item l'utente procede con il checkout dei prodotti precedentemente inseriti [UC7.1];
-		\item l'utente effettua la conferma ed il pagamento dell'ordine;
-	\end{enumerate}.
+		\item l'utente sceglie l'indirizzo di spedizione [UC7.3];
+		\item l'utente effettua la conferma ed il pagamento dell'ordine [UC7.4];
+	\end{enumerate}
 	
 	\item \textbf{Precondizione}: il sistema ha reso disponibile all'utente l'utilizzo del carrello per poter effettuare degli acquisti. L'utente ha inserito degli oggetti nel carrello ed ha espresso la volontà di acquistare tali prodotti;
-	\item \textbf{Postcondizione}: è stato effettuato l'acquisto dei beni presenti nel carrello. Se l'utente è cittadino, allora l'ordine è concluso e viene effettuato il pagamento all'azienda venditrice. Viceversa, nel caso il cliente fosse un'azienda, allora viene applicato il meccanismo di escrow\glo. L'azienda cliente riceve la conferma d'acquisto\glo. Entro la data ultima di approvazione l'azienda potrà approvare o rifiutare l'ordine. I soldi del pagamento sono temporaneamente trattenuti nella piattaforma.
+	\item \textbf{Postcondizione}: è stato effettuato l'acquisto dei beni presenti nel carrello. Viene applicato il meccanismo di escrow\glo. Il cliente riceve la conferma d'acquisto\glo. Entro la data ultima di approvazione esso potrà approvare o rifiutare l'ordine. I soldi del pagamento sono temporaneamente trattenuti nella piattaforma.
 \end{itemize} 
 \subsubsection{UC7.1 - Checkout}
 \begin{itemize}
 	\item \textbf{Attori Primari}: cittadino, azienda;
 	\item \textbf{Descrizione}: l'utente effettua il checkout per poter poi acquistare i prodotti inseriti nel carrello;
 	\item \textbf{Scenario principale}: l'utente preme il pulsante per effettuare il checkout;
-	\item \textbf{Inclusioni}: 
-	\begin{itemize}
-		\item \textbf{UC7.6}: l'utente inserisce l'indirizzo di spedizione;
-	\end{itemize}
 	\item \textbf{Estensioni}: 
 	\begin{itemize}
-		\item \textbf{UC7.4}: l'utente preme il pulsante di checkout senza aver ancora inserito almeno un prodotto/servizio nel carrello;
+		\item \textbf{UC7.2}: l'utente preme il pulsante di checkout senza aver ancora inserito almeno un prodotto/servizio nel carrello;
 	\end{itemize}
 	\item \textbf{Precondizione}: il sistema ha reso disponibile il carrello all'utente, identificandolo quindi come cittadino o azienda. L'utente ha espresso la volontà di procedere con il checkout premendo l'apposito pulsante;
 	\item \textbf{Postcondizione}: l'utente accede alla pagina dove poter confermare l'acquisto e procedere con il pagamento.
 \end{itemize}
 
-\subsubsection{UC7.2 - Conferma ordine e pagamento cittadino}
-\begin{itemize}
-	\item \textbf{Attori Primari}: cittadino;
-	\item \textbf{Attori Secondari}: azienda-venditrice, MetaMask\glo;
-	\item \textbf{Descrizione}: l'utente visualizza il contenuto del carrello ed ha la possibilità di confermare l'ordine e procedere al pagamento che avviene attraverso l'utilizzo del plugin Metamask\glo;
-	\item \textbf{Scenario principale}: l'utente preme il pulsante per effettuare il checkout;
-	\item \textbf{Inclusioni}: 
-	\begin{itemize}
-		\item \textbf{UC6.2}: l'utente visualizza un riepilogo di tutti i prodotti presenti all'interno del carrello.
-	\end{itemize}
-	\item \textbf{Estensioni}: 
-	\begin{itemize}
-		\item \textbf{UC7.5}: l'utente tenta il pagamento ma l'esito non va a buon fine. La causa del fallimento dell'operazione è gestito dal plugin stesso.
-	\end{itemize}
-	\item \textbf{Precondizione}: il sistema ha reso disponibile il riepilogo dei prodotti con la possibilità di effettuare la conferma dell'ordine ed il pagamento. Almeno un elemento era stato inserito nel carrello; 
-	\item \textbf{Postcondizione}: l'utente ha portato a termine la procedura di acquisto dei prodotti/servizi presenti nel carrello. L'azienda venditrice ha ricevuto il pagamento dal cliente e l'ordine è aggiunto alla lista delle fatture dell'azienda. Al cliente viene segnalato il successo dell'operazione.
-\end{itemize}
-\subsubsection{UC7.3 - Pagamento aziendale}
-\begin{figure}[H]
-	\includegraphics[width=10cm]{res/images/UC7-PagamentoAzienda.png}
-	\centering
-	\caption{UC7.3 - Procedura di pagamento da parte delle aziende}
-\end{figure}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda-cliente;
-	\item \textbf{Attori Secondari}: azienda-venditrice, MetaMask\glo;
-	\item \textbf{Descrizione}: le aziende hanno un processo di pagamento differente dai cittadini, possono scegliere fra pagamento immediato e dilazionato\glo;
-	\item \textbf{Scenario principale}: l'azienda sceglie un metodo di pagamento [UC7.3.1] tra il pagamento immediato [UC7.3.2] ed il pagamento dilazionato [UC7.3.3]. Successivamente dovrà approvare la proposta d'ordine dal proprio account per ottenere la fatturazione;
-	\item \textbf{Inclusioni}: 
-	\begin{itemize}
-		\item \textbf{UC6.2}: l'utente visualizza un riepilogo di tutti i prodotti presenti all'interno del carrello.
-	\end{itemize}
-	\item \textbf{Precondizione}: il sistema ha reso disponibile il riepilogo dei prodotti con la possibilità di scegliere il metodo di pagamento ed effettuare la conferma dell'ordine;
-	\item \textbf{Postcondizione}: è stato scelto il metodo di pagamento e l'ordine è stato effettuato con successo. All'azienda cliente viene inviata una proposta d'ordine e vengono spiegati i passi successivi da seguire per accettare tale proposta, in maniera da validare l'ordine e ricevere la fattura.
-\end{itemize} 
-
-\subsubsection{UC7.3.1 - Selezione metodo di pagamento}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: l'utente visualizza le possibili modalità di pagamento, immediato e dilazionato\glo, seleziona uno dei due metodi e conferma la scelta;
-	\item \textbf{Scenario principale}: l'utente seleziona una modalità di pagamento e conferma l'ordine, per poi procedere al pagamento;
-	\item \textbf{Precondizione}: il sistema ha reso disponibile la scelta del metodo di pagamento e la conferma dell'ordine;
-	\item \textbf{Postcondizione}: l'utente ha selezionato la modalità di pagamento per l'ordine corrente e l'ordine è stato confermato, il sistema procede con la procedura di pagamento selezionata.
-\end{itemize}
-
-\subsubsection{UC7.3.2 - Pagamento immediato}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda-cliente;
-	\item \textbf{Attori Secondari}: azienda-venditrice, MetaMask\glo;
-	\item \textbf{Descrizione}: l'utente procede con il pagamento immediato: l'azienda-cliente versa l'importo dell'ordine nel sistema attraverso l'utilizzo del plugin MetaMask\glo. Viene inviata automaticamente la proposta d'ordine dall'azienda-venditrice all'azienda-cliente. Al cliente viene spiegato come procedere per confermare l'ordine e ricevere la fattura IVA;
-	\item \textbf{Scenario principale}: l'utente procede con il pagamento attraverso l'ausilio del plugin MetaMask\glo;
-	\item \textbf{Estensioni}: 
-	\begin{itemize}
-		\item \textbf{UC7.5}: l'utente tenta il pagamento ma l'esito non va a buon fine. La causa del fallimento dell'operazione è gestito dal plugin stesso.
-	\end{itemize}
-	\item \textbf{Precondizione}: il sistema ha reso disponibile il pagamento dell'ordine;
-	\item \textbf{Postcondizione}: l'utente ha portato a termine la procedura di acquisto. Il sistema ha ricevuto il pagamento dal cliente, il cliente riceve, nella pagina dedicata, la proposta d'ordine. Al cliente viene comunicato il successo dell'operazione e le istruzioni per procedere all'accettazione della proposta d'ordine. Nella pagina dedicata dell'azienda venditrice compare l'acquisto con lo stato di attesa di approvazione.
-\end{itemize}
-
-\subsubsection{UC7.3.3 - Pagamento dilazionato}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda-cliente;
-	\item \textbf{Attori Secondari}: azienda-venditrice, MetaMask\glo;
-	\item \textbf{Descrizione}: l'utente procede con il pagamento dilazionato: l'azienda-cliente sceglie di quanto dilazionare il pagamento, e conferma l'operazione con MetaMask\glo. Viene inviata automaticamente la proposta d'ordine dall'azienda-venditrice all'azienda-cliente. Al cliente viene spiegato come procedere per confermare l'ordine;
-	\item \textbf{Scenario principale}: l'utente procede con la conferma dell'operazione attraverso l'ausilio del plugin MetaMask\glo;
-	\item \textbf{Inclusioni}: 
-	\begin{itemize}
-		\item \textbf{UC 7.3.4}: l'utente deve selezionare il periodo per la dilazione del pagamento;
-	\end{itemize}
-	\item \textbf{Precondizione}: il sistema ha reso disponibile il pagamento dell'ordine;
-	\item \textbf{Postcondizione}: l'utente ha portato a termine la procedura di acquisto con pagamento dilazionato. Il cliente riceve, nella pagina dedicata, la proposta d'ordine. Al cliente viene comunicato il successo dell'operazione e le istruzioni per procedere all'accettazione della proposta d'ordine. Nella pagina dedicata dell'azienda venditrice compare l'acquisto con lo stato di attesa di approvazione con pagamento dilazionato.
-\end{itemize}
-\subsubsection{UC7.3.4 - Selezione mesi per la dilazione}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda-cliente;
-	\item \textbf{Attori Secondari}: azienda-venditrice, MetaMask\glo;
-	\item \textbf{Descrizione}: l'utente seleziona il numero di mesi dei quali deve essere dilazionato il pagamento;
-	\item \textbf{Scenario principale}: l'utente seleziona la durata della dilazione durante la procedura di pagamento dilazionato\glo;
-	\item \textbf{Precondizione}: l'utente sta eseguendo la procedura per il pagamento dilazionato;
-	\item \textbf{Postcondizione}: l'utente ha selezionato la durata in mesi per la dilazione del pagamento.
-\end{itemize}
-
-\subsubsection{UC7.4 - Visualizzazione errore carrello vuoto}
+\subsubsection{UC7.2 - Visualizzazione errore carrello vuoto}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
 	\item \textbf{Descrizione}:
@@ -127,6 +42,39 @@
 	\item \textbf{Postcondizione}:
 	l'utente è consapevole che, per procedere con il checkout, il carrello deve contenere almeno un prodotto/servizio. 
 \end{itemize}
+
+\subsubsection{UC7.3 - Scelta indirizzo spedizione}
+\begin{itemize}
+	\item \textbf{Attori Primari}: azienda, cittadino;
+	\item \textbf{Descrizione}:
+	l'utente dopo aver effettuato il checkout deve selezionare l'indirizzo di spedizione. Gli vengono presentate due possibilità:
+	\begin{itemize}
+		\item utilizzare l'indirizzo inserito durante la registrazione;
+		\item inserire un nuovo indirizzo da utilizzare per questa spedizione, inserendo le informazioni relative ad un indirizzo [UC2.2.2];
+	\end{itemize}
+	\item \textbf{Scenario principale}: l'utente dopo aver richiesto il checkout, per continuare nel procedimento di acquisto, deve selezionare un indirizzo di spedizione;
+	\item \textbf{Precondizione}: l'utente ha eseguito il checkout;
+	\item \textbf{Postcondizione}:
+	l'utente ha inserito l'indirizzo di spedizione e può continuare concludendo il procedimento di acquisto. Tale indirizzo verrà utilizzato per la creazione della relativa fattura.
+\end{itemize}
+
+
+
+\subsubsection{UC7.4 - Conferma ordine e pagamento}
+\begin{itemize}
+	\item \textbf{Attori Primari}: azienda-cliente;
+	\item \textbf{Attori Secondari}: azienda-venditrice, MetaMask\glo;
+	\item \textbf{Descrizione}: l'utente dopo aver selezionato con la selezione dell'indirizzo di spedizione procede con la conferma ed il pagamento dell'ordine;
+	\item \textbf{Scenario principale}: l'azienda conferma l'ordine premendo l'apposito pulsante. Segue dunque la procedura di pagamento attraverso l'utilizzo del plugin MetaMask\glo;
+	\item \textbf{Estensioni}: 
+	\begin{itemize}
+		\item \textbf{UC7.4}: l'esito del pagamento da parte del plugin MetaMask\glosp risulta negativo, l'utente riceve un messaggio di errore che lo invita a controllare la causa d'errore direttamente dal plugin; 
+	\end{itemize}
+	\item \textbf{Precondizione}: l'utente ha effettuato il checkout e l'inserimento dell'ordine;
+	\item \textbf{Postcondizione}: il pagamento è avvenuto con successo. L'importo della transazione momentaneamente è trattenuto dal sistema in quanto scatta il meccanismo di escrow\glo. Il cliente riceve nella pagina dedicata la conferma d'acquisto\glo. L'azienda-venditrice riceve nella pagina dedicata l'ordine non ancora confermato relativo al suddetto ordine.
+\end{itemize}
+
+
 \subsubsection{UC7.5 - Visualizzazione errore pagamento fallito}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
@@ -137,15 +85,10 @@
 	\item \textbf{Precondizione}: il sistema permette all'utente di procedere con il pagamento, ovvero l'ordine è stato confermato da parte dell'utente;
 	\item \textbf{Postcondizione}:
 	l'utente è consapevole che l'acquisto non è andato a buon fine, e che ottenere informazioni più precise dovrà riferirsi al messaggio di errore riportato dal plugin. 
-\end{itemize}
+\end{itemize} 
 
-\subsubsection{UC7.6 - Inserimento indirizzo spedizione}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda, cittadino;
-	\item \textbf{Descrizione}:
-	l'utente visualizza un form dove inserire l'indirizzo di spedizione.
-	\item \textbf{Scenario principale}: l'utente sta eseguendo la fase di checkout e per continuare deve inserire tale indirizzo;
-	\item \textbf{Precondizione}: l'utente sta eseguendo la procedura di checkout;
-	\item \textbf{Postcondizione}:
-	l'utente ha inserito l'indirizzo di spedizione e può continuare concludendo il checkout. Tale indirizzo potrà essere utilizzato per la creazione della relativa fattura.
-\end{itemize}
+
+
+
+
+
