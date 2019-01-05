@@ -23,11 +23,11 @@
 \begin{itemize}
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Attori Secondari}: MetaMask\glo, cittadino, azienda\glo;
-	\item \textbf{Descrizione}: il governo versa una quantità di Cubit sull'account di uno o più  utenti, che siano essi cittadini o aziende. Questi ricevono la quantità di Cubit definita da parte del governo;
+	\item \textbf{Descrizione}: il governo trasferisce una somma di Cubit\glosp sull'account di uno o più  utenti, che siano essi cittadini o aziende;
 	\item \textbf{Scenario principale}: il governo deve:
 	 \begin{enumerate}[label=\alph*.]
-		\item scegliere la quantità di Cubit pro capite da distribuire [UC10.1];
-		\item inserire la lista degli utenti che riceveranno tale quantità [UC10.2];
+		\item determinare l'ammontare di Cubit pro capite da trasferire [UC10.1];
+		\item  [UC10.2];
 		\item confermare l'operazione [UC10.3];
 	\end{enumerate}
 
@@ -48,28 +48,28 @@
 	\item \textbf{Attori Secondari}: cittadino, azienda;
 	\item \textbf{Descrizione}: il governo inserisce nell'apposito form la lista dei destinatari della quantità di Cubit\glosp precedentemente inserita;
 	\item \textbf{Scenario principale}: il governo inserisce una lista di destinatari, identificati dalle proprie chiavi\glo;
-	\item \textbf{Precondizione}: il governo sa quanti e quali utenti riceveranno la somma di Cubit selezionata, è necessario quindi aver inserito una quantità di Cubit da distribuire;
-	\item \textbf{Postcondizione}: il governo ha inserito la lista dei destinatati e può procedere con l'approvazione della transazione.
+	\item \textbf{Precondizione}: il governo si trova nella pagina atta alla distribuzione dei Cubit;
+	\item \textbf{Postcondizione}: il governo dalla lista i destinatari e può procedere con l'approvazione della transazione.
 \end{itemize}
 \subsubsection{UC10.3 - Approvazione transazione}
 \begin{itemize}
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Attori Secondari}: MetaMask\glo, cittadino, azienda\glo;
 	\item \textbf{Descrizione}: il governo decide se approvare o rifiutare la transazione;
-	\item \textbf{Scenario principale}: il governo ha appena inserito una quantità \texttt{x} di Cubit\glosp da distribuire ad ogni singolo utente e ha inoltre selezionato una lista di \texttt{y} utenti;
+	\item \textbf{Scenario principale}: il governo ha specificato la somma \texttt{x} di Cubit\glosp da distribuire ad ognuno degli \texttt{y} destinatari;
 	\item \textbf{Estensioni}:
 	\begin{itemize}
-		\item \textbf{UC10.4}: il governo vedrà un messaggio di errore se \texttt{x*y} supera la quantità di Cubit disponibili alla distribuzione;
+		\item \textbf{UC10.4}: verrà mostrato un messaggio di errore nel caso l'ammontare totale \texttt{x*y} superi la quantità di Cubit disponibili alla distribuzione;
 	\end{itemize}
-	\item \textbf{Precondizione}: è necessario aver selezionato una lista di utenti e una quantità da distribuire ad ogni singolo utente;
-	\item \textbf{Postcondizione}: ogni utente riceverà nel proprio wallet\glosp la quantità di Cubit distribuita dal governo.
+	\item \textbf{Precondizione}: è necessario aver selezionato una lista di destinatari ed una quantità da distribuire ad ogni singolo utente;
+	\item \textbf{Postcondizione}: ogni utente riceverà nel proprio wallet\glosp la quantità di Cubit trasferita dal governo.
 \end{itemize}
 \subsubsection{UC10.4 - Visualizzazione messaggio di errore relativo al raggiungimento della soglia massima di Cubit distribuiti}
 \begin{itemize}
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Descrizione}: il governo riceve un messaggio di errore relativo al fatto che ha selezionato una quantità di Cubit\glosp superiore a quella disponibile alla distribuzione;
-	\item \textbf{Scenario principale}: il governo clicca sull'apposito pulsante per confermare la transazione di distribuzione ma non ha sufficienti fondi per completare tale operazione;
-	\item \textbf{Precondizione}: il governo deve aver inserito una quantità di Cubit superiore a quella disponibile ed ha cercato di approvare la transazione;
-	\item \textbf{Postcondizione}: il governo ora è a conoscenza del fatto che se vorrà distribuire la somma selezionata, dovrà avere sufficienti fondi.
+	\item \textbf{Scenario principale}: il governo clicca sull'apposito pulsante per confermare la transazione di distribuzione, ma non ha sufficienti fondi per completare tale operazione;
+	\item \textbf{Precondizione}: il governo deve aver inserito una quantità di Cubit superiore a quella disponibile e cerca di effettuare la transazione;
+	\item \textbf{Postcondizione}: il governo è a conoscenza del fatto che attualmente non dispone dei fondi necessari per effettuare l'operazione di distribuzione.
 	
 \end{itemize} 

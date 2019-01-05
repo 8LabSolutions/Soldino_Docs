@@ -64,14 +64,14 @@
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda-cliente;
 	\item \textbf{Attori Secondari}: azienda-venditrice, MetaMask\glo;
-	\item \textbf{Descrizione}: l'utente dopo aver selezionato con la selezione dell'indirizzo di spedizione procede con la conferma ed il pagamento dell'ordine;
-	\item \textbf{Scenario principale}: l'azienda conferma l'ordine premendo l'apposito pulsante. Segue dunque la procedura di pagamento attraverso l'utilizzo del plugin MetaMask\glo;
+	\item \textbf{Descrizione}: l'utente, dopo aver selezionato l'indirizzo di spedizione, procede con la conferma ed il pagamento dell'ordine;
+	\item \textbf{Scenario principale}: l'utente conferma l'ordine premendo l'apposito pulsante. Segue dunque la procedura di pagamento attraverso l'utilizzo del plugin MetaMask\glo;
 	\item \textbf{Estensioni}: 
 	\begin{itemize}
-		\item \textbf{UC7.4}: l'esito del pagamento da parte del plugin MetaMask\glosp risulta negativo, l'utente riceve un messaggio di errore che lo invita a controllare la causa d'errore direttamente dal plugin; 
+		\item \textbf{UC7.4}: l'esito del pagamento da parte del plugin MetaMask\glosp risulta negativo, l'utente riceve un messaggio di errore che lo invita a controllare la causa dello stesso direttamente dal plugin; 
 	\end{itemize}
-	\item \textbf{Precondizione}: l'utente ha effettuato il checkout e l'inserimento dell'ordine;
-	\item \textbf{Postcondizione}: il pagamento è avvenuto con successo. L'importo della transazione momentaneamente è trattenuto dal sistema in quanto scatta il meccanismo di escrow\glo. Il cliente riceve nella pagina dedicata la conferma d'acquisto\glo. L'azienda-venditrice riceve nella pagina dedicata l'ordine non ancora confermato relativo al suddetto ordine.
+	\item \textbf{Precondizione}: l'utente ha effettuato il checkout e la selezione dell'indirizzo di spedizione;
+	\item \textbf{Postcondizione}: il pagamento è avvenuto con successo. L'importo della transazione momentaneamente è trattenuto dal sistema a causa del meccanismo di escrow\glo. Il cliente riceve nella pagina dedicata la conferma d'acquisto\glo. L'azienda-venditrice riceve nella pagina dedicata l'ordine non ancora confermato relativo al suddetto.
 \end{itemize}
 
 
@@ -84,7 +84,7 @@
 	\item \textbf{Scenario principale}: l'utente tenta pagare attraverso il plugin MetaMask\glosp la somma dovuta al venditore per l'acquisto corrente;
 	\item \textbf{Precondizione}: il sistema permette all'utente di procedere con il pagamento, ovvero l'ordine è stato confermato da parte dell'utente;
 	\item \textbf{Postcondizione}:
-	l'utente è consapevole che l'acquisto non è andato a buon fine, e che ottenere informazioni più precise dovrà riferirsi al messaggio di errore riportato dal plugin. 
+	l'utente è consapevole che l'acquisto non è andato a buon fine, e che per ottenere informazioni più precise dovrà riferirsi al messaggio di errore riportato nel plugin. 
 \end{itemize} 
 
 
