@@ -47,7 +47,7 @@
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Attori Secondari}: MetaMask\glo;
-	\item \textbf{Descrizione}: il sistema verifica la presenza del plug-in MetaMask\glo, al quale richiede la chiave pubblica che l'utente desidera usare come identificativo e metodo di pagamento. Essendo la chiave univoca, il sistema controlla che nessun utente registrato stia attualmente utilizzandola. Il sistema mostra infine l'interfaccia contente il form di registrazione;
+	\item \textbf{Descrizione}: il sistema verifica la presenza del plug-in MetaMask\glo, al quale richiede la chiave\glosp che l'utente desidera usare come identificativo e metodo di pagamento. Essendo la chiave\glosp univoca, il sistema controlla che nessun utente registrato stia attualmente utilizzandola. Il sistema mostra infine l'interfaccia contente il form di registrazione;
 	\item \textbf{Scenario principale}: il sistema, prima di mostrare il form per la registrazione, controlla la presenza di una chiave\glosp utilizzabile attraverso il plug-in MetaMask\glosp.
 	\item \textbf{Estensioni}:
 	\begin{itemize}
@@ -96,7 +96,14 @@
 \subsubsection{UC2.2.2 - Inserimento indirizzo di residenza}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}: al fine di portare a termine il processo di registrazione l'utente deve inserire un indirizzo di residenza, campo ritenuto obbligatorio;
+	\item \textbf{Descrizione}: al fine di portare a termine il processo di registrazione l'utente deve inserire un indirizzo di residenza, valore ritenuto obbligatorio. Esso è composto da: 
+	\begin{itemize}
+	\item nome della via e numero civico;
+	\item paese;
+	\item provincia;
+	\item CAP;
+
+	\end{itemize}
 	\item \textbf{Scenario principale}: l'utente compila il campo relativo all'indirizzo di residenza;
 	\item \textbf{Precondizione}: il sistema ha reso disponibile il campo per l'inserimento dell'indirizzo di residenza;
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo con l'indirizzo relativo alla residenza.
@@ -111,7 +118,7 @@
 \end{itemize}
 \subsubsection{UC2.3 - Inserimento dati anagrafici}
 \begin{figure}[h]
-	\includegraphics[width=6cm]{res/images/UC2-3Registrazione-cliente.png}
+	\includegraphics[width=5cm]{res/images/UC2-3Registrazione-cliente.png}
 	\centering
 	\caption{UC2.3 - Registrazione cittadino}
 \end{figure}
@@ -224,7 +231,7 @@
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato, eventualmente proprietario d'azienda;
 	\item \textbf{Descrizione}:
-	l'utente preme il pulsante per la conferma e l'invio dei dati. A schermo viene mostrato un messaggio che conferma il successo dell'operazione e spiega di attendere la verifica da parte del governo\glosp prima di poter effettivamente accedere alla piattaforma.
+	l'utente preme il pulsante per la conferma e l'invio dei dati. A schermo viene mostrato un messaggio che conferma il successo dell'operazione e spiega, nel caso la registrazione sia relativa ad un'azienda, di attendere la verifica da parte del governo\glosp prima di poter effettivamente accedere alla piattaforma.
 	\item \textbf{Scenario principale}: l'utente preme il pulsante di verifica ed invio dei dati dopo aver compilato i campi del form;
 	\item \textbf{Estensioni}: 
 	\begin{itemize}
@@ -232,7 +239,7 @@
 	\end{itemize}
 	\item \textbf{Precondizione}: il sistema permette all'utente di compilare il form di registrazione. \`E presente il pulsante per la conferma dei dati;
 	\item \textbf{Postcondizione}:
-	l'utente è consapevole che la richiesta di registrazione è avvenuta con successo ed è consapevole del fatto che dovrà attendere la verifica dell'account da parte del governo\glosp.
+	l'utente è consapevole che la richiesta di registrazione è avvenuta con successo. Nel caso della registrazione di un'azienda, il proprietario è consapevole del fatto che dovrà attendere la verifica dell'account da parte del governo\glosp.
 \end{itemize}
 
 \subsubsection{UC2.9 - Visualizzazione errore campo non compilato}
