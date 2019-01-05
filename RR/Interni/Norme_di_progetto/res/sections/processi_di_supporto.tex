@@ -288,48 +288,44 @@
 			\paragraph{Analisi} \mbox{}\\
 			Il processo di analisi si suddivide in analisi statica e analisi dinamica.
 				\subparagraph{Analisi statica} \mbox{}\\
-				L'analisi statica effettua controlli su: documenti e codice. Di essi valuta e applica la correttezza (intesa come assenza di errori e difetti), la conformità a regole e la coesione dei componenti.\newline Per effettuare analisi statica esistono metodi manuali di lettura (attuati da persone) e metodi formali (attuati da macchine). I metodi manuali sono due:
+				L'analisi statica effettua controlli su documenti e codice, di cui valuta e applica la correttezza (intesa come assenza di errori e difetti), la conformità a regole e la coesione dei componenti.\newline Per effettuare analisi statica esistono metodi manuali di lettura (attuati da persone) e metodi formali (attuati da macchine). I metodi manuali sono due:
 				\begin{itemize}
-					\item \textbf{Walkthrough}: i vari componenti del team analizzano gli oggetti nella loro totalità per cercare difetti ad ampio spettro, non sapendo dove questi possano essere;
-					\item \textbf{Inspection}: i verificatori fanno ispezione sugli oggetti in cui si cercano difetti specifici, noti prima dell'ispezione e raggruppati in checklist;
+					\item \textbf{Walkthrough}: i vari componenti del team analizzano gli oggetti nella loro totalità per cercare anomalie; non si sà in partenza se ci siano difetti, quali e dove siano;
+					\item \textbf{Inspection}: i verificatori usano liste di controllo per fare ispezione cercando errori specifici in parti specifiche.
 				\end{itemize}
-				A seguire sono descritte le liste di controllo per le ispezioni.
-
+				A seguire sono descritte le liste di controllo utilizzabili per le ispezioni. Si prevede l'ampliamento delle viste al progredire delle ispezioni e degli errori trovati.
 				
-				\begin{table}[!h]
-					\centering
-					\begin{tabular}{|l|l|}
-						\hline
-					\textbf{Difetto} & \textbf{Descrizione}\\
-					\hline
-					Errore di conformità & Formato di documento, data o nome errato\\
-					\hline
-					Errore di sintassi & Sintassi scorretta o poco leggibile\\
-					\hline
-					Errore di contenuto & Contenuto errato\\
-					\hline
-					Parte mancante & Manca una parte. Controllare titoli vuoti e PLACEHOLDER\\
-					\hline			
-					\end{tabular}
-					\caption{elenca gli errori più frequenti nei documenti}
-					\label{Tabella 1:}
-				\end{table}
+				\begin{center}
+					\rowcolors{2}{pari}{dispari}
+					\begin{longtable}{ >{\centering}p{0.20\textwidth} >{\centering}p{0.25\textwidth}						>{\raggedright}p{0.30\textwidth} >{\centering}p{0.14\textwidth}}				
+						\rowcolorhead 
+						\textbf{\color{white}Oggetto} 
+						& \textbf{\color{white}Controllo} 					
+						\tabularnewline
+						Formato data & Deve seguire il formato americano \textit{YYYY-MM-GG}
+						\tabularnewline
+						Sintassi & La frase è troppo complessa e può essere semplificata 
+						\tabularnewline
+						Parte mancante & controllare titoli vuoti o sezioni di grandezza insolita
+ 
+					\end{longtable}
+					%\caption{errori frequenti nei documenti}
+				\end{center}
 				
-				\begin{table}[!h]
-					\centering
-					\begin{tabular}{|l|l|}
-						\hline
-					\textbf{Errore} & \textbf{Descrizione}\\
-					\hline
-					Errore di nomenclatura & Il nome non rispetta la rispettiva norma o non è dichiarativo della propria funzione\\
-					\hline
-					Eccesso di responsabilità & La classe o il metodo può essere suddiviso in parti più piccole\\
-					\hline			
-					\end{tabular}
-					\caption{elenca gli errori più frequenti nel codice}
-					\label{Tabella 2:}
-				\end{table}
-														
+				\begin{comment}	
+					\begin{center}
+						\rowcolors{2}{pari}{dispari}
+						\begin{longtable}{ >{\centering}p{0.20\textwidth} >{\centering}p{0.25\textwidth}						>{\raggedright}p{0.30\textwidth} >{\centering}p{0.14\textwidth}}				
+							\rowcolorhead 
+							\textbf{\color{white}Oggetto} 
+							& \textbf{\color{white}Controllo} 					
+							\tabularnewline
+							Da definire & Da definire
+						\end{longtable}
+						%\caption{errori frequenti nei documenti}
+					\end{center}
+				\end{comment}	
+															
 				\subparagraph{Analisi dinamica} \mbox{}\\
 				L’analisi dinamica è una tecnica di analisi del prodotto software che richiede la sua	esecuzione.	Viene effettuata mediante dei test volti a verificare il funzionamento del prodotto e nel caso in cui vengano riscontrate anomalie ne permette l'identificazione. I test devono essere ripetibili, cioè deve essere possibile, dato lo stesso input e nello stesso ambiente, risalire allo stesso output. Per ogni test devono dunque essere definiti i seguenti parametri:
 				\begin{itemize}
