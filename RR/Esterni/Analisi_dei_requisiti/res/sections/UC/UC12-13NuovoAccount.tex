@@ -13,7 +13,7 @@
 	\item \textbf{Descrizione}: l'account utente può venire rigettato o approvato dal governo;
 	\item \textbf{Scenario principale}: l'utente si è registrato al sistema ma è ancora in attesa di una risposta da parte del governo in merito alla validazione del proprio account. Il flusso degli eventi è il seguente:
 	\begin{enumerate}[label=\alph*.]
-		\item il governo ottiene la lista delle aziende in lista di attesa [UC11.3] o dei cittadini in lista di attesa [UC11.4];
+		\item il governo ottiene la lista delle aziende in lista di attesa [UC11.3];
 		\item il governo approva [UC12.1] o rifiuta [UC12.2] la richiesta di iscrizione;
 	\end{enumerate}
 	\item \textbf{Precondizione}: l'utente è in coda di attesa per la validazione dell'account;
@@ -29,10 +29,10 @@
 	\item \textbf{Scenario principale}: in seguito alla registrazione, il governo riconosce validi i dati immessi dall'utente;
 	\item \textbf{Inclusioni}:
 	\begin{itemize}
-		\item \textbf{UC12.3}: in seguito all'approvazione dell'account, l'utente visualizza una breve e concisa guida su come loggarsi al sito;
+		\item \textbf{UC12.3}: in seguito all'approvazione dell'account, l'utente visualizza una breve e concisa guida su come effettuare l'autenticazione al sito;
 	\end{itemize}
 	\item \textbf{Precondizione}: l'utente ha portato a termine la richiesta di registrazione ed è ancora in attesa di verifica;
-	\item \textbf{Postcondizione}: l'utente è stato verificato e può visualizzare il modo corretto per eseguire il login alla piattaforma.
+	\item \textbf{Postcondizione}: l'utente è stato verificato e può visualizzare il modo corretto per effettuare il login alla piattaforma.
 	
 \end{itemize}
 \subsubsection{UC12.2 - Rifiuto nuovo account}

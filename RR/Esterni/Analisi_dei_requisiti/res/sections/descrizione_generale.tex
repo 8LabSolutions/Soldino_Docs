@@ -15,21 +15,28 @@ L'applicativo deve offrire oltre alle funzionalità di compravendita di servizi 
 	\item cittadini ed aziende:
 	\begin{enumerate}[label=\alph*.]
 		\item autenticarsi alla piattaforma utilizzando il plug-in MetaMask\glo;
-		\item acquistare prodotti offerti dalle aziende presenti sulla piattaforma, con pagamento immediato. 
+		\item acquistare prodotti offerti dalle aziende presenti sulla piattaforma; 
 	\end{enumerate}
 	\item le aziende possono:
 	\begin{enumerate}[label=\alph*.]
 		\item registrare la propria attività commerciale sulla piattaforma;
 		\item gestire i prodotti e/o servizi offerti, ovvero devono essere disponibili le funzionalità di inserimento, rimozione e modifica;
-		\item acquistare un prodotto/servizio richiedendo una dilazione\glosp del pagamento;
-		\item calcolare la ricevuta IVA riguardante una vendita ed inviarla al compratore: successivamente all'acquisto viene recapitata automaticamente, al compratore, la conferma dell'ordine. Dunque possono verificarsi due situazioni distinte:
+		\item gestire ordini, conferme d'ordine e fatture. Per garantire un metodo di pagamento più sicuro tra le aziende, nel sistema avvengono due tipologie di ordine:
+		
 		\begin{enumerate}[label=\roman*.]
-			\item \textbf{l'azienda-cliente ha selezionato come metodo di pagamento il versamento immediato}: il sistema provvede a sottrarre la somma dovuta al compratore, che viene trattenuta nel sistema. Successivamente, dopo la ricezione della conferma dell'ordine, può a sua volta confermare il pagamento. In tal caso riceverà la fattura IVA ed il pagamento verrà inoltrato al venditore. 
-			\item \textbf{l'azienda-cliente ha selezionato la dilazione\glosp del pagamento}: viene inviata la conferma dell'ordine. Successivamente l'azienda può confermare o rifiutare l'ordine. In caso di conferma il venditore procede con la consegna del prodotto/servizio, mentre il compratore è legalmente vincolato al pagamento futuro.  
+			\item \textbf{ordine azienda-cittadino}: durante il procedimento di acquisto il sistema provvede a sottrarre la somma dovuta al cittadino. L'ordine viene aggiunto nella lista degli ordini conclusi del cittadino. La fattura relativa a tale ordine viene aggiunta alle fatture di vendita dell'azienda;
+			\item \textbf{ordine azienda-azienda}: per garantire che ad ogni ordine l'azienda-cliente riceva la fattura per dimostrare l'acquisto effettuato, e che l'azienda-venditrice riceva il pagamento, si è deciso di adottare un meccanismo di \textbf{escrow\glo}:
+			\begin{enumerate}[label=\alph*.]
+				\item l'azienda-cliente, durante il procedimento di acquisto, versa la somma dovuta nella piattaforma, dove verrà momentaneamente trattenuta;
+				\item l'azienda-cliente riceve una conferma d'ordine\glo, e l'ordine viene aggiunto alle vendite in attesa di conferma dell'azienda-venditrice;
+				\item all'approvazione, esplicita o automatica della conferma d'ordine, l'azienda-cliente riceve la fattura, mentre l'azienda-venditrice riceve i soldi trattenuti dal sistema, oltre che al poter accedere alla fattura a sua volta.
+			\end{enumerate}
+			
 		\end{enumerate}
-		In entrambi i casi, al verificarsi del rifiuto della proposta d'ordine, la somma trattenuta viene restituita al compratore, mentre il venditore non invia nessun prodotto/servizio;
+		Con l'adozione di tale meccanismo viene semplificata la gestione dell'IVA, in quanto tutte le fatture emesse sono state approvate, e quindi da considerarsi prive di errori. 
 		\item scaricare le informazioni relative al saldo IVA trimestrale sotto forma di documento PDF;
-		\item effettuare il versamento dell'IVA al governo\glosp nel caso in cui il saldo trimestrale evidenzi una situazione di debito.
+		\item effettuare il versamento dell'IVA al governo\glosp nel caso in cui il saldo trimestrale evidenzi una situazione di debito;
+		\item dilazionare il versamento dell'IVA al governo\glosp nel caso in cui il saldo trimestrale evidenzi una situazione di debito.
 	\end{enumerate}
 
 \end{itemize}

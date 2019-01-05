@@ -1,6 +1,6 @@
 \subsubsection{UC7 - Acquisto beni}
 \begin{figure}[h]
-	\includegraphics[width=14cm]{res/images/UC7-Generale.png}
+	\includegraphics[width=10cm]{res/images/UC7-Generale.png}
 	\centering
 	\caption{UC7 - Acquisto beni}
 \end{figure}
@@ -8,14 +8,15 @@
 	\item \textbf{Attori Primari}: cittadino e azienda-cliente;
 	\item \textbf{Attori Secondari}: azienda-venditrice, MetaMask\glo;
 	\item \textbf{Descrizione}: i cittadini e le aziende possono acquistare i prodotti/servizi che avevano precedentemente aggiunto nel carrello;
-	\item \textbf{Scenario principale}: l'utente innanzitutto inserisce dei prodotti nel carrello [UC6.1]. Dunque procede al checkout [UC7.1] dei prodotti nel carrello:
+	\item \textbf{Scenario principale}: 
 	\begin{enumerate}[label=\alph*.]
-		\item i cittadini procedono con la conferma dell'ordine ed il pagamento immediato [UC7.2];
-		\item le aziende invece dovono scegliere un metodo di pagamento [UC7.3.1] tra il pagamento immediato [UC7.3.2] ed il pagamento dilazionato [UC7.3.3]. A differenza dei cittadini, devono successivamente approvare la proposta d'ordine dal proprio account per ottenere la fatturazione.
-	\end{enumerate}
+		\item l'utente inserisce dei prodotti nel carrello [UC6.1];
+		\item l'utente procede con il checkout dei prodotti precedentemente inseriti [UC7.1];
+		\item l'utente effettua la conferma ed il pagamento dell'ordine;
+	\end{enumerate}.
 	
 	\item \textbf{Precondizione}: il sistema ha reso disponibile all'utente l'utilizzo del carrello per poter effettuare degli acquisti. L'utente ha inserito degli oggetti nel carrello ed ha espresso la volontà di acquistare tali prodotti;
-	\item \textbf{Postcondizione}: è stato effettuato l'acquisto dei beni presenti nel carrello. Se l'utente è cittadino, allora l'ordine è concluso e viene effettuato il pagamento all'azienda venditrice. Viceversa, nel caso il cliente fosse un'azienda, viene inviata una proposta d'ordine nella pagina dedicata, che dovrà successivamente essere confermata. Inoltre, nel caso questo fosse un ordine con pagamento immediato, il sistema provvederà a trattenere i soldi dovuti all'azienda venditrice finché non verrà confermata la correttezza della proposta della fattura.
+	\item \textbf{Postcondizione}: è stato effettuato l'acquisto dei beni presenti nel carrello. Se l'utente è cittadino, allora l'ordine è concluso e viene effettuato il pagamento all'azienda venditrice. Viceversa, nel caso il cliente fosse un'azienda, allora viene applicato il meccanismo di escrow\glo. L'azienda cliente riceve la conferma d'acquisto\glo. Entro la data ultima di approvazione l'azienda potrà approvare o rifiutare l'ordine. I soldi del pagamento sono temporaneamente trattenuti nella piattaforma.
 \end{itemize} 
 \subsubsection{UC7.1 - Checkout}
 \begin{itemize}
