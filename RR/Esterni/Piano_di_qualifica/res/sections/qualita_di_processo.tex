@@ -1,12 +1,14 @@
 \section{Qualità di processo}
-Per ricercare qualità nello svolgimento del progetto si adoperano dei processi. Inizialmente, tali processi sono stati scelti tra quelli proposti nello standard ISO/IEC/IEEE 12207:2017; successivamente sono stati semplificati.\newline 
+Per ricercare qualità nello svolgimento del progetto si adoperano dei processi. Inizialmente, tali processi sono stati scelti tra quelli proposti nello standard ISO/IEC/IEEE 12207:1995. Successivamente sono stati semplificati o adattati secondo le esigenze: in alcuni casi (analisi dei requisiti, progettazione dell'architettura, progettazione di dettaglio, pianificazione) le attività sono trattate alla pari di processi, vista la loro importanza nell'esito del progetto.\newline 
 Il risultato sono i processi esposti a seguito.
 
 %\subsection{Processo di Costruzione del Software}. Opzione per il futuro.
 
-\subsection{Processi Tecnici}
-	\subsubsection{Processo di Analisi dei Requisiti}
-	Mediante il processo le informazioni ottenute dalle varie fonti sono trasformate in forma di casi d'uso e requisiti.
+\subsection{Processi Primari}
+	\subsection{Processo di Sviluppo}
+	Il processo contiene tutte le attività tipiche dello sviluppo software: alcune di esse sono molto importanti per cui vengono approfondite: si tratta dell'analisi dei requisiti, la progettazione architetturale, la progettazione di dettaglio.
+	\subsubsection{Analisi dei Requisiti}
+	Durante l'analisi le informazioni ottenute dalle varie fonti sono trasformate in forma di casi d'uso e requisiti.
 	Questa forma fornisce una descrizione dettagliata del sistema e definisce il funzionamento e le caratteristiche di ogni sua parte.
 		\paragraph{Obiettivi}
 		\begin{itemize}
@@ -30,10 +32,10 @@ Il risultato sono i processi esposti a seguito.
 				\item valore accettabile: $100\%$.
 			\end{itemize}
 		
-	\subsubsection{Processo di Definizione dell'Architettura}
-	Tradurre i requisiti in un modello architetturale del sistema.
-	Il modello è ad alto livello di dettaglio: in esso il sistema è costituito da macro-componenti, utili a capire il funzionamento delle parti, ma non ancora realizzabili nella pratica.\newline
-	Nel processo vanno considerati in particolare il tipo di software da produrre, le caratteristiche desiderate e i suoi requisiti non funzionali per scegliere l'architettura più adatta.
+	\subsubsection{Progettazione dell'Architettura}
+	Progettare l'architettura significa tradurre i requisiti in un modello architetturale del sistema.
+	Il modello così ottenuto è ad alto livello di dettaglio: esso dà una visione del sistema come composizione di parti, utili a capire il funzionamento del sistema, ma a grossa granularità quindi non ancora realizzabili nella pratica.\newline
+	Nell'attività vanno considerati in particolare il tipo di software da produrre, le caratteristiche desiderate e i suoi requisiti non funzionali per scegliere l'architettura più adatta.
 		\paragraph{Obiettivi}
 		\begin{itemize}
 			\item agevolare la realizzazione fornendo un'architettura adeguata;
@@ -65,9 +67,9 @@ accoppiamento della componente.
 				\item \textbf{Valore accettabile}: $ \leq 6$.
 			\end{itemize}
 			
-	\subsubsection{Processo di Progettazione di Design}
-	\textit{Nota: in questo contesto si usano i termini componente, modulo e unità alternandoli. Lo stesso oggetto possiede le proprietà espresse dai tre termini (unitarietà, modularità e composizione), e a seconda del contesto si preferisce l'uno all'altro termine.}\newline 
-	La Progettazione di Design segue la Definizione dell'Architettura e prevede la scomposizione delle macro-componenti in moduli più piccoli che sono:
+	\subsubsection{Progettazione di Dettaglio}
+	\textit{Nota: in questa sezione si parla di modulo, unità e componente riferendosi allo stesso oggetto, ma ponendo l'attenzione sulla proprietà (rispettivamente modularità, unità e composizione) più rilevante nel contesto d'uso.}\newline 
+	La progettazione di design segue la progettazione dell'architettura e prevede la scomposizione delle macro-componenti di cui il modello architetturale è fatto in componenti più piccole, che sono:
 	\begin{itemize}
 		\item facilmente comprensibili;
 		\item strettamente collegati ai requisiti funzionali;
@@ -77,13 +79,13 @@ accoppiamento della componente.
 		\begin{itemize}
 			\item tradurre i requisiti in unità di codice, i moduli;
 			\item favorire il lavoro dei programmatori con compiti individuali relativi ai singoli moduli;
-			\item produrre un sistema software fatto di componenti ed utilizzabile;
+			\item produrre un sistema software da raffinare ma già eseguibile;
 			\item mantenere il tracciamento tra requisiti e componenti.
 		\end{itemize}
 		\paragraph{Strategia}
 		\begin{itemize}
 			\item scomporre le componenti architetturali in componenti piccole;
-			\item implementare le componenti individuate.
+			\item implementare le micro-componenti individuate.
 		\end{itemize}
 		\paragraph{Metriche}
 			\subparagraph{Accoppiamento tra le classi di oggetti - CBO} 
@@ -94,9 +96,9 @@ accoppiamento della componente.
 				\item valore accettabile: $0 \leq CBO \leq 6$.
 			\end{itemize}
 		
-\subsection{Processi di Gestione Tecnica}
-	\subsubsection{Processo di Pianificazione di Progetto}
-	Il processo consiste nella produzione di un Piano di Progetto e nella sua manutenzione. Il piano governa le risorse a disposizione, ovvero tempi, costi e ruoli.
+\subsection{Processi di Supporto}
+	\subsubsection{Pianificazione}
+	La pianificazione è un'attività significativa del gestione di progetto. Consiste governare le risorse a disposizione, ovvero tempi, costi e ruoli, monitorarle nel tempo e reagire efficacemente ai cambiamenti. La pianificazione si esprime specificatamente all'interno del piano di progetto
 		\paragraph{Obiettivi}
 		\begin{itemize}
 			\item avere a disposizione piani e obiettivi ben definiti;
@@ -155,7 +157,7 @@ accoppiamento della componente.
 				\item valore accettabile: $ \geq 0$.
 			\end{itemize}
 
-	\subsubsection{Processo di Verifica}
+	\subsubsection{Verifica}
 	Il processo consiste nella ricerca e correzione di anomalie e difetti nei processi e prodotti del progetto, mediante tecniche predefinite e se possibile automatiche.
 		\paragraph{Obiettivi}
 		\begin{itemize}
@@ -178,8 +180,8 @@ accoppiamento della componente.
 				\end{itemize}
 			% a grana più fine ci sarebbero: function coverage, loop coverage, branch coverage
 
-	\subsubsection{Processo di Gestione dell'Informazione}
-	Il processo consiste nella produzione di informazioni, la cui forma tipica è  documentale, e nella loro gestione. I documenti sono prodotti a supporto di tutte le attività di progetto.
+	\subsubsection{Documentazione}
+	La documentazione consiste nella produzione di informazioni, la cui forma tipica è  documentale, e nella loro gestione. I documenti sono prodotti a supporto di tutte le attività di progetto.
 		\paragraph{Obiettivi}
 			Si costruisce la documentazione affinché sia un body of knowledge % PLACEHOLDER: glossario
 			che raccoglie la conoscenza in modo:
@@ -231,7 +233,7 @@ accoppiamento della componente.
 			\end{itemize}
 			
 \subsection{Processi Organizzativi}
-	\subsubsection{Processo di Gestione della Qualità}
+	\subsubsection{Gestione della Qualità}
 	Tale processo ha per scopo il raggiungimento di un grado soddisfacente di qualità nel progetto. Fornisce:
 	\begin{itemize}
 		\item obiettivi da perseguire;
