@@ -1,78 +1,81 @@
-\subsubsection{UC12 - Validazione nuovo account registrato}
+\subsubsection{UC12 - Abilitazione/disabilitazione account}
 \begin{figure}[h]
-	\includegraphics[width=15.5cm]{res/images/UC12Validazione.png} %da adattare in larghezza
+	\includegraphics[width=8cm]{res/images/UC12-Generale.png}
 	\centering
-	\caption{UC12 - Validazione nuovo account registrato}
-	
+	\caption{UC12 - Abilitazione/disabilitazione account}
 \end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}:
 	governo;
 	\item \textbf{Attori Secondari}:
-	utente non autenticato;
-	\item \textbf{Descrizione}: l'account utente può venire rigettato o approvato dal governo;
-	\item \textbf{Scenario principale}: l'utente si è registrato al sistema ma è ancora in attesa di una risposta da parte del governo in merito alla validazione del proprio account. Il flusso degli eventi è il seguente:
-	\begin{enumerate}[label=\alph*.]
-		\item il governo ottiene la lista delle aziende in lista di attesa [UC11.3];
-		\item il governo approva [UC12.1] o rifiuta [UC12.2] la richiesta di iscrizione;
-	\end{enumerate}
-	\item \textbf{Precondizione}: l'utente è in coda di attesa per la validazione dell'account;
-	\item \textbf{Postcondizione}: l'account utente viene approvato o rigettato. 
-\end{itemize}
-\subsubsection{UC12.1 - Approvazione nuovo account}
-\begin{itemize}
-	\item \textbf{Attori Primari}:
-	governo;
-	\item \textbf{Attori Secondari}:
-	utente non autenticato;
-	\item \textbf{Descrizione}: l'account utente viene approvato;
-	\item \textbf{Scenario principale}: in seguito alla registrazione, il governo riconosce validi i dati immessi dall'utente;
-	\item \textbf{Inclusioni}:
+	azienda, cittadino;
+	\item \textbf{Descrizione}: il governo può gestire gli account degli utenti registrati alla piattaforma, in particolare può:
 	\begin{itemize}
-		\item \textbf{UC12.3}: in seguito all'approvazione dell'account, l'utente visualizza una breve e concisa guida su come effettuare l'autenticazione al sito;
+		\item abilitare un account;
+		\item disabilitare un account, lasciando un messaggio relativo alla causa di tale provvedimento;
 	\end{itemize}
-	\item \textbf{Precondizione}: l'utente ha portato a termine la richiesta di registrazione ed è ancora in attesa di verifica;
-	\item \textbf{Postcondizione}: l'utente è stato verificato e può visualizzare il modo corretto per effettuare il login alla piattaforma.
-	
-\end{itemize}
-\subsubsection{UC12.2 - Rifiuto nuovo account}
-\begin{itemize}
-	\item \textbf{Attori Primari}:
-	governo;
-	\item \textbf{Attori Secondari}:
-	utente non autenticato;
-	\item \textbf{Descrizione}: l'account utente viene rifiutato;
-	\item \textbf{Scenario principale}: in seguito alla registrazione, il governo riconosce non validi i dati immessi dall'utente;
-	\item \textbf{Inclusioni}:
+	\item \textbf{Scenario principale}: il governo visualizza la lista degli utenti, aziende [UC11.1] o cittadini [11.2]. Per ognuna di esse ha la possibilità di abilitare l'account o disabilitarlo premendo l'apposito pulsante;
+	\item \textbf{Inclusioni}: 
 	\begin{itemize}
-		\item \textbf{UC12.4}: in seguito al rigetto  dell'account, l'utente visualizza dettagli aggiuntivi del perchè non è stato accettato;
+		\item \textbf{UC11}: l'utente per poter abilitare/disabilitare un account deve accedere ad una lista di utenti registrati alla piattaforma [UC11];
 	\end{itemize}
-	\item \textbf{Precondizione}: l'utente ha portato a termine la richiesta di registrazione ed è ancora in attesa di verifica;
-	\item \textbf{Postcondizione}: l'utente risulta rifiutato e riceve le informazioni relative a tale rifiuto.
-	
-\end{itemize}
-\subsubsection{UC12.3 - Visualizzazione istruzioni per loggarsi tramite MetaMask\glosp}
-\begin{itemize}
-	\item \textbf{Attori Primari}:
-	governo;
-	\item \textbf{Attori Secondari}:
-	utente non autenticato;
-	\item \textbf{Descrizione}: l'utente, durante il primo tentativo di accesso alla piattaforma dopo l'approvazione dell'account, visualizza una guida contenente le istruzioni per procedere al login tramite MetaMask\glo;
-	\item \textbf{Scenario principale}: in seguito all'approvazione dell'account, l'utente cerca di effettuare il suo primo login, e gli vengono fornite tutte le istruzioni necessarie;
-	\item \textbf{Precondizione}: l'utente è stato verificato e tenta di eseguire per la prima volta il login;
-	\item \textbf{Postcondizione}: l'utente possiede le conoscenze necessarie al fine di conseguire un login corretto e sicuro tramite il plugin MetaMask\glo.
-\end{itemize}
-\subsubsection{UC12.4 - Visualizzazione informazioni aggiuntive in merito al rigetto dell'account}
-\begin{itemize}
-	\item \textbf{Attori Primari}:
-	governo;
-	\item \textbf{Attori Secondari}:
-	utente non autenticato;
-	\item \textbf{Descrizione}: l'utente visualizza le informazioni aggiuntive relative al rigetto del proprio account;
-	\item \textbf{Scenario principale}: in seguito al rifiuto dell'account, l'utente riceve le informazioni relative a tale rigetto da parte del governo;
-	\item \textbf{Precondizione}: l'utente non ha idea del perchè non è stato accettato;
-	\item \textbf{Postcondizione}: l'utente riconosce di aver inserito dati falsi o contenenti errori, pertanto dovrà riprovare la registrazione.
+	\item \textbf{Precondizione}: l'utente governativo sta visualizzando una lista di utenti registrati al sistema, e può quindi accedere al pulsante per l'abilitazione o disabilitazione dell'account di un cittadino;
+	\item \textbf{Postcondizione}: l'account dell'utente selezionato è stato abilitato o disabilitato. Nel caso sia stato disabilitato, durante i prossimi tentativi di autenticazione, tale utente riceverà l'errore di "account disabilitato" [UC3.3].
 \end{itemize} 
+
+\subsubsection{UC12.1 - Abilitazione account}
+\begin{itemize}
+	\item \textbf{Attori Primari}:
+	governo;
+	\item \textbf{Attori Secondari}:
+	azienda, cittadino;
+	\item \textbf{Descrizione}: il governo può abilitare l'account di un utente;
+	\item \textbf{Scenario principale}: il governo visualizza la lista degli utenti, aziende [UC11.1] o cittadini [11.2]. Per ogni utente il cui stato dell'account risulta "disabilitato", può effettuare l'abilitazione premendo sul pulsante dedicato;
+	\item \textbf{Inclusioni}: 
+	\begin{itemize}
+		\item \textbf{UC11}: l'utente per poter abilitare un account deve accedere ad una lista di utenti registrati alla piattaforma [UC11];
+	\end{itemize}
+	\item \textbf{Precondizione}: l'utente governativo sta visualizzando una lista di utenti registrati al sistema, preme il pulsante di abilitazione dell'account relativo ad un utente il quale stato dell'account risulta "disabilitato";
+	\item \textbf{Postcondizione}: lo stato  dell'account utente sopra menzionato risulta "abilitato".
+\end{itemize} 
+
+
+\subsubsection{UC12.2 - Disabilitazione account}
+\begin{itemize}
+	\item \textbf{Attori Primari}:
+	governo;
+	\item \textbf{Attori Secondari}:
+	azienda, cittadino;
+	\item \textbf{Descrizione}: il governo può disabilitare l'account di un utente;
+	\item \textbf{Scenario principale}: il governo visualizza la lista degli utenti, aziende [UC11.1] o cittadini [11.2]. Per ogni utente il cui stato dell'account risulta "abilitato", può effettuare la disabilitazione premendo sul pulsante dedicato;
+	\item \textbf{Inclusioni}: 
+	\begin{itemize}
+		\item \textbf{UC11}: l'utente per poter disabilitare un account deve accedere ad una lista di utenti registrati alla piattaforma [UC11];
+		\item \textbf{UC12.3}: durante la disabilitazione l'utente governativo può inserire un messaggio personalizzato per spiegare all'utente il motivo della disabilitazione dell'account;
+	\end{itemize}
+	\item \textbf{Precondizione}: l'utente governativo sta visualizzando una lista di utenti registrati al sistema, preme il pulsante di disabilitazione dell'account relativo ad un utente il quale stato dell'account risulta "abilitato";
+	\item \textbf{Postcondizione}: lo stato  dell'account utente sopra menzionato risulta "disabilitato".Durante i prossimi tentativi di autenticazione, tale utente riceverà l'errore di "account disabilitato" [UC3.3].
+\end{itemize} 
+
+\subsubsection{UC12.3 - Messaggio di disabilitazione}
+\begin{itemize}
+	\item \textbf{Attori Primari}:
+	governo;
+	\item \textbf{Attori Secondari}:
+	azienda, cittadino;
+	\item \textbf{Descrizione}: il governo può inserire un messaggio personalizzato all'utente al quale sta disabilitando l'account riferendo la causa di tale disabilitazione;
+	\item \textbf{Scenario principale}: il governo visualizza una lista di utenti registrati [UC11]:
+	\begin{enumerate}[label=\alph*.]
+		\item l'utente disabilita l'account di un utente il quale stato dell'account risulta "abilitato" [UC12.2];
+		\item il sistema propone una casella di testo nella quale l'utente governativo può inserire la causa della disabilitazione dell'account;
+		\item l'utente conferma e salva tale messaggio. Durante i prossimi tentativi di autenticazione, l'utente al quale è stato disabilitato l'account, riceverà l'errore di "account disabilitato" [UC3.3];
+	\end{enumerate}
+	 
+	\item \textbf{Precondizione}: l'utente governativo sta disabilitando l'account di un utente;
+	\item \textbf{Postcondizione}: l'utente governativo ha inserito un messaggio contenente la causa della disabilitazione dell'account ed ha salvato e confermato tale messaggio.
+\end{itemize}
+
+
 \subsubsection{UC13 - Rimborso IVA}
 \begin{itemize}
 	\item \textbf{Attori Primari}:

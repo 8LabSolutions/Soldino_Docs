@@ -14,39 +14,40 @@
 \subsubsection{UC14.1 - Visualizzazione ordini}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda, cittadino;
-	\item \textbf{Descrizione}: alle aziende ed ai cittadini sono messe a disposizione diverse operazione per visualizzare e gestire gli ordini all'interno della piattaforma. \`E reso possibile avere un elenco dettagliato di tutti gli ordini, in particolare per ognuno di essi è presente la:
+	\item \textbf{Descrizione}: alle aziende ed ai cittadini sono messe a disposizione diverse operazioni per visualizzare e gestire gli ordini all'interno della piattaforma. \`E reso possibile avere un elenco dettagliato di tutti gli ordini, in particolare per ognuno di essi è presente la visualizzazione:
 	\begin{itemize}
-		\item visualizzazione della data dell'ordine;
-		\item visualizzazione del numero dell'ordine;
-		\item visualizzazione dei prodotti inclusi nell'ordine [UC5];
-		\item visualizzazione totale IVA;
-		\item visualizzazione prezzo lordo\glo;
+		\item della data dell'ordine;
+		\item del numero dell'ordine;
+		\item dei prodotti inclusi nell'ordine [UC5];
+		\item totale IVA;
+		\item prezzo lordo\glo;
+		\item indirizzo di spedizione;
 	\end{itemize}
-	\item \textbf{Scenario principale}: l'utente visualizza degli ordini per poi poterli gestire;
+	\item \textbf{Scenario principale}: l'utente visualizza gli ordini per poi poterli gestire;
 	\item \textbf{Inclusioni}:
 	\begin{itemize}
 		\item \textbf{UC5}: visualizzazione dei beni;
 	\end{itemize}
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e mette a disposizione tutte le pagine necessarie alla visualizzazione e gestione degli ordini;
-	\item \textbf{Postcondizione}: l'utente ha visualizzato e/o gestito i propri ordini.
+	\item \textbf{Postcondizione}: l'utente ha visualizzato l'elenco dei propri ordini.
 \end{itemize} 
 
 \subsubsection{UC14.2 - Visualizzazione vendite in attesa di approvazione}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: all'azienda è messa a disposizione la possibilità di visualizzare le vendite effettuate ad altre aziende, che sono in attesa di approvazione;
-	\item \textbf{Scenario principale}: l'utente visualizza le vendite in attesa di approvazione tramite una vista dettagliata che include: 
+	\item \textbf{Descrizione}: all'azienda ha la possibilità di visualizzare le vendite effettuate ad altre aziende, che sono in attesa di approvazione;
+	\item \textbf{Scenario principale}: l'utente visualizza le vendite in attesa di approvazione tramite una vista dettagliata che include la visualizzazione di: 
 		\begin{itemize}
-		\item visualizzazione di tutte le informazioni dell'ordine [UC14.1];
-		\item visualizzazione della data ultima per l'approvazione;
-		\item visualizzazione nome azienda-cliente;
-		\item visualizzazione partita IVA dell'azienda-cliente;
+		\item le informazioni dell'ordine [UC14.1];
+		\item della data ultima per l'approvazione;
+		\item nome azienda-cliente;
+		\item partita IVA dell'azienda-cliente;
 		\end{itemize}
 		\item \textbf{Inclusioni}:
 	\begin{itemize}
 		\item \textbf{UC14.1}: Visualizzazione degli ordini;
 	\end{itemize}
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda visita la pagina per la visualizzazione delle vendite verso le aziende-clienti che sono ancora in attesa di approvazione;
+	\item \textbf{Precondizione}:l'utente visita la pagina per la visualizzazione delle vendite che sono in attesa di approvazione;
 	\item \textbf{Postcondizione}: l'utente ha visualizzato le proprie vendite in attesa di approvazione.
 \end{itemize} 
 
@@ -59,8 +60,8 @@
 	\begin{itemize}
 		\item \textbf{UC14.1}: Visualizzazione degli ordini;
 	\end{itemize}
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e questo ha espresso la volontà di visualizzare la lista degli acquisti conclusi;
-	\item \textbf{Postcondizione}: l'utente visualizza tale lista.
+	\item \textbf{Precondizione}: l'utente sta visitando la pagina contenente la lista degli acquisti conclusi;
+	\item \textbf{Postcondizione}: l'utente visualizza la lista degli acquisti conclusi.
 \end{itemize}
 
 \subsubsection{UC14.4 - Visualizzazione vendite concluse}
@@ -82,7 +83,7 @@
 	\item \textbf{Attori Primari}: azienda;
 	\item \textbf{Attori Secondari}: MetaMask\glo, azienda;
 	\item \textbf{Descrizione}: l'azienda può rifiutare una conferma d'acquisto\glo. Per effettuare l'operazione verrà utilizzato MetaMask\glo;
-	\item \textbf{Scenario principale}: l'utente visualizza una conferma d'acquisto che necessitano di approvazione e decide di rifiutarla;
+	\item \textbf{Scenario principale}: l'utente visualizza una conferma d'acquisto che necessita di approvazione e decide di rifiutarla;
 	\item \textbf{Inclusioni}: 
 	\begin{itemize}
 		\item \textbf{UC14.7}: visualizzazione delle conferme d'acquisto relative agli acquisti in attesa di approvazione;
