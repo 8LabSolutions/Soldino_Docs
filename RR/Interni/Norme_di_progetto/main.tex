@@ -9,18 +9,28 @@
 
 \begin{document}
 	\input{res/sections/frontispiece.tex}
+	
+	\tableofcontents
+	\pagebreak	
+	
 	\input{res/sections/changelog.tex}
 	\pagebreak
+
+	\counterwithin{table}{subsection}
 	
-	%elenco delle figure PLACEHOLDER
-	\tableofcontents	
+	\counterwithin{figure}{subsection}
+	
 	\pagebreak
+	
 	\input{res/sections/introduzione.tex}
 	\pagebreak
+	
 	\input{res/sections/processi_primari.tex}
 	\pagebreak
+	
 	\input{res/sections/processi_di_supporto.tex}
 	\pagebreak
+	
 	\input{res/sections/processi_organizzativi.tex}
 	\pagebreak
 	
