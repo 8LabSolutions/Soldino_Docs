@@ -1,12 +1,11 @@
-\subsubsection{UC8 - Gestione beni in vendita}
+\subsubsection{UC8 - Gestione prodotti in vendita}
 \begin{figure}[h]
-	\includegraphics[width=10cm]{res/images/UC8-Generale.png}
+	\includegraphics[width=8cm]{res/images/UC8-Generale.png}
 	\centering
 	\caption{UC8 - Operazioni per la gestione dei beni venduti}
 \end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Attori Secondari}: MetaMask\glo;
 	\item \textbf{Descrizione}: le aziende hanno la possibilità di gestire i propri beni in vendita sulla piattaforma;
 	\item \textbf{Scenario principale}: l'azienda accede alla pagina per la gestione dei prodotti/servizi venduti e può:
 	\begin{itemize}
@@ -20,7 +19,7 @@
 \end{itemize}
 
 \subsubsection{UC8.1 - Inserimento prodotto}
-\begin{figure}[H]
+\begin{figure}[h]
 	\includegraphics[width=8cm]{res/images/UC8-Inserimento.png}
 	\centering
 	\caption{UC8.1 - Inserimento prodotto}
@@ -34,8 +33,7 @@
 		\item inserire il nome del prodotto/servizio [UC8.1.1];
 		\item inserire la descrizione del prodotto/servizio [UC8.1.2];
 		\item inserire il prezzo netto unitario del prodotto/servizio [UC8.1.3];
-		\item inserire la quantità disponibile del prodotto/servizio [UC8.1.4];
-		\item inserire l'IVA del prodotto/servizio [UC8.1.6];
+		\item inserire l'IVA del prodotto/servizio [UC8.1.4];
 		\item confermare i dati inseriti [UC8.1.5].
 		
 	\end{itemize}
@@ -66,13 +64,13 @@
 	\item \textbf{Precondizione}: il sistema ha reso disponibile il form per l'inserimento di un nuovo prodotto/servizio, in particolare è presente il campo per l'inserimento del prezzo;
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo relativo al prezzo del nuovo prodotto da inserire.
 \end{itemize}
-\subsubsection{UC8.1.4 - Inserimento quantità}
+\subsubsection{UC8.1.4 - Inserimento IVA}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: al fine di portare a termine il processo di inserimento di un nuovo prodotto l'utente deve inserire il numero di pezzi disponibili del prodotto, campo ritenuto obbligatorio;
-	\item \textbf{Scenario principale}: l'utente compila il campo relativo al numero di pezzi del nuovo prodotto/servizio da inserire;
-	\item \textbf{Precondizione}: il sistema ha reso disponibile il form per l'inserimento di un nuovo prodotto/servizio, in particolare è presente il campo per l'inserimento alla quantità di pezzi;
-	\item \textbf{Postcondizione}: l'utente ha compilato il campo relativo alla quantità di pezzi del nuovo prodotto da inserire.
+	\item \textbf{Descrizione}: al fine di portare a termine il processo di inserimento di un nuovo prodotto l'utente deve inserire l'aliquota\glosp IVA che intende applicare al prodotto;
+	\item \textbf{Scenario principale}: l'utente compila il campo relativo all'aliquota\glosp IVA del nuovo prodotto/servizio da inserire;
+	\item \textbf{Precondizione}: il sistema ha reso disponibile il form per l'inserimento di un nuovo prodotto/servizio, in particolare è presente il campo per l'inserimento dell'aliquota\glosp IVA;
+	\item \textbf{Postcondizione}: l'utente ha compilato il campo relativo all'aliquota\glosp IVA del nuovo prodotto da inserire.
 \end{itemize}
 \subsubsection{UC8.1.5 - Conferma dati}
 \begin{itemize}
@@ -87,14 +85,7 @@
 	\item \textbf{Precondizione}: il sistema ha reso disponibile il form per l'inserimento dei dati riguardanti il nuovo prodotto, l'utente ha compilato tutti i campi ed ha premuto il pulsante per la conferma.
 	\item \textbf{Postcondizione}: il nuovo prodotto è stato inserito nella piattaforma e l'utente ottiene la conferma della riuscita dell'operazione.
 \end{itemize}
-\subsubsection{UC8.1.6 - Inserimento IVA}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: al fine di portare a termine il processo di inserimento di un nuovo prodotto l'utente deve inserire l'aliquota\glosp IVA che intende applicare al prodotto;
-	\item \textbf{Scenario principale}: l'utente compila il campo relativo all'aliquota\glosp IVA del nuovo prodotto/servizio da inserire;
-	\item \textbf{Precondizione}: il sistema ha reso disponibile il form per l'inserimento di un nuovo prodotto/servizio, in particolare è presente il campo per l'inserimento dell'aliquota\glosp IVA;
-	\item \textbf{Postcondizione}: l'utente ha compilato il campo relativo all'aliquota\glosp IVA del nuovo prodotto da inserire.
-\end{itemize}
+
 \subsubsection{UC8.2 - Visualizzazione prodotto}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
@@ -104,7 +95,6 @@
 		\item la descrizione;
 		\item il prezzo netto unitario;
 		\item la percentuale IVA imposta;
-		\item la quantità disponibile;
 	\end{itemize}
 	\item \textbf{Scenario principale}: l'azienda accede alla pagina per visualizzare i loro prodotti in vendita;	
 	\item \textbf{Precondizione}: il sistema ha identificato l'utente come azienda, l'azienda ha espresso la volontà di visualizzare i propri prodotti inseriti nella piattaforma;
@@ -125,8 +115,8 @@
 		\item modificarne il nome [UC8.3.1];
 		\item modificarne la descrizione [UC8.3.2];
 		\item modificarne il prezzo [UC8.3.3];
-		\item modificarne la quantità [UC8.3.4];
-		\item modificarne l'IVA [UC8.3.6];
+		\item modificarne l'IVA [UC8.3.4];
+		
 	\end{itemize}
 	Per ognuno dei campi verrà messo a disposizione il valore attuale ed un campo per inserire il nuovo valore;
 
@@ -171,13 +161,13 @@
 	\item \textbf{Postcondizione}: l'utente ha inserito il nuovo prezzo nel campo dedicato del form.
 \end{itemize}
 
-\subsubsection{UC8.3.4 - Modifica quantità}
+\subsubsection{UC8.3.4 - Modifica IVA}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: l'azienda inserisce nell'apposito campo la nuova quantità del prodotto/servizio;
-	\item \textbf{Scenario principale}: l'utente visualizza la vecchia quantità con affianco un campo dati per inserire la nuova quantità, ed inserisce il nuovo valore;
+	\item \textbf{Descrizione}: l'azienda inserisce nell'apposito campo la nuova percentuale IVA imposta al prodotto/servizio;
+	\item \textbf{Scenario principale}: l'utente visualizza la vecchia percentuale IVA con affianco un campo dati per inserire il nuovo valore, ed compila tale campo;
 	\item \textbf{Precondizione}: l'utente ha espresso la volontà di modificare i dati di un prodotto/servizio;
-	\item \textbf{Postcondizione}: l'utente ha inserito la nuova quantità nel campo dedicato del form.
+	\item \textbf{Postcondizione}: l'utente ha inserito la nuova percentuale IVA imposta nel campo dedicato del form.
 \end{itemize}
 
 \subsubsection{UC8.3.5 - Conferma modifiche}
@@ -194,14 +184,6 @@
 	\item \textbf{Postcondizione}: il prodotto è stato aggiornato con i nuovi dati e l'utente ottiene la conferma della riuscita dell'operazione.
 \end{itemize}
 
-\subsubsection{UC8.3.4 - Modifica IVA}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: l'azienda inserisce nell'apposito campo la nuova percentuale IVA imposta al prodotto/servizio;
-	\item \textbf{Scenario principale}: l'utente visualizza la vecchia percentuale IVA con affianco un campo dati per inserire il nuovo valore, ed compila tale campo;
-	\item \textbf{Precondizione}: l'utente ha espresso la volontà di modificare i dati di un prodotto/servizio;
-	\item \textbf{Postcondizione}: l'utente ha inserito la nuova percentuale IVA imposta nel campo dedicato del form.
-\end{itemize}
 
 \subsubsection{UC8.3.6 - Visualizzazione errore almeno una modifica}
 \begin{itemize}
