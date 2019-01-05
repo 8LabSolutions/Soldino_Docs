@@ -39,18 +39,18 @@
 \pagebreak
 \input{res/sections/specifica_dei_test.tex}
 
+<<<<<<< HEAD
 %\pagebreak
 %\input{res/sections/standard.tex}
-
-\appendix
+=======
 \pagebreak
-\input{res/sections/standard_qualita.tex}	%tutte le \section da questo documento in poi saranno numerate con numeri
+\input{res/sections/appendice_qualita.tex}	%tutte le \section da questo documento in poi saranno numerate con numeri
+>>>>>>> 56504481d6d99f658c7fa56e60ed248f2f09e965
 
-\pagebreak
-\input{res/sections/resoconto_verifica.tex}
+%\pag%\input{res/sections/resoconto_verifica.tex}
 
-\pagebreak
-\input{res/sections/autovalutazione.tex}
+%\pagebreak
+%\input{res/sections/autovalutazione.tex} % opzionale
 
 
 %\pagebreak
