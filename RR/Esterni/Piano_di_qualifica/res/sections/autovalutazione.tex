@@ -10,7 +10,7 @@ Verano dunque tracciati problemi riguardanti i seguenti ambiti:
 		l'organizzazione e la comunicazione all'interno del gruppo;
 	\item \textbf{Ruoli}: in cui vengono analizzati i problemi riguardanti il 
 		corretto svolgimento di un ruolo;
-	\item \textbf{Strumenti}: in cui vengono analizzati i problemi riguardanti 
+	\item \textbf{Strumenti di lavoro}: in cui vengono analizzati i problemi riguardanti 
 		l'uso degli strumenti scelti.
 \end{itemize}
 
@@ -59,15 +59,88 @@ possibile consultarla nel documento \textit{Norme di Progetto v1.0.0}.
 		è stato risolto in breve tempo.
 			
 	\end{longtable}
-	\caption{Tabella problematiche relative l'organizzazione}	
+	\caption{Tabella problematiche relative all'organizzazione}	
 \end{table}
 
 \subsection{Valutazione sui ruoli}
-\begin{itemize}
-\item Il responsabile, a causa dell'inesperienza, ha trovato difficoltoso suddividere in modo bilanciato il lavoro tra i membri, si è scelto quindi di ridurre il carico assegnato ad ogni singolo membro;
-\end{itemize}
-\subsection{Valutazioni sugli strumenti}
-\begin{itemize}
-\item Si è verificato difficoltoso per alcuni membri, causa inesperienza, la stesura dei documenti \LaTeX  soprattutto per quanto riguarda la costruzione di tabelle e l'inserimento di figure, si è scelto quindi di far creare ai membri più esperti template e comandi personalizzati.
-\item Si sono verificati alcuni conflitti durante il push di modifiche su Github, si è scelto quindi di togliere la possibilità di pushare direttamente sul master senza che almeno un altro membro approvati le modifiche. 
-\end{itemize}
+\begin{table}[H]
+	%\renewcommand{\arraystretch}{1.5}
+	\rowcolors{2}{pari}{dispari}
+	
+	\begin{longtable}{ >{\centering}p{0.20\textwidth} >{\centering}p{0.30\textwidth}
+			>{\centering}p{0.10\textwidth} >{\centering}p{0.30\textwidth}}
+			
+		\hline
+		\rowcolorhead
+		\textbf{\color{white}Problema} 
+		& \textbf{\color{white}Descrizione} 
+		& \centering\textbf{\color{white}Gravità}
+		& \textbf{\color{white}Soluzione} 
+		\tabularnewline \hline 	
+		
+		Rivestire il ruolo di \textit{Responsabile} &
+		A causa dell'inesperienza, chi ha lavorato come responsabile ha avuto discrete
+		difficoltà nella suddivisione bilanciata delle ore tra i membri provocando 
+		diverse ridistribuzioni delle ore. &
+		3 &
+		Per evitare eventuali ritardi nelle consegne, il gruppo ha deciso di dedicare 
+		del tempo per analizzare meglio la mole di lavoro e compiere così una più
+		accurata distribuzione delle ore.
+						
+		\tabularnewline 
+		Rivestire il ruolo di \textit{Analista} &
+		La scelta e la configurazione del software per il tracciamento dei requisiti
+		ha richiesto più ore del previsto, come si può vedere anche dal documento
+		\textit{Piano di Progetto v1.0.0}. &
+		2 &
+		Per evitare ritardi sul lavoro, chi ha svolto il ruolo di \textit{Verificatore}
+		e ha avanzato ore, è stato affiancato agli \textit{Analisti} per completare 
+		i loro compiti.
+			
+	\end{longtable}
+	\caption{Tabella problematiche relative ai ruoli}	
+\end{table}
+
+\subsection{Valutazioni sugli strumenti di lavoro}
+\begin{table}[H]
+	%\renewcommand{\arraystretch}{1.5}
+	\rowcolors{2}{pari}{dispari}
+	
+	\begin{longtable}{ >{\centering}p{0.20\textwidth} >{\centering}p{0.30\textwidth}
+			>{\centering}p{0.10\textwidth} >{\centering}p{0.30\textwidth}}
+			
+		\hline
+		\rowcolorhead
+		\textbf{\color{white}Problema} 
+		& \textbf{\color{white}Descrizione} 
+		& \centering\textbf{\color{white}Gravità}
+		& \textbf{\color{white}Soluzione} 
+		\tabularnewline \hline 	
+		
+		GitHub & 
+		Si sono riscontrati in più occasioni conflitti sui file in cui si
+		stava lavorando e il tempo utilizzato per risolverli è stato sottratto dal tempo
+		di lavoro. &
+		2 &
+		Il gruppo è stato istruito sull'uso di specifici rami di lavoro in modo tale che
+		la modifiche di tutti i componenti si potessero integrare con il proprio lavoro 
+		senza che quest'ultimo potesse soffrire di conflitti. Da questa scelta, il team
+		ha potuto beneficiare nell'avere nel ramo \textit{master} la versione stabile 
+		del proprio lavoro e \textit{branch} dedicati su cui lavorare.
+						
+		\tabularnewline 
+		\LaTeX{} &
+		A causa dell'inesperienza di alcuni membri del gruppo all'utilizzo di questo
+		strumento, si sono riscontrare diverse difficoltà sopratutto nell'inserimento 
+		di figure e nella costruzione di tabelle. &
+		1 &
+		Per risolvere in breve tempo questa problematica, si è deciso di affiancare
+		ai membri meno esperti chi sapeva già utilizzare i comandi di \LaTeX{} dando
+		così la possibilità ai primi di imparare e permettendo ai secondi di non 
+		subire grossi rallentamenti nel lavoro.
+		
+			
+	\end{longtable}
+	\caption{Tabella problematiche relative agli strumenti di lavoro}	
+\end{table}
+
