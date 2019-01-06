@@ -1,6 +1,6 @@
 \subsubsection{UC6 - Gestione carrello}
  \begin{figure}[h]
-	\includegraphics[width=9cm]{res/images/UC6GestioneCarrello.png}
+	\includegraphics[width=6cm]{res/images/UC6GestioneCarrello.png}
 	\centering
 	\caption{UC6 - Gestione carrello}
 \end{figure}
@@ -19,9 +19,14 @@
  \subsubsection{UC6.1 - Inserimento prodotto}
 \begin{itemize}
 	\item \textbf{Attori Primari}: cittadino, azienda\glo;
-	\item \textbf{Descrizione}: l'utente inserisce il prodotto selezionato nel carrello;
-	\item \textbf{Scenario principale}: l'utente sta visualizzando un bene/servizio e clicca sul pulsante dedicato all'aggiunta dello stesso nel carrello virtuale;
-	\item \textbf{Precondizione}: l'utente deve poter visualizzare i dettagli di un bene/servizio ed esprime la volontà di inserire tale bene nel carrello premendo il pulsante dedicato;
+	\item \textbf{Descrizione}: l'utente inserisce il prodotto selezionato nel carrello, nella quantità desiderata;
+	\item \textbf{Scenario principale}:
+	\begin{enumerate}[label=\alph*.]
+		\item l'utente sta visualizzando i prodotti offerti [UC5];
+		\item l'utente seleziona la quantità desiderata del prodotto [UC5.1];
+		\item l'utente preme il pulsate per l'inserimento del prodotto nel carrello;
+	\end{enumerate}
+	\item \textbf{Precondizione}: l'utente deve poter visualizzare i beni/servizi ed esprime la volontà di inserire un prodotto nel carrello premendo l'apposito pulsante;
 	\item \textbf{Postcondizione}: nel carrello dell'utente è presente il bene o il servizio selezionato.
 \end{itemize}
 \subsubsection{UC6.2 - Visualizzazione prodotti del carrello}
@@ -31,6 +36,7 @@
 	\begin{itemize}
 		\item nome;
 		\item prezzo; 
+		\item quantità;
 	\end{itemize}
 	\item \textbf{Scenario principale}: l'utente si trova all'interno della pagina del proprio carrello virtuale e può visualizzare la lista dei prodotti aggiunti al carrello;
 	\item \textbf{Precondizione}: l'utente deve essere all'interno della pagina del proprio carrello;
