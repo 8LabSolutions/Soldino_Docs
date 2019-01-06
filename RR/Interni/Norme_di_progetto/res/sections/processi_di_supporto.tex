@@ -307,7 +307,7 @@
 					\\
 					
 					\rowcolordark
-					{\colorbody Sintessi} & {\colorbody  La frase è troppo complessa e può essere semplificata } 
+					{\colorbody Sintassi} & {\colorbody  La frase è troppo complessa e può essere semplificata } 
 					\\	
 					
 					\rowcolorlight
@@ -345,7 +345,7 @@
 			\item Essere ripetibili;
 			\item Specificare l'ambiente di esecuzione;
 			\item Specificare input e output richiesti;
-			\item Avvertire di possibili side-effect;
+			\item Avvertire di possibili side effect;
 			\item Fornire informazioni sui risultati dell'esecuzione in forma di file di log.
 		\end{itemize}	
 			
@@ -388,45 +388,56 @@
 	\subsubsection{Scopo}
 	Lo scopo della configurazione è di creare ordine tra gli oggetti software e documentali. Gli oggetti configurati si trovano in un posto preciso, hanno uno stato che li identifica, sono modificati secondo procedure e posti sotto versionamento.
 	\subsection{Versionamento} \mbox{}\\
-	\paragraph{Tecnologie} \mbox{}\\
-	Per le parti del progetto da versionare si è scelto l'utilizzo della sistema di versionamento distribuito \textit{Git}, usando il servizio di GitHub per ospitare la repository remota. La condivisione dei documenti informali o non versionabili è invece effettuata tramite il servizio Google Drive.
-	\paragraph{Repository} \mbox{}\\
-	Il sistema di versionamento usato è \textit{Git}, noto sistema di controllo versione distribuito. I membri del team possono usare lo strumento sia da linea di comando sia attraverso software che ne migliorano l'usabilità, come GitFlow, GitKraken. La versione comune e ufficiale del progetto è  ospitata in una repository remota su Github all'indirizzo  
-	\url{https://github.com/8LabSolutions/Soldino}. Questa repository remota è pubblica quindi accessibile a tutti, inclusi cliente e committente.
-	\paragraph{Struttura del repository} \mbox{}\\
-	Ci sono due tipi di repository:
-	\begin{itemize}
-		\item remota: ospitata su \textit{GitHub}, è la versione di riferimento e quella disponibile all'esterno del team;
-		\item locale: ogni studente possiede una copia locale del progetto su cui lavorare;
-	\end{itemize}						
-	Entrambe i tipi di repository sono organizzati in cartelle:
-	\begin{itemize}
-		\item latex: qui risiedono i file di carattere generale, come i file relativi a package, che vengono inseriti in tutti i documenti, e i template, che sono usati come riferimento per nuovi documenti di struttura già definita;
-		\item guide: qui si trovano delle brevi guide di carattere pratico, come brevi spiegazioni per applicare comandi latex poco conosciuti;
-		\item \textit{RR}: qui si trovano i documenti, suddivisi tra esterni ed interni, la cui consegna è dovuta alla Revisione dei Requisiti;
-		\item Saranno aggiunte in futuro cartelle distinte nominate \textbf{RP}, \textbf{RQ} e \textbf{RA} contenenti i file delle rispettive consegne.
-	\end{itemize}
-	Lo scopo della suddivisione dei file per revisioni è di evidenziare il lavoro svolto per ogni milestone maggiore, e di rendere ben tracciabili i file che le riguardano.
-	\subparagraph{Tipi di file e .gitignore} \mbox{}\\
-	I file di interesse per il progetto sono:
-	\begin{itemize}
-		\item file .tex di \LaTeX{};
-		\item file .pdf che sono oggetto di consegna;
-		\item alcuni file testuali e immagini di supporto ai precedenti.
-	\end{itemize}			
-	Il file \textit{.gitignore} presente al livello più esterno della repository elenca ed esclude tutti i file che vengono prodotti durante lo sviluppo del progetto ma non sono rilevanti per la consegna.
-	\subparagraph{Lavoro collaborativo e versionamento} \mbox{}\\
-	La repository \textit{git} è composta di vari rami per organizzare il lavoro e renderlo modulare e collaborativo. Ogni membro del team lavora in locale su un branch della repository; si può lavorare in più su uno stesso ramo; è auspicabile lavorare parallelamente su rami differenti a diverse attività parallele.\newline La sequenza di attività che un membro del team usa produrre un incremento da aggiungere al progetto è la seguente:
-	\begin{enumerate}
-		\item scelta del branch corretto;
-		\item pull dalla repository remota per aggiornare il proprio branch locale;
-		\item svolgimento del lavoro, che risulta nella modifica dei propri file locali;
-		\item aggiunta dei file al sistema di versionamento;
-		\item commit dei file aggiunti, corredato di un messaggio che identifica le modifiche;
-		\item push del commit nella repository remota;
-	\end{enumerate}
-	La routine serve a massimizzare la consistenza e minimizzare i conflitti tra le repository locali e quelle remote, così da rendere il lavoro il più possibile piacevole e snello.
-	
+		\paragraph{Tecnologie} \mbox{}\\
+		Per le parti del progetto da versionare si è scelto di usare il sistema di versionamento distribuito \textit{Git}, usando il servizio di GitHub per ospitare la repository remota.
+		\paragraph{Repository} \mbox{}\\
+		Il sistema di versionamento usato è \textit{Git}, noto sistema di controllo versione distribuito. I membri del team possono usare lo strumento sia da linea di comando sia attraverso software che ne migliorano l'usabilità, come GitFlow, GitKraken. La versione comune e ufficiale del progetto è  ospitata in una repository pubblica su Github all'indirizzo \url{https://github.com/8LabSolutions/Soldino}.
+		\paragraph{Struttura del repository} \mbox{}\\
+		Ci sono due tipi di repository:
+		\begin{itemize}
+			\item \textbf{locale}: ogni studente possiede una copia locale del progetto su cui lavorare;
+			\item \textbf{remota}: ospitata su \textit{GitHub}, è la versione di riferimento per tutto il team e quella disponibile all'esterno;
+		\end{itemize}						
+		Entrambe i tipi di repository sono organizzati in cartelle:
+		\begin{itemize}
+			\item \textbf{latex}: qui risiedono i file di carattere generale, come i file relativi a package, che vengono inseriti in tutti i documenti, e i template, che sono usati come riferimento per nuovi documenti di struttura già definita;
+			\item \textbf{guide}: qui si trovano delle brevi guide di carattere pratico, come brevi spiegazioni per applicare comandi latex poco conosciuti;
+			\item \textbf{RR}: qui si trovano i documenti, suddivisi tra esterni ed interni, appartenenti alla Revisione dei Requisiti;
+			\item Saranno aggiunte in futuro cartelle distinte nominate \textbf{RP}, \textbf{RQ} e \textbf{RA} contenenti i file delle rispettive consegne.
+		\end{itemize}
+		Lo scopo della suddivisione dei file per revisioni è di evidenziare il lavoro svolto per ogni consegna, e di rendere ben tracciabili i file che le riguardano.
+		\paragraph{Tipi di file e .gitignore} \mbox{}\\
+		I file di interesse per il progetto sono:
+		\begin{itemize}
+			\item file .tex di \LaTeX{};
+			\item file .pdf che sono oggetto di consegna;
+			\item alcuni file testuali e immagini di supporto ai precedenti.
+		\end{itemize}			
+		Il file \textit{.gitignore} presente al livello più esterno della repository elenca ed esclude tutti i file che vengono prodotti durante lo sviluppo del progetto ma non sono rilevanti per la consegna.
+
+		\paragraph{Utilizzo di Git} \mbox{}\\
+		La repository \textit{git} è composta di vari branch, per lavorare in modo modulare e collaborativo. Ogni membro del team lavora su un branch in un dato istante.\newline 
+		Per lavorare su git si consiglia questa procedura:
+			\begin{enumerate}
+			\item scelta del \textit{branch} corretto;
+			\item \textit{pull} dalla repository remota per aggiornare la propria repository locale;
+			\item svolgimento del lavoro, che consiste nella modifica dei propri file locali;
+			\item \textit{add} dei file al sistema di versionamento;
+			\item commit dei file aggiunti, corredato di un messaggio che identifica le modifiche;
+			\item push del commit nella repository remota;
+		\end{enumerate}
+		\paragraph{Gestione delle modifiche}
+		Tutti i membri del team possono liberamente modificare i file in ogni branch, a eccezione del branch master, per il quale occorre fare una pull request e ottenere l'approvazione di un'altro membro.\newline
+
+		Per effettuare modifiche maggiori sui contenuti o la struttura dei file si prevede di:
+		\begin{itemize}
+			\item contattare l'autore dell'oggetto da modificare;
+			\item suggerire la modifica da effettuare;
+			\item valutare insieme la modifica;
+			\item se la valutazione è positiva, effettuare la modifica;
+		\end{itemize}
+		Per modifiche minori, come correzioni grammaticali o miglioramenti sintattici, si consiglia di modificare indipendentemente.\newline
+		In ambo i casi è opportuno commentare i propri commit con chiarezza per risalire facilmente alle modifiche.
 	\subsection{Attività}
 	Le attività di configurazione includono:
 	\begin{itemize}
@@ -435,7 +446,4 @@
 		\item apportare modifiche in modo controllato;
 		\item controllare l'immagazzinamento, l'utilizzo, la consegna finale.
 	\end{itemize}
-	
-	
 
-	
