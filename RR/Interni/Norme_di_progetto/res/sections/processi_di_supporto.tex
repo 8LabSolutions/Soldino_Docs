@@ -18,21 +18,18 @@
 		\item \textbf{Creazione del documento}: il documento viene creato, in conformità alle norme e adeguandosi a documenti precedenti dello stesso tipo; si usa un template se disponibile;
 		\item \textbf{Creazione della struttura}: se il documento è sufficientemente grande, viene creato il suo indice, che traccia gli argomenti trattati nel documento;
 		\item \textbf{Realizzazione}: il documento viene scritto progressivamente in modo incrementale;
-		\item In revisione: ogni voce del documento è stata prodotta interamente, ma è soggetta a verifiche per correggere, ampliare, semplificare quanto presente; la verifica di un frammento è svolta da almeno una persona diversa da chi ha scritto quel frammento;
-		\item Approvato: il responsabile di progetto sancisce che il documento è stato completato, ed è quindi pronto per il rilascio.
+		\item \textbf{In revisione}: ogni voce del documento è stata prodotta interamente, ma è soggetta a verifiche per correggere, ampliare, semplificare quanto presente; la verifica di un frammento è svolta da almeno una persona diversa da chi ha scritto quel frammento;
+		\item \textbf{Approvato}: il responsabile di progetto sancisce che il documento è stato completato, ed è quindi pronto per il rilascio.
 	\end{itemize}
 
-	\subsubsection{Procedure}	
-		\paragraph{Approvazione dei documenti} \mbox{}\\
-		La fase finale della vita del documento è l'approvazione da parte del responsabile di progetto. Un documento approvato è rilasciabile. 
-		\subsubsection{Template}
-		Il gruppo ha creato un template \LaTeX{} per uniformare velocemente la struttura grafica e lo stile di formattazione dei documenti, in modo che i membri del team possano concentrarsi di più nella stesura del contenuto degli stessi. Lo scopo dei template è quello di permettere, a colui che redige il documento, di adottare automaticamente le conformità previste dalle \textit{NdP}. Permette inoltre di agevolare la procedura di adeguamento alle nuove norme per la redazione, nel caso esse cambino.
-		\subsubsection{Struttura dei documenti}
-		Un file \textit{main.tex} (il termine \textit{main} verrà sostituito dal nome del documento) raccoglie in input le sezioni di cui è composto il documento. Tra i file in input ci sono:
-		\begin{itemize}
-			\item \textit{config.tex}, contenente comandi \LaTeX{} creati dal team;
-			\item \textit{package.tex}, che contiene i pacchetti necessari alla compilazione.
-		\end{itemize}
+	\subsubsection{Template}
+	Il gruppo ha creato un template \LaTeX{} per uniformare velocemente la struttura grafica e lo stile di formattazione dei documenti, in modo che i membri del team possano concentrarsi di più nella stesura del contenuto degli stessi. Lo scopo dei template è quello di permettere, a colui che redige il documento, di adottare automaticamente le conformità previste dalle \textit{NdP}. Permette inoltre di agevolare la procedura di adeguamento alle nuove norme per la redazione, nel caso esse cambino.
+	\subsubsection{Struttura dei documenti}
+	Un file \textit{main.tex} (il termine \textit{main} verrà sostituito dal nome del documento) raccoglie in input le sezioni di cui è composto il documento. Tra i file in input ci sono:
+	\begin{itemize}
+		\item \textit{config.tex}, contenente comandi \LaTeX{} creati dal team;
+		\item \textit{package.tex}, che contiene i pacchetti necessari alla compilazione.
+	\end{itemize}
 
 		\paragraph{Prima pagina} \mbox{}\\
 		Il frontespizio è la prima pagina del documento ed è così strutturata:
@@ -105,10 +102,8 @@
 		\end{itemize}	
 		\paragraph{Note a piè pagina} \mbox{}\\
 		In caso di presenza di note da esplicare, esse vanno indicate nella pagina corrente, in basso a sinistra. Ogni nota deve riportare un numero e una descrizione.
-	\subsubsection{Versionamento}
-		\paragraph{Tecnologie} \mbox{}\\
-		Per le parti del progetto da versionare si è scelto l'utilizzo della sistema di versionamento distribuito \textit{Git}, usando il servizio di GitHub per ospitare la repository remota. La condivisione dei documenti informali o non versionabili è invece effettuata tramite il servizio Google Drive.
-		\paragraph{Codice per la versione} \mbox{}\\
+	\subsubsection{Versionamento}	
+		\paragraph{Codice di versione del documento} \mbox{}\\
 		Ogni documento, verbali esclusi, deve avere una storia, ricostruibile attraverso le sue versioni. Ogni versione deve corrispondere a una riga del registro delle modifiche. Ogni numero di versione è composto da tre cifre:
 		\begin{center}
 			X.Y.Z
@@ -389,6 +384,22 @@
 		\item valutare che i risultati rispettino le aspettative;
 	\end{itemize}
 
-%\subsection{Configurazione}
+\subsection{Configurazione}
+	\subsubsection{Scopo}
+	Lo scopo della configurazione è di creare ordine tra gli oggetti software e documentali. Gli oggetti configurati si trovano in un posto preciso, hanno uno stato che li identifica, sono modificati secondo procedure e posti sotto versionamento.
+	
+	\subsection{Descrizione}
+	\paragraph{Tecnologie} \mbox{}\\
+	Per le parti del progetto da versionare si è scelto l'utilizzo della sistema di versionamento distribuito \textit{Git}, usando il servizio di GitHub per ospitare la repository remota. La condivisione dei documenti informali o non versionabili è invece effettuata tramite il servizio Google Drive.
+	\subsection{Attività}
+	Le attività di configurazione includono:
+	\begin{itemize}
+		\item identificare gli oggetti di configurazione;
+		\item porli sotto versionamento;
+		\item apportare modifiche in modo controllato;
+		\item controllare l'immagazzinamento, l'utilizzo, la consegna finale.
+	\end{itemize}
+	
+	
 
 	
