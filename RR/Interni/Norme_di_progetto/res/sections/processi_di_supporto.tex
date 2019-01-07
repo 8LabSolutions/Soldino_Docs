@@ -83,7 +83,7 @@
 			\item \textbf{Partecipanti}: l'elenco dei membri del gruppo che erano presenti all'incontro e, se presenti, i nominativi di persone esterne al gruppo che hanno partecipato. Un esempio, sono i nomi dei componenti di Red Babel, a fianco al quale deve essere indicato "(proponente)";
 			\item \textbf{Argomenti affrontati}: ciò di cui si è discusso durante l'incontro in forma riassuntiva e facendo risaltare il/gli argomento/i pricipale/i.
 		\end{itemize}
-	Il contenuto contiene:
+	Il contenuto è composto da:
 	\begin{itemize}
 		\item una descrizione più approfondita in merito agli argomenti trattati durante l'incontro.
 		\item un riepilogo dei tracciamenti in forma tabellare che elenca le decisioni emerse: assegna ad ognuna di loro un codice e le descrive. Sarà ripresa successivamente.
@@ -100,39 +100,13 @@
 		Dove:
 		\begin{itemize}
 			\item per "Tipologia" basterà indicare l'iniziale della tipologia del verbale(I=Interno/E=Esterno).
-			\item "X.Y": X è si riferisce al numero dell'incontro; per Y si intende il numero progressivo della decisione presa dal gruppo(partendo da 1).
+			\item "X.Y": X si riferisce al numero dell'incontro; per Y si intende il numero progressivo della decisione presa dal gruppo(partendo da 1).
 		\end{itemize}	
 		\paragraph{Note a piè pagina} \mbox{}\\
-		In caso di presenza di note da esplicare, esse vanno indicate nella pagina corrente, in basso a sinistra. Ogni nota deve riportare un numero e una descrizione.
-	\subsubsection{Versionamento}	
-		\paragraph{Codice di versione del documento} \mbox{}\\
-		Ogni documento, verbali esclusi, deve avere una storia, ricostruibile attraverso le sue versioni. Ogni versione deve corrispondere a una riga del registro delle modifiche. Ogni numero di versione è composto da tre cifre:
-		\begin{center}
-			X.Y.Z
-		\end{center}
-		\begin{itemize}
-			\item \textbf{X}: rappresenta una versione stabile del documento, resa tale dopo l' approvazione del Responsabile di progetto;
-			\begin{itemize}
-				\item inizia da 0;
-				\item viene incrementato dal Responsabile di Progetto all'approvazione
-				del documento;
-			\end{itemize}
-			\item \textbf{Y}: rappresenta una versione parzialmente stabile del documento che è stata soggetta a verifica da parte di un Verificatore;
-			\begin{itemize}
-				\item inizia da 0;
-				\item viene incrementato dal Verificatore ad ogni verifica;
-				\item quando viene incrementato X, viene riportato a 0.
-			\end{itemize}
-			\item \textbf{Z}: rappresenta una versione instabile del documento in fase di lavorazione da parte dei redattori.
-			\begin{itemize}
-				\item inizia da 0;
-				\item viene incrementato dal redattore del documento ad ogni modifica;
-				\item quando viene incrementato Y, viene riportato a 0.
-			\end{itemize}			
-		\end{itemize}
+		In caso di presenza di note da esplicare, esse vanno indicate nella pagina corrente, in basso a sinistra. Ogni nota deve riportare un numero e una descrizione.		
 	\subsubsection{Norme tipografiche}
 		\paragraph{Convenzioni sui nomi dei file}
-		I nomi di file (estensione esclusa) e cartelle utilizzano la convenzione \textit{Snake Case} e alcune regole aggiuntive elencate a seguito:
+		I nomi di file (estensione esclusa) e cartelle utilizzano la convenzione \textit{Snake Case} e alcune regole aggiuntive elencate di seguito:
 		\begin{enumerate}
 			\item i nomi dei file composti da più parole usano underscore come carattere separatore;
 			\item i nomi sono scritti interamente in minuscolo;
@@ -151,23 +125,26 @@
 		\end{itemize}
 		\paragraph{Glossario}
 		\begin{itemize}
-			\item ogni termina presente nel glossario è marcato con una \textbf{G} maiuscola a pedice in almeno la prima occorrenza;
-			\item se la voce è presente ripetutamente in un documento non è necessario marcarla più volte, ma si può farlo a propria discezione; 
-			\item non si includono nel glossario parole presenti in titoli, immagini, tabelle, grafici;
+			\item ogni termine da \textit{Glossario} è marcato con una \textbf{G} maiuscola a pedice in ogni sua occorrenza;
+			\item se la voce è presente ripetutamente nello stesso paragrafo non è necessario marcarla in ogni sua occorrenza, ma è possibile indicare la \textbf{G} a pedice solo nella prima occorrenza;
+			\item se nel \textit{Glossario v1.0.0} un termina presenta una descrizione che utilizza termini da \textit{Glossario} è necessario trattare questi termini come tali, segnando la \textbf{G} a pedice e aggiungendoli al documento con la relativa descrizione.
+			\item non si includono nel \textit{Glossario v1.0.0} parole presenti in titoli, immagini, tabelle, grafici.
 		\end{itemize}			
-		\paragraph{Stile del testo}%creare un itemize eventualmente
-			\subparagraph{Grassetto}
-			Viene applicato agli elementi di un elenco puntato,a titoli o a termini nelle frasi per indurre attenzione nell'occhio lettore.
-			\subparagraph{Corsivo}: vengono scritti in corsivo il nome del progetto \textit{Soldino} e il nome del gruppo \textit{8Lab Solutions}.
-			\subparagraph{Maiuscolo}: vengono scritti con sole lettere maiuscole tutti gli acronimi. Nel caso di nomi o titoli composti da più parole verrà indicato con la lettera maiuscola solamente la prima lettera della prima parola, lasciando in minuscolo il restante (esclusi nomi dei documenti che sono normati secondo quanto segue).
-			\subparagraph{Nomi dei documenti}: vengono scritti secondo quanto segue:
+		\paragraph{Stile del testo}
+		\begin{itemize}
+			\item \textbf{Grassetto}:
+			viene applicato se necessario alle voci di un elenco puntato, a titoli o a termini di frasi su cui si vuol far ricadere l'attenzione del lettore;
+			\item \textbf{Corsivo}: vengono scritti in corsivo il nome del progetto \textit{Soldino} e il nome del gruppo \textit{8Lab Solutions};
+			\item \textbf{Maiuscolo}: vengono scritti con sole lettere maiuscole tutti gli acronimi. Nel caso di nomi o titoli composti da più parole verrà indicato con la lettera maiuscola solamente la prima lettera della prima parola, lasciando in minuscolo il restante (esclusi nomi dei documenti che sono normati secondo quanto segue);
+			\item \textbf{Nomi dei documenti}:
 			\begin{itemize}
-				\item ogni volta che si cita un documento, si deve indicare con la lettera maiuscola le inziali dei nomi di cui è composto (es. Analisi dei Requisiti), ma senza specificare la versione, riportando il tutto in corsivo;
-				\item quando si fa riferimento al documento vero e proprio o a qualcosa in esso contenuto si segue la prima convenzione ma si aggiunge la versione del documento v*.0.0 (separata da uno spazio) anch'essa in corsivo;
-				\item ogni volta che si utlizza il documento come titolo si deve seguire la prima convenzione.
-			\end{itemize}	
+				\item ogni volta che si cita un documento, si deve indicare con la lettera maiuscola le inziali dei nomi di cui è composto (\textit{e.g.} Analisi dei Requisiti), ma senza specificare la versione, riportando il tutto in corsivo;
+				\item quando si fa riferimento al documento vero e proprio o a qualcosa in esso contenuto si segue la prima convenzione ma si aggiunge la versione del documento v*.0.0 (separata da uno spazio), anch'essa in corsivo;
+				\item ogni volta che si utlizza il documento come titolo o in una voca di elenco seguita da una descrizione, si deve seguire la prima convenzione ma senza utlizzare il corsivo.
+			\end{itemize}
+		\end{itemize}
 		\paragraph{Elenchi puntati} \mbox{}\\
-		Ogni voce di un elenco comincia per lettera \textbf{maiuscola} e termina per \textbf{;} eccetto l'ultima che termina per \textbf{.}. I Sottoelenchi innestati dentro una voce di elenco e rispettano le medesime regole, poiché la loro funzione è analoga.\newline
+		Ogni voce di un elenco comincia per lettera \textbf{minuscola}, a patto che non subentrino altre norme, e termina per \textbf{";"}, eccetto l'ultima che termina per \textbf{"."}. I sottoelenchi innestati dentro una voce di elenco, rispettano le medesime regole, poiché la loro funzione è analoga.\newline
 		Se le voci dell'elenco sono della forma \textit{termine - descrizione}, si pongono i termini in grassetto.
 		\paragraph{Formati comuni} \mbox{}\\
 		In conformità allo standard ISO 8601, le date devono essere scritte secondo il formato: \newline
@@ -175,42 +152,53 @@
 		\begin{itemize}
 			\item \textbf{YYYY}: rappresentazione dell'anno con quattro (4) cifre;
 			\item\textbf{MM}: rappresentazione del mese con due (2) cifre;
-			\item \textbf{DD}: rappresentazione del giorno con due (2) cifre;			
+			\item \textbf{DD}: rappresentazione del giorno con due (2) cifre.			
 		\end{itemize}
 		\paragraph{Sigle} \mbox{}\\
 		Il progetto prevede la redazione di un insieme di documenti, suddivisi in documenti interni e documenti esterni. Essi sono elencati di seguito con le rispettive sigle.\newline
-		I documenti esterni sono:		
+		I documenti esterni sono:	
 		\begin{itemize}
 			\item \textbf{Analisi dei Requisiti - AdR}: stabilisce le caratteristiche che il software deve rispettare;
 			\item \textbf{Manuale Utente - MU}: ad uso degli utilizzatori del software;
 			\item \textbf{Manuale Sviluppatore - MS}: per gli sviluppatori e manutentori;
 			\item \textbf{Piano di Progetto - PdP}:  concerne la gestione del progetto, evidenziandone la fattibilità e le criticità; tratta di tempi, costi, obiettivi, rischi, vincoli;
-			\item \textbf{Piano di Qualifica - PdQ}: : descrive la qualità del software e dei processi, e come la si intende raggiungere mediante l'uso di strumenti, metriche e processi;
-			\item \textbf{Revisione dei Requisiti - RR}: studio iniziale del capitolato, se ben fatto permette al gruppo di aggiudicarselo;
-			\item \textbf{Revisione di Progettazione - RP}: riguarda la definizione dell'architettura del software e di una Proof of Concept\glosp per mostrare la fattibilità;
-			\item \textbf{Revisione di Qualifica - RQ}: riguarda la definizione dettagliata e la codifica del prodotto;
-			\item \textbf{Revisione di Accettazione - RA}: se il prodotto soddisfa requisiti e proponente, viene accettato e rilasciato.		
-		\end{itemize}	
+			\item \textbf{Piano di Qualifica - PdQ}: : descrive la qualità del software e dei processi, e come la si intende raggiungere mediante l'uso di strumenti, metriche e processi stessi.
+		\end{itemize}
 		I documenti interni sono:
 		\begin{itemize}
-			\item \textbf{Glossario - G}: : raccoglie i termini di interesse per il team di sviluppo e sui quali il team vuole concordare;
-			\item \textbf{Norme di Progetto - NdP}: : sono un riferimento per lo svolgimento delle attività di progetto;
-			\item \textbf{Studio di Fattibilità - SdF}: : descrive sommariamente i capitolati e spiega la loro scelta o esclusione.
+			\item \textbf{Glossario - G}: raccoglie i termini di interesse per il team di sviluppo e sui quali è necessaria una descrizione che ne chiarisca il significato;
+			\item \textbf{Norme di Progetto - NdP}: sono un riferimento normativo per lo svolgimento delle attività di progetto;
+			\item \textbf{Studio di Fattibilità - SdF}: descrive sommariamente i capitolati e spiega la loro scelta o esclusione.
 		\end{itemize}
-		Un caso a parte sono i verbali, che possono essere esterni o interni:
+		Un caso particolare di documenti, sono i verbali, che possono essere esterni o interni:
 		\begin{itemize}
 			\item \textbf{Verbale - V}: descrive le interazioni avvenute durante un incontro con il proponente (verbale esterno) o tra i membri del team (verbale interno); sono orientati a dare informazioni semplici, di veloce lettura e complete.
 		\end{itemize}
+		Le diverse fasi del progetto sono le seguenti, accompagnate dalle relative sigle:
+		\begin{itemize}
+			\item \textbf{Revisione dei Requisiti - RR}: studio iniziale del capitolato, se ben fatto permette al gruppo di aggiudicarselo;
+			\item \textbf{Revisione di Progettazione - RP}: riguarda la definizione dell'architettura del software e di una Proof of Concept\glosp per mostrare la fattibilità;
+			\item \textbf{Revisione di Qualifica - RQ}: riguarda la definizione dettagliata e la codifica del prodotto;
+			\item \textbf{Revisione di Accettazione - RA}: se il prodotto soddisfa i requisiti del proponente, viene accettato e rilasciato.		
+		\end{itemize}	
+		Altre sigle presenti nei documenti interessano i ruoli assunti dai componenti del team:
+		\begin{itemize}
+			\item Re (responsabile di progetto);
+			\item Ad (amministratore);
+			\item An (analista);
+			\item Pt (progettista);
+			\item Pr (programmatore);
+			\item Ve (verificatore);
+		\end{itemize}
 		\subsubsection{Elementi grafici}
 		\paragraph{Tabelle} \mbox{}\\
-		% PLACEHOLDER scrivere bene qui
 		In tutti i documenti \LaTeX le tabelle sono scritte allo stesso modo: fare riferimento alla Wiki su GitHub per i comandi necessari.\newline 
 		Ogni tabella deve essere accompagnata dalla propria didascalia descrittiva; nella didascalia deve comparire il numero della sezione a cui si riferisce, seguita in modo incrementale dal numero progressivo delle tabelle di quella sezione.
 		\begin{itemize}
 			\item \textbf{{X.Y}}: rappresenta la sezione;
 			\item \textbf{{Z}}: rappresenta il numero progressivo della tabella nella sezione;
 		\end{itemize}
-		Fanno eccezione le tabelle dei changelog che non hanno didascalia e le tabelle dei casi d’uso presenti nel documento \textit{Analisi dei requisiti}.
+		Fanno eccezione le tabelle dei changelog che non hanno didascalia e le tabelle dei casi d’uso presenti nel documento \textit{Analisi dei Requisiti}.
 		\paragraph{Immagini} \mbox{}\\
 		Le immagini sono centrate e hanno una didascalia descrittiva. 
 		\paragraph{Diagrammi UML} \mbox{}\\
@@ -218,17 +206,104 @@
 	\subsubsection{Strumenti}
 		\paragraph{\LaTeX} \mbox{}\\
 		Lo strumento scelto per la scrittura di documenti è \LaTeX, un linguaggio basato sul programma di composizione tipografica TEX che permette di scrivere documenti in modo ordinato, modulare, collaborativo e scalabile.
-		\paragraph{TexStudio} \mbox{}\\
-		Per la stesura del codice \LaTeX è stato utilizzato l'editor TexStudio. Questo strumento include oltre a integrare un compilatore e visualizzatore PDF, fornisce suggerimenti di completamento per comandi \LaTeX{}. \newline
+		\paragraph{TeXstudio} \mbox{}\\
+		Per la stesura del codice \LaTeX è stato utilizzato l'editor TexStudio. Questo strumento, oltre a integrare un compilatore e visualizzatore PDF, fornisce suggerimenti di completamento per comandi \LaTeX{}. \newline
 		\centerline{\url{https://www.texstudio.org/}}
 		\begin{figure}[H]
 			\includegraphics[width=0.99\linewidth]{res/images/latex.jpg}
-			\caption{Software per la stesura dei documenti}
+			\caption{TeXstudio - per la stesura dei documenti}
 		\end{figure} 
 		\paragraph{Draw.io} \mbox{}\\
-		Draw.io è una piattaforma online per la produzione di varie tipologie di diagrammi, tra cui gli UML. \newline
+		Draw.io, già citato in precedenza, viene utlizzato per la produzione degli UML. \newline
 		\centerline{\url{https://www.draw.io/}}
+		
+	\subsection{Gestione della configurazione}
+	\subsubsection{Scopo}
+	Lo scopo della configurazione è di creare ordine tra gli oggetti software e documentali. Gli oggetti configurati si trovano in un posto preciso, hanno uno stato che li identifica, sono modificati secondo procedure e posti sotto versionamento.
+	\subsubsection{Versionamento}
+	\paragraph{Codice di versione del documento} \mbox{}\\
+	Ogni documento, deve avere una storia, ricostruibile attraverso le sue versioni. Ogni versione deve corrispondere a una riga della tabella delle modifiche. Ogni numero di versione è composto da tre cifre:
+	\begin{center}
+		X.Y.Z
+	\end{center}
+	\begin{itemize}
+		\item \textbf{X}: rappresenta una versione stabile del documento, resa tale dopo l' approvazione del responsabile di progetto;
+		\begin{itemize}
+			\item inizia da 0;
+			\item viene incrementato dal responsabile di progetto all'approvazione
+			del documento;
+		\end{itemize}
+		\item \textbf{Y}: rappresenta una versione parzialmente stabile del documento che è stata soggetta a verifica da parte di un Verificatore;
+		\begin{itemize}
+			\item inizia da 0;
+			\item viene incrementato dal Verificatore ad ogni verifica;
+			\item quando viene incrementato X, viene riportato a 0.
+		\end{itemize}
+		\item \textbf{Z}: rappresenta una versione instabile del documento in fase di lavorazione da parte dei redattori.
+		\begin{itemize}
+			\item inizia da 0;
+			\item viene incrementato dal redattore del documento ad ogni modifica;
+			\item quando viene incrementato Y, viene riportato a 0.
+		\end{itemize}			
+	\end{itemize}
+	\paragraph{Tecnologie} \mbox{}\\
+	Per le parti del progetto da versionare si è scelto di usare il sistema di versionamento distribuito \textit{Git}, usando il servizio di GitHub per ospitare la repository remota.
+	\paragraph{Repository} \mbox{}\\
+	Il sistema di versionamento usato è \textit{Git}, noto sistema di controllo versione distribuito. I membri del team possono usare lo strumento sia da linea di comando sia attraverso software che ne migliorano l'usabilità, come GitFlow, GitKraken. La versione comune e ufficiale del progetto è  ospitata in una repository pubblica su Github all'indirizzo \url{https://github.com/8LabSolutions/Soldino}.
+	\paragraph{Struttura del repository} \mbox{}\\
+	Ci sono due tipi di repository:
+	\begin{itemize}
+		\item \textbf{locale}: ogni studente possiede una copia locale del progetto su cui lavorare;
+		\item \textbf{remota}: ospitata su \textit{GitHub}, è la versione di riferimento per tutto il team e quella disponibile all'esterno;
+	\end{itemize}						
+	Entrambe i tipi di repository sono organizzati in cartelle:
+	\begin{itemize}
+		\item \textbf{latex}: qui risiedono i file di carattere generale, come i file relativi a package, che vengono inseriti in tutti i documenti, e i template, che sono usati come riferimento per nuovi documenti di struttura già definita;
+		\item \textbf{guide}: qui si trovano delle brevi guide di carattere pratico, come brevi spiegazioni per applicare comandi latex poco conosciuti;
+		\item \textbf{RR}: qui si trovano i documenti, suddivisi tra esterni ed interni, appartenenti alla Revisione dei Requisiti;
+		\item Saranno aggiunte in futuro cartelle distinte nominate \textbf{RP}, \textbf{RQ} e \textbf{RA} contenenti i file delle rispettive consegne.
+	\end{itemize}
+	Lo scopo della suddivisione dei file per revisioni è di evidenziare il lavoro svolto per ogni consegna, e di rendere ben tracciabili i file che le riguardano.
+	\paragraph{Tipi di file e .gitignore} \mbox{}\\
+	I file di interesse per il progetto sono:
+	\begin{itemize}
+		\item file .tex di \LaTeX{};
+		\item file .pdf che sono oggetto di consegna;
+		\item alcuni file testuali e immagini di supporto ai precedenti.
+	\end{itemize}			
+	Il file \textit{.gitignore} presente al livello più esterno della repository elenca ed esclude tutti i file che vengono prodotti durante lo sviluppo del progetto ma non sono rilevanti per la consegna.
 	
+	\paragraph{Utilizzo di Git} \mbox{}\\
+	La repository \textit{git} è composta di vari branch, per lavorare in modo modulare e collaborativo. Ogni membro del team lavora su un branch in un dato istante.\newline 
+	Per lavorare su git si consiglia questa procedura:
+	\begin{enumerate}
+		\item scelta del \textit{branch} corretto;
+		\item \textit{pull} dalla repository remota per aggiornare la propria repository locale;
+		\item svolgimento del lavoro, che consiste nella modifica dei propri file locali;
+		\item \textit{add} dei file al sistema di versionamento;
+		\item commit dei file aggiunti, corredato di un messaggio che identifica le modifiche;
+		\item push del commit nella repository remota;
+	\end{enumerate}
+	\paragraph{Gestione delle modifiche}
+	Tutti i membri del team possono liberamente modificare i file in ogni branch, a eccezione del branch master, per il quale occorre fare una pull request e ottenere l'approvazione di un'altro membro.\newline
+	
+	Per effettuare modifiche maggiori sui contenuti o la struttura dei file si prevede di:
+	\begin{itemize}
+		\item contattare l'autore dell'oggetto da modificare;
+		\item suggerire la modifica da effettuare;
+		\item valutare insieme la modifica;
+		\item se la valutazione è positiva, effettuare la modifica;
+	\end{itemize}
+	Per modifiche minori, come correzioni grammaticali o miglioramenti sintattici, si consiglia di modificare indipendentemente.\newline
+	In ambo i casi è opportuno commentare i propri commit con chiarezza per risalire facilmente alle modifiche.
+	\subsubsection{Attività}
+	Le attività di configurazione includono:
+	\begin{itemize}
+		\item identificare gli oggetti di configurazione;
+		\item porli sotto versionamento;
+		\item apportare modifiche in modo controllato;
+		\item controllare l'immagazzinamento, l'utilizzo, la consegna finale.
+	\end{itemize}
 \subsection{Gestione della Qualità}
 	\subsubsection{Scopo}
 	Lo scopo è di garantire che il prodotto e i servizi offerti rispettino gli obiettivi di qualità, e che i bisogni del proponente siano soddisfatti.
@@ -299,11 +374,7 @@
 				\item \textbf{Inspection}: i verificatori usano liste di controllo per fare ispezione cercando errori specifici in parti specifiche.
 			\end{itemize}
 			A seguire sono descritte le liste di controllo utilizzabili per le ispezioni. Si prevede l'ampliamento delle viste al progredire delle ispezioni e degli errori trovati.
-			
-			
 
-
-		
 			\begin{table}[H]
 				\centering\renewcommand{\arraystretch}{1.5}
 				\arrayrulecolor{white}
@@ -395,66 +466,5 @@
 		\item valutare che i risultati rispettino le aspettative;
 	\end{itemize}
 
-\subsection{Configurazione}
-	\subsubsection{Scopo}
-	Lo scopo della configurazione è di creare ordine tra gli oggetti software e documentali. Gli oggetti configurati si trovano in un posto preciso, hanno uno stato che li identifica, sono modificati secondo procedure e posti sotto versionamento.
-	\subsection{Versionamento} \mbox{}\\
-		\paragraph{Tecnologie} \mbox{}\\
-		Per le parti del progetto da versionare si è scelto di usare il sistema di versionamento distribuito \textit{Git}, usando il servizio di GitHub per ospitare la repository remota.
-		\paragraph{Repository} \mbox{}\\
-		Il sistema di versionamento usato è \textit{Git}, noto sistema di controllo versione distribuito. I membri del team possono usare lo strumento sia da linea di comando sia attraverso software che ne migliorano l'usabilità, come GitFlow, GitKraken. La versione comune e ufficiale del progetto è  ospitata in una repository pubblica su Github all'indirizzo \url{https://github.com/8LabSolutions/Soldino}.
-		\paragraph{Struttura del repository} \mbox{}\\
-		Ci sono due tipi di repository:
-		\begin{itemize}
-			\item \textbf{locale}: ogni studente possiede una copia locale del progetto su cui lavorare;
-			\item \textbf{remota}: ospitata su \textit{GitHub}, è la versione di riferimento per tutto il team e quella disponibile all'esterno;
-		\end{itemize}						
-		Entrambe i tipi di repository sono organizzati in cartelle:
-		\begin{itemize}
-			\item \textbf{latex}: qui risiedono i file di carattere generale, come i file relativi a package, che vengono inseriti in tutti i documenti, e i template, che sono usati come riferimento per nuovi documenti di struttura già definita;
-			\item \textbf{guide}: qui si trovano delle brevi guide di carattere pratico, come brevi spiegazioni per applicare comandi latex poco conosciuti;
-			\item \textbf{RR}: qui si trovano i documenti, suddivisi tra esterni ed interni, appartenenti alla Revisione dei Requisiti;
-			\item Saranno aggiunte in futuro cartelle distinte nominate \textbf{RP}, \textbf{RQ} e \textbf{RA} contenenti i file delle rispettive consegne.
-		\end{itemize}
-		Lo scopo della suddivisione dei file per revisioni è di evidenziare il lavoro svolto per ogni consegna, e di rendere ben tracciabili i file che le riguardano.
-		\paragraph{Tipi di file e .gitignore} \mbox{}\\
-		I file di interesse per il progetto sono:
-		\begin{itemize}
-			\item file .tex di \LaTeX{};
-			\item file .pdf che sono oggetto di consegna;
-			\item alcuni file testuali e immagini di supporto ai precedenti.
-		\end{itemize}			
-		Il file \textit{.gitignore} presente al livello più esterno della repository elenca ed esclude tutti i file che vengono prodotti durante lo sviluppo del progetto ma non sono rilevanti per la consegna.
 
-		\paragraph{Utilizzo di Git} \mbox{}\\
-		La repository \textit{git} è composta di vari branch, per lavorare in modo modulare e collaborativo. Ogni membro del team lavora su un branch in un dato istante.\newline 
-		Per lavorare su git si consiglia questa procedura:
-			\begin{enumerate}
-			\item scelta del \textit{branch} corretto;
-			\item \textit{pull} dalla repository remota per aggiornare la propria repository locale;
-			\item svolgimento del lavoro, che consiste nella modifica dei propri file locali;
-			\item \textit{add} dei file al sistema di versionamento;
-			\item commit dei file aggiunti, corredato di un messaggio che identifica le modifiche;
-			\item push del commit nella repository remota;
-		\end{enumerate}
-		\paragraph{Gestione delle modifiche}
-		Tutti i membri del team possono liberamente modificare i file in ogni branch, a eccezione del branch master, per il quale occorre fare una pull request e ottenere l'approvazione di un'altro membro.\newline
-
-		Per effettuare modifiche maggiori sui contenuti o la struttura dei file si prevede di:
-		\begin{itemize}
-			\item contattare l'autore dell'oggetto da modificare;
-			\item suggerire la modifica da effettuare;
-			\item valutare insieme la modifica;
-			\item se la valutazione è positiva, effettuare la modifica;
-		\end{itemize}
-		Per modifiche minori, come correzioni grammaticali o miglioramenti sintattici, si consiglia di modificare indipendentemente.\newline
-		In ambo i casi è opportuno commentare i propri commit con chiarezza per risalire facilmente alle modifiche.
-	\subsection{Attività}
-	Le attività di configurazione includono:
-	\begin{itemize}
-		\item identificare gli oggetti di configurazione;
-		\item porli sotto versionamento;
-		\item apportare modifiche in modo controllato;
-		\item controllare l'immagazzinamento, l'utilizzo, la consegna finale.
-	\end{itemize}
 
