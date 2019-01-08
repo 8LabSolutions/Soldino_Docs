@@ -1,6 +1,6 @@
 \subsubsection{UC3 - Login}
 \begin{figure}[h]
-	\includegraphics[width=10.5cm]{res/images/UC3Login.png} %da adattare in larghezza
+	\includegraphics[width=12cm]{res/images/UC3Login.png} %da adattare in larghezza
 	\centering
 	\caption{UC3 - Login}
 	
@@ -13,11 +13,11 @@
 	\item \textbf{Descrizione}:
 	l'utente tenta di autenticarsi alla piattaforma attraverso l'utilizzo di MetaMask\glo;
 	\item \textbf{Scenario principale}:
-	l'utente non è identificato dal sito ed esegue il login;
+	l'utente non è ancora autenticato al sito ed esegue il login;
 	\item \textbf{Precondizione}:
-	l'utente non è identificato dalla piattaforma web;
+	l'utente non è autenticato alla piattaforma;
 	\item \textbf{Postcondizione}:
-	l'utente è identificato dalla piattaforma web. 
+	l'utente si è autenticato con successo, ed è stato identificato dal sistema nel ruolo di cittadino, azienda o utente governativo. A seconda della tipologia di utente vengono rese disponili diverse pagine e funzionalità.
 \end{itemize}
 \subsubsection{UC3.1 - Login automatico}
 \begin{itemize}
@@ -35,12 +35,12 @@
 		\item \textbf{UC2.6}: se l'utente non possiede una chiave\glosp su MetaMask\glo, esso viene avvisato tramite l'apposito messaggio di errore;
 		\item \textbf{UC3.2}: se l'utente tenta di accedere al sito tramite MetaMask\glosp senza aver mai provveduto a registrarsi, riceverà un messaggio di errore a riguardo;
 		
-		\item \textbf{UC3.3}: se l'utente si è registrato ma il suo account è stato disabilitato;
+		\item \textbf{UC3.3}: se l'utente si è registrato ma il suo account è stato disabilitato, riceverà un messaggio di errore a riguardo;
 	\end{itemize}
 	\item \textbf{Precondizione}:
-	l'utente tenta di autenticarsi nella piattaforma;
+	l'utente tenta di autenticarsi alla piattaforma;
 	\item \textbf{Postcondizione}:
-	tramite il plugin MetaMask\glosp l'utente viene riconosciuto.
+	l'utente viene individuato attraverso l'utilizzo del plugin MetaMask\glo.
 \end{itemize}
 \subsubsection{UC3.2 - Visualizzazione messaggio di errore relativo a chiave non registrata}
 \begin{itemize}
@@ -49,11 +49,10 @@
 	\item \textbf{Descrizione}:
 	l'utente visualizza un messaggio di errore dovuto al fatto che ha tentato il login senza essersi registrato in precedenza;
 	\item \textbf{Scenario principale}:
-	l'utente tenta il login alla piattaforma senza aver effettuato la registrazione;
+	l'utente tenta di eseguire la procedura di login alla piattaforma senza essere registrato;
 	\item \textbf{Precondizione}:
 	l'utente tenta di autenticarsi nella piattaforma;
-	\item \textbf{Postcondizione}:
-	l'utente è consapevole di dover registrarsi per poter poi accedere.
+	\item \textbf{Postcondizione}: viene visualizzato un messaggio d'errore per informare l'utente del fatto che è necessario registrarsi alla piattaforma prima di poter poi effettuare la procedura di login.
 \end{itemize}
 \subsubsection{UC3.3 - Visualizzazione schermata relativa a utente non abilitato}
 \begin{itemize}
@@ -64,50 +63,17 @@
 	l'utente non autenticato con account disabilitato tenta di autenticarsi. La procedura di autenticazione viene bloccata a causa dello stato dell'account;
 	\item \textbf{Precondizione}:
 	un utente non autenticato, registrato alla piattaforma e con account disabilitato tenta di effettuare il login automatico;
-	\item \textbf{Postcondizione}: l'utente è consapevole che il proprio account è disabilitato, e può leggere la causa della disabilitazione del proprio account.
+	\item \textbf{Postcondizione}:  viene visualizzato un messaggio d'errore per informare l'utente del fatto che il proprio account è stato disabilitato dal governo\glo. Se quest'ultimo, durante la procedura di disabilitazione, ha inserito un messaggio contenente la causa di tale azione, allora tale messaggio viene visualizzato.
 \end{itemize}
 \subsubsection{UC4 - Logout}
-\begin{figure}[h]
-	\includegraphics[width=8cm]{res/images/UC4Logout.png} %da adattare in larghezza
-	\centering
-	\caption{UC4 - Logout}
-	
-\end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}:
 	utente autenticato;
 	\item \textbf{Attori Secondari}:
 	MetaMask\glo;
-	\item \textbf{Descrizione}: l'utente richiede il logout dalla piattaforma web ed effettua ciò tramite MetaMask\glo;
-	\item \textbf{Scenario principale}: l'utente è identificato dal sito ed esegue il logout;
+	\item \textbf{Descrizione}: l'utente richiede il logout dalla piattaforma web. Vengono visualizzate le informazioni necessarie per procedere alla procedura di logout, che deve essere effettuata attraverso l'utilizzo del plugin MetaMask\glo;
+	\item \textbf{Scenario principale}: l'utente è identificato dal sito e richiede di effettuare il logout, premendo sull'apposito pulsante;
 	\item \textbf{Precondizione}: l'utente ha effettuato il login alla piattaforma web e richiede di essere disconnesso dal sito;
-	\item \textbf{Postcondizione}: vengono fornite le istruzioni necessarie per eseguire il logout tramite MetaMask\glo. 
+	\item \textbf{Postcondizione}: vengono visualizzate le istruzioni necessarie per eseguire il logout tramite MetaMask\glo. 
 \end{itemize}
-\subsubsection{UC4.1 - Richiesta disconnessione}
-\begin{itemize}
-	\item \textbf{Attori Primari}:
-	utente autenticato;
-	\item \textbf{Attori Secondari}:
-	MetaMask\glo;
-	\item \textbf{Descrizione}: l'utente clicca sul bottone dedicato al logout e si appresta a leggere le istruzioni per farlo tramite MetaMask\glo;
-	\item \textbf{Scenario principale}: l'utente richiede la disconnessione dalla piattaforma web;
-	\item \textbf{Inclusioni}:
-	\begin{itemize}
-		\item \textbf{UC4.2}: al conseguimento della richiesta di logout, l'utente riceve informazioni sul da farsi per procedere a completare ciò;
-	\end{itemize}
-	\item \textbf{Precondizione}: l'utente autenticato dal sistema non ha idea di come disconnettersi dal sito;
-	\item \textbf{Postcondizione}: l'utente può visualizzare il modo corretto per eseguire la disconnessione dalla piattaforma.
-	
-\end{itemize}
-\subsubsection{UC4.2 - Visualizzazione istruzioni per disconnettersi tramite MetaMask\glosp}
-\begin{itemize}
-	\item \textbf{Attori Primari}:
-	utente autenticato;
-	\item \textbf{Attori Secondari}:
-	MetaMask\glo;
-	\item \textbf{Descrizione}: l'utente visualizza le istruzioni per procedere al logout tramite MetaMask\glo;
-	\item \textbf{Scenario principale}: in seguito alla richiesta di disconnessione, l'utente riceve le informazioni necessarie per effettuare tale operazione;
-	
-	\item \textbf{Precondizione}: l 'utente tenta di effettuare il logout dalla piattaforma;
-	\item \textbf{Postcondizione}: l'utente ha le conoscenze necessarie al conseguimento di un logout eseguito in modo corretto e sicuro tramite il plugin MetaMask\glo.
-\end{itemize} 
+
