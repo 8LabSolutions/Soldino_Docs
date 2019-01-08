@@ -106,9 +106,9 @@
 		In caso di presenza di note da esplicare, esse vanno indicate nella pagina corrente, in basso a sinistra. Ogni nota deve riportare un numero e una descrizione.		
 	\subsubsection{Norme tipografiche}
 		\paragraph{Convenzioni sui nomi dei file}
-		I nomi di file (estensione esclusa) e cartelle utilizzano la convenzione \textit{Snake Case} e alcune regole aggiuntive elencate di seguito:
+		I nomi di file (estensione esclusa) e cartelle utilizzano la convenzione "Snake Case\glo" e alcune regole aggiuntive elencate di seguito:
 		\begin{enumerate}
-			\item i nomi dei file composti da più parole usano underscore come carattere separatore;
+			\item i nomi dei file composti da più parole usano "underscore" come carattere separatore;
 			\item i nomi sono scritti interamente in minuscolo;
 			\item le preposizioni non si omettono.
 		\end{enumerate}
@@ -121,13 +121,13 @@
 		\begin{itemize}
 			\item Norme\_di\_progetto (usa maiuscole);
 			\item norme-di-progetto (carattere separatore errato);
-			\item norme\_progetto (omette 'di').
+			\item norme\_progetto (omette "di").
 		\end{itemize}
 		\paragraph{Glossario}
 		\begin{itemize}
-			\item ogni termine da \textit{Glossario} è marcato con una \textbf{G} maiuscola a pedice in ogni sua occorrenza;
+			\item ogni termine del glossario è marcato con una \textbf{G} maiuscola a pedice in ogni sua occorrenza;
 			\item se la voce è presente ripetutamente nello stesso paragrafo non è necessario marcarla in ogni sua occorrenza, ma è possibile indicare la \textbf{G} a pedice solo nella prima occorrenza;
-			\item se nel \textit{Glossario v1.0.0} un termina presenta una descrizione che utilizza termini da \textit{Glossario} è necessario trattare questi termini come tali, segnando la \textbf{G} a pedice e aggiungendoli al documento con la relativa descrizione.
+			\item se nel \textit{Glossario v1.0.0} un termina presenta una descrizione che utilizza termini da glossario è necessario trattare questi termini come tali, segnando la \textbf{G} a pedice e aggiungendoli al documento con la relativa descrizione.
 			\item non si includono nel \textit{Glossario v1.0.0} parole presenti in titoli, immagini, tabelle, grafici.
 		\end{itemize}			
 		\paragraph{Stile del testo}
@@ -183,12 +183,12 @@
 		\end{itemize}	
 		Altre sigle presenti nei documenti interessano i ruoli assunti dai componenti del team:
 		\begin{itemize}
-			\item Re (responsabile di progetto);
-			\item Ad (amministratore);
-			\item An (analista);
-			\item Pt (progettista);
-			\item Pr (programmatore);
-			\item Ve (verificatore);
+			\item \textbf{responsabile di progetto - Re};
+			\item \textbf{amministratore - Ad};
+			\item \textbf{analista - An};
+			\item \textbf{progettista - Pt};
+			\item \textbf{programmatore - Pr};
+			\item \textbf{verificatore - Ve};
 		\end{itemize}
 		\subsubsection{Elementi grafici}
 		\paragraph{Tabelle} \mbox{}\\
@@ -248,13 +248,13 @@
 	\paragraph{Tecnologie} \mbox{}\\
 	Per le parti del progetto da versionare si è scelto di usare il sistema di versionamento distribuito Git, usando il servizio di GitHub per ospitare la repository remota.
 	\paragraph{Repository} \mbox{}\\
-	I membri del team interagire con il VCS(version control system) sia da linea di comando, sia attraverso software che ne migliorano l'usabilità, come GitFlow, GitKraken. La versione comune e ufficiale del progetto è ospitata in una repository remota su Github all'indirizzo:
+	I membri del team possono interagire con il VCS (Version Control ystem) sia da linea di comando, sia attraverso software che ne migliorano l'usabilità, come GitFlow e GitKraken. La versione comune e ufficiale del progetto è ospitata in una repository remota su Github all'indirizzo:
 	\centerline{\url{https://github.com/8LabSolutions/Soldino}}
 	\paragraph{Struttura del repository} \mbox{}\\
-	Ci sono due tipi di repository:
+	Ci sono due tipi di repository, la cui struttura è identica:
 	\begin{itemize}
 		\item \textbf{locale}: ogni studente possiede una copia locale del progetto, su cui lavorare;
-		\item \textbf{remota}: pubblicata su GitHub, è la versione di riferimento per tutto il team e quella disponibile per la visualizzazione all'esterno;
+		\item \textbf{remota}: pubblicata su GitHub, è la versione di riferimento per tutto il team e quella disponibile per la visualizzazione all'esterno.
 	\end{itemize}						
 	Entrambe i tipi di repository sono organizzati in cartelle:
 	\begin{itemize}
@@ -271,7 +271,7 @@
 		\item file .pdf che sono oggetto di consegna;
 		\item alcuni file testuali e immagini di supporto ai precedenti.
 	\end{itemize}			
-	Il file ".gitignore" presente al livello più esterno della repository elenca escludendoli, tutti i file che vengono prodotti durante lo sviluppo del progetto, ma per i quali non è richiesta: la presenza nella repository remota e la consegna per il progetto.
+	Il file ".gitignore" è presente al livello più esterno della repository elenca tutti i file da escludere dal versionamento. 
 	\paragraph{Utilizzo di Git} \mbox{}\\
 	La repository di Git è composta da vari branch, per lavorare in modo modulare e collaborativo. Ogni membro del team lavora su un branch in un determinato istante.\newline 
 	Per lavorare con Git si consiglia questa procedura:
@@ -281,7 +281,7 @@
 		\item svolgimento del lavoro, che consiste nella modifica dei propri file in locale;
 		\item add dei file all'area di staging;
 		\item commit dei file aggiunti, corredato da un messaggio che identifica le modifiche;
-		\item push del commit sulla repository remota;
+		\item push del commit sulla repository remota.
 	\end{enumerate}
 	\paragraph{Gestione delle modifiche}
 	Tutti i membri del team possono liberamente modificare i file in ogni branch, a eccezione del branch master, per il quale occorre fare una pull request e ottenere l'approvazione di un'altro membro.\newline
@@ -290,7 +290,7 @@
 		\item contattare l'autore dell'oggetto da modificare;
 		\item suggerire la modifica da effettuare;
 		\item valutare insieme la modifica;
-		\item se la valutazione è positiva, effettuare la modifica;
+		\item se la valutazione è positiva, effettuare la modifica.
 	\end{itemize}
 	Per modifiche minori, come correzioni grammaticali o miglioramenti sintattici, si consiglia di modificare indipendentemente.\newline
 	In ambo i casi è opportuno commentare i propri commit con chiarezza per risalire facilmente alle modifiche.
@@ -333,7 +333,7 @@
 		\item gli obiettivi da perseguire;
 		\item le metriche da utilizzare.
 	\end{itemize}
-	In questo caso si mira ad ottenere software e documentazione di sufficiente qualità.
+	In questo caso si mira ad ottenere software e documentazione di qualità soddisfacente.
 	\subsubsection{Attività}
 	Le tre attività principali del processo sono:
 	\begin{itemize}
@@ -372,7 +372,7 @@
 				\item \textbf{Inspection}: i verificatori usano liste di controllo per fare ispezione cercando errori specifici in parti specifiche.
 			\end{itemize}
 			A seguire sono descritte le liste di controllo utilizzabili per le ispezioni. Si prevede l'ampliamento delle viste al progredire delle stesse ispezioni e degli errori trovati.
-\begin{comment}
+%\begin{comment}
 			\begin{table}[H]
 				\centering\renewcommand{\arraystretch}{1.5}
 				\arrayrulecolor{white}
@@ -404,7 +404,7 @@
 					\\
 				\end{tabular}
 			\end{table}
-\end{comment}
+%\end{comment}
 			% PLACEHOLDER: lista di ispezione del codice, da aggiungere quando si fa il codice.				
 														
 			\subparagraph{Analisi dinamica} \mbox{}\\
@@ -431,16 +431,16 @@
 			
 		\noindent{Ci sono vari tipi di test del software, ognuno dei quali ha un diverso oggetto di verifica e scopo.}
 			\subparagraph{Test di unità} \mbox{}\\
-			I test di unità si eseguono su unità di software. Questi test si concentrano sul funzionamento delle unità individuali. Dati gli input possibili in un unità, si suddividono gli input in partizioni di equivalenza e si prova se gli input attesi danno gli output previsti. Le singole unità possono essere testate con l'ausilio di driver e stub.
+			I test di unità si eseguono su unità di software. Questi test si concentrano sul funzionamento delle unità individuali. Dati gli input possibili in un unità, si suddividono gli input in partizioni di equivalenza e si prova se gli input attesi danno gli output previsti. Le singole unità possono essere testate con l'ausilio di driver\glosp e stub\glosp.
 			\subparagraph{Test di integrazione} \mbox{}\\
-			Dopo aver superato i test di unità, le stesse unità vengono assemblate in componenti progressivamente più grandi. Il test di integrazione si concentra sulle interfacce tra i componenti. Un agglomerato che supera il test di integrazione costituisce quindi una nuova unità per un agglomerato di grandezza maggiore. Questa procedura si ripete fino a raggiungere la dimensione totale del sistema.
+			Dopo aver superato i test di unità, le stesse unità vengono assemblate in agglomerati progressivamente più grandi. Il test di integrazione si concentra sulle interfacce tra i componenti. Un agglomerato che supera il test di integrazione costituisce quindi una nuova unità per un agglomerato di grandezza maggiore. Questa procedura si ripete fino a raggiungere la dimensione totale del sistema.
 			\subparagraph{Test di sistema} \mbox{}\\\\
 			Il sistema viene testato nella sua interezza, una volta integrati tutti i suoi componenti. Ci si concentra sulle interazioni tra le parti, sul comportamento emergente\glosp delle caratteristiche del sistema e sulla copertura\glosp di tutte le funzionalità. Questo test porta alla luce le ipotesi errate che i diversi sviluppatori fanno su parti del software sviluppate da altri.
 			In questa fase ci si assicura che il sistema rispetti tutte le specifiche definite nell'\textit{Analisi dei Requisiti}.
 			\subparagraph{Test di regressione} \mbox{}\\
 			Si effettua di seguito a una modifica del sistema, e consiste nella riesecuzione dei test esistenti: si combina bene con l'automazione dei test.
-			\subparagraph{Test di collaudo} \mbox{}\\
-			Simile al test di sistema, ma eseguito con la collaborazione dei committenti, si occupa di verificare il prodotto intero, e in particolare la sua conformità alle richieste. Il superamento del test di collaudo garantisce che il software è pronto per essere rilasciato.
+			\subparagraph{Test di release} \mbox{}\\
+			Anche detto "test di collaudo", è simile al test di sistema per l'oggetto testato, ma viene eseguito con la collaborazione dei committenti. Si occupa di verificare il prodotto intero, e in particolare il soddisfacimento del cliente. Il superamento del test di collaudo garantisce che il software è pronto per essere rilasciato.
 	\subsubsection{Strumenti}
 		\paragraph{Verifica ortografica} \mbox{}\\
 		Viene utilizzata la verifica dell'ortografia in tempo reale, strumento integrato in TeXstudio che sottolinea in rosso le parole errate e in verde le ripetizioni a breve distanza secondo la lingua italiana.
@@ -470,8 +470,5 @@
 		\item identificare gli oggetti da validare;
 		\item identificare una strategia con delle procedure di validazione: si possono riutilizzare le procedure di verifica;
 		\item applicare la strategia;
-		\item valutare che i risultati rispettino le aspettative;
+		\item valutare che i risultati rispettino le aspettative.
 	\end{itemize}
-
-
-
