@@ -6,11 +6,14 @@
 	
 	\item \textbf{Scenario principale}: il governo ritiene necessario coniare ulteriori Cubit rispetto a quelli attualmente presenti sul mercato. Per fare ciò deve accedere alla pagina dedicata in cui, attraverso un form dovrà:
 	 \begin{enumerate}[label=\alph*.]
-		\item inserire la quantità di Cubit \texttt{x} da coniare;
+		\item inserire la quantità $x$ di Cubit da coniare;
 		\item confermare tale operazione attraverso l'utilizzo di MetaMask\glo;
 	\end{enumerate}
-	\item \textbf{Precondizione}: siano \texttt{x} i Cubit che il governo vuole coniare e \texttt{n} i Cubit attualmente in circolo. L'utente governativo è acceduto alla pagina per la coniazione ed ha compilato e confermato il form;
-	\item \textbf{Postcondizione}: i Cubit in circolo sono \texttt{n+x}.
+	\item \textbf{Precondizione}: sia $x$ l'ammontare di Cubit che il governo 
+	vuole coniare e $n$ l'ammontare di Cubit attualmente in circolo. L'utente 
+	governativo è acceduto alla pagina per la coniazione ed ha compilato e 
+	confermato il form;
+	\item \textbf{Postcondizione}: i Cubit in circolo sono $x+n$.
 \end{itemize}
 \subsubsection{UC10 - Distribuzione Cubit}
 %non capisco perchè la figura è prima del titolo sul PDF
@@ -38,9 +41,11 @@
 \begin{itemize}
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Descrizione}: il governo inserisce nell'apposito campo del form la quantità di Cubit\glosp da distribuire, ritenendo la quantità inserita come quantità da inviare ad ogni singolo utente;
-	\item \textbf{Scenario principale}: il governo inserisce una quantità \texttt{x} di Cubit da inviare;
+	\item \textbf{Scenario principale}: il governo inserisce l'ammontare $x$ di 
+	Cubit da inviare;
 	\item \textbf{Precondizione}: il governo accede alla pagina contenente il form per la distribuzione di Cubit agli utenti e compila il campo relativo alla quantità;
-	\item \textbf{Postcondizione}: il campo relativo alla quantità di Cubit da distribuire pro capite è stato compilato. 
+	\item \textbf{Postcondizione}: il campo relativo all'ammontare di Cubit da 
+	distribuire pro capite è stato compilato. 
 \end{itemize}
 \subsubsection{UC10.2 - Inserimento destinatari}
 \begin{itemize}
@@ -65,10 +70,13 @@
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Attori Secondari}: MetaMask\glo, cittadino, azienda\glo;
 	\item \textbf{Descrizione}: il governo decide se approvare o rifiutare la transazione;
-	\item \textbf{Scenario principale}: il governo ha specificato la somma \texttt{x} di Cubit\glosp da distribuire ad ognuno degli \texttt{y} destinatari;
+	\item \textbf{Scenario principale}: il governo ha specificato la somma 
+	$x$ di Cubit\glosp da distribuire ad ognuno degli $y$ destinatari;
 	\item \textbf{Estensioni}:
 	\begin{itemize}
-		\item \textbf{UC10.4}: verrà mostrato un messaggio di errore nel caso l'ammontare totale \texttt{x*y} superi la quantità di Cubit disponibili alla distribuzione;
+		\item \textbf{UC10.4}: verrà mostrato un messaggio di errore nel caso 
+		l'ammontare totale $x\cdot y$ superi la quantità di Cubit disponibili 
+		alla distribuzione;
 	\end{itemize}
 	\item \textbf{Precondizione}: è necessario aver selezionato una lista di destinatari ed una quantità da distribuire ad ogni singolo utente;
 	\item \textbf{Postcondizione}: ogni utente riceverà nel proprio wallet\glosp la quantità di Cubit trasferita dal governo.
