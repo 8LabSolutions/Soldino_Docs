@@ -193,7 +193,7 @@
 		\subsubsection{Elementi grafici}
 		\paragraph{Tabelle} \mbox{}\\
 		In tutti i documenti \LaTeX le tabelle sono scritte allo stesso modo: fare riferimento alla Wiki su GitHub per i comandi necessari.\newline 
-		Ogni tabella deve essere accompagnata dalla propria didascalia descrittiva; nella didascalia deve comparire il numero della sezione a cui si riferisce, seguita in modo incrementale dal numero progressivo delle tabelle di quella sezione.
+		Ogni tabella deve essere accompagnata dalla propria didascalia descrittiva, la "caption", da posizionare subito sopra la tabella a cui si riferisce. E' stata scelta questa convenzione per adattarsi agli standard usati dalla maggioranza della community di \LaTeX; nella didascalia deve comparire il numero della sezione a cui si riferisce, seguita in modo incrementale dal numero progressivo delle tabelle di quella sezione.
 		\begin{itemize}
 			\item \textbf{{X.Y}}: rappresenta la sezione;
 			\item \textbf{{Z}}: rappresenta il numero progressivo della tabella nella sezione;
@@ -350,32 +350,33 @@
 		
 \subsection{Verifica}
 	\subsubsection{Scopo}
-	Il processo di verifica ha per scopo l'ottenimento di prodotti corretti, coesi e completi. Gli oggetti della verifica sono il software e i documenti. 
+	Il processo di verifica ha per scopo l'ottenimento di prodotti corretti, coesi e completi. Sono soggetti a verifica il software e i documenti. 
 	\subsubsection{Aspettative}
 	Il corretto svolgimento del processo di verifica rispetta i punti seguenti:	
 	\begin{itemize}
-		\item La verifica è effettuata seguendo procedure definite;
-		\item Vi sono criteri chiari e affidabili da seguire per verificare;
-		\item I prodotti passano attraverso fasi successive, ognuna delle quali è verificata;
-		\item Dopo la verifica il prodotto è in uno stato stabile;
-		\item la verifica rende possibile la validazione.
+		\item viene effettuata seguendo procedure definite;
+		\item vi sono criteri chiari e affidabili da seguire per verificare;
+		\item i prodotti passano attraverso fasi successive, ognuna delle quali è verificata;
+		\item dopo la verifica il prodotto è in uno stato stabile;
+		\item rende possibile la validazione.
 	\end{itemize}
 	\subsubsection{Descrizione}
-	Il processo di verifica prende in input ciò che è già stato prodotto, e lo restituisce in uno stato conforme alle aspettative. Per ottenere tale risultato ci si affida a processi di analisi e di test.
+	Il processo di verifica prende in input ciò che è già stato prodotto, e lo restituisce in uno stato conforme alle aspettative. Per ottenere tale risultato ci si affida a processi di analisi e test.
 	\subsubsection{Attività}
 		\paragraph{Analisi} \mbox{}\\
-		Il processo di analisi si suddivide in analisi statica e analisi dinamica.
+		Il processo di analisi si suddivide in statica e dinamica.
 			\subparagraph{Analisi statica} \mbox{}\\
-			L'analisi statica effettua controlli su documenti e codice, di cui valuta e applica la correttezza (intesa come assenza di errori e difetti), la conformità a regole e la coesione dei componenti.\newline Per effettuare analisi statica esistono metodi manuali di lettura (attuati da persone) e metodi formali (attuati da macchine). I metodi manuali sono due:
+			L'analisi statica effettua controlli su documenti e codice, di cui valuta e applica la correttezza (intesa come assenza di errori e difetti), la conformità a regole e la coesione dei componenti.\newline Per effettuare analisi statica esistono metodi manuali di lettura (attuati da persone) e metodi formali (attuati da macchine). Quelli manuali sono due:
 			\begin{itemize}
-				\item \textbf{Walkthrough}: i vari componenti del team analizzano gli oggetti nella loro totalità per cercare anomalie; non si sà in partenza se ci siano difetti, quali e dove siano;
+				\item \textbf{Walkthrough}: i vari componenti del team analizzano gli oggetti nella loro totalità per cercare anomalie; non si sa inizialmente se ci siano difetti, quali e dove siano;
 				\item \textbf{Inspection}: i verificatori usano liste di controllo per fare ispezione cercando errori specifici in parti specifiche.
 			\end{itemize}
-			A seguire sono descritte le liste di controllo utilizzabili per le ispezioni. Si prevede l'ampliamento delle viste al progredire delle ispezioni e degli errori trovati.
+			A seguire sono descritte le liste di controllo utilizzabili per le ispezioni. Si prevede l'ampliamento delle viste al progredire delle stesse ispezioni e degli errori trovati.
 
 			\begin{table}[H]
 				\centering\renewcommand{\arraystretch}{1.5}
 				\arrayrulecolor{white}
+				\caption{Errori frequenti nei documenti}
 				\begin{tabular}{c|c}
 					
 					\rowcolorhead
@@ -383,7 +384,7 @@
 					{\colorhead \textbf{Controllo} }\\
 					
 					\rowcolorlight
-					{\colorbody Formato data} & {\colorbody Deve seguire il formato americano \textit{YYYY-MM-GG}} 
+					{\colorbody Formato data} & {\colorbody Deve seguire il formato americano \textit{YYYY-MM-DD}} 
 					\\
 					
 					\rowcolordark
@@ -402,7 +403,6 @@
 					{\colorbody Punteggiatura degli elenchi} & {\colorbody Ogni voce termina in \textbf{";"} eccetto l'ultima che termina in \textbf{"."}} 
 					\\
 				\end{tabular}
-				\caption{Errori frequenti nei documenti}
 			\end{table}
 
 			% da aggiungere quando si fa codice				
@@ -422,28 +422,28 @@
 		\end{itemize}
 		Test ben scritti devono:
 		\begin{itemize}
-			\item Essere ripetibili;
-			\item Specificare l'ambiente di esecuzione;
-			\item Specificare input e output richiesti;
-			\item Avvertire di possibili side effect;
-			\item Fornire informazioni sui risultati dell'esecuzione in forma di file di log.
+			\item essere ripetibili;
+			\item specificare l'ambiente di esecuzione;
+			\item identificare input e output richiesti;
+			\item avvertire di possibili side effect;
+			\item fornire informazioni sui risultati dell'esecuzione in forma di file di log.
 		\end{itemize}	
 			
-		Ci sono vari tipi di test del software, ognuno dei quali ha diverso oggetto di verifica e scopo.
+		\noindent{Ci sono vari tipi di test del software, ognuno dei quali ha un diverso oggetto di verifica e scopo.}
 			\subparagraph{Test di unità} \mbox{}\\
-			I test di unità si eseguono su unità di software. Questi test si concentrano sul funzionamento delle unità individuali. Dati gli input possibili in un unità, si suddividono gli input in partizioni di equivalenza e si prova se gli input attesi danno gli output attesi. Le singole unità possono essere testate con l'ausilio di driver e stub.
+			I test di unità si eseguono su unità di software. Questi test si concentrano sul funzionamento delle unità individuali. Dati gli input possibili in un unità, si suddividono gli input in partizioni di equivalenza e si prova se gli input attesi danno gli output previsti. Le singole unità possono essere testate con l'ausilio di driver e stub.
 			\subparagraph{Test di integrazione} \mbox{}\\
-			Dopo aver superato i test di unità, le unità vengono assemblate in componenti progressivamente più grandi. Il test di integrazione si concentra sulle interfacce tra i componenti. Un agglomerato che supera il test di integrazione costituisce quindi una nuova unità per un agglomerato di grandezza maggiore. Questa procedura si ripete fino a raggiungere la grandezza totale del sistema.
+			Dopo aver superato i test di unità, le stesse unità vengono assemblate in componenti progressivamente più grandi. Il test di integrazione si concentra sulle interfacce tra i componenti. Un agglomerato che supera il test di integrazione costituisce quindi una nuova unità per un agglomerato di grandezza maggiore. Questa procedura si ripete fino a raggiungere la dimensione totale del sistema.
 			\subparagraph{Test di sistema} \mbox{}\\\\
-			Il sistema viene testato nella sua interezza, integrati tutti i suoi componenti. Ci si concentra sulle interazioni tra i componenti, sul comportamento emergente\glosp delle caratteristiche del sistema e sulla copertura\glosp di tutte le funzionalità. Questo test porta alla luce le ipotesi errate che i diversi sviluppatori fanno su parti del software sviluppate da altri.
-			In questa fase ci si assicura che il sistema rispetti tutte le specifiche definite nell'\textit{AdR}.
+			Il sistema viene testato nella sua interezza, una volta integrati tutti i suoi componenti. Ci si concentra sulle interazioni tra le parti, sul comportamento emergente\glosp delle caratteristiche del sistema e sulla copertura\glosp di tutte le funzionalità. Questo test porta alla luce le ipotesi errate che i diversi sviluppatori fanno su parti del software sviluppate da altri.
+			In questa fase ci si assicura che il sistema rispetti tutte le specifiche definite nell'\textit{Analisi dei Requisiti}.
 			\subparagraph{Test di regressione} \mbox{}\\
 			Si effettua di seguito a una modifica del sistema, e consiste nella riesecuzione dei test esistenti: si combina bene con l'automazione dei test.
 			\subparagraph{Test di collaudo} \mbox{}\\
 			Simile al test di sistema, ma eseguito con la collaborazione dei committenti, si occupa di verificare il prodotto intero, e in particolare la sua conformità alle richieste. Il superamento del test di collaudo garantisce che il software è pronto per essere rilasciato.
 	\subsubsection{Strumenti}
 		\paragraph{Verifica ortografica} \mbox{}\\
-		Viene utilizzata la verifica dell'ortografia in tempo reale, strumento integrato in TexStudio che sottolinea in rosso le parole errate secondo la lingua italiana.
+		Viene utilizzata la verifica dell'ortografia in tempo reale, strumento integrato in TeXstudio che sottolinea in rosso le parole errate e in verde le ripetizioni a breve distanza secondo la lingua italiana.
 		\paragraph{Validazione W3C} \mbox{}\\
 		Per la validazione delle pagine di markup HTML viene utilizzato lo strumento offerto dal W3C, raggiungibile al seguente indirizzo: \newline
 		\centerline{\url{https://validator.w3.org/}} \newline
@@ -454,9 +454,18 @@
 		% da fare
 \subsection{Validazione}
 	\subsubsection{Scopo}
-	Lo scopo della validazione stabilire è portare il prodotto al rilascio. Dopo la validazione, è garantito che il software rispetti i requisiti e soddisfi i bisogni del committente. 
+	Lo scopo della validazione è stabilire se il prodotto soddisfa il compito per cui è stato creato. Dopo la validazione, è garantito che il software rispetta i requisiti e che soddisfa i bisogni del committente.
+	\begin{comment}
+	\subsubsection{Aspettative}
+	Una corretta implementazione di questo processo permette di individuare:
+	\begin{itemize}
+		\item una procedura di validazione;
+		\item i criteri per la validazione del prodotto;
+		\item le conformità del prodotto finito.
+	\end{itemize}
+	\end{comment}
 	\subsubsection{Attività}
-	Per validare il prodotto si seguo i punti seguenti:
+	Per validare il prodotto si seguono i punti seguenti:
 	\begin{itemize}
 		\item identificare gli oggetti da validare;
 		\item identificare una strategia con delle procedure di validazione: si possono riutilizzare le procedure di verifica;
