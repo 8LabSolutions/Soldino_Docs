@@ -1,0 +1,11 @@
+Samuele Piazzetta [22:59]
+
+INSTALLAZIONE LINGUA ITALIANA TEXSTUDIO
+- Scaricare questo file e metterlo in una cartella a piacere (dovrà restare fermo lì, quindi mettetelo in un posto giusto). https://extensions.libreoffice.org/extensions/italian-dictionary-thesaurus-hyphenation-patterns/4.2/@@download/file/dict-it.oxt
+- Estraete il file scaricato. Dovrete avere una cartella dict-it con all'interno: description, dictionaries, images,legacy, meta-inf,registry
+- Andate su TexStudio, opzioni, configura texstudio, controllo linguistico
+- Sulla prima riga "directory dei dizionari per il controllo ortografico" dovete selezionare la cartella "dict-it" (la più "esterna")
+- Verrà selezionato automaticamente it_IT come lingua
+- Per il dizionario dei sinonimi andate sulla cartella dict-it/dictionaries e vi farà selezionare il file th_it_IT_v2.dat
+
+Guida per installare il dizionario italiano su texstudio (così evitiamo errori di ortografia)
