@@ -21,6 +21,12 @@
  \end{itemize}
 
 \subsubsection{UC11.1 - Visualizzazione lista aziende registrate}
+\begin{figure}[H]
+	\includegraphics[width=7cm]{res/images/UC11-VisualizzazioneFiltrata.png}
+	\centering
+	\caption{UC11 - Visualizzazione delle informazioni utente}
+	
+\end{figure}
  \begin{itemize}
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Descrizione}: il governo visualizza la lista delle aziende registrate alla piattaforma. Per ogni azienda sono rese disponibili le seguenti informazioni:
@@ -51,6 +57,24 @@
 	\item \textbf{Postcondizione}: il governo ottiene dal sistema la lista delle aziende registrate, con associate le operazioni che può effettuare su di esse.
 \end{itemize}
 
+\subsubsection{UC11.1.1 - Visualizzazione filtrata lista aziende registrate}
+\begin{itemize}
+	\item \textbf{Attori Primari}: governo;
+	\item \textbf{Descrizione}: il governo visualizza la lista delle aziende registrate alla piattaforma, filtrate secondo il valore del campo "stato del pagamento del saldo IVA". I possibili valori per filtrare i risultati per tale campo sono i seguenti:
+	\begin{itemize}
+		\item insolvente;
+		\item in fase di pagamento;
+		\item in dilazione
+		\item regolare;
+		\item in attesa di rimborso;
+	\end{itemize}
+	
+	\item \textbf{Scenario principale}: il governo filtra le aziende visualizzate secondo il valore del campo "stato del pagamento del saldo IVA". Seleziona tale valore servendosi dell'apposito menù a tendina;
+	\item \textbf{Precondizione}: l'utente governativo ha eseguito l'accesso alla pagina dedicata alla visualizzazione delle aziende registrate, ed ha selezionato un'opzione per filtrare le aziende;
+	\item \textbf{Postcondizione}: il governo ottiene dal sistema la lista delle aziende registrate, filtrate a seconda del valore del campo "stato del pagamento del saldo IVA" selezionato.
+\end{itemize}
+
+
 \subsubsection{UC11.2 - Visualizzazione lista cittadini}
 \begin{itemize}
 	\item \textbf{Attori Primari}: governo;
@@ -59,7 +83,8 @@
 		\item la chiave\glosp Ethereum\glo;
 		\item il nome;
 		\item il cognome;
-		\item l'indirizzo di residenza;			\item indirizzo email;
+		\item l'indirizzo di residenza;
+		\item indirizzo email;
 	\end{itemize}
 	\item \textbf{Scenario principale}: il governo richiede la lista dei cittadini. Per ognuno di essi visualizza le rispettive informazioni;
 	\item \textbf{Inclusioni}:
@@ -69,6 +94,5 @@
 	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere la lista di tutti i cittadini;
 	\item \textbf{Postcondizione}: il governo ottiene dal sistema la lista dei cittadini, con associate le operazioni che può effettuare su di essi.
 \end{itemize}
-
 
 
