@@ -1,8 +1,8 @@
 \section{Processi di Supporto}
 \subsection{Documentazione}
 	\subsubsection{Scopo}
-	Ogni processo e attività significativi volti allo sviluppo del progetto sono documentati. Lo scopo di questa sezione è definire gli standard che riguardano i documenti prodotti durante il ciclo di vita del prodotto.
-	I documenti sono consultabili nell'apposita sezione della repository:\\ \url{https://github.com/8LabSolutions/Soldino}. 		
+	Ogni processo e attività significativi volti allo sviluppo del progetto sono documentati. Lo scopo di questa sezione è definire gli standard che riguardano i documenti prodotti durante il ciclo di vita del software.
+	I documenti sono consultabili nelle apposite sezioni della repository:\\ \url{https://github.com/8LabSolutions/Soldino}. 		
 	\subsubsection{Aspettative}
 	Le aspettative su questo processo riguardano:
 	\begin{itemize}
@@ -15,10 +15,10 @@
 	\subsubsection{Ciclo di vita del documento}
 	Ogni documento segue le fasi del seguente ciclo di vita:
 	\begin{itemize}
-		\item \textbf{Creazione del documento}: il documento viene creato, in conformità alle norme e adeguandosi a documenti precedenti dello stesso tipo; si usa un template reperibile dalla cartella "latex" della repository remota;
-		\item \textbf{Creazione della struttura}: viene creato un indice che traccia gli argomenti trattati nel documento e, a seconda delle necessità, un indice relativo alle figure e uno relativo alle tabelle presenti nel documento;
+		\item \textbf{Creazione del documento}: il documento viene creato, in conformità alle norme e adeguandosi a documenti precedenti dello stesso tipo; si usa un template reperibile dalla cartella "\LaTeX" della repository\glosp remota;
+		\item \textbf{Creazione della struttura}: viene creato un registro delle modifiche, indice che traccia gli argomenti trattati nel documento, e a seconda delle necessità, un indice relativo alle figure e uno relativo alle tabelle presenti nel documento;
 		\item \textbf{Realizzazione}: il documento viene scritto progressivamente in modo incrementale;
-		\item \textbf{In revisione}: ogni voce del documento è prodotta interamente, ma è soggetta a verifiche per correggere, ampliare, semplificare quanto presente. La verifica di un frammento è svolta da almeno una persona, diversa da quella che ha scritto quel frammento;
+		\item \textbf{In revisione}: ogni voce del documento è prodotta interamente, ma è soggetta a verifiche per correggere, ampliare, semplificare quanto presente. La verifica di un frammento è svolta da almeno una persona diversa da quella che ha scritto quel frammento;
 		\item \textbf{Approvato}: il responsabile di progetto sancisce che il documento è stato completato, ed è quindi pronto per il rilascio.
 	\end{itemize}
 
@@ -49,8 +49,8 @@
 			\item \textbf{Descrizione}: descrizione sintetica relativa al documento, centrale, posta sotto la tabella descrittiva;
 			\item \textbf{Recapito}: indirizzo di posta elettronica del gruppo, posizionato centralmente in fondo alla pagina.
 		\end{itemize}
-		\paragraph{Registro modifiche - \textit{Changelog}} \mbox{}\\
-		Ogni documento dispone di un registro delle modifiche in forma di tabella, il "changelog", a seguito della prima pagina, che contiene le modifiche apportate al documento. Nel changelog sono indicati:
+		\paragraph{Registro modifiche - "changelog"} \mbox{}\\
+		Ogni documento dispone di un "changelog": una tabella posta a seguito della prima pagina che contiene le modifiche apportate al documento. Nel "changelog" sono indicati:
 		\begin{itemize}
 			\item versione del documento dopo la modifica;
 			\item data della modifica;
@@ -59,14 +59,14 @@
 			\item descrizione sintetica della modifica.
 		\end{itemize}
 		\paragraph{Indice} \mbox{}\\
-		Gli indici hanno lo scopo di riepilogare e dare una visione macroscopica della struttura del documento. Permettono quindi di rintracciare i contenuti tramite una gerarchia. Tale gerarchia è basata sul livello delle sezioni.\newline 
+		Gli indici hanno lo scopo di riepilogare e dare una visione macroscopica della struttura del documento, mostrando le parti gerarchiche di cui è composto.\newline 
 		Ogni documento è corredato dall'indice dei contenuti, posizionato dopo il "changelog". Se sono presenti tabelle o immagini all'interno del documento, l'indice dei contenuti è seguito prima dalla lista delle figure, poi dalla lista delle tabelle.\newline
 		\paragraph{Contenuto principale} \mbox{}\\
 		La struttura delle pagine di contenuto è fatta così:
 		\begin{itemize}
-			\item in alto a sinistra è presente il logo del gruppo lo stesso che è riportato nel frontespizio;
-			\item in alto a destra dovrà essere riportato il nome del documento;
-			\item una riga dovrà dividere l'intestazione dal contenuto;
+			\item in alto a sinistra è presente il logo del gruppo;
+			\item in alto a destra è riportato il nome del documento;
+			\item una riga divide l'intestazione dal contenuto;
 			\item il contenuto della pagina sarà posto tra l'intestazione e il piè pagina;
 			\item una riga dovrà dividere il contenuto dal piè pagina;
 			\item in basso a destra sarà posto il numero della pagina corrente.
@@ -372,7 +372,7 @@
 				\item \textbf{Inspection}: i verificatori usano liste di controllo per fare ispezione cercando errori specifici in parti specifiche.
 			\end{itemize}
 			A seguire sono descritte le liste di controllo utilizzabili per le ispezioni. Si prevede l'ampliamento delle viste al progredire delle stesse ispezioni e degli errori trovati.
-
+\begin{comment}
 			\begin{table}[H]
 				\centering\renewcommand{\arraystretch}{1.5}
 				\arrayrulecolor{white}
@@ -404,8 +404,8 @@
 					\\
 				\end{tabular}
 			\end{table}
-
-			% da aggiungere quando si fa codice				
+\end{comment}
+			% PLACEHOLDER: lista di ispezione del codice, da aggiungere quando si fa il codice.				
 														
 			\subparagraph{Analisi dinamica} \mbox{}\\
 			L’analisi dinamica è una tecnica di analisi del prodotto software che richiede la sua esecuzione. Viene effettuata  mediante dei test che verificano se il prodotto funziona e se ci sono anomalie. 
