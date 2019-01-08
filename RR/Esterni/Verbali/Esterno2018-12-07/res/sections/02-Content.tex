@@ -1,65 +1,67 @@
 \section{Verbale della riunione}
-L'incontro è stato organizzato con lo scopo principale di presentare il nostro team ai rappresentanti dell'azienda proponente. Nella prima fase di tale incontro è avvenuta una rapida presentazione delle parti e una breve discussione su tempistiche e modalità da adottare nello sviluppo del progetto. Succesivamente il team ha sottoposto ai proponenti alcuni interrogativi sul progetto.
+L'incontro è stato organizzato con lo scopo principale di presentare il team di
+lavoro ai rappresentanti dell'azienda proponente. Nella prima fase di tale 
+incontro è avvenuta una rapida presentazione delle parti e una breve discussione
+su tempistiche e modalità da adottare nello sviluppo del progetto. Successivamente 
+il team ha sottoposto ai proponenti alcuni interrogativi sul progetto.
 Sono stati discussi i seguenti punti: 
 \begin{itemize}
-	\item \textbf{Visione Azienda}: ciascuna azienda operante nella piattaforma deve essere considerata come persona giuridica, ovvero nel sistema l'azienda non deve essere collegata ad un secondo account utente con il ruolo di rappresentante dell'azienda;
-	\item \textbf{Transazioni}: il proponente vuole attenersi al modello attuale per le transazioni di pagamento dell'IVA dalle aziende verso lo stato, ovvero ricadrà su ciscuna azienda l'onere di versare autonomamente l'importo dovuto entro il termine stabilito. Non sarà quindi la piattaforma ad effettuare (almeno per ora) la transazione in automatico;
-	\item \textbf{Tasso di Cambio}: non rientra nei requisiti del progetto la conversione da Euro a Ether.
-	\item \textbf{Browser Supportati}: la piattaforma da realizzare deve essere compatibile con i browser Google Chrome e Mozilla Firefox, partendo dalla loro ultima versione disponibile. Al momento del verbale le versioni di riferimento, che verranno mantenute punto di riferimento nei requisiti, sono le seguenti:
+	\item \textbf{Visione Azienda}: ciascuna azienda operante nella piattaforma
+			 deve essere considerata come persona giuridica, ovvero nel sistema 
+			 l'azienda non deve essere collegata ad un secondo account utente con
+			 il ruolo di rappresentante dell'azienda;
+	\item \textbf{Transazioni}: il proponente vuole attenersi al modello attuale 
+			per le transazioni di pagamento dell'IVA dalle aziende verso lo stato,
+			ovvero ricadrà su ciascuna azienda l'onere di versare autonomamente 
+			l'importo dovuto entro il termine stabilito. Non sarà quindi la piattaforma
+			ad effettuare (almeno per ora) la transazione in automatico;
+	\item \textbf{Tasso di Cambio}: non rientra nei requisiti del progetto la conversione
+			da Euro a Ether\glo{};
+	\item \textbf{Browser Supportati}: la piattaforma da realizzare deve essere compatibile
+			con i browser Google Chrome e Mozilla Firefox, a partire dalla ultima versione 
+			attualmente disponibile. Al momento della redazione del verbale le versioni di 
+			riferimento, che dovranno essete supportate dal prodotto finale, sono le seguenti:
 	\begin{itemize}
 		\item \textbf{Google Chrome}: versione 71;
-			\item \textbf{Mozilla Firefox}: versione 64;
+		\item \textbf{Mozilla Firefox}: versione 64;
 	\end{itemize}
 	\item \textbf{Lingua Documenti}: i documenti con funzionalità di manuale per il software, che siano essi volti all'utente o all'amministratore, devono essere redatti in lingua inglese.
 
 \end{itemize}
 Al termine della chiamata il gruppo ha riassunto gli argomenti discussi e organizzato l'incontro successivo.
+
+\pagebreak
+
 \section{Riepilogo tracciamenti}
-\begin{centering}
-\begin{longtable}{ >{\centering}p{4cm} >{\centering}p{11cm} }
+\begin{table}[H]
+	%\renewcommand{\arraystretch}{1.5}
+	\rowcolors{2}{pari}{dispari}
+	
+	\begin{longtable}{ >{\centering}p{0.20\textwidth} >{\centering}p{0.70\textwidth}}
+			
+		\rowcolorhead
+		\centering \textbf{\color{white}Codice} 
+		& \centering \textbf{\color{white}Decisione} 
+		
+		\tabularnewline 
+		VE\_1.1 & Azienda considerata come persona giuridica.
+		
+		\tabularnewline 
+		VE\_1.2 & Transazioni da Azienda a Stato non avverranno in automatico.
+		
+		\tabularnewline 
+		VE\_1.3 & Il progetto non prevede il cambio tra moneta fisica a criptovaluta.
+	
+		\tabularnewline 
+		VE\_1.4 & Piattaforma supportata da \textit{Google Chrome} versione 71.
+		
+		\tabularnewline 
+		VE\_1.5 & Piattaforma supportata da \textit{Mozilla Firefox} versione 64.
+		
+		\tabularnewline 
+		VE\_1.6 & Lingua inglese per i manuali relativi al software prodotto.
+	
+	\end{longtable}
+	\caption{Decisione della riunione esterna del 2018-12-07}	
 
-\hline
-\\[0.5pt]
-	\textbf{Codice} & \textbf{Decisione} 
-	
-	\tabularnewline 
-	\hline
-	
-	
-				\\[0.5pt]
-				VE\_1.1 & Azienda considerata come persona giuridica
-				\\[0.5pt]
-				\tabularnewline
-				\hline
-						
-				\\[0.5pt]
-				VE\_1.2 & Transazioni da Azienda a Stato non avverranno in automatico
-				\\[0.5pt]
-				\tabularnewline
-				\hline
-				
-				\\[0.5pt]
-				VE\_1.3 & Il progetto non prevede il cambio tra moneta fisica a criptovaluta
-				\\[0.5pt]
-				\tabularnewline
-				\hline
-								
-				\\[0.5pt]
-				VE\_1.4 & Piattaforma supportata dalle nuove versioni di Chrome e Firefox
-				\\[0.5pt]
-				\tabularnewline
-				\hline
-				
-				\\[0.5pt]
-				VE\_1.5 & Lingua inglese per i manuali relativi al software prodotto
-				\\[0.5pt]
-				\tabularnewline
-				\hline
-				
-                
-        %\end{tabularx}
-        \\[0.7pt]
-        \caption{Decisioni della riunione esterna del 2018-12-07}
-\end{longtable}
-\end{centering}
-
+\end{table}
