@@ -32,40 +32,9 @@
 	\item \textbf{Postcondizione}: l'utente ha visualizzato l'elenco dei propri ordini.
 \end{itemize} 
 
-\subsubsection{UC14.2 - Visualizzazione vendite in attesa di approvazione}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: l'azienda ha la possibilità di visualizzare le vendite effettuate che sono in attesa di approvazione. Oltre ai dati relativi all'ordine sono visualizzate le seguenti informazioni:
-	\begin{itemize}
-		\item data ultima per l'approvazione;
-		\item informazioni riguardanti il cliente:
-		\begin{itemize}
-			\item nel caso il cliente sia un \textbf{cittadino}:
-			\begin{itemize}
-				
-				\item nome utente;
-				\item cognome utente;
-			\end{itemize}
-				\item nel caso il cliente sia un'\textbf{azienda}:
-			\begin{itemize}
-				
-				\item nome azienda-cliente;
-				\item partita IVA dell'azienda-cliente;
-			\end{itemize}
-		\end{itemize}
-		
-	\end{itemize}
-	\item \textbf{Scenario principale}: l'utente visualizza le vendite in attesa di approvazione con alcuni dati relativi al cliente; 
-		
-		\item \textbf{Inclusioni}:
-	\begin{itemize}
-		\item \textbf{UC14.1}: Visualizzazione degli ordini;
-	\end{itemize}
-	\item \textbf{Precondizione}: l'utente visita la pagina per la visualizzazione delle vendite che sono in attesa di approvazione;
-	\item \textbf{Postcondizione}: l'utente ha visualizzato le proprie vendite in attesa di approvazione.
-\end{itemize} 
 
-\subsubsection{UC14.3 - Visualizzazione acquisti conclusi}
+
+\subsubsection{UC14.2 - Visualizzazione acquisti conclusi}
 \begin{itemize}
 	\item \textbf{Attori Primari}: cittadino, azienda;
 	\item \textbf{Descrizione}: l'azienda ha la possibilità di visualizzare gli acquisti conclusi, ovvero effettuati ed approvati. Oltre ai dati relativi all'ordine sono visualizzate le seguenti informazioni:
@@ -84,7 +53,7 @@
 	\item \textbf{Postcondizione}: l'utente visualizza la lista degli acquisti conclusi.
 \end{itemize}
 
-\subsubsection{UC14.4 - Visualizzazione vendite concluse}
+\subsubsection{UC14.3 - Visualizzazione vendite concluse}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
 	\item \textbf{Descrizione}: l'azienda ha la possibilità di visualizzare le vendite effettuate ed approvate. Oltre ai dati relative all'ordine sono visualizzare le seguenti informazioni:
@@ -117,7 +86,7 @@
 \end{itemize}
 
 
-\subsubsection{UC14.5 - Rifiuto di una conferma d'acquisto}
+\subsubsection{UC14.4 - Rifiuto di una conferma d'acquisto}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda, cittadino;
 	\item \textbf{Attori Secondari}: MetaMask\glo, azienda;
@@ -125,12 +94,13 @@
 	\item \textbf{Scenario principale}: l'utente visualizza una conferma d'acquisto\glosp che necessita di approvazione e decide di rifiutarla;
 	\item \textbf{Inclusioni}: 
 	\begin{itemize}
-		\item \textbf{UC14.7}: visualizzazione delle conferme d'acquisto relative agli acquisti in attesa di approvazione;
+		\item \textbf{UC14.6}: visualizzazione delle conferme d'acquisto 
+		relative agli acquisti in attesa di approvazione;
 	\end{itemize}
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come cittadino o azienda ed ha mostrato la lista delle proposte d'acquisto\glosp che necessitano di conferma;
 	\item \textbf{Postcondizione}: l'azienda ha rifiutato la proposta d'acquisto\glo. La proposta non sarà più presente nella lista di attesa per la conferma. Il sistema ritorna l'ammontare trattenuto per l'ordine all'azienda-cliente.
 \end{itemize}
-\subsubsection{UC14.6 - Approvazione di una conferma di acquisto}
+\subsubsection{UC14.5 - Approvazione di una conferma di acquisto}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda, cittadino;
 	\item \textbf{Attori Secondari}: MetaMask\glo, azienda;
@@ -139,7 +109,8 @@
 	\item \textbf{Scenario alternativo}: l'azienda/cittadino non ha né confermato né approvato la conferma d'acquisto entro la data ultima per l'approvazione;
 		\item \textbf{Inclusioni}: 
 	\begin{itemize}
-		\item \textbf{UC14.7}:  visualizzazione delle conferme d'ordine\glosp relative agli acquisti in attesa di approvazione;
+		\item \textbf{UC14.6}:  visualizzazione delle conferme d'ordine\glosp 
+		relative agli acquisti in attesa di approvazione;
 	\end{itemize}
 	\item \textbf{Precondizione}: 
 	\begin{enumerate}[label=\alph*.]
@@ -150,7 +121,8 @@
 \end{itemize}
 
 
-\subsubsection{UC14.7 - Visualizzazione conferme d'acquisto in attesa di approvazione}
+\subsubsection{UC14.6 - Visualizzazione conferme d'acquisto in attesa di 
+approvazione}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda, cittadino;
 	\item \textbf{Descrizione}: l'azienda/cittadino può visualizzare le conferme d'acquisto\glosp che necessitano di approvazione. Esse sono relative agli acquisti che ha effettuato ma non ancora approvato. Le conferme d'acquisto permettono di visualizzare gli stessi dati relativi ad un ordine, ma ogni prodotto visualizzato ha i seguenti dati aggiuntivi:
@@ -158,7 +130,10 @@
 		\item prezzo netto del prodotto acquistato;	
 		\item aliquota IVA applicata al prodotto;
 	\end{itemize}
-	\item \textbf{Scenario principale}: l'utente visualizza la lista delle conferme d'acquisto\glosp che necessitano di conferma. Per ognuna di esse ha a possibilità di confermare la proposta [UC14.6] o di rifiutarla [UC14.5];
+	\item \textbf{Scenario principale}: l'utente visualizza la lista delle 
+	conferme d'acquisto\glosp che necessitano di conferma. Per ognuna di esse 
+	ha a possibilità di confermare la proposta [UC14.5] o di rifiutarla 
+	[UC14.4];
 	\item \textbf{Inclusioni}:
 	\begin{itemize}
 		\item \textbf{UC14.1}: Visualizzazione degli ordini;
