@@ -1,77 +1,54 @@
 \section{Verbale della riunione}
-All'inizio si è ribadito lo stato in cui devono trovarsi i requisiti a seconda della revisione di avanzamento a cui sono riferiti e in base a quello che sancisce il \textit{SEMAT}.\newline
-Si è iniziato a pensare ad una soluzione nel caso si dovesse usare un database distribuito per il salvataggio di dati(in particolare immagini) e a come si potesse mettere in comunicazione con il browser e con \textit{Metamask}(tecnologia che gestisce le transazioni). La soluzione concordata consiste nel non usare un server per il database, ma salvare tutto nella blockchain.\newline
-E' stato creata una sezione su Slack apposita che comprende tutti i  link utili, suddivisi per argomento, per avere un accesso più rapido alla comprensione e ad esempi su diversi topic. \newline
-E' stato introdotto e approvato un meccanismo in grado di segnalare velocemente sui documenti l'utilizzo di un termine da \textit{Glossario} tramite la creazione di un nuovo comando per \LaTeX. \newline
-Si è concordato uno standard per la stesura dei casi d'uso, insieme agli strumenti che verranno utlizzati per tracciare schemi e UML. \newline
-E' stata chiarita la situazione relativa al fatto della gestione del rimborso nel caso una transazione non andasse a buon fine. Si è scesi poi nel dettaglio per quanto riguarda lo storico dell'IVA che ogni trimestre deve essere reso disponibile e consultabile. \newline
-In un secondo momento si è parlato del \textit{Piano di qualifica} in merito alla struttura da utilizzare per questo documento. C'è stata una suddivisione delle diverse parti su cui informarsi per poi svilupparle nel documento. Il tutto prevedeva una revisione continua da parte di tutti i membri del team a rotazione. \newline
-Infine sono state prese in considerazione alcune modifiche da apportare sia alle \textit{Norme di progetto} sia al \textit{Piano di progetto} che favoriscano uniformità nei documenti. Una volta pianificato il lavoro da svolgere fino al successivo incontro si è stabilita una data che fosse in accordo con tutti.
-\pagebreak
-\section{Riepilogo tracciamenti}
-\begin{centering}
-\begin{longtable}{ >{\centering}p{4cm} >{\centering}p{11cm} }
+All'inizio della riunione, si sono corretti i requisiti già analizzati e ne sono 
+stati individuati dei nuovi emersi dalla riunione precedente con il proponente.
+Successivamente si è trattato del problema riguardante l'utilizzo di un database
+distribuito per il salvataggio dei dati, nel particolare di immagini. Dopo aver
+passato al vaglio diverse soluzioni, si è deciso di non usare un database e di 
+salvare tutto nella blockchain\glo{}. \newline
+Si è poi deciso di creare un canale su \textit{Slack} per condividere i link utili degli
+approfondimenti riguardanti il progetto scelto e di creare uno script per segnalare
+velocemente l'utilizzo di termini presenti nel documento \textit{Glossario v1.0.0}.
+Infine si è concordato uno standard per la stesura dei casi d'uso, insieme agli 
+strumenti che verranno utilizzati per tracciare schemi e disegnare i diagrammi UML.
 
-\hline
-\\[0.5pt]
-	\textbf{Codice} & \textbf{Decisione} 
+\pagebreak
+
+\section{Riepilogo tracciamenti}
+\begin{table}[H]
+	%\renewcommand{\arraystretch}{1.5}
+	\rowcolors{2}{pari}{dispari}
 	
-	\tabularnewline 
-	\hline
-						
-				\\[0.5pt]
-				VI\_4.1 & Scelto di non usare un server non necessario ma di 
-				salvare il tutto sulla blockchain
-				\\[0.5pt]
-				\tabularnewline
-				\hline
-				
-				\\[0.5pt]
-				VI\_4.2 & Creata sezione link utili su \textit{Slack}
-				\\[0.5pt]
-				\tabularnewline
-				\hline
-				
-				\\[0.5pt]				
-				VI\_4.3 & Creato comando per la visualizzazione più rapida di 
-				termini \textit{Glossario} per i documenti
-				\\[0.5pt]
-				\tabularnewline
-				\hline
-				
-				\\[0.5pt]
-				VI\_4.4 & Scelto di seguire il modello reale di un qualsiasi 
-				sistema di compravendita lasciando che lo smart contracts 
-				faccia da intermediario durante la transazione e lasciandogli 
-				dunque l'incarico di gestire il rimborso. Infine il resoconto 
-				dell'IVA viene fornito all'azienda trimestralmente
-				\\[0.5pt]
-				\tabularnewline
-				\hline
-				
-				\\[0.5pt]
-				VI\_4.5 & \textit{Piano di qualifica}: assegnato a Federico 
-				Bicciato "qualità dei processi", assegnato a Paolo Pozzan 
-				"qualità di prodotto"(secondo standard ISO/IEC/IEE 12207:2017 e 
-				standard ISO/IEC 9126), assegnato a Sara Feltrin la parte 
-				riservata ai test. "Appendice A" assegnata a Paolo Pozzan e 
-				Federico Bicciato, "appendice B" assegnata a Paolo Pozzan. 
-				Supervisione del documento assegnata ai rimanenti del team
-				\\[0.5pt]
-				\tabularnewline
-				\hline
+	\begin{longtable}{ >{\centering}p{0.20\textwidth} >{\centering}p{0.70\textwidth}}
+			
+		\rowcolorhead
+		\centering \textbf{\color{white}Codice} 
+		& \centering \textbf{\color{white}Decisione} 
 		
-				\\[0.5pt]
-				VI\_4.6 & \textit{Norme di progetto}: deciso di apportare 
-				modifiche per la sezione \textit{Analisi dei requisiti}; 
-				\textit{Piano di progetto}: apportare modifiche a "budget"
-				\\[0.5pt]
-				\tabularnewline
-				\hline          	
-                
-        %\end{tabularx}
-        \\[0.7pt]
-        \caption{Decisioni della riunione interna del 2018-12-24}
-\end{longtable}
-\end{centering}
+		\tabularnewline 
+		VI\_4.1 & Revisionati requisiti già presenti e inseriti quelli nuovi.
+		
+		\tabularnewline 
+		VI\_4.2 & Decisione di non implementare un database esterno, ma di utilizzare
+					la blockchain in cui salvare tutti i dati.
+		
+		\tabularnewline 
+		VI\_4.3 & Creazione del canale \textit{Link Utili} su \textit{Slack}.
+	
+		\tabularnewline 
+		VI\_4.4 & Creazione di un script per il \textit{Glossario v1.0.0}.
+		
+		\tabularnewline
+		VI\_4.5 & Apportate modifiche in \textit{Norme di Progetto v1.0.0} per la 
+				stesura di casi d'uso e requisiti.
+		
+		\tabularnewline
+		VI\_4.6 & Utilizzo di \textit{Draw.io} per la creazione di diagrammi UML.
+					
+	
+	\end{longtable}
+	\caption{Decisione della riunione interna del 2018-12-24}	
+
+\end{table}
+
+
 
