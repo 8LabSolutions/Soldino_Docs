@@ -6,17 +6,38 @@
 \usepackage[T1]{fontenc}
 \usepackage{tabularx}
 \usepackage{longtable}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,      
+	urlcolor=blue,
+}
+% Numerazione figure 
+\let\counterwithout\relax
+\let\counterwithin\relax
+\usepackage{chngcntr}
+
+
+
+\usepackage[bottom]{footmisc}
 \usepackage{fancyhdr}
 \usepackage{titlesec}
 \setcounter{secnumdepth}{4}
 \usepackage{amsmath, amssymb}
 %\usepackage{caption}
 \usepackage{graphicx}
-%\usepackage{float}
+
 \usepackage{layouts}
+
 %per mettere le note in fondo alla pagina
 \usepackage[bottom]{footmisc}
-\usepackage{hyperref}
+
+
+\usepackage{float}
+\usepackage{eurosym}
+
+
 
 %Comandi di impaginazione uguale per tutti i documenti
 \pagestyle{fancy}
@@ -30,3 +51,26 @@
 \setcounter{tocdepth}{4}
 \setcounter{secnumdepth}{4}
 \renewcommand{\footrulewidth}{0.4pt}
+
+% multirow per tabelle
+\usepackage{multirow}
+
+% Permette tabelle su più pagine
+\usepackage{longtable}
+
+% colore di sfondo per le celle
+\usepackage[table]{xcolor}
+
+%COMANDI TABELLE
+\newcommand{\rowcolorhead}{\rowcolor[HTML]{56A5EC}} %intestazione 
+\newcommand{\rowcolorlight}{\rowcolor[HTML]{fafafa}} %righe chiare/dispari
+\newcommand{\rowcolordark}{\rowcolor[HTML]{e1f5fe}} %righe scure/pari
+\newcommand{\colorhead}{\color[HTML]{FFFFFF}} %testo intestazione
+\newcommand{\colorbody}{\color[HTML]{000000}} %testo righe
+\newcommand{\tabitem}{~~\rlap{\textbullet}~~}
+
+\newcommand{\glo}{$_{G}$}
+\newcommand{\glosp}{$_{G}$ }
+
+\definecolor{pari}{HTML}{E1F5FE}
+\definecolor{dispari}{HTML}{FAFAFA}
