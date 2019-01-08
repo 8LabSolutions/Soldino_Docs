@@ -1,37 +1,43 @@
 \section{Verbale della riunione}
-
-Si espone al proponente il meccanismo di compravendita di beni e servizi attraverso una “conferma d’ordine” attraverso il quale il cliente conferma o meno l’acquisto. Tutto ciò implementato attraverso smart contract. Il proponente conferma il meccanismo ESCROW adottato dal gruppo. \newline \newline
-Viene richiesta una delucidazione sulla dicitura “put on hold”, il proponente conferma che si intende il pagamento dilazionato del saldo IVA, ad esempio nel caso in cui non ci siano abbastanza fondi nel wallet dell’azienda per effettuare il saldo. Il proponente specifica che non è necessario dilazionare il pagamento delle fatture tra privati. \newline \newline
-Il proponente afferma che grazie al meccanismo ESCROW non è più necessaria la possibilità di rifiutare la proposta di pagamento IVA in quanto grazie alle conferme d’ordine si ha la certezza che l’IVA calcolata sarà corretta.
+Si espone al proponente il meccanismo di compravendita di beni e servizi attraverso
+una "conferma d'ordine" attraverso il quale il cliente conferma o meno l'acquisto.
+Tutto ciò viene implementato attraverso smart contract\glo{}. Inoltre il proponente
+conferma il meccanismo \textit{ESCROW\glo{}} adottato dal gruppo. \\
+Viene richiesta una delucidazione sulla dicitura "put on hold" e il proponente conferma
+che si intende il pagamento dilazionato del saldo IVA, ad esempio nel caso in cui non 
+ci siano abbastanza fondi nel wallet\glo{} dell'azienda per effettuare il saldo. 
+Il proponente specifica che non è necessario dilazionare il pagamento delle fatture 
+tra privati. \\
+Il proponente afferma che, grazie al meccanismo ESCROW\glo{}, non è più necessaria
+la possibilità di rifiutare la proposta di pagamento dell'IVA, in quanto grazie alle 
+conferme dell'ordine si ha la certezza che l'IVA calcolata sarà corretta.
 
 \pagebreak
 
 \section{Riepilogo tracciamenti}
-\begin{centering}
-\begin{longtable}{ >{\centering}p{4cm} >{\centering}p{11cm} }
-
-\hline
-\\[0.5pt]
-	\textbf{Codice} & \textbf{Decisione} 
+\begin{table}[H]
+	%\renewcommand{\arraystretch}{1.5}
+	\rowcolors{2}{pari}{dispari}
 	
-	\tabularnewline 
-	\hline
-						
-				\\[0.5pt]
-				VE\_3.1 & Eliminazione del pagamento dilazionato delle fatture dai casi d’uso
-				\\[0.5pt]
-				\tabularnewline
-				\hline
-				
-				\\[0.5pt]
-				VE\_3.2 & Possibilità di dilazione del  versamento  IVA momento del pagamento del saldo IVA
-				\\[0.5pt]
-				\tabularnewline
-				\hline
-                
-        %\end{tabularx}
-        \\[0.7pt]
-        \caption{Decisioni della riunione esterna del 2019-01-04}
-\end{longtable}
-\end{centering}
+	\begin{longtable}{ >{\centering}p{0.20\textwidth} >{\centering}p{0.70\textwidth}}
+			
+		\rowcolorhead
+		\centering \textbf{\color{white}Codice} 
+		& \centering \textbf{\color{white}Decisione} 
+		
+		\tabularnewline 
+		VE\_3.1 & Eliminazione del pagamento dilazionato delle fatture dai casi d'uso.
+		
+		\tabularnewline 
+		VE\_3.2 & Concordata definizione di \textit{"put on hold"}.
+		
+		\tabularnewline 
+		VE\_3.3 & Possibilità di dilazione del versamento dell'IVA al momento del 
+						pagamento del saldo dell'IVA.
+
+		
+	\end{longtable}
+	\caption{Decisione della riunione esterna del 2019-01-04}	
+
+\end{table}
 
