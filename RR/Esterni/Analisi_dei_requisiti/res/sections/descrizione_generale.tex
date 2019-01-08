@@ -1,7 +1,8 @@
 \section{Descrizione generale} 
 \subsection{Obiettivi del prodotto}
 
-Il progetto \textit{Soldino} si pone come obiettivo finale dimostrare la possibilità di creare una piattaforma che permetta il tracciamento dell'IVA in maniera automatica. Sfruttando le potenzialità della blockchain\glosp Ethereum\glo, mediante l'uso degli smart contracts\glosp e di un token\glosp coniato e distribuito dal governo\glo, verrà semplificato nettamente l'attuale sistema per la gestione dell'IVA.
+Il progetto \textit{Soldino} si pone come obiettivo finale dimostrare la possibilità di creare una piattaforma che permetta il tracciamento dell'IVA in maniera automatica. L'attuale sistema sarà semplificato mediante l'utilizzo delle potenzialità della blockchain\glosp Ethereum\glo, degli smart contracts\glosp e dei token\glosp coniati e distribuiti dal governo.
+
 
 \subsection{Funzioni del prodotto}
 L'applicativo deve offrire oltre alle funzionalità di compravendita di servizi e prodotti, la possibilità di controllare e gestire il pagamento dell'IVA. In particolare: 
@@ -12,26 +13,25 @@ L'applicativo deve offrire oltre alle funzionalità di compravendita di servizi 
 		\item visualizzare la lista di tutte le aziende registrate alla piattaforma, e, per ognuna di esse, la relativa situazione sul pagamento dell'IVA (stato di debito o di credito); 
 		\item rimborsare le aziende che al saldo dell'IVA trimestrale risultano in stato di credito.
 	\end{enumerate}
-	\item cittadini ed aziende:
+	\item i cittadini e le aziende possono:
 	\begin{enumerate}[label=\alph*.]
-		\item autenticarsi alla piattaforma utilizzando il plug-in MetaMask\glo;
+		\item autenticarsi alla piattaforma utilizzando il plugin MetaMask\glo;
 		\item acquistare prodotti offerti dalle aziende presenti sulla piattaforma. Il sistema di pagamento include il meccanismo di escrow\glo:
 		
 		\begin{itemize}
-			\item \textbf{deposito dei beni}: il cliente, durante il procedimento di acquisto, versa la somma dovuta nella piattaforma, dove verrà momentaneamente trattenuta. Il cliente riceve una conferma d'ordine\glosp nel proprio account, e l'ordine viene aggiunto alle vendite in attesa di conferma dell'azienda-venditrice. La vera fattura conterrà gli stessi dati della conferma d'ordine\glo, ma verrà compilata all'approvazione di quest'ultima, per poterne riportare la data corretta. La compilazione sarà eseguita dal sistema, quindi l'escrow\glosp è da considerarsi già in possesso di entrambi i beni;
-			\item \textbf{riscatto beni}: all'approvazione, esplicita o automatica della conferma d'ordine da parte del cliente, esso riceve la fattura, mentre l'azienda-venditrice riceve i soldi trattenuti dal sistema, oltre che al poter accedere alla fattura a sua volta.
+			\item \textbf{deposito dei beni}: il cliente, durante il procedimento di acquisto, versa la somma dovuta nella piattaforma, dove verrà momentaneamente trattenuta. Il cliente riceve una conferma d'ordine\glosp nella sezione apposita del proprio account, e l'ordine viene aggiunto alle vendite in attesa di conferma nella sezione apposita dell'account dell'azienda-venditrice. La vera fattura conterrà gli stessi dati della conferma d'ordine\glo, ma verrà compilata all'approvazione di quest'ultima, per poter riportare la data corretta. La compilazione sarà eseguita dal sistema, che sta agendo da garante nel meccanismo di escrow\glo, ed è attualmente in possesso di entrambi gli oggetti della transazione/scambio;
+			\item \textbf{riscatto beni}: all'approvazione, esplicita o automatica, della conferma d'ordine da parte del cliente, esso riceve la fattura, mentre l'azienda-venditrice riceve i soldi trattenuti dal sistema e può accedere alla fattura a sua volta.
 		\end{itemize}
-		Questo sistema è adottato per garantire che ad ogni ordine il cliente riceva la fattura per dimostrare l'acquisto effettuato, e che l'azienda-venditrice riceva il pagamento. Con l'adozione di tale meccanismo viene semplificata la gestione dell'IVA, in quanto tutte le fatture emesse sono state approvate, e quindi da considerarsi prive di errori. 
+		Questo sistema è atto a garantire che ad ogni ordine il cliente riceva la fattura per dimostrare l'acquisto effettuato, e che l'azienda-venditrice riceva il pagamento. Con l'adozione di tale meccanismo viene semplificata la gestione dell'IVA, in quanto tutte le fatture emesse sono state approvate, e quindi da considerarsi prive di errori. 
 	\end{enumerate}
 	\item le aziende possono:
 	\begin{enumerate}[label=\alph*.]
 		\item registrare la propria attività commerciale sulla piattaforma;
 		\item mettere in vendita i loro beni e servizi;
-		\item gestire i prodotti e/o servizi offerti, ovvero devono essere disponibili le funzionalità di inserimento, rimozione e modifica;
-		\item gestire ordini, conferme d'ordine e fatture. Per garantire un metodo di pagamento più sicuro tra le aziende, nel sistema avvengono due tipologie di ordine:
+		\item gestire i beni e/o servizi offerti, ovvero il sistema deve permettere l'inserimento, la rimozione e la modifica dei prodotti;
+		\item gestire ordini, conferme d'ordine e fatture;
 		
-	
-		\item scaricare le informazioni relative al saldo IVA trimestrale sotto forma di documento PDF;
+		\item scaricare le informazioni relative ad un particolare saldo trimestrale IVA  sotto forma di documento PDF;
 		\item effettuare il versamento dell'IVA al governo\glosp nel caso in cui il saldo trimestrale evidenzi una situazione di debito;
 		\item dilazionare il versamento dell'IVA al governo\glosp nel caso in cui il saldo trimestrale evidenzi una situazione di debito.
 	\end{enumerate}
@@ -44,16 +44,16 @@ Si evidenziano sin da subito tre categorie di utenti:
 	\item azienda;
 	\item governo\glo.
 \end{itemize}
-Ai cittadini ed ai funzionari rappresentanti il governo\glosp è richiesta la conoscenza delle funzioni base, ovvero saper utilizzare un browser internet ed autenticarsi attraverso MetaMask\glo. In questa maniera sarà loro possibile usufruire  della piattaforma dopo l'autenticazione. Per i proprietari di aziende è richiesta inoltre la conoscenza dei principi base per la gestione dell'IVA. A tutti gli utenti è messa a disposizione una breve guida per facilitare l'installazione e l'utilizzo del plug-in sopracitato. 
+Ai cittadini ed ai funzionari rappresentanti il governo\glosp è richiesta la conoscenza delle funzioni base, ovvero saper utilizzare un browser Internet ed autenticarsi attraverso il plugin MetaMask\glo. Nel caso di autenticazione avvenuta con successo sarà loro possibile usufruire  della piattaforma. Per i proprietari di aziende è richiesta inoltre la conoscenza dei principi base per la gestione dell'IVA. A tutti gli utenti è messa a disposizione una breve guida per facilitare l'installazione e l'utilizzo del plugin sopracitato. 
 
-\subsection{Piattaforme di esecuzione}
+\subsection{Macro architetture del progetto}
 \subsubsection{Back end}
-Il back end\glosp sarà ospitato dalla rete Ethereum\glo. In particolare i dati riguardanti l'autenticazione degli utenti e le transazioni verranno salvati nella blockchain per mezzo degli smart contracts\glo. Eventuali dati aggiuntivi sugli utenti e sui beni/servizi verranno salvati utilizzando un database distribuito.
+Il back end\glosp sarà costituito da un insieme di smart contracts\glo, sviluppati per essere eseguiti sulla EVM\glo. Tali contratti verranno utilizzati per gestire le transazioni e salvare i dati ad esse correlati. I dati aggiuntivi (e.g. descrizione ed immagini dei prodotti) verranno invece gestiti attraverso l'utilizzo di un database distribuito, in quanto il loro salvataggio nella blockchain\glosp sarebbe dispendioso dal punto di vista economico e non rispetterebbe l'idea di base della tecnologia stessa, che non è stata progettata per ospitare dati di grandi dimensioni.
 
 \subsubsection{Front end}
-Come piattaforme per il front end\glosp verranno utilizzati i browser web Mozilla Firefox e Google Chrome, nella loro versione desktop. La piattaforma potrebbe risultare compatibile anche con i browser Opera e Brave, sebbene ciò esuli dagli scopi e requisiti del progetto.
+Il front end\glosp sarà costituito da un insieme di pagine web accessibili dai browser web Mozilla Firefox e Google Chrome, nella loro versione desktop. La piattaforma potrebbe risultare compatibile anche con i browser Opera e Brave, sebbene ciò esuli dagli scopi e requisiti del progetto.
 
 \subsection{Vincoli generali}
-L’utente, per usufruire del servizio, deve possedere un browser con installato il plug-in MetaMask\glo, una connessione internet ed una coppia di chiavi (pubblica-privata) compatibile con la rete Ethereum\glo. La coppia di chiavi viene fornita automaticamente all'accettazione della licenza di MetaMask\glo, ma se l’utente desidera può utilizzare chiavi già in suo possesso o generate attraverso altre procedure.
+L’utente, per usufruire del servizio, deve possedere un browser con installato il plugin MetaMask\glo, una connessione internet ed una coppia di chiavi (pubblica-privata) compatibile con la rete Ethereum\glo. La coppia di chiavi viene fornita automaticamente all'accettazione della licenza di MetaMask\glo, ma, se l’utente lo desidera, può utilizzare chiavi già in suo possesso o generate attraverso altre procedure.
 
  

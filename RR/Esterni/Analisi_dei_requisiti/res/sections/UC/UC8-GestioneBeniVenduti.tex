@@ -97,7 +97,7 @@
 		\item la percentuale IVA imposta;
 	\end{itemize}
 	\item \textbf{Scenario principale}: l'azienda accede alla pagina per visualizzare i loro prodotti in vendita;	
-	\item \textbf{Precondizione}: il sistema ha identificato l'utente come azienda, l'azienda ha espresso la volontà di visualizzare i propri prodotti inseriti nella piattaforma;
+	\item \textbf{Precondizione}: il sistema ha identificato l'utente come azienda, questa ha acceduto alla pagina del proprio account dedicata alla gestione dei prodotti da essa messi in vendita;
 	\item \textbf{Postcondizione}: l'azienda ha ottenuto la lista dei propri prodotti assieme alle operazioni eseguibili su di essi.	
 \end{itemize}
 
@@ -130,8 +130,8 @@
 	\begin{itemize}
 		\item \textbf{UC8.2}: per poter modificare i prodotti l'azienda deve prima individuarli nella lista dei propri prodotti;
 	\end{itemize}
-	\item \textbf{Precondizione}: il sistema ha identificato l'utente come azienda, l'azienda ha espresso la volontà modificare un prodotto;
-	\item \textbf{Postcondizione}: l'azienda ha modificato le caratteristiche del prodotto ed ha ottenuto un messaggio che conferma il successo dell'operazione.	
+	\item \textbf{Precondizione}: il sistema ha identificato l'utente come azienda, l'azienda si trova sulla pagina di modifica delle informazioni di un particolare prodotto, alla quale è potuta accedere attraverso l'apposito pulsante di modifica del prodotto considerato;
+	\item \textbf{Postcondizione}: l'azienda ha modificato le caratteristiche del prodotto. Il sistema visualizza un messaggio per avvisare l'utente del successo dell'operazione.
 \end{itemize}
 
 \subsubsection{UC8.3.1 - Modifica nome}
@@ -139,7 +139,7 @@
 	\item \textbf{Attori Primari}: azienda;
 	\item \textbf{Descrizione}: l'azienda inserisce nell'apposito campo il nuovo nome del prodotto;
 	\item \textbf{Scenario principale}: l'utente visualizza il vecchio nome con affianco un campo dati per inserire il nuovo nome, ed inserisce il nuovo valore;
-	\item \textbf{Precondizione}: l'utente ha espresso la volontà di modificare i dati di un prodotto;
+	\item \textbf{Precondizione}: il sistema ha reso disponibile il form per la modifica dei dati relativi ad un prodotto messo in vendita dall'azienda;
 	\item \textbf{Postcondizione}: l'utente ha inserito il nuovo nome nel campo dedicato del form.
 \end{itemize}
 
@@ -148,7 +148,7 @@
 	\item \textbf{Attori Primari}: azienda;
 	\item \textbf{Descrizione}: l'azienda inserisce nell'apposito campo la nuova descrizione del prodotto;
 	\item \textbf{Scenario principale}: l'utente visualizza la vecchia descrizione con affianco un campo dati per inserire la nuova descrizione, ed inserisce il nuovo valore;
-	\item \textbf{Precondizione}: l'utente ha espresso la volontà di modificare i dati di un prodotto;
+	\item \textbf{Precondizione}: il sistema ha reso disponibile il form per la modifica dei dati relativi ad un prodotto messo in vendita dall'azienda;
 	\item \textbf{Postcondizione}: l'utente ha inserito la nuova descrizione nel campo dedicato del form.
 \end{itemize}
 
@@ -157,7 +157,7 @@
 	\item \textbf{Attori Primari}: azienda;
 	\item \textbf{Descrizione}: l'azienda inserisce nell'apposito campo il nuovo prezzo del prodotto;
 	\item \textbf{Scenario principale}: l'utente visualizza il vecchio prezzo con affianco un campo dati per inserire il nuovo prezzo, ed inserisce il nuovo valore;
-	\item \textbf{Precondizione}: l'utente ha espresso la volontà di modificare i dati di un prodotto;
+	\item \textbf{Precondizione}: il sistema ha reso disponibile il form per la modifica dei dati relativi ad un prodotto messo in vendita dall'azienda;
 	\item \textbf{Postcondizione}: l'utente ha inserito il nuovo prezzo nel campo dedicato del form.
 \end{itemize}
 
@@ -166,7 +166,7 @@
 	\item \textbf{Attori Primari}: azienda;
 	\item \textbf{Descrizione}: l'azienda inserisce nell'apposito campo la nuova percentuale IVA imposta al prodotto;
 	\item \textbf{Scenario principale}: l'utente visualizza la vecchia percentuale IVA con affianco un campo dati per inserire il nuovo valore, ed compila tale campo;
-	\item \textbf{Precondizione}: l'utente ha espresso la volontà di modificare i dati di un prodotto;
+	\item \textbf{Precondizione}: il sistema ha reso disponibile il form per la modifica dei dati relativi ad un prodotto messo in vendita dall'azienda;
 	\item \textbf{Postcondizione}: l'utente ha inserito la nuova percentuale IVA imposta nel campo dedicato del form.
 \end{itemize}
 
@@ -181,7 +181,7 @@
 		\item \textbf{UC8.3.6}: l'utente tenta di confermare i dati senza aver compilato almeno uno dei campi;
 	\end{itemize}
 	\item \textbf{Precondizione}: il sistema ha reso disponibile il form per la modifica dei dati riguardanti un prodotto. L'utente ha compilato almeno un campo ed ha premuto il pulsante per la conferma.
-	\item \textbf{Postcondizione}: il prodotto è stato aggiornato con i nuovi dati e l'utente ottiene la conferma della riuscita dell'operazione.
+	\item \textbf{Postcondizione}: il prodotto è stato aggiornato con i nuovi dati. Il sistema visualizza un messaggio per avvisare l'utente del fatto che l'operazione è stata eseguita con successo.
 \end{itemize}
 
 
@@ -193,7 +193,7 @@
 	\item \textbf{Scenario principale}: l'utente tenta di confermare ed inviare le modifiche ai dati senza aver compilato almeno uno dei campi del form;
 	\item \textbf{Precondizione}: il sistema permette all'utente di compilare il form per le modifiche. L'utente ha premuto il pulsante di conferma senza aver modificato almeno uno dei campi; 
 	\item \textbf{Postcondizione}:
-	l'utente è consapevole che per effettuare una modifica, almeno uno dei dati presenti deve essere stato modificato, compilando almeno uno dei campi del form.
+	viene visualizzato un messaggio d'errore per informare l'utente del fatto che, per effettuare una modifica, almeno uno dei dati presenti deve essere stato modificato. È dunque necessario compilare almeno uno dei campi del form.
 \end{itemize}
 
 \subsubsection{UC8.4 - Eliminazione prodotto}
@@ -207,8 +207,8 @@
 	\begin{itemize}
 		\item \textbf{UC8.2}: per poter eliminare i prodotti l'azienda deve prima individuarli nella lista dei propri prodotti;
 	\end{itemize}
-	\item \textbf{Precondizione}: il sistema ha identificato l'utente come azienda, l'azienda ha espresso la volontà di eliminare un prodotto;
-	\item \textbf{Postcondizione}: l'azienda ha eliminato il prodotto ed ha ottenuto un messaggio che conferma il successo dell'operazione.
+	\item \textbf{Precondizione}: il sistema ha identificato l'utente come azienda, l'azienda è acceduta alla pagina relativa alla visualizzazione e gestione dei prodotti da essa venduti nella piattaforma;
+	\item \textbf{Postcondizione}: l'azienda ha eliminato il prodotto. Il sistema ha visualizzato un messaggio che conferma il successo dell'operazione.
 \end{itemize}
 
 
