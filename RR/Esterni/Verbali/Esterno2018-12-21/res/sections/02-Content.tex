@@ -1,77 +1,75 @@
 \section{Verbale della riunione}
-
-Da subito è stata lasciata la precedenza alle domande del secondo gruppo, il cui intervento è servito a prendere appunti in merito a questioni interessanti che potevano rispondere ad alcuni dubbi.\newline
-Successivamente, arrivato il nostro turno, sono state esposte una per una le domande preparate durante l'incontro precedente riassunto nel verbale \textit{Interno2018-12-20}.\newline
+Da subito è stata lasciata la precedenza alle domande del secondo gruppo,
+il cui intervento è servito a prendere appunti in merito a questioni interessanti
+che potevano rispondere ad alcuni dubbi. Successivamente, arrivato il nostro turno,
+sono state esposte una per una le domande preparate durante l'incontro interno 
+precedente.\newline
 Le domande hanno riguardato:
+
 \begin{itemize}
-	\item \textbf{Aspetti generali del capitolato}: ovvero se sviluppare una \textit{DApps} per ogni funzionalità e chiarimento su alcuni requisiti specificati nel capitolato;
-	\item \textbf{Database}: precisazione sul concetto di database di un sito statico e chiarimento su come interfacciarsi da pagina hostata sul server;
-	\item \textbf{Termini}: chiarimento su alcuni termini del capitolato dal significato poco chiaro;
-	\item \textbf{Standard}: richiesta nello specifico relativa agli standard a cui sottostare e come rispettarli;
-	\item \textbf{Plug-in}: capire meglio alcuni aspetti del plug-in Metamask;
-	\item \textbf{Accesso} precisazione relativa alla login e alla registrazione di utente/azienda;
-	\item \textbf{Token}: capire come si intende creare e distribuire token;
-	\item \textbf{Avvisi}: capire dove vogliono che l'utente/azienda/governo venga notificato e dove non è strettamente necessario.
+	\item \textbf{Aspetti generali del capitolato}: chiarire se sviluppare una 
+			\textit{DApps} per ogni funzionalità e definire alcuni requisiti specificati
+			 nel capitolato;
+	\item \textbf{Database}: precisazione sul concetto di database di un sito statico
+			 e chiarimento su come interfacciarsi da una pagina che viene ospitata sul server;
+	\item \textbf{Termini}: chiarimento su alcuni termini del capitolato il cui significato
+			 era risultato poco chiaro;
+	\item \textbf{Standard}: richiesta nello specifico relativa agli standard a cui sottostare
+			 e come rispettarli;
+	\item \textbf{MetaMask}: capire meglio alcuni aspetti di questo plug-in;
+	\item \textbf{Accesso}: precisazione relativa alla login e alla registrazione di 
+			 utente/azienda;
+	\item \textbf{Token\glo{}}: capire come si intende creare e distribuire i token;
+	\item \textbf{Avvisi}: capire dove vogliono che l'utente/azienda/governo venga 
+			 notificato e dove non è strettamente necessario.
 \end{itemize}
-Alla fine della chiamata con RedBabel, il gruppo si è subito trovato per definire un resoconto della call che si era appena conclusa. Sono state elencate e rivisitate le risposte alle domande fatte e si è definita una nuova suddivisione dei compiti da svolgere in vista del prossimo incontro.
+Alla fine della chiamata con \textit{Red Babel}, alla luce dei chiarimenti dati,
+il gruppo ha deciso di fissare un incontro interno per suddividere il lavoro rimanente.
 \pagebreak
 
 \section{Riepilogo tracciamenti}
-\begin{centering}
-\begin{longtable}{ >{\centering}p{4cm} >{\centering}p{11cm} }
-
-\hline
-\\[0.5pt]
-	\textbf{Codice} & \textbf{Decisione} 
+\begin{table}[H]
+	%\renewcommand{\arraystretch}{1.5}
+	\rowcolors{2}{pari}{dispari}
 	
-	\tabularnewline 
-	\hline
-						
-				\\[0.5pt]
-				VE\_2.1 & Specificato l'utilizzo non necessario di un server per il database, con la possibilità di salvare dati sulla blockchain
-				\\[0.5pt]
-				\tabularnewline
-				\hline
+	\begin{longtable}{ >{\centering}p{0.20\textwidth} >{\centering}p{0.70\textwidth}}
+			
+		\rowcolorhead
+		\centering \textbf{\color{white}Codice} 
+		& \centering \textbf{\color{white}Decisione} 
+		
+		\tabularnewline 
+		VE\_2.1 & Specificato l'utilizzo non necessario di un server per il database,
+				con la possibilità di salvare dati sulla blockchain.
+		
+		\tabularnewline 
+		VE\_2.2 & \textit{"Put on hold"}: concordato di informarsi sul significato del termine.
+		
+		\tabularnewline 
+		VE\_2.3 & Deciso di seguire gli standard EIP-712 e ESLint e informarsi su di essi.
+	
+		\tabularnewline 
+		VE\_2.4 & \textit{MetaMask} gestisce l'accessibilità e non è richiesta una versione
+				per screen reader\glo{}.
+		
+		\tabularnewline 
+		VE\_2.5 & A livello di browser concordato che funzioni sulle ultime versioni 
+				di \textit{Google Chrome} e \textit{Mozilla Firefox}.
+		
+		\tabularnewline 
+		VE\_2.6 & Deciso che gli utenti registrati sono salvati in uno \textit{Smart 
+				Contracts} ed è una scelta opzionale il creare due step di registrazione.
 				
-				\\[0.5pt]
-				VE\_2.2 & \textit{"Put on hold"}: concordato di informarmarsi sul significato del termine
-				\\[0.5pt]
-				\tabularnewline
-				\hline
+		\tabularnewline
+		VE\_2.7 & Scelto che l'\textit{Admin} può gestire i token\glo{}, creandoli 
+				e distribuendoli a piacimento. Lo scopo è avere nel sito una moneta che si 
+				possa utilizzare.
 				
-				\\[0.5pt]				
-				VE\_2.3 & \textit{Standard}: deciso di seguire standard EIP-712 e ESLint e informarsi individualmente su di essi
-				\\[0.5pt]
-				\tabularnewline
-				\hline
-				
-				\\[0.5pt]
-				VE\_2.4 & \textit{Plug-in} Metamask gestisce l'accessibilità. Non richiesta versione per screen reader. A livello di browser concordato che funzioni su Chrome e Firefox(ultime versioni)
-				\\[0.5pt]
-				\tabularnewline
-				\hline
-				
-				\\[0.5pt]
-				VE\_2.5 & \textit{Accesso} Scelto che gli utenti registrati sono salvati in uno smart contracts(array). Scelta opzionale sul fatto di creare due step di registrazione
-				\\[0.5pt]
-				\tabularnewline
-				\hline  
-				
-				\\[0.5pt]
-				VE\_2.6 & \textit{Token} Scelto che l'Admin può gestire i token, creandoli e distribuendoli a piacimento. Lo scopo è avere nel sito una moneta che si possa utilizzare
-				\\[0.5pt]
-				\tabularnewline
-				\hline  
-				
-				\\[0.5pt]
-				VE\_2.7 & \textit{Avvisi} Stabilito che la lista delle aziende sarà pubblica e che il governo potrà verificare le aziende che hanno pagato e quelle che ancora devono farlo.
-				\\[0.5pt]
-				\tabularnewline
-				\hline  
-                
-        %\end{tabularx}
-        \\[0.7pt]
-        \caption{Decisioni della riunione esterna del 2018-12-21}
-\end{longtable}
-\end{centering}
+		\tabularnewline
+		VE\_2.8 & Stabilito che la lista delle aziende sarà pubblica e che il governo potrà 
+				verificare le aziende che hanno pagato e quelle che ancora devono farlo.
+		
+	\end{longtable}
+	\caption{Decisione della riunione esterna del 2018-12-21}	
 
+\end{table}
