@@ -1,12 +1,20 @@
 \section*{Tabelle delle modifiche}
 \renewcommand{\arraystretch}{1.5}
-\begin{center}
 	\begin{longtable}{ >{\centering}p{1.5cm} >{\centering}p{1.8cm}
 			>{\centering}p{2.9cm} >{\centering}p{2cm} >{}p{5cm} }
 		
+		\caption{Tabelle delle modifiche di questo documento} \\
 		\hline
 		\textbf{Versione} & \textbf{Data} & \textbf{Nominativo} & \textbf{Ruolo} &
 		\textbf{Descrizione} \tabularnewline \hline
+		\endfirsthead
+			\caption{Tabella delle modifiche (continua)} \\
+		\hline
+		\textbf{Versione} & \textbf{Data} & \textbf{Nominativo} & 
+		\textbf{Ruolo} &
+		\textbf{Descrizione} \tabularnewline \hline
+		\endhead
+		
 		
 		0.0.11 & 2018-12-30 & Francesco Donè & 
 		\textit{Analista} & Stesura UC5 e UC6.
@@ -65,8 +73,6 @@
 		\hline
 		
 		%\end{tabularx}
-		\\
-		\caption{Tabelle delle modifiche di questo documento}
+		
 	\end{longtable}
-\end{center}
 \renewcommand{\arraystretch}{1} 
