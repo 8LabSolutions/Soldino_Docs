@@ -10,14 +10,17 @@
 	\item \textbf{Descrizione}: i cittadini e le aziende possono acquistare i beni/servizi che avevano precedentemente aggiunto nel carrello;
 	\item \textbf{Scenario principale}: 
 	\begin{enumerate}[label=\alph*.]
-		\item l'utente inserisce dei prodotti nel carrello [UC6.1];
 		\item l'utente procede con il checkout dei prodotti precedentemente inseriti [UC7.1];
 		\item l'utente sceglie l'indirizzo di spedizione [UC7.3];
 		\item l'utente effettua la conferma ed il pagamento dell'ordine [UC7.4];
 	\end{enumerate}
 	
 	\item \textbf{Precondizione}: il sistema ha reso disponibile all'utente l'utilizzo del carrello per poter effettuare degli acquisti. L'utente ha inserito degli oggetti nel carrello ed effettua il procedimento di acquisto;
-	\item \textbf{Postcondizione}: è stato effettuato l'acquisto dei beni presenti nel carrello. Viene applicato il meccanismo di escrow\glo. Il cliente riceve la conferma d'acquisto\glo. Entro la data ultima di approvazione esso potrà approvare o rifiutare l'ordine. I soldi del pagamento sono temporaneamente trattenuti nella piattaforma.
+	\item \textbf{Postcondizione}: è stato effettuato l'acquisto dei beni presenti nel carrello. Viene applicato il meccanismo di escrow\glo: 
+	\begin{itemize}
+		\item il cliente riceve la conferma d'acquisto\glosp nella sezione dedicata del proprio account;
+		\item la somma versata dal creditore viene trattenuta dal sistema;
+	\end{itemize} 
 \end{itemize} 
 \subsubsection{UC7.1 - Checkout}
 \begin{itemize}
@@ -29,7 +32,7 @@
 		\item \textbf{UC7.2}: l'utente preme il pulsante di checkout senza aver ancora inserito almeno un bene/servizio nel carrello;
 	\end{itemize}
 	\item \textbf{Precondizione}: il sistema ha reso disponibile il carrello all'utente, identificandolo quindi come cittadino o azienda. L'utente ha premuto il pulsante per effettuare il checkout;
-	\item \textbf{Postcondizione}: l'utente accede alla pagina dove poter visualizzare il riepilogo del carrello, confermare l'acquisto e procedere con il pagamento.
+	\item \textbf{Postcondizione}: l'utente accede alla pagina dove poter visualizzare il riepilogo del carrello, selezionare l'indirizzo di spedizione e quindi confermare l'acquisto e procedere con il pagamento.
 \end{itemize}
 
 \subsubsection{UC7.2 - Visualizzazione errore carrello vuoto}
@@ -51,7 +54,7 @@
 		\item utilizzare l'indirizzo inserito durante la registrazione;
 		\item inserire un nuovo indirizzo da utilizzare per questa spedizione, inserendo le informazioni relative ad un indirizzo [UC2.2.2];
 	\end{itemize}
-	\item \textbf{Scenario principale}: l'utente dopo aver richiesto il checkout, per continuare nel procedimento di acquisto, deve selezionare un indirizzo di spedizione;
+	\item \textbf{Scenario principale}: l'utente deve selezionare un indirizzo di spedizione;
 	\item \textbf{Precondizione}: l'utente ha eseguito il checkout;
 	\item \textbf{Postcondizione}:
 	l'utente ha selezionato come indirizzo di spedizione, l'indirizzo di 
