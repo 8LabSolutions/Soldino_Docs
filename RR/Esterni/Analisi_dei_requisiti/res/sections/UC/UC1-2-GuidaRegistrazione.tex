@@ -39,7 +39,7 @@
 		
 		
 	\end{enumerate}
-	\item \textbf{Precondizione}: l'utente ha il plug-in MetaMask\glosp installato e correttamente impostato sul proprio browser, viene considerato dal sistema come un utente non autenticato. La prima chiave\glosp nel plug-in non risulta già associata ad alcun account nel sistema. L'utente intende registrarsi come cittadino o registrare la propria azienda; 
+	\item \textbf{Precondizione}: l'utente ha MetaMask\glosp installato e correttamente impostato sul proprio browser, viene considerato dal sistema come un utente non autenticato. La prima chiave\glosp nel plug-in non risulta già associata ad alcun account nel sistema. L'utente intende registrarsi come cittadino o registrare la propria azienda; 
 	\item \textbf{Postcondizione}: l'utente è registrato correttamente nel sistema come cittadino o azienda.
 	
 \end{itemize}
@@ -120,7 +120,7 @@
 \begin{figure}[h]
 	\includegraphics[width=5cm]{res/images/UC2-3Registrazione-cliente.png}
 	\centering
-	\caption{UC2.3 - Registrazione cittadino}
+	\caption{UC2.3 - Inserimento dati anagrafici}
 \end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
@@ -154,7 +154,7 @@
 \begin{figure}[h]
 	\includegraphics[width=6cm]{res/images/UC2-4RegistrazioneAzienda.png}
 	\centering
-	\caption{UC2 - Registrazione di un'azienda}
+	\caption{UC2 - Inserimento dati aziendali}
 \end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: proprietario d'azienda;
@@ -164,7 +164,7 @@
 		\item l'utente inserisce la partita IVA dell'azienda [UC2.4.1];
 		\item l'utente inserisce il nome dell'azienda [UC2.3.2];
 	\end{enumerate}
-	\item \textbf{Precondizione}: l'utente ha cliccato il link per la registrazione di un'azienda. Il sistema ha rilevato e salvato una chiave\glosp valida (non associata ad alcun utente registrato alla piattaforma) attraverso il plug-in MetaMask\glo;
+	\item \textbf{Precondizione}: l'utente ha cliccato il link per la registrazione di un'azienda. Il sistema ha rilevato e salvato una chiave\glosp valida (non associata ad alcun utente registrato alla piattaforma) attraverso MetaMask\glo;
 	\item \textbf{Postcondizione}: l'utente ha compilato i campi relativi alla registrazione di un'azienda alla piattaforma.
 \end{itemize}
 \subsubsection{UC2.4.1 - Inserimento partita IVA}
@@ -189,7 +189,7 @@
 \subsubsection{UC2.5 - Visualizzazione errore MetaMask\glosp non presente}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato
-	\item \textbf{Descrizione}: l'utente visualizza un errore relativo al fatto che il plug-in MetaMask\glosp non risulta installato o attualmente disabilitato;
+	\item \textbf{Descrizione}: l'utente visualizza un errore relativo al fatto che MetaMask\glosp non risulta installato o attualmente disabilitato;
 	\item \textbf{Scenario principale}: l'utente non ancora identificato dal sistema tenta di accedere a sezioni che necessitano la presenza di MetaMask\glosp, e quest'ultimo non è installato o attualmente disabilitato;
 	\item \textbf{Precondizione}: MetaMask\glosp non è presente nel browser dell'utente o è attualmente disabilitato;
 	\item \textbf{Postcondizione}: viene visualizzato un messaggio d'errore per informare l'utente del fatto che è necessario installare ed abilitare MetaMask\glosp per proseguire.
@@ -203,9 +203,9 @@
 	\item \textbf{Attori Secondari}: MetaMask\glo;
 	\item \textbf{Descrizione}:
 	l'utente visualizza un messaggio di errore relativo al fatto che non è stata rilevata nessuna chiave\glosp all'interno del plug-in MetaMask\glo;
-	\item \textbf{Scenario principale}: l'utente tenta di accedere ad una sezione del sito che necessita l'identificazione di una chiave\glosp attraverso il plug-in MetaMask\glo, e questo non contiene almeno una chiave\glo;
+	\item \textbf{Scenario principale}: l'utente tenta di accedere ad una sezione del sito che necessita l'identificazione di una chiave\glosp attraverso MetaMask\glo, e questo non contiene almeno una chiave\glo;
 	\item \textbf{Precondizione}: il plug-in MetaMask\glosp è correttamente configurato, ma non è presente nessuna chiave\glo;
-	\item \textbf{Postcondizione}: viene visualizzato un messaggio d'errore per informare l'utente del fatto che nel plug-in MetaMask\glosp non è stata rilevata alcuna chiave\glo.
+	\item \textbf{Postcondizione}: viene visualizzato un messaggio d'errore per informare l'utente del fatto che in MetaMask\glosp non è stata rilevata alcuna chiave\glo.
 	
 \end{itemize}
 
@@ -217,10 +217,10 @@
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Attori Secondari}: MetaMask\glo;
 	\item \textbf{Descrizione}:
-	l'utente visualizza un messaggio di errore relativo al fatto che la chiave\glosp reperita dal plug-in MetaMask\glosp risulta già presente nella piattaforma;
+	l'utente visualizza un messaggio di errore relativo al fatto che la chiave\glosp reperita da MetaMask\glosp risulta già presente nella piattaforma;
 	\item \textbf{Scenario principale}: l'utente tenta di registrarsi al sito utilizzando una chiave\glosp già presente nel sistema;
 	\item \textbf{Precondizione}: MetaMask\glosp è correttamente configurato, ma la chiave\glosp selezionata nel plug-in è già stata utilizzata nella piattaforma per registrare un utente;
-	\item \textbf{Postcondizione}: viene visualizzato un messaggio d'errore per informare l'utente del fatto che la chiave\glosp selezionata nel plug-in MetaMask\glosp è già stata utilizzata nella piattaforma per la registrazione di un altro utente, e quindi che necessita di un'altra chiave per effettuare una nuova registrazione.
+	\item \textbf{Postcondizione}: viene visualizzato un messaggio d'errore per informare l'utente del fatto che la chiave\glosp selezionata MetaMask\glosp è già stata utilizzata nella piattaforma per la registrazione di un altro utente, e quindi che necessita di un'altra chiave per effettuare una nuova registrazione.
 \end{itemize}
 
 \subsubsection{UC2.8 - Conferma ed invio dei dati}
