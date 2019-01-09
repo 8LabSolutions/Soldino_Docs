@@ -50,8 +50,19 @@
 	\begin{itemize}
 		\item numero identificativo;
 		\item data;
-		\item nome dell'azienda venditrice;
-		\item nome dell'azienda cliente;
+		\item nome dell'azienda emittente;
+		\item informazioni relative all'acquirente:
+		\begin{itemize}
+			\item nel caso il cliente fosse un'\textbf{azienda}:
+			\begin{itemize}
+				\item il nome dell'azienda destinataria;
+			\end{itemize}
+			\item nel caso il cliente fosse un \textbf{cittadino}:
+			\begin{itemize}
+				\item il nome;
+				\item il cognome;
+			\end{itemize}
+		\end{itemize}
 		\item importo totale dell'ordine;
 		\item IVA a credito/debito derivante dalla transazione;
 	\end{itemize}
@@ -135,7 +146,8 @@
 		\item numero identificativo della fattura;
 		\item la data dell'ordine relativo alla fattura;
 		\item il numero identificativo dell'ordine relativo alla fattura;
-		\item visualizzazione dei beni in formato fattura, ovvero UC5 con due campi aggiuntivi per ogni prodotto, ovvero il prezzo netto\glosp e la aliquota IVA imposta;
+		\item visualizzazione dei prodotti in formato fattura, ovvero UC5 con due campi aggiuntivi per ogni prodotto, ovvero il prezzo netto\glosp e l'aliquota IVA;
+		\item l'importo totale IVA;
 		\item l'importo totale dell'ordine;
 		\item il nome dell'azienda emittente;
 		\item la partita IVA dell'azienda emittente;
