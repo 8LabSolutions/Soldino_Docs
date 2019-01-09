@@ -2,7 +2,7 @@
 \subsubsection{UC1 - Visualizzazione guida introduttiva}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente generico;
-	\item \textbf{Descrizione}: l'utente visualizza una guida riguardante l'installazione ed il funzionamento del plug-in Metamask\glo. Tale guida ha il compito di spiegare come impostare le chiavi del plugin e come utilizzarlo per accedere al sistema;
+	\item \textbf{Descrizione}: l'utente visualizza una guida riguardante l'installazione ed il funzionamento del plug-in Metamask\glo. Tale guida ha il compito di spiegare come impostare le chiavi del plug-in e come utilizzarlo per accedere al sistema;
 	\item \textbf{Scenario principale}: l'utente accede alla pagina introduttiva del sito web e visualizza la guida;
 	\item \textbf{Precondizione}: il sistema è raggiungibile e funzionante, l'utente accede alla pagina iniziale del sito della piattaforma;
 	\item \textbf{Postcondizione}: il sistema fornisce all'utente, attraverso la lettura della guida, tutte le istruzioni necessarie alla registrazione ed all'autenticazione.
@@ -48,7 +48,7 @@
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Attori Secondari}: MetaMask\glo;
 	\item \textbf{Descrizione}: il sistema verifica la presenza del plug-in MetaMask\glo, al quale richiede la chiave\glosp che l'utente desidera usare come identificativo e metodo di pagamento. Essendo la chiave\glosp univoca, il sistema controlla che nessun utente registrato stia attualmente utilizzandola. Il sistema mostra infine l'interfaccia contente il form di registrazione;
-	\item \textbf{Scenario principale}: il sistema, prima di mostrare il form per la registrazione, controlla che la chiave di riferimento individuata dal plugin MetaMask\glosp non sia associata ad alcun utente registrato al sistema;
+	\item \textbf{Scenario principale}: il sistema, prima di mostrare il form per la registrazione, controlla che la chiave di riferimento individuata dal plug-in MetaMask\glosp non sia associata ad alcun utente registrato al sistema;
 	\item \textbf{Estensioni}:
 	\begin{itemize}
 		\item \textbf{UC2.5}: se il plug-in MetaMask\glosp non risulta installato nel browser dell'utente, o è stato disabilitato, esso viene avvisato tramite l'apposito messaggio di errore;
@@ -205,7 +205,7 @@
 	l'utente visualizza un messaggio di errore relativo al fatto che non è stata rilevata nessuna chiave\glosp all'interno del plug-in MetaMask\glo;
 	\item \textbf{Scenario principale}: l'utente tenta di accedere ad una sezione del sito che necessita l'identificazione di una chiave\glosp attraverso il plug-in MetaMask\glo, e questo non contiene almeno una chiave\glo;
 	\item \textbf{Precondizione}: il plug-in MetaMask\glosp è correttamente configurato, ma non è presente nessuna chiave\glo;
-	\item \textbf{Postcondizione}: viene visualizzato un messaggio d'errore per informare l'utente del fatto che nel plugin MetaMask\glosp non è stata rilevata alcuna chiave\glo.
+	\item \textbf{Postcondizione}: viene visualizzato un messaggio d'errore per informare l'utente del fatto che nel plug-in MetaMask\glosp non è stata rilevata alcuna chiave\glo.
 	
 \end{itemize}
 
