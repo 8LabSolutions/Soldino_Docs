@@ -26,17 +26,20 @@ tipologie di fattori di rischio:
 \definecolor{righed}{HTML}{fafafa}
 \definecolor{righep}{HTML}{e1f5fe}
 \renewcommand{\arraystretch}{1.5}
-\begin{center}
+
 	\arrayrulecolor{white}
-	\begin{longtable}{>{\centering}p{1cm}|>{\centering}p{2.2cm}|			
-	>{}p{5cm}|>{\centering}p{2cm}|>{\centering}p{2cm}}
+	\begin{longtable}{>{\centering}p{1cm}>{\centering}p{2.2cm}			
+	>{}p{5cm}>{\centering}p{2cm}>{\centering}p{2cm}}
 	\hline
+	\caption{Tabella dei Rischi di Progetto}\\
 	\rowcolorhead
 	\colorhead\textbf{Cod.} & \colorhead\textbf{Nome} & 
 	\centering\colorhead\textbf{Descrizione} & 
 	\colorhead\textbf{Probabilità} &
 	\colorhead\textbf{Gravità}\tabularnewline
-	\arrayrulecolor{black}\hline
+	\endfirsthead
+	\caption[]{(continua)}\\
+	\endhead
 	\hline
 	\rowcolorlight RT1 & Inesperienza Tecnologica & Molte delle tecnologie da 
 	adottare nello 
@@ -138,7 +141,7 @@ tipologie di fattori di rischio:
 	provvederà a limitare tali contrasti.}
 	\tabularnewline \arrayrulecolor{black}\hline
 	
-	\caption{Tabella dei Rischi di Progetto}			
+	\			
 	\end{longtable}
-\end{center}
+
 \renewcommand{\arraystretch}{1}
