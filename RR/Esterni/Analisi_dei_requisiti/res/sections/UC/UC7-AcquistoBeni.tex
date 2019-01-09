@@ -19,7 +19,7 @@
 	\item \textbf{Postcondizione}: è stato effettuato l'acquisto dei beni presenti nel carrello. Viene applicato il meccanismo di escrow\glo: 
 	\begin{itemize}
 		\item il cliente riceve la conferma d'acquisto\glosp nella sezione dedicata del proprio account;
-		\item la somma versata dal creditore viene trattenuta dal sistema;
+		\item la somma versata dal creditore viene trattenuta dal sistema.
 	\end{itemize} 
 \end{itemize} 
 \subsubsection{UC7.1 - Checkout}
@@ -31,13 +31,13 @@
 	\begin{itemize}
 		\item \textbf{UC7.2}: l'utente preme il pulsante di checkout senza aver ancora inserito almeno un bene/servizio nel carrello;
 	\end{itemize}
-	\item \textbf{Precondizione}: il sistema ha reso disponibile il carrello all'utente, identificandolo quindi come cittadino o azienda. L'utente ha premuto il pulsante per effettuare il checkout;
+	\item \textbf{Precondizione}: l'utente si trova nella pagina relativa al proprio carrello. L'utente ha premuto il pulsante per effettuare il checkout;
 	\item \textbf{Postcondizione}: l'utente accede alla pagina dove poter visualizzare il riepilogo del carrello, selezionare l'indirizzo di spedizione e quindi confermare l'acquisto e procedere con il pagamento.
 \end{itemize}
 
 \subsubsection{UC7.2 - Visualizzazione errore carrello vuoto}
 \begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
+	\item \textbf{Attori Primari}: azienda, cittadino;
 	\item \textbf{Descrizione}:
 	l'utente visualizza un messaggio di errore relativo al fatto che non è presente alcun prodotto nel proprio carrello e che quindi non è possibile procedere con la procedura di checkout;
 	\item \textbf{Scenario}: l'utente tenta di procedere con il checkout senza aver inserito alcun bene/servizio nel carrello;
@@ -83,7 +83,7 @@
 
 \subsubsection{UC7.5 - Visualizzazione errore pagamento fallito}
 \begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
+	\item \textbf{Attori Primari}: azienda, cittadino;
 	\item \textbf{Attori Secondari}: MetaMask\glo;
 	\item \textbf{Descrizione}:
 	l'utente visualizza un messaggio di errore relativo al fatto che il tentativo di pagamento non è andato a buon fine, e che quindi l'ordine è stato annullato. L'utente viene invitato ad informarsi sulla causa del fallimento dell'operazione all'interno del plug-in;
