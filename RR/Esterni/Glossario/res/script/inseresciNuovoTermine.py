@@ -38,9 +38,9 @@ def aggiungiVoce(titolo, descrizione):
         titolo = titolo.capitalize()
     with open('../pages/'+getFirstLetter(titolo)+'.tex', 'a') as file:
         if os.stat('../pages/'+getFirstLetter(titolo)+'.tex').st_size == 0:
-            file.write('\section*{'+getFirstLetter(titolo)+'}\n')
+            file.write('\subsection*{\\quad$'+getFirstLetter(titolo)+'\\quad$}\n')
 
-        file.write('\subsection*{'+titolo+'}\n')
+        file.write('\subsubsection*{'+titolo+'}\n')
         file.write('\index{' + titolo + '}\n')
         file.write(descrizione+'\n\n')
 
