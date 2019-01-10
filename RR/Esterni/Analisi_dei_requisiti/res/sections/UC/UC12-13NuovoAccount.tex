@@ -17,7 +17,7 @@
 	\item \textbf{Scenario principale}: il governo visualizza la lista degli utenti, aziende [UC11.1] o cittadini [UC11.2]. Per ognuna di esse ha la possibilità di abilitare l'account o disabilitarlo premendo l'apposito pulsante;
 	\item \textbf{Inclusioni}: 
 	\begin{itemize}
-		\item \textbf{UC11}: l'utente per poter abilitare/disabilitare un account deve accedere ad una lista di utenti registrati alla piattaforma [UC11].
+		\item \textbf{UC11}: l'utente governativo per poter abilitare/disabilitare un account deve accedere ad una lista di utenti registrati alla piattaforma [UC11].
 	\end{itemize}
 	\item \textbf{Precondizione}: l'utente governativo sta visualizzando una lista di utenti registrati al sistema, e può quindi accedere al pulsante per l'abilitazione o disabilitazione dell'account di un cittadino;
 	\item \textbf{Postcondizione}: l'account dell'utente selezionato è stato abilitato o disabilitato. Nel caso sia stato disabilitato, durante i prossimi tentativi di autenticazione, tale utente riceverà l'errore di "account disabilitato" [UC3.3].
@@ -66,9 +66,9 @@
 	\item \textbf{Descrizione}: il governo può inserire un messaggio personalizzato all'utente al quale sta disabilitando l'account riferendo la causa di tale disabilitazione;
 	\item \textbf{Scenario principale}: il governo visualizza una lista di utenti registrati [UC11]:
 	\begin{enumerate}[label=\alph*.]
-		\item l'utente disabilita l'account di un utente il cui stato dell'account risulta "abilitato" [UC12.2];
+		\item l'utente governativo disabilita l'account di un utente il cui stato dell'account risulta "abilitato" [UC12.2];
 		\item il sistema propone una casella di testo nella quale l'utente governativo può inserire la causa della disabilitazione dell'account;
-		\item l'utente conferma e salva tale messaggio. Durante i prossimi tentativi di autenticazione, l'utente al quale è stato disabilitato l'account, riceverà l'errore di "account disabilitato" [UC3.3].
+		\item l'utente governativo conferma e salva tale messaggio. Durante i prossimi tentativi di autenticazione, l'utente al quale è stato disabilitato l'account, riceverà l'errore di "account disabilitato" [UC3.3].
 	\end{enumerate}
 	 
 	\item \textbf{Precondizione}: l'utente governativo ha richiesto la disabilitazione di un account utente premendo sull'apposito pulsante, il sistema visualizza la casella di testo per inserire il messaggio di errore contenente la causa di tale azione;
