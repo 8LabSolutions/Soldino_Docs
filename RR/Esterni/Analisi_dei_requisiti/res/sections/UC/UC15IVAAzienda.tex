@@ -11,7 +11,7 @@
 		\item può visualizzare i saldi IVA di un periodo, comprendendo la visualizzazione di tutte le transazioni, rappresentate dalle rispettive fatture, e del saldo finale [15.3 \& 15.4];
 		\item per ogni fattura è disponibile la visualizzazione dettagliata [15.8];
 		\item può scaricare le informazioni riguardanti un trimestre come sopra descritto sotto forma di documento PDF [15.5]; 
-		\item in caso il saldo di un semestre risulti negativo (situazione di debito), l'azienda può procedere ad effettuare il versamento al governo [15.6] o può dilazionarlo\glosp [15.7];
+		\item in caso il saldo di un semestre risulti negativo (situazione di debito), l'azienda può procedere ad effettuare il versamento al governo [15.6] o può dilazionarlo\glosp [15.7].
 	\end{itemize}
 	\item \textbf{Scenario principale}: l'utente visualizza e svolge alcune operazioni per gestire l'IVA, gli ordini e le fatture;
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, e mette a disposizione tutte le pagine necessarie alla visualizzazione e gestione delle fatture e dell'IVA;
@@ -23,22 +23,22 @@
 	\item \textbf{Descrizione}: l'azienda può visualizzare il saldo IVA relativo ad un trimestre. In particolare può visualizzare il saldo:
 	\begin{itemize}
 		\item del trimestre corrente [15.3];
-		\item di un trimestre concluso [15.4];
+		\item di un trimestre concluso [15.4].
 	\end{itemize}
 	Il saldo conterrà tutte le fatture relative agli acquisti e le vendite che hanno determinato il suo valore, oltre al valore stesso;
 	\item \textbf{Scenario principale}: l'utente visualizza il saldo relativo ad un trimestre. In particolare:
 	\begin{enumerate}[label=\alph*.]
 		\item seleziona da un menù a tendina uno dei trimestri disponibili;
-		\item del trimestre scelto viene visualizzata la relativa lista delle fatture riguardanti gli ordini; 
+		\item del trimestre scelto viene visualizzata la relativa lista delle fatture riguardanti gli ordini;-
 	\end{enumerate}
 	\item \textbf{Inclusioni}: 
 	\begin{itemize}
-		\item \textbf{UC15.2}: visualizzazione generale delle fatture, ovvero il mostrare la lista delle fatture nel saldo;
+		\item \textbf{UC15.2}: visualizzazione generale delle fatture, ovvero il mostrare la lista delle fatture nel saldo.
 	\end{itemize}
 	\item \textbf{Specializzazioni}: 
 	\begin{itemize}
 		\item \textbf{UC15.3}: visualizzazione saldo IVA corrente;
-		\item \textbf{UC15.4}:  visualizzazione saldo IVA di un trimestre concluso;
+		\item \textbf{UC15.4}:  visualizzazione saldo IVA di un trimestre concluso.
 	\end{itemize}
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, e mette a disposizione le pagine per visualizzazione dei saldi dei semestri IVA. L'utente ha selezionato un trimestre tra quelli disponibili;
 	\item \textbf{Postcondizione}: l'azienda ha visualizzato il saldo IVA riguardante il trimestre scelto ed è a conoscenza dalla situazione di debito o credito verso il governo.
@@ -55,16 +55,16 @@
 		\begin{itemize}
 			\item nel caso il cliente fosse un'\textbf{azienda}:
 			\begin{itemize}
-				\item il nome dell'azienda destinataria;
+				\item il nome dell'azienda destinataria.
 			\end{itemize}
 			\item nel caso il cliente fosse un \textbf{cittadino}:
 			\begin{itemize}
 				\item il nome;
-				\item il cognome;
+				\item il cognome.
 			\end{itemize}
 		\end{itemize}
 		\item importo totale dell'ordine;
-		\item IVA a credito/debito derivante dalla transazione;
+		\item IVA a credito/debito derivante dalla transazione.
 	\end{itemize}
 	\item \textbf{Scenario principale}: l'utente visualizza una fattura, riguardante i propri  acquisti o le vendite;
 	\item \textbf{Precondizione}: l'azienda sta visualizzando una pagina che richiede la visualizzazione dei dati generali di una fattura;
@@ -97,7 +97,7 @@
 	\item \textbf{Scenario principale}: l'utente, dopo aver individuato il saldo desiderato, scarica, in formato PDF, l'elenco delle operazioni riguardanti il periodo trimestrale IVA selezionato;
 	\item \textbf{Inclusioni}:
 	\begin{itemize}
-		\item \textbf{UC15.2}: l'azienda, per poter scaricare le informazioni riguardanti le operazioni di un trimestre IVA concluso, deve aver prima visualizzato un trimestre IVA concluso [UC15.4];
+		\item \textbf{UC15.2}: l'azienda, per poter scaricare le informazioni riguardanti le operazioni di un trimestre IVA concluso, deve aver prima visualizzato un trimestre IVA concluso [UC15.4].
 	\end{itemize}
 	\item \textbf{Precondizione}: l'azienda ha selezionato un saldo IVA riguardante un trimestre concluso, ed ha premuto il bottone dedicato al download dei dati relativi agli ordini riguardanti tale periodo;
 	\item \textbf{Postcondizione}: l'azienda ha scaricato il documento PDF contenente tutti i dati riguardanti gli ordini del periodo trimestrale IVA selezionato.
@@ -111,7 +111,7 @@
 	\item \textbf{Scenario principale}: l'utente, dopo aver individuato il saldo desiderato, effettua il versamento dell'ammontare dovuto allo stato premendo sull'apposito pulsante. Per effettuare il versamento viene utilizzato MetaMask\glo;
 	\item \textbf{Inclusioni}:
 	\begin{itemize}
-		\item \textbf{UC15.4}: l'azienda per poter saldare il debito riguardante un trimestre IVA concluso deve averlo prima visualizzato;
+		\item \textbf{UC15.4}: l'azienda per poter saldare il debito riguardante un trimestre IVA concluso deve averlo prima visualizzato.
 	\end{itemize}
 	\item \textbf{Precondizione}: l'utente ha visualizzato un particolare saldo trimestrale IVA concluso. L'utente è in stato di debito verso il governo relativamente al saldo IVA trimestrale considerato. L'utente desidera saldare il debito relativo al suddetto trimestre, e dunque clicca sul pulsante dedicato;
 	\item \textbf{Postcondizione}: l'azienda ha effettuato il pagamento verso il governo. Viene aggiornato lo stato del trimestre IVA, che ora risulta saldato, sia nella visualizzazione da parte dell'azienda che da parte del governo.
@@ -125,7 +125,7 @@
 	\item \textbf{Scenario principale}: l'utente, dopo aver individuato il saldo desiderato:
 	\begin{enumerate}[label=\alph*.]
 		\item sceglie da un menù a tendina di quanti mesi dilazionare\glosp il pagamento, se tale opzione risulta disponibile;
-		\item conferma la dilazione\glosp del versamento dell'ammontare dovuto allo stato premendo sull'apposito pulsante. Per effettuare il versamento viene utilizzato MetaMask\glo;
+		\item conferma la dilazione\glosp del versamento dell'ammontare dovuto allo stato premendo sull'apposito pulsante. Per effettuare il versamento viene utilizzato MetaMask\glo.
 	\end{enumerate}
 	 
 	\item \textbf{Inclusioni}:
@@ -156,21 +156,21 @@
 			\item nel caso il cliente fosse un'\textbf{azienda}:
 			\begin{itemize}
 				\item il nome dell'azienda destinataria;
-				\item la partita IVA dell'azienda destinataria;
+				\item la partita IVA dell'azienda destinataria.
 			\end{itemize}
 			\item nel caso il cliente fosse un \textbf{cittadino}:
 			\begin{itemize}
 				\item il nome;
-				\item il cognome;
+				\item il cognome.
 			\end{itemize}
 		\end{itemize}
 		
-		\item indirizzo di spedizione dell'ordine;
+		\item indirizzo di spedizione dell'ordine.
 	\end{itemize}
 	\item \textbf{Scenario principale}: l'azienda seleziona una fattura da una lista e può leggere tutti i dettagli di tale fattura;
 	\item \textbf{Inclusioni}:
 	\begin{itemize}
-		\item \textbf{UC15.2}: per poter accedere ai dettagli di una particolare fattura è necessario selezionarla da una delle liste disponibili nei saldi;
+		\item \textbf{UC15.2}: per poter accedere ai dettagli di una particolare fattura è necessario selezionarla da una delle liste disponibili nei saldi.
 	\end{itemize}
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, l'utente ha aperto la pagina per la  visualizzazione dei dettagli di una specifica fattura;
 	\item \textbf{Postcondizione}: l'azienda ha visualizzato i dettagli della fattura selezionata.

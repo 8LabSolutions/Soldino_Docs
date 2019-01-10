@@ -21,12 +21,12 @@
 		\item dei prodotti inclusi nell'ordine [UC5];
 		\item totale IVA;
 		\item totale lordo\glo;
-		\item indirizzo di spedizione;
+		\item indirizzo di spedizione.
 	\end{itemize}
 	\item \textbf{Scenario principale}: l'utente visualizza i dati relativi ad un ordine;
 	\item \textbf{Inclusioni}:
 	\begin{itemize}
-		\item \textbf{UC5}: visualizzazione dei beni;
+		\item \textbf{UC5}: visualizzazione dei beni.
 	\end{itemize}
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e mette a disposizione tutte le pagine necessarie alla visualizzazione e gestione degli ordini;
 	\item \textbf{Postcondizione}: l'utente ha visualizzato l'elenco dei propri ordini.
@@ -42,12 +42,12 @@
 	\begin{itemize}
 		\item data dell'approvazione dell'ordine;
 		\item nome dell'azienda-venditrice;
-		\item partita IVA dell'azienda venditrice;
+		\item partita IVA dell'azienda venditrice.
 	\end{itemize}
 	
 	\item \textbf{Inclusioni}:
 	\begin{itemize}
-		\item \textbf{UC14.1}: Visualizzazione degli ordini;
+		\item \textbf{UC14.1}: Visualizzazione degli ordini.
 	\end{itemize}
 	\item \textbf{Precondizione}: l'utente sta visitando la pagina contenente la lista degli acquisti conclusi;
 	\item \textbf{Postcondizione}: l'utente visualizza la lista degli acquisti conclusi.
@@ -65,13 +65,13 @@
 			\begin{itemize}
 				
 				\item nome utente;
-				\item cognome utente;
+				\item cognome utente.
 			\end{itemize}
 			\item nel caso il cliente sia un'\textbf{azienda}:
 			\begin{itemize}
 				
 				\item nome azienda-cliente;
-				\item partita IVA dell'azienda-cliente;
+				\item partita IVA dell'azienda-cliente.
 			\end{itemize}
 		\end{itemize}
 		
@@ -79,7 +79,7 @@
 	\item \textbf{Scenario principale}:  l'utente visualizza le vendite concluse, con alcuni dati relativi al cliente; 
 	\item \textbf{Inclusioni}:
 	\begin{itemize}
-		\item \textbf{UC14.1}: visualizzazione degli ordini;
+		\item \textbf{UC14.1}: visualizzazione degli ordini.
 	\end{itemize}
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda e questo si trova nella pagina dedicata alla visualizzazione delle vendite concluse;
 	\item \textbf{Postcondizione}: l'utente visualizza la lista delle vendite concluse.
@@ -95,7 +95,7 @@
 	\item \textbf{Inclusioni}: 
 	\begin{itemize}
 		\item \textbf{UC14.6}: visualizzazione delle conferme d'acquisto 
-		relative agli acquisti in attesa di approvazione;
+		relative agli acquisti in attesa di approvazione.
 	\end{itemize}
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come cittadino o azienda ed ha mostrato la lista delle proposte d'acquisto\glosp che necessitano di conferma;
 	\item \textbf{Postcondizione}: l'azienda ha rifiutato la proposta 
@@ -113,12 +113,12 @@
 		\item \textbf{Inclusioni}: 
 	\begin{itemize}
 		\item \textbf{UC14.6}:  visualizzazione delle conferme d'ordine\glosp 
-		relative agli acquisti in attesa di approvazione;
+		relative agli acquisti in attesa di approvazione.
 	\end{itemize}
 	\item \textbf{Precondizione}: 
 	\begin{enumerate}[label=\alph*.]
 		\item il sistema ha riconosciuto l'utente autenticato come azienda o cittadino, e questo ha premuto il bottone per l'approvare una richiesta d'acquisto;
-		\item è stata superata la data ultima per l'approvazione della conferma d'ordine\glo;
+		\item è stata superata la data ultima per l'approvazione della conferma d'ordine\glo.
 	\end{enumerate}
 	\item \textbf{Postcondizione}: il suddetto ordine risulta approvato. Il meccanismo di escrow\glosp implementato nel sistema rende disponibile la fattura dell'ordine nella pagina dedicata dell'account del cliente. Inoltre l'ammontare relativo all'ordine attualmente trattenuto dal sistema viene versato all'azienda-venditrice.
 \end{itemize}
@@ -131,7 +131,7 @@ approvazione}
 	\item \textbf{Descrizione}: l'azienda/cittadino può visualizzare le conferme d'acquisto\glosp che necessitano di approvazione. Esse sono relative agli acquisti che ha effettuato ma non ancora approvato. Le conferme d'acquisto permettono di visualizzare gli stessi dati relativi ad un ordine, ma ogni prodotto visualizzato ha i seguenti dati aggiuntivi:
 	\begin{itemize}
 		\item prezzo netto del prodotto acquistato;	
-		\item aliquota IVA applicata al prodotto;
+		\item aliquota IVA applicata al prodotto.
 	\end{itemize}
 	\item \textbf{Scenario principale}: l'utente visualizza la lista delle 
 	conferme d'acquisto\glosp che necessitano di conferma. Per ognuna di esse 
