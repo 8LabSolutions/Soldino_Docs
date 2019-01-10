@@ -23,147 +23,145 @@ tipologie di fattori di rischio:
 	\item \textbf{RI}: Rischi Interpersonali.
 \end{itemize}
 
-\definecolor{righed}{HTML}{fafafa}
-\definecolor{righep}{HTML}{e1f5fe}
-\renewcommand{\arraystretch}{1.5}
 
+\renewcommand{\arraystretch}{1.5}
+\rowcolors{2}{dispari}{pari}
 	\arrayrulecolor{white}
-	\begin{longtable}{>{\centering}p{1cm}>{\centering}p{2.2cm}			
-	>{}p{5cm}>{\centering}p{2cm}>{\centering}p{2cm}}
-	\hline
+	\begin{longtable}{ 
+			>{\centering}p{0.17\textwidth} 
+			>{\raggedright}p{0.28\textwidth}
+			>{\raggedright}p{0.29\textwidth} 
+			>{\centering}p{0.15\textwidth}
+		}
+
+	
 	\caption{Tabella dei Rischi di Progetto}\\
 	\rowcolorhead
-	\colorhead\textbf{Cod.} & \colorhead\textbf{Nome} & 
-	\centering\colorhead\textbf{Descrizione} & 
-	\colorhead\textbf{Probabilità} &
-	\colorhead\textbf{Gravità}\tabularnewline
+	\colorhead\textbf{Nome \\ Codice} & \centering\colorhead\textbf{Descrizione} & 
+	\centering\colorhead\textbf{Rilevamento} & 
+	\colorhead\textbf{Grado di rischio} 
+	\tabularnewline
 	\endfirsthead
-	\caption[]{(continua)}\\
+	\rowcolor{white}\caption[]{(continua)}\\
+	\rowcolorhead
+	\colorhead\textbf{Nome \\ Codice} & \centering\colorhead\textbf{Descrizione} & 
+	\centering\colorhead\textbf{Rilevamento} & 
+	\colorhead\textbf{Grado di rischio} 
+	\tabularnewline
 	\endhead
-	\hline
-	\rowcolorlight RT1 & Inesperienza Tecnologica & Molte delle tecnologie da 
-	adottare nello 
-	sviluppo del progetto richiesto sono nuove per molti componenti del team, 
-	di conseguenza potrebbero insorgere problemi operativi. & Alta & 
-	Alta
-	\tabularnewline \arrayrulecolor{white}\hline
-	%<temp>
-	\rowcolorlight\multicolumn{2}{p{3.63cm}}{\centering\textbf{Prevenzione}}& 
-	\multicolumn{3}{p{9.874cm}}{Ciascun componente del team si impegnerà nello 
-	studio autonomo al fine di apprendere al meglio tali tecnologie.}
-	\tabularnewline 
-	\rowcolorlight\multicolumn{2}{p{3.63cm}}{\centering\textbf{Monitoraggio}}& 
-	\multicolumn{3}{p{9.874cm}}{Ciascun componente del team si impegnerà nello 
-		studio autonomo al fine di apprendere al meglio tali tecnologie.}
-	\tabularnewline 
-	\rowcolorlight\multicolumn{2}{p{3.63cm}}{\centering\textbf{Piano di contingenza}}& 
-	\multicolumn{3}{p{9.874cm}}{Ciascun componente del team si impegnerà nello 
-		studio autonomo al fine di apprendere al meglio tali tecnologie.}
-	\tabularnewline 	 
-	%<\temp>
-	\arrayrulecolor{white}
-	\rowcolordark RO1 & Calcolo Tempi & La massiccia presenza di tecnologie 
-	nuove per molti 
-	dei componenti del team, può comportare imprecisioni/variazioni nelle 
-	tempestiche iniziali. & Alta & Alta
-	\tabularnewline \hline
-	\rowcolordark\multicolumn{2}{p{3.63cm}}{\centering\textbf{Piano di contingenza}}& 
-	\multicolumn{3}{p{9.874cm}}{Il gruppo 
-	ha predisposto 
-	apposite tabelle condivise, per monitorare i tempi di sviluppo ed 
-	evidenziare eventuali ritardi, il responsabile valuterà una eventuale 
-	riallocazione delle risorse.}
-	\tabularnewline  \arrayrulecolor{white}
-	\rowcolordark\multicolumn{2}{p{3.63cm}}{\centering\textbf{Piano di contingenza}}& 
-	\multicolumn{3}{p{9.874cm}}{Il gruppo 
-		ha predisposto 
-		apposite tabelle condivise, per monitorare i tempi di sviluppo ed 
-		evidenziare eventuali ritardi, il responsabile valuterà una eventuale 
-		riallocazione delle risorse.}
-	\tabularnewline
-	\rowcolordark\multicolumn{2}{p{3.63cm}}{\centering\textbf{Piano di contingenza}}& 
-	\multicolumn{3}{p{9.874cm}}{Il gruppo 
-		ha predisposto 
-		apposite tabelle condivise, per monitorare i tempi di sviluppo ed 
-		evidenziare eventuali ritardi, il responsabile valuterà una eventuale 
-		riallocazione delle risorse.}
-	\tabularnewline
-	\rowcolorlight RO2 & Calcolo Costi & Considerata l'inesperienza del team 
-	nelle valutazioni
-	economiche, esse potranno risultare imprecise. & Media & Alta
-	\tabularnewline \hline
-	\rowcolorlight\multicolumn{2}{p{3.63cm}}{\centering\textbf{Piano di contingenza}}& 
-	\multicolumn{3}{p{9.874cm}}{
-	Utilizzando le stesse 
-	tabelle del caso precedente, a seguito di rilevanti cambiamenti nei costi e 
-	nelle tempistiche, tali variazioni verranno segnalate al proponente.}
-	\tabularnewline  \arrayrulecolor{white}
-	\rowcolordark RO3 & Impegni Accademici & Possono verificarsi momenti in cui 
-	uno o più 
-	componenti del team siano meno disponibili a causa di alcuni impegni di tipo 
-	accademico. & Alta & Bassa
-	\tabularnewline \hline
-	\rowcolordark\multicolumn{2}{p{3.63cm}}{\centering\textbf{Piano di contingenza}}& 
-	\multicolumn{3}{p{9.874cm}}{Al fine di 
-	prevenire 
-	rallentamenti durante il lavoro, è stato predisposto un calendario condiviso 
-	nel quale ciascun componente deve segnalare i propri impegni; in questo 
-	modo il responsabile potrà suddividere il lavoro in maniera ottimale.}
-	\tabularnewline  \arrayrulecolor{white}
-	\rowcolorlight RO4 & Impegni Personali & Possono verificarsi momenti in cui 
-	uno o più 
-	componenti del team siano meno disponibili a causa di alcuni impegni di tipo 
-	personale. & Media & Bassa
-	\tabularnewline \hline
-	\rowcolorlight\multicolumn{2}{p{3.63cm}}{\centering\textbf{Piano di contingenza}}& 
-	\multicolumn{3}{p{9.874cm}}{Come nel 
-	caso precedente è 
-	stato predisposto un calendario condiviso al fine di migliorare la 
-	suddivisione dei compiti.}
-	\tabularnewline  \arrayrulecolor{white}
-	\rowcolordark RO5 & Ritardi & Una o più delle problematiche sopracitate 
-	possono 
-	comportare ritardi. & Media & Bassa
-	\tabularnewline \hline
-	\rowcolordark\multicolumn{2}{p{3.63cm}}{\centering\textbf{Piano di contingenza}}& 
-	\multicolumn{3}{p{9.874cm}}{Il responsabile provvederà 
-	ad una eventuale riassegnazione delle risorse e, se necessario, ad una 
-	segnalazione al committente/proponente.}
-	\tabularnewline  \arrayrulecolor{white}
-	\rowcolorlight RI1 & Comunicazione Interna & Nel corso dello sviluppo del progetto 
-	potrebbero verificarsi dei 
-	momenti in cui uno più membri del gruppo siano irreperibili. & Bassa & Alta
-	\tabularnewline \hline
-	\rowcolorlight\multicolumn{2}{p{3.63cm}}{\centering\textbf{Piano di contingenza}}& 
-	\multicolumn{3}{p{9.874cm}}{Ciascun membro del team ha 
-	fornito più opzioni per essere contattato e si impegna a rispondere ad 
-	eventuali richieste. Sarà inoltre responsabilità personale segnalare 
-	eventuali momenti di irreperibilità.}
-	\tabularnewline  \arrayrulecolor{white}
-	\rowcolordark RI2 & Comunicazione Esterna & Il proponente ha la propria 
-	sede all'estero, 
-	di conseguenza le comunicazioni saranno più difficili. & Bassa & Media
-	\tabularnewline \hline
-	\rowcolordark\multicolumn{2}{p{3.63cm}}{\centering\textbf{Piano di contingenza}}& 
-	\multicolumn{3}{p{9.874cm}}{Come per le comunicazioni 
-	interne, sono stati predisposti più canali di comunicazione; le videoconferenze con il proponente saranno organizzate con il dovuto preavviso. 
-	In occasione di tali conferenze ciascun membro del gruppo si impegnerà a 
-    raccogliere domande, dubbi e chiarimenti da sottoporre al referente 
-	dell'azienda proponente.}
-	\tabularnewline  \arrayrulecolor{white}
-	\rowcolorlight RI3 & Contrasti interni & Come in qualsiasi gruppo, nel 
-	corso delle varie 
-	attività potranno emergere contrasti e tensioni tra i vari componenti. & 
-	Bassa & Media
-	\tabularnewline \hline
-	\rowcolorlight\multicolumn{2}{p{3.63cm}}{\centering\textbf{Piano di contingenza}}& 
-	\multicolumn{3}{p{9.874cm}}{Ciascun membro del team si 
-	impegnerà a limitare tali tensioni e fare in modo che esse non influiscano 
-	nel normale svolgimento delle attività; in caso contrario, il responsabile 
-	provvederà a limitare tali contrasti.}
-	\tabularnewline  
 	
-	\			
+	%RT1---------------------------------------------------------
+	 Inesperienza Tecnologica \\ RT1 & 
+	 Molte delle tecnologie da adottare nello 
+	 sviluppo del progetto richiesto sono nuove per molti componenti del team, 
+	 di conseguenza potrebbero insorgere problemi operativi. &
+	 RILEVAMENTO [TESTO]&
+	 Occorrenza: \textbf{Alta} \\
+	 Pericolosità: \textbf{Alta} 
+	 \tabularnewline
+	 \multicolumn{1}{p{0.17\textwidth}}{\centering\textbf{Piano di contingenza}}& 
+	 \multicolumn{3}{p{0.7775\textwidth}}{Ciascun componente del team si impegnerà nello 
+	 	studio autonomo al fine di apprendere al meglio tali tecnologie.}
+	 \tabularnewline 
+	 	
+	 %RO1---------------------------------------------------------
+	Calcolo Tempistice \\ R01 &
+	La massiccia presenza di tecnologie 
+	nuove per molti 
+	dei componenti del team, può comportare imprecisioni/variazioni nel calcolo 
+	delle tempestiche.&
+	[testo]&	
+	Occorrenza: \textbf{Alta} \\
+	Pericolosità: \textbf{Alta}
+	\tabularnewline
+	\multicolumn{1}{p{0.17\textwidth}}{\centering\textbf{Piano di contingenza}}& 
+	\multicolumn{3}{p{0.7775\textwidth}}{ [testo]}
+	\tabularnewline	
+	
+	%R02------------------------------------------------------------
+	Calcolo costi \\ RO2 &
+	Considerata l'inesperienza del team 
+	nelle valutazioni
+	economiche, esse potranno risultare imprecise. &
+	[testo]&
+	Occorrenza: \textbf{Media} \\
+	Pericolosità: \textbf{Alta}
+	\tabularnewline
+	\multicolumn{1}{p{0.17\textwidth}}{\centering\textbf{Piano di contingenza}}& 
+	\multicolumn{3}{p{0.7775\textwidth}}{ [testo]}
+	\tabularnewline	
+	
+	%R03------------------------------------------------------------
+	Impegni Accademici \\ RO3 & 
+	Possono verificarsi momenti in cui uno o più componenti del team siano meno disponibili a causa di alcuni impegni di tipo accademico. &
+	[testo]&
+	Occorrenza: \textbf{Alta} \\
+	Pericolosità: \textbf{Bassa}
+	\tabularnewline
+	\multicolumn{1}{p{0.17\textwidth}}{\centering\textbf{Piano di contingenza}}& 
+	\multicolumn{3}{p{0.7775\textwidth}}{ [testo]}
+	\tabularnewline	
+	
+	%R04------------------------------------------------------------
+    Impegni Personali \\ RO4 &
+	Possono verificarsi momenti in cui uno o più componenti del team siano meno disponibili a causa di alcuni impegni di tipo personale.&
+	[testo]&
+	Occorrenza: \textbf{Media} \\
+	Pericolosità: \textbf{Bassa}
+	\tabularnewline
+	\multicolumn{1}{p{0.17\textwidth}}{\centering\textbf{Piano di contingenza}}& 
+	\multicolumn{3}{p{0.7775\textwidth}}{ [testo]}
+	\tabularnewline	
+	
+	%R05------------------------------------------------------------
+	 Ritardi \\ RO5 &
+	Una o più delle problematiche sopracitate 
+	possono 
+	comportare ritardi. (Metterei un riferimento ai rischi sopracitati usando il codice)&
+	[testo]&
+	Occorrenza: \textbf{Media} \\
+	Pericolosità: \textbf{Bassa}
+	\tabularnewline
+	\multicolumn{1}{p{0.17\textwidth}}{\centering\textbf{Piano di contingenza}}& 
+	\multicolumn{3}{p{0.7775\textwidth}}{ [testo]}
+	\tabularnewline	
+	
+	%RI1------------------------------------------------------------
+	Comunicazione Interna \\ RI1 & 
+	Nel corso dello sviluppo del progetto potrebbero verificarsi dei 
+	momenti in cui uno più membri del gruppo siano irreperibili. &
+	[testo]&
+	Occorrenza: \textbf{Bassa} \\
+	Pericolosità: \textbf{Alta}
+	\tabularnewline
+	\multicolumn{1}{p{0.17\textwidth}}{\centering\textbf{Piano di contingenza}}& 
+	\multicolumn{3}{p{0.7775\textwidth}}{ [testo]}
+	\tabularnewline	
+	
+	%RI2------------------------------------------------------------
+	 Comunicazione Esterna \\ RI2 &
+	Il proponente ha la propria 
+	sede all'estero, di conseguenza le comunicazioni saranno più difficili. &
+	[testo]&
+	Occorrenza: \textbf{Bassa} \\
+	Pericolosità: \textbf{Media}
+	\tabularnewline
+	\multicolumn{1}{p{0.17\textwidth}}{\centering\textbf{Piano di contingenza}}& 
+	\multicolumn{3}{p{0.7775\textwidth}}{ [testo]}
+	\tabularnewline	
+	
+	%RI3------------------------------------------------------------
+	 Contrasti interni \\ RI3 &
+	Come in qualsiasi gruppo, nel 
+	corso delle varie attività potranno emergere contrasti e tensioni tra i vari componenti. &
+	[testo]&
+	Occorrenza: \textbf{Bassa} \\
+	Pericolosità: \textbf{Media}
+	\tabularnewline
+	\multicolumn{1}{p{0.17\textwidth}}{\centering\textbf{Piano di contingenza}}& 
+	\multicolumn{3}{p{0.7775\textwidth}}{ [testo]}
+	\tabularnewline	
+		
 	\end{longtable}
-
+		
 \renewcommand{\arraystretch}{1}
