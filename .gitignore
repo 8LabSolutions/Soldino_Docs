@@ -22,4 +22,5 @@
 *.out
 *.synctex.gz
 main.pdf
+*.pdf
 
