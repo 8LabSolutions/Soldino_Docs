@@ -8,7 +8,8 @@ Le domande hanno riguardato:
 
 \begin{itemize}
 	\item \textbf{Aspetti generali del capitolato}: chiarire se sviluppare una 
-			\textit{DApp} per ogni funzionalità e definire alcuni requisiti specificati
+			\textit{DApp\glo{}} per ogni funzionalità e definire alcuni 
+			requisiti specificati
 			 nel capitolato;
 	\item \textbf{Database}: precisazione sul concetto di database di un sito statico
 			 e chiarimento su come interfacciarsi da una pagina che viene ospitata sul server;
@@ -16,10 +17,12 @@ Le domande hanno riguardato:
 			 era risultato poco chiaro;
 	\item \textbf{Standard}: richiesta nello specifico relativa agli standard a cui sottostare
 			 e come rispettarli;
-	\item \textbf{MetaMask}: capire meglio alcuni aspetti di questo plug-in;
+	\item \textbf{MetaMask\glo{}}: capire meglio alcuni aspetti di questo 
+	plug-in\glo{};
 	\item \textbf{Accesso}: precisazione relativa alla login e alla registrazione di 
 			 utente/azienda;
-	\item \textbf{Token\glo{}}: capire come si intende creare e distribuire i token;
+	\item \textbf{Token\glo{}}: capire come si intende creare e distribuire i 
+	token\glo{};
 	\item \textbf{Avvisi}: capire dove vogliono che l'utente/azienda/governo venga 
 			 notificato e dove non è strettamente necessario.
 \end{itemize}
@@ -28,48 +31,43 @@ il gruppo ha deciso di fissare un incontro interno per suddividere il lavoro rim
 \pagebreak
 
 \section{Riepilogo tracciamenti}
-\begin{table}[H]
+
 	%\renewcommand{\arraystretch}{1.5}
 	\rowcolors{2}{pari}{dispari}
 	
-	\begin{longtable}{ >{\centering}p{0.20\textwidth} >{\centering}p{0.70\textwidth}}
-			
+	\begin{longtable}{ >{\centering}p{0.20\textwidth} >{}p{0.70\textwidth}}
+		\caption{Decisioni della riunione interna del 2018-12-21}\\	
 		\rowcolorhead
-		\centering \textbf{\color{white}Codice} 
-		& \centering \textbf{\color{white}Decisione} 
+		\textbf{\color{white}Codice} 
+		& \centering\textbf{\color{white}Decisione} 
+		\tabularnewline 
+		\endfirsthead
+		VE\_2.1 & La piattaforma non utilizzerà un server per il database,
+				eventuali dati saranno salvati sulla blockchain\glo{}.
 		
 		\tabularnewline 
-		VE\_2.1 & Specificato l'utilizzo non necessario di un server per il database,
-				con la possibilità di salvare dati sulla blockchain.
-		
-		\tabularnewline 
-		VE\_2.2 & \textit{"Put on hold"}: concordato di informarsi sul significato del termine.
-		
-		\tabularnewline 
-		VE\_2.3 & Deciso di seguire gli standard EIP-712 e ESLint e informarsi su di essi.
+		VE\_2.2 & Nello sviluppo verranno utilizzati gli standard EIP-712 e 
+		ESLint.
 	
 		\tabularnewline 
-		VE\_2.4 & \textit{MetaMask} gestisce l'accessibilità e non è richiesta una versione
-				per screen reader\glo{}.
+		VE\_2.3 & Il progetto non prevede lo sviluppo di nessuna versione per 
+		screen reader\glo{} in quanto l'accessibilità è gestita da 
+		MetaMask\glo{}.
+
 		
 		\tabularnewline 
-		VE\_2.5 & A livello di browser concordato che funzioni sulle ultime versioni 
-				di \textit{Google Chrome} e \textit{Mozilla Firefox}.
-		
-		\tabularnewline 
-		VE\_2.6 & Deciso che gli utenti registrati sono salvati in uno \textit{Smart 
-				Contracts} ed è una scelta opzionale il creare due step di registrazione.
+		VE\_2.4 & Gli utenti registrati sono salvati in uno Smart 
+				Contracts\glo{} ed è una scelta opzionale il creare due step 
+				di registrazione.
 				
 		\tabularnewline
-		VE\_2.7 & Scelto che l'\textit{Admin} può gestire i token\glo{}, creandoli 
-				e distribuendoli a piacimento. Lo scopo è avere nel sito una moneta che si 
-				possa utilizzare.
+		VE\_2.5 & Admin può gestire i token\glo{}, creandoli 
+				e distribuendoli a piacimento. Lo scopo è avere nel sito una 
+				moneta che si possa utilizzare.
 				
 		\tabularnewline
-		VE\_2.8 & Stabilito che la lista delle aziende sarà pubblica e che il governo potrà 
+		VE\_2.6 & La lista delle aziende sarà pubblica, il governo potrà 
 				verificare le aziende che hanno pagato e quelle che ancora devono farlo.
 		
 	\end{longtable}
-	\caption{Decisione della riunione esterna del 2018-12-21}	
 
-\end{table}
