@@ -1,7 +1,7 @@
 \section{Processi primari}
 \subsection{Fornitura}
 \subsubsection{Scopo}
-Lo scopo del processo di fornitura è di determinare le procedure e le risorse necessarie allo svolgimento del progetto. Una volta comprese le richieste del proponente e aver stilato uno \textit{Studio di Fattibilità}, il processo può essere avviato con fine di soddisfare ognuna di queste richieste. Inoltre si deve stipulare e concordare con l'acquirente un contratto per la consegna del prodotto. Si passa dunque a determinare le procedure, le risorse necessarie, e si sviluppa un \textit{Piano di Progetto} che getterà le basi da perseguire fino alla consegna del materiale prodotto.
+Lo scopo del processo di fornitura è di determinare le procedure e le risorse necessarie allo svolgimento del progetto. Una volta comprese le richieste del proponente e aver stilato uno \textit{Studio di Fattibilità}, il processo può essere avviato con fine di soddisfare ognuna di queste richieste. Inoltre si deve stipulare e concordare con il proponente un contratto per la consegna del prodotto. Si passa dunque a determinare le procedure, le risorse necessarie, e si sviluppa un \textit{Piano di Progetto} che getterà le basi da perseguire fino alla consegna del materiale prodotto.
 	Il processo di fornitura è composto dalle seguenti fasi:
 	\begin{itemize}
 		\item avvio;
@@ -26,10 +26,10 @@ Lo scopo del processo di fornitura è di determinare le procedure e le risorse n
 	Questa sezione tratta le norme che i membri del gruppo \textit{8Lab Solutions} devono rispettare in tutte le fasi di progettazione, sviluppo e consegna del prodotto \textit{Soldino}, al fine di diventare fornitori nei confronti del proponente \textit{Red Babel} e dei committenti Prof. Tullio Vardanega e Prof. Riccardo Cardin.
 	\subsubsection{Attività}
 		\paragraph{Studio di Fattibilità} \mbox{}\\ \mbox{}\\
-		E' compito del responsabile di progetto organizzare riunioni tra i membri del gruppo al fine di permettere lo scambio di opinioni sui capitolati proposti.
+		\'E compito del responsabile di progetto organizzare riunioni tra i membri del gruppo al fine di permettere lo scambio di opinioni sui capitolati proposti.
 		Lo \textit{Studio di Fattibilità}, redatto dagli analisti, indica per ogni capitolato\glo:
 		\begin{itemize}
-			\item \textbf{Informazioni generali}: vengono elencate le informazioni di base: il nome del progetto, il proponente e il committente;
+			\item \textbf{Informazioni generali}: vengono elencate le informazioni di base, come il nome del progetto, il proponente e il committente;
 			\item \textbf{Descrizione e finalità del progetto}: viene fatta una presentazione del capitolato\glosp in generale, una descrizione delle caratteristiche principali richieste per il prodotto e viene definito l'obiettivo che si vuole raggiungere;
 			\item \textbf{Tecnologie interessate}: viene fatto un elenco delle tecnologie richieste per lo svolgimento, che rientrano nel dominio tecnologico;
 			\item \textbf{Aspetti positivi, criticità e fattori di rischio}: vengono esposte le considerazione fatte dal gruppo sugli aspetti positivi e sui fattori di rischio del capitolato\glo;
@@ -98,7 +98,7 @@ Lo scopo del processo di fornitura è di determinare le procedure e le risorse n
 			\begin{itemize}
 				\item definire lo scopo del lavoro;
 				\item fornire ai progettisti riferimenti precisi ed affidabili;
-				fissare le funzionalità e i requisiti concordati col cliente;
+				\item fissare le funzionalità e i requisiti concordati col cliente;
 				\item fornire  una  base  per  raffinamenti  successivi  al  fine  di  garantire  un miglioramento continuo del prodotto e del processo di sviluppo;
 				\item fornire ai verificatori riferimenti per l'attività di controllo dei test;
 				\item calcolare la mole di lavoro per tracciare dei riferimenti per un stima dei costi.
@@ -112,8 +112,9 @@ Lo scopo del processo di fornitura è di determinare le procedure e le risorse n
 				\item lettura del capitolato\glo, analisi e approfondimento dello stesso;
 				\item confronto con il proponente;
 				\item confronto tra membri del team di progetto;
-				\item possono emergere dall'analisi di uno o più casi d'uso.
+				\item analisi di uno o più casi d'uso.  \\
 			\end{itemize}
+			\noindent
 			\textbf{Casi d'uso} \newline \newline
 			Rappresenta un diagramma che esprime un comportamento,
 			offerto o desiderato, sulla base di risultati osservabili.
@@ -131,18 +132,20 @@ Lo scopo del processo di fornitura è di determinare le procedure e le risorse n
 				\item estensioni(se presenti);
 				\item specializzazioni(se presenti);
 				\item precondizione;
-				\item postcondizione.
+				\item postcondizione. \\
 			\end{itemize}
+			\noindent
 			\textbf{Codice identificativo dei casi d'uso} \newline \newline
 			Il codice di ogni caso d'uso seguirà questo formalismo: \newline \newline
-			\centerline{\textbf{UC[codice\_padre].[codice\_livello]}} \\
+			\centerline{\textbf{UC[codice\_padre].[codice\_figlio]}} \\
 			Dove:
 			\begin{itemize}
 				\item \textbf{codice\_padre}: numero che identifica univocamente i casi d'uso;
-				\item \textbf{codice\_livello}: numero progressivo che identifica i sottocasi. Può a sua volta includere altri livelli.
+				\item \textbf{codice\_figlio}: numero progressivo che identifica i sottocasi. Può a sua volta includere altri livelli. \\
 			\end{itemize}
-			\pagebreak
+			%\pagebreak
 			%esempio di caso d'uso?(immagine)
+			\noindent
 			\textbf{Requisiti} \newline \newline
 			Ogni requisito è composto dalla seguente struttura:
 			\begin{itemize}
@@ -152,9 +155,9 @@ Lo scopo del processo di fornitura è di determinare le procedure e le risorse n
 				\begin{itemize}
 					\item \textbf{Importanza}: ogni requisito può assumere uno dei seguenti valori:
 					\begin{itemize}
-						\item \textit{1}: requisito obbligatorio: irrinunciabili per qualcuno degli stakeholder;
-						\item \textit{2}: requisito desiderabile: non strettamente necessari ma  a valore aggiunto riconoscibile;
-						\item \textit{3}: requisito opzionale: relativamente utili oppure contrattabili più avanti nel progetto;	
+						\item \textit{1}: requisito obbligatorio, ovvero irrinunciabile per gli stakeholder;
+						\item \textit{2}: requisito desiderabile, ovvero non strettamente necessari ma a valore aggiunto riconoscibile;
+						\item \textit{3}: requisito opzionale, ovvero relativamente utile oppure contrattabile più avanti nel progetto;	
 					\end{itemize}
 					\item \textbf{Tipologia}: ogni requisito può assumere uno dei seguenti valori:
 					\begin{itemize}
@@ -172,7 +175,7 @@ Lo scopo del processo di fornitura è di determinare le procedure e le risorse n
 					\item \textit{capitolato\glo}: si tratta di un requisito individuato dalla lettura del capitolato\glo;
 					\item \textit{interno}: si tratta di un requisito che gli analisti hanno ritenuto opportuno aggiungere;
 					\item \textit{caso d'uso}: il requisito è estrapolato da uno o più casi d'uso. In questo caso deve essere riportato il codice univoco del caso d'uso;
-					\item \textit{verbale}: si tratta di un requisito individuato in seguito ad una richiesta di chiarimento con il proponente. Tali informazioni sono riportate nei verbali in cui ogni requisito individuato è segnato da un codice presente nella tabella dei tracciamenti.
+					\item \textit{verbale}: si tratta di un requisito individuato in seguito ad una richiesta di chiarimento con il proponente. Tali informazioni sono riportate nei verbali in cui ogni requisito individuato è segnato da un codice presente nella tabella dei tracciamenti. \\
 				\end{itemize}
 			\end{itemize}
 
@@ -187,8 +190,8 @@ Lo scopo del processo di fornitura è di determinare le procedure e le risorse n
 			\textbf{Descrizione} \newline \newline
 			Le parti principali sono due:
 			\begin{itemize}
-				\item \textbf{Technology baseline}: contiene le specifiche della progettazione ad alto livello del prodotto e delle sue componenti; vengono elencati i diagrammi UML\glosp che verranno utilizzati per la realizzazione dell'architettura e i test di verifica.
-				\item \textbf{Product baseline}: dettaglia ulteriormente l'attività di progettazione, integrando ciò che è riportato nella Technology baseline. Definisce infine, i test necessari alla verifica.
+				\item \textbf{Technology baseline}: contiene le specifiche della progettazione ad alto livello del prodotto e delle sue componenti, l'elenco dei diagrammi UML\glosp che saranno utilizzati per la realizzazione dell'architettura e i test di verifica;
+				\item \textbf{Product baseline}: dettaglia ulteriormente l'attività di progettazione, integrando ciò che è riportato nella Technology baseline. Inoltre definisce i test necessari alla verifica.
 			\end{itemize}
 			\textbf{Technology baseline} \newline \newline
 			Redatta dal progettista, dovrà includere:
@@ -209,31 +212,30 @@ Lo scopo del processo di fornitura è di determinare le procedure e le risorse n
 			A carico del progettista c'è anche la Product baseline che si sofferma su diversi aspetti tra i quali:
 			\begin{itemize}
 				\item \textbf{definizione delle classi}: ogni classe deve essere descritta in modo da spiegarne in maniera esaustiva lo scopo e le funzionalità, evitando ridondanze;
-				\item \textbf{tracciamento delle classi}: ogni requisito deve essere tracciato in modo da garantire che per ognuno esista una classe che lo soddisfi. E' fondamentale, tracciare ogni requisito, per permettere di risalire alle classi ad esso associate.
+				\item \textbf{tracciamento delle classi}: ogni requisito deve essere tracciato in modo da garantire che per ognuno esista una classe che lo soddisfi. Questa operazione è fondamentale per permettere di risalire alle classi ad esso associate;
 				\item \textbf{test di unità}: devono essere definiti al fine di verificare che le parti funzionino individualmente nel modo stabilito.
 			\end{itemize}
 		\paragraph{Codifica} \mbox{}\\ \mbox{}\\
 			\textbf{Scopo} \newline \newline
 			Questa attività ha come scopo quello di normare l'effettiva realizzazione del prodotto software richiesto. In questa fase si concretizza la soluzione attraverso la programmazione. I programmatori dovranno attenersi a queste norme durante la fase di programmazione ed implementazione. \newline \newline
 			\textbf{Aspettative} \newline \newline
-			Obiettivo dell’attività è la creazione di un prodotto software conforme alle richieste	prefissate con il proponente.
+			Obiettivo dell'attività è la creazione di un prodotto software conforme alle richieste	prefissate con il proponente.
 			L'uso di norme e convenzioni in questa fase, è fondamentale per permettere la generazione di codice leggibile ed uniforme,  agevolare le fasi di manutenzione,  verifica e validazione e migliorare la qualità di prodotto. \newline \newline
 			\textbf{Descrizione} \newline \newline
-			La scrittura del codice dovrà rispettare quanto stabilito nella documentazione di prodotto. Dovrà perseguire gli obiettivi di qualità definiti all’interno del documento \textit{Piano di Qualifica v1.0.0} per poter garantire una buona qualità del codice. \newline \newline
+			La scrittura del codice dovrà rispettare quanto stabilito nella documentazione di prodotto. Dovrà perseguire gli obiettivi di qualità definiti all'interno del documento \textit{Piano di Qualifica v1.0.0} per poter garantire una buona qualità del codice. \newline \newline
 			\textbf{Stile di codifica} \newline \newline
-			Al fine di garantire uniformità nel codice del progetto ciascun membro del gruppo è
+			Al fine di garantire uniformità nel codice del progetto, ciascun membro del gruppo è
 			tenuto a rispettare le seguenti norme:
 			\begin{itemize}
 				\item \textbf{Indentazione}: i blocchi innestati devono essere correttamente indentati, usando per ciascun livello di indentazione quattro (4) spazi (fanno eccezione i commenti). Al fine di assicurare il rispetto di questa regola si consiglia di configurare adeguatamente il proprio editor o IDE;
 				\item \textbf{Parentesizzazione}: è richiesto di inserire le parentesi di delimitazione dei costrutti in linea e non al di sotto di essi;
-				\item \textbf{Scrittura dei metodi}: è desiderabile ove possibile mantenere i metodi brevi(poche righe di codice). Spesso però, metodi "lunghi" sono più appropriati;
-				\item \textbf{Univocità dei nomi}: classi, metodi, variabili devono avere un nome univoco	ed esplicativo al fine di evitare quanto più possibile ambiguità di comprensione;
-				\item \textbf{Classi}: i nomi delle classi iniziano sempre con una lettera maiuscola;
-				\item \textbf{Costanti}: i nomi delle costanti vanno scritte usando solo maiuscole;
-				\item \textbf{Metodi}: i nomi dei metodi iniziano con una lettera minuscola;
-				se sono composti da più parole le successive devono iniziare con una lettera
-				maiuscola;
-				\item \textbf{Lingua}: il codice, come anche i commenti deve essere scritto in lingua inglese.
+				\item \textbf{Scrittura dei metodi}: è desiderabile, ove possibile, mantenere i metodi brevi(poche righe di codice);
+				\item \textbf{Univocità dei nomi}: classi, metodi, variabili devono avere un nome univoco	ed esplicativo al fine di evitare ambiguità e incomprensione;
+				\item \textbf{Classi}: i nomi delle classi devono iniziare sempre con una lettera maiuscola;
+				\item \textbf{Costanti}: i nomi delle costanti devono essere scritte usando solo maiuscole;
+				\item \textbf{Metodi}: i nomi dei metodi devono iniziare con una lettera minuscola. Nel caso
+				siano composti da più parole, quelle successive devono iniziare con una lettera maiuscola (CamelCase\glo{});
+				\item \textbf{Lingua}: il codice, come anche i commenti, deve essere scritto in lingua inglese.
 			\end{itemize}
 			Una parte del front end\glosp è normata dalla "Airbnb JavaScript style guide", il cui uso è implementato attraverso ESLint\glo. \newline \newline
 			%\subparagraph{Intestazione} \mbox{}\\
@@ -242,7 +244,7 @@ Lo scopo del processo di fornitura è di determinare le procedure e le risorse n
 			indurre  ad  una  maggiore  occupazione  di  memoria  rispetto  a  soluzioni
 			iterative.
 	\subsubsection{Strumenti}
-	Di seguito sono elencati gli strumenti utilizzati dal gruppo durante il progetto, nel processo di sviluppo.
+	Di seguito sono elencati gli strumenti utilizzati dal gruppo durante il progetto per il processo di sviluppo.
 		\paragraph{ESLint} \mbox{}\\ \mbox{}\\
 		Utilità open-source per scrivere codice JavaScript secondo regole di codifica predeterminate. Esegue segnalazioni su patterns presenti nel codice ECMAScript/JavaScript.
 		\paragraph{PragmaDB} \mbox{}\\ \mbox{}\\
