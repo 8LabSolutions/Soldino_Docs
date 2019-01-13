@@ -46,10 +46,6 @@
 		\item partita IVA dell'azienda venditrice.
 	\end{itemize}
 	\item \textbf{Scenario principale}: l'utente visualizza la lista degli acquisti conclusi. 
-	\item \textbf{Inclusioni}:
-	\begin{itemize}
-		\item \textbf{UC14.1}: Visualizzazione degli ordini.
-	\end{itemize}
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l’utente autenticato come azienda o cittadino e
 	mette a disposizione la pagina di visualizzazione degli acquisti;
 	\item \textbf{Postcondizione}: l'utente visualizza la lista degli acquisti conclusi.
@@ -79,10 +75,6 @@
 		
 	\end{itemize}
 	\item \textbf{Scenario principale}:  l'utente visualizza le vendite concluse, con alcuni dati relativi al cliente; 
-	\item \textbf{Inclusioni}:
-	\begin{itemize}
-		\item \textbf{UC14.1}: visualizzazione degli ordini.
-	\end{itemize}
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda e questo si trova nella pagina dedicata alla visualizzazione delle vendite concluse;
 	\item \textbf{Postcondizione}: l'utente visualizza la lista delle vendite concluse.
 \end{itemize}
@@ -94,11 +86,7 @@
 	\item \textbf{Attori Secondari}: MetaMask\glo, azienda;
 	\item \textbf{Descrizione}: le aziende ed i cittadini possono rifiutare una conferma d'acquisto\glo, ad esempio se notano che i dati inviatogli non corrispondono all'ordine effettuato o le aliquote IVA imposte risultano errate. Per effettuare l'operazione verrà utilizzato MetaMask\glo;
 	\item \textbf{Scenario principale}: l'utente visualizza una conferma d'acquisto\glosp che necessita di approvazione e decide di rifiutarla;
-	\item \textbf{Inclusioni}: 
-	\begin{itemize}
-		\item \textbf{UC14.6}: visualizzazione delle conferme d'acquisto 
-		relative agli acquisti in attesa di approvazione.
-	\end{itemize}
+
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come cittadino o azienda ed ha mostrato la lista delle proposte d'acquisto\glosp che necessitano di conferma;
 	\item \textbf{Postcondizione}: l'azienda ha rifiutato la proposta 
 	d'acquisto\glo. La proposta non sarà più presente nella lista di attesa per 
@@ -112,11 +100,7 @@
 	\item \textbf{Descrizione}: l'azienda accetta la proposta d'acquisto\glosp ricevuta;
 	\item \textbf{Scenario principale}: l'azienda/cittadino decide di approvare una proposta d'acquisto\glosp da parte di un venditore;
 	\item \textbf{Scenario alternativo}: l'azienda/cittadino non ha né confermato né approvato la conferma d'acquisto entro la data ultima per l'approvazione;
-		\item \textbf{Inclusioni}: 
-	\begin{itemize}
-		\item \textbf{UC14.6}:  visualizzazione delle conferme d'ordine\glosp 
-		relative agli acquisti in attesa di approvazione.
-	\end{itemize}
+
 	\item \textbf{Precondizione}: 
 	\begin{enumerate}[label=\alph*.]
 		\item il sistema ha riconosciuto l'utente autenticato come azienda o cittadino, e questo ha premuto il bottone per l'approvare una richiesta d'acquisto;
@@ -139,10 +123,7 @@ approvazione}
 	conferme d'acquisto\glosp che necessitano di conferma. Per ognuna di esse 
 	ha la possibilità di confermare la proposta [UC14.5] o di rifiutarla 
 	[UC14.4];
-	\item \textbf{Inclusioni}:
-	\begin{itemize}
-		\item \textbf{UC14.1}: Visualizzazione degli ordini;
-	\end{itemize}
+
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino, e questo si trova nella pagina dedicata alla visualizzazione delle conferme d'acquisto\glosp che necessitano di approvazione;
 	\item \textbf{Postcondizione}: l'utente visualizza la lista delle conferme d'ordine\glosp che necessitano di approvazione.
 \end{itemize}
