@@ -15,10 +15,6 @@
 		\item disabilitare un account, lasciando un messaggio relativo alla causa di tale provvedimento.
 	\end{itemize}
 	\item \textbf{Scenario principale}: il governo visualizza la lista degli utenti, aziende [UC11.1] o cittadini [UC11.2]. Per ognuna di esse ha la possibilità di abilitare l'account o disabilitarlo premendo l'apposito pulsante;
-	\item \textbf{Inclusioni}: 
-	\begin{itemize}
-		\item \textbf{UC11}: l'utente governativo per poter abilitare/disabilitare un account deve accedere ad una lista di utenti registrati alla piattaforma [UC11].
-	\end{itemize}
 	\item \textbf{Precondizione}: l'utente governativo sta visualizzando una lista di utenti registrati al sistema, e può quindi accedere al pulsante per l'abilitazione o disabilitazione dell'account di un cittadino;
 	\item \textbf{Postcondizione}: l'account dell'utente selezionato è stato abilitato o disabilitato. Nel caso sia stato disabilitato, durante i prossimi tentativi di autenticazione, tale utente riceverà l'errore di "account disabilitato" [UC3.3].
 \end{itemize} 
@@ -31,10 +27,7 @@
 	azienda, cittadino;
 	\item \textbf{Descrizione}: il governo può abilitare l'account di un utente;
 	\item \textbf{Scenario principale}: il governo visualizza la lista degli utenti, aziende [UC11.1] o cittadini [UC11.2]. Per ogni utente il cui stato dell'account risulta "disabilitato", può effettuare l'abilitazione premendo sul pulsante dedicato;
-	\item \textbf{Inclusioni}: 
-	\begin{itemize}
-		\item \textbf{UC11}: l'utente per poter abilitare un account deve accedere ad una lista di utenti registrati alla piattaforma.
-	\end{itemize}
+
 	\item \textbf{Precondizione}: l'utente governativo sta visualizzando una lista di utenti registrati al sistema, preme il pulsante di abilitazione dell'account relativo ad un utente il quale stato dell'account risulta "disabilitato";
 	\item \textbf{Postcondizione}: lo stato  dell'account utente sopra menzionato risulta "abilitato".
 \end{itemize} 
@@ -50,8 +43,7 @@
 	\item \textbf{Scenario principale}: il governo visualizza la lista degli utenti, aziende [UC11.1] o cittadini [UC11.2]. Per ogni utente il cui stato dell'account risulta "abilitato", può effettuare la disabilitazione premendo sul pulsante dedicato;
 	\item \textbf{Inclusioni}: 
 	\begin{itemize}
-		\item \textbf{UC11}: l'utente per poter disabilitare un account deve accedere ad una lista di utenti registrati alla piattaforma;
-		\item \textbf{UC12.3}: durante la disabilitazione l'utente governativo può inserire un messaggio personalizzato per spiegare all'utente il motivo della disabilitazione dell'account.
+		\item \textbf{UC12.3}: durante la disabilitazione l'utente governativo è richiesto di inserire un messaggio personalizzato per spiegare all'utente il motivo della disabilitazione dell'account.
 	\end{itemize}
 	\item \textbf{Precondizione}: l'utente governativo sta visualizzando una lista di utenti registrati al sistema, preme il pulsante di disabilitazione dell'account relativo ad un utente il quale stato dell'account risulta "abilitato";
 	\item \textbf{Postcondizione}: lo stato  dell'account utente sopra menzionato risulta "disabilitato". Durante i prossimi tentativi di autenticazione, tale utente riceverà l'errore di "account disabilitato" [UC3.3].
