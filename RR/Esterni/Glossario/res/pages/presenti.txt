@@ -11,6 +11,7 @@ back end
 blockchain
 body of knowledge
 boilerplate
+camelcase
 capitolato
 changelog
 chiave
@@ -98,6 +99,7 @@ testrpc
 time series
 token
 truffle
+twelve-factor app
 uml
 wallet
 workflow

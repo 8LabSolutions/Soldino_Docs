@@ -12,6 +12,7 @@ Back end,"Back end è un termine largamente utilizzato per caratterizzare le int
 Blockchain,"Struttura dati condivisa ed immutabile, composta da un registro di blocchi concatenati in ordine cronologico. I blocchi una volta inseriti non sono più modificabili. Questa tecnologia, assimilabile ad un database distribuito, è gestito da una rete di nodi, ognuno dei quali possiede una copia dei dati.  Ogni transazione è regolata da un protocollo che ne verifica l'autenticità e la approva o meno. Una transazione approvata non è più modificabile e viene aggiunta alla blockchain. Con questo sistema non è necessaria la presenza di un'autorità esterna alla transazione che faccia da garante."
 Body of knowledge,Insieme di conoscenze di uno stesso dominio. Le conoscenze fanno parte del dominio e allo stesso tempo lo costituiscono.
 Boilerplate,"Pratica di riuso del codice in cui un frammento di codice viene replicato in più punti di un file, o in più file nello stesso punto. Solitamente rappresenta la base da cui cominciare per la stesura di un'applicazione. "
+CamelCase,Pratica di scrivere una parola unendone delle altre lasciando le loro iniziali maiuscole.
 Capitolato,"Il capitolato è un documento tecnico, in genere allegato ad un contratto di appalto e parte di esso. Serve a definire le specifiche tecniche delle opere che andranno ad eseguirsi per effetto del contratto stesso."
 Changelog,"Tabella delle modifiche di un documento. Indica la versione del documento, la data di modifica, chi ha prodotto
 la modifica e una descrizione della stessa."
@@ -77,7 +78,7 @@ Python,"Linguaggio di programmazione general purpose, interpretato, ad alto live
 Raiden,"È una tecnologia off-chain che consente pagamenti quasi istantanei, a basso costo e scalabili. È stata ideata per interagire con la rete Ethereum\glosp e può essere utilizzata per le transazioni di token\glosp compatibili con lo standard ECR20\glo"
 React,Libreria open source per JavaScript per la creazione di interfacce grafiche e la gestione delle interazioni in ambito web.
 Redmine,"Piattaforma open source che permette la gestione di più progetti contemporaneamente, offrendo funzionalità di project management e issue tracking."
-Redux,Libreria open source JavaScript per la gestione degli stati di React.
+Redux,Libreria open source JavaScript per la gestione degli stati di React\glo.
 Repository,"In generale, locazione di salvataggio dei dati. Nei sistemi di versionamento è una struttura dati più complessa, contenente metadati e operazioni per maneggiarla."
 REST,"Representational State Transfer, stile architetturale atto alla creazione di servizi web. Si espongono operazioni per manipolare i servizi, appoggiandosi a protocolli web esistenti, tipicamente HTTP."
 Rete Bayesiana,Modello grafico probabilistico che rappresenta un insieme di variabili stocastiche con le loro dipendenze condizionali.
@@ -101,7 +102,8 @@ Telegram,Servizio di messaggistica istantanea  e VoIP cloud-based.
 Testrpc,"Ambiente di test per Ethereum, permette di testare gli smart contract senza overhead. Una versione più recente che lo ha incorporato è Ganache CLI\glo."
 Time Series,"Insieme di variabili casuali ordinate rispetto al tempo, esprimendo quindi la dinamica di un certo fenomeno nel tempo."
 Token,"Rappresentazione di una particolare risorsa o utilità che opera su una blockchain\glo. Un token può rappresentare un qualsiasi bene commerciabile, da materie prime fino alle criptovalute. Si differenzia dagli alctoin per il fatto che usa una blockchain già esistente."
-Truffle,Framework per lo sviluppo ed il testing di codice in una blockchain. Gestisce l'environment necessario per eseguire e testare gli smart contracts\glo.
+Truffle,Framework per lo sviluppo ed il testing di codice in una blockchain\glo. Gestisce l'environment necessario per eseguire e testare gli smart contracts\glo.
+Twelve-Factor App,Metodologia per la creazione di software come applicazioni di servizio. Queste best practice sono progettate per consentire alle applicazioni di essere costruite con portabilità e resilienza una volta implementate sul Web.
 UML,"Unified Modeling Language è un linguaggio standard per specififcare, visualizzare, costruire e documentare gli artefatti\glosp di un sistema software."
 Wallet,"Portafoglio virtuale personale, dove sono presenti le proprie monete virtuali."
 Workflow,Modello composto da un insieme di regole che tutti rispettano per lavorare con fluidità.
