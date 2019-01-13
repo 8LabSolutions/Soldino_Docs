@@ -25,9 +25,10 @@
 		\item indirizzo di spedizione.
 	\end{itemize}
 	\item \textbf{Scenario principale}: l'utente visualizza i dati relativi ad un ordine;
-	\item \textbf{Inclusioni}:
+	\item \textbf{Specializzazioni}:
 	\begin{itemize}
-		\item \textbf{UC5}: visualizzazione dei beni.
+		\item \textbf{UC14.2}: visualizzazione acquisti conclusi.
+		\item \textbf{UC14.2}: visualizzazione vendite concluse.
 	\end{itemize}
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e mette a disposizione tutte le pagine necessarie alla visualizzazione e gestione degli ordini;
 	\item \textbf{Postcondizione}: l'utente ha visualizzato l'elenco dei propri ordini.
@@ -39,18 +40,18 @@
 \begin{itemize}
 	\item \textbf{Attori Primari}: cittadino, azienda;
 	\item \textbf{Descrizione}: l'azienda ha la possibilità di visualizzare gli acquisti conclusi, ovvero effettuati ed approvati. Oltre ai dati relativi all'ordine sono visualizzate le seguenti informazioni:
-	\item \textbf{Scenario principale}: l'utente visualizza la lista degli acquisti conclusi. Oltre ai campi relativi agli ordini sono visualizzate le seguenti informazioni:
 	\begin{itemize}
 		\item data dell'approvazione dell'ordine;
 		\item nome dell'azienda-venditrice;
 		\item partita IVA dell'azienda venditrice.
 	\end{itemize}
-	
+	\item \textbf{Scenario principale}: l'utente visualizza la lista degli acquisti conclusi. 
 	\item \textbf{Inclusioni}:
 	\begin{itemize}
 		\item \textbf{UC14.1}: Visualizzazione degli ordini.
 	\end{itemize}
-	\item \textbf{Precondizione}: l'utente sta visitando la pagina contenente la lista degli acquisti conclusi;
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l’utente autenticato come azienda o cittadino e
+	mette a disposizione la pagina di visualizzazione degli acquisti;
 	\item \textbf{Postcondizione}: l'utente visualizza la lista degli acquisti conclusi.
 \end{itemize}
 

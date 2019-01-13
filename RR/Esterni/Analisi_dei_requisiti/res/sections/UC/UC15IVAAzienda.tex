@@ -67,7 +67,7 @@
 		\item IVA a credito/debito derivante dalla transazione.
 	\end{itemize}
 	\item \textbf{Scenario principale}: l'utente visualizza una fattura, riguardante i propri  acquisti o le vendite;
-	\item \textbf{Precondizione}: l'azienda sta visualizzando una pagina che richiede la visualizzazione dei dati generali di una fattura;
+	\item \textbf{Precondizione}: l'azienda ha selezionato la visualizzazione dei dati generali di una fattura;
 	\item \textbf{Postcondizione}: l'azienda ha visualizzato i dati relativi alla fattura.
 \end{itemize}
 
@@ -99,7 +99,7 @@
 	\begin{itemize}
 		\item \textbf{UC15.2}: l'azienda, per poter scaricare le informazioni riguardanti le operazioni di un trimestre IVA concluso, deve aver prima visualizzato un trimestre IVA concluso [UC15.4].
 	\end{itemize}
-	\item \textbf{Precondizione}: l'azienda ha selezionato un saldo IVA riguardante un trimestre concluso, ed ha premuto il bottone dedicato al download dei dati relativi agli ordini riguardanti tale periodo;
+	\item \textbf{Precondizione}: l'azienda visualizza un saldo IVA riguardante un trimestre concluso e ha premuto il bottone di download dei dati relativi agli ordini di tale trimestre;
 	\item \textbf{Postcondizione}: l'azienda ha scaricato il documento PDF contenente tutti i dati riguardanti gli ordini del periodo trimestrale IVA selezionato.
 \end{itemize} 
 
@@ -113,7 +113,7 @@
 	\begin{itemize}
 		\item \textbf{UC15.4}: l'azienda per poter saldare il debito riguardante un trimestre IVA concluso deve averlo prima visualizzato.
 	\end{itemize}
-	\item \textbf{Precondizione}: l'utente ha visualizzato un particolare saldo trimestrale IVA concluso. L'utente è in stato di debito verso il governo relativamente al saldo IVA trimestrale considerato. L'utente desidera saldare il debito relativo al suddetto trimestre, e dunque clicca sul pulsante dedicato;
+	\item \textbf{Precondizione}: l'azienda ha visualizzato un particolare saldo trimestrale IVA concluso, ed è in debito verso il governo relativamente al saldo considerato. L'utente desidera saldare il debito relativo al suddetto trimestre, e dunque clicca sul pulsante dedicato;
 	\item \textbf{Postcondizione}: l'azienda ha effettuato il pagamento verso il governo. Viene aggiornato lo stato del trimestre IVA, che ora risulta saldato, sia nella visualizzazione da parte dell'azienda che da parte del governo.
 \end{itemize} 
 
@@ -172,7 +172,7 @@
 	\begin{itemize}
 		\item \textbf{UC15.2}: per poter accedere ai dettagli di una particolare fattura è necessario selezionarla da una delle liste disponibili nei saldi.
 	\end{itemize}
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, l'utente ha aperto la pagina per la  visualizzazione dei dettagli di una specifica fattura;
+	\item \textbf{Precondizione}: l'utente si trova nella pagina per la visualizzazione generale delle fatture e seleziona la visualizzazione dei dettagli di una specifica fattura;
 	\item \textbf{Postcondizione}: l'azienda ha visualizzato i dettagli della fattura selezionata.
 \end{itemize} 
 
