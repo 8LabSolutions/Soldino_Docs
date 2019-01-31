@@ -1,17 +1,32 @@
- \subsubsection{UC5 - Visualizzazione beni}
+ \subsubsection{UC5 - Visualizzazione beni e servizi}
+  \begin{figure}[H]
+ 	\includegraphics[width=6cm]{res/images/UC5-Generale.png}
+ 	\centering
+ 	\caption{UC5 - Visualizzazione beni e servizi}
+ \end{figure}
  \begin{itemize}
- 	\item \textbf{Attori Primari}: utente autenticato;
- 	\item \textbf{Descrizione}: l'utente visualizza una lista dettagliata di informazioni relative ad un bene o servizio, esse comprendono:
+ 	\item \textbf{Attori Primari}: cittadino, azienda;
+ 	\item \textbf{Descrizione}: l'utente visualizza una lista contenente tutti i beni/servizi in vendita sulla piattaforma. Per ogni prodotto vengono visualizzate le seguenti informazioni:
  	\begin{itemize}
- 		\item visualizzazione nome;
- 		\item visualizzazione quantità;
- 		\item visualizzazione prezzo lordo;
- 		\item visualizzazione descrizione;
- 		\item visualizzazione immagine prodotto;
+ 		\item nome;
+ 		\item prezzo lordo\glosp (in Cubit\glo);
+ 		\item descrizione;
+ 		\item quantità di prodotto selezionata.
  	\end{itemize}
- 	\item \textbf{Scenario principale}: l'utente si trova all'interno della pagina per la ricerca dei prodotti e sta visualizzando dei prodotti/servizi;
- 	
- 	\item \textbf{Precondizione}: l'utente, navigando nel sito, risulta all'interno di una pagina contenente almeno un bene o servizio;
- 	\item \textbf{Postcondizione}: l'utente visualizza le informazioni relative al prodotto, con eventuali operazioni disponibili su di esso.
+ 	L'utente può filtrare i risultati/cercare dei prodotti inserendo una parola chiave nella barra di ricerca apposita;
+ 	\item \textbf{Scenario principale}: l'utente si trova all'interno della pagina per la ricerca dei prodotti e sta visualizzando dei beni/servizi;
+	\item \textbf{Inclusioni}:
+	\begin{itemize}
+		\item \textbf{UC16}: l'utente può filtrare i risultati visualizzati inserendo una parola chiave.
+	\end{itemize}
+ 	\item \textbf{Precondizione}: l'utente accede alla pagina del sito dedicata alla visualizzazione dei prodotti in vendita;
+ 	\item \textbf{Postcondizione}: l'utente visualizza le informazioni relative ai prodotti, con le eventuali operazioni disponibili su ognuno di essi.
  \end{itemize}
- 
+ \subsubsection{UC5.1 - Modifica della quantità selezionata}
+ \begin{itemize}
+ 	\item \textbf{Attori Primari}: cittadino, azienda\glo;
+ 	\item \textbf{Descrizione}: l'utente può modificare la quantità selezionata di un prodotto utilizzando il campo apposito;
+ 	\item \textbf{Scenario principale}: l'utente modifica la quantità di un prodotto utilizzando l'apposito campo;
+ 	\item \textbf{Precondizione}: l'utente sta visualizzando un prodotto ed intende modificarne la quantità selezionata;
+ 	\item \textbf{Postcondizione}: la quantità del prodotto è stata aggiornata al nuovo valore selezionato.
+ \end{itemize}

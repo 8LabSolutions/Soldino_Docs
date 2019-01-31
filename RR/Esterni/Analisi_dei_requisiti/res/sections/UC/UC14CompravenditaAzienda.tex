@@ -1,268 +1,134 @@
-\subsubsection{UC14 - Gestione ordini - parte vendite}
+\subsubsection{UC14 - Gestione ordini}
 \begin{figure}[h]
-	\includegraphics[width=10cm]{res/images/UC14ParteVendite.png}
+	\includegraphics[width=10cm]{res/images/UC14-GestioneOrdini.png}
 	\centering
-	\caption{Gestione degli ordini dal punto di vista delle vendite}
-\end{figure}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: alle aziende sono messe a disposizione diverse operazione per visualizzare e gestire le vendite;
-	\item \textbf{Scenario principale}: l'utente visualizza e svolge alcune operazioni per gestire le vendite, queste includono:
-	\begin{itemize}
-		\item visualizzazione della data dell'ordine [UC14.1.1];
-		\item visualizzazione del numero dell'ordine [UC14.1.2];
-		\item visualizzazione dell'importo netto dell'ordine [UC14.1.3];
-		\item visualizzazione dei prodotti inclusi nell'ordine [UC14.1.4];
-		\item visualizzazione dell'importo dell'IVA dell'ordine [UC14.1.5];
-		\item visualizzazione dell'importo lordo dell'ordine [UC14.1.6].
-	\end{itemize}
-Inoltre per le vendite in attesa di approvazione è disponibile la data ultima per la conferma [UC14.2.1] e per quanto riguarda gli ordini con pagamento dilazionato,  la data ultima per il pagamento [UC14.3.1].
-	\item \textbf{Specializzazione}
-	\begin{itemize}
-		\item \textbf{UC14.2}: Visualizzazione degli ordini in attesa di approvazione;
-		\item \textbf{UC14.3}: Visualizzazione degli ordini con modalità di pagamento dilazionato.
-	\end{itemize}
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda e mette a disposizione tutte le pagine necessarie alla visualizzazione e gestione delle vendite.
-	\item \textbf{Postcondizione}: l'azienda ha visualizzato e/o gestito i propri ordini riguardanti le vendite.
-\end{itemize} 
-\subsubsection{UC14.1 - Visualizzazione Ordini}
-\begin{figure}[H]
-	\includegraphics[width=5cm]{res/images/UC14-1VisualOrdini.png}
-	\centering
-	\caption{Visualizzazione degli ordini in modo dettagliato}
+	\caption{UC14 - Gestione ordini}
 \end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda, cittadino;
-	\item \textbf{Descrizione}: alle aziende ed ai cittadini sono messe a disposizione diverse operazione per visualizzare e gestire gli ordini all'interno della piattaforma. In tale maniera vi è possibile avere un elenco dettagliato di tutti gli ordini;
-	\item \textbf{Scenario principale}: l'utente visualizza e svolge alcune operazioni per gestiregli ordini;
+		\item \textbf{Attori Secondari}: azienda, MetaMask\glo;
+	\item \textbf{Descrizione}: agli utenti sono messe a disposizione diverse operazione per visualizzare e gestire gli ordini;
+	\item \textbf{Scenario principale}: l'utente visualizza e svolge alcune operazioni per gestire gli ordini nei quali è partecipe;
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e mette a disposizione tutte le pagine necessarie alla visualizzazione e gestione degli ordini;
 	\item \textbf{Postcondizione}: l'utente ha visualizzato e/o gestito i propri ordini.
 \end{itemize} 
-
-\subsubsection{UC14.1.1 - Data ordine}
+\subsubsection{UC14.1 - Visualizzazione ordini}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda, cittadino;
-	\item \textbf{Descrizione}: l'utente può visualizzare la data dell'ordine in questione;
-	\item \textbf{Scenario principale}: l'utente visualizza la lista degli ordini;
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e questo ha espresso la volontà di visualizzare la lista degli ordini per vedere le date degli stessi;
-	\item \textbf{Postcondizione}: l'utente visualizza tale data.
-\end{itemize}
-
-\subsubsection{UC14.1.2 - N ordine}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda, cittadino;
-	\item \textbf{Descrizione}: l'utente può visualizzare il numero dell'ordine in questione;
-	\item \textbf{Scenario principale}: l'utente visualizza la lista degli ordini;
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e questo ha espresso la volontà di visualizzare la lista degli ordini per vedere i numeri degli stessi;
-	\item \textbf{Postcondizione}: l'utente visualizza tale numero.
-\end{itemize}
-
-\subsubsection{UC14.1.3 - Importo netto}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda, cittadino;
-	\item \textbf{Descrizione}: l'utente può visualizzare l'importo netto dell'ordine in questione;
-	\item \textbf{Scenario principale}: l'utente visualizza la lista degli ordini;
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e questo ha espresso la volontà di visualizzare la lista degli ordini per vedere gli importi netti degli stessi;
-	\item \textbf{Postcondizione}: l'utente visualizza tale importo.
-\end{itemize}
-
-\subsubsection{UC14.1.4 - Visualizzazione prodotti}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda, cittadino;
-	\item \textbf{Descrizione}: l'utente può visualizzare i prodotti inclusi nell'ordine in questione;
-	\item \textbf{Scenario principale}: l'utente visualizza la lista degli ordini;
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e questo ha espresso la volontà di visualizzare la lista degli ordini per vedere i prodotti inclusi negli stessi;
-	\item \textbf{Postcondizione}: l'utente visualizza tali prodotti.
-\end{itemize}
-
-\subsubsection{UC14.1.5 - IVA}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda, cittadino;
-	\item \textbf{Descrizione}: l'utente può visualizzare l'importo dell'IVA dell'ordine in questione;
-	\item \textbf{Scenario principale}: l'utente visualizza la lista degli ordini;
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e questo ha espresso la volontà di visualizzare la lista degli ordini per vedere gli importi riguardanti l'IVA degli stessi;
-	\item \textbf{Postcondizione}: l'utente visualizza tale importo.
-\end{itemize}
-
-\subsubsection{UC14.1.6 - Importo lordo}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda, cittadino;
-	\item \textbf{Descrizione}: l'utente può visualizzare l'importo lordo dell'ordine in questione;
-	\item \textbf{Scenario principale}: l'utente visualizza la lista degli ordini;
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e questo ha espresso la volontà di visualizzare la lista degli ordini per vedere gli importi lordi degli stessi;
-	\item \textbf{Postcondizione}: l'utente visualizza tale importo.
-\end{itemize}
-
-\subsubsection{UC14.2 - Visualizzazione ordini in attesa di approvazione}
-\begin{figure}[H]
-	\includegraphics[width=5cm]{res/images/UC14-2.png}
-	\centering
-	\caption{Visualizzazione degli ordini in attesa di approazione}
-\end{figure}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: all'azienda è messa a disposizione la possibilità di visualizzare e gestire gli ordini in attesa di approvazione, visualizzando la data ultima per la conferma;
-	\item \textbf{Scenario principale}: l'utente visualizza gli ordini in attesa di approvazione;
-		\item \textbf{Specializzazione}
+	\item \textbf{Descrizione}: alle aziende ed ai cittadini sono messe a disposizione diverse operazioni per visualizzare e gestire gli ordini all'interno della piattaforma. Essi comprendono acquisti e vendite (queste solo per le aziende). \`E reso possibile avere un elenco dettagliato di tutti gli ordini, in particolare per ognuno di essi è possibile la visualizzazione:
 	\begin{itemize}
-		\item \textbf{UC14.4}: Visualizzazione degli ordini con modalità di pagamento immediato;
-		\item \textbf{UC14.5}: Visualizzazione degli ordini con modalità di pagamento dilazionato.
+		\item della data dell'ordine;
+		\item del numero dell'ordine;
+		\item dei prodotti inclusi nell'ordine [UC5];
+		\item totale IVA;
+		\item totale lordo\glo;
+		\item indirizzo di spedizione.
 	\end{itemize}
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda e mette a disposizione tutte le pagine necessarie alla visualizzazione di questo tipo di ordini;
-	\item \textbf{Postcondizione}: l'utente ha visualizzato e/o gestito i propri ordini in attesa di approvazione.
+	\item \textbf{Scenario principale}: l'utente visualizza i dati relativi ad un ordine;
+	\item \textbf{Specializzazioni}:
+	\begin{itemize}
+		\item \textbf{UC14.2}: visualizzazione acquisti conclusi.
+		\item \textbf{UC14.2}: visualizzazione vendite concluse.
+	\end{itemize}
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e mette a disposizione tutte le pagine necessarie alla visualizzazione e gestione degli ordini;
+	\item \textbf{Postcondizione}: l'utente ha visualizzato l'elenco dei propri ordini.
 \end{itemize} 
 
-\subsubsection{UC14.2.1 - Data ultima per la conferma}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: l'azienda può visualizzare la data ultima per la conferma dell'ordine in questione;
-	\item \textbf{Scenario principale}: l'utente visualizza la lista degli ordini;
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda e questo ha espresso la volontà di visualizzare la lista degli ordini per vedere le date di scadenza per l'ultima possibilità di esprimere la conferma;
-	\item \textbf{Postcondizione}: l'utente visualizza tale data.
-\end{itemize}
-
-\subsubsection{UC14.3 - Visualizzazione Ordini con pagamento dilazionato}
-\begin{figure}[H]
-	\includegraphics[width=5cm]{res/images/UC14-3.png}
-	\centering
-	\caption{Visualizzazione degli ordini con pagamento dilazionato}
-\end{figure}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: alle aziende è messa a disposizione la possibilità di visualizzare e gestire gli ordini con pagamento dilazionato, visualizzando la data ultima per il pagamento;
-	\item \textbf{Scenario principale}: l'utente visualizza gli ordini con modalità di pagamento dilazionato;
-			\item \textbf{Specializzazione}
-	\begin{itemize}
-		\item \textbf{UC14.5}: Visualizzazione degli ordini con modalità di pagamento dilazionato;
-		\item \textbf{UC14.6}: Visualizzazione delle vendite con modalità di pagamento dilazionato non concluse;
-		\item \textbf{UC14.8}: Visualizzazione degli acquisti con modalità di pagamento dilazionato non concluse;
-		\item \textbf{UC14.10}: Visualizzazione delle proposte d'acquisto in attesa di conferma.
-	\end{itemize}
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda e mette a disposizione tutte le pagine necessarie alla visualizzazione di questo tipo ordini;
-	\item \textbf{Postcondizione}: l'utente ha visualizzato e/o gestito i propri acquisti con pagamento dilazionato.
-\end{itemize} 
-
-\subsubsection{UC14.3.1 - Data ultima per il pagamento}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: l'utente può visualizzare la data ultima per il pagamento dell'ordine in questione;
-	\item \textbf{Scenario principale}: l'utente visualizza la lista degli ordini;
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda e questo ha espresso la volontà di visualizzare la lista degli ordini per vedere le date di scadenza per l'ultima possibilità di effettuare il pagamento;
-	\item \textbf{Postcondizione}: l'utente visualizza tale data.
-\end{itemize}
-
-\subsubsection{UC14.4 - Visualizzazione vendite con pagamento immediato}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: l'azienda può visualizzare la lista delle vendite la cui proposta d'ordine deve essere ancora accettata dall'azienda cliente, mostrando esclusivamente i risultati relativi alle vendite con modalità di pagamento immediato;
-	\item \textbf{Scenario principale}: l'utente visualizza la lista delle vendite la cui proposta d'ordine deve essere ancora accettata dall'azienda cliente. Vengono mostrati esclusivamente i risultati relativi alle vendite con modalità di pagamento immediato;
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda e questo ha espresso la volontà di visualizzare la lista delle vendite la cui proposta d'ordine deve ancora essere gestita dall'azienda cliente, visualizzando solo le vendite con modalità di pagamento immediato;
-	\item \textbf{Postcondizione}: l'azienda visualizza tale lista.
-\end{itemize}
 
 
-\subsubsection{UC14.5 - Visualizzazione vendite con pagamento dilazionato}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: l'azienda può visualizzare la lista delle vendite la cui proposta d'ordine deve essere ancora accettata dall'azienda cliente, mostrando esclusivamente i risultati relativi alle vendite con modalità di pagamento dilazionato\glo;
-	\item \textbf{Scenario principale}: l'utente visualizza la lista delle vendite la cui proposta d'ordine deve essere ancora accettata dall'azienda cliente. Vengono mostrati esclusivamente i risultati relativi alle vendite con modalità di pagamento dilazionato\glo;
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda e questo ha espresso la volontà di visualizzare la lista delle vendite la cui proposta d'ordine deve ancora essere gestita dall'azienda cliente, visualizzando solo le vendite con modalità di pagamento dilazionato\glo;
-	\item \textbf{Postcondizione}: l'azienda visualizza tale lista.
-\end{itemize}
-
-
-\subsubsection{UC14.6 - Visualizzazione vendite con pagamento dilazionato non concluse}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: l'azienda può visualizzare la lista delle vendite con pagamento dilazionato\glosp approvate, ma non ancora concluse, ovvero l'azienda-cliente deve ancora effettuare il pagamento;
-	\item \textbf{Scenario principale}: l'utente visualizza la lista delle vendite con modalità di pagamento dilazionato\glosp accettate ma non ancora concluse;
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda e questo ha espresso la volontà di visualizzare la lista delle vendite con modalità di pagamento dilazionato\glosp accettate ma non ancora concluse;
-	\item \textbf{Postcondizione}: l'azienda visualizza tale lista.
-\end{itemize}
-
-\subsubsection{UC14 - Gestione ordini - parte acquisti}
-\begin{figure}[h]
-	\includegraphics[width=10cm]{res/images/UC14ParteAcquisti.png}
-	\centering
-	\caption{Gestione degli ordini dal punto di vista degli acquisti}
-
-\end{figure}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda, cittadino;
-	\item \textbf{Descrizione}: alle aziende e ai cittadini sono messe a disposizione diverse operazione per visualizzare e gestire gli acquisti;
-	\item \textbf{Scenario principale}: l'utente visualizza e svolge alcune operazioni per gestire gli ordini, queste includono:
-	\begin{itemize}
-		\item visualizzazione della data dell'ordine [UC14.1.1];
-		\item visualizzazione del numero dell'ordine [UC14.1.2];
-		\item visualizzazione dell'importo totale dell'ordine [UC14.1.3];
-		\item visualizzazione dei prodotti inclusi nell'ordine [UC14.1.4].
-	\end{itemize}
-	Inoltre per gli ordini in attesa di approvazione è disponibile la data ultima per la conferma [UC14.2.1] e per quanto riguarda gli ordini con pagamento dilazionato,  la data ultima per il pagamento [UC14.3.1].
-	\item \textbf{Specializzazione}
-	\begin{itemize}
-		\item \textbf{UC14.2}: Visualizzazione degli ordini in attesa di approvazione;
-		\item \textbf{UC14.3}: Visualizzazione degli ordini con modalità di pagamento dilazionato;
-		\item \textbf{UC14.7}: Visualizzazione degli acquisti conclusi.
-	\end{itemize}
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e mette a disposizione tutte le pagine necessarie alla visualizzazione e gestione degli acquisti.
-	\item \textbf{Postcondizione}: l'utente ha visualizzato e/o gestito i propri ordini riguardanti gli acquisti.
-\end{itemize} 
-\subsubsection{UC14.7 - Visualizzazione acquisti conclusi}
+\subsubsection{UC14.2 - Visualizzazione acquisti conclusi}
 \begin{itemize}
 	\item \textbf{Attori Primari}: cittadino, azienda;
-	\item \textbf{Descrizione}: l'utente può visualizzare la lista degli acquisti conclusi;
-	\item \textbf{Scenario principale}: l'utente visualizza la lista degli acquisti conclusi;
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e questo ha espresso la volontà di visualizzare la lista degli acquisti conclusi;
-	\item \textbf{Postcondizione}: l'utente visualizza tale lista.
-\end{itemize}
-\subsubsection{UC14.8 - Visualizzazione acquisti con pagamento dilazionato non concluse}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: l'azienda può visualizzare la lista degli acquisti con pagamento dilazionato\glosp approvate, ma non ancora concluse, ovvero l'azienda-cliente deve ancora effettuare il pagamento;
-	\item \textbf{Scenario principale}: l'utente visualizza la lista degli acquisti con modalità di pagamento dilazionato\glosp accettate ma non ancora concluse;
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda e questo ha espresso la volontà di visualizzare la lista degli acquisti con modalità di pagamento dilazionato\glosp accettate ma non ancora concluse;
-	\item \textbf{Postcondizione}: l'utente visualizza tale lista.
-\end{itemize}
-\subsubsection{UC14.9 - Esecuzione pagamento dilazionato}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda-cliente;
-	\item \textbf{Attori Secondaari}: azienda-venditrice, MetaMask\glo;
-	\item \textbf{Descrizione}: l'azienda può effettuare il versamento della somma dovuta all'azienda-venditrice, relativa ad un pagamento dilazionato non ancora saldato. In questa maniera l'azienda-cliente può ricevere la fattura relativa a suddetto ordine;
-	\item \textbf{Scenario principale}: l'utente visualizza la lista dei pagamenti dilazionati non ancora conclusi, preme sul tasto per il pagamento e segue la procedura attraverso MetaMask\glosp per effettuare il versamento;
-	\item \textbf{Inclusione}: 
+	\item \textbf{Descrizione}: l'azienda ha la possibilità di visualizzare gli acquisti conclusi, ovvero effettuati ed approvati. Oltre ai dati relativi all'ordine sono visualizzate le seguenti informazioni:
 	\begin{itemize}
-		\item \textbf{UC14.8}: l'utente che preme il pulsante per effettuare il pagamento deve obbligatoriamente aver richiesto la visualizzazione della lista dei pagamenti dilazionati non ancora conclusi;
+		\item data dell'approvazione dell'ordine;
+		\item nome dell'azienda-venditrice;
+		\item partita IVA dell'azienda venditrice.
 	\end{itemize}
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda e questo ha espresso la volontà effettuare il pagamento per saldare l'importo dovuto riguardante un pagamento dilazionato;
-	\item \textbf{Postcondizione}: l'azienda-cliente ha effettuato il versamento della somma dovuta all'azienda-venditrice. L'azienda-cliente ha ricevuto la fattura per tale ordine è la può reperire nella sezione dedicata [UC16]. L'azienda-venditrice può ottenere le informazioni relative alla vendita nell'apposita sezione [UC14.5].
-\end{itemize}
-\subsubsection{UC14.10 - Visualizzazione proposte d'acquisto in attesa di conferma}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: l'azienda può visualizzare delle proposte d'acquisto che necessitano di conferma;
-	\item \textbf{Scenario principale}: l'utente visualizza la lista delle proposte d'acquisto che necessitano di conferma. Per ognuna di esse ha a possibilità di confermare la proposta [UC14.11] o di rifiutarla [UC14.12];
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda e questo ha espresso la volontà di visualizzare la lista delle proposte d'acquisto che necessitano di conferma;
-	\item \textbf{Postcondizione}: l'azienda visualizza tale lista.
-\end{itemize}
-\subsubsection{UC14.11 - Conferma di una proposta di acquisto}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: l'azienda può visualizzare la lista dei pagamenti dilazionati\glosp ancora non conclusi, ovvero quelli dai quali l'azienda-venditrice si aspetta un pagamento entro il periodo stabilito;
-	\item \textbf{Scenario principale}: l'utente visualizza la lista dei pagamenti dilazionati\glosp non ancora conclusi. Ha la possibilità di effettuare il versamento all'azienda-venditrice;
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, e questo ha espresso la volontà di visualizzare la lista degli acquisti a pagamento dilazionato\glosp non ancora conclusi;
-	\item \textbf{Postcondizione}: l'azienda visualizza tale lista.
+	\item \textbf{Scenario principale}: l'utente visualizza la lista degli acquisti conclusi. 
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l’utente autenticato come azienda o cittadino e
+	mette a disposizione la pagina di visualizzazione degli acquisti;
+	\item \textbf{Postcondizione}: l'utente visualizza la lista degli acquisti conclusi.
 \end{itemize}
 
-\subsubsection{UC14.12 - Rifiuto di una proposta di acquisto}
+\subsubsection{UC14.3 - Visualizzazione vendite concluse}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: l'azienda può rifiutare una proposta d'acquisto. Per confermare l'operazione verrà utilizzato MetaMask\glo;
-	\item \textbf{Scenario principale}: l'utente visualizza una proposta d'acquisto che necessitano di conferma e decide di rifiutarla;
-		\item \textbf{Inclusione}: 
-	\begin{itemize}
-		\item \textbf{UC14.10}: visualizzazione delle proposte d'acquisto in attesa di conferma.
+	\item \textbf{Descrizione}: l'azienda ha la possibilità di visualizzare le vendite effettuate ed approvate. Oltre ai dati relative all'ordine sono visualizzare le seguenti informazioni:
+		\begin{itemize}
+		\item data dell'approvazione;
+		\item informazioni riguardanti il cliente:
+		\begin{itemize}
+			\item nel caso il cliente sia un \textbf{cittadino}:
+			\begin{itemize}
+				
+				\item nome utente;
+				\item cognome utente.
+			\end{itemize}
+			\item nel caso il cliente sia un'\textbf{azienda}:
+			\begin{itemize}
+				
+				\item nome azienda-cliente;
+				\item partita IVA dell'azienda-cliente.
+			\end{itemize}
+		\end{itemize}
+		
 	\end{itemize}
-	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda ed ha mostrato la lista delle proposte d'acquisto che necessitano di conferma;
-	\item \textbf{Postcondizione}: l'azienda ha rifiutato la proposta d'acquisto. La proposta non sarà più presente nella lista di attesa per la conferma. L'acquisto comparirà come acquisto concluso, con esito negativo, nella lista delle vendite dell'azienda-venditrice [UC14.4, UC14.5]. Il sistema ritorna l'ammontare trattenuto per l'ordine all'azienda-cliente.
+	\item \textbf{Scenario principale}:  l'utente visualizza le vendite concluse, con alcuni dati relativi al cliente; 
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda e questo si trova nella pagina dedicata alla visualizzazione delle vendite concluse;
+	\item \textbf{Postcondizione}: l'utente visualizza la lista delle vendite concluse.
 \end{itemize}
+
+
+\subsubsection{UC14.4 - Rifiuto di una conferma d'acquisto}
+\begin{itemize}
+	\item \textbf{Attori Primari}: azienda, cittadino;
+	\item \textbf{Attori Secondari}: MetaMask\glo, azienda;
+	\item \textbf{Descrizione}: le aziende ed i cittadini possono rifiutare una conferma d'acquisto\glo, ad esempio se notano che i dati inviatogli non corrispondono all'ordine effettuato o le aliquote IVA imposte risultano errate. Per effettuare l'operazione verrà utilizzato MetaMask\glo;
+	\item \textbf{Scenario principale}: l'utente visualizza una conferma d'acquisto\glosp che necessita di approvazione e decide di rifiutarla;
+
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come cittadino o azienda ed ha mostrato la lista delle proposte d'acquisto\glosp che necessitano di conferma;
+	\item \textbf{Postcondizione}: l'azienda ha rifiutato la proposta 
+	d'acquisto\glo. La proposta non sarà più presente nella lista di attesa per 
+	la conferma. Il sistema ritorna l'ammontare trattenuto per l'ordine 
+	all'acquirente.
+\end{itemize}
+\subsubsection{UC14.5 - Approvazione di una conferma di acquisto}
+\begin{itemize}
+	\item \textbf{Attori Primari}: azienda, cittadino;
+	\item \textbf{Attori Secondari}: MetaMask\glo, azienda;
+	\item \textbf{Descrizione}: l'azienda accetta la proposta d'acquisto\glosp ricevuta;
+	\item \textbf{Scenario principale}: l'azienda/cittadino decide di approvare una proposta d'acquisto\glosp da parte di un venditore;
+	\item \textbf{Scenario alternativo}: l'azienda/cittadino non ha né confermato né approvato la conferma d'acquisto entro la data ultima per l'approvazione;
+
+	\item \textbf{Precondizione}: 
+	\begin{enumerate}[label=\alph*.]
+		\item il sistema ha riconosciuto l'utente autenticato come azienda o cittadino, e questo ha premuto il bottone per l'approvare una richiesta d'acquisto;
+		\item è stata superata la data ultima per il rifiuto della conferma d'ordine\glo.
+	\end{enumerate}
+	\item \textbf{Postcondizione}: il suddetto ordine risulta approvato. Il meccanismo di escrow\glosp implementato nel sistema rende disponibile la fattura dell'ordine nella pagina dedicata dell'account del cliente. Inoltre l'ammontare relativo all'ordine attualmente trattenuto dal sistema viene versato all'azienda-venditrice.
+\end{itemize}
+
+
+\subsubsection{UC14.6 - Visualizzazione conferme d'acquisto in attesa di 
+approvazione}
+\begin{itemize}
+	\item \textbf{Attori Primari}: azienda, cittadino;
+	\item \textbf{Descrizione}: l'azienda/cittadino può visualizzare le conferme d'acquisto\glosp che necessitano di approvazione. Esse sono relative agli acquisti che ha effettuato ma non ancora approvato. Le conferme d'acquisto permettono di visualizzare gli stessi dati relativi ad un ordine, ma ogni prodotto visualizzato ha i seguenti dati aggiuntivi:
+	\begin{itemize}
+		\item prezzo netto del prodotto acquistato;	
+		\item aliquota IVA applicata al prodotto.
+	\end{itemize}
+	\item \textbf{Scenario principale}: l'utente visualizza la lista delle 
+	conferme d'acquisto\glosp che necessitano di conferma. Per ognuna di esse 
+	ha la possibilità di confermare la proposta [UC14.5] o di rifiutarla 
+	[UC14.4];
+
+	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino, e questo si trova nella pagina dedicata alla visualizzazione delle conferme d'acquisto\glosp che necessitano di approvazione;
+	\item \textbf{Postcondizione}: l'utente visualizza la lista delle conferme d'ordine\glosp che necessitano di approvazione.
+\end{itemize}
+
+
+
+
 
