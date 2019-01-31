@@ -1,0 +1,109 @@
+termine,definizione
+Add-on,Parte di software aggiuntiva che estende le funzionalità e/o caratteristiche del software di base. Di solito è eseguito insieme al software in cui è aggiunto.
+Agile,"Modello di sviluppo software caratterizzato da: team di piccole dimensioni che comunicano informalmente, importanza del software rispetto ai documenti, pianificazione adattiva, coinvolgimento del cliente nel processo di sviluppo."
+Aliquota,"Percentuale del reddito, patrimonio o valore imponibile, fissata dalla legge, in base alla quale si determina il debito individuale di imposta."
+Apache Kafka,"Piattaforma open source di streaming distribuito, usata per stream processing, monitoraggio di dati e traffico web, messaggistica e varie operazioni su file di log."
+API,"Con Application Programming Interface si intende un insieme di procedure e funzioni offerte ai programmatori per facilitare lo sviluppo. Le API espongono blocchi di codice delle librerie di cui fanno parte, per permetterne il riuso."
+Area di staging,"L'area di staging è un'area di immagazzinamento intermedia usata per i dati in lavorazione durante l'estrazione, la trasformazione e il caricamento di un processo. Su Git è usata come step precedente al processo di commit."
+Artefatti,"Un artefatto è un sottoprodotto che viene realizzato durante lo sviluppo software. Sono artefatti i casi d'uso, i diagrammi delle classi, i modelli UML\glo, il codice sorgente e la documentazione varia."
+Attore,Entità che interagisce con il sistema per svolgere delle attività. Può essere umana o un'altro sistema.
+AWS,Amazon Web Services è un insieme di servizi di cloud computing che compongono la piattaforma on demand offerta dall'azienda Amazon
+Back end,"Back end è un termine largamente utilizzato per caratterizzare le interfacce che hanno come destinatario un programma. Una applicazione back end è un programma con il quale l’utente interagisce indirettamente, in generale attraverso l’utilizzo di una applicazione front end."
+Blockchain,"Struttura dati condivisa ed immutabile, composta da un registro di blocchi concatenati in ordine cronologico. I blocchi una volta inseriti non sono più modificabili. Questa tecnologia, assimilabile ad un database distribuito, è gestito da una rete di nodi, ognuno dei quali possiede una copia dei dati.  Ogni transazione è regolata da un protocollo che ne verifica l'autenticità e la approva o meno. Una transazione approvata non è più modificabile e viene aggiunta alla blockchain. Con questo sistema non è necessaria la presenza di un'autorità esterna alla transazione che faccia da garante."
+Body of knowledge,Insieme di conoscenze di uno stesso dominio. Le conoscenze fanno parte del dominio e allo stesso tempo lo costituiscono.
+Boilerplate,"Pratica di riuso del codice in cui un frammento di codice viene replicato in più punti di un file, o in più file nello stesso punto. Solitamente rappresenta la base da cui cominciare per la stesura di un'applicazione. "
+CamelCase,Pratica di scrivere una parola unendone delle altre lasciando le loro iniziali maiuscole.
+Capitolato,"Il capitolato è un documento tecnico, in genere allegato ad un contratto di appalto e parte di esso. Serve a definire le specifiche tecniche delle opere che andranno ad eseguirsi per effetto del contratto stesso."
+Changelog,"Tabella delle modifiche di un documento. Indica la versione del documento, la data di modifica, chi ha prodotto
+la modifica e una descrizione della stessa."
+Chiave,Il termine viene utilizzato per indicare la chiave pubblica di un wallet\glosp Ethereum\glosp. Una chiave pubblica identifica un wallet\glosp ed è nota a tutti. Può essere utilizzata per identificare un account destinatario di un versamento. Una chiave privata invece è conosciuta solamente dall'utente proprietario del wallet ed è utilizzata per verificare una transazione effettuata dall'account stesso. 
+Coesione,"Stretta unione di parti che concorrono alla stessa funzionalità, allo stesso obiettivo: le parti coese sono tutto il necessario e nulla di superfluo."
+Comportamento emergente,"Nuovo comportamento del software nato dall'integrazione delle parti, spesso non previsto dagli sviluppatori delle singole parti."
+Conferma d'acquisto,Documento utilizzato nella piattaforma Soldino. Lo scopo del documento è fornire un preventivo della fattura IVA in maniera tale che l'azienda-cliente possa verificare che tutti i prodotti e le applicazioni delle imposte IVA su di loro applicate siano corretti. Confermare tale proposta corrisponde ad effettuare il pagamento effettivo all'azienda-venditrice ed a ricevere la vera fattura.
+Conferma d'ordine,Sinonimo: vedi Conferma d'acquisto\glo.
+Continuous delivery,Definisce la metodologia attraverso la quale si hanno brevi cicli di rilascio. In questo modo è possibile rilasciare in modo affidabile il software in qualsiasi momento.
+Continuous integration,"E’ una pratica di sviluppo che consiste nell’integrare frequentemente le modifiche locali degli sviluppatori al
+ramo condiviso principale. Questa pratica permette di minimizzare problemi di integrazione corposa."
+Copertura,"Nell'analisi dei requisiti, è la quantità di requisiti soddisfatti. Nei test del codice, è la quantità di righe percorse durante il test. Si ricerca copertura massima."
+Cubit,Custom token\glosp di Ethereum\glosp previsto nel capitolato\glosp C6.
+DApp,"Anche scritta ÐApp, è un'applicazione decentralizzata che gestisce gli smart contracta\glo, arricchendo le transazioni con regole user-defined, garantendo maggiore sicurezza e controllo. Solitamente una ÐApp è open-source e  gestisce operazioni con dati criptati."
+Dashboard,"È una postazione o a una pagina web basata su una tecnologia che visualizza informazioni relative a un business, raccolte in tempo reale da varie fonti nel settore. I dati vengono visualizzati in tempo reale nella pagina usando grafici, riepiloghi e liste."
+Design pattern,Soluzione progettuale generale ad un problema ricorrente. Una descrizione o un modello da applicare per risolvere un problema che può presentarsi in diverse situazioni durante la progettazione e lo sviluppo del software.
+DevOps,"Metodologia di sviluppo software, che combina lo sviluppo software con la tecnologia delle informazioni. Nasce dalla sinergia tra cultura aziendale, pratiche e strumenti, e fornisce a un'organizzazione l'abilità di sviluppare applicazioni e servizi con un breve ciclo di vita del software e in allineamento con gli obiettivi aziendali."
+Dilazione,"L'atto di rimandare ad un secondo momento l'esecuzione di un'operazione, posticipando il termine normalmente fissato."
+Docker,"Software per la creazione, sviluppo ed esecuzione di applicazione attraverso l’uso di container. I container
+permettono di incorporare un’applicazione e tutte le parti necessarie ad essa in un unico pacchetto."
+Documento esterno,"Documento a uso di team, committente e proponente (RedBabel)."
+Documento interno,Documento a uso del team di sviluppo e del committente (Prof. Vardanega Tullio e Prof. Cardin Riccardo).
+Driver ,"Nel test di unità, il driver funge da main e permette l'esecuzione di unità chiamate dal main."
+ECR20,"Sigla per ""Ethereum Request for Comment"". È lo standard per implementare token\glosp su Ethereum. Definisce regole sul trasferimento di token e su come accedere ai dati contenuti in essi, allo scopo di rendere queste operazioni ben definite e prevedibili."
+EIP-712,"Stadard per le transazioni Ethereum. Implementa la firma digitale delle transazioni semplificando la procedura all'utente. In questa maniera l'utente utilizzerà tool come MetaMask\glosp per gestire le transazioni, senza la necessità di inserire le chiavi esadecimali a mano."
+Escrow,"Individua un accordo fra due soggetti in forza del quale somme di denaro o titoli di proprietà, oggetti del contratto, vengono depositati presso una terza parte a titolo di garanzia, e rilasciate poi all'avveramento di determinate condizioni espressamente stabilite dalle parti. In Soldino la terza parte garante è sostituita dagli smart contracts\glo."
+ESlint,"Linter\glo per l’analisi statica del codice e per l’identificazione di pattern in JavaScript. Si usa per ottenere codice corretto, comprensibile, conforme a delle regole date."
+Ether,Valuta in uso nella piattaforma Ethereum\glo.
+Ethereum,Blockchain\glosp per la creazione e pubblicazione di smart contracts\glo. Uno smart contract\glosp che vuole girare su questa rete paga la sua potenza computazionale tramite la valuta Ether. Come le altre blockchain\glosp permette anche lo scambio di denaro.
+Ethereum Virtual Machine,"Macchina virtuale decentralizzata sulla rete Ethereum, che permette di eseguire ÐApps\glo."
+Event-driven,"Un programma si dice event-driven quando il flusso di esecuzione è determinato dal verificarsi di eventi esterni, ad esempio input dati dall'utente."
+Firebase Storage,"Piattaforma offerta da Google che permette a siti web ed applicazioni di salvare i dati dell'utente in diversi formati. Consente upload e download sicuri, anche con una connessione di scarsa qualità."
+Framework,"Un framework è un'astrazione software, in cui è scritto del codice che fornisce funzionalità generiche e atte a essere estese, scrivendo così del software specifico. Può includere vari componenti, come librerie, compilatori ed API\glo, tutte atte a migliorare il processo di sviluppo software."
+Freeling,Software specializzato nel Part of Speech (PoS) tagging\glo. Il software sfrutta delle tecniche di apprendimento automatico supervisionato per tale classificazione.  
+Front end,"Il front end è la parte di un'applicazione con la quale l'utente interagisce direttamente, responsabile dell’acquisizione dei dati di ingresso e per la loro elaborazione. Tali dati sono poi utilizzabili dal back end\glo. "
+Gamification,"Riutilizzo di concetti ed elementi tipici dei giochi in applicazioni di diverso contesto. Utilizzando questi principi si ottengono sia maggiore coinvolgimento degli utenti dell'applicazione, sia maggiore produttività ed organizzazione nel lavoro."
+Ganache CLI,Versione da riga di comando di Ganache che simula un client di Ethereum per sviluppare in modo veloce e sicuro. Fa parte della suite di strumenti di Truffle\glo.
+Gantt,"Il diagramma di Gantt è uno strumento di supporto alla gestione dei progetti. E' usato principalmente nelle attività di project management. L'asse orozzontale rappresenta l'arco temporale totale del progetto, suddiviso in fasi incrementali; l'asse verticale rappresenta le mansioni o attività che costituiscono il progetto."
+Gas,"Il carburante di Ethereum. Ogni operazione eseguita in Ethereum\glosp è caratterizzata da un numero di unità Gas, che indica la quantità di lavoro necessaria per portare l'operazione a termine, e da un nodo della rete, che esegue le computazioni necessarie ad eseguire l'operazione. L'utente definisce un tasso di pagamento in Ether\glo/Gas. L'utente che ha svolto la computazione verrà ricompensato con la quantità di lavoro eseguita (Gas) moltiplicata per il tasso di conversione. Con questo sistema le operazioni con un tasso di conversione più elevato verranno eseguite con priorità maggiore nella rete, in quanto garantiscono una paga più elevata a parità di lavoro svolto.  "
+Gigacore,"Boilerplate\glosp per lo sviluppo di applicazioni che fanno uso di React\glo, Redux\glosp e Sass\glo."
+GitLab,"Sistema di gestione repository online, che integra servizi quali issue tracking e l'integrazione di pipeline volte a continuos delivery\glosp e continuos integration\glo."
+Governo,Termine usato per riferirsi a tutti gli enti governativi interessati nella gestione dell'IVA.
+Hunpos,Software specializzato in Part of Speech (PoS) tagging\glo. Il software sfrutta delle tecniche di apprendimento automatico supervisionato per tale classificazione.  
+JSON,JavaScript Object Notation. E’ una sintassi per il salvataggio e scambio di dati.
+Lint,"Programma che analizza il codice sorgente per segnalare errori, bug, costrutti sospetti e/o mancato adempimento a uno stile."
+Linter,Sinonimo: vedi Lint\glo.
+MetaMask,"Add-on\glosp disponibile nei browser Chrome, Firefox, Opera e Brave che permette agli utenti di interfacciarsi con la rete Ethereum\glosp senza ospitare un nodo della rete. Permette di autenticarsi in maniera sicura e di eseguire ÐApps\glosp sul proprio browser. Fornisce un'interfaccia utente per gestire più wallet/account e salvare tutti i dati direttamente nel browser. "
+Milestone,Indica il raggiungimento di obbiettivi stabiliti con importanza strategica. 
+Modello a V,Modello di sviluppo software esteso dal modello a cascata. Pone la scrittura del test del software nelle fasi iniziali dello sviluppo e prima della codifica.
+Modello di sviluppo,Detto anche modello di sviluppo software o modello dei processi software. Si tratta di un sistema di processi cooperativi e atti ad aiutare gli sviuppatori a realizzare il software. I processo sono scelti in base al modo di operare del team di sviluppo e al tipo di progetto che si intraprende.
+Node.js,"Ambiente open-source per l'esecuzione di codice Javascript a run-time, al di fuori dei browser. Ciò permette l'esecuzione di codice Javascript server-side."
+Open-Source,"Software non protetto da copyright, che segue la filosofia della produzione collaborativa e dell'accesso pubblico al codice sorgente."
+Partizione di equivalenza,"Nei test case, insieme di valori che sono trattati uniformemente: valori validi, valori di contorno della partizione o valoro non validi."
+Peer-to-peer,"Nelle reti telematiche, architettura in cui tutti i computer connessi svolgono la funzione sia di client che di server."
+Plug-in,Componente aggiuntivo che può essere aggiunto a un'altro software per ampliarne le funzionalità. Di solito può essere eseguito in modo indipendente.
+PoS tagging,Interpretazione di un testo etichettando ciascuna parola con il suo significato grammaticale.
+Prezzo lordo,Prezzo del prodotto dopo l'applicazione dell'imposta IVA.
+Prezzo netto,Prezzo del prodotto esente da imposta IVA.
+Product Baseline,"Baseline del progetto di ingegneria del software in cui il prodotto è stato realizzato e funziona, ma non è ancora pronto per il rilascio."
+Proof of Concept,È un prototipo software che dimostra che il progetto è fattibile conformemente alle richieste.
+Pull request,"Funzionalità di GitHub. Permette di comunicare agli altri membri del team i cambiamenti fatti, i  quali sono stati pushati sulla repository\glosp di GitHub."
+Python,"Linguaggio di programmazione general purpose, interpretato, ad alto livello. Gode di ampia diffusione per la sua semplicità e l'ampia collezione di librerie che lo supportano."
+Raiden,"È una tecnologia off-chain che consente pagamenti quasi istantanei, a basso costo e scalabili. È stata ideata per interagire con la rete Ethereum\glosp e può essere utilizzata per le transazioni di token\glosp compatibili con lo standard ECR20\glo"
+React,Libreria open source per JavaScript per la creazione di interfacce grafiche e la gestione delle interazioni in ambito web.
+Redmine,"Piattaforma open source che permette la gestione di più progetti contemporaneamente, offrendo funzionalità di project management e issue tracking."
+Redux,Libreria open source JavaScript per la gestione degli stati di React\glo.
+Repository,"In generale, locazione di salvataggio dei dati. Nei sistemi di versionamento è una struttura dati più complessa, contenente metadati e operazioni per maneggiarla."
+REST,"Representational State Transfer, stile architetturale atto alla creazione di servizi web. Si espongono operazioni per manipolare i servizi, appoggiandosi a protocolli web esistenti, tipicamente HTTP."
+Rete Bayesiana,Modello grafico probabilistico che rappresenta un insieme di variabili stocastiche con le loro dipendenze condizionali.
+Ropsten,Rete di test ufficiale per Ethereum per uso pubblico. Funziona in modo simile alla main net. In essa le operazioni di scrittura sono gratuite. Si usa per testare e trovare bug prima del rilascio sulla rete principale.
+Sass,"Sigla per ""Syntactically Awesome Style Sheets"", è un linguaggio interpretato o compilato in CSS dotato di una sintassi che semplifica ed estende le funzionalità offerte da CSS. Supporta anche la nuova sintassi SCSS\glo."
+SCSS,"Sintassi per l'estensione del linguaggio CSS, che ne aumenta le funzionalità e l'espressività."
+Server-side,Lato server: fa riferimento a operazioni compiute dal server in un ambito client-server. 
+Shortcut,Scorciatoia: una maniera alternativa e più veloce per svolgere la stessa attività.
+Skill,Funzioni aggiuntive per Amazon Alexa non previste nel pacchetto base.
+Slack,"Sistema di messaggistica cloud-based orientato al mondo lavorativo. Permette la creazioni di diverse aree di lavoro, suddivise in canali che trattano un particolare topic."
+Smart contract,"Protocolli per facilitare, attuare e verificare la negoziazione di un contratto in versione digitale. Permettono di ottenere lo stesso valore di un contratto reale senza l'ausilio di un garante esterno. Le transazioni che avvengono con questo protocollo sono tracciabili e irreversibili. Uno smart contract rappresenta del codice che può essere eseguito."
+Snake case,"Convenzione per i nomi dei file. Utilizza ""underscore"" come carattere separatore. Nell'accezione del team, le lettere sono tutte minuscole e le preposizioni non si omettono."
+Solidity,Linguaggio di programmazione utilizzato per lo sviluppo di smart contracts\glosp eseguibili in diverse blockchain\glo.
+SonarQube,"Piattaforma open source che permette disvolgere una continua revisione del codice caricato in una repository, svolgendo analisi statica per individuare possibili bug e vulnerabilità in sicurezza."
+Staging,Fase successiva alla fase di sviluppo del software che consiste nell'assemblare tutte le componenti e testarle in un server svolgere verifiche e test. Se il software possiede il comportamento desiderato allora può passare alla fase di produzione.
+Stand-up,Riunioni giornaliere di breve durata in cui le persone che partecipano ad un progetto espongono i progressi raggiunti e le attività pianificate per la giornata. Sono uno degli elementi principali dei metodi di sviluppo Agile\glo. 
+Stub,"Nel test di unità, lo stub è un'unità fantoccio, usata a supporto l'interfaccia dell'unità da testare. Ad esempio, se l'unità da testare fa una chiamata a una funzione non ancora definita, lo stub funge funzione chiamata e ritorna un risultato conforme senza eseguire calcoli."
+Surge.sh,Web server che offre il servizio di hosting per siti web statici.
+Technology Baseline,"Definisce le tecnologie, i framework e le librerie selezionate per lo sviluppo del prodotto."
+Telegram,Servizio di messaggistica istantanea  e VoIP cloud-based.
+Testrpc,"Ambiente di test per Ethereum, permette di testare gli smart contract senza overhead. Una versione più recente che lo ha incorporato è Ganache CLI\glo."
+Time Series,"Insieme di variabili casuali ordinate rispetto al tempo, esprimendo quindi la dinamica di un certo fenomeno nel tempo."
+Token,"Rappresentazione di una particolare risorsa o utilità che opera su una blockchain\glo. Un token può rappresentare un qualsiasi bene commerciabile, da materie prime fino alle criptovalute. Si differenzia dagli alctoin per il fatto che usa una blockchain già esistente."
+Truffle,Framework per lo sviluppo ed il testing di codice in una blockchain\glo. Gestisce l'environment necessario per eseguire e testare gli smart contracts\glo.
+Twelve-Factor App,Metodologia per la creazione di software come applicazioni di servizio. Queste best practice sono progettate per consentire alle applicazioni di essere costruite con portabilità e resilienza una volta implementate sul Web.
+UML,"Unified Modeling Language è un linguaggio standard per specififcare, visualizzare, costruire e documentare gli artefatti\glosp di un sistema software."
+Wallet,"Portafoglio virtuale personale, dove sono presenti le proprie monete virtuali."
+Workflow,Modello composto da un insieme di regole che tutti rispettano per lavorare con fluidità.
