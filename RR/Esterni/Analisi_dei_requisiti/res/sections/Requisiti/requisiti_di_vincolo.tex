@@ -1,0 +1,58 @@
+\subsection{Requisiti di vincolo}
+
+	\rowcolors{2}{pari}{dispari}
+	
+	\begin{longtable}{ >{\centering}p{0.10\textwidth} >{\centering}p{0.25\textwidth}
+			>{\raggedright}p{0.35\textwidth} >{\centering}p{0.14\textwidth}}
+		\caption{Tabella dei requisiti di vincolo}\\
+		\rowcolorhead 
+		\textbf{\color{white}Requisito} 
+		& \textbf{\color{white}Classificazione} 
+		& \centering\textbf{\color{white}Descrizione}
+		& \textbf{\color{white}Fonti} 
+			\endfirsthead
+		\rowcolor{white}\caption[]{(continua)}\\
+		\rowcolorhead 
+		\textbf{\color{white}Requisito} 
+		& \textbf{\color{white}Classificazione} 
+		& \centering\textbf{\color{white}Descrizione}
+		& \textbf{\color{white}Fonti} 
+		\endhead	
+		
+		
+R1V1	&	Obbligatorio	&	La Dapp\glosp sviluppata deve avere il front end\glosp sviluppato attraverso l'uso di tecnologie web	&	Capitolato	\tabularnewline
+R1V1.1	&	Obbligatorio	&	L'applicativo deve essere sviluppato utilizzando JavaScript 8 (ES8)	&	Capitolato	\tabularnewline
+R1V1.2	&	Obbligatorio	&	L'applicativo deve essere sviluppato utilizzando React\glo.	&	Capitolato	\tabularnewline
+R1V1.3	&	Obbligatorio	&	L'applicativo deve essere sviluppato utilizzando Redux\glo.	&	Capitolato	\tabularnewline
+R3V1.4	&	Opzionale	&	L'applicativo deve essere implementato affidandosi al boilerplate\glosp Gigacore\glo.	&	Capitolato	\tabularnewline
+R2V1.5	&	Desiderabile	&	È desiderabile che l'applicativo venga sviluppato utilizzando SCSS\glo/Sass\glo	&	Capitolato	\tabularnewline
+R1V2	&	Obbligatorio	&	Soldino deve rispettare lo standard EIP-712\glo.	&	Capitolato	\tabularnewline
+R1V3.1	&	Obbligatorio	&	Gli smart contracts\glosp devono essere upgradable	&	Capitolato	\tabularnewline
+R1V3.2	&	Obbligatorio	&	Gli smart contracs\glosp devono essere scritti in linguaggio Solidity\glo	&	Capitolato	\tabularnewline
+R1V4.1	&	Obbligatorio	&	Per connettersi alla rete Ethereum\glosp deve essere utilizzato il plug-in\glosp MetaMask\glo	&	Capitolato	\tabularnewline
+R1V4.2	&	Obbligatorio	&	Per poter validare ed effettuare una transazione che richiede un trasferimento di Cubit\glo, deve essere utilizzato MetaMask\glo	&	Capitolato	\tabularnewline
+R1V5	&	Obbligatorio	&	Il sistema, ed in particolare lo sviluppo degli smart contracts\glo, deve avvenire per mezzo del framework\glosp Truffle\glo	&	Capitolato	\tabularnewline
+R1V6	&	Obbligatorio	&	Lo sviluppo dell'applicativo deve comprendere l'implementazione di test di unità e di intergrazione	&	Capitolato	\tabularnewline
+R1V7	&	Obbligatorio	&	Il progetto deve utilizzare come minimo i seguenti ambienti di sviluppo: ambiente di sviluppo locale, ambiente per il testing, ambiente per lo staging\glosp e ambiente di produzione.	&	Capitolato	\tabularnewline
+R2V7.1	&	Desiderabile	&	Gli ambienti per le fasi di sviluppo locale e testing possono essere fornite da Truffle\glo, utilizzando la rete \textit{testrpc}\glosp ed il web server fornito dal framework\glosp stesso	&	Capitolato	\tabularnewline
+R1V7.2	&	Obbligatorio	&	Durante la fase di staging l'applicazione deve pubblicamente accessibile	&	Capitolato	\tabularnewline
+R2V7.3	&	Desiderabile	&	Come ambiente per la fase di staging è desiderabile l'utilizzo della rete Ropsten\glosp e del web server Surge.sh\glo	&	Capitolato	\tabularnewline
+R3V7.4	&	Opzionale	&	L'ambiente di produzione deve essere composto dall'Ethereum\glosp main network assieme al web server Surge.sh\glo	&	Capitolato	\tabularnewline
+R1V8	&	Obbligatorio	&	L'utente non può effettuare alcuna azione prima di essersi autenticato al sistema con MetaMask\glo	&	Capitolato	\tabularnewline
+R1V9.1	&	Obbligatorio	&	La Dapp\glosp dovrà essere accessibile ed utilizzabile utilizzando i browser Google Chrome, dalla versione 71	&	Verbale 2018-12-07  VE\_1.4	\tabularnewline
+R1V9.2	&	Obbligatorio	&	La Dapp\glosp dovrà essere accessibile ed utilizzabile utilizzando il browser Mozilla FireFox, dalla versione 64	&	Verbale 2018-12-07 VE\_1.5	\tabularnewline
+R1V10	&	Obbligatorio	&	Il token\glosp utilizzato nella piattaforma, il Cubit\glo, dovrà rispettare lo standard ECR20\glo	&	Capitolato	\tabularnewline
+R1V11	&	Obbligatorio	&	Il sistema deve essere pubblicato con licenza MIT	&	Capitolato	\tabularnewline
+R1V12	&	Obbligatorio	&	Il sistema di compravendita deve essere implementato secondo il meccanismo di escrow\glo	&	Verbale 2019-01-04  VE\_3.4	\tabularnewline
+R1V13	&	Obbligatorio	&	I pagamenti riguardanti i saldi IVA non devono avvenire automaticamente	&	Verbale 2018-12-07 VE\_1.2	\tabularnewline
+R2V14	&	Desiderabile	&	Il codice deve essere versionato in una repositoty\glosp ospitata in un sistema di versionamento, ad esempio GitHub o GitLab	&	Capitolato	\tabularnewline
+R1V15	&	Obbligatorio	&	La documentazione per l'utilizzo del software deve essere stesa in lingua inglese	&	Verbale 2018-12-07, VE\_1.6	\tabularnewline
+R1V15.1	&	Obbligatorio	&	Il codice deve essere accompagnato da un manuale amministratore, che conterrà le informazioni per la distribuzione ed installazione dei software necessari	&	Capitolato	\tabularnewline
+R1V15.2	&	Obbligatorio	&	Il codice deve essere accompagnato da un manuale utente, che esplicherà l'utilizzo dell'applicativo ad aziende, cittadini ed utenti governativi	&	Capitolato	\tabularnewline
+R1V16	&	Opzionale	&	Sviluppare un metodo di pagamento veloce implementato con la rete Raiden\glo	&	Capitolato	\tabularnewline
+R1V17	&	Opzionale	&	È apprezzabile il deploy in rete Ethereum\glo.	&	Capitolato	\tabularnewline
+		
+		
+		
+		
+	\end{longtable}

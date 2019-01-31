@@ -1,16 +1,17 @@
 \section{Analisi dei rischi}
 
 Nel corso dello sviluppo di un progetto complesso è possibile incorrere in 
-problemi che potevano essere evitati tramite un'attività di analisi. Allo scopo 
-quindi, di prevenire rallentamenti evitabili è stata effettutata 
-un'approfondita attività di analisi dei principali fattori di rischio; per 
-ciascuno delle voci nella tabella sottostante è stata utilizzata la seguente 
+problemi che possono essere evitati tramite un'attività di analisi. Quindi 
+allo scopo di prevenire queste situazioni è stata effettuata 
+un'approfondita attività di analisi dei principali fattori di rischio. Per 
+ciascuna delle voci nella tabella sottostante è stata utilizzata la seguente 
 procedura di identificazione e risoluzione:
 
 \begin{itemize}
-	\item \textbf{Individuazione}: identificare i vari fattori di rischio che possono rallentare o impedire il normale proseguimento del progetto;
-	\item \textbf{Analisi}: studio dei fattori di rischio e conseguente assegnazione di una probabilità che essi si verifichino e di un indice di gravità, ovvero l'impatto che avrebbero sul progetto;
-	\item \textbf{Ricerca Contromisure e Pianificazione dei Controlli}: pianificazione di apposite misure di controllo e tecniche per la risoluzione di tali problemi.
+	\item \textbf{Individuazione dei rischi}: attività di identificazione dei vari fattori problematici che possono rallentare o impedire il normale proseguimento del progetto;
+	\item \textbf{Analisi dei rischi}: attività di studio dei fattori di rischio con conseguente assegnazione di una probabilità che essi si verifichino e di un indice di gravità, determinando così l'impatto che avrebbero sul progetto;
+	\item \textbf{Pianificazione di controllo}: attività di pianificazione di una metodologia per evitare che si verifichino i rischi individuati e si stabilisca come procedere nel caso in cui il problema si riscontrasse;
+	\item \textbf{Monitoraggio dei rischi}: attività continua svolta al fine di evitare che abbiano luogo queste complicazioni o, nel peggiore dei casi, permetta di agire tempestivamente per contenerle.
 \end{itemize}
 
 Sono stati inoltre definiti i seguenti codici per raggruppare le varie 
@@ -35,14 +36,14 @@ tipologie di fattori di rischio:
 	\centering\colorhead\textbf{Descrizione} & 
 	\colorhead\textbf{Probabilità} &
 	\colorhead\textbf{Gravità}\tabularnewline
-	\hline
+	\arrayrulecolor{black}\hline
 	\hline
 	\rowcolorlight RT1 & Inesperienza Tecnologica & Molte delle tecnologie da 
 	adottare nello 
 	sviluppo del progetto richiesto sono nuove per molti componenti del team, 
-	di conseguenza potranno insorgere problemi operativi. & Alta & 
+	di conseguenza potrebbero insorgere problemi operativi. & Alta & 
 	Alta
-	\tabularnewline \hline
+	\tabularnewline \arrayrulecolor{white}\hline
 	%<temp>
 	\rowcolorlight\multicolumn{2}{p{3.63cm}}{\centering\textbf{Contromisure}}& 
 	\multicolumn{3}{p{9.874cm}}{Ciascun componente del team si impegnerà nello 
@@ -53,18 +54,18 @@ tipologie di fattori di rischio:
 	\rowcolordark RO1 & Calcolo Tempi & La massiccia presenza di tecnologie 
 	nuove per molti 
 	dei componenti del team, può comportare imprecisioni/variazioni nelle 
-	tempestiche inziali. & Alta & Alta
+	tempestiche iniziali. & Alta & Alta
 	\tabularnewline \hline
 	\rowcolordark\multicolumn{2}{p{3.63cm}}{\centering\textbf{Contromisure}}& 
 	\multicolumn{3}{p{9.874cm}}{Il gruppo 
 	ha predisposto 
 	apposite tabelle condivise, per monitorare i tempi di sviluppo ed 
 	evidenziare eventuali ritardi, il responsabile valuterà una eventuale 
-	riallocazione di risorse.}
+	riallocazione delle risorse.}
 	\tabularnewline \arrayrulecolor{black}\hline\arrayrulecolor{white}
 	\rowcolorlight RO2 & Calcolo Costi & Considerata l'inesperienza del team 
 	nelle valutazioni
-	economiche, essere potranno risultare imprecise. & Media & Alta
+	economiche, esse potranno risultare imprecise. & Media & Alta
 	\tabularnewline \hline
 	\rowcolorlight\multicolumn{2}{p{3.63cm}}{\centering\textbf{Contromisure}}& 
 	\multicolumn{3}{p{9.874cm}}{
@@ -74,62 +75,56 @@ tipologie di fattori di rischio:
 	\tabularnewline \arrayrulecolor{black}\hline\arrayrulecolor{white}
 	\rowcolordark RO3 & Impegni Accademici & Possono verificarsi momenti in cui 
 	uno o più 
-	compenenti del team siano meno dispnibili a causa di alcuni impegni di tipo 
+	componenti del team siano meno disponibili a causa di alcuni impegni di tipo 
 	accademico. & Alta & Bassa
 	\tabularnewline \hline
 	\rowcolordark\multicolumn{2}{p{3.63cm}}{\centering\textbf{Contromisure}}& 
 	\multicolumn{3}{p{9.874cm}}{Al fine di 
 	prevenire 
-	rallentamenti alle operazioni è stato predisposto un calendario condiviso 
+	rallentamenti durante il lavoro, è stato predisposto un calendario condiviso 
 	nel quale ciascun componente deve segnalare i propri impegni; in questo 
-	modo il responsabile potrà soddividere il lavoro in maniera ottimale.}
+	modo il responsabile potrà suddividere il lavoro in maniera ottimale.}
 	\tabularnewline \arrayrulecolor{black}\hline\arrayrulecolor{white}
 	\rowcolorlight RO4 & Impegni Personali & Possono verificarsi momenti in cui 
 	uno o più 
-	compenenti del team siano meno dispnibili a causa di alcuni impegni di tipo 
+	componenti del team siano meno disponibili a causa di alcuni impegni di tipo 
 	personale. & Media & Bassa
 	\tabularnewline \hline
 	\rowcolorlight\multicolumn{2}{p{3.63cm}}{\centering\textbf{Contromisure}}& 
 	\multicolumn{3}{p{9.874cm}}{Come nel 
-	caso precedente 
-	è 
+	caso precedente è 
 	stato predisposto un calendario condiviso al fine di migliorare la 
-	suddivsione dei compiti.}
+	suddivisione dei compiti.}
 	\tabularnewline \arrayrulecolor{black}\hline\arrayrulecolor{white}
 	\rowcolordark RO5 & Ritardi & Una o più delle problematiche sopracitate 
 	possono 
-	comportare ritadi. & Media & Bassa
+	comportare ritardi. & Media & Bassa
 	\tabularnewline \hline
 	\rowcolordark\multicolumn{2}{p{3.63cm}}{\centering\textbf{Contromisure}}& 
-	\multicolumn{3}{p{9.874cm}}{Il 
-	responsabile 
-	provvederà 
-	ad una eventuale riassegnazione risorse e, se necessario, ad una 
+	\multicolumn{3}{p{9.874cm}}{Il responsabile provvederà 
+	ad una eventuale riassegnazione delle risorse e, se necessario, ad una 
 	segnalazione al committente/proponente.}
 	\tabularnewline \arrayrulecolor{black}\hline\arrayrulecolor{white}
-	\rowcolorlight RI1 & Comunicazione Interna & Nel corso dello potrebbero 
-	verificarsi dei 
-	momenti in cui uno più membri del gruppo siano inreperibili. & Bassa & Alta
+	\rowcolorlight RI1 & Comunicazione Interna & Nel corso dello sviluppo del progetto 
+	potrebbero verificarsi dei 
+	momenti in cui uno più membri del gruppo siano irreperibili. & Bassa & Alta
 	\tabularnewline \hline
 	\rowcolorlight\multicolumn{2}{p{3.63cm}}{\centering\textbf{Contromisure}}& 
-	\multicolumn{3}{p{9.874cm}}{Ciascun 
-	membro del team 
-	ha 
+	\multicolumn{3}{p{9.874cm}}{Ciascun membro del team ha 
 	fornito più opzioni per essere contattato e si impegna a rispondere ad 
 	eventuali richieste. Sarà inoltre responsabilità personale segnalare 
-	eventuali momenti di inreperibilità.}
+	eventuali momenti di irreperibilità.}
 	\tabularnewline \arrayrulecolor{black}\hline\arrayrulecolor{white}
 	\rowcolordark RI2 & Comunicazione Esterna & Il proponente ha la propria 
 	sede all'estero, 
 	di conseguenza le comunicazioni saranno più difficili. & Bassa & Media
 	\tabularnewline \hline
 	\rowcolordark\multicolumn{2}{p{3.63cm}}{\centering\textbf{Contromisure}}& 
-	\multicolumn{3}{p{9.874cm}}{Come per le 
-	comunicazioni 
+	\multicolumn{3}{p{9.874cm}}{Come per le comunicazioni 
 	interne, sono stati predisposti più canali di comunicazione; le video 
 	conferenze con il proponente saranno organizzare con il dovuto preavviso. 
-	In occasione di tali conferena ciascun membro del gruppo si imegnerà a 
-	raggruppare domande, dubbi e chiarimenti da sottoporre al referente 
+	In occasione di tali conferenze ciascun membro del gruppo si impegnerà a 
+    raccogliere domande, dubbi e chiarimenti da sottoporre al referente 
 	dell'azienda proponente.}
 	\tabularnewline \arrayrulecolor{black}\hline\arrayrulecolor{white}
 	\rowcolorlight RI3 & Contrasti interni & Come in qualsiasi gruppo, nel 
@@ -138,11 +133,9 @@ tipologie di fattori di rischio:
 	Bassa & Media
 	\tabularnewline \hline
 	\rowcolorlight\multicolumn{2}{p{3.63cm}}{\centering\textbf{Contromisure}}& 
-	\multicolumn{3}{p{9.874cm}}{Ciascun 
-	membro del team 
-	si 
+	\multicolumn{3}{p{9.874cm}}{Ciascun membro del team si 
 	impegnerà a limitare tali tensioni e fare in modo che esse non influiscano 
-	il normale svolgersi delle attività; in caso necessario il responsabile 
+	nel normale svolgimento delle attività; in caso contrario, il responsabile 
 	provvederà a limitare tali contrasti.}
 	\tabularnewline \arrayrulecolor{black}\hline
 	
