@@ -21,4 +21,7 @@
 *.mtc1
 *.out
 *.synctex.gz
-*.pdf
+main.pdf
+*.DS_Store
+
+

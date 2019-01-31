@@ -1,0 +1,86 @@
+\section{Specifica dei test}
+Per assicurare la qualità del software prodotto, il gruppo \textit{8Lab
+Solutions} adotterà come modello si sviluppo del software il
+\textbf{Modello a V}, il quale prevede lo sviluppo dei test in parallelo alle
+attività di analisi e progettazione. In questo modo i test permetteranno di
+verificare sia la correttezza delle parti di programma sviluppati, sia che
+tutti gli aspetti del progetto siano implementati e corretti. 
+Seguirà quindi il tracciamento dei test e il loro esito per mezzo di tabelle che ne
+semplificheranno la consultazione e che potranno fornire una precisa indicazione 
+degli output prodotti, specificando se il risultato ottenuto sia quello atteso, errato
+oppure non coerente a quanto fissato in precedenza.
+Per definire lo stato dei test, vengono utilizzate le seguenti sigle:
+\begin{itemize}
+	\item \textbf{I}: per indicare che il test è stato implementato;
+	\item \textbf{NI}: per indicare che il test non è stato implementato.
+\end{itemize}
+Inoltre per lo stato dei test si usano le seguenti abbreviazioni:
+\begin{itemize}
+	\item \textbf{S}: per indicare che il test ha soddisfatto la richiesta;
+	\item \textbf{NS}: per indicare che il test non ha soddisfatto la richiesta.
+\end{itemize}
+
+\subsection{Tipi di test}
+Vengono individuate quattro tipologie di test:
+\begin{itemize}
+	\item \textbf{Test di Accettazione[TA]}: essi vengono fatti per verificare 
+		che il prodotto soddisfi quanto richiesto dal proponente;
+	\item \textbf{Test di Sistema [TS]}: questi test vengono utilizzati quando il 
+		sistema viene installato su una piattaforma e verificano che esso raggiunga gli 
+		obiettivi fissati e soddisfi le richieste formulate in partenza;
+	\item \textbf{Test di Integrazione [TI]}: lo scopo di questi test è quello di 
+		testare come un gruppo i singoli moduli\glo{} del software. Essi vengono svolti 
+		dopo i Test di Unità e prima dei Test di Sistema; 
+	\item \textbf{Test di Unità [TU]}: questi test hanno il compito di verificare le 
+		singole unità del software, ovvero le minime componenti del programma che hanno 
+		un funzionamento autonomo. Il successo da parte di questi test non implica il 
+		corretto funzionamento da parte del software.		
+\end{itemize}
+
+\subsubsection{Test di Accettazione}
+I test di accettazione hanno lo scopo di dimostrare che il software sviluppato 
+soddisfi le richieste del proponente ed essi vengono eseguiti durante il
+collaudo finale. Tali test verranno indicati nel seguente modo:
+	\centerline{TA[Tipo][Importanza][Codice]}
+dove:
+\begin{itemize}
+	\item \textbf{Tipo}: indica di che tipo si tratta il requisito. Può
+		appartenere a una delle seguenti categorie indicate con:
+		\begin{itemize}
+			\item \textbf{O} per i requisiti obbligatori;
+			\item \textbf{D} per i requisiti desiderabili;
+			\item \textbf{F} per i requisiti facoltativi.			
+		\end{itemize}
+	\item \textbf{Importanza}: indica l'importanza del requisito. L'importanza
+		che può assumere un requisito viene indicata con:
+		\begin{itemize}
+			\item \textbf{F} per indicare un requisito funzionale;
+			\item \textbf{V} per indicare un requisito di vincolo;
+			\item \textbf{Q} per indicare un requisito di qualità;
+			\item \textbf{P} per indicare un requisito prestazionale. 
+		\end{itemize}
+	\item \textbf{Codice}: rappresenta il codice identificativo crescente
+		del componente da verificare.
+\end{itemize}
+
+%\subsubsection{Test di Sistema}
+%I test di sistema sono impiegati per garantire il corretto funzionamento delle 
+%componenti dell'intero sistema. Tali test verranno indicati nel seguente modo:
+%	\centerline{\textbf{TS[id]}}
+%dove \textit{id} rappresenta il codice identificativo crescente del componente da
+%verificare.
+
+
+%\subsubsection{Test di Integrazione}
+%I test di integrazione sono usati per verificare il corretto funzionamento tra le
+%varie unità dell'architettura. Tali test verranno indicati nel seguente modo:
+%	\centerline{\textbf{TI[id]}}
+%dove \textit{id} rappresenta il codice identificativo crescente del componente da
+%verificare.
+
+%\subsubsection{Test di Unità}
+%I test di unità hanno l'obiettivo di verificare il corretto funzionamento della 
+%parte più piccola autonoma del lavoro realizzato. Tali test verranno indicati nel
+%seguente modo:
+%	\centerline{\textbf{TU[id]}}
+%dove \textit{id} rappresenta il codice identificativo crescente dell'unità da verificare.

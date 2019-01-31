@@ -1,0 +1,114 @@
+\section{Capitolato scelto C6 - Soldino}
+\subsection{Informazioni generali}
+% ------ Inserire qui testo ------
+% Eliminare parte dei controlli e burocrazia (Guardia di Finanza -> controlli a 
+% campione)
+% 
+\begin{itemize}
+\item \textbf{Nome:} Soldino;
+\item \textbf{Proponente:} Red Babel;
+\item \textbf{Committente:} Prof. Tullio Vardanega e Prof. Riccardo Cardin.
+\end{itemize}
+
+\subsection{Descrizione}
+Il progetto proposto ha lo scopo di sviluppare una piattaforma che permetta a 
+tutti gli utenti di tenere sotto controllo i propri investimenti, inserire le 
+proprie spese/vendite e registrare le tasse. Nello specifico, \textit{Soldino} 
+consente il monitoraggio automatico dell'IVA, ovvero assiste il governo e gli 
+utenti nell'esecuzione di operazioni come: liquidazione, versamento, rimborso, 
+ecc. Lo scambio di denaro tra utenti e governo avviene per mezzo di una 
+criptovaluta basata sullo standard ECR20\glo{}, denominata "Cubit"\glo{}. 
+
+
+\subsection{Studio del dominio}
+\subsubsection{Dominio applicativo}
+Sono stati individuati tre attori: ente governativo, proprietario di un'azienda 
+e persona fisica. \\
+L'ente governativo\`E in grado di coniare e distribuire la 
+criptovaluta utilizzata in \textit{Soldino}. Inoltre, ha la possibilità di 
+accedere e gestire la lista delle aziende iscritte alla piattaforma e, a cadenza 
+trimestrale, di controllare se le aziende che sono in uno stato di debito 
+abbiano pagato. \\
+Il proprietario di un'azienda deve poter registrare la propria 
+impresa nella piattaforma \textit{Soldino}, controllare i prodotti/servizi 
+offerti ed acquistare prodotti da altre aziende. In aggiunta, deve poter gestire
+tutto ciò che riguarda l'IVA, ovvero creare un documento di resoconto periodico,
+gestirne le ricevute e eventualmente pagare il saldo a cadenza trimestrale. \\
+La persona fisica\glo può convertire Euro in Cubit e 
+successivamente acquistare i beni e servizi offerti sulla piattaforma. 
+
+\subsubsection{Dominio tecnologico}
+Per lo sviluppo del lato backend si individuano le seguenti tecnologie:
+\begin{itemize}
+    \item \textbf{Blockchain:} tecnologia che permette la gestione di un grande 
+database distribuito per la gestione di transazioni condivisibili tra più nodi 
+di una rete;
+	\item \textbf{Ethereum:} è una piattaforma decentralizzata per la creazione
+	e la pubblicazione peer-to-peer di smart contracts;
+	\item \textbf{Ethereum Virtual Machine (EVM):} è la macchina virtuale che 
+esegue gli smart contracts;
+	\item \textbf{Smart Contracts:} sono programmi che facilitano, verificano e 
+fanno rispettare la negoziazione e la validità dei contratti stipulati tra due 
+enti o tra due semplici persone;
+	\item \textbf{Solidity:} linguaggio orientato ai contratti, in particolare 
+utilizzato per implementare smart contracts.
+	\item \textbf{DApps:} è un acronimo per indicare un'applicazione 
+decentralizzata, ovvero un software creato attraverso i contratti intelligenti 
+nella blockchain di Ethereum;
+	\item \textbf{Metamask:} plugin browser che permette di autenticarsi nella rete 
+Ethereum e supporta tutti i token tramite il sistema tecnologico ERC20.
+\end{itemize}
+
+Per lo sviluppo del lato front-end:
+\begin{itemize}
+	\item \textbf{Javascript:} linguaggio di scripting client-side. Il proponente 
+impone di sottostare alle linee guida esposte nella "Airbnb Javascript style 
+guide", e di utilizzare un tool di analisi statica del codice e syntax checking, 
+"ESlint"\glo;
+	\item \textbf{React:}  libreria open source per JavaScript per la creazione di 
+interfacce grafiche e la gestione delle interazioni in ambito web;
+	\item \textbf {Redux:} libreria open source Javascript per la gestione degli 
+stati di React;
+	\item \textbf{SCSS:} estensione del linguaggio CSS, che ne aumenta le 
+funzionalità e l'espressività.
+\end{itemize}
+
+
+\subsection{Aspetti positivi}
+Gli aspetti positivi emersi dall'analisi di questo capitolato sono:
+\begin{itemize}
+	\item Con l'avvento dell'obbligo di fatturazione elettronica è sicuramente
+	utile a livello curriculare averci lavorato;
+	\item Le criptovalute sono state un argomento molto discusso negli ultimi anni 
+suscitando nel gruppo un forte interesse nell'approfondire il loro utilizzo;
+	\item Il capitolato prevede l'uso di tecnologie largamente utilizzate e quindi 
+documentate in modo esaustivo;
+	\item Il fatto di utilizzare librerie come React e SCSS permetterà di
+	sperimentare come realmente si lavora nelle aziende, distaccandoci così dalle 
+tecniche puramente accademiche.
+\end{itemize}
+
+\subsection{Criticità}
+Invece gli elementi negativi sono:
+\begin{itemize}
+	\item Il capitolato prevede l'utilizzo di tecnologie nuove, che quindi 
+porteranno ad una mole di studio autonomo non indifferente;
+	\item L'azienda proponente ha sede all'estero, quindi la comunicazione con i 
+referenti sarà meno agevole rispetto ai rapporti con un'azienda che ha sede nel 
+territorio nazionale.
+\end{itemize}
+
+\subsection{Conclusioni} Il gruppo ha accolto con entusiasmo il capitolato, in 
+quanto tra tutte le proposte è quella che copre più tecnologie innovative, ma 
+che sono già ampiamente sfruttate e che probabilmente avranno un impatto sempre 
+maggiore nel mercato. Con questo progetto tutti i componenti del team avranno 
+l'opportunità di studiare un campo dell'informatica che all'università è poco 
+trattato, potendo aggiungere al proprio bagaglio curricolare delle voci 
+particolarmente interessanti. Inoltre, il gruppo ha apprezzato che RedBabel abbia
+proposto un approccio moderno allo sviluppo delle interfacce web, scegliendo 
+tecnologie quali React e Redux, sempre più diffuse e richieste anche in ambito lavorativo.\\
+L'interesse verso queste nuove tecnologie ha spinto il gruppo 8Lab Solutions ad 
+optare per questa scelta nonostante la consapevolezza che, essendo tecnologie 
+poco conosciute, il loro studio richiederà un impegno notevole.
+
+
