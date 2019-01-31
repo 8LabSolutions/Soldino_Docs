@@ -7,6 +7,7 @@
 \usepackage{tabularx}
 \usepackage{longtable}
 \usepackage{hyperref}
+\usepackage{enumitem}
 \hypersetup{
 	colorlinks=true,
 	linkcolor=black,
@@ -17,6 +18,8 @@
 \let\counterwithout\relax
 \let\counterwithin\relax
 \usepackage{chngcntr}
+\counterwithin{table}{subsection}
+\counterwithin{figure}{subsection}
 
 
 
@@ -25,9 +28,9 @@
 \usepackage{titlesec}
 \setcounter{secnumdepth}{4}
 \usepackage{amsmath, amssymb}
-%\usepackage{caption}
+\usepackage{array}
 \usepackage{graphicx}
-%\usepackage{float}
+
 \usepackage{layouts}
 \usepackage{float}
 \usepackage{eurosym}
@@ -37,7 +40,6 @@
 \lhead{\includegraphics[scale=0.07]{res/images/logo8_crop.png}}
 %Titolo del documento
 \rhead{\doctitle{}}
-%\lfoot{\rightmark}
 \rfoot{\thepage}
 \cfoot{}
 \setlength{\headheight}{35pt}
@@ -50,6 +52,7 @@
 
 % Permette tabelle su più pagine
 \usepackage{longtable}
+\usepackage{ltxtable} 
 
 % colore di sfondo per le celle
 \usepackage[table]{xcolor}

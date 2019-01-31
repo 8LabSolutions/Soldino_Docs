@@ -22,3 +22,6 @@
 *.out
 *.synctex.gz
 main.pdf
+*.DS_Store
+
+
