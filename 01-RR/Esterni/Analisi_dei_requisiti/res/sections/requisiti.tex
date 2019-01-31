@@ -1,0 +1,47 @@
+
+\section{Requisiti} 
+Ogni requisito è composto dalla seguente struttura:
+\begin{itemize}
+	\item \textbf{codice identificativo}: ogni codice identificativo è univoco e conforme alla seguente codifica: \\
+	\centerline{\textbf{R[Importanza][Tipologia][Codice]}} \\ \\
+	Il significato delle cui voci è:
+	\begin{itemize}
+		\item \textbf{Importanza}: ogni requisito può assumere uno dei seguenti valori:
+		\begin{itemize}
+			\item \textit{1}: requisito obbligatorio: irrinunciabili per qualcuno degli stakeholder;
+			\item \textit{2}: requisito desiderabile: non strettamente necessari ma  a valore aggiunto riconoscibile;
+			\item \textit{3}: requisito opzionale: relativamente utili oppure contrattabili più avanti nel progetto;	
+		\end{itemize}
+		\item \textbf{Tipologia}: ogni requisito può assumere uno dei seguenti valori:
+		\begin{itemize}
+			\item \textit{F}: funzionale;
+			\item \textit{Q}: prestazionale;
+			\item \textit{P}: qualitativo;
+			\item \textit{V}: vincolo.
+		\end{itemize}
+		\item \textbf{Codice}: è un identificatore univoco del requisito in forma gerarchica padre/figlio.
+	\end{itemize}
+	\item \textbf{classificazione}: viene riportata l'importanza del requisito. Sebbene questa sia un'informazione ridondante ne facilita la lettura;
+	\item \textbf{descrizione}: descrizione breve ma completa del requisito, meno ambigua possibile;
+	\item \textbf{fonti}: ogni requisito può derivare da una o più tra le seguenti opzioni:
+	\begin{itemize}
+		\item \textit{capitolato\glo}: si tratta di un requisito individuato dalla lettura del capitolato\glo;
+		\item \textit{interno}: si tratta di un requisito che gli analisti hanno ritenuto opportuno aggiungere;
+		\item \textit{caso d'uso}: il requisito è estrapolato da uno o più casi d'uso. In questo caso è riportato il codice univoco del caso d'uso;
+		\item \textit{verbale}: si tratta di un requisito individuato in seguito ad una richiesta di chiarimento con il proponente. Tali informazioni sono riportate nei verbali in cui ogni requisito individuato è segnato da un codice presente nella tabella dei tracciamenti.
+	\end{itemize}
+\end{itemize}
+\renewcommand{\arraystretch}{1.5}
+
+\input{res/sections/Requisiti/requisiti_funzionali.tex}
+\pagebreak
+\input{res/sections/Requisiti/requisiti_di_qualita.tex}
+\input{res/sections/Requisiti/requisiti_di_vincolo.tex}
+
+\input{res/sections/Requisiti/requisiti_prestazionali.tex}
+\pagebreak
+\subsection{Tracciamento}  
+\input{res/sections/Tracciamento/tracciamento_fonti_requisiti.tex}
+\input{res/sections/Tracciamento/tracciamento_requisiti_fonti.tex}
+\subsection{Considerazioni}
+I requisiti potranno subire delle variazioni in futuro, per apportare degli aggiornamenti alle voci presenti o delle migliorie. Nel caso in cui le attività pianificate terminassero prima del previsto, e dovessero avanzare delle ore di lavoro, potranno essere presi in carico nuovi requisiti per aggiungere del valore al prodotto. Dunque eventuali espansioni sono lasciate a momenti futuri. 

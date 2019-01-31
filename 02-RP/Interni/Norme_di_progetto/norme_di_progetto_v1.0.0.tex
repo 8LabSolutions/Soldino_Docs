@@ -1,0 +1,46 @@
+\documentclass[a4paper]{article}
+
+\input{../../../latex/package.tex}
+\input{config/config.tex}
+\makeindex
+
+\usepackage{hyperref}	%queste due linee le ho aggiunte altrimenti non funzionano i link
+
+
+\begin{document}
+	\input{res/sections/frontispiece.tex}
+	\pagebreak	
+	
+	\input{res/sections/changelog.tex}
+
+	\counterwithin{table}{subsection}
+	\counterwithin{figure}{subsection}
+	
+	\pagebreak
+	
+	\tableofcontents
+	
+	\pagebreak
+	
+	\listoffigures
+	
+	\pagebreak
+	
+	\listoftables
+	
+	\pagebreak
+	
+	\input{res/sections/introduzione.tex}
+	\pagebreak
+	
+	\input{res/sections/processi_primari.tex}
+	\pagebreak
+	
+	\input{res/sections/processi_di_supporto.tex}
+	\pagebreak
+	
+	\input{res/sections/processi_organizzativi.tex}
+	\pagebreak
+	
+	
+\end{document}

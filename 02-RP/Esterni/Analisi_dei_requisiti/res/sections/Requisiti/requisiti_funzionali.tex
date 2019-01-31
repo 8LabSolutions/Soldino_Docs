@@ -1,0 +1,168 @@
+\subsection{Requisiti funzionali}
+
+\rowcolors{2}{pari}{dispari}
+
+\begin{longtable}{ >{\centering}p{0.15\textwidth} >{\centering}p{0.20\textwidth}
+		>{\raggedright}p{0.35\textwidth} >{\centering}p{0.14\textwidth}}
+	\caption{Tabella dei requisiti funzionali}\\
+	\rowcolorhead 
+	\textbf{\color{white}Requisito} 
+	& \textbf{\color{white}Classificazione} 
+	& \centering\textbf{\color{white}Descrizione}
+	& \textbf{\color{white}Fonti} 
+	\endfirsthead
+	\rowcolor{white}\caption[]{(continua)}\\
+	\rowcolorhead 
+	\textbf{\color{white}Requisito} 
+	& \textbf{\color{white}Classificazione} 
+	& \centering\textbf{\color{white}Descrizione}
+	& \textbf{\color{white}Fonti} 
+	\endhead	
+	
+	R2F1	&	Desiderabile	&	L’utente può leggere una breve guida sull’uso di MetaMask\glosp e sul pagamento delle operazioni	&	Interno\\ UC1	\tabularnewline
+	R1F2	&	Obbligatorio	&	Un utente non registrato può effettuare la registrazione	&	Capitolato	\tabularnewline
+	R1F2.1	&	Obbligatorio	&	Il sistema permette la registrazione di un nuovo cittadino	&	Capitolato	\tabularnewline
+	R1F2.1.1	&	Obbligatorio	&	La registrazione da parte di un cittadino necessita di email	&	Interno \\ UC2.2.1	\tabularnewline
+	R1F2.1.2	&	Obbligatorio	&	La registrazione da parte di un cittadino necessita di indirizzo	&	Interno \\ UC2.2.2	\tabularnewline
+	R1F2.1.3	&	Obbligatorio	&	La registrazione da parte di un cittadino necessita di nome	&	Interno \\ UC2.3.1	\tabularnewline
+	R1F2.1.4	&	Obbligatorio	&	La registrazione da parte di un cittadino necessita di cognome	&	Interno \\ UC2.3.2	\tabularnewline
+	R1F2.2	&	Obbligatorio	&	Il sistema permette la registrazione di una nuova azienda	&	Capitolato	\tabularnewline
+	R1F2.2.1	&	Obbligatorio	&	La registrazione da parte di un'azienda necessita di email	&	Interno \\ UC2.2.1	\tabularnewline
+	R1F2.2.2	&	Obbligatorio	&	La registrazione da parte di un'azienda necessita della sede	&	Interno \\ UC2.2.2	\tabularnewline
+	R1F2.2.3	&	Obbligatorio	&	La registrazione da parte di un'azienda necessita di partita IVA	&	Interno \\ UC2.4.1	\tabularnewline
+	R1F2.2.4	&	Obbligatorio	&	La registrazione da parte di un'azienda necessita del nome dell'azienda	&	Interno \\ UC2.4.2	\tabularnewline
+	R1F2.3	&	Obbligatorio	&	La fase di registrazione di un nuovo utente non va a buon fine se la chiave\glosp reperita da MetaMask\glosp è già presente nel sistema	&	Interno \\ UC2.7	\tabularnewline
+	R1F3	&	Obbligatorio	&	Un utente può effettuare il login	&	Interno \\ UC3	\tabularnewline
+	R1F3.1	&	Obbligatorio	&	Il login sulla piattaforma deve avvenire in modo automatico attraverso MetaMask\glo	&	Capitolato\\ UC3.1	\tabularnewline
+	R1F3.2	&	Obbligatorio	&	Il processo di login e/o registrazione dell'utente non va a buon fine se MetaMask\glosp non è presente	&	Interno \\ UC2.5	\tabularnewline
+	R1F3.3	&	Obbligatorio	&	Il processo di login e/o registrazione dell'utente non va a buon fine se non vi è alcuna chiave disponibile nel plug-in	&	Interno \\ UC2.6	\tabularnewline
+	R1F3.4	&	Obbligatorio	&	Il processo di login si interrompe se la chiave inserita non è registrata nel sistema	&	Interno \\ UC3.2	\tabularnewline
+	R1F3.5	&	Obbligatorio	&	Il processo di login e/o registrazione dell'utente non va a buon fine se l'utente risulta "disabilitato"	&	Interno \\ UC3.3	\tabularnewline
+	R1F4	&	Obbligatorio	&	L'utente può effettuare il logout	&	Interno\\ UC4	\tabularnewline
+	R1F5	&	Obbligatorio	&	Il governo può coniare Cubit\glo	&	Capitolato \\ UC9	\tabularnewline
+	R1F5.1	&	Obbligatorio	&	Il governo può inserire la quantità di Cubit\glosp da coniare	&	Interno \\ UC9	\tabularnewline
+	R1F6	&	Obbligatorio	&	Il governo può distribuire Cubit\glosp a cittadini ed aziende	&	Capitolato \\ UC10	\tabularnewline
+	R1F6.1	&	Obbligatorio	&	Il governo può determinare l’ammontare di Cubit\glosp pro capite da trasferire	&	Interno\\ UC10.1	\tabularnewline
+	R1F6.2	&	Obbligatorio	&	Il governo può selezionare la lista dei destinatari del trasferimento dalla lista degli utenti	&	Interno\\ UC10.2	\tabularnewline
+	R1F6.3	&	Obbligatorio	&	La distribuzione dei Cubit\glosp da parte del governo fallisce mostrando un errore se è stata raggiunta la soglia massima distribuibile	&	Interno\\ UC10.4	\tabularnewline
+	R1F7	&	Obbligatorio	&	Il governo può visualizzare e gestire la lista degli utenti registrati	&	Interno \\ UC11	\tabularnewline
+	R1F7.1	&	Obbligatorio	&	Il governo può visualizzare e gestire lo stato di "abilitato" o "disabilitato" per un utente registrato	&	Interno \\ UC11.1	\tabularnewline
+	R1F7.1.1	&	Obbligatorio	&	Il governo può disabilitare l'account di un utente registrato	&	Interno \\ UC12.2	\tabularnewline
+	R3F7.1.1.1	&	Opzionale	&	Il governo può motivare con un messaggio la scelta di disabilitazione di un account	&	Interno \\ UC12.3	\tabularnewline
+	R1F7.1.2	&	Obbligatorio	&	Il governo può abilitare l'account, precedentemente disabilitato, di un utente registrato	&	Interno \\ UC12.1	\tabularnewline
+	R1F7.2	&	Obbligatorio	&	Il governo può visualizzare e gestire la lista delle aziende registrate	&	Capitolato \\ UC11.1	\tabularnewline
+	R1F7.2.1	&	Obbligatorio	&	Il governo può visualizzare la chiave Ethereum\glosp di ogni azienda	&	Interno \\ UC11.1	\tabularnewline
+	R1F7.2.2	&	Obbligatorio	&	Il governo può visualizzare il nome di ogni azienda	&	Interno \\ UC11.1	\tabularnewline
+	R1F7.2.3	&	Obbligatorio	&	Il governo può visualizzare la partita IVA di ogni azienda	&	Interno \\ UC11.1	\tabularnewline
+	R1F7.2.4	&	Obbligatorio	&	Il governo può visualizzare la sede di ogni azienda	&	Interno \\ UC11.1	\tabularnewline
+	R1F7.2.5	&	Obbligatorio	&	Il governo può visualizzare lo stato del pagamento del saldo IVA e relativo importo di ogni azienda	&	Interno \\ UC11.1	\tabularnewline
+	R3F7.2.6	&	Opzionale	&	Il governo può visualizzare la lista delle aziende filtrando i risultati per il valore \texttt{stato di liquidazione IVA}, che può assumere i valori: insolvente,  in fase di pagamento, in dilazione,  regolare, in attesa di rimborso	&	Interno \\ UC11.1.1	\tabularnewline
+	R1F7.2.7	&	Obbligatorio	&	Il governo può effettuare il rimborso alle aziende il cui stato di liquidazione IVA risulta in attesa di rimborso	&	Interno  \\ UC13	\tabularnewline
+	R1F7.3	&	Obbligatorio	&	Il governo può visualizzare e gestire la lista dei cittadini registrati	&	Interno \\ UC11.2	\tabularnewline
+	R1F7.3.1	&	Obbligatorio	&	Il governo può visualizzare la chiave\glosp di ogni cittadino	&	Interno \\ UC11.2	\tabularnewline
+	R1F7.3.2	&	Obbligatorio	&	Il governo può visualizzare il nome di ogni cittadino	&	Interno \\ UC11.2	\tabularnewline
+	R1F7.3.3	&	Obbligatorio	&	Il governo può visualizzare il cognome di ogni cittadino	&	Interno\\ UC11.2	\tabularnewline
+	R1F7.3.4	&	Obbligatorio	&	Il governo può visualizzare l'indirizzo di ogni cittadino	&	Interno\\ UC11.2	\tabularnewline
+	R1F7.3.5	&	Obbligatorio	&	Il governo può visualizzare l'email di ogni cittadino	&	Interno\\ UC11.2	\tabularnewline
+	R1F8	&	Obbligatorio	&	Aziende e cittadini possono visualizzare i prodotti in vendita nel sito	&	Interno\\ UC5	\tabularnewline
+	R1F8.1	&	Obbligatorio	&	Aziende e cittadini possono visualizzare il nome di ciascun prodotto in vendita nel sito	&	Interno\\ UC5	\tabularnewline
+	R1F8.2	&	Obbligatorio	&	Aziende e cittadini possono visualizzare il prezzo lordo\glosp{} di ciascun prodotto in vendita nel sito	&	Interno\\ UC5	\tabularnewline
+	R1F8.3	&	Obbligatorio	&	Aziende e cittadini possono visualizzare la descrizione di ciascun prodotto in vendita nel sito	&	Interno\\ UC5	\tabularnewline
+	R1F8.4	&	Obbligatorio	&	Aziende e cittadini possono visualizzare la quantità di prodotto selezionato relativa a ciascun prodotto in vendita nel sito	&	Interno\\ UC5	\tabularnewline
+	R1F8.4.1	&	Obbligatorio	&	Aziende e cittadini possono modificare la quantità di prodotto selezionata relativa a ciascun prodotto in vendita nel sito	&	Interno\\ UC5.1	\tabularnewline
+	R1F9	&	Obbligatorio	&	Aziende e cittadini possono aggiungere prodotti al carrello	&	Interno\\ UC6.1	\tabularnewline
+	R1F10	&	Obbligatorio	&	Aziende e cittadini possono visualizzare i prodotti nel carrello	&	Interno\\ UC6.2	\tabularnewline
+	R1F10.1	&	Obbligatorio	&	Aziende e cittadini possono visualizzare il nome di ciascun prodotto nel carrello	&	Interno\\ UC6.2	\tabularnewline
+	R1F10.2	&	Obbligatorio	&	Aziende e cittadini possono visualizzare la quantità di ciascun prodotto nel carrello	&	Interno\\ UC6.2	\tabularnewline
+	R1F10.3	&	Obbligatorio	&	Aziende e cittadini possono visualizzare il prezzo unitario di ciascun prodotto nel carrello	&	Interno\\ UC6.2	\tabularnewline
+	R1F10.4	&	Obbligatorio	&	Aziende e cittadini possono visualizzare il prezzo totale dei prodotti nel carrello	&	Interno\\ UC6.2	\tabularnewline
+	R1F11	&	Obbligatorio	&	Aziende e cittadini possono modificare la quantità di un bene da acquistare presente nel carrello	&	Interno \\UC6.3	\tabularnewline
+	R1F12	&	Obbligatorio	&	Aziende e cittadini possono rimuovere prodotti dal carrello	&	Interno\\ UC6.4	\tabularnewline
+	R2F13	&	Desiderabile	&	Aziende e cittadini possono resettare il contenuto del carrello	&	Interno	\tabularnewline
+	R1F14	&	Obbligatorio	&	Aziende e cittadini posso acquistare prodotti venduti nella piattaforma	&	Capitolato\\ UC7	\tabularnewline
+	R1F14.1	&	Obbligatorio	&	Aziende e cittadini possono effettuare il checkout dei prodotti contenuti nel carrello	&	Interno\\ UC7.1	\tabularnewline
+	R1F14.1.1	&	Obbligatorio	&	In fase di checkout viene visualizzato un messaggio di errore se il carrello è vuoto	&	Interno\\ UC7.2	\tabularnewline
+	R1F14.2	&	Obbligatorio	&	La fase di acquisto necessita di un indirizzo di spedizione	&	Interno\\ UC7.3	\tabularnewline
+	R1F14.2.1	&	Obbligatorio	&	L'acquirente può selezionare come indirizzo di spedizione il proprio indirizzo di residenza	&	Interno\\ UC7.3	\tabularnewline
+	R1F14.2.2	&	Obbligatorio	&	L'acquirente può inserire un nuovo indirizzo per la spedizione	&	Interno\\ UC7.3	\tabularnewline
+	R1F14.3	&	Obbligatorio	&	Viene visualizzato un messaggio di errore se il pagamento non va a buon fine	&	Interno\\ UC7.5	\tabularnewline
+	R1F14.4	&	Obbligatorio	&	Il sistema genera la conferma d'ordine\glo{}, che viene visualizzata nella pagina dedicata dell'acquirente (meccanismo di escrow\glo)	&	Interno	\tabularnewline
+	R1F14.5	&	Obbligatorio	&	Il sistema trattiene l'ammontare del pagamento fino all'approvazione/rifiuto della conferma d'ordine\glosp (meccanismo di escrow\glo)	&	Interno	\tabularnewline
+	R3F15	&	Opzionale	&	Aziende e cittadini  possono visualizzare la lista degli acquisti effettuati	&	Interno\\ UC14.1	\tabularnewline
+	R3F15.1	&	Opzionale	&	La visualizzazione di un acquisto effettuato include la data dell'acquisto	&	Interno\\ UC14.1	\tabularnewline
+	R3F15.2	&	Opzionale	&	La visualizzazione di un acquisto effettuato include il numero dell'acquisto	&	Interno\\ UC14.1	\tabularnewline
+	R3F15.3	&	Opzionale	&	La visualizzazione di un acquisto effettuato include i prodotti inclusi nell'acquisto	&	Interno\\ UC14.1	\tabularnewline
+	R3F15.4	&	Opzionale	&	La visualizzazione di un acquisto effettuato include il totale IVA dell'acquisto	&	Interno\\ UC14.1	\tabularnewline
+	R3F15.5	&	Opzionale	&	La visualizzazione di un acquisto effettuato include il  prezzo lordo\glosp dell'acquisto	&	Interno\\ UC14.1	\tabularnewline
+	R3F15.6	&	Opzionale	&	La visualizzazione di un acquisto effettuato include l'indirizzo di spedizione dell'acquisto	&	Interno\\ UC14.1	\tabularnewline
+	R3F15.7	&	Opzionale	&	Aziende e cittadini possono visualizzare e gestire le conferme d'ordine da approvare	&	Interno \\ UC14.2	\tabularnewline
+	R3F15.7.1	&	Opzionale	&	Aziende e cittadini possono rifiutare le conferme d'ordine in attesa di approvazione	&	Interno \\ UC14.5	\tabularnewline
+	R3F15.7.1.1	&	Opzionale	&	La somma totale dell'ordine rifutato viene rimborsata all'acquirente	&	Interno \\ UC14.4	\tabularnewline
+	R3F15.7.1.2	&	Opzionale	&	Aziende e cittadini possono annullare un'ordine d'acquisto entro 2 giorni dal ricevimento dello stesso	&	Interno	\tabularnewline
+	R3F15.7.2	&	Opzionale	&	Aziende e cittadini possono approvare le conferme d'ordine in attesa di approvazione	&	Interno \\ UC14.6	\tabularnewline
+	R3F15.8	&	Opzionale	&	Aziende e cittadini ricevono notifiche via email con aggiornamenti sull'ordine	&	Interno	\tabularnewline
+	R1F16	&	Obbligatorio	&	Un'azienda può gestire i prodotti in vendita	&	Capitolato\\ UC8	\tabularnewline
+	R1F16.1	&	Obbligatorio	&	Un'azienda può mettere in vendita beni e servizi	&	Capitolato\\ UC8.1	\tabularnewline
+	R1F16.1.1	&	Obbligatorio	&	L'azienda deve inserire il prezzo netto\glosp di vendita per ogni nuovo prodotto inserito	&	Interno\\ UC8.1.3	\tabularnewline
+	R1F16.1.2	&	Obbligatorio	&	L'azienda deve inserire la descrizione per ogni nuovo prodotto inserito	&	Interno\\ UC8.1.2	\tabularnewline
+	R1F16.1.3	&	Obbligatorio	&	L'azienda deve inserire l'aliquota IVA per ogni nuovo prodotto inserito	&	Interno\\ UC8.1.4	\tabularnewline
+	R1F16.1.4	&	Obbligatorio	&	L'azienda deve inserire il nome per ogni nuovo prodotto inserito	&	Interno\\ UC8.1.1	\tabularnewline
+	R1F16.2	&	Obbligatorio	&	Un'azienda può modificare i dati relativi ad un proprio bene o servizio in vendita	&	Capitolato\\ UC8.3	\tabularnewline
+	R1F16.2.1	&	Obbligatorio	&	Durante la conferma della modifica di un prodotto, viene visualizzato un errore se non è stato modificato alcun campo	&	Interno\\ UC8.3.6	\tabularnewline
+	R1F16.3	&	Obbligatorio	&	Un'azienda può eliminare un proprio bene o servizio in vendita	&	Capitolato\\ UC8.4	\tabularnewline
+	R3F17	&	Opzionale	&	Un'azienda può visualizzare la lista delle vendite	&	Interno\\ UC14.3	\tabularnewline
+	R3F17.1	&	Opzionale	&	La visualizzazione di una vendita effettuata include la data della vendita	&	Interno\\ UC14.1	\tabularnewline
+	R3F17.2	&	Opzionale	&	La visualizzazione di una vendita effettuata include il numero della vendita	&	Interno\\ UC14.1	\tabularnewline
+	R3F17.3	&	Opzionale	&	La visualizzazione di una vendita effettuata include i prodotti includi della vendita	&	Interno\\ UC14.1	\tabularnewline
+	R3F17.4	&	Opzionale	&	La visualizzazione di una vendita effettuata include il totale IVA della vendita	&	Interno\\ UC14.1	\tabularnewline
+	R3F17.5	&	Opzionale	&	La visualizzazione di una vendita effettuata include il prezzo lordo\glosp della vendita	&	Interno\\ UC14.1	\tabularnewline
+	R3F17.6	&	Opzionale	&	La visualizzazione di una vendita effettuata include l'indirizzo di spedizione della vendita	&	Interno\\ UC14.1	\tabularnewline
+	R3F17.7	&	Opzionale	&	La visualizzazione di una vendita effettuata include la data di approvazione dell'acquisto	&	Interno\\ UC14.3	\tabularnewline
+	R3F17.8	&	Opzionale	&	La visualizzazione di una vendita effettuata include il nome dell'acquirente se esso è un cittadino	&	Interno\\ UC14.3	\tabularnewline
+	R3F17.9	&	Opzionale	&	La visualizzazione di una vendita effettuata include il cognome dell'acquirente se esso è un cittadino	&	Interno\\ UC14.3	\tabularnewline
+	R3F17.10	&	Opzionale	&	La visualizzazione di una vendita effettuata include il nome dell'azienda-cliente se essa è l'acquirente	&	Interno\\ UC14.3	\tabularnewline
+	R3F17.11	&	Opzionale	&	La visualizzazione di una vendita effettuata include la partita IVA dell'azienda-cliente se essa è l'acquirente	&	Interno\\ UC14.3	\tabularnewline
+	R1F18	&	Obbligatorio	&	Un'azienda riceve il pagamento a seguito della conferma d'ordine\glosp{} da parte di un acquirente (meccanismo di escrow\glo)	&	Interno \\ UC14.5	\tabularnewline
+	R1F19	&	Obbligatorio	&	Un'azienda può gestire le transazioni riguardanti l'IVA	&	Capitolato \\ UC15	\tabularnewline
+	R1F19.1	&	Obbligatorio	&	Un'azienda può visualizzare il saldo IVA relativo al trimestre corrente	&	Interno \\ UC15.3	\tabularnewline
+	R1F19.2	&	Obbligatorio	&	Un'azienda può visualizzare il saldo IVA relativo ad un trimestre concluso selezionato	&	Interno \\ UC15.4	\tabularnewline
+	R1F19.3	&	Obbligatorio	&	Un'azienda può visualizzare, per ogni saldo IVA, la lista delle fatture relative al trimestre selezionato (vista generale delle fatture) ed il valore del saldo stesso	&	Interno \\ UC15.2	\tabularnewline
+	R1F19.3.1	&	Obbligatorio	&	La vista generale della fattura include il numero identificativo della fattura	&	Interno \\ UC15.2	\tabularnewline
+	R1F19.3.2	&	Obbligatorio	&	La vista generale della fattura include la data della fattura	&	Interno \\ UC15.2	\tabularnewline
+	R1F19.3.3	&	Obbligatorio	&	La vista generale della fattura include il nome dell'azienda emittente (inteso come ragione sociale)	&	Interno \\ UC15.2	\tabularnewline
+	R1F19.3.4	&	Obbligatorio	&	La vista generale della fattura include informazioni relative all'acquirente	&	Interno \\ UC15.2	\tabularnewline
+	R1F19.3.4.1	&	Obbligatorio	&	La vista generale della fattura include nome e cognome dell'acquirente nel caso questo sia un cittadino	&	Interno \\ UC15.2	\tabularnewline
+	R1F19.3.4.2	&	Obbligatorio	&	La vista generale della fattura include nome dell'azienda acquirente nel caso sia appunto un'azienda	&	Interno \\ UC15.2	\tabularnewline
+	R1F19.3.5	&	Obbligatorio	&	La vista generale della fattura include l'importo totale dell'ordine	&	Interno \\ UC15.2	\tabularnewline
+	R1F19.3.6	&	Obbligatorio	&	La vista generale della fattura include l'IVA a credito/debito derivato dalla transazione	&	Interno \\ UC15.2	\tabularnewline
+	R1F19.4	&	Obbligatorio	&	Un'azienda può effettuare il versamento IVA di un trimestre nel quale il saldo IVA risulti a debito	&	Capitolato \\ UC15.6	\tabularnewline
+	R1F19.5	&	Obbligatorio	&	Un'azienda può effettuare la dilazione del versamento IVA di un trimestre nel quale il saldo IVA risulti a debito	&	Verbale 2019-01-04 VE\_3.2 \\ UC15.7	\tabularnewline
+	R1F19.6	&	Obbligatorio	&	Un'azienda può scaricare in formato PDF la lista dei movimenti IVA dell'attuale trimestre	&	Capitolato\\ UC15.5	\tabularnewline
+	R1F19.7	&	Obbligatorio	&	Un'azienda può visualizzare in dettaglio una particolare fattura	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.7.1	&	Obbligatorio	&	La visializzazione di una fattura include la data della fattura	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.7.2	&	Obbligatorio	&	La visializzazione di una fattura include il numero identificativo della fattura	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.7.3	&	Obbligatorio	&	La visializzazione di una fattura include la data dell'ordine relativo alla fattura	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.7.4	&	Obbligatorio	&	La visializzazione di una fattura include il numero identificativo dell'ordine relativo alla fattura	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.7.5	&	Obbligatorio	&	La visializzazione di una fattura include la visualizzazione dei prodotti	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.7.5.1	&	Obbligatorio	&	Per ogni prodotto elencato in una fattura è visualizzato il nome	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.7.5.2	&	Obbligatorio	&	Per ogni prodotto elencato in una fattura è visualizzata la descizione	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.7.5.3	&	Obbligatorio	&	Per ogni prodotto elencato in una fattura è visualizzata la quantità	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.7.5.4	&	Obbligatorio	&	Per ogni prodotto elencato in una fattura è visualizzato il prezzo netto\glo	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.7.5.5	&	Obbligatorio	&	Per ogni prodotto elencato in una fattura è visualizzata l'aliquota IVA	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.7.5.6	&	Obbligatorio	&	Per ogni prodotto elencato in una fattura è visualizzato il prezzo lordo\glo	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.7.6	&	Obbligatorio	&	La visializzazione di una fattura include l'importo totale IVA della fattura	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.7.7	&	Obbligatorio	&	La visializzazione di una fattura include l'importo totale della fattura	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.7.8	&	Obbligatorio	&	La visializzazione di una fattura include il nome dell'azienda emittente	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.7.9	&	Obbligatorio	&	La visializzazione di una fattura include la partita IVA dell'azienda emittente	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.7.10	&	Obbligatorio	&	La visializzazione di una fattura include il nome dell'acquirente se esso è un cittadino	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.7.11	&	Obbligatorio	&	La visializzazione di una fattura include il cognome dell'acquirente se esso è un cittadino	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.7.12	&	Obbligatorio	&	La visualizzazione di una fattura include la ragione sociale (nome) se l'acquirente è un'azienda 	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.7.13	&	Obbligatorio	&	La visializzazione di una fattura include la partita IVA dell'azienda-cliente se essa è l'acquirente	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.7.14	&	Obbligatorio	&	La visializzazione di una fattura include l'indirizzo di spedizione dell'ordine	&	Interno\\ UC15.8	\tabularnewline
+	R1F19.8	&	Obbligatorio	&	Un'azienda può scaricare in formato PDF la lista dei movimenti IVA per un trimestre concluso	&	Capitolato\\ Interno	\tabularnewline
+	R3F19.9	&	Opzionale	&	L'azienda può scaricare in formato PDF la fattura relativa ad un acquisto	&	Interno	\tabularnewline
+	
+	
+	
+\end{longtable}
+
