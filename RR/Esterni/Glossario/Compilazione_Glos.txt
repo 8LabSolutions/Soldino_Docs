@@ -1,8 +1,0 @@
-Here's what you need to
-
-1.Run pdflatex (F6)
-2.Run makeindex(Strumenti->Indice)
-3.Run pdflatex (F6)
-4.Run pdflatex (F6)
-
-after adding each \index command.
