@@ -1,0 +1,65 @@
+\section{Casi d'uso} 
+\subsection{Attori dei casi d'uso}
+\subsubsection{Attori primari}
+\begin{figure}[h]
+	\includegraphics[width=7cm]{res/images/attori_primari.png}
+	\centering
+	\caption{Gerarchia degli attori primari}
+\end{figure}
+\begin{description}[style=nextline]
+	\item[Utente generico]
+	Si riferisce ad un utente generico che accede alla piattaforma dal sito web.
+	\item[Utente non autenticato]
+	Si riferisce ad un utente generico che non ha ancora effettuato l'autenticazione alla piattaforma.
+	\item[Utente autenticato]
+	Si riferisce ad un utente generico che si è autenticato nel sistema con la procedura di login. Ciò implica che sia in possesso di una chiave\glosp valida sulla rete. Ethereum\glosp con la quale, precedentemente, ha portato a termine la procedura di autenticazione.
+	\item[Cittadino] Si riferisce ad un utente che si è autenticato nel sistema con il ruolo di cittadino.
+	\item[Azienda] Si riferisce ad un utente che si è autenticato nel sistema con il ruolo di azienda. Le azioni sono eseguite considerando l'azienda come persona giuridica, nonostante le azioni vengano eseguite da un suo rappresentante.
+	\item[Governo\glosp] Si riferisce ad un utente che si è autenticato al sistema con il ruolo di governo\glo. Nelle parti successive del documento tale parola verrà intesa con tale significato.
+\end{description}
+\subsubsection{Attori secondari}
+\begin{description}[style=nextline]
+	\item[MetaMask]
+	Plug-in\glosp per browser che permette di interfacciarsi con la rete Ethereum\glosp e di validare le transazioni con la propria chiave privata.
+	
+\end{description}
+
+\subsection{Elenco dei casi d'uso}
+In questa sezione vi sono elencati tutti i casi d'uso individuati. Ogni caso d'uso rappresenta uno scenario per uno o più attori, ovviamente applicabile anche ad eventuali attori derivati. Ogni caso d'uso, inoltre, viene descritto tramite diagrammi dei casi d'uso e possiede una precondizione seguita da una postcondizione.
+\subsubsection*{Operazioni utenti}
+Di seguito sono riportati tutti i casi d'uso che coinvolgono come attore primario l'utente generico, l'utente non autenticato, l'utente autenticato, il cittadino e parte dei casi d'uso che coinvolgono l'azienda.
+
+\begin{figure}[H]
+	\includegraphics[width=14cm]{res/images/UseCase1-8.png}
+	\centering
+	\caption{Use Cases che interessano gli utenti}
+\end{figure}
+\input{res/sections/UC/UC1-2-GuidaRegistrazione.tex}
+\input{res/sections/UC/UC3-4-LoginLogout.tex}
+\input{res/sections/UC/UC5-Visualizzazione-beni.tex}
+\input{res/sections/UC/UC6-Gestione-carrello.tex}
+\input{res/sections/UC/UC7-AcquistoBeni.tex}
+\input{res/sections/UC/UC8-GestioneBeniVenduti.tex}
+\pagebreak
+\subsubsection*{Operazioni governative}
+Di seguito sono riportati tutti i casi d'uso che coinvolgono come attore primario il governo.
+
+\begin{figure}[H]
+	\includegraphics[width=8cm]{res/images/UseCaseGoverno.png}
+	\centering
+	\caption{Use cases che interessano il governo}
+\end{figure}
+\input{res/sections/UC/UC9-10-ConiazioneDistribuzioneCubit.tex}
+\input{res/sections/UC/UC11-GestioneUtenti.tex}
+\input{res/sections/UC/UC12-13NuovoAccount.tex}
+\subsubsection*{Operazioni di gestione degli ordini e delle fatture}
+Di seguito sono riportate tutti i casi d'uso che coinvolgono la gestione degli ordine e delle fatture.
+
+\begin{figure}[H]
+	\includegraphics[width=8cm]{res/images/UseCaseFinali.png}
+	\centering
+	\caption{Use Cases riguardanti la gestione degli ordini e delle fatture}
+\end{figure}
+\input{res/sections/UC/UC14CompravenditaAzienda.tex}
+\input{res/sections/UC/UC15IVAAzienda.tex}
+\input{res/sections/UC/UC16-Ricerca.tex}

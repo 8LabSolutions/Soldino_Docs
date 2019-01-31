@@ -1,0 +1,195 @@
+\section{Processi di Supporto}
+	\subsection{Documentazione}
+		Ogni processo e attività significativi svolti per lo sviluppo del progetto sono documentati. Lo scopo della documentazione è rendere questi processi e attività chiari, trasparenti, registrarli e facilitare il processo di manutenzione. I documenti sono consultabili nell'apposita \href{https://github.com/8LabSolutions/Soldino}{\underline{sezione della repository}}. 
+		\subsubsection{Scopo}
+		\subsubsection{Aspettative}
+		\subsubsection{Descrizione}
+		\subsubsection{Procedure}
+		\paragraph{Approvazione dei documenti} \mbox{}\\
+		\subsubsection{Template}
+		\subsubsection{Struttura dei documenti}
+		\paragraph{Prima pagina} \mbox{}\\
+		\paragraph{Registro modifiche} \mbox{}\\
+		\paragraph{Indice} \mbox{}\\
+		\paragraph{Contenuto principale} \mbox{}\\
+		\paragraph{Note a piè pagina} \mbox{}\\
+		\subsubsection{Versionamento}
+		\subsubsection{Norme tipografiche}
+		\paragraph{Stile del testo} \mbox{}\\
+		\paragraph{Elenchi puntati} \mbox{}\\
+		\paragraph{Formati comuni} \mbox{}\\
+		\paragraph{Sigle} \mbox{}\\
+		\subsubsection{Elementi grafici}
+		\paragraph{Tabelle} \mbox{}\\
+		\paragraph{Immagini} \mbox{}\\
+		\subsubsection{Classificazione dei documenti}
+		\paragraph{Documenti informali} \mbox{}\\
+		\paragraph{Documenti formali} \mbox{}\\
+		\paragraph{Verbali} \mbox{}\\
+		\subsubsection{Strumenti}
+		\paragraph{Latex} \mbox{}\\ (modificare con logo LATEX)
+		\paragraph{Latex} \mbox{}\\
+		\paragraph{Latex} \mbox{}\\
+				
+		\subsubsection{Strumenti di scrittura}
+		Lo strumento scelto per la scrittura di documenti è \LaTeX. La sua utilità sta nel permettere di scrivere documenti in modo ordinato, modulare, collaborativo e scalabile.
+		\subsubsection{Tipologie di documenti}
+		Il progetto prevede la redazione di un insieme di documenti, suddivisi in documenti interni e documenti esterni. Essi sono elencati di seguito con le rispettive sigle.\newline
+		I documenti esterni sono:		
+		\begin{itemize}
+			\item \textbf{AdR}: Analisi dei Requisiti: stabilisce le caratteristiche che il software deve rispettare;
+			\item \textbf{MU}: Manuale Utente: ad uso degli utilizzatori del software;
+			\item \textbf{MS}: Manuale Sviluppatore: per gli sviluppatori e manutentori;
+			\item \textbf{PdP}: Piano di Progetto: concerne la gestione del progetto, evidenziandone la fattibilità e le criticità; tratta di tempi, costi, obiettivi, rischi, vincoli;
+			\item \textbf{PdQ}: Piano di Qualifica: descrive la qualità del software e dei processi, e come la si intende raggiungere mediante l'uso di strumenti, metriche e processi;
+			\item \textbf{RA}: Revisione di Accettazione: determina l'entrata;
+			\item \textbf{RP}: Revisione di Progettazione;
+			\item \textbf{RQ}: Revisione di Qualifica;
+			\item \textbf{RR}: Revisione dei Requisiti.
+		\end{itemize}	
+		I documenti interni sono:
+		\begin{itemize}
+			\item \textbf{G}: Glossario: raccoglie i termini di interesse per il team di sviluppo e sui quali il team vuole concordare;
+			\item \textbf{NdP}: Norme di Progetto: sono un riferimento per lo svolgimento delle attività di progetto;
+			\item \textbf{SdF}: Studio di Fattibilità: descrive sommariamente i capitolati e spiega la loro scelta o esclusione;
+			\item \textbf{V}: Verbale: descrizione le interazioni e i loro prodotti avvenuti durante un incontro con il proponente o un incontro interno di interesse per il progetto; sono orientati a dare informazioni semplici e immediatamente fruibili. 
+		\end{itemize}
+		\subsubsection{Ciclo di vita del documento}
+		Ogni documento segue le fasi del seguente ciclo di vita:
+		\begin{enumerate}
+			\item Creazione del documento: dopo attenta valutazione, nel momento in cui diventa necessario, il documento viene creato, applicando le norme per i documenti e adeguandosi a documenti precedenti dello stesso tipo; si usa un template se disponibile;
+			\item Creazione della struttura: se il documento è sufficientemente grande, viene creato il suo indice, che traccia gli argomenti trattati nel documento;
+			\item In lavorazione: il documento viene scritto in modo incrementale e per moduli;
+			\item In revisione: ogni voce del documento è stata prodotta interamente, ma è soggetta a revisioni per correggere, ampliare, semplificare quanto presente; se possibile, la revisione di ciascun frammento è svolta da almeno una persona diversa da chi ha scritto quel frammento;
+			\item Approvato: il responsabile di progetto sancisce che il documento è stato completato; esso è pronto per il rilascio.
+		\end{enumerate}
+		Le fasi sono ordinate, ma non sono strettamente sequenziali. Sono consentiti ritorni a fasi precedenti.
+		\subsubsection{Struttura del documento}
+		Ogni documento è composto in maniera modulare. Un main.tex (il cui nome rispecchia il nome del documento) raccoglie in input le sezioni di cui è composto il documento.\newline Tutte le pagine dei documenti contengono un frontespizio, che riporta logo, nome del team e nome del documento. Le pagine contengono, in ordine:
+		\begin{enumerate}
+			\item Facciata, contenente:
+			\begin{itemize}
+				\item logo del team, nome del team e nome del progetto;
+				\item nome del documento;
+				\item tabella contenente informazioni sul documento, la sua versione, chi ci ha lavorato e a chi è destinato;
+				\item descrizione sommaria;
+				\item email del team.
+			\end{itemize}
+			\item Changelog;
+			\item Indice;
+			\item Corpo.
+		\end{enumerate}
+		\subsubsection{Norme tipografiche}
+			\paragraph{Formati} \mbox{}\\
+			\subparagraph{Data} \mbox{}\\
+			La data è scritta secondo il formato:\newline
+			\centerline{YYYY-MM-DD}\newline
+			che rappresenta la sequenza anno-mese-giorno.
+			\subparagraph{Versione}
+			Ogni documento ha una storia, ricostruibile attraverso le sue versioni. Ogni documento ha un numero di versione composto da tre cifre:
+			\begin{center}
+				X.Y.Z
+			\end{center}
+			dove:
+			\begin{itemize}
+				\item \textbf{X}: rappresenta una versione stabile del documento, resa tale dopo approvazione del responsabile di progetto;
+				\item \textbf{Y}: rappresenta una versione parzialmente stabile del documento che è stata soggetta a verifica da parte di un verificatore;
+				\item \textbf{Z}: rappresenta una versione instabile del documento in fase di lavorazione da parte dei redattori.
+			\end{itemize}
+			\paragraph{Elenchi e sottoelenchi} \mbox{}\\
+			Ogni voce di un elenco comincia per lettera minuscola e termina per "\textbf{;}" eccetto l'ultima che termina per "\textbf{.}". I sottoelenchi sono innestati dentro una voce di elenco e rispettano le medesime regole, poiché la loro funzione è analoga.
+	\subsection{Verifica}
+		\subsubsection{Scopo}
+		Il processo di verifica ha per scopo l'ottenimento di prodotti corretti, coesi e completi. Gli oggetti della verifica sono il software e i documenti prodotti. 
+		\subsubsection{Aspettative}
+		Il corretto svolgimento del processo di verifica rispetta i punti seguenti:	
+		\begin{itemize}
+			\item La verifica è effettuata seguendo procedure definite;
+			\item Vi sono criteri chiari e affidabili da perseguire per verificare;
+			\item I prodotti passano attraverso fasi successive, ognuna delle quali è verificata;
+			\item Dopo la verifica il prodotto è in uno stato stabile;
+			\item Il processo di validazione, che è successivo alla verifica, diviene ben fondato e più semplice;
+		\end{itemize}
+		\subsubsection{Descrizione}
+		Il processo di verifica prende in input ciò che è già stato prodotto, e lo restituisce in uno stato conforme alle aspettative. Per ottenere tale risultato ci si affida a processi di analisi e di test.
+		\subsubsection{Attività}
+			\paragraph{Analisi} \mbox{}\\
+			Il processo di analisi si suddivide in analisi statica e analisi dinamica.
+				\subparagraph{Analisi statica} \mbox{}\\
+				L'analisi statica effettua controlli sui due oggetti: documenti e sul codice. Di essi valuta e applica la correttezza (intesa come assenza di errori e difetti), la conformità a regole e la coesione dei componenti.\newline Per effettuare analisi statica esistono metodi manuali di lettura (attuati da persone) e metodi formali (attuati da macchine). I metodi manuali sono due:
+				\begin{itemize}
+					\item \textbf{Walkthrough}: i vari componenti del team analizzano gli oggetti nella loro totalità per cercare difetti ad ampio spettro, non sapendo dove questi possano essere;
+					\item \textbf{Inspection}: i verificatori fanno ispezione sugli oggetti in cui si cercano difetti specifici, noti prima dell'ispezione e raggruppati in checklist;
+				\end{itemize}
+				A seguire sono descritte le liste di controllo per le ispezioni.
+				
+				\begin{table}[!h]
+					\centering
+					\begin{tabular}{|l|l|}
+						\hline
+					\textbf{Difetto} & \textbf{Descrizione}\\
+					\hline
+					Errore di conformità & Formato di documento, data o nome errato\\
+					\hline
+					Errore di sintassi & Sintassi scorretta o poco leggibile\\
+					\hline
+					Errore di contenuto & Contenuto errato\\
+					\hline
+					Parte mancante & Manca una parte. Controllare titoli vuoti e PLACEHOLDER\\
+					\hline			
+					\end{tabular}
+					\caption{elenca gli errori più frequenti nei documenti}
+					\label{Tabella 1:}
+				\end{table}
+				
+				\begin{table}[!h]
+					\centering
+					\begin{tabular}{|l|l|}
+						\hline
+					\textbf{Errore} & \textbf{Descrizione}\\
+					\hline
+					Errore di nomenclatura & Il nome non rispetta la rispettiva norma o non è dichiarativo della propria funzione\\
+					\hline
+					Eccesso di responsabilità & La classe o il metodo può essere suddiviso in parti più piccole\\
+					\hline			
+					\end{tabular}
+					\caption{elenca gli errori più frequenti nel codice}
+					\label{Tabella 2:}
+				\end{table}
+											
+				
+				\subparagraph{Analisi dinamica} \mbox{}\\
+				% PLACEHOLDER
+			\paragraph{Test} \mbox{}\\	
+			I test sono l'attività fondamentale dell'analisi dinamica: verificano che il codice scritto funzioni correttamente. Dei test ben scritti devono:
+			\begin{itemize}
+				\item Essere ripetibili;
+				\item Specificare l'ambiente di esecuzione;
+				\item Specificare input, output richiesti;
+				\item Avvertire di possibili side-effect;
+				\item Fornire informazioni sui risultati dell'esecuzione per futura analisi.
+
+			\end{itemize}			
+			Tale verifica è eseguita a vari livelli all'interno del software.
+			\begin{itemize}
+				\subparagraph{Test di unità} \mbox{}\\
+				I test di unità si eseguono su unità di software. Un unità di software è atomica, coesa e viene scritta da un singolo individuo: quindi, per costruzione, tende ad essere ben leggibile e di facile verifica. Le singole unità possono essere testate con l'ausilio di driver e stub.
+				\subparagraph{Test di integrazione} \mbox{}\\
+				Dopo aver superato i test di unità, le unità vengono assemblate in gruppi progressivamente più grandi per testare le relazioni tra le parti. Un agglomerato che supera il test di integrazione costituisce quindi una nuova unità per un agglomerato di grandezza maggiore. Questa procedura si ripete fino a raggiungere la grandezza totale del sistema.
+				\subparagraph{Test di sistema} \mbox{}\\\\
+				Una volta raggiunta la grandezza del sistema, esso viene testato nella sua interezza. In questa fase ci si assicura che il sistema rispetti tutte le specifiche definite nell'\textit{AdR}.
+				\subparagraph{Test di regressione} \mbox{}\\
+				Si effettua di seguito a una modifica del sistema, e consiste nella riesecuzione dei test esistenti.
+				\subparagraph{Test di collaudo} \mbox{}\\
+				Simile al test di sistema, ma eseguito con la collaborazione dei committenti, si occupa di verificare il prodotto intero, e in particolare la sua conformità alle aspettative. Il superamento del test di collaudo dichiara che il software è pronto per essere rilasciato.
+		\subsubsection{Strumenti}
+			\paragraph{Verifica ortografica} \mbox{}\\
+			\paragraph{Validazione W3C} \mbox{}\\
+			\paragraph{Analisi statica} \mbox{}\\
+			\paragraph{Analisi dinamica} \mbox{}\\
+			\paragraph{Metriche} \mbox{}\\
+	
+	\textbf{(sezioni sottostanti non presenti in RR)}
+	\subsection{Validazione}
+	\subsection{Strumenti utilizzati}
+	
