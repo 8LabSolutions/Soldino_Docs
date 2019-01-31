@@ -16,6 +16,7 @@ def listaPresenti():
 def aggiungiVoce(titolo, descrizione):
 
     presenti = listaPresenti()
+
     if len(str(titolo)) == 0:
         print("--- Errore: titolo vuoto ---")
         exit()

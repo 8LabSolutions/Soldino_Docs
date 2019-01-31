@@ -1,73 +1,60 @@
 \subsection{Capitolato C1 - Butterfly}
 \subsubsection{Informazioni generali}
-% ------ Inserire qui testo ------
 \begin{itemize}
 \item
-\textbf{Nome:} Butterfly;
+\textbf{Nome}: Butterfly: monitor per processi CI/CD;
 \item
-\textbf{Proponente:} Imola Informatica;
+\textbf{Proponente}: Imola Informatica;
 \item
-\textbf{Committente:} Prof. Tullio Vardanega e Prof. Riccardo Cardin.
+\textbf{Committente}: Prof. Tullio Vardanega e Prof. Riccardo Cardin.
 \end{itemize}
 \subsubsection{Descrizione}
-\textit{Butterfly} mira allo sviluppo di una piattaforma che permette di
- accentrare, standardizzare, automatizzare e personalizzare le segnalazioni di
- diversi strumenti di versionamento, di continuous integration\glosp e continuous delivery\glo , così da permettere all'utente di interfacciarsi ad un'unica dashboard per la gestione di queste.
-\subsubsection{Studio del dominio}
-\paragraph{Dominio applicativo}\mbox{}\\
+\textit{Butterfly} mira allo sviluppo di una piattaforma che permetta di
+ accentrare, standardizzare, automatizzare e personalizzare le segnalazioni di diversi strumenti di versionamento, di continuous integration\glosp e continuous delivery\glo , così da permettere all'utente di interfacciarsi ad un'unica dashboard\glosp per la loro gestione.
+
+\subsubsection{Finalità del progetto}
 Il prodotto finale, integrando al suo interno le segnalazioni delle diverse 
-applicazioni, semplifica e organizza il lavoro dell'utente. L'azienda propone,
+applicazioni, semplifica e organizza il lavoro in un progetto. L'azienda propone,
 per la realizzazione di questa soluzione, l'utilizzo di quattro componenti:
 \begin{itemize}
-	\item \textbf{Producers}, che hanno la funzionalità di recuperare le
-	segnalazioni e mostrarle come messaggi nei rispettivi Topic;
-	\item \textbf{Broker}, ovvero uno strumento per istanziare e gestire i
-	 Topic;
-	\item \textbf{Consumers}, che hanno il compito di iscriversi a diversi
-	Topic specifici così da reindirizzare i messaggi verso gli utenti finali;
-    \item \textbf{Componente custom specifico}, inteso come un componente da
-    implementare per l'azienda che permetta di indirizzare la notifica alla
-    persona più idonea.
+	\item \textbf{Producers}: hanno la funzionalità di recuperare le segnalazioni dalle applicazioni interessate e di pubblicarle, associandole ad un topic;
+	\item \textbf{Broker}: uno strumento per istanziare e gestire i topic;
+	\item \textbf{Consumers}: dovranno abbonarsi a dei topic, recuperarne i messaggi e procedere al loro invio ai destinatari finali;
+    \item \textbf{Componente custom specifico}: applicativo che permetta, previa lettura di metadati relativi agli utenti, di decidere quali tra questi sono i più appropriati a ricevere la notifica.
 \end{itemize}
-\paragraph{Dominio tecnologico}\mbox{}\\
+\subsubsection{Tecnologie interessate}
 Per lo sviluppo dei componenti applicativi, l'azienda proponente consiglia:
 \begin{itemize}
-	\item uno dei linguaggi di programmazione tra \textbf{Java}\glo,
-	\textbf{Python}\glosp o \textbf{Node.js}\glo;
-	\item il sistema open source \textbf{Apache Kafka}\glosp per la gestione delle
-	operazioni tra i vari client, da utilizzare come Broker.
+	\item \textbf{Java}, \textbf{Python}\glo, \textbf{Node.js}\glo: alternative di linguaggi per lo sviluppo dell'applicativo suggerite dal proponente; 
+	\item\textbf{Apache Kafka}\glo : software open-source per la gestione delle operazioni tra i vari client, da utilizzare come Broker;
+	\item \textbf{Docker}\glo: per creare i container relativi alle diverse componenti;
+	\item \textbf{API\glosp Redmine}\glo,  \textbf{GitLab}\glo,  \textbf{SonarQube}\glo,  \textbf{Telegram}\glo, \textbf{Slack}\glo: utilizzate per potersi interfacciarsi con omonime applicazioni.
 \end{itemize}
-I requisiti obbligatori, invece, sono:
+Inoltre il proponente richiede di:
 \begin{itemize}
-	\item rispettare i 12 fattori presenti in "The Twelve-Factor App" nelle 
-	applicazioni sviluppate;
-	\item utilizzare \textbf{Docker}\glosp come container per l'istanziazione dei componenti;
-	\item esporre le \textbf{API Rest}\glosp dei componenti per l'utilizzo dell'applicazione; 
-	\item utilizzare test unitari e d'integrazione per ogni componente 
-	realizzato.
+	\item fornire delle \textbf{API\glosp Rest}\glosp per ognuna delle componenti utilizzate nell'applicazione; 
+	\item utilizzare test unitari e d'integrazione per ogni componente; 
+	\item rispettare i 12 fattori presenti in "The Twelve-Factor App"\glosp nelle applicazioni sviluppate.
 \end{itemize}
 \subsubsection{Aspetti positivi}
-Gli aspetti positivi emersi sono:
 \begin{itemize}
 	\item Le tecnologie proposte hanno larga diffusione nel mondo lavorativo ed
-	 approfondire la conoscenza su di esse è un aspetto apprezzato dal gruppo.
+	 approfondire la conoscenza su di esse è un aspetto apprezzato dal gruppo;
 	\item Java è materia di studio nel nostro corso di laurea, per cui il
-	 capitolato offre la possibilità di migliorare la padronanza di questo
+	 capitolato\glosp offre la possibilità di migliorare la padronanza di questo
 	 linguaggio.
 \end{itemize}
-\subsubsection{Criticità}
-Gli aspetti negativi affiorati sono: 
+
+\subsubsection{Criticità e fattori di rischio}
 \begin{itemize}
-	\item Lo sviluppo del componente Producer permetterebbe solamente l'apprendimento di aspetti marginali delle tecnologie coinvolte.
+	\item Lo sviluppo del componente Producer permetterebbe solamente l'apprendimento di aspetti marginali delle tecnologie coinvolte;
 	\item Il lavoro per la raccolta dati appare ripetitivo 
-	 e le API da utilizzare sembrano altamente specifiche per il progetto, senza l'opportunità di acquisire esperienza spendibile in futuro.
-	\item L'interesse da parte del gruppo di lavoro per questo capitolato si è 
-dimostrato scarso.
-	
+	 e le API\glosp da utilizzare sembrano altamente specifiche per il progetto. Probabilmente queste conoscenze acquisite saranno poco spendibili nel futuro, specie se comparate alle offerte di altri capitolati;
+	\item L'interesse da parte del gruppo di lavoro per questo capitolato\glosp si è dimostrato scarso.
 \end{itemize}
 
 \subsubsection{Conclusioni}
-Lo scopo del capitolato non è risultato molto stimolante, in quanto lo
+Lo scopo del capitolato\glosp non è risultato molto stimolante, in quanto lo
 sviluppo di alcune componenti sembra caratterizzato da attività ripetitive.
 Inoltre, il dover apprendere tecnologie per le quali è richiesta solamente 
 l'integrazione di un sottoinsieme di funzionalità, ha demotivato il gruppo nella scelta di questo progetto.
