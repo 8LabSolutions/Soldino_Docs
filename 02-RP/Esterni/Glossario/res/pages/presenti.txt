@@ -1,0 +1,105 @@
+add-on
+agile
+aliquota
+apache kafka
+api
+area di staging
+artefatti
+attore
+aws
+back end
+blockchain
+body of knowledge
+boilerplate
+camelcase
+capitolato
+changelog
+chiave
+coesione
+comportamento emergente
+conferma d'acquisto
+conferma d'ordine
+continuous delivery
+continuous integration
+copertura
+cubit
+dapp
+dashboard
+design pattern
+devops
+dilazione
+docker
+documento esterno
+documento interno
+driver 
+ecr20
+eip-712
+escrow
+eslint
+ether
+ethereum
+ethereum virtual machine
+event-driven
+firebase storage
+framework
+freeling
+front end
+gamification
+ganache cli
+gantt
+gas
+gigacore
+gitlab
+governo
+hunpos
+json
+lint
+linter
+metamask
+milestone
+modello a v
+modello di sviluppo
+node.js
+open-source
+partizione di equivalenza
+peer-to-peer
+plug-in
+pos tagging
+prezzo lordo
+prezzo netto
+product baseline
+proof of concept
+pull request
+python
+raiden
+react
+redmine
+redux
+repository
+rest
+rete bayesiana
+ropsten
+sass
+scss
+server-side
+shortcut
+skill
+slack
+smart contract
+snake case
+solidity
+sonarqube
+staging
+stand-up
+stub
+surge.sh
+technology baseline
+telegram
+testrpc
+time series
+token
+truffle
+twelve-factor app
+uml
+wallet
+workflow
