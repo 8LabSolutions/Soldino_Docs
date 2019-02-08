@@ -2,7 +2,7 @@
 
 \subsection{Fornitura}
 
-\paragraph{Scopo}\mbox{}\\ \mbox{}\\
+\subsubsection{Scopo}
 Lo scopo del processo di fornitura è di determinare le procedure e le risorse 
 necessarie allo svolgimento del progetto. Una volta comprese le richieste del 
 proponente e aver stilato uno \textit{Studio di Fattibilità}, il processo può 
@@ -129,14 +129,14 @@ di diagrammi di Gantt\glo, è stato utilizzato Microsoft Project. \\
 	 
 
 		
-\subsubsection{Collaudo e consegna del prodotto}
-Al fine di consegnare il prodotto terminato il gruppo deve effettuare un 
-collaudo in presenza del proponente e dei committenti. Precedentemente a questo 
-test il gruppo deve assicurare correttezza, completezza e affidabilità per ogni 
-parte del materiale consegnato, permettendo così che tutti i requisiti 
-obbligatori siano soddisfatti e l'esecuzione dei test abbiano un esito positivo. 
-In seguito al collaudo finale il responsabile di progetto consegna il prodotto 
-su un supporto fisico.
+%\subsubsection{Collaudo e consegna del prodotto}
+%Al fine di consegnare il prodotto terminato il gruppo deve effettuare un 
+%collaudo in presenza del proponente e dei committenti. Precedentemente a questo 
+%test il gruppo deve assicurare correttezza, completezza e affidabilità per ogni 
+%parte del materiale consegnato, permettendo così che tutti i requisiti 
+%obbligatori siano soddisfatti e l'esecuzione dei test abbiano un esito positivo. 
+%In seguito al collaudo finale il responsabile di progetto consegna il prodotto 
+%su un supporto fisico.
 		
      
 \subsection{Sviluppo}
@@ -158,20 +158,21 @@ Le aspettative sono le seguenti:
 \subsubsection{Descrizione}
 Il processo di sviluppo si articola in:
 	\begin{itemize}
-		\item \textit{Analisi dei Requisiti};
+		\item Analisi dei requisiti;
 		\item Progettazione;
 		\item Codifica.
 	\end{itemize}
 	
 \subsubsection{Attività}
-\paragraph{Analisi dei Requisiti} \mbox{}\\ \mbox{}\\
+\paragraph{Analisi dei requisiti} \mbox{}\\ \mbox{}\\
 \textbf{Scopo} \newline \newline
-Gli analisti hanno il compito di redigere il documento di
-
-\textit{Analisi dei Requisiti} che individua ed elenca dunque, i requisiti.
+Gli analisti individuano i requisiti del progetto attraverso lo studio del 
+capitolato, gli incontri con il proponente e i casi d'uso. Tali requisiti sono 
+presenti nel documento formale \textit{Analisi dei Requisiti}, in cui viene riportata 
+anche la lista dei casi d'uso. \\
 Lo scopo dei requisiti è quello di:
 	\begin{itemize}
-		\item definire lo scopo del lavoro;
+		\item definire la finalità del lavoro;
 		\item fornire ai progettisti riferimenti precisi ed affidabili;
 		\item fissare le funzionalità e i requisiti concordati col cliente;
 		\item fornire  una  base  per  raffinamenti  successivi  al  fine  di  
@@ -195,11 +196,20 @@ I requisiti si raccolgono secondo modalità predefinite:
 		\item analisi di uno o più casi d'uso.  \\
 	\end{itemize}
 	
-\noindent
-\textbf{Casi d'uso} \newline \newline
-Rappresenta un diagramma che esprime un comportamento,
-offerto o desiderato, sulla base di risultati osservabili.
-La struttura dei casi d'uso è così suddivisa:
+
+\textbf{Classificazione dei casi d'uso} \newline \newline
+Ogni caso d'uso viene classificato secondo la seguente notazione: \newline \newline
+\centerline{\textbf{UC[codice\_padre].[codice\_figlio]}} \\
+Dove:
+	\begin{itemize}
+		\item \textbf{codice\_padre}: numero che identifica univocamente i casi 
+			d'uso;
+		\item \textbf{codice\_figlio}: numero progressivo che identifica i 
+			sottocasi. Può a sua volta includere altri livelli. \\
+	\end{itemize}
+			%\pagebreak
+			%esempio di caso d'uso?(immagine)
+Inoltre per ogni caso d'uso bisogna indicare:
 	\begin{itemize}
 		\item codice identificativo;
 		\item titolo;
@@ -216,50 +226,37 @@ La struttura dei casi d'uso è così suddivisa:
 		\item postcondizione. \\
 	\end{itemize}
 
-\noindent
-\textbf{Codice identificativo dei casi d'uso} \newline \newline
-Il codice di ogni caso d'uso seguirà questo formalismo: \newline \newline
-\centerline{\textbf{UC[codice\_padre].[codice\_figlio]}} \\
+
+\textbf{Classificazione dei requisiti} \newline \newline
+Ogni requisito viene classificato secondo la seguente notazione: \newline \newline
+\centerline{\textbf{R[Importanza][Tipologia][Codice]}} \\ 
 Dove:
 	\begin{itemize}
-		\item \textbf{codice\_padre}: numero che identifica univocamente i casi 
-			d'uso;
-		\item \textbf{codice\_figlio}: numero progressivo che identifica i 
-			sottocasi. Può a sua volta includere altri livelli. \\
-	\end{itemize}
-			%\pagebreak
-			%esempio di caso d'uso?(immagine)
-
-\noindent
-\textbf{Requisiti} \newline \newline
-Ogni requisito è composto dalla seguente struttura:
-	\begin{itemize}
-		\item \textbf{codice identificativo}: ogni codice identificativo è univoco e 
-			conforme alla seguente codifica: \\
-			\centerline{\textbf{R[Importanza][Tipologia][Codice]}} \\ \\
-			Il significato delle cui voci è:
+		\item \textbf{Importanza}: ogni requisito può assumere uno dei seguenti 
+			valori:
 			\begin{itemize}
-				\item \textbf{Importanza}: ogni requisito può assumere uno dei seguenti 
-					valori:
-					\begin{itemize}
-						\item \textit{1}: requisito obbligatorio, ovvero irrinunciabile per gli 
-							stakeholder;
-						\item \textit{2}: requisito desiderabile, ovvero non strettamente 
-							necessari ma a valore aggiunto riconoscibile;
-						\item \textit{3}: requisito opzionale, ovvero relativamente utile oppure 
-							contrattabile più avanti nel progetto;	
-					\end{itemize}
-				\item \textbf{Tipologia}: ogni requisito può assumere uno dei seguenti 
-					valori:
-					\begin{itemize}
-						\item \textit{F}: funzionale;
-						\item \textit{Q}: prestazionale;
-						\item \textit{P}: qualitativo;
-						\item \textit{V}: vincolo.
-					\end{itemize}
-				\item \textbf{Codice}: è un identificatore univoco del requisito in forma 
-					gerarchica padre/figlio.
+				\item \textit{1}: requisito obbligatorio, ovvero irrinunciabile per gli 
+					stakeholder;
+				\item \textit{2}: requisito desiderabile, ovvero non strettamente 
+					necessari ma a valore aggiunto riconoscibile;
+				\item \textit{3}: requisito opzionale, ovvero relativamente utile oppure 
+					contrattabile più avanti nel progetto.	
 			\end{itemize}
+		\item \textbf{Tipologia}: ogni requisito può assumere uno dei seguenti 
+			valori:
+			\begin{itemize}
+				\item \textit{F}: funzionale;
+				\item \textit{Q}: prestazionale;
+				\item \textit{P}: qualitativo;
+				\item \textit{V}: vincolo.
+			\end{itemize}
+		\item \textbf{Codice}: è un identificatore univoco del requisito in forma 
+			gerarchica padre/figlio.
+	\end{itemize}
+	
+\noindent
+Inoltre per ogni requisito bisogna indicare:	
+	\begin{itemize}		
 		\item \textbf{classificazione}: viene riportata l'importanza del requisito. 
 			Sebbene questa sia un'informazione ridondante ne facilita la lettura;
 		\item \textbf{descrizione}: descrizione breve ma completa del requisito, 
@@ -280,15 +277,23 @@ Ogni requisito è composto dalla seguente struttura:
 		\end{itemize}
 	\end{itemize}
 
-\noindent{\textbf{UML}} \newline \newline
+{\textbf{Diagrammi UML}} \newline \newline
 I diagrammi UML\glosp devono essere realizzati usando la versione del 
-linguaggio v2.0.
+linguaggio v2.0 e per garantirne la leggibilità è necessario:
+	\begin{itemize}
+		\item distribuire in modo omogeneo gli elementi e possibilmente allinearli 
+			sia in senso verticale che in senso orizzontale;
+		\item mantenere i margini di spazio tra gli elementi di un gruppo uguali a 
+			quelli di gruppi analoghi qualora si hanno le stesse tipologie di elementi;
+		\item impostare i collegamenti in uscita da un elemento ad angolo retto. 
+	\end{itemize}
 
 \paragraph{Progettazione} \mbox{}\\ \mbox{}\\
+
 \textbf{Scopo} \newline \newline
 L'attività di progettazione definisce, in funzione dei requisiti specificati 
 nel documento \textit{Analisi dei Requisiti}, le caratteristiche del prodotto 
-software richiesto. Il compito di questa fase è di definire una soluzione del 
+software richiesto. Il compito di questa fase è definire una soluzione del 
 problema che sia soddisfacente per tutti gli stakeholder. La progettazione segue 
 il procedimento inverso rispetto all'\textit{Analisi dei Requisiti} che divide 
 il problema in parti per capirne completamente il dominio applicativo. La 
@@ -299,6 +304,7 @@ dei sottosistemi in modo da ricondurre ad un'unica possibile soluzione. \newline
 \textbf{Aspettative} \newline \newline
 Il processo ha come risultato la realizzazione dell'architettura del sistema. 
 \newline \newline
+
 \textbf{Descrizione} \newline \newline
 Le parti principali sono due:
 	\begin{itemize}
@@ -307,15 +313,17 @@ Le parti principali sono due:
 			diagrammi UML\glosp che saranno utilizzati per la realizzazione 
 			dell'architettura e i test di verifica;
 		\item \textbf{Product baseline}: dettaglia ulteriormente l'attività di 
-			progettazione, integrando ciò che è riportato nella Technology baseline. Inoltre 
-			definisce i test necessari alla verifica.
+			progettazione, integrando ciò che è riportato nella technology baseline. Inoltre 
+			definisce i test necessari alla verifica. \newline
 	\end{itemize}
+
 
 \textbf{Technology baseline} \newline \newline
 Redatta dal progettista, dovrà includere:
 	\begin{itemize}
 		\item \textbf{Diagrammi UML\glo}:
 		\begin{itemize}
+			\item diagrammi dei casi d'uso;
 			\item diagrammi delle classi;
 			\item diagrammi dei package;
 			\item diagrammi di attività;
@@ -331,11 +339,11 @@ Redatta dal progettista, dovrà includere:
 			al componente che lo soddisfa;
 		\item \textbf{Test di integrazione}: l'unione delle parti, intese come 
 			classi di verifica, permette di verificare che ogni componente del sistema 
-			funzioni nella maniera voluta.
+			funzioni nella maniera voluta. \newline
 	\end{itemize}
 			
 \textbf{Product baseline} \newline \newline
-A carico del progettista c'è anche la Product baseline che si sofferma su 
+A carico del progettista c'è anche la product baseline che si sofferma su 
 diversi aspetti tra i quali:
 	\begin{itemize}
 		\item \textbf{definizione delle classi}: ogni classe deve essere descritta 
@@ -436,3 +444,4 @@ potente editor con molte funzionalità integrate. \newline
 		\end{figure} 
 	\end{comment}
 
+\subsubsection{Procedure}
