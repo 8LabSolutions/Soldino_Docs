@@ -47,8 +47,8 @@
 \lhead{\includegraphics[scale=0.07]{res/images/logo8_crop.png}}
 %Titolo del documento
 \rhead{\doctitle{}}
-\rfoot{\thepage}
-\cfoot{}
+%\rfoot{\thepage}
+\cfoot{Pagina \thepage\ di \pageref{LastPage}}
 \setlength{\headheight}{35pt}
 \setcounter{tocdepth}{4}
 \setcounter{secnumdepth}{4}
@@ -78,4 +78,10 @@
 
 \definecolor{pari}{HTML}{E1F5FE}
 \definecolor{dispari}{HTML}{FAFAFA}
+
+%mettere il totale di pagine del doc a piè di pagina
+\usepackage{lastpage}
+%\fancypagestyle{plain} {
+%	\fancyfoot[C]{Pagina \thepage\ di \pageref{LastPage}}}
+
 
