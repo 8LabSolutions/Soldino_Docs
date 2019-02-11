@@ -316,11 +316,11 @@ Il processo ha come risultato la realizzazione dell'architettura del sistema.
 
 Le parti principali sono due:
 	\begin{itemize}
-		\item \textbf{Technology baseline}: contiene le specifiche della 
+		\item \textbf{technology baseline}: contiene le specifiche della 
 			progettazione ad alto livello del prodotto e delle sue componenti, l'elenco dei 
 			diagrammi UML\glosp che saranno utilizzati per la realizzazione 
 			dell'architettura e i test di verifica;
-		\item \textbf{Product baseline}: dettaglia ulteriormente l'attività di 
+		\item \textbf{product baseline}: dettaglia ulteriormente l'attività di 
 			progettazione, integrando ciò che è riportato nella technology baseline. Inoltre 
 			definisce i test necessari alla verifica. \newline
 	\end{itemize}
@@ -330,7 +330,7 @@ Le parti principali sono due:
 
 Redatta dal progettista, dovrà includere:
 	\begin{itemize}
-		\item \textbf{Diagrammi UML\glo}:
+		\item \textbf{diagrammi UML\glo}:
 		\begin{itemize}
 			\item diagrammi dei casi d'uso;
 			\item diagrammi delle classi;
@@ -338,15 +338,15 @@ Redatta dal progettista, dovrà includere:
 			\item diagrammi di attività;
 			\item diagrammi di sequenza.
 		\end{itemize}
-		\item \textbf{Tecnologie utilizzate}: devono essere descritte le tecnologie 
+		\item \textbf{tecnologie utilizzate}: devono essere descritte le tecnologie 
 			adottate specificandone l'utilizzo nel progetto, i vantaggi e gli svantaggi;
-		\item \textbf{Design pattern\glo}: devono essere descritti i design 
+		\item \textbf{design pattern\glo}: devono essere descritti i design 
 			pattern\glosp utilizzati per realizzare l'architettura. Ogni design 
 			pattern\glosp deve essere accompagnato da una descrizione ed un diagramma, che 
 			ne esponga il significato e la struttura;
-		\item \textbf{Tracciamento delle componenti}: ogni requisito deve riferirsi 
+		\item \textbf{tracciamento delle componenti}: ogni requisito deve riferirsi 
 			al componente che lo soddisfa;
-		\item \textbf{Test di integrazione}: l'unione delle parti, intese come 
+		\item \textbf{test di integrazione}: l'unione delle parti, intese come 
 			classi di verifica, permette di verificare che ogni componente del sistema 
 			funzioni nella maniera voluta. \newline
 	\end{itemize}
@@ -373,7 +373,7 @@ diversi aspetti tra i quali:
 Questa attività ha come scopo quello di normare l'effettiva realizzazione del 
 prodotto software richiesto. In questa fase si concretizza la soluzione 
 attraverso la programmazione. I programmatori dovranno attenersi a queste norme 
-durante la fase di programmazione ed implementazione. \newline \newline
+durante la fase di programmazione ed implementazione. \newline
 			
 \subparagraph{Aspettative} \mbox{}\\
 
@@ -381,38 +381,47 @@ Obiettivo dell'attività è la creazione di un prodotto software conforme alle
 richieste prefissate con il proponente.
 L'uso di norme e convenzioni in questa fase, è fondamentale per permettere la 
 generazione di codice leggibile ed uniforme,  agevolare le fasi di manutenzione, 
-verifica e validazione e migliorare la qualità di prodotto. \newline \newline
+verifica e validazione e migliorare la qualità di prodotto. \newline 
 
 \subparagraph{Descrizione} \mbox{}\\
 
 La scrittura del codice dovrà rispettare quanto stabilito nella 
 documentazione di prodotto. Dovrà perseguire gli obiettivi di qualità definiti 
-all'interno del documento \textit{Piano di Qualifica v1.0.0} per poter garantire 
-una buona qualità del codice. \newline \newline
+all'interno del documento \textit{Piano di Qualifica v2.0.0} per poter garantire 
+una buona qualità del codice. \newline 
 
 \subparagraph{Stile di codifica} \mbox{}\\
 
-Al fine di garantire uniformità nel codice del progetto, ciascun membro del 
-gruppo è tenuto a rispettare le seguenti norme:
+Al fine di garantire uniformità, leggibilità e manutenibilità del codice del progetto,
+ciascun membro del gruppo è tenuto a rispettare le seguenti norme:
 	\begin{itemize}
-		\item \textbf{Indentazione}: i blocchi innestati devono essere correttamente 
+		\item \textbf{indentazione}: i blocchi innestati devono essere correttamente 
 			indentati, usando per ciascun livello di indentazione quattro (4) spazi (fanno 
 			eccezione i commenti). Al fine di assicurare il rispetto di questa regola si 
 			consiglia di configurare adeguatamente il proprio editor o IDE;
-		\item \textbf{Parentesizzazione}: è richiesto di inserire le parentesi di 
+		\item \textbf{parentesizzazione}: è richiesto di inserire le parentesi di 
 			delimitazione dei costrutti in linea e non al di sotto di essi;
-		\item \textbf{Scrittura dei metodi}: è desiderabile, ove possibile, 
+		\item \textbf{scrittura dei metodi}: è desiderabile, ove possibile, 
 			mantenere i metodi brevi(poche righe di codice);
-		\item \textbf{Univocità dei nomi}: classi, metodi, variabili devono avere un 
+		\item \textbf{univocità dei nomi}: classi, metodi, variabili devono avere un 
 			nome univoco	ed esplicativo al fine di evitare ambiguità e incomprensione;
-		\item \textbf{Classi}: i nomi delle classi devono iniziare sempre con una 
+		\item \textbf{classi}: i nomi delle classi devono iniziare sempre con una 
 			lettera maiuscola;		
-		\item \textbf{Costanti}: i nomi delle costanti devono essere scritte usando 
+		\item \textbf{costanti}: i nomi delle costanti devono essere scritte usando 
 			solo maiuscole;
-		\item \textbf{Metodi}: i nomi dei metodi devono iniziare con una lettera 
+		\item \textbf{metodi}: i nomi dei metodi devono iniziare con una lettera 
 			minuscola. Nel caso siano composti da più parole, quelle successive devono iniziare con una 
 			lettera maiuscola (CamelCase\glo{});
-		\item \textbf{Lingua}: il codice, come anche i commenti, deve essere scritto 
+		\item \textbf{commenti}: deve essere presente un sintetico commento descrittivo 
+			precedente all'implementazione di metodi e classi;
+		\item \textbf{intestazione dei file}: ogni file deve presentare le seguenti informazioni:
+			\begin{itemize}
+				\item percorso e nome del file;
+				\item nome e cognome dell'autore;
+				\item data di creazione;
+				\item breve descrizione del contenuto del file.
+			\end{itemize}
+		\item \textbf{lingua}: il codice, come anche i commenti, deve essere scritto 
 			in lingua inglese.
 	\end{itemize}
 Una parte del front end\glosp è normata dalla "Airbnb JavaScript style 
