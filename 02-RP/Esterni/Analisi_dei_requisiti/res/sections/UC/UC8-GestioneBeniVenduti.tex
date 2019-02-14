@@ -93,10 +93,7 @@
 		\item la percentuale IVA imposta.
 	\end{itemize}
 	\item \textbf{Scenario principale}: l'azienda accede alla pagina per visualizzare i loro prodotti in vendita;	
-	\item \textbf{Inclusione}:
-	\begin{itemize}
-		\item \textbf{UC16}: Ricerca: nella visualizzazione si può fare una ricerca sui prodotti.
-	\end{itemize}
+
 	\item \textbf{Precondizione}: il sistema ha identificato l'utente come azienda, questa ha acceduto alla pagina del proprio account dedicata alla gestione dei prodotti da essa messi in vendita;
 	\item \textbf{Postcondizione}: l'azienda ha ottenuto la lista dei propri prodotti assieme alle operazioni eseguibili su di essi.	
 \end{itemize}
@@ -208,6 +205,17 @@
 	\end{itemize}
 	\item \textbf{Precondizione}: il sistema ha identificato l'utente come azienda, l'azienda è acceduta alla pagina relativa alla visualizzazione e gestione dei prodotti da essa venduti nella piattaforma;
 	\item \textbf{Postcondizione}: l'azienda ha eliminato il prodotto. Il sistema ha visualizzato un messaggio che conferma il successo dell'operazione.
+\end{itemize}
+
+\subsubsection{UC8.5 - Ricerca dei propri prodotti}
+\begin{itemize}
+	\item \textbf{Attori Primari}: azienda;
+	\item \textbf{Descrizione}:
+	l'azienda può effettuare la ricerca di un proprio prodotto tra quelli che ha inserito nella piattaforma;
+	\item \textbf{Scenario principale}: l'azienda accede alla pagina in cui sono presenti i loro prodotti in vendita e inserisce nella casella di ricerca il nome del prodotto che vuole cercare;
+	\item \textbf{Precondizione}: il sistema ha identificato l'utente come azienda, questa ha acceduto alla pagina del proprio account dedicata alla gestione dei prodotti da essa messi in vendita e ha digitato nella casella di ricerca il nome del prodotto interessato;
+	\item \textbf{Postcondizione}:
+	 l'azienda ha ottenuto il prodotto o la lista dei prodotti che corrispondono al nome digitato, assieme alle operazioni eseguibili su di esso/i.
 \end{itemize}
 
 
