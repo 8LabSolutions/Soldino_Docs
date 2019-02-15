@@ -1,6 +1,6 @@
 \subsubsection{UC15 - Gestione transazioni ed IVA}
 \begin{figure}[H]
-	\includegraphics[width=12cm]{res/images/UC15-OK.png}
+	\includegraphics[width=12cm]{res/images/UC15.jpg}
 	\centering
 	\caption{UC15 - Gestione transazioni ed IVA}
 \end{figure}
@@ -29,11 +29,11 @@
 	\item \textbf{Scenario principale}: l'utente visualizza il saldo relativo ad un trimestre. In particolare:
 	\begin{enumerate}[label=\alph*.]
 		\item seleziona da un menù a tendina uno dei trimestri disponibili;
-		\item del trimestre scelto viene visualizzata la relativa lista delle fatture riguardanti gli ordini;
+		\item del trimestre scelto viene visualizzata la lista delle fatture relative al trimestre selezionato;
 	\end{enumerate}
 	\item \textbf{Inclusioni}: 
 	\begin{itemize}
-		\item \textbf{UC15.2}: visualizzazione generale delle fatture, ovvero il mostrare la lista delle fatture nel saldo.
+		\item \textbf{UC15.2}: visualizzazione lista fatture per trimestre.
 	\end{itemize}
 	\item \textbf{Specializzazioni}: 
 	\begin{itemize}
@@ -43,37 +43,25 @@
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda, e mette a disposizione le pagine per visualizzazione dei saldi dei semestri IVA. L'utente ha selezionato un trimestre tra quelli disponibili;
 	\item \textbf{Postcondizione}: l'azienda ha visualizzato il saldo IVA riguardante il trimestre scelto ed è a conoscenza dalla situazione di debito o credito verso il governo.
 \end{itemize} 
-\subsubsection{UC15.2 - Visualizzazione generale fattura}
+\subsubsection{UC15.2 - Visualizzazione lista fatture per trimestre}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: per ogni fattura l'utente può visualizzare i seguenti campi:
+	\item \textbf{Descrizione}: Per un trimestre selezionato viene visualizzata la lista delle fatture relative ad esso. Le informazioni visualizzate sono:
 	\begin{itemize}
 		\item numero identificativo;
+		\item la dicitura "vendita" se la fattura è di vendita, altrimenti "acquisto";
 		\item data;
-		\item nome dell'azienda emittente;
-		\item informazioni relative all'acquirente:
-		\begin{itemize}
-			\item nel caso il cliente fosse un'\textbf{azienda}:
-			\begin{itemize}
-				\item il nome dell'azienda destinataria.
-			\end{itemize}
-			\item nel caso il cliente fosse un \textbf{cittadino}:
-			\begin{itemize}
-				\item il nome;
-				\item il cognome.
-			\end{itemize}
-		\end{itemize}
-		\item importo totale dell'ordine;
+		\item importo totale;
 		\item IVA a credito/debito derivante dalla transazione.
 	\end{itemize}
-	\item \textbf{Scenario principale}: l'utente visualizza una fattura, riguardante i propri  acquisti o le vendite;
-	\item \textbf{Precondizione}: l'azienda ha selezionato la visualizzazione dei dati generali di una fattura;
-	\item \textbf{Postcondizione}: l'azienda ha visualizzato i dati relativi alla fattura.
+	\item \textbf{Scenario principale}: l'utente visualizza. dopo aver selezionato un trimestre, la lista delle proprie fatture emesse e ricevute;
+	\item \textbf{Precondizione}: l'azienda ha selezionato la visualizzazione del proprio saldo IVA scegliendo un trimestre;
+	\item \textbf{Postcondizione}: l'azienda ha visualizzato la lista delle fatture d'acquisto e vendita.
 \end{itemize}
--\subsubsection{UC15.2.1 - Visualizzazione dettaglio fattura}
+\subsubsection{UC15.2.1 - Visualizzazione dettaglio fattura}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: per ogni fattura l'utente può visualizzarne i dettagli che si riferiscono ai seguenti campi:
+	\item \textbf{Descrizione}: per ogni fattura l'utente può visualizzarne i dettagli di essa, precisamente:
 	\begin{itemize}
 	\item numero identificativo;
 	\item data;
@@ -82,20 +70,30 @@
 	\begin{itemize}
 		\item nel caso il cliente fosse un'\textbf{azienda}:
 		\begin{itemize}
-			\item il nome dell'azienda destinataria.
+			\item il nome dell'azienda destinataria;
+			\item sede.
 		\end{itemize}
 		\item nel caso il cliente fosse un \textbf{cittadino}:
 		\begin{itemize}
 			\item il nome;
-			\item il cognome.
+			\item il cognome;
+			\item domicilio.
 		\end{itemize}
 	\end{itemize}
+    \item lista dei prodotti acquistati, includendo:
+    \begin{itemize}
+    	\item descrizione del prodotto;
+    	\item quantità acquistata;
+    	\item prezzo unitario;
+    	\item aliquota IVA;
+    	\item totale imponibile;
+    \end{itemize}
 	\item importo totale dell'ordine;
 	\item IVA a credito/debito derivante dalla transazione.
 	\end{itemize}
 	
-	\item \textbf{Scenario principale}: l'utente visualizza una fattura, scendendo nel dettaglio, riguardante i propri acquisti o le vendite;
-	\item \textbf{Precondizione}: l'azienda ha selezionato la visualizzazione dei dati generali di una fattura; un'opzione, da lei selezionata, le ha permesso di visualizzare la fattura scendendo nei dettagli;
+	\item \textbf{Scenario principale}: l'utente dopo aver selezionato una fattura, visualizza i dettagli di essa descritti precedemtente;
+	\item \textbf{Precondizione}: l'azienda ha selezionato la visualizzazione della lista fatture per trimestre; un'opzione, da lei selezionata, le ha permesso di visualizzare la fattura scendendo nei dettagli;
 	\item \textbf{Postcondizione}: l'azienda ha visualizzato i dati relativi alla fattura, in dettaglio.
 \end{itemize}
 
