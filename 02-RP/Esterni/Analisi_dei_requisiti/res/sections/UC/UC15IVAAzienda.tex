@@ -75,16 +75,28 @@
 	\item \textbf{Attori Primari}: azienda;
 	\item \textbf{Descrizione}: per ogni fattura l'utente può visualizzarne i dettagli che si riferiscono ai seguenti campi:
 	\begin{itemize}
-		\item 1;
-		\item 2;
-		\item 3
-		\item 4;
-		\item 5.
+	\item numero identificativo;
+	\item data;
+	\item nome dell'azienda emittente;
+	\item informazioni relative all'acquirente:
+	\begin{itemize}
+		\item nel caso il cliente fosse un'\textbf{azienda}:
+		\begin{itemize}
+			\item il nome dell'azienda destinataria.
+		\end{itemize}
+		\item nel caso il cliente fosse un \textbf{cittadino}:
+		\begin{itemize}
+			\item il nome;
+			\item il cognome.
+		\end{itemize}
+	\end{itemize}
+	\item importo totale dell'ordine;
+	\item IVA a credito/debito derivante dalla transazione.
 	\end{itemize}
 	
 	\item \textbf{Scenario principale}: l'utente visualizza una fattura, scendendo nel dettaglio, riguardante i propri acquisti o le vendite;
 	\item \textbf{Precondizione}: l'azienda ha selezionato la visualizzazione dei dati generali di una fattura; un'opzione, da lei selezionata, le ha permesso di visualizzare la fattura scendendo nei dettagli;
-	\item \textbf{Postcondizione}: l'azienda ha visualizzato tutti i dati relativi alla fattura.
+	\item \textbf{Postcondizione}: l'azienda ha visualizzato i dati relativi alla fattura, in dettaglio.
 \end{itemize}
 
 \subsubsection{UC15.3 - Visualizzazione saldo IVA corrente}
