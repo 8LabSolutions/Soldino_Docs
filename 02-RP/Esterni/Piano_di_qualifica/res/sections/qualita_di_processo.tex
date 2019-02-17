@@ -30,41 +30,6 @@ Il risultato sono i processi esposti a seguito.
 				\item valore preferibile: $100\%$;
 				\item valore accettabile: $100\%$.
 			\end{itemize}
-		
-	\subsubsection{Progettazione dell'Architettura}
-	Progettare l'architettura significa tradurre i requisiti in un modello architetturale del sistema.
-	Il modello così ottenuto è ad alto livello di dettaglio: esso dà una visione del sistema come composizione di parti, utili a capire il funzionamento del sistema, ma a grossa granularità quindi non ancora realizzabili nella pratica.\newline
-	Nell'attività vanno considerati in particolare il tipo di software da produrre, le caratteristiche desiderate e i suoi requisiti non funzionali per scegliere l'architettura più adatta.
-		\paragraph{Obiettivi}
-		\begin{itemize}
-			\item agevolare la realizzazione fornendo un'architettura adeguata;
-			\item perseguire la correttezza per costruzione;
-			\item comprendere meglio il sistema scomponendolo in parti;
-			\item progettare adoperando stili architetturali e design pattern.
-		\end{itemize}
-		\paragraph{Strategia}
-		\begin{itemize}
-			\item valutare il tipo di software da produrre, le caratteristiche desiderate, i casi d'uso e i requisiti da soddisfare;
-			\item valutare i modelli architetturali secondo il punto precedente e scegliere il più adeguato;
-			\item individuare nel modello i macro-componenti del sistema;
-			\item comprendere e definire le relazioni tra i componenti.
-		\end{itemize}
-		\paragraph{Metriche}
-			\subparagraph{SFIN: Structural Fan-in}
-			Indica quante componenti utilizzano un dato modulo. Un alto valore indica un alto riuso della componente.
-			\begin{itemize}
-				\item misurazione: valore intero: conteggio delle componenti;
-				\item valore preferibile: $ \geq 1$;
-				\item valore accettabile: $ \geq 0$.
-			\end{itemize}
-			\subparagraph{SFOUT: Structural Fan-out}
-			Indica quante componenti vengono utilizzate dalla componente in esame. Un alto valore indica un alto
-accoppiamento della componente.
-			\begin{itemize}
-				\item misurazione: valore intero: conteggio delle componenti;
-				\item valore preferibile: $ = 0$;
-				\item valore accettabile: $ \leq 6$.
-			\end{itemize}
 			
 	\subsubsection{Progettazione di Dettaglio}
 	\textit{Nota: in questa sezione si parla di modulo, unità e componente riferendosi allo stesso oggetto, ma ponendo l'attenzione sulla proprietà (rispettivamente modularità, unità e composizione) più rilevante nel contesto d'uso.}\newline 

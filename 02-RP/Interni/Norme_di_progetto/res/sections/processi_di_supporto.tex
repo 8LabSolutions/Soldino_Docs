@@ -307,7 +307,7 @@
 		\item soddisfazione finale di cliente e proponente.
 	\end{itemize}
 	\subsubsection{Descrizione}
-	Per la trattazione approfondita della gestione della qualità si fa riferimento al \textit{Piano di Qualifica v1.0.0}, dove sono descritte le modalità utilizzate per garantire la qualità nello sviluppo del progetto. In particolare, in tale documento:
+	Per la trattazione approfondita della gestione della qualità si fa riferimento al \textit{Piano di Qualifica v2.0.0}, dove sono descritte le modalità utilizzate per garantire la qualità nello sviluppo del progetto. In particolare, in tale documento:
 	\begin{itemize}
 		\item sono presentati gli standard utilizzati;
 		\item sono individuati i processi di interesse negli standard;
@@ -338,7 +338,137 @@
 	\begin{itemize}
 		\item forniti dallo standard \textbf{ISO-12207};
 		\item le metriche.
-	\end{itemize} 
+	\end{itemize}
+	\subsubsection{Metriche per i processi}
+		\paragraph{Analisi dei Requisiti}
+		
+		Durante l’analisi le informazioni ottenute dalle varie fonti sono trasformate in forma di casi d’uso e requisiti. Questa forma fornisce una descrizione dettagliata del sistema e definisce il funzionamento e le caratteristiche di ogni sua parte. \\
+		Gli obiettivi sono:
+		\begin{itemize}
+			\item formulare la definizione di casi d’uso e requisiti;
+			\item ottenere la loro approvazione;
+			\item tracciare il loro cambiamento nel tempo.
+		\end{itemize}
+		La strategia prevede: 
+		\begin{itemize}
+			\item considerare lo scopo del progetto e le richieste degli stakeholder;
+			\item esprimere ciò in forma di requisiti, classificati in obbligatori, desiderabili e opzionali;
+			\item valutare il corpo dei requisiti e negoziare cambiamenti se necessario;
+			\item ottenere la loro approvazione da parte del proponente.
+		\end{itemize}
+		La metrica usata è \textbf{la percentuale di requisiti obbligatori soddisfatti} (PROS) e viene calcolata con la seguente formula:
+		
+		\begin{center}  $ PROS = \frac{requisiti\ obbligatori\ soddisfatti}{requisiti\ obbligatori\ totali}$
+		\end{center}
+		
+		\paragraph{Progettazione in Dettaglio}
+		\textit{Nota: in questa sezione si parla di modulo, unità e componente riferendosi allo stesso oggetto, ma ponendo l'attenzione sulla proprietà (rispettivamente modularità, unità e composizione) più rilevante nel contesto d'uso.}\newline 
+		La progettazione di design segue la progettazione dell'architettura e prevede la scomposizione delle macro-componenti di cui il modello architetturale è fatto in componenti più piccole, che sono facilmente comprensibili, strettamente collegati ai requisiti funzionali e implementabili da un singolo programmatore.\\
+		Gli obiettivi sono:
+		\begin{itemize}
+			\item tradurre i requisiti in unità di codice, i moduli;
+			\item favorire il lavoro dei programmatori con compiti individuali relativi ai singoli moduli;
+			\item produrre un sistema software da raffinare ma già eseguibile;
+			\item mantenere il tracciamento tra requisiti e componenti.
+		\end{itemize}
+		La strategia prevede di: 
+		\begin{itemize}
+			\item scomporre le componenti architetturali in componenti piccole;
+			\item implementare le micro-componenti individuate.
+		\end{itemize}
+		La metrica usata è l'\textbf{accoppiamento tra le classi di oggetti} (CBO).
+	\subsubsection{Processi di Supporto}
+		\paragraph{Pianificazione}
+		La pianificazione è un’attività significativa della gestione di progetto. Consiste nel governare le	risorse a disposizione, ovvero tempi, costi e ruoli, monitorarle nel tempo e reagire efficacemente ai cambiamenti. La pianificazione si esprime specificatamente all’interno del Piano di Progetto.\\
+		Gli obiettivi sono:
+		\begin{itemize}
+			\item avere a disposizione piani e obiettivi ben definiti;
+			\item aver definito ruoli, responsabilità, obblighi e autorità a cui rispondere;
+			\item aver allocato le risorse e i beni necessari;
+			\item attivare il piano per sostenere il progetto.
+		\end{itemize}
+		La strategia prevede di: 
+		\begin{itemize}
+			\item produrre la pianificazione delle attività;
+			\item mantenerla aggiornata mentre esse vengono svolte;
+			\item usarla come riferimento e supporto.
+		\end{itemize}
+		Le metriche utilizzate sono:
+		\begin{itemize}
+			\item \textbf{Budget at Completion} (BAC): budget totale allocato per il progetto;
+			\item \textbf{Actual Cost} (AC): il denaro speso fino al momento del calcolo;
+			\item \textbf{Earned Value} (EV): metrica di utilità per il calcolo di $SV$ e $CV$ (spiegate successivamente). Si tratta del valore del lavoro fatto fino al momento del calcolo; corrisponde al denaro guadagnato fino a quel momento. Si misura con $BAC \cdot \%\ di\ lavoro\ completato\ $;
+			\item \textbf{Planned Value} (PV): metrica di utilità per il calcolo di $SV$ e $CV$ (spiegate successivamente). Si tratta del valore del lavoro pianificato al momento del calcolo: corrisponde al denaro che si dovrebbe aver guadagnato in quel momento. Si misura con $BAC \cdot \%\ di\ lavoro\ pianificato\ $;
+			\item \textbf{Schedule Variance} (SV): Esprime lo stato di anticipo o ritardo nello svolgimento del progetto rispetto alla pianificazione. Si calcola come $SV = EV - PV$
+			\item \textbf{Cost Variance} (CV): Differenza tra il costo del lavoro effettivamente completato e quello
+			pianificato. Una CV positiva indica che si sta rispettando il budget. Si calcola come $CV = EV - AC$;
+		\end{itemize}
+		\paragraph{Verifica}
+		Il processo consiste nella ricerca e correzione di anomalie e difetti nei processi e prodotti del	progetto, mediante tecniche predefinite e se possibile automatiche.\\
+		Gli obiettivi sono:
+		\begin{itemize}
+			\item individuare e correggere le anomalie;
+			\item provare che il sistema soddisfi i requisiti.
+		\end{itemize}
+		La strategia prevede: 
+		\begin{itemize}
+			\item individuare tecniche e strumenti di verifica;
+			\item applicarli;
+			\item affinarli con l’esperienza.
+		\end{itemize}
+		La metrica utilizzata è la \textbf{Code Coverage} (CC), una percentuale che indica il numero di righe di codice percorse dai test durante la loro	esecuzione. Per linee di codice totali si intende tutte quelle appartenenti all’unità in fase di test e si clacola con la seguente formula:
+		\begin{center}
+			$CC = \frac{linee\ di\ codice\ percorse}{linee\ di\ codice\ totali}$
+		\end{center}
+		\paragraph{Documentazione}
+		La documentazione consiste nella produzione di informazioni, la cui forma tipica è documentale, e nella loro gestione. I documenti sono prodotti a supporto di tutte le attività di progetto.
+		L'obiettivo è di scrivere la documentazione affinche costituisca una body of knowledge\glosp che raccoglie la conoscenza in modo:
+		\begin{itemize}
+			\item completo;
+			\item non ambiguo;
+			\item modulare e fatto di parti coese;
+			\item trasparente, adatto alla trasmissione delle informazioni;
+			\item disponibile esternamente.
+		\end{itemize}
+		La strategia prevede che i documenti siano: 
+		\begin{itemize}
+			\item prodotti in concomitanza con tutte le attività di sviluppo;
+			\item prodotti in modo collaborativo;
+			\item supportati da un glossario;
+			\item supportati dalle Norme di Progetto;
+			\item prodotti con strumenti software adatti alla collaborazione e alla modularità in \LaTeX;
+			\item ospitati in una repository\glosp pubblica su GitHub.
+		\end{itemize}
+		Le metricche utilizzate sono:
+		\begin{itemize}
+		\item l'\textbf{Indice di Gunning fog}, ossia una stima degli anni di educazione scolastica richiesti per comprendere il testo a una prima lettura. Si misura con la seguente formula:
+		\begin{center}
+		$ I_{GF} = 0.4 \cdot
+		(
+		\frac{numero\ di\ parole}{numero\ di\  frasi}
+		+ 100 \cdot
+		\frac{numero\ di\ parole\ complesse}{numero\ di\  frasi}
+		) $;
+		\end{center}
+		\item l'\textbf{Indice di Gulpease},ossia un indice che indica la leggibilità del testo. Si misura con la seguente formula:
+		\begin{center}
+		$I_G = 89+ \frac{(300 \cdot numero\ di\ frasi - 10 \cdot numero\ di\ lettere)}{numero\ di\ parole}$;
+		\end{center}
+		\end{itemize}
+	\subsubsection{Processi Organizzativi}
+		\paragraph{Gestione della Qualità}
+		Tale processo ha per scopo il raggiungimento di un grado soddisfacente di qualità nel progetto, fornendo così obiettivi da perseguire e strumenti tecnici come procedure e metriche.\\
+		L'obiettivo è di garantire che i prodotti e processi rispettino gli standard di qualità richiesti.\\
+		La strategia prevede di: 
+		\begin{itemize}
+			\item pianificare le proprie azioni perseguendo gli obiettivi;
+			\item utilizzare gli strumenti forniti per misurare e monitorare i risultati;
+			\item reagire ai risultati aggiornando obiettivi, strategia e strumenti.
+		\end{itemize}
+		La metricha utilizzata è la \textbf{Percentuale di metriche soddisfatte}, calcolata dalla seguente formula:
+		\begin{center}
+			$\frac{numero\ di\ metriche\ soddisfatte}{numero\ di\ metriche\ totali} $
+		\end{center}
 		
 \subsection{Verifica}
 	\subsubsection{Scopo}
