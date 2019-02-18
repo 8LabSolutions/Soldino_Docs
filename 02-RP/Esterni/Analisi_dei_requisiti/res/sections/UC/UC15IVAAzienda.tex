@@ -8,7 +8,7 @@
 	\item \textbf{Attori Primari}: azienda;
 	\item \textbf{Descrizione}: alle aziende sono messe a disposizione diverse operazioni per gestire le transazioni e l'IVA:
 	\begin{itemize}
-		\item può visualizzare i saldi IVA di un periodo, comprendendo la visualizzazione di tutte le transazioni, rappresentate dalle rispettive fatture, e del saldo finale [15.3 \& 15.4];
+		\item può visualizzare le informazioni di un trimestre IVA, che comprenda la visualizzazione di tutte le transazioni avvenute, rappresentate dalle rispettive fatture, e del saldo IVA [15.3 \& 15.4];
 		\item per ogni fattura è disponibile la visualizzazione dettagliata [15.8];
 		\item può scaricare le informazioni riguardanti un trimestre come sopra descritto sotto forma di documento PDF [15.5]; 
 		\item in caso il saldo di un semestre risulti negativo (situazione di debito), l'azienda può procedere ad effettuare il versamento al governo [15.6] o può dilazionarlo\glosp [15.7].
@@ -29,7 +29,7 @@
 	\item \textbf{Scenario principale}: l'utente visualizza il saldo relativo ad un trimestre. In particolare:
 	\begin{enumerate}[label=\alph*.]
 		\item seleziona da un menù a tendina uno dei trimestri disponibili;
-		\item del trimestre scelto viene visualizzata la lista delle fatture relative al trimestre selezionato;
+		\item del trimestre scelto vengono visualizzate le informazioni generali e la lista delle fatture relative;
 	\end{enumerate}
 	\item \textbf{Inclusioni}: 
 	\begin{itemize}
@@ -46,7 +46,7 @@
 \subsubsection{UC15.2 - Visualizzazione lista fatture per trimestre}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: Per un trimestre selezionato viene visualizzata la lista delle fatture relative ad esso. Le informazioni visualizzate sono:
+	\item \textbf{Descrizione}: per un trimestre selezionato viene visualizzata la lista delle fatture relative ad esso. Le informazioni visualizzate sono:
 	\begin{itemize}
 		\item numero identificativo;
 		\item la dicitura "vendita" se la fattura è di vendita, altrimenti "acquisto";
@@ -54,7 +54,7 @@
 		\item importo totale;
 		\item IVA a credito/debito derivante dalla transazione.
 	\end{itemize}
-	\item \textbf{Scenario principale}: l'utente visualizza. dopo aver selezionato un trimestre, la lista delle proprie fatture emesse e ricevute;
+	\item \textbf{Scenario principale}: l'utente visualizza, dopo aver selezionato un trimestre, la lista delle proprie fatture emesse e ricevute;
 	\item \textbf{Precondizione}: l'azienda ha selezionato la visualizzazione del proprio saldo IVA scegliendo un trimestre;
 	\item \textbf{Postcondizione}: l'azienda ha visualizzato la lista delle fatture d'acquisto e vendita.
 \end{itemize}
@@ -71,7 +71,7 @@
 \subsubsection{UC15.4 - Visualizzazione saldo IVA trimestri conclusi}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: l'azienda può visualizzare la lista degli ordini relativi ad un trimestre IVA già concluso. Può inoltre leggerne lo stato, ovvero sapere se i pagamenti a debito o credito con il governo sono stati saldati oppure no. In caso di stato di debito relativo ad un trimestre, viene resa disponibile la data ultima per il versamento IVA, la possibilità di effettuare il pagamento, e quella di dilazionarlo;
+	\item \textbf{Descrizione}: l'azienda può visualizzare la lista degli ordini relativi ad un trimestre IVA già concluso. Può inoltre leggerne lo stato, ovvero sapere se il pagamento relativo ad uno stato di debito o credito con il governo è stato saldato oppure no. In caso di stato di debito, viene resa disponibile la data ultima per il versamento IVA, la possibilità di effettuare il pagamento, e quella di dilazionarlo;
 	\item \textbf{Scenario principale}: l'utente visualizza la lista delle operazioni riguardanti  un saldo IVA relativo ad un trimestre concluso. Per ognuno di essi ottiene l'informazione sullo stato del pagamento del saldo IVA, assieme alle operazioni che possono essere effettuate su di esso;
 	\item \textbf{Precondizione}: l'utente ha selezionato la visualizzazione del saldo relativo ad un trimestre concluso;
 	\item \textbf{Postcondizione}: l'azienda ha visualizzato il saldo IVA riguardante un trimestre concluso, assieme alle possibili operazioni da effettuare.
