@@ -59,6 +59,42 @@
 	\item \textbf{Postcondizione}: l'azienda ha visualizzato la lista delle fatture d'acquisto e vendita.
 \end{itemize}
 
+\subsubsection{UC15.2.1 - Visualizzazione fattura in dettaglio}
+
+\begin{itemize}
+	\item \textbf{Attori Primari}: azienda;
+	\item \textbf{Descrizione}: l'azienda può leggere tutti i dettagli di una fattura. In essa devono essere presenti tutti i seguenti campi:
+	\begin{itemize}
+		\item data della fattura;
+		\item numero identificativo della fattura;
+		\item la data dell'ordine relativo alla fattura;
+		\item il numero identificativo dell'ordine relativo alla fattura;
+		\item visualizzazione dei prodotti in formato fattura, ovvero UC5 con due campi aggiuntivi per ogni prodotto, ovvero il prezzo netto\glosp e l'aliquota IVA;
+		\item l'importo totale IVA;
+		\item l'importo totale dell'ordine;
+		\item il nome dell'azienda emittente;
+		\item la partita IVA dell'azienda emittente;
+		\item informazioni relative all'acquirente:
+		\begin{itemize}
+			\item nel caso il cliente fosse un'\textbf{azienda}:
+			\begin{itemize}
+				\item il nome dell'azienda destinataria;
+				\item la partita IVA dell'azienda destinataria.
+			\end{itemize}
+			\item nel caso il cliente fosse un \textbf{cittadino}:
+			\begin{itemize}
+				\item il nome;
+				\item il cognome.
+			\end{itemize}
+		\end{itemize}
+		
+		\item indirizzo di spedizione dell'ordine.
+	\end{itemize}
+	\item \textbf{Scenario principale}: l'azienda seleziona una fattura da una lista e può leggere tutti i dettagli di tale fattura;
+	\item \textbf{Precondizione}: l'azienda si trova nella pagina di visualizzazione della lista delle fatture e seleziona la visualizzazione dei dettagli di una specifica fattura;
+	\item \textbf{Postcondizione}: l'azienda ha visualizzato i dettagli della fattura selezionata.
+\end{itemize} 
+
 \subsubsection{UC15.3 - Visualizzazione saldo IVA corrente}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
@@ -111,40 +147,6 @@
 \end{itemize} 
 
 
-\subsubsection{UC15.8 - Visualizzazione fattura in dettaglio}
 
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: l'azienda può leggere tutti i dettagli di una fattura. In essa devono essere presenti tutti i seguenti campi:
-	\begin{itemize}
-		\item data della fattura;
-		\item numero identificativo della fattura;
-		\item la data dell'ordine relativo alla fattura;
-		\item il numero identificativo dell'ordine relativo alla fattura;
-		\item visualizzazione dei prodotti in formato fattura, ovvero UC5 con due campi aggiuntivi per ogni prodotto, ovvero il prezzo netto\glosp e l'aliquota IVA;
-		\item l'importo totale IVA;
-		\item l'importo totale dell'ordine;
-		\item il nome dell'azienda emittente;
-		\item la partita IVA dell'azienda emittente;
-		\item informazioni relative all'acquirente:
-		\begin{itemize}
-			\item nel caso il cliente fosse un'\textbf{azienda}:
-			\begin{itemize}
-				\item il nome dell'azienda destinataria;
-				\item la partita IVA dell'azienda destinataria.
-			\end{itemize}
-			\item nel caso il cliente fosse un \textbf{cittadino}:
-			\begin{itemize}
-				\item il nome;
-				\item il cognome.
-			\end{itemize}
-		\end{itemize}
-		
-		\item indirizzo di spedizione dell'ordine.
-	\end{itemize}
-	\item \textbf{Scenario principale}: l'azienda seleziona una fattura da una lista e può leggere tutti i dettagli di tale fattura;
-	\item \textbf{Precondizione}: l'azienda si trova nella pagina di visualizzazione della lista delle fatture e seleziona la visualizzazione dei dettagli di una specifica fattura;
-	\item \textbf{Postcondizione}: l'azienda ha visualizzato i dettagli della fattura selezionata.
-\end{itemize} 
 
 
