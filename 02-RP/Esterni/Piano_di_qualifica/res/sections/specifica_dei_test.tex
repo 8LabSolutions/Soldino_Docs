@@ -20,51 +20,7 @@ Inoltre per lo stato dei test si usano le seguenti abbreviazioni:
 	\item \textbf{NS}: per indicare che il test non ha soddisfatto la richiesta.
 \end{itemize}
 
-\subsection{Tipi di test}
-Vengono individuate quattro tipologie di test:
-\begin{itemize}
-	\item \textbf{Test di Accettazione[TA]}: essi vengono fatti per verificare 
-		che il prodotto soddisfi quanto richiesto dal proponente;
-	\item \textbf{Test di Sistema [TS]}: questi test vengono utilizzati quando il 
-		sistema viene installato su una piattaforma e verificano che esso raggiunga gli 
-		obiettivi fissati e soddisfi le richieste formulate in partenza;
-	\item \textbf{Test di Integrazione [TI]}: lo scopo di questi test è quello di 
-		testare come un gruppo i singoli moduli\glo{} del software. Essi vengono svolti 
-		dopo i Test di Unità e prima dei Test di Sistema; 
-	\item \textbf{Test di Unità [TU]}: questi test hanno il compito di verificare le 
-		singole unità del software, ovvero le minime componenti del programma che hanno 
-		un funzionamento autonomo. Il successo da parte di questi test non implica il 
-		corretto funzionamento da parte del software.		
-\end{itemize}
-
-\subsubsection{Test di Accettazione}
-I test di accettazione hanno lo scopo di dimostrare che il software sviluppato 
-soddisfi i requisiti presentati nel capitolato e concordati con il proponente, essi vengono eseguiti durante il
-collaudo finale. Tali test verranno indicati nel seguente modo: \\
-	\centerline{\textbf{TA[Tipo][Importanza][Codice]}}
-dove:
-\begin{itemize}
-	\item \textbf{Tipo}: indica di che tipo si tratta il requisito. Può
-		appartenere a una delle seguenti categorie indicate con:
-		\begin{itemize}
-			\item \textbf{O} per i requisiti obbligatori;
-			\item \textbf{D} per i requisiti desiderabili;
-			\item \textbf{F} per i requisiti facoltativi.			
-		\end{itemize}
-	\item \textbf{Importanza}: indica l'importanza del requisito. L'importanza
-		che può assumere un requisito viene indicata con:
-		\begin{itemize}
-			\item \textbf{F} per indicare un requisito funzionale;
-			\item \textbf{V} per indicare un requisito di vincolo;
-			\item \textbf{Q} per indicare un requisito di qualità;
-			\item \textbf{P} per indicare un requisito prestazionale. 
-		\end{itemize}
-	\item \textbf{Codice}: rappresenta il codice identificativo crescente
-		del componente da verificare.
-\end{itemize}
-
-
-
+\subsection{Test di Accettazione} 
 	\renewcommand{\arraystretch}{1.5}
 	\rowcolors{2}{pari}{dispari}
 	
@@ -485,27 +441,8 @@ dove:
 	
 	\end{longtable}
 
-\subsubsection{Test di Sistema}
-I test di sistema sono impiegati per garantire il corretto funzionamento delle 
-componenti dell'intero sistema. Tali test verranno indicati nel seguente modo:\\
-	\centerline{\textbf{TS[id]}}
-dove \textit{id} rappresenta il codice identificativo crescente del componente da
-verificare.\\
-Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla richiesta della sua istanziazione.
+\subsection{Test di Sistema}
 
+\subsection{Test di Integrazione}
 
-\subsubsection{Test di Integrazione}
-I test di integrazione sono usati per verificare il corretto funzionamento tra le
-varie unità dell'architettura. Tali test verranno indicati nel seguente modo:\\
-	\centerline{\textbf{TI[id]}}
-dove \textit{id} rappresenta il codice identificativo crescente del componente da
-verificare.\\
-Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla richiesta della sua istanziazione.
-
-\subsubsection{Test di Unità}
-I test di unità hanno l'obiettivo di verificare il corretto funzionamento della 
-parte più piccola autonoma del lavoro realizzato. Tali test verranno indicati nel
-seguente modo:\\
-	\centerline{\textbf{TU[id]}}
-dove \textit{id} rappresenta il codice identificativo crescente dell'unità da verificare.\\
-Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla richiesta della sua istanziazione.
+\subsection{Test di Unità}
