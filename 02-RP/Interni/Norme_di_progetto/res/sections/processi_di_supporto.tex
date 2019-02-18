@@ -552,18 +552,63 @@
 			\item fornire informazioni sui risultati dell'esecuzione in forma di file di log.
 		\end{itemize}	
 			
-		\noindent{Ci sono vari tipi di test del software, ognuno dei quali ha un diverso oggetto di verifica e scopo.} \newline \newline
-			\textbf{Test di unità} \mbox{}\\ \mbox{}\\
-			I test di unità si eseguono su unità di software. Questi test si concentrano sul funzionamento delle unità individuali. Dati gli input possibili in un unità, si suddividono gli input in partizioni di equivalenza e si prova se gli input attesi danno gli output previsti. Le singole unità possono essere testate con l'ausilio di driver\glosp e stub\glosp. \newline \newline
-			\textbf{Test di integrazione} \mbox{}\\ \mbox{}\\
-			Dopo aver superato i test di unità, le stesse unità vengono assemblate in agglomerati progressivamente più grandi. Il test di integrazione si concentra sulle interfacce tra i componenti. Un agglomerato che supera il test di integrazione costituisce quindi una nuova unità per un agglomerato di grandezza maggiore. Questa procedura si ripete fino a raggiungere la dimensione totale del sistema. \newline \newline
-			\textbf{Test di sistema} \mbox{}\\ \mbox{}\\
-			Il sistema viene testato nella sua interezza, una volta integrati tutti i suoi componenti. Ci si concentra sulle interazioni tra le parti, sul comportamento emergente\glosp delle caratteristiche del sistema e sulla copertura\glosp di tutte le funzionalità. Questo tipo di test porta alla luce le ipotesi errate che i diversi sviluppatori fanno su parti del software sviluppate da altri.
-			In questa fase ci si assicura che il sistema rispetti tutte le specifiche definite nell'\textit{Analisi dei Requisiti}. \newline \newline
-			\textbf{Test di regressione} \mbox{}\\ \mbox{}\\
-			Si effettua di seguito ad una modifica del sistema e consiste nella riesecuzione dei test esistenti: si combina bene con l'automazione dei test. \newline \newline
-			\textbf{Test di accettazione} \mbox{}\\ \mbox{}\\
-			Anche detto "test di collaudo", è simile al test di sistema per l'oggetto testato, ma viene eseguito con la collaborazione dei committenti. Si occupa di verificare il prodotto e, in particolare, il soddisfacimento del cliente. Il superamento del test di collaudo garantisce che il software sia pronto per essere rilasciato.
+		\noindent{Ci sono vari tipi di test del software, ognuno dei quali ha un diverso oggetto di verifica e scopo.}
+		
+		%\subsection{Tipi di test}
+		%Vengono individuate quattro tipologie di test:
+		\begin{itemize}
+			\item \textbf{Test di Accettazione[TA]}: anche detto "test di collaudo", è simile al test di sistema per l'oggetto testato, ma viene eseguito con la collaborazione dei committenti. Si occupa di verificare il prodotto e, in particolare, il soddisfacimento del cliente. Il superamento del test di collaudo garantisce che il software sia pronto per essere rilasciato. Tali test verranno indicati nel seguente modo: \\
+			\centerline{\textbf{TA[Tipo][Importanza][Codice]}}
+			dove:
+			\begin{itemize}
+				\item \textbf{Tipo}: indica di che tipo si tratta il requisito. Può
+				appartenere a una delle seguenti categorie indicate con:
+				\begin{itemize}
+					\item \textbf{O} per i requisiti obbligatori;
+					\item \textbf{D} per i requisiti desiderabili;
+					\item \textbf{F} per i requisiti facoltativi.			
+				\end{itemize}
+				\item \textbf{Importanza}: indica l'importanza del requisito. L'importanza
+				che può assumere un requisito viene indicata con:
+				\begin{itemize}
+					\item \textbf{F} per indicare un requisito funzionale;
+					\item \textbf{V} per indicare un requisito di vincolo;
+					\item \textbf{Q} per indicare un requisito di qualità;
+					\item \textbf{P} per indicare un requisito prestazionale. 
+				\end{itemize}
+				\item \textbf{Codice}: rappresenta il codice identificativo crescente
+				del componente da verificare.
+			\end{itemize}
+			\item \textbf{Test di Sistema [TS]}: il sistema viene testato nella sua interezza, una volta integrati tutti i suoi componenti. Ci si concentra sulle interazioni tra le parti, sul comportamento emergente\glosp delle caratteristiche del sistema e sulla copertura\glosp di tutte le funzionalità. Questo tipo di test porta alla luce le ipotesi errate che i diversi sviluppatori fanno su parti del software sviluppate da altri.
+			In questa fase ci si assicura che il sistema rispetti tutte le specifiche definite nell'\textit{Analisi dei Requisiti}. Tali test verranno indicati nel seguente modo:\\
+			\centerline{\textbf{TS[id]}}
+			dove \textit{id} rappresenta il codice identificativo crescente del componente da
+			verificare.\\
+			Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla richiesta della sua istanziazione;
+			\item \textbf{Test di Integrazione [TI]}: dopo aver superato i test di unità, le stesse unità vengono assemblate in agglomerati progressivamente più grandi. Il test di integrazione si concentra sulle interfacce tra i componenti. Un agglomerato che supera il test di integrazione costituisce quindi una nuova unità per un agglomerato di grandezza maggiore. Questa procedura si ripete fino a raggiungere la dimensione totale del sistema. Tali test verranno indicati nel seguente modo:\\
+			\centerline{\textbf{TI[id]}}
+			dove \textit{id} rappresenta il codice identificativo crescente del componente da
+			verificare.\\
+			Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla richiesta della sua istanziazione;
+			\item \textbf{Test di Unità [TU]}: si eseguono su unità di software. Questi test si concentrano sul funzionamento delle unità individuali. Dati gli input possibili in un unità, si suddividono gli input in partizioni di equivalenza e si prova se gli input attesi danno gli output previsti. Le singole unità possono essere testate con l'ausilio di driver\glosp e stub\glo. Tali test verranno indicati nel
+			seguente modo:\\
+			\centerline{\textbf{TU[id]}}
+			dove \textit{id} rappresenta il codice identificativo crescente dell'unità da verificare.\\
+			Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla richiesta della sua istanziazione.
+			\item \textbf{Test di regressione}: Si effettua di seguito ad una modifica del sistema e consiste nella riesecuzione dei test esistenti: si combina bene con l'automazione dei test.
+		\end{itemize}
+		
+		
+			%\textbf{Test di unità} \mbox{}\\ \mbox{}\\
+			% \newline \newline
+			%\textbf{Test di integrazione} \mbox{}\\ \mbox{}\\
+			% \newline \newline
+			%\textbf{Test di sistema} \mbox{}\\ \mbox{}\\
+			% \newline \newline
+			%\textbf{Test di regressione} \mbox{}\\ \mbox{}\\
+			% \newline \newline
+			%\textbf{Test di accettazione} \mbox{}\\ \mbox{}\\
+			
 	\subsubsection{Strumenti}
 		\paragraph{Verifica ortografica} \mbox{}\\ \mbox{}\\
 		Viene utilizzata la verifica dell'ortografia in tempo reale, strumento integrato in \TeX{}studio che sottolinea in rosso le parole errate e in verde le ripetizioni a breve distanza secondo la lingua italiana.
