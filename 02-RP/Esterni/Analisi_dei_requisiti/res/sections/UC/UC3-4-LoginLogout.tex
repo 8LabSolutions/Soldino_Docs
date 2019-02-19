@@ -1,25 +1,10 @@
-\subsubsection{UC3 - Login}
+\subsubsection{UC6 - Login automatico}
 \begin{figure}[h]
 	\includegraphics[width=12cm]{res/images/UC3Login.png} %da adattare in larghezza
 	\centering
-	\caption{UC3 - Login}
+	\caption{UC3 - Login automatico}
 	
 \end{figure}
-\begin{itemize}
-	\item \textbf{Attori Primari}:
-	utente non autenticato;
-	\item \textbf{Attori Secondari}:
-	MetaMask\glo;
-	\item \textbf{Descrizione}:
-	l'utente tenta di autenticarsi alla piattaforma attraverso l'utilizzo di MetaMask\glo;
-	\item \textbf{Scenario principale}:
-	l'utente non è ancora autenticato al sito ed esegue il login;
-	\item \textbf{Precondizione}:
-	l'utente non è autenticato alla piattaforma;
-	\item \textbf{Postcondizione}:
-	l'utente si è autenticato con successo, ed è stato identificato dal sistema nel ruolo di cittadino, azienda o utente governativo. A seconda della tipologia di utente vengono rese disponili diverse pagine e funzionalità.
-\end{itemize}
-\subsubsection{UC3.1 - Login automatico}
 \begin{itemize}
 	\item \textbf{Attori Primari}:
 	utente non autenticato;
@@ -40,9 +25,9 @@
 	\item \textbf{Precondizione}:
 	l'utente tenta di autenticarsi alla piattaforma;
 	\item \textbf{Postcondizione}:
-	l'utente viene individuato attraverso l'utilizzo del plug-in MetaMask\glo.
+	l'utente si è autenticato con successo, ed è stato identificato dal sistema nel ruolo di cittadino, azienda o utente governativo. A seconda della tipologia di utente vengono rese disponili diverse pagine e funzionalità.
 \end{itemize}
-\subsubsection{UC3.2 - Visualizzazione messaggio di errore relativo a chiave non registrata}
+\subsubsection{UC7 - Visualizzazione messaggio di errore relativo a chiave non registrata}
 \begin{itemize}
 	\item \textbf{Attori Primari}:
 	utente non autenticato;
@@ -54,7 +39,7 @@
 	l'utente tenta di autenticarsi nella piattaforma;
 	\item \textbf{Postcondizione}: viene visualizzato un messaggio d'errore per informare l'utente del fatto che è necessario registrarsi alla piattaforma prima di poter poi effettuare la procedura di login.
 \end{itemize}
-\subsubsection{UC3.3 - Visualizzazione schermata relativa a utente non abilitato}
+\subsubsection{UC8 - Visualizzazione schermata relativa a utente non abilitato}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Descrizione}:
@@ -65,7 +50,7 @@
 	un utente non autenticato, registrato alla piattaforma e con account disabilitato tenta di effettuare il login automatico;
 	\item \textbf{Postcondizione}:  viene visualizzato un messaggio d'errore per informare l'utente del fatto che il proprio account è stato disabilitato dal governo. Se quest'ultimo, durante la procedura di disabilitazione, ha inserito un messaggio contenente la causa di tale azione, allora tale messaggio viene visualizzato.
 \end{itemize}
-\subsubsection{UC4 - Logout}
+\subsubsection{UC9 - Logout}
 \begin{itemize}
 	\item \textbf{Attori Primari}:
 	utente autenticato;

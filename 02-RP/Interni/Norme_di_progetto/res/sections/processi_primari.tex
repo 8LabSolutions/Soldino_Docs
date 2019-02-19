@@ -231,7 +231,7 @@ Inoltre per ogni caso d'uso bisogna indicare:
 	\end{itemize}
 
 
-\subparagraph{Classificazione dei requisiti} \mbox{}\\
+\subparagraph{Classificazione dei requisiti} \mbox{}\\ \label{sec:UC}
 
 Ogni requisito viene classificato secondo la seguente notazione: \newline \newline
 \centerline{\textbf{R[Importanza][Tipologia][Codice]}} \\ 
@@ -444,8 +444,12 @@ ECMAScript/JavaScript.
 		
 \paragraph{PragmaDB} \mbox{}\\ \mbox{}\\
 Programma usato per il tracciamento dei requisiti, fondamentale dunque per la 
-stesura del documento \textit{Analisi dei Requisiti v1.0.0}. \newline
+stesura del documento \textit{Analisi dei Requisiti v2.0.0}. \newline
 \centerline{\url{https://github.com/StefanoMunari/PragmaDB}}
+	\begin{figure}[H]
+		\includegraphics[width=0.99\linewidth]{res/images/HomepagePragmaDB.png}
+		\caption{Homepage PragmaDB di un utente autenticato}
+	\end{figure}
 		
 \paragraph{Draw.io} \mbox{}\\ \mbox{}\\
 Per la produzione di diagrammi UML\glosp viene utilizzato Draw.io in quanto 
@@ -472,6 +476,7 @@ potente editor con molte funzionalità integrate. \newline
 \paragraph{Truffle} \mbox{}\\ \mbox{}\\
 Per lo sviluppo, test e gestione di smart contracts\glo, permette la scrittura automatizzata di test in JavaScript e Solidity\glo.\newline
 \centerline{\url{https://truffleframework.com/truffle}}
+
 \paragraph{React} \mbox{}\\ \mbox{}\\ 
 Per la realizzazione dell'interfaccia utente a livello di applicazione web.\newline
 \centerline{\url{https://reactjs.org/}}
@@ -488,30 +493,30 @@ Utilizzato per effettuare transazioni sicure sulla rete Ethereum\glosp senza osp
 \subsubsection{Draw.io} 
 \paragraph{Creazione dei diagrammi UML} \mbox{}\\ \mbox{}\\
 Per la creazione dei diagrammi UML\glo{} è necessario accedere a Google Drive 
-con le credenziali del gruppo, entrare nella cartella "Analisi dei requisiti" e 
-successivamente nella cartella "UML Draw.io". Un diagramma UML deve essere creato
+con le credenziali del gruppo, entrare nella cartella \texttt{Analisi dei requisiti} e 
+successivamente nella cartella \texttt{UML Draw.io}. Un diagramma UML deve essere creato
 rispettando il seguente ordine:
 	\begin{itemize}
-		\item nel menù "New", scegliere "More" e quindi fare
-			click "draw.io Diagrams";
+		\item nel menù \texttt{New}, scegliere \texttt{More} e quindi fare
+			click \texttt{draw.io Diagrams};
 		\item realizzare il diagramma con le convenzioni descritte nell'apposito
 			paragrafo della sezione \ref{sec:UML}; 
-		\item nel menù "File", scegliere "Export as.." e selezionare "PNG";
+		\item nel menù \texttt{File}, scegliere \texttt{Export as..} e selezionare \texttt{PNG};
 		\item inserire un nome esplicativo (per es: UC14)e cliccare sull'icona di
 			Google Drive;
 		\item alla richiesta di selezionare in quale cartella salvare il diagramma 
-			in formato PNG selezionare "No, pic folder.." e assicurarsi di salvare 
-			nella cartella apposita denominata "png" (il percorso è 
+			in formato PNG selezionare \texttt{No, pic folder..} e assicurarsi di salvare 
+			nella cartella apposita denominata \texttt{png} (il percorso è 
 			\texttt{Analisi dei requisiti > UML Draw.io > png}).
 	\end{itemize}
-Nella cartella "UML Draw.io" sono presente sia i file .io sia la cartella "png"
+Nella cartella \texttt{UML Draw.io} sono presente sia i file .io sia la cartella \texttt{png}
 con gli stessi file in formato .png. Questa scelta permette di portare rapidamente 
 delle modifiche ai diagrammi precedentemente disegnati. Inoltre, qualora venga 
 effettuata una modifica, l'autore di tale modifica ha il compito di sostituire
 il file .png aggiornato con quello precedente. 
 
 \subsubsection{PragmaDB} 
-Per eseguire le seguenti operazioni è necessario eseguire la login al sito \\
+Per eseguire le seguenti operazioni è necessario eseguire la login al sito 
 \centerline{\url{http://ec2-52-47-35-145.eu-west-3.compute.amazonaws.com/PragmaDB/PHP/}}
 in cui ogni membro del gruppo deve inserire username e password.
 \paragraph{Impostazioni del software} \mbox{}\\ \mbox{}\\
@@ -558,19 +563,6 @@ Dopo aver eseguito l'autenticazione:
 	\item cliccare sul tasto \texttt{Inserisci} per aggiungere la nuova classe 
 		creata oppure \texttt{Cancella} per tornare indietro.	
 \end{itemize}
-<<<<<<< HEAD
-
-\paragraph{Modificare una classe} \mbox{}\\ \mbox{}\\
-Dopo aver eseguito l'autenticazione:
-\begin{itemize}
-	\item selezionare \texttt{Classi} nel pannello posto a sinistra;
-	\item selezionare \texttt{Modifica} dalla riga della tabella della classe
-		che si vuole modificare;
-	\item modificare i campi del form della classe selezionata;
-	\item cliccare sul tasto \texttt{Modifica} per salvare le modifiche effettuate
-		oppure \texttt{Cancella} per tornare indietro.
-\end{itemize}
-=======
 
 \paragraph{Modificare una classe} \mbox{}\\ \mbox{}\\
 Dopo aver eseguito l'autenticazione:
@@ -583,44 +575,277 @@ Dopo aver eseguito l'autenticazione:
 		oppure \texttt{Cancella} per tornare indietro.
 \end{itemize}
 
->>>>>>> 483ec0f4e7bc160f8412d63a626f5c297f792d44
-
+\paragraph{Eliminare una classe} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Classi} nel pannello posto a sinistra;
+	\item selezionare \texttt{Eliminare} dalla riga della tabella della classe
+		che si vuole eliminare;
+	\item cliccare sul tasto \texttt{Elimina} per confermare la rimozione della classe
+		oppure \texttt{Annulla} per tornare indietro.
+\end{itemize}
 
 \paragraph{Aggiungere un attributo alla classe} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Classi} nel pannello posto a sinistra;
+	\item selezionare \texttt{Attributi} dalla riga della tabella della classe
+		a cui si vuole aggiungere un attributo;
+	\item selezionare \texttt{Inserisci Attributo} dal pannello posto a destra;
+	\item compilare il form per l'inserimento di un nuovo attributo;
+	\item cliccare sul tasto \texttt{Inserisci} per aggiungere il nuovo attributo 
+		creato oppure \texttt{Cancella} per tornare indietro.	
+\end{itemize}
 
 \paragraph{Modificare un attributo alla classe} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Classi} nel pannello posto a sinistra;
+	\item selezionare \texttt{Attributi} dalla riga della tabella della classe
+		a cui si vuole modificare un attributo;\
+	\item selezionare \texttt{Modifica} dalla riga della tabella dell'attributo
+		che si vuole modificare;
+	\item modificare i campi del form dell'attributo selezionato;
+	\item cliccare sul tasto \texttt{Modifica} per salvare le modifiche effettuate
+		oppure \texttt{Cancella} per tornare indietro.
+\end{itemize}
 
 \paragraph{Eliminare un attributo alla classe} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Classi} nel pannello posto a sinistra;
+	\item selezionare \texttt{Attributi} dalla riga della tabella della classe
+		a cui si vuole eliminare un attributo;\
+	\item selezionare \texttt{Eliminare} dalla riga della tabella dell'attributo 
+		che si vuole eliminare;
+	\item cliccare sul tasto \texttt{Elimina} per confermare la rimozione dell'attributo
+		oppure \texttt{Annulla} per tornare indietro.
+\end{itemize}
 
 \paragraph{Aggiungere un metodo alla classe} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Classi} nel pannello posto a sinistra;
+	\item selezionare \texttt{Metodi} dalla riga della tabella della classe
+		a cui si vuole aggiungere un metodo;
+	\item selezionare \texttt{Inserisci Metodo} dal pannello posto a destra;
+	\item compilare il form per l'inserimento di un nuovo metodo;
+	\item cliccare sul tasto \texttt{Inserisci} per aggiungere il nuovo metodo 
+		creato oppure \texttt{Cancella} per tornare indietro.	
+\end{itemize}
 
 \paragraph{Modificare un metodo alla classe} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Classi} nel pannello posto a sinistra;
+	\item selezionare \texttt{Metodi} dalla riga della tabella della classe
+		a cui si vuole modificare un metodo;
+	\item selezionare \texttt{Inserisci Metodo} dal pannello posto a destra;
+	\item modificare i campi del form del metodo selezionato;
+	\item cliccare sul tasto \texttt{Modifica} per salvare le modifiche effettuate
+		oppure \texttt{Cancella} per tornare indietro.	
+\end{itemize}
 
 \paragraph{Eliminare un metodo alla classe} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Classi} nel pannello posto a sinistra;
+	\item selezionare \texttt{Attributi} dalla riga della tabella della classe
+		a cui si vuole eliminare un metodo;\
+	\item selezionare \texttt{Eliminare} dalla riga della tabella del metodo
+		che si vuole eliminare;
+	\item cliccare sul tasto \texttt{Elimina} per confermare la rimozione del metodo
+		oppure \texttt{Annulla} per tornare indietro.
+\end{itemize}
 
 \paragraph{Aggiungere un requisito alla classe} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Classi} nel pannello posto a sinistra;
+	\item selezionare \texttt{Requisiti} dalla riga della tabella della classe
+		a cui si vuole aggiungere un requisito;
+	\item selezionare \texttt{Inserisci Requisito} dal pannello posto a destra;
+	\item compilare il form per l'inserimento di un nuovo metodo;
+	\item cliccare sul tasto \texttt{Inserisci} per aggiungere il nuovo metodo 
+		creato oppure \texttt{Cancella} per tornare indietro.	
+\end{itemize}
 
 \paragraph{Modificare un requisito alla classe} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Classi} nel pannello posto a sinistra;
+	\item selezionare \texttt{Requisiti} dalla riga della tabella della classe
+		a cui si vuole modificare un requisito;
+	\item selezionare \texttt{Inserisci Requisito} dal pannello posto a destra;
+	\item modificare i campi del form del requisito selezionato;
+	\item cliccare sul tasto \texttt{Modifica} per salvare le modifiche effettuate
+		oppure \texttt{Cancella} per tornare indietro.
+\end{itemize}
 
 \paragraph{Eliminare un requisito alla classe} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Classi} nel pannello posto a sinistra;
+	\item selezionare \texttt{Requisiti} dalla riga della tabella della classe
+		a cui si vuole eliminare un requisito;\
+	\item selezionare \texttt{Eliminare} dalla riga della tabella del requisito
+		che si vuole eliminare;
+	\item cliccare sul tasto \texttt{Elimina} per confermare la rimozione del requisito
+		oppure \texttt{Annulla} per tornare indietro.
+\end{itemize}
 
-\paragraph{Creazione dei diagrammi UML} \mbox{}\\ \mbox{}\\
+\paragraph{Aggiungere una fonte} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Fonti} nel pannello posto a sinistra;
+	\item selezionare \texttt{Inserisci Fonte} dal pannello posto a destra;
+	\item compilare il form per l'inserimento di una nuova fonte;
+	\item cliccare sul tasto \texttt{Inserisci} per aggiungere la nuova fonte 
+		creata oppure \texttt{Cancella} per tornare indietro.	
+\end{itemize}
 
-\paragraph{Creazione dei diagrammi UML} \mbox{}\\ \mbox{}\\
+\paragraph{Modificare una fonte} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Fonti} nel pannello posto a sinistra;
+	\item selezionare \texttt{Modifica} dalla riga della tabella della fonte
+		che si vuole modificare;
+	\item modificare i campi del form della fonte selezionata;
+	\item cliccare sul tasto \texttt{Modifica} per salvare le modifiche effettuate
+		oppure \texttt{Cancella} per tornare indietro.
+\end{itemize}
 
-\paragraph{Creazione dei diagrammi UML} \mbox{}\\ \mbox{}\\\\
+\paragraph{Eliminare una fonte} \mbox{}\\ \mbox{}\\\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Fonti} nel pannello posto a sinistra;
+	\item selezionare \texttt{Elimina} dalla riga della tabella della fonte 
+		che si vuole eliminare;\
+	\item cliccare sul tasto \texttt{Elimina} per confermare la rimozione della fonte
+		oppure \texttt{Annulla} per tornare indietro.
+\end{itemize}
 
-\paragraph{Creazione dei diagrammi UML} \mbox{}\\ \mbox{}\\
+\paragraph{Aggiungere un package} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Package} nel pannello posto a sinistra;
+	\item selezionare \texttt{Inserisci Package} dal pannello posto a destra;
+	\item compilare il form per l'inserimento di un nuovo package;
+	\item cliccare sul tasto \texttt{Inserisci} per aggiungere il nuovo package
+		creato oppure \texttt{Cancella} per tornare indietro.	
+\end{itemize}
 
-\paragraph{Creazione dei diagrammi UML} \mbox{}\\ \mbox{}\\
+\paragraph{Modificare un package} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Package} nel pannello posto a sinistra;
+	\item selezionare \texttt{Modifica} dalla riga della tabella del package
+		che si vuole modificare;
+	\item modificare i campi del form del package selezionato;
+	\item cliccare sul tasto \texttt{Modifica} per salvare le modifiche effettuate
+		oppure \texttt{Cancella} per tornare indietro.
+\end{itemize}
 
-\paragraph{Creazione dei diagrammi UML} \mbox{}\\ \mbox{}\\
+\paragraph{Eliminare un package} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Package} nel pannello posto a sinistra;
+	\item selezionare \texttt{Elimina} dalla riga della tabella del package 
+		che si vuole eliminare;\
+	\item cliccare sul tasto \texttt{Elimina} per confermare la rimozione del package
+		oppure \texttt{Annulla} per tornare indietro.
+\end{itemize}
 
-\paragraph{Creazione dei diagrammi UML} \mbox{}\\ \mbox{}\\
+\paragraph{Aggiungere un test} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Test} nel pannello posto a sinistra;
+	\item selezionare \texttt{Inserisci Test} dal pannello posto a destra;
+	\item compilare il form per l'inserimento di un nuovo test;
+	\item cliccare sul tasto \texttt{Inserisci} per aggiungere il nuovo test
+		creato oppure \texttt{Cancella} per tornare indietro.	
+\end{itemize}
 
-\paragraph{Creazione dei diagrammi UML} \mbox{}\\ \mbox{}\\
+\paragraph{Modificare un test} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Test} nel pannello posto a sinistra;
+	\item selezionare \texttt{Modifica} dalla riga della tabella del test
+		che si vuole modificare;
+	\item modificare i campi del form del test selezionato;
+	\item cliccare sul tasto \texttt{Modifica} per salvare le modifiche effettuate
+		oppure \texttt{Cancella} per tornare indietro.
+\end{itemize}
 
-\paragraph{Creazione dei diagrammi UML} \mbox{}\\ \mbox{}\\
+\paragraph{Eliminare un test} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Test} nel pannello posto a sinistra;
+	\item selezionare \texttt{Elimina} dalla riga della tabella del test
+		che si vuole eliminare;\
+	\item cliccare sul tasto \texttt{Elimina} per confermare la rimozione del test
+		oppure \texttt{Annulla} per tornare indietro.
+\end{itemize}		
 
-\paragraph{Creazione dei diagrammi UML} \mbox{}\\ \mbox{}\\
+\paragraph{Aggiungere un requisito} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Requisiti} nel pannello posto a sinistra;
+	\item selezionare \texttt{Inserisci Requisiti} dal pannello posto a destra;
+	\item compilare il form per l'inserimento di un nuovo requisito;
+	\item cliccare sul tasto \texttt{Inserisci} per aggiungere il nuovo requisito
+		creato oppure \texttt{Cancella} per tornare indietro.	
+\end{itemize}
+
+\paragraph{Modificare un requisito} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Requisiti} nel pannello posto a sinistra;
+	\item selezionare \texttt{Modifica} dalla riga della tabella del requisito
+		che si vuole modificare;
+	\item modificare i campi del form del requisito selezionato;
+	\item cliccare sul tasto \texttt{Modifica} per salvare le modifiche effettuate
+		oppure \texttt{Cancella} per tornare indietro.
+\end{itemize}
+
+\paragraph{Eliminare un requisito} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Requisiti} nel pannello posto a sinistra;
+	\item selezionare \texttt{Elimina} dalla riga della tabella del requisito 
+		che si vuole eliminare;\
+	\item cliccare sul tasto \texttt{Elimina} per confermare la rimozione del requisito
+		oppure \texttt{Annulla} per tornare indietro.
+\end{itemize}
+
+\paragraph{Aggiungere un use case} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Use Case} nel pannello posto a sinistra;
+	\item selezionare \texttt{Inserisci Use Case} dal pannello posto a destra;
+	\item compilare il form per l'inserimento di un nuovo use case;
+	\item cliccare sul tasto \texttt{Inserisci} per aggiungere il nuovo use case
+		creato oppure \texttt{Cancella} per tornare indietro.	
+\end{itemize}
+
+\paragraph{Modificare un use case} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Use Case} nel pannello posto a sinistra;
+	\item selezionare \texttt{Modifica} dalla riga della tabella del use case
+		che si vuole modificare;
+	\item modificare i campi del form del use case selezionato;
+	\item cliccare sul tasto \texttt{Modifica} per salvare le modifiche effettuate
+		oppure \texttt{Cancella} per tornare indietro.
+\end{itemize}
+
+\paragraph{Eliminare un use case} \mbox{}\\ \mbox{}\\
+Dopo aver eseguito l'autenticazione:
+\begin{itemize}
+	\item selezionare \texttt{Use Case} nel pannello posto a sinistra;
+	\item selezionare \texttt{Elimina} dalla riga della tabella del use case 
+		che si vuole eliminare;\
+	\item cliccare sul tasto \texttt{Elimina} per confermare la rimozione del use case
+		oppure \texttt{Annulla} per tornare indietro.
+\end{itemize}
 
