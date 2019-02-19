@@ -2,7 +2,8 @@
 \subsection{Documentazione}
 	\subsubsection{Scopo}
 	Ogni processo e attività significativi volti allo sviluppo del progetto sono documentati. Lo scopo di questa sezione è definire gli standard che riguardano i documenti prodotti durante il ciclo di vita del software.
-	I documenti sono consultabili nelle apposite sezioni della repository\glo:\\ \url{https://github.com/8LabSolutions/Soldino}. 		
+	I documenti sono consultabili nelle apposite sezioni della repository\glo:\\
+	\centerline{\url{https://github.com/8LabSolutions/Soldino}}. 		
 	\subsubsection{Aspettative}
 	Le aspettative su questo processo riguardano:
 	\begin{itemize}
@@ -73,7 +74,7 @@
 			\item in basso a destra è posto il numero della pagina corrente.
 		\end{itemize}
 		\paragraph{Verbali} \mbox{}\\ \mbox{}\\
-		I verbali vengono prodotti dal/i soggetto/i incaricato/i alla loro stesura in occasione di incontri tra i membri del team con o senza la presenza di esterni. Per i verbali è prevista un'unica stesura. Tale	scelta è motivata dal fatto che apportare modifiche implica una modifica delle decisioni prese in modo retroattivo.
+		I verbali vengono prodotti dal soggetto incaricato alla loro stesura in occasione di incontri tra i membri del team con o senza la presenza di esterni. Per i verbali è prevista un'unica stesura. Tale	scelta è motivata dal fatto che apportare modifiche implica una modifica delle decisioni prese in modo retroattivo.
 		I verbali seguono la struttura degli altri documenti, ma il corpo del verbale è suddiviso in introduzione e contenuto.
 		L'introduzione contiene:
 		\begin{itemize}
@@ -81,6 +82,7 @@
 			\item \textbf{Data}: data dell'incontro(in formato YYYY-MM-DD);
 			\item \textbf{Ora di inizio}: l'orario di inizio dell'incontro;
 			\item \textbf{Ora di fine}: l'orario di fine dell'incontro;
+			\item \textbf{Segretario}: membro del gruppo che redige il documento;
 			\item \textbf{Partecipanti}: l'elenco dei membri del gruppo che erano presenti all'incontro e, se presenti, i nominativi di persone esterne al gruppo che hanno partecipato. Un esempio, sono i nomi dei componenti di \textit{Red Babel}, a fianco al quale deve essere indicato "(proponente)";
 			\item \textbf{Argomenti affrontati}: ciò di cui si è discusso durante l'incontro in forma riassuntiva e facendo risaltare gli argomenti principali.
 		\end{itemize}
@@ -128,7 +130,7 @@
 		\begin{itemize}
 			\item ogni termine del \textit{Glossario} è marcato con una \textbf{G} maiuscola a pedice in ogni sua occorrenza;
 			\item se la voce è presente ripetutamente nello stesso paragrafo non è necessario marcarla in ogni sua occorrenza, ma è possibile indicare la \textbf{G} a pedice solo nella prima occorrenza;
-			\item se nel \textit{Glossario v1.0.0} un termina presenta una descrizione che utilizza termini da glossario, è necessario trattare questi termini come tali, segnando la \textbf{G} a pedice e aggiungendoli al documento con la relativa descrizione;
+			\item se nel \textit{Glossario v2.0.0} un termina presenta una descrizione che utilizza termini da glossario, è necessario trattare questi termini come tali, segnando la \textbf{G} a pedice e aggiungendoli al documento con la relativa descrizione;
 			\item non vengono segnate con la \textbf{G} a pedice  le parole da \textit{Glossario} presenti nei titoli e nelle didascalie di immagini e tabelle.
 		\end{itemize}			
 		\paragraph{Stile del testo}
@@ -307,7 +309,7 @@
 		\item soddisfazione finale di cliente e proponente.
 	\end{itemize}
 	\subsubsection{Descrizione}
-	Per la trattazione approfondita della gestione della qualità si fa riferimento al \textit{Piano di Qualifica v1.0.0}, dove sono descritte le modalità utilizzate per garantire la qualità nello sviluppo del progetto. In particolare, in tale documento:
+	Per la trattazione approfondita della gestione della qualità si fa riferimento al \textit{Piano di Qualifica v2.0.0}, dove sono descritte le modalità utilizzate per garantire la qualità nello sviluppo del progetto. In particolare, in tale documento:
 	\begin{itemize}
 		\item sono presentati gli standard utilizzati;
 		\item sono individuati i processi di interesse negli standard;
@@ -338,7 +340,138 @@
 	\begin{itemize}
 		\item forniti dallo standard \textbf{ISO-12207};
 		\item le metriche.
-	\end{itemize} 
+	\end{itemize}
+	\subsubsection{Metriche per i processi}
+		\paragraph{Analisi dei Requisiti}
+		
+		Durante l’analisi le informazioni ottenute dalle varie fonti sono trasformate in forma di casi d’uso e requisiti. Questa forma fornisce una descrizione dettagliata del sistema e definisce il funzionamento e le caratteristiche di ogni sua parte. \\
+		Gli obiettivi sono:
+		\begin{itemize}
+			\item formulare la definizione di casi d’uso e requisiti;
+			\item ottenere la loro approvazione;
+			\item tracciare il loro cambiamento nel tempo.
+		\end{itemize}
+		La strategia prevede: 
+		\begin{itemize}
+			\item considerare lo scopo del progetto e le richieste degli stakeholder;
+			\item esprimere ciò in forma di requisiti, classificati in obbligatori, desiderabili e opzionali;
+			\item valutare il corpo dei requisiti e negoziare cambiamenti se necessario;
+			\item ottenere la loro approvazione da parte del proponente.
+		\end{itemize}
+		La metrica usata è \textbf{la percentuale di requisiti obbligatori soddisfatti} (PROS) e viene calcolata con la seguente formula:
+		
+		\begin{center}  $ PROS = \frac{requisiti\ obbligatori\ soddisfatti}{requisiti\ obbligatori\ totali}$
+		\end{center}
+		
+		\paragraph{Progettazione in Dettaglio}
+		\textit{Nota: in questa sezione si parla di modulo, unità e componente riferendosi allo stesso oggetto, ma ponendo l'attenzione sulla proprietà (rispettivamente modularità, unità e composizione) più rilevante nel contesto d'uso.}\newline 
+		La progettazione di design segue la progettazione dell'architettura e prevede la scomposizione delle macro-componenti di cui il modello architetturale è fatto in componenti più piccole, che sono facilmente comprensibili, strettamente collegati ai requisiti funzionali e implementabili da un singolo programmatore.\\
+		Gli obiettivi sono:
+		\begin{itemize}
+			\item tradurre i requisiti in unità di codice, i moduli;
+			\item favorire il lavoro dei programmatori con compiti individuali relativi ai singoli moduli;
+			\item produrre un sistema software da raffinare ma già eseguibile;
+			\item mantenere il tracciamento tra requisiti e componenti.
+		\end{itemize}
+		La strategia prevede di: 
+		\begin{itemize}
+			\item scomporre le componenti architetturali in componenti piccole;
+			\item implementare le micro-componenti individuate.
+		\end{itemize}
+		La metrica usata è l'\textbf{accoppiamento tra le classi di oggetti} (CBO).
+	\subsubsection{Processi di Supporto}
+		\paragraph{Pianificazione}
+		La pianificazione è un’attività significativa della gestione di progetto. Consiste nel governare le	risorse a disposizione, ovvero tempi, costi e ruoli, monitorarle nel tempo e reagire efficacemente ai cambiamenti. La pianificazione si esprime specificatamente all’interno del Piano di Progetto.\\
+		Gli obiettivi sono:
+		\begin{itemize}
+			\item avere a disposizione piani e obiettivi ben definiti;
+			\item aver definito ruoli, responsabilità, obblighi e autorità a cui rispondere;
+			\item aver allocato le risorse e i beni necessari;
+			\item attivare il piano per sostenere il progetto.
+		\end{itemize}
+		La strategia prevede di: 
+		\begin{itemize}
+			\item produrre la pianificazione delle attività;
+			\item mantenerla aggiornata mentre esse vengono svolte;
+			\item usarla come riferimento e supporto.
+		\end{itemize}
+		Le metriche utilizzate sono:
+		\begin{itemize}
+			\item \textbf{Budget at Completion} (BAC): budget totale allocato per il progetto;
+			\item \textbf{Actual Cost} (AC): il denaro speso fino al momento del calcolo;
+			\item \textbf{Earned Value} (EV): metrica di utilità per il calcolo di $SV$ e $CV$ (spiegate successivamente). Si tratta del valore del lavoro fatto fino al momento del calcolo; corrisponde al denaro guadagnato fino a quel momento. Si misura con $BAC \cdot \%\ di\ lavoro\ completato\ $;
+			\item \textbf{Planned Value} (PV): metrica di utilità per il calcolo di $SV$ e $CV$ (spiegate successivamente). Si tratta del valore del lavoro pianificato al momento del calcolo: corrisponde al denaro che si dovrebbe aver guadagnato in quel momento. Si misura con $BAC \cdot \%\ di\ lavoro\ pianificato\ $;
+			\item \textbf{Schedule Variance} (SV): Esprime lo stato di anticipo o ritardo nello svolgimento del progetto rispetto alla pianificazione. Si calcola come $SV = EV - PV$
+			\item \textbf{Cost Variance} (CV): Differenza tra il costo del lavoro effettivamente completato e quello
+			pianificato. Una CV positiva indica che si sta rispettando il budget. Si calcola come $CV = EV - AC$;
+		\end{itemize}
+		\paragraph{Verifica}
+		Il processo consiste nella ricerca e correzione di anomalie e difetti nei processi e prodotti del	progetto, mediante tecniche predefinite e se possibile automatiche.\\
+		Gli obiettivi sono:
+		\begin{itemize}
+			\item individuare e correggere le anomalie;
+			\item provare che il sistema soddisfi i requisiti.
+		\end{itemize}
+		La strategia prevede di: 
+		\begin{itemize}
+			\item individuare tecniche e strumenti di verifica;
+			\item applicarli;
+			\item affinarli con l’esperienza.
+		\end{itemize}
+		La metrica utilizzata è la \textbf{Code Coverage} (CC), una percentuale che indica il numero di righe di codice percorse dai test durante la loro	esecuzione. Per linee di codice totali si intende tutte quelle appartenenti all’unità in fase di test e si clacola con la seguente formula:
+		\begin{center}
+			$CC = \frac{linee\ di\ codice\ percorse}{linee\ di\ codice\ totali}$
+		\end{center}
+		\paragraph{Documentazione}
+		La documentazione consiste nella produzione di informazioni, la cui forma tipica è documentale, e nella loro gestione. I documenti sono prodotti a supporto di tutte le attività di progetto.
+		L'obiettivo è di scrivere la documentazione affinche costituisca una body of knowledge\glosp che raccoglie la conoscenza in modo:
+		\begin{itemize}
+			\item completo;
+			\item non ambiguo;
+			\item modulare e fatto di parti coese;
+			\item trasparente, adatto alla trasmissione delle informazioni;
+			\item disponibile esternamente.
+		\end{itemize}
+		La strategia prevede che i documenti siano: 
+		\begin{itemize}
+			\item prodotti in concomitanza con tutte le attività di sviluppo;
+			\item prodotti in modo collaborativo;
+			\item supportati da un glossario;
+			\item supportati dalle Norme di Progetto;
+			\item prodotti con strumenti software adatti alla collaborazione e alla modularità in \LaTeX;
+			\item ospitati in una repository\glosp pubblica su GitHub.
+		\end{itemize}
+		Le metricche utilizzate sono:
+		\begin{itemize}
+		\item l'\textbf{Indice di Gunning fog}, ossia una stima degli anni di educazione scolastica richiesti per comprendere il testo a una prima lettura. Si misura con la seguente formula:
+		\begin{center}
+		$ I_{GF} = 0.4 \cdot
+		(
+		\frac{numero\ di\ parole}{numero\ di\  frasi}
+		+ 100 \cdot
+		\frac{numero\ di\ parole\ complesse}{numero\ di\  frasi}
+		) $;
+		\end{center}
+		\item l'\textbf{Indice di Gulpease},ossia un indice che indica la leggibilità del testo. Si misura con la seguente formula:
+		\begin{center}
+		$I_G = 89+ \frac{(300 \cdot numero\ di\ frasi - 10 \cdot numero\ di\ lettere)}{numero\ di\ parole}$;
+		\end{center}
+		\item il numero di errori ortografici o grammaticali.
+		\end{itemize}
+	\subsubsection{Processi Organizzativi}
+		\paragraph{Gestione della Qualità}
+		Tale processo ha per scopo il raggiungimento di un grado soddisfacente di qualità nel progetto, fornendo così obiettivi da perseguire e strumenti tecnici come procedure e metriche.\\
+		L'obiettivo è di garantire che i prodotti e processi rispettino gli standard di qualità richiesti.\\
+		La strategia prevede di: 
+		\begin{itemize}
+			\item pianificare le proprie azioni perseguendo gli obiettivi;
+			\item utilizzare gli strumenti forniti per misurare e monitorare i risultati;
+			\item reagire ai risultati aggiornando obiettivi, strategia e strumenti.
+		\end{itemize}
+		La metricha utilizzata è la \textbf{Percentuale di metriche soddisfatte}, calcolata dalla seguente formula:
+		\begin{center}
+			$\frac{numero\ di\ metriche\ soddisfatte}{numero\ di\ metriche\ totali} $
+		\end{center}
 		
 \subsection{Verifica}
 	\subsubsection{Scopo}
@@ -421,18 +554,63 @@
 			\item fornire informazioni sui risultati dell'esecuzione in forma di file di log.
 		\end{itemize}	
 			
-		\noindent{Ci sono vari tipi di test del software, ognuno dei quali ha un diverso oggetto di verifica e scopo.} \newline \newline
-			\textbf{Test di unità} \mbox{}\\ \mbox{}\\
-			I test di unità si eseguono su unità di software. Questi test si concentrano sul funzionamento delle unità individuali. Dati gli input possibili in un unità, si suddividono gli input in partizioni di equivalenza e si prova se gli input attesi danno gli output previsti. Le singole unità possono essere testate con l'ausilio di driver\glosp e stub\glosp. \newline \newline
-			\textbf{Test di integrazione} \mbox{}\\ \mbox{}\\
-			Dopo aver superato i test di unità, le stesse unità vengono assemblate in agglomerati progressivamente più grandi. Il test di integrazione si concentra sulle interfacce tra i componenti. Un agglomerato che supera il test di integrazione costituisce quindi una nuova unità per un agglomerato di grandezza maggiore. Questa procedura si ripete fino a raggiungere la dimensione totale del sistema. \newline \newline
-			\textbf{Test di sistema} \mbox{}\\ \mbox{}\\
-			Il sistema viene testato nella sua interezza, una volta integrati tutti i suoi componenti. Ci si concentra sulle interazioni tra le parti, sul comportamento emergente\glosp delle caratteristiche del sistema e sulla copertura\glosp di tutte le funzionalità. Questo tipo di test porta alla luce le ipotesi errate che i diversi sviluppatori fanno su parti del software sviluppate da altri.
-			In questa fase ci si assicura che il sistema rispetti tutte le specifiche definite nell'\textit{Analisi dei Requisiti}. \newline \newline
-			\textbf{Test di regressione} \mbox{}\\ \mbox{}\\
-			Si effettua di seguito ad una modifica del sistema e consiste nella riesecuzione dei test esistenti: si combina bene con l'automazione dei test. \newline \newline
-			\textbf{Test di accettazione} \mbox{}\\ \mbox{}\\
-			Anche detto "test di collaudo", è simile al test di sistema per l'oggetto testato, ma viene eseguito con la collaborazione dei committenti. Si occupa di verificare il prodotto e, in particolare, il soddisfacimento del cliente. Il superamento del test di collaudo garantisce che il software sia pronto per essere rilasciato.
+		\noindent{Ci sono vari tipi di test del software, ognuno dei quali ha un diverso oggetto di verifica e scopo. La codifica dei seguenti test è presente nel documento \textit{Norme di Progetto v2.0.0}.}
+		
+		%\subsection{Tipi di test}
+		%Vengono individuate quattro tipologie di test:
+		\begin{itemize}
+			\item \textbf{Test di Accettazione[TA]}: anche detto "test di collaudo", è simile al test di sistema per l'oggetto testato, ma viene eseguito con la collaborazione dei committenti. Si occupa di verificare il prodotto e, in particolare, il soddisfacimento del cliente. Il superamento del test di collaudo garantisce che il software sia pronto per essere rilasciato. Tali test verranno indicati nel seguente modo: \\
+			\centerline{\textbf{TA[Tipo][Importanza][Codice]}}
+			dove:
+			\begin{itemize}
+				\item \textbf{Tipo}: indica di che tipo si tratta il requisito. Può
+				appartenere a una delle seguenti categorie indicate con:
+				\begin{itemize}
+					\item \textbf{O} per i requisiti obbligatori;
+					\item \textbf{D} per i requisiti desiderabili;
+					\item \textbf{F} per i requisiti facoltativi.			
+				\end{itemize}
+				\item \textbf{Importanza}: indica l'importanza del requisito. L'importanza
+				che può assumere un requisito viene indicata con:
+				\begin{itemize}
+					\item \textbf{F} per indicare un requisito funzionale;
+					\item \textbf{V} per indicare un requisito di vincolo;
+					\item \textbf{Q} per indicare un requisito di qualità;
+					\item \textbf{P} per indicare un requisito prestazionale. 
+				\end{itemize}
+				\item \textbf{Codice}: rappresenta il codice identificativo crescente
+				del componente da verificare.
+			\end{itemize}
+			\item \textbf{Test di Sistema [TS]}: il sistema viene testato nella sua interezza, una volta integrati tutti i suoi componenti. Ci si concentra sulle interazioni tra le parti, sul comportamento emergente\glosp delle caratteristiche del sistema e sulla copertura\glosp di tutte le funzionalità. Questo tipo di test porta alla luce le ipotesi errate che i diversi sviluppatori fanno su parti del software sviluppate da altri.
+			In questa fase ci si assicura che il sistema rispetti tutte le specifiche definite nell'\textit{Analisi dei Requisiti}. Tali test verranno indicati nel seguente modo:\\
+			\centerline{\textbf{TS[id]}}
+			dove \textit{id} rappresenta il codice identificativo crescente del componente da
+			verificare.\\
+			Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla richiesta della sua istanziazione;
+			\item \textbf{Test di Integrazione [TI]}: dopo aver superato i test di unità, le stesse unità vengono assemblate in agglomerati progressivamente più grandi. Il test di integrazione si concentra sulle interfacce tra i componenti. Un agglomerato che supera il test di integrazione costituisce quindi una nuova unità per un agglomerato di grandezza maggiore. Questa procedura si ripete fino a raggiungere la dimensione totale del sistema. Tali test verranno indicati nel seguente modo:\\
+			\centerline{\textbf{TI[id]}}
+			dove \textit{id} rappresenta il codice identificativo crescente del componente da
+			verificare.\\
+			Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla richiesta della sua istanziazione;
+			\item \textbf{Test di Unità [TU]}: si eseguono su unità di software. Questi test si concentrano sul funzionamento delle unità individuali. Dati gli input possibili in un unità, si suddividono gli input in partizioni di equivalenza e si prova se gli input attesi danno gli output previsti. Le singole unità possono essere testate con l'ausilio di driver\glosp e stub\glo. Tali test verranno indicati nel
+			seguente modo:\\
+			\centerline{\textbf{TU[id]}}
+			dove \textit{id} rappresenta il codice identificativo crescente dell'unità da verificare.\\
+			Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla richiesta della sua istanziazione.
+			\item \textbf{Test di regressione}: Si effettua di seguito ad una modifica del sistema e consiste nella riesecuzione dei test esistenti: si combina bene con l'automazione dei test.
+		\end{itemize}
+		
+		
+			%\textbf{Test di unità} \mbox{}\\ \mbox{}\\
+			% \newline \newline
+			%\textbf{Test di integrazione} \mbox{}\\ \mbox{}\\
+			% \newline \newline
+			%\textbf{Test di sistema} \mbox{}\\ \mbox{}\\
+			% \newline \newline
+			%\textbf{Test di regressione} \mbox{}\\ \mbox{}\\
+			% \newline \newline
+			%\textbf{Test di accettazione} \mbox{}\\ \mbox{}\\
+			
 	\subsubsection{Strumenti}
 		\paragraph{Verifica ortografica} \mbox{}\\ \mbox{}\\
 		Viene utilizzata la verifica dell'ortografia in tempo reale, strumento integrato in \TeX{}studio che sottolinea in rosso le parole errate e in verde le ripetizioni a breve distanza secondo la lingua italiana.

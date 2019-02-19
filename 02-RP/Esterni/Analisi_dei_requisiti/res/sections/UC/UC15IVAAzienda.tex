@@ -8,8 +8,8 @@
 	\item \textbf{Attori Primari}: azienda;
 	\item \textbf{Descrizione}: alle aziende sono messe a disposizione diverse operazioni per gestire le transazioni e l'IVA:
 	\begin{itemize}
-		\item può visualizzare i saldi IVA di un periodo, comprendendo la visualizzazione di tutte le transazioni, rappresentate dalle rispettive fatture, e del saldo finale [15.3 \& 15.4];
-		\item per ogni fattura è disponibile la visualizzazione dettagliata [15.8];
+		\item può visualizzare le informazioni di un trimestre IVA, che comprenda la visualizzazione di tutte le transazioni avvenute, rappresentate dalle rispettive fatture, e del saldo IVA [15.3 \& 15.4];
+		\item per ogni fattura è disponibile la visualizzazione dettagliata [15.2.1];
 		\item può scaricare le informazioni riguardanti un trimestre come sopra descritto sotto forma di documento PDF [15.5]; 
 		\item in caso il saldo di un semestre risulti negativo (situazione di debito), l'azienda può procedere ad effettuare il versamento al governo [15.6] o può dilazionarlo\glosp [15.7].
 	\end{itemize}
@@ -29,7 +29,7 @@
 	\item \textbf{Scenario principale}: l'utente visualizza il saldo relativo ad un trimestre. In particolare:
 	\begin{enumerate}[label=\alph*.]
 		\item seleziona da un menù a tendina uno dei trimestri disponibili;
-		\item del trimestre scelto viene visualizzata la lista delle fatture relative al trimestre selezionato;
+		\item del trimestre scelto vengono visualizzate le informazioni generali e la lista delle fatture relative;
 	\end{enumerate}
 	\item \textbf{Inclusioni}: 
 	\begin{itemize}
@@ -46,7 +46,7 @@
 \subsubsection{UC15.2 - Visualizzazione lista fatture per trimestre}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: Per un trimestre selezionato viene visualizzata la lista delle fatture relative ad esso. Le informazioni visualizzate sono:
+	\item \textbf{Descrizione}: per un trimestre selezionato viene visualizzata la lista delle fatture relative ad esso. Le informazioni visualizzate sono:
 	\begin{itemize}
 		\item numero identificativo;
 		\item la dicitura "vendita" se la fattura è di vendita, altrimenti "acquisto";
@@ -54,48 +54,12 @@
 		\item importo totale;
 		\item IVA a credito/debito derivante dalla transazione.
 	\end{itemize}
-	\item \textbf{Scenario principale}: l'utente visualizza. dopo aver selezionato un trimestre, la lista delle proprie fatture emesse e ricevute;
+	\item \textbf{Scenario principale}: l'utente visualizza, dopo aver selezionato un trimestre, la lista delle proprie fatture emesse e ricevute;
 	\item \textbf{Precondizione}: l'azienda ha selezionato la visualizzazione del proprio saldo IVA scegliendo un trimestre;
 	\item \textbf{Postcondizione}: l'azienda ha visualizzato la lista delle fatture d'acquisto e vendita.
 \end{itemize}
-\subsubsection{UC15.2.1 - Visualizzazione dettaglio fattura}
-\begin{itemize}
-	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: per ogni fattura l'utente può visualizzarne i dettagli di essa, precisamente:
-	\begin{itemize}
-	\item numero identificativo;
-	\item data;
-	\item nome dell'azienda emittente;
-	\item informazioni relative all'acquirente:
-	\begin{itemize}
-		\item nel caso il cliente fosse un'\textbf{azienda}:
-		\begin{itemize}
-			\item il nome dell'azienda destinataria;
-			\item sede.
-		\end{itemize}
-		\item nel caso il cliente fosse un \textbf{cittadino}:
-		\begin{itemize}
-			\item il nome;
-			\item il cognome;
-			\item domicilio.
-		\end{itemize}
-	\end{itemize}
-    \item lista dei prodotti acquistati, includendo:
-    \begin{itemize}
-    	\item descrizione del prodotto;
-    	\item quantità acquistata;
-    	\item prezzo unitario;
-    	\item aliquota IVA;
-    	\item totale imponibile;
-    \end{itemize}
-	\item importo totale dell'ordine;
-	\item IVA a credito/debito derivante dalla transazione.
-	\end{itemize}
-	
-	\item \textbf{Scenario principale}: l'utente dopo aver selezionato una fattura, visualizza i dettagli di essa descritti precedemtente;
-	\item \textbf{Precondizione}: l'azienda ha selezionato la visualizzazione della lista fatture per trimestre; un'opzione, da lei selezionata, le ha permesso di visualizzare la fattura scendendo nei dettagli;
-	\item \textbf{Postcondizione}: l'azienda ha visualizzato i dati relativi alla fattura, in dettaglio.
-\end{itemize}
+
+
 
 \subsubsection{UC15.3 - Visualizzazione saldo IVA corrente}
 \begin{itemize}
@@ -109,7 +73,7 @@
 \subsubsection{UC15.4 - Visualizzazione saldo IVA trimestri conclusi}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Descrizione}: l'azienda può visualizzare la lista degli ordini relativi ad un trimestre IVA già concluso. Può inoltre leggerne lo stato, ovvero sapere se i pagamenti a debito o credito con il governo sono stati saldati oppure no. In caso di stato di debito relativo ad un trimestre, viene resa disponibile la data ultima per il versamento IVA, la possibilità di effettuare il pagamento, e quella di dilazionarlo;
+	\item \textbf{Descrizione}: l'azienda può visualizzare la lista degli ordini relativi ad un trimestre IVA già concluso. Può inoltre leggerne lo stato, ovvero sapere se il pagamento relativo ad uno stato di debito o credito con il governo è stato saldato oppure no. In caso di stato di debito, viene resa disponibile la data ultima per il versamento IVA, la possibilità di effettuare il pagamento, e quella di dilazionarlo;
 	\item \textbf{Scenario principale}: l'utente visualizza la lista delle operazioni riguardanti  un saldo IVA relativo ad un trimestre concluso. Per ognuno di essi ottiene l'informazione sullo stato del pagamento del saldo IVA, assieme alle operazioni che possono essere effettuate su di esso;
 	\item \textbf{Precondizione}: l'utente ha selezionato la visualizzazione del saldo relativo ad un trimestre concluso;
 	\item \textbf{Postcondizione}: l'azienda ha visualizzato il saldo IVA riguardante un trimestre concluso, assieme alle possibili operazioni da effettuare.
@@ -127,7 +91,7 @@
 \subsubsection{UC15.6 - Liquidazione IVA di un trimestre}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Attori Secondari}: governo;
+	\item \textbf{Attori Secondari}: governo, Metamask\glo;
 	\item \textbf{Descrizione}: l'azienda può versare l'ammontare dovuto al governo, relativo ad un saldo trimestrale IVA concluso che risultasse in stato di debito verso il governo;
 	\item \textbf{Scenario principale}: l'utente, dopo aver individuato il saldo desiderato, effettua il versamento dell'ammontare dovuto allo stato premendo sull'apposito pulsante. Per effettuare il versamento viene utilizzato MetaMask\glo;
 	\item \textbf{Precondizione}: l'azienda ha visualizzato un particolare saldo trimestrale IVA concluso, ed è in debito verso il governo relativamente al saldo considerato. L'utente desidera saldare il debito relativo al suddetto trimestre, e dunque clicca sul pulsante dedicato;
@@ -137,7 +101,7 @@
 \subsubsection{UC15.7 - Dilazione pagamento IVA}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
-	\item \textbf{Attori Secondari}: governo;
+	\item \textbf{Attori Secondari}: governo, Metamask\glo;
 	\item \textbf{Descrizione}: l'azienda può dilazionare\glosp il pagamento dovuto al governo, relativo ad un saldo trimestrale IVA concluso che risultasse in stato di debito verso il governo;
 	\item \textbf{Scenario principale}: l'utente, dopo aver individuato il saldo desiderato:
 	\begin{enumerate}[label=\alph*.]
@@ -180,8 +144,11 @@
 		\item indirizzo di spedizione dell'ordine.
 	\end{itemize}
 	\item \textbf{Scenario principale}: l'azienda seleziona una fattura da una lista e può leggere tutti i dettagli di tale fattura;
-	\item \textbf{Precondizione}: l'utente si trova nella pagina per la visualizzazione generale delle fatture e seleziona la visualizzazione dei dettagli di una specifica fattura;
+	\item \textbf{Precondizione}: l'azienda si trova nella pagina di visualizzazione della lista delle fatture e seleziona la visualizzazione dei dettagli di una specifica fattura;
 	\item \textbf{Postcondizione}: l'azienda ha visualizzato i dettagli della fattura selezionata.
 \end{itemize} 
+
+
+
 
 

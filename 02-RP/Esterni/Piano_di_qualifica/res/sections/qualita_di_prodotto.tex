@@ -76,7 +76,7 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 			\paragraph{Facilità di comprensione}
 			La facilità con cui è possibile comprendere cosa fa il codice può rappresentata dal numero di linee di commento nel codice.
 			\begin{itemize}
-			\item misurazione: Si può calcolare con la seguente formula: \\
+			\item misurazione: si può calcolare con la seguente formula: \\
 			\centerline{R = \(\frac{N\textsubscript{LCOM}}{N\textsubscript{LCOD}} \) }
 			dove N\textsubscript{LCOM} indica le linee di commento e N\textsubscript{LCOD} indica le linee di codice;
 			\item valore preferibile: $\geq$ 0.20;
@@ -96,4 +96,17 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 			\item valore preferibile $\leq$ 8;
 			\item valore accettabile $\leq$ 15.
 			\end{itemize}
+			\paragraph{Structural Fan-in} Indica quante componenti utilizzano un dato modulo. Un alto	valore indica un alto riuso della componente.
+			\begin{itemize}
+				\item misurazione: conteggio delle componenti;
+				\item valore preferibile: $\geq$ 1;
+				\item valore accettabile: $\geq$ 0.
+			\end{itemize}
+			\paragraph{Structural Fan-out} Indica quante componenti vengono utilizzate dalla componente in esame. Un alto valore indica un alto accoppiamento della componente.
+			\begin{itemize}
+				\item misurazione: conteggio delle componenti;
+				\item valore preferibile: = 0;
+				\item valore accettabile: $\leq$ 6.
+			\end{itemize}
+		
 \pagebreak

@@ -55,7 +55,7 @@
 		\item \textbf{UC2.6}: se l'utente non possiede una chiave\glosp su MetaMask\glo, esso viene avvisato tramite l'apposito messaggio di errore;
 		\item \textbf{UC2.7}: se è presente una chiave su MetaMask\glo, ma il sistema rileva che essa è già stata utilizzata per la registrazione sulla piattaforma, allora l'utente viene avvisato attraverso l'apposito messaggio di errore.
 	\end{itemize}
-	\item \textbf{Precondizione}: l'utente ha cliccato sul link per accedere al form di registrazione di un account cittadino o aziendale;
+	\item \textbf{Precondizione}: l'utente ha inserito i propri dati per registrarsi nel sistema;
 	\item \textbf{Postcondizione}: il sistema ha verificato che la chiave\glosp con la quale l'utente sta cercando di registrarsi non risulti già utilizzata nel sistema. La chiave è salvata e verrà utilizzata durante la registrazione. All'utente è permesso compilare i dati relativi alla tipologia di registrazione richiesta.
 	
 \end{itemize}
@@ -79,7 +79,7 @@
 		\item \textbf{UC2.4}: l'utente inserisce i dati relativi alla registrazione di un'azienda.
 		
 	\end{itemize}
-	\item \textbf{Precondizione}: l'utente sta eseguendo la procedura di registrazione. Il sistema ha rilevato e salvato una chiave\glosp valida (non associata ad alcun utente registrato alla piattaforma) attraverso il plug-in MetaMask\glo;
+	\item \textbf{Precondizione}: l'utente è entrato nel form per eseguire la procedura di registrazione. Il sistema ha rilevato e salvato una chiave\glosp valida (non associata ad alcun utente registrato alla piattaforma) attraverso il plug-in MetaMask\glo;
 	\item \textbf{Postcondizione}: l'utente ha compilato i campi relativi ai dati dell'account richiesti da ogni tipologia di registrazione.
 	
 \end{itemize}
@@ -175,9 +175,17 @@
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo con il nome dell'azienda che intende registrare.
 \end{itemize}
 
+\subsubsection{UC2.5 - Conferma ed invio dei dati}
+\begin{itemize}
+	\item \textbf{Attori Primari}: utente non autenticato;
+	\item \textbf{Descrizione}:
+	l'utente preme il pulsante per la conferma e l'invio dei dati. A schermo viene mostrato un messaggio che conferma il successo dell'operazione;
+	\item \textbf{Scenario principale}: l'utente preme il pulsante di verifica ed invio dei dati dopo aver compilato i campi del form;
+	\item \textbf{Precondizione}: il sistema permette all'utente di compilare il form di registrazione. \`E presente il pulsante per la conferma dei dati;
+	\item \textbf{Postcondizione}: viene visualizzato un messaggio per informare l'utente del fatto che la richiesta di registrazione è avvenuta con successo.
+\end{itemize}
 
-
-\subsubsection{UC2.5 - Visualizzazione errore MetaMask\glosp non presente}
+\subsubsection{UC3 - Visualizzazione errore MetaMask\glosp non presente}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Descrizione}: l'utente visualizza un errore relativo al fatto che MetaMask\glosp non risulta installato o attualmente disabilitato;
@@ -187,7 +195,7 @@
 	
 \end{itemize}
 
-\subsubsection{UC2.6 - Visualizzazione errore chiave non 
+\subsubsection{UC4 - Visualizzazione errore chiave non 
 	presente}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
@@ -200,10 +208,7 @@
 	
 \end{itemize}
 
-
-
-
-\subsubsection{UC2.7 - Visualizzazione errore chiave già presente nel sistema}
+\subsubsection{UC5 - Visualizzazione errore chiave già presente nel sistema}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Attori Secondari}: MetaMask\glo;
@@ -212,15 +217,5 @@
 	\item \textbf{Scenario principale}: l'utente tenta di registrarsi al sito utilizzando una chiave\glosp già presente nel sistema;
 	\item \textbf{Precondizione}: MetaMask\glosp è correttamente configurato, ma la chiave\glosp selezionata nel plug-in è già stata utilizzata nella piattaforma per registrare un utente;
 	\item \textbf{Postcondizione}: viene visualizzato un messaggio d'errore per informare l'utente del fatto che la chiave\glosp selezionata MetaMask\glosp è già stata utilizzata nella piattaforma per la registrazione di un altro utente, e quindi che necessita di un'altra chiave per effettuare una nuova registrazione.
-\end{itemize}
-
-\subsubsection{UC2.8 - Conferma ed invio dei dati}
-\begin{itemize}
-	\item \textbf{Attori Primari}: utente non autenticato;
-	\item \textbf{Descrizione}:
-	l'utente preme il pulsante per la conferma e l'invio dei dati. A schermo viene mostrato un messaggio che conferma il successo dell'operazione;
-	\item \textbf{Scenario principale}: l'utente preme il pulsante di verifica ed invio dei dati dopo aver compilato i campi del form;
-	\item \textbf{Precondizione}: il sistema permette all'utente di compilare il form di registrazione. \`E presente il pulsante per la conferma dei dati;
-	\item \textbf{Postcondizione}: viene visualizzato un messaggio per informare l'utente del fatto che la richiesta di registrazione è avvenuta con successo.
 \end{itemize}
 
