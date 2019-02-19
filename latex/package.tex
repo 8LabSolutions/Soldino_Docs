@@ -83,5 +83,11 @@
 \usepackage{lastpage}
 %\fancypagestyle{plain} {
 %	\fancyfoot[C]{Pagina \thepage\ di \pageref{LastPage}}}
+\makeatletter
+\newcommand{\uclabel}[2]{%
+	\protected@write \@auxout {}{\string \newlabel {#1}{{#2}{\thepage}{#2}{#1}{}} }%
+	\hypertarget{#1}{#2}
+}
+\makeatother
 
 
