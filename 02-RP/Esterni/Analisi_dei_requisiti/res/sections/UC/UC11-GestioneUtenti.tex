@@ -26,12 +26,8 @@
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Descrizione}: il governo visualizza la lista delle aziende registrate alla piattaforma. Per ogni azienda sono rese disponibili le seguenti informazioni:
 	\begin{itemize}
-		\item chiave\glosp Ethereum\glo;
 		\item nome (ragione sociale);
 		\item partita IVA;
-		\item indirizzo di residenza (sede dell'azienda);
-		\item lo stato di "abilitato" o "disabilitato";
-		\item indirizzo email;
 		\item lo stato del pagamento del saldo IVA, ovvero può controllare se l'azienda risulta:
 		\begin{itemize}
 			\item \textbf{insolvente}: non ha ancora provveduto alla liquidazione IVA di almeno uno dei trimestri precedenti entro i termini fissati;
@@ -49,11 +45,28 @@
 	\begin{itemize}
 		\item \textbf{UC16}: l'utente può filtrare i risultati visualizzati inserendo una parola chiave.
 	\end{itemize}
-	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere la lista di tutte aziende;
+	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere la lista di tutte le aziende;
 	\item \textbf{Postcondizione}: il governo ottiene dal sistema la lista delle aziende registrate, con associate le operazioni che può effettuare su di esse.
 \end{itemize}
+\subsection{UC - Informazioni dettagliate di un'azienda}
 
-\subsubsection{UC11.2 - Visualizzazione lista cittadini}
+\begin{itemize}
+	\item \textbf{Attori Primari}: governo;
+	\item \textbf{Descrizione}: il governo visualizza la lista delle aziende registrate alla piattaforma. Per ogni azienda, oltre alle informazioni generali precedentemente descritte,vengono visualizzate:
+	\begin{itemize}
+		\item chiave\glosp Ethereum\glo;
+		\item indirizzo di residenza (sede dell'azienda);
+		\item lo stato di "abilitato" o "disabilitato";
+		\item indirizzo email.
+	\end{itemize}
+	
+	\item \textbf{Scenario principale}: il governo richiede la lista delle aziende registrate;
+	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere la lista di tutte le aziende;
+	\item \textbf{Postcondizione}: il governo ottiene dal sistema la lista delle aziende registrate e selezionando l'azienda interessata accede alle informazioni in dettaglio relative ad essa.
+\end{itemize}
+
+
+\subsubsection{UC11.2 - Visualizzazione lista cittadini registrati}
 \begin{itemize}
 	\item \textbf{Attori Primari}: governo;
 	\item \textbf{Descrizione}: il governo ottiene la lista dei cittadini. Per ognuno di essi può visualizzare:
@@ -71,6 +84,21 @@
 	\end{itemize}
 	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere la lista di tutti i cittadini;
 	\item \textbf{Postcondizione}: il governo ottiene dal sistema la lista dei cittadini, con associate le operazioni che può effettuare su di essi.
+\end{itemize}
+
+
+\subsubsection{UC - Informazioni dettagliate di un cittadino}
+\begin{itemize}
+	\item \textbf{Attori Primari}: governo;
+	\item \textbf{Descrizione}: il governo ottiene la lista dei cittadini. Per ognuno di essi, oltre alle informazioni generali precedentemente descritte,vengono visualizzate:
+	\begin{itemize}
+		\item la chiave\glosp Ethereum\glo;
+		\item l'indirizzo di residenza;
+		\item indirizzo email.
+	\end{itemize}
+	\item \textbf{Scenario principale}: il governo richiede la lista dei cittadini registrati.
+	\item \textbf{Precondizione}: il sistema riconosce che l'utente è autenticato con privilegi governativi ed ha richiesto di ottenere la lista di tutti i cittadini;
+	\item \textbf{Postcondizione}: il governo ottiene dal sistema la lista dei cittadini e selezionando il cittadino interessato accede alle informazioni in dettaglio relative ad esso.
 \end{itemize}
 
 
