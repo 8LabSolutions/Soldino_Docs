@@ -1,8 +1,8 @@
-\subsubsection{UC14 - Gestione ordini}
+\subsubsection{UC21 - Gestione ordini}
 \begin{figure}[h]
-	\includegraphics[width=10cm]{res/images/UC14-GestioneOrdini.png}
+	\includegraphics[width=10cm]{res/images/UC21.png}
 	\centering
-	\caption{UC14 - Gestione ordini}
+	\caption{UC21 - Gestione ordini}
 \end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda, cittadino;
@@ -12,7 +12,7 @@
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e mette a disposizione tutte le pagine necessarie alla visualizzazione e gestione degli ordini;
 	\item \textbf{Postcondizione}: l'utente ha visualizzato e/o gestito i propri ordini.
 \end{itemize} 
-\subsubsection{UC14.1 - Visualizzazione ordini}
+\subsubsection{UC21.1 - Visualizzazione ordini}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda, cittadino;
 	\item \textbf{Descrizione}: alle aziende ed ai cittadini sono messe a disposizione diverse operazioni per visualizzare e gestire gli ordini all'interno della piattaforma. Essi comprendono acquisti e vendite (queste solo per le aziende). \`E reso possibile avere un elenco dettagliato di tutti gli ordini, in particolare per ognuno di essi è possibile la visualizzazione:
@@ -27,8 +27,8 @@
 	\item \textbf{Scenario principale}: l'utente visualizza i dati relativi ad un ordine;
 	\item \textbf{Specializzazioni}:
 	\begin{itemize}
-		\item \textbf{UC14.2}: visualizzazione acquisti conclusi.
-		\item \textbf{UC14.2}: visualizzazione vendite concluse.
+		\item \textbf{UC21.2}: visualizzazione acquisti conclusi.
+		\item \textbf{UC21.3}: visualizzazione vendite concluse.
 	\end{itemize}
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino e mette a disposizione tutte le pagine necessarie alla visualizzazione e gestione degli ordini;
 	\item \textbf{Postcondizione}: l'utente ha visualizzato l'elenco dei propri ordini.
@@ -36,7 +36,7 @@
 
 
 
-\subsubsection{UC14.2 - Visualizzazione acquisti conclusi}
+\subsubsection{UC21.2 - Visualizzazione acquisti conclusi}
 \begin{itemize}
 	\item \textbf{Attori Primari}: cittadino, azienda;
 	\item \textbf{Descrizione}: l'azienda ha la possibilità di visualizzare gli acquisti conclusi, ovvero effettuati ed approvati. Oltre ai dati relativi all'ordine sono visualizzate le seguenti informazioni:
@@ -51,7 +51,7 @@
 	\item \textbf{Postcondizione}: l'utente visualizza la lista degli acquisti conclusi.
 \end{itemize}
 
-\subsubsection{UC14.3 - Visualizzazione vendite concluse}
+\subsubsection{UC21.3 - Visualizzazione vendite concluse}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda;
 	\item \textbf{Descrizione}: l'azienda ha la possibilità di visualizzare le vendite effettuate ed approvate. Oltre ai dati relative all'ordine sono visualizzare le seguenti informazioni:
@@ -80,7 +80,7 @@
 \end{itemize}
 
 
-\subsubsection{UC14.4 - Rifiuto di una conferma d'acquisto}
+\subsubsection{UC21.4 - Rifiuto di una conferma d'acquisto}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda, cittadino;
 	\item \textbf{Attori Secondari}: MetaMask\glo, azienda;
@@ -93,7 +93,7 @@
 	la conferma. Il sistema ritorna l'ammontare trattenuto per l'ordine 
 	all'acquirente.
 \end{itemize}
-\subsubsection{UC14.5 - Approvazione di una conferma di acquisto}
+\subsubsection{UC21.5 - Approvazione di una conferma di acquisto}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda, cittadino;
 	\item \textbf{Attori Secondari}: MetaMask\glo, azienda;
@@ -110,7 +110,7 @@
 \end{itemize}
 
 
-\subsubsection{UC14.6 - Visualizzazione conferme d'acquisto in attesa di 
+\subsubsection{UC21.6 - Visualizzazione conferme d'acquisto in attesa di 
 approvazione}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda, cittadino;
@@ -121,8 +121,8 @@ approvazione}
 	\end{itemize}
 	\item \textbf{Scenario principale}: l'utente visualizza la lista delle 
 	conferme d'acquisto\glosp che necessitano di conferma. Per ognuna di esse 
-	ha la possibilità di confermare la proposta [UC14.5] o di rifiutarla 
-	[UC14.4];
+	ha la possibilità di confermare la proposta [UC21.5] o di rifiutarla 
+	[UC21.4];
 
 	\item \textbf{Precondizione}: il sistema ha riconosciuto l'utente autenticato come azienda o cittadino, e questo si trova nella pagina dedicata alla visualizzazione delle conferme d'acquisto\glosp che necessitano di approvazione;
 	\item \textbf{Postcondizione}: l'utente visualizza la lista delle conferme d'ordine\glosp che necessitano di approvazione.
