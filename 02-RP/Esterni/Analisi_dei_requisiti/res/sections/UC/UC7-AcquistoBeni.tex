@@ -1,8 +1,8 @@
-\subsubsection{UC7 - Acquisto beni}
-\begin{figure}[h]
-	\includegraphics[width=10cm]{res/images/UC7OK.jpg}
+\subsubsection{UC14 - Acquisto beni}
+\begin{figure}[H]
+	\includegraphics[width=6cm]{res/images/UC7.png}
 	\centering
-	\caption{UC7 - Acquisto beni}
+	\caption{UC14 - Acquisto beni}
 \end{figure}
 \begin{itemize}
 	\item \textbf{Attori Primari}: cittadino e azienda;
@@ -10,9 +10,9 @@
 	\item \textbf{Descrizione}: i cittadini e le aziende possono acquistare i beni/servizi che avevano precedentemente aggiunto nel carrello;
 	\item \textbf{Scenario principale}: 
 	\begin{enumerate}[label=\alph*.]
-		\item l'utente procede con il checkout dei prodotti precedentemente inseriti [UC7.1];
-		\item l'utente sceglie l'indirizzo di spedizione [UC7.3];
-		\item l'utente effettua la conferma ed il pagamento dell'ordine [UC7.4].
+		\item l'utente procede con il checkout dei prodotti precedentemente inseriti [UC14.1];
+		\item l'utente sceglie l'indirizzo di spedizione [UC14.3];
+		\item l'utente effettua la conferma ed il pagamento dell'ordine [UC14.4].
 	\end{enumerate}
 	
 	\item \textbf{Precondizione}: il sistema ha reso disponibile all'utente l'utilizzo del carrello per poter effettuare degli acquisti. L'utente ha inserito degli oggetti nel carrello ed effettua il procedimento di acquisto;
@@ -22,20 +22,25 @@
 		\item la somma versata dal creditore viene trattenuta dal sistema.
 	\end{itemize} 
 \end{itemize} 
-\subsubsection{UC7.1 - Checkout}
+\begin{figure}[h]
+	\includegraphics[width=10cm]{res/images/UC7OK.png}
+	\centering
+	\caption{UC14 - Acquisto beni, sottocasi}
+\end{figure}
+\subsubsection{UC14.1 - Checkout}
 \begin{itemize}
 	\item \textbf{Attori Primari}: cittadino, azienda;
 	\item \textbf{Descrizione}: l'utente effettua il checkout per poter poi acquistare i prodotti inseriti nel carrello;
 	\item \textbf{Scenario principale}: l'utente preme il pulsante relativo al checkout per procedere con tale operazione;
 	\item \textbf{Estensioni}: 
 	\begin{itemize}
-		\item \textbf{UC7.2}: l'utente preme il pulsante di checkout senza aver ancora inserito almeno un bene/servizio nel carrello.
+		\item \textbf{UC14.2}: l'utente preme il pulsante di checkout senza aver ancora inserito almeno un bene/servizio nel carrello.
 	\end{itemize}
 	\item \textbf{Precondizione}: l'utente si trova nella pagina relativa al proprio carrello. L'utente ha premuto il pulsante per effettuare il checkout;
 	\item \textbf{Postcondizione}: l'utente accede alla pagina dove poter visualizzare il riepilogo del carrello, selezionare l'indirizzo di spedizione e quindi confermare l'acquisto e procedere con il pagamento.
 \end{itemize}
 
-\subsubsection{UC7.2 - Visualizzazione errore carrello vuoto}
+\subsubsection{UC14.2 - Visualizzazione errore carrello vuoto}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda, cittadino;
 	\item \textbf{Descrizione}:
@@ -45,7 +50,7 @@
 	\item \textbf{Postcondizione}: viene visualizzato un messaggio d'errore per informare l'utente del fatto che e non è presente alcun prodotto nel proprio carrello e che quindi non è possibile procedere con la procedura di checkout.
 \end{itemize}
 
-\subsubsection{UC7.3 - Scelta indirizzo spedizione}
+\subsubsection{UC14.3 - Scelta indirizzo spedizione}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda, cittadino;
 	\item \textbf{Descrizione}:
@@ -63,7 +68,7 @@
 	della relativa fattura.
 \end{itemize}
 
-\subsubsection{UC7.4 - Conferma ordine e pagamento}
+\subsubsection{UC14.4 - Conferma ordine e pagamento}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda, cittadino;
 	\item \textbf{Attori Secondari}: MetaMask\glo;
@@ -71,7 +76,7 @@
 	\item \textbf{Scenario principale}: l'utente conferma l'ordine premendo l'apposito pulsante. Segue dunque la procedura di pagamento attraverso l'utilizzo di MetaMask\glo;
 	\item \textbf{Estensioni}: 
 	\begin{itemize}
-		\item \textbf{UC7.4}: l'esito del pagamento da parte di MetaMask\glosp risulta negativo, l'utente riceve un messaggio di errore che lo invita a controllare la causa dello stesso direttamente dal plug-in\glo. 
+		\item \textbf{UC14.4}: l'esito del pagamento da parte di MetaMask\glosp risulta negativo, l'utente riceve un messaggio di errore che lo invita a controllare la causa dello stesso direttamente dal plug-in\glo. 
 	\end{itemize}
 	\item \textbf{Precondizione}: l'utente ha effettuato il checkout e la selezione dell'indirizzo di spedizione;
 	\item \textbf{Postcondizione}: il pagamento è avvenuto con successo. 
@@ -81,7 +86,7 @@
 \end{itemize}
 
 
-\subsubsection{UC7.5 - Visualizzazione errore pagamento fallito}
+\subsubsection{UC14.5 - Visualizzazione errore pagamento fallito}
 \begin{itemize}
 	\item \textbf{Attori Primari}: azienda, cittadino;
 	\item \textbf{Descrizione}:
