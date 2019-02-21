@@ -72,15 +72,21 @@ Questa fase comincia il giorno successivo alla presentazione e la fine coincide 
 Progettazione. In questo periodo verrà individuata una soluzione architetturale 
 tale per cui i requisiti richiesti vengano soddisfatti.
 \begin{itemize}
-	\item \textbf{Technology Baseline}: viene redatto l'Allegato Tecnico nel quale vengono 
-	individuati i design 
-	pattern\glosp che verranno adottati per lo sviluppo. Inoltre il documento 
-	include il tracciamento dei requisiti.\\
-	Infine viene codificato il \textbf{Proof of Concept}\glosp il 
-	quale viene presentato o condiviso tramite repository al committente e 
-	proponente in una data da definirsi;
-	\item \textbf{Incremento e verifica}: se necessario vengono migliorati i 
-	documenti prodotti nelle fasi precedenti.
+	\item \textbf{Incremento e verifica}: se necessario vengono migliorati i documenti prodotti nelle fasi precedenti, con le modifiche e/o aggiunte pertinenti;
+	\item \textbf{Technology Baseline}: %viene redatto l'Allegato Tecnico nel quale vengono individuati i design 
+	%pattern\glosp che verranno adottati per lo sviluppo. Inoltre il documento 
+%	include il tracciamento dei requisiti.\\
+	viene codificato il \textbf{Proof of Concept}\glosp il quale viene presentato o condiviso tramite repository al committente e proponente in una data da definirsi. Tale prodotto è necessario per testare che tutte le tecnologie scelte riescano a soddisfare i requisiti individuati. In questo periodo saranno implementati solo una parte di requisiti, ovvero quelli che ricoprono le funzionalità di base. Successivamente verranno raffinati i requisiti già implementati, se non completi, e saranno implementate le funzionalità che permetteranno di soddisfare tutti i requisiti. \\
+	Sono stati individuati degli incrementi per facilitare l'organizzazione del lavoro di codifica e gestire le dipendenze tra le funzionalità:
+	\begin{itemize}
+		\item \textbf{Incremento 1: Registrazione}: verrà implementata la registrazione alla piattaforma, mediante l'ausilio del plug-in\glosp MetaMask\glosp e degli smart contract\glo;
+		\item \textbf{Incremento 2: Login}: verrà implementato il login, utilizzando le tecnologie sopra descritte;
+		\item \textbf{Incremento 3: Home}: verrà implementata la home page del sito. Verranno usate le librerie React\glosp e Redux\glosp per gestire il front-end\glosp e verrà implementato il carrello per poter acquistare i beni e servizi offerti;
+		\item \textbf{Incremento 4: Pagina Governo}: verranno implementate le funzionalità di coniazione e distribuzione dei Cubit\glo;
+		\item \textbf{Incremento 5: Pagina Cittadino}: verranno implementati il pagamento in Cubit\glosp e la gestione degli ordini;
+		\item \textbf{Incremento 6: Pagina Azienda}: verranno implementate alcune delle funzionalità riguardanti la gestione degli ordini e dell'IVA.
+	\end{itemize}
+
 \end{itemize}
 
 \begin{figure}[H]
