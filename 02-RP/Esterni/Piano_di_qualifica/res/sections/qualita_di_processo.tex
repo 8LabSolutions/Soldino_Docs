@@ -3,8 +3,8 @@ Per ricercare qualità nello svolgimento del progetto si adoperano dei processi.
 Il risultato sono i processi esposti a seguito.
 
 %\subsection{Processo di Costruzione del Software}. Opzione per il futuro.
-	\subsection{Processi di Sviluppo}
-	\subsubsection{Analisi dei Requisiti}
+	\subsection{Processi di sviluppo}
+	\subsubsection{Analisi dei requisiti}
 		\paragraph{Metriche}
 			\subparagraph{PROS: Percentuale di requisiti obbligatori soddisfatti} Indica appunto la percentuale di requisiti obbligatori soddisfatti.
 			\begin{itemize}
@@ -13,7 +13,7 @@ Il risultato sono i processi esposti a seguito.
 				\item valore accettabile: $100\%$.
 			\end{itemize}
 			
-	\subsubsection{Progettazione di Dettaglio}
+	\subsubsection{Progettazione di dettaglio}
 		\paragraph{Metriche}
 			\subparagraph{CBO: Accoppiamento tra le classi di oggetti} 
 			Una classe è accoppiata ad una seconda se usa metodi o variabili definiti nella seconda. 
@@ -23,17 +23,37 @@ Il risultato sono i processi esposti a seguito.
 				\item valore accettabile: $0 \leq CBO \leq 6$.
 			\end{itemize}
 		
-\subsection{Processi di Supporto}
+\subsection{Processi di supporto}
 	\subsubsection{Pianificazione}
 		\paragraph{Metriche}
-		\subparagraph{BAC: Budget at Completion}
-		Budget totale allocato per il progetto.
-		\begin{itemize}
+			%BAC RIMOSSO: equivale al preventivo. Non è una metrica.
+			\begin{comment}
+			\subparagraph{BAC: Budget At Completion}
+			Budget totale allocato per il progetto. Detto anche preventivo.
+			\begin{itemize}
 			\item misurazione: numero intero;
 			% PLACEHOLDER: Aggiornare i 2 item qui sotto
-			\item valore preferibile: $pari\ al\ preventivo$;
+			\item valore preferibile: $15132 euro$;
 			\item valore accettabile: il valore del preventivo con un errore massimo del 5\%, equivale a dire $preventivo -5\% \leq BAC \leq preventivo + 5\%$. 
-		\end{itemize}
+			\end{itemize}
+			\end{comment}
+			
+			\subparagraph{EAC: Estimate At Completion}
+			Rappresenta il nuovo preventivo sul totale alla fine di un periodo.
+			\begin{itemize}
+				\item  misurazione: numero intero;
+				\item  valore preferibile: $0 \leq preventivo$;
+				\item  valore accettabile: $ preventivo -5\% \leq EAC \leq preventivo + 5\%$. 
+			\end{itemize}
+			
+			\subparagraph{VAC: Variance At Completion}
+			Indica la variazione tra BAC ed EAC e la spesa effettivamente sostenuta.
+			\begin{itemize}
+				\item  misurazione: percentuale: $\frac{preventivo - EAC}{100}$;
+				\item  valore preferibile: $\geq 0$;
+				\item  valore accettabile: $\geq 0$.
+			\end{itemize}
+				
 			\subparagraph{AC: Actual Cost}
 			Il denaro speso fino al momento del calcolo.
 			\begin{itemize}
@@ -41,6 +61,7 @@ Il risultato sono i processi esposti a seguito.
 				\item  valore preferibile: $0 \leq AC < PV$;
 				\item  valore accettabile: $0 \leq AC \leq budget\ totale\ $.
 			\end{itemize}
+		
 			\subparagraph{EV: Earned Value}
 			Metrica di utilità per il calcolo di $SV$ e $CV$ (spiegate successivamente). Si tratta del valore del lavoro fatto fino al momento del calcolo; corrisponde al denaro guadagnato fino a quel momento.
 			\begin{itemize}
@@ -102,16 +123,9 @@ Il risultato sono i processi esposti a seguito.
 				\item valore preferibile: $80 < I_G < 100$;
 				\item valore accettabile: $40 < I_G < 100$.
 			\end{itemize}
-			\subparagraph{Correttezza ortografica}
-			Tutti i documenti non devono assolutamente contenere errori grammaticali o errori ortografici. 
-			\begin{itemize}
-				\item misurazione: valore intero: numero di errori grammaticali o ortografici per documento;
-				\item valore preferibile: 0;
-				\item valore accettabile: 0.
-			\end{itemize}
 			
-\subsection{Processi Organizzativi}
-	\subsubsection{Gestione della Qualità}
+\subsection{Processi organizzativi}
+	\subsubsection{Gestione della qualità}
 		\paragraph{Metriche}
 			\subparagraph{PMS: Percentuale di metriche soddisfatte}
 			La percentuale di metriche soddisfatte valuta quante metriche raggiungono soglie accettabili sul numero totale delle metriche calcolate. Una bassa percentuale di soddisfazione può indicare poca qualità, metriche inadeguate o mancata correttezza nel calcolo.
