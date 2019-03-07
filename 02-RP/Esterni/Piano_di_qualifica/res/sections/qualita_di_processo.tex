@@ -6,7 +6,8 @@ Il risultato sono i processi esposti a seguito.
 	\subsection{Processi di sviluppo}
 	\subsubsection{Analisi dei requisiti}
 		\paragraph{Metriche}
-			\subparagraph{PROS: Percentuale di requisiti obbligatori soddisfatti} Indica appunto la percentuale di requisiti obbligatori soddisfatti.
+			\paragraph*{PROS: Percentuale di requisiti obbligatori soddisfatti}\mbox{}\\
+			Indica appunto la percentuale di requisiti obbligatori soddisfatti.
 			\begin{itemize}
 				\item misurazione: valore percentuale: $ PROS = \frac{requisiti\ obbligatori\ soddisfatti}{requisiti\ obbligatori\ totali}$;
 				\item valore preferibile: $100\%$;
@@ -15,7 +16,7 @@ Il risultato sono i processi esposti a seguito.
 			
 	\subsubsection{Progettazione di dettaglio}
 		\paragraph{Metriche}
-			\subparagraph{CBO: Accoppiamento tra le classi di oggetti} 
+			\paragraph*{CBO: Accoppiamento tra le classi di oggetti} \mbox{}\\
 			Una classe è accoppiata ad una seconda se usa metodi o variabili definiti nella seconda. 
 			\begin{itemize}
 				\item misurazione: valore intero: $CBO$;
@@ -25,16 +26,62 @@ Il risultato sono i processi esposti a seguito.
 		
 	\subsubsection{Codifica}
 		\paragraph{Metriche}
-			\subparagraph{}
+			\paragraph*{Profondità della gerarchia} \mbox{}\\
+			La profondità del sito. Un sito per essere facile da utilizzare non deve essere troppo profondo.
 			\begin{itemize}
-				\item misurazione: $ $;
-				\item valore preferibile: $ $;
-				\item valore accettabile: $ $.
+				\item misurazione: livello di profondità della pagine;
+				\item valore preferibile: $\leq$ 4;
+				\item valore accettabile: $\leq$ 7.
 			\end{itemize}
+		
+			\paragraph*{Rapporto di linee di codice per linee di commento}
+			 \mbox{}\\
+			Il rapporto tra le linee di codice
+			e le linee di commento, escludendo le righe vuote.
+			\begin{itemize}
+				\item misurazione: $\frac{\mbox{linee di codice}}{\mbox{linee di commento}}$;
+				\item valore preferibile: $\geq 0.30$;
+				\item valore accettabile: $\geq 0.25$.
+			\end{itemize}
+		
+			\paragraph*{Numero di attributi per contratto}
+			\mbox{}\\
+			Considera il numero totale di attributi presenti
+			all'interno di un contratto.
+			\begin{itemize}
+				\item misurazione: numero intero;
+				\item valore preferibile: $\leq 10$;
+				\item valore accettabile: $\leq 15$.
+			\end{itemize}
+		
+			\paragraph*{Livello di annidamento}
+			\mbox{}\\
+			Livello di annidamento nei vari metodi tenendo conto della
+			presenza di strutture di controllo annidate. Il numero di strutture di controllo annidate viene indicato con $x$.
+			\begin{itemize}
+				\item misurazione: numero intero;
+				\item valore preferibile: $ 1 \leq x \leq3$ ;
+				\item valore accettabile: $1 \leq x\leq 7$.
+			\end{itemize}
+		
+			\paragraph*{Profondità della gerarchica}
+			\begin{itemize}
+				\item misurazione: numero intero;
+				\item valore preferibile: $ \leq 2$ ;
+				\item valore accettabile: $ \leq 3$.
+			\end{itemize}
+		
+			\paragraph*{Numero di parametri per metodo}
+			\begin{itemize}
+				\item misurazione: numero intero;
+				\item valore preferibile: $ \leq 3$ ;
+				\item valore accettabile: $ \leq 5$.
+			\end{itemize}
+			
 \subsection{Processi di supporto}
 	\subsubsection{Pianificazione}
 		\paragraph{Metriche}			
-			\subparagraph{EAC: Estimate At Completion}
+			\paragraph*{EAC: Estimate At Completion}\mbox{}\\
 			Rappresenta il nuovo preventivo sul totale alla fine di un periodo.
 			\begin{itemize}
 				\item  misurazione: numero intero;
@@ -42,7 +89,7 @@ Il risultato sono i processi esposti a seguito.
 				\item  valore accettabile: $ preventivo -5\% \leq EAC \leq preventivo + 5\%$. 
 			\end{itemize}
 			
-			\subparagraph{VAC: Variance At Completion}
+			\paragraph*{VAC: Variance At Completion}\mbox{}\\
 			Indica la variazione tra BAC ed EAC e la spesa effettivamente sostenuta.
 			\begin{itemize}
 				\item  misurazione: percentuale: $\frac{preventivo - EAC}{100}$;
@@ -50,7 +97,7 @@ Il risultato sono i processi esposti a seguito.
 				\item  valore accettabile: $\geq 0$.
 			\end{itemize}
 				
-			\subparagraph{AC: Actual Cost}
+			\paragraph*{AC: Actual Cost}\mbox{}\\
 			Il denaro speso fino al momento del calcolo.
 			\begin{itemize}
 				\item  misurazione: numero intero;
@@ -58,28 +105,28 @@ Il risultato sono i processi esposti a seguito.
 				\item  valore accettabile: $0 \leq AC \leq budget\ totale\ $.
 			\end{itemize}
 		
-			\subparagraph{EV: Earned Value}
+			\paragraph*{EV: Earned Value}\mbox{}\\
 			Metrica di utilità per il calcolo di $SV$ e $CV$ (spiegate successivamente). Si tratta del valore del lavoro fatto fino al momento del calcolo; corrisponde al denaro guadagnato fino a quel momento.
 			\begin{itemize}
 				\item  misurazione: $preventivo \cdot \%\ di\ lavoro\ completato\ $;
 				\item  valore preferibile: $ \geq 0$;
 				\item  valore accettabile: $ \geq 0$.
 			\end{itemize}
-			\subparagraph{PV: Planned Value}
+			\paragraph*{PV: Planned Value}\mbox{}\\
 			Metrica di utilità per il calcolo di $SV$ e $CV$ (spiegate successivamente). Si tratta del valore del lavoro pianificato al momento del calcolo: corrisponde al denaro che si dovrebbe aver guadagnato in quel momento.
 			\begin{itemize}
 				\item  misurazione: $preventivo \cdot \%\ di\ lavoro\ pianificato\ $;
 				\item  valore preferibile: $ \geq 0$;
 				\item  valore accettabile: $ \geq 0$.
 			\end{itemize}			
-			\subparagraph{SV: Schedule Variance}
+			\paragraph*{SV: Schedule Variance}\mbox{}\\
 			Esprime lo stato di anticipo o ritardo nello svolgimento del progetto rispetto alla pianificazione.
 			\begin{itemize}
 				\item misurazione: $SV = EV - PV$
 				\item valore preferibile: $ > 0$;
 				\item valore accettabile: 0.
 			\end{itemize}
-			\subparagraph{CV: Cost Variance}
+			\paragraph*{CV: Cost Variance}\mbox{}\\
 			Differenza tra il costo del lavoro effettivamente completato e quello pianificato. Una CV positiva indica che si sta rispettando il budget.
 			\begin{itemize}
 				\item misurazione: $CV = EV - AC$;
@@ -89,7 +136,7 @@ Il risultato sono i processi esposti a seguito.
 
 	\subsubsection{Verifica}
 		\paragraph{Metriche}
-			\subparagraph{CC: Code Coverage}
+			\paragraph*{CC: Code Coverage}\mbox{}\\
 				Indica il numero di righe di codice percorse dai test durante la loro esecuzione. Per linee di codice totali si intende tutte quelle appartenenti all'unità in fase di test.
 				\begin{itemize}
 					\item misurazione: valore percentuale: $CC = \frac{linee\ di\ codice\ percorse}{linee\ di\ codice\ totali}$;
@@ -98,7 +145,7 @@ Il risultato sono i processi esposti a seguito.
 				\end{itemize}
 	\subsubsection{Documentazione}
 		\paragraph{Metriche}
-			\subparagraph{Indice di Gulpease}
+			\paragraph*{Indice di Gulpease}\mbox{}\\
 			Indice della leggibilità del testo. Valuta la lunghezza delle parole e delle frasi rispetto al numero totale di lettere. 
 			\begin{itemize}
 				\item misurazione: valore intero da 0 a 100:\newline 	
