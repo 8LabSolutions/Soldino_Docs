@@ -6,6 +6,7 @@ api
 area di staging
 artefatti
 attore
+autenticazione
 aws
 back end
 blockchain
@@ -60,6 +61,7 @@ milestone
 modello a v
 modello di sviluppo
 node.js
+npm
 open-source
 partizione di equivalenza
 peer-to-peer
@@ -98,8 +100,10 @@ telegram
 testrpc
 time series
 token
+travis
 truffle
 twelve-factor app
 uml
 wallet
+web3
 workflow
