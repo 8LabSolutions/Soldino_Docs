@@ -23,8 +23,9 @@
 *.synctex.gz
 
 analisi_dei_requisiti_v*.0.0.pdf
-glossario.pdf
+glossario_v*.0.0.pdf
 piano_di_qualifica_v*.0.0.pdf
+piano_di_progetto_v*.0.0.pdf
 norme_di_progetto_v*.0.0.pdf
 verbale_interno_201*-**-**.pdf
 verbale_esterno_201*-**-**.pdf
@@ -32,4 +33,4 @@ verbale_esterno_201*-**-**.pdf
 *.directory
 *.DS_Store
 
-02-RP/Esterni/Piano_di_progetto/piano_di_progetto_v1\.0\.0\.pdf
+
