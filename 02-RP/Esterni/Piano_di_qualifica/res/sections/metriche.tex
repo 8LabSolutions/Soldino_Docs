@@ -1,13 +1,9 @@
 \section{Calcolo delle metriche}
-%intro
-\subsection{EAC - Estimated At Completion}
+\subsubsection{Premessa relativa al periodo di progettazione e codifica della Technology Baseline}
+Data la natura fortemente mutevole del Proof of Concept è stato deciso di non tenere traccia delle metriche di prodotto durante il suo sviluppo. Infatti, nella fase di progettazione di dettaglio e codifica il prodotto cambierà radicalmente, e non ci sarà una vera e propria continuità rispetto al PoC. \newline
+Poiché è necessario poter avere una visione dell'andamento del progetto nel tempo, si è deciso di tenere traccia di tutte le metriche a partire dalla fase di progettazione in dettaglio. Saranno considerate le serie storiche con una quantità maggiore di dati a disposizione.
 
-\subsection{VAC - Variance At Completion}
-
-\subsection{AC - Actual Cost}
-
-
-\subsection{Indice di Gulpease}
+\subsection{Legenda}
 Legenda:
 \begin{itemize}
 	\item \textbf{N}: nome del documento;
@@ -18,8 +14,54 @@ Legenda:
 	\item \textbf{VC}: periodo di validazione e collaudo ;
 \end{itemize}
 
-\begin{longtable}{ >{\centering}p{0.15\textwidth} >{}p{0.10\textwidth}
-		>{\centering}p{0.1075\textwidth} >{}p{0.10\textwidth} >{}p{0.10\textwidth} >{}p{0.10\textwidth}}
+
+%intro
+\subsection{EAC - Estimated At Completion}
+
+\begin{longtable}{ >{\centering}p{0.25\textwidth} >{\centering}p{0.25\textwidth}}
+	%\hline
+	\rowcolorhead
+	\textbf{\color{white}C} 
+	& \textbf{\color{white}RP} 
+	\tabularnewline %\hline 	
+	
+	820
+	& 4245
+	\tabularnewline %\hline 
+
+\end{longtable}
+
+
+\subsection{VAC - Variance At Completion}
+\begin{longtable}{ >{\centering}p{0.25\textwidth} >{\centering}p{0.25\textwidth}}
+	%\hline
+	\rowcolorhead
+	\textbf{\color{white}C} 
+	& \textbf{\color{white}RP} 
+	\tabularnewline %\hline 	
+	
+	0\%
+	& 1.44\%
+	\tabularnewline %\hline 
+	
+\end{longtable}
+
+\subsection{AC - Actual Cost}
+\begin{longtable}{ >{\centering}p{0.25\textwidth} >{\centering}p{0.25\textwidth}}
+	%\hline
+	\rowcolorhead
+	\textbf{\color{white}C} 
+	& \textbf{\color{white}RP} 
+	\tabularnewline %\hline 	
+	820
+	& 4245
+	\tabularnewline %\hline 	
+\end{longtable}
+
+\pagebreak
+\subsection{Indice di Gulpease}
+
+\begin{longtable}{ >{\centering}p{0.15\textwidth} >{\centering}p{0.10\textwidth}	>{\centering}p{0.1075\textwidth} >{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth}}
 	
 	%\hline
 	\rowcolorhead
@@ -97,3 +139,27 @@ Legenda:
 
 
 \subsection{PMS - Percentuale di metriche soddisfatte}
+%
+\begin{longtable}{ >{\centering}p{0.25\textwidth} >{\centering}p{0.25\textwidth}}
+	%\hline
+	\rowcolorhead
+	\textbf{\color{white}Metrica} 
+	& \textbf{\color{white}Soddisfatta?} 
+	\tabularnewline %\hline 
+		
+	EAC
+	& x
+	\tabularnewline %\hline
+	VAC
+	& x
+	\tabularnewline %\hline
+	AC
+	& x
+	\tabularnewline %\hline
+	Gulpease
+	& x
+	\tabularnewline %\hline
+	\textbf{PMS}
+	& \textbf{x\%}
+	\tabularnewline %\hline
+\end{longtable}
