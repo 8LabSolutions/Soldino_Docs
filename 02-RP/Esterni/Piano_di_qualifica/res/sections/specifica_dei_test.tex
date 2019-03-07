@@ -24,14 +24,14 @@ Inoltre per lo stato dei test si usano le seguenti abbreviazioni:
 	\renewcommand{\arraystretch}{1.5}
 	\rowcolors{2}{pari}{dispari}
 	
-	\begin{longtable}{ >{\centering}p{0.10\textwidth} >{\centering}p{0.655\textwidth}
+	\begin{longtable}{ >{\centering}p{0.10\textwidth} >{}p{0.655\textwidth}
 			>{\centering}p{0.15\textwidth}}% >{\centering}p{0.14\textwidth}}
 			
 		%\hline
 		\caption{Riepilogo Test di Accettazione}\\	
 		\rowcolorhead
 		\textbf{\color{white}Codice} 
-		& \textbf{\color{white}Descrizione} 
+		& \centering\textbf{\color{white}Descrizione} 
 		& \centering\textbf{\color{white}Esito}
 	%	& \textbf{\color{white}Fonti} 
 		\tabularnewline %\hline 
@@ -40,7 +40,7 @@ Inoltre per lo stato dei test si usano le seguenti abbreviazioni:
 		\rowcolor{white}\caption[]{(continua)}\\	
 		\rowcolorhead
 		\textbf{\color{white}Codice} 
-		& \textbf{\color{white}Descrizione} 
+		& \centering\textbf{\centering\color{white}Descrizione} 
 		& \centering\textbf{\color{white}Esito}
 		%	& \textbf{\color{white}Fonti} 
 		\tabularnewline %\hline 
