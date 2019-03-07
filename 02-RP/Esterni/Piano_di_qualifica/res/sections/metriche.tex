@@ -1,55 +1,63 @@
 \section{Calcolo delle metriche}
 \subsubsection{Premessa relativa al periodo di progettazione e codifica della Technology Baseline}
 Data la natura fortemente mutevole del Proof of Concept è stato deciso di non tenere traccia delle metriche di prodotto durante il suo sviluppo. Infatti, nella fase di progettazione di dettaglio e codifica il prodotto cambierà radicalmente, e non ci sarà una vera e propria continuità rispetto al PoC. \newline
-Poiché è necessario poter avere una visione dell'andamento del progetto nel tempo, si è deciso di tenere traccia di tutte le metriche a partire dalla fase di progettazione in dettaglio. Saranno considerate le serie storiche con una quantità maggiore di dati a disposizione.
+Alcune delle metriche sulla pianificazione non erano calcolabili, in quanto non si può dire di aver effettivamente soddisfatto dei requisiti, dunque si è rinunciato ad utliizzarle.
+Cionondimeno, poiché è necessario poter avere una visione dell'andamento del progetto nel tempo, si è deciso di tenere traccia di tutte le metriche a partire dalla fase di progettazione in dettaglio. Saranno considerate le serie storiche con una quantità maggiore di dati a disposizione.
 
 \subsection{Legenda}
 Legenda:
 \begin{itemize}
+	\item \textbf{-}: campi vuoti;
 	\item \textbf{N}: nome del documento;
 	\item \textbf{RR}: periodo di revisione dei requisiti;
 	\item \textbf{C}: periodo di consolidamento dei requisiti;
 	\item \textbf{TB}: periodo di progettazione e codifica della Technology Baseline;
 	\item \textbf{PD}: periodo di progettazione di dettaglio e codifica;
-	\item \textbf{VC}: periodo di validazione e collaudo ;
+	\item \textbf{VC}: periodo di validazione e collaudo.
 \end{itemize}
 
 
-%intro
 \subsection{EAC - Estimated At Completion}
-
 \begin{longtable}
 	{ >{\centering}p{0.15\textwidth}
 			>{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth}}
 		%\hline
+		\rowcolor{white}\caption{EAC nei periodi da RR a TB}\\
 		\rowcolorhead
 		\textbf{\color{white}RR} 
 		& \textbf{\color{white}C} 
 		& \textbf{\color{white}TB}
 		& \textbf{\color{white}PD}
 		& \textbf{\color{white}VC}
-		\tabularnewline %\hline  	
+		\tabularnewline %\hline  
+		\endhead
+			
 	-
 	& \EUR{820,00}
 	& \EUR{4245,00}
 	& -
 	& -
 	\tabularnewline %\hline 
-
 \end{longtable}
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{res/images/eac.pdf}
+	\caption{Estimated At Completion durante i periodi da RR a TB}
+\end{figure}
 
 \subsection{VAC - Variance At Completion}
 \begin{longtable}{ >{\centering}p{0.15\textwidth}
 		>{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth}}
 	%\hline
+	\rowcolor{white}\caption{VAC nei periodi da RR a TB}\\
 	\rowcolorhead
 	\textbf{\color{white}RR} 
 	& \textbf{\color{white}C} 
 	& \textbf{\color{white}TB}
 	& \textbf{\color{white}PD}
 	& \textbf{\color{white}VC}
-	\tabularnewline %\hline  	
+	\tabularnewline %\hline
+	\endhead\\  	
 	-
 	& 0\%
 	& 1.44\%
@@ -58,18 +66,24 @@ Legenda:
 	\tabularnewline %\hline 
 	
 \end{longtable}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{res/images/vac.pdf}
+	\caption{VA}
+\end{figure}
 
 \subsection{AC - Actual Cost}
 \begin{longtable}{ >{\centering}p{0.15\textwidth}
 		 >{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth}}
 	%\hline
+	\rowcolor{white}\caption{AC nei periodi da RR a TB}\\
 	\rowcolorhead
 	\textbf{\color{white}RR} 
 	& \textbf{\color{white}C} 
 	& \textbf{\color{white}TB}
 	& \textbf{\color{white}PD}
 	& \textbf{\color{white}VC}
-	\tabularnewline %\hline  	
+	\tabularnewline %\hline 	
 	-
 	& \EUR{820,00}
 	& \EUR{4245,00}
@@ -77,6 +91,12 @@ Legenda:
 	& -
 	\tabularnewline %\hline 	
 \end{longtable}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{res/images/ac.pdf}
+	\caption{Palle}
+\end{figure}
+
 
 \pagebreak
 \subsection{Indice di Gulpease}
@@ -84,6 +104,7 @@ Legenda:
 \begin{longtable}{ >{\centering}p{0.15\textwidth} >{\centering}p{0.10\textwidth}	>{\centering}p{0.1075\textwidth} >{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth}}
 	
 	%\hline
+	\rowcolor{white}\caption{Indice di Gulpease raggruppato per documento, lungo i periodi da RR a TB}\\
 	\rowcolorhead
 	\textbf{\color{white}N} 
 	& \textbf{\color{white}RR} 
@@ -156,10 +177,17 @@ Legenda:
 	& -
 	& -
 \end{longtable}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{res/images/gulpease.pdf}
+	\caption{Palle}
+\end{figure}
 
+
+% questa metrica è stata abolita per volonta di Giacomo Greggio, il Master delle Norme. Sia fatta la sua volontà! Così nel PdQ come nelle Norme.
 \begin{comment}
 \subsection{PMS - Percentuale di metriche soddisfatte}
-%
+
 \begin{longtable}{ >{\centering}p{0.25\textwidth} >{\centering}p{0.25\textwidth}}
 	%\hline
 	\rowcolorhead
