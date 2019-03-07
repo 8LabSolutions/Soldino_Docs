@@ -399,8 +399,7 @@ ciascun membro del gruppo è tenuto a rispettare le seguenti norme:}
 			indentati, usando per ciascun livello di indentazione quattro (4) spazi (fanno 
 			eccezione i commenti). Al fine di assicurare il rispetto di questa regola si 
 			consiglia di configurare adeguatamente il proprio editor o IDE;
-		\item \textbf{parentesizzazione}: è richiesto di inserire le parentesi di 
-			delimitazione dei costrutti in linea e non al di sotto di essi;
+		\item \textbf{parentesizzazione}: è richiesto di inserire le parentesi di delimitazione dei costrutti in linea e non al di sotto di essi, separando le parentesi con uno spazio;
 		\item \textbf{scrittura dei metodi}: è desiderabile, ove possibile, 
 			mantenere i metodi brevi(poche righe di codice);
 		\item \textbf{univocità dei nomi}: classi, metodi, variabili devono avere un 
@@ -412,8 +411,7 @@ ciascun membro del gruppo è tenuto a rispettare le seguenti norme:}
 		\item \textbf{metodi}: i nomi dei metodi devono iniziare con una lettera 
 			minuscola. Nel caso siano composti da più parole, quelle successive devono iniziare con una 
 			lettera maiuscola (CamelCase\glo{});
-		\item \textbf{commenti}: deve essere presente un sintetico commento descrittivo 
-			precedente all'implementazione di metodi e classi;
+		\item \textbf{commenti}: deve essere presente un sintetico commento descrittivo precedente all'implementazione di metodi e classi;
 		\item \textbf{intestazione dei file}: ogni file deve presentare le seguenti informazioni:
 			\begin{itemize}
 				\item percorso e nome del file;
@@ -432,7 +430,55 @@ guide", il cui uso è implementato attraverso ESLint\glo. \newline \newline
 
 \noindent{L'uso della ricorsione va evitato quanto più possibile in  quanto potrebbe
 indurre ad una maggiore occupazione di memoria rispetto a soluzioni iterative.}
-	
+
+\subsubsection{Metriche di qualità}
+\paragraph{Analisi dei Requisiti} \mbox{}\\
+
+\noindent Durante l’analisi le informazioni ottenute dalle varie fonti sono trasformate in forma di casi d’uso e requisiti. Questa forma fornisce una descrizione dettagliata del sistema e definisce il funzionamento e le caratteristiche di ogni sua parte. \\
+Gli obiettivi sono:
+\begin{itemize}
+	\item formulare la definizione di casi d’uso e requisiti;
+	\item ottenere la loro approvazione;
+	\item tracciare il loro cambiamento nel tempo.
+\end{itemize}
+La strategia prevede: 
+\begin{itemize}
+	\item considerare lo scopo del progetto e le richieste degli stakeholder;
+	\item esprimere ciò in forma di requisiti, classificati in obbligatori, desiderabili e opzionali;
+	\item valutare il corpo dei requisiti e negoziare cambiamenti se necessario;
+	\item ottenere la loro approvazione da parte del proponente.
+\end{itemize}
+La metrica usata è \textbf{la percentuale di requisiti obbligatori soddisfatti} (PROS) e viene calcolata con la seguente formula:
+
+\begin{center}  $ PROS = \frac{requisiti\ obbligatori\ soddisfatti}{requisiti\ obbligatori\ totali}$
+\end{center}
+
+\paragraph{Progettazione} \mbox{}\\ \mbox{}\\
+\textit{Nota: in questa sezione si parla di modulo, unità e componente riferendosi allo stesso oggetto, ma ponendo l'attenzione sulla proprietà (rispettivamente modularità, unità e composizione) più rilevante nel contesto d'uso.}\newline 
+La progettazione di design segue la progettazione dell'architettura e prevede la scomposizione delle macro-componenti di cui il modello architetturale è fatto in componenti più piccole, che sono facilmente comprensibili, strettamente collegati ai requisiti funzionali e implementabili da un singolo programmatore.\\
+Gli obiettivi sono:
+\begin{itemize}
+	\item tradurre i requisiti in unità di codice, i moduli;
+	\item favorire il lavoro dei programmatori con compiti individuali relativi ai singoli moduli;
+	\item produrre un sistema software da raffinare ma già eseguibile;
+	\item mantenere il tracciamento tra requisiti e componenti.
+\end{itemize}
+La strategia prevede di: 
+\begin{itemize}
+	\item scomporre le componenti architetturali in componenti piccole;
+	\item implementare le micro-componenti individuate.
+\end{itemize}
+La metrica usata è l'\textbf{accoppiamento tra le classi di oggetti} (CBO).
+\paragraph{Codifica} \mbox{}\\ \mbox{}\\
+Questa sezione contiene le metriche che applicheremo al software prodotto. Tali  valori  sono  una  dichiarazione  di  intenti  per  la qualità del software e potrebbero essere rivisti con le successive revisioni.
+	\begin{itemize}
+		\item \textbf{Rapporto di linee di codice per linee di commento}: il rapporto tra le linee di codice e le linee di commento, escludendo le righe vuote.  Questo rapporto aiuta a stimare la manutenibilità del codice.  Un rapporto troppo basso indica una carenza di informazioni	necessarie alla comprensione del codice scritto;
+		\item \textbf{Numero di attributi per contratto}: considera il numero totale di attributi presenti all'interno di un contratto. Un valore elevato può indicare, oltre a un costo elevato dovuto al numero elevato di attributi, che tale contratto si fa carico di una quantità eccessiva di responsabilità; potrebbe quindi convenire scorporare una parte di esso in un secondo contratto;
+		\item \textbf{Livello di annidamento}: il livello di annidamento nei vari metodi tenendo	conto della presenza di strutture di controllo annidate.  Un alto livello di annidamento porta a codice di difficile manutenzione, aumentandone la complessità; potrebbe quindi convenire scorporare il metodo in più metodi distinti;
+		\item \textbf{Profondità della gerarchica}: la profondità della gerarchia va limitata in modo da limitare l’accoppiamento;
+		\item \textbf{Numero di parametri per metodo}: un numero troppo elevato di parametri in un metodo potrebbe indicare un grado di complessità troppo elevato del metodo.
+	\end{itemize}
+
 \subsubsection{Strumenti}
 Di seguito sono elencati gli strumenti utilizzati dal gruppo durante il 
 progetto per il processo di sviluppo.
@@ -509,6 +555,10 @@ Utilizzato per mantenere lo stato dell'applicazione.\\
 \paragraph{Travis} \mbox{}\\ \mbox{}\\
 Impiegato per garantire la continuous integration.\\
 \centerline{\url{https://travis-ci.org/}}
+
+\paragraph{Surge.sh} \mbox{}\\ \mbox{}\\
+Utilizzato per favorire l'accessibilità del sito a livello globale, ovvero occupa la posizione di host dell'applicazione.\\
+\centerline{\url{https://surge.sh/}}
 
 \paragraph{Node.js} \mbox{}\\ \mbox{}\\
 Utilizzato per creare applicazioni di rete scalabili non solo lato client ma anche lato server.\\
