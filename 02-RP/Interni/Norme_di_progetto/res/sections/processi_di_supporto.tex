@@ -488,8 +488,7 @@
 		Per la validazione dei fogli di stile CSS viene utilizzato lo strumento offerto dal W3C, raggiungibile al seguente indirizzo: \newline
 		\centerline{\url{https://jigsaw.w3.org/css-validator/}} \newline
 
-		%\paragraph{Metriche} ????
-		% da fare
+
 \subsection{Validazione}
 	\subsubsection{Scopo}
 	Lo scopo della validazione è stabilire se il prodotto soddisfa il compito per cui è stato creato. Dopo la validazione, è garantito che il software rispetti i requisiti e che soddisfa i bisogni del committente.
@@ -502,6 +501,9 @@
 		\item le conformità del prodotto finito.
 	\end{itemize}
 	\end{comment}
+	\subsubsection{Descrizione}
+	Al  fine  di  garantire  la  necessaria  obiettività  e  imparzialità  nell'esecuzione,  chi  eseguirà un  determinato  test  dovrà  per  forza  essere  una  persona  distinta  da  chi  l’ha  progettato ed implementato.
+	Sarà compito dei progettisti definire la pianificazione e la progettazione dei test, compito dei verificatori eseguirli e tracciarne i risultati tramite gli strumenti stabiliti.
 	\subsubsection{Attività}
 	Per validare il prodotto si devono rispettare i seguenti punti:
 	\begin{itemize}
@@ -510,6 +512,14 @@
 		\item applicare la strategia;
 		\item valutare che i risultati rispettino le aspettative.
 	\end{itemize}
+	Questo processo si può suddividere in due attività principali:
+	\begin{itemize}
+		\item \textbf{Test di sistema e di validazione}
+		\item \textbf{Collaudo}
+	\end{itemize}
+	I test di sistema sono eseguiti tramite test di integrazione che non verificheranno la correttezza logica del software scritto, bensì la conformità rispetto alle attese delle funzionalità presenti. Per avere la totale certezza del soddisfacimento di tutti requisiti i test di validazione verranno tracciati in modo automatico utilizzando lo strumento PragmaDB.
+	
+	
 
 \subsection{Metriche di qualità}
 \subsubsection{Documentazione}
@@ -540,7 +550,7 @@ Le metriche utilizzate sono:
 	\item il numero di errori ortografici o grammaticali.
 \end{itemize}
 	\subsubsection{Pianificazione}
-La pianificazione è un’attività significativa della gestione di progetto. Consiste nel governare le	risorse a disposizione, ovvero tempi, costi e ruoli, monitorarle nel tempo e reagire efficacemente ai cambiamenti. La pianificazione si esprime specificatamente all'interno del Piano di Progetto.\\
+La pianificazione è un'attività significativa della gestione di progetto. Consiste nel governare le	risorse a disposizione, ovvero tempi, costi e ruoli, monitorarle nel tempo e reagire efficacemente ai cambiamenti. La pianificazione si esprime specificatamente all'interno del Piano di Progetto.\\
 Gli obiettivi sono:
 \begin{itemize}
 	\item avere a disposizione piani e obiettivi ben definiti;
@@ -557,7 +567,7 @@ La strategia prevede di:
 Le metriche utilizzate sono:
 \begin{itemize}
 	\item \textbf{Actual Cost} (AC): il denaro speso fino al momento del calcolo;
-	\item \textbf{Earned Value} (EV): metrica di utilità per il calcolo di $SV$ e $CV$ (spiegate successivamente). Si tratta del valore del lavoro fatto fino al momento del calcolo; corrisponde al denaro guadagnato fino a quel momento. Si misura con $BAC \cdot \%\ di\ lavoro\ completato\ $;
+	\item \textbf{Earned Value} (EV): metrica di utilità per il calcolo di $SV$ e $CV$ (spiegate successivamente). Si tratta del valore del lavoro fatto fino al momento del calcolo; corrisponde al denaro guadagnato fino a quel momento;
 	\item \textbf{Planned Value} (PV): metrica di utilità per il calcolo di $SV$ e $CV$ (spiegate successivamente). Si tratta del valore del lavoro pianificato al momento del calcolo: corrisponde al denaro che si dovrebbe aver guadagnato in quel momento. Si misura con $BAC \cdot \%\ di\ lavoro\ pianificato\ $;
 	\item \textbf{Schedule Variance} (SV): Esprime lo stato di anticipo o ritardo nello svolgimento del progetto rispetto alla pianificazione. Si calcola come $SV = EV - PV$
 	\item \textbf{Cost Variance} (CV): Differenza tra il costo del lavoro effettivamente completato e quello
@@ -574,7 +584,7 @@ La strategia prevede di:
 \begin{itemize}
 	\item individuare tecniche e strumenti di verifica;
 	\item applicarli;
-	\item affinarli con l’esperienza.
+	\item affinarli con l'esperienza.
 \end{itemize}
 La metrica utilizzata è la \textbf{Code Coverage} (CC), una percentuale che indica il numero di righe di codice percorse dai test durante la loro	esecuzione. Per linee di codice totali si intende tutte quelle appartenenti all'unità in fase di test e si calcola con la seguente formula:
 \begin{center}
