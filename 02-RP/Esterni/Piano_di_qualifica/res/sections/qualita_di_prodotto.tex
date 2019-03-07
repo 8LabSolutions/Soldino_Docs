@@ -9,7 +9,7 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 			\item \textbf{Conformità}: il prodotto deve aderire a determinati standard. %PLACEHOLDER è forse troppo ovvio?
 		\end{itemize}
 		\subsubsection{Metriche}
-			\paragraph{Completezza dell'implementazione}
+			\paragraph{Completezza dell'implementazione}\mbox{}\\
 			La completezza del prodotto e il rispetto dei requisiti viene indicato da una percentuale.
 			\begin{itemize}
 			\item misurazione: si calcola con la seguente formula: \\
@@ -26,7 +26,7 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 			\item tolleranza agli errori: il prodotto mantiene alte prestazioni anche in caso di malfunzionamenti o di un uso scorretto.
 		\end{itemize}
 		\subsubsection{Metriche}
-			\paragraph{Densità errori}
+			\paragraph{Densità errori}\mbox{}\\
 			L'abilità del prodotto di resistere a malfunzionamenti viene indicata con una percentuale.
 			\begin{itemize}
 			\item misurazione: si calcola con la seguente formula: \\
@@ -44,27 +44,21 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 			\item attrattività: il prodotto deve essere piacevole da usare.
 		\end{itemize}
 		\subsubsection{Metriche}
-			\paragraph{Facilità di utilizzo}
+			\paragraph{Facilità di utilizzo}\mbox{}\\
 			La facilità con cui l'utente raggiunge ciò che vuole viene rappresentata tramite il numero di click necessari per arrivare al contenuto desiderato.
 			\begin{itemize}
 			\item misurazione: click per raggiungere la schermata di checkout;
 			\item valore preferibile: $\leq$ 10;
 			\item valore accettabile: $\leq$ 15.
 			\end{itemize}
-			\paragraph{Facilità di apprendimento}
+			\paragraph{Facilità di apprendimento}\mbox{}\\
 			La facilità con cui l'utente riesce ad imparare ad usare le funzionalità del prodotto viene rappresentata tramite il tempo medio che serve per comprenderle.
 			\begin{itemize}
 			\item misurazione: minuti per raggiungere pagina di checkout;
 			\item valore preferibile: $\leq$ 3;
 			\item valore accettabile: $\leq$ 5.
 			\end{itemize}
-			\paragraph{Profondità della gerarchia}
-			La profondità del sito. Un sito per essere facile da utilizzare non deve essere troppo profondo.
-			\begin{itemize}
-			\item misurazione: livello di profondità della pagine;
-			\item valore preferibile: $\leq$ 4;
-			\item valore accettabile: $\leq$ 7.
-			\end{itemize}
+\pagebreak
 	\subsection{Manutenibilità}
 	Capacità del prodotto di essere modificato, includendo correzioni, miglioramenti o adattamenti.
 		\subsubsection{Obiettivi}
@@ -73,11 +67,12 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 			\item modificabilità: capacità del prodotto di permettere l'implementazione di una modifica.
 		\end{itemize}
 		\subsubsection{Metriche}
-			\paragraph{Facilità di comprensione}
+			\paragraph{Facilità di comprensione}\mbox{}\\
 			La facilità con cui è possibile comprendere cosa fa il codice può rappresentata dal numero di linee di commento nel codice.
 			\begin{itemize}
 			\item misurazione: si può calcolare con la seguente formula: \\
-			\centerline{R = \(\frac{N\textsubscript{LCOM}}{N\textsubscript{LCOD}} \) }
+			$$ R = \frac{N\textsubscript{LCOM}}{N\textsubscript{LCOD}}  $$
+		
 			dove N\textsubscript{LCOM} indica le linee di commento e N\textsubscript{LCOD} indica le linee di codice;
 			\item valore preferibile: $\geq$ 0.20;
 			\item valore accettabile: $\geq$ 0.10.
@@ -89,20 +84,22 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 			\item valore preferibile $\leq$ 3;
 			\item valore accettabile $\leq$ 6.
 			\end{itemize}
-			\paragraph{Semplicità delle classi}
+			\paragraph{Semplicità delle classi}\mbox{}\\
 			La facilità di una classe può essere rappresentata dal numero di metodi per classe: una classe con pochi metodi ha uno scopo ben preciso e facilmente comprensibile.
 			\begin{itemize}
 			\item misurazione: numero di metodi per classe;
 			\item valore preferibile $\leq$ 8;
 			\item valore accettabile $\leq$ 15.
 			\end{itemize}
-			\paragraph{Structural fan-in} Indica quante componenti utilizzano un dato modulo. Un alto	valore indica un alto riuso della componente.
+			\paragraph{Structural fan-in}\mbox{}\\ 
+			Indica quante componenti utilizzano un dato modulo. Un alto	valore indica un alto riuso della componente.
 			\begin{itemize}
 				\item misurazione: conteggio delle componenti;
 				\item valore preferibile: $\geq$ 1;
 				\item valore accettabile: $\geq$ 0.
 			\end{itemize}
-			\paragraph{Structural fan-out} Indica quante componenti vengono utilizzate dalla componente in esame. Un alto valore indica un alto accoppiamento della componente.
+			\paragraph{Structural fan-out}\mbox{}\\
+			 Indica quante componenti vengono utilizzate dalla componente in esame. Un alto valore indica un alto accoppiamento della componente.
 			\begin{itemize}
 				\item misurazione: conteggio delle componenti;
 				\item valore preferibile: = 0;
