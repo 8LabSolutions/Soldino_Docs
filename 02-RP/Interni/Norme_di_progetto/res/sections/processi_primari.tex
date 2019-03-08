@@ -3,7 +3,7 @@
 \subsection{Fornitura}
 
 \subsubsection{Scopo}
-Lo scopo del processo di fornitura è quello di determinare le procedure e le risorse 
+Lo scopo del processo di fornitura è di determinare le procedure e le risorse 
 necessarie allo svolgimento del progetto. Una volta comprese le richieste del 
 proponente e aver stilato uno \textit{Studio di Fattibilità}, il processo può 
 essere avviato con fine di soddisfare ognuna di queste richieste. Inoltre si 
@@ -48,7 +48,7 @@ Riccardo Cardin.
 
 \paragraph{Studio di Fattibilità} \mbox{}\\ 
 
-\noindent È compito del responsabile di progetto organizzare riunioni tra i membri del 
+\noindent \'E compito del responsabile di progetto organizzare riunioni tra i membri del 
 gruppo al fine di permettere lo scambio di opinioni sui capitolati proposti.
 Lo \textit{Studio di Fattibilità}, redatto dagli analisti, indica per ogni 
 capitolato\glo:
@@ -249,7 +249,7 @@ Dove:
 				\item \textit{1}: requisito obbligatorio, ovvero irrinunciabile per gli 
 					stakeholder;
 				\item \textit{2}: requisito desiderabile, ovvero non strettamente 
-					necessario ma a valore aggiunto riconoscibile;
+					necessari ma a valore aggiunto riconoscibile;
 				\item \textit{3}: requisito opzionale, ovvero relativamente utile oppure 
 					contrattabile più avanti nel progetto.	
 			\end{itemize}
@@ -322,43 +322,44 @@ dei sottosistemi in modo da ricondurre ad un'unica possibile soluzione. \newline
 
 \noindent Le parti principali sono due:
 	\begin{itemize}
-		\item \textbf{technology baseline}: ha lo scopo di verificare che tutte le tecnologie scelte siano compatibili fra loro e che esse siano adatte al soddisfacimento dei requisiti individuati nel documento \textit{Analisi dei Requisiti};
-		\item \textbf{product baseline}: basandosi su ciò che è emerso dalla technology baseline\glo, viene progettata e codificata una soluzione atta a soddisfare tutti i requisiti selezionati. Inoltre definisce i test necessari alla verifica. \newline
+		\item \textbf{technology baseline}: contiene le specifiche della 
+			progettazione ad alto livello del prodotto e delle sue componenti, l'elenco dei 
+			diagrammi UML\glosp che saranno utilizzati per la realizzazione 
+			dell'architettura e i test di verifica;
+		\item \textbf{product baseline}: dettaglia ulteriormente l'attività di 
+			progettazione, integrando ciò che è riportato nella technology baseline. Inoltre 
+			definisce i test necessari alla verifica. \newline
 	\end{itemize}
 
 
 \paragraph*{Technology baseline} \mbox{}\\
 
-\noindent I \textit{progettisti} ed i \textit{programmatori} dovranno progettare e codificare il Proof of Concept\glo, un prototipo volto a:
+\noindent Redatta dal progettista, dovrà includere:
 	\begin{itemize}
-		\item \textbf{testare le tecnologie}: verificare che tutte le tecnologie selezionate riescano ad interagire fra loro;
-		\item \textbf{garantire la completezza dell'architettura di base del sistema}: verificare che tutte le tecnologie implementate riescano a garantire la futura implementazione di tutte le funzionalità.
-		
+		\item \textbf{diagrammi UML\glo}:
+		\begin{itemize}
+			\item diagrammi dei casi d'uso;
+			\item diagrammi delle classi;
+			\item diagrammi dei package;
+			\item diagrammi di attività;
+			\item diagrammi di sequenza.
+		\end{itemize}
+		\item \textbf{tecnologie utilizzate}: devono essere descritte le tecnologie 
+			adottate specificandone l'utilizzo nel progetto, i vantaggi e gli svantaggi;
+		\item \textbf{design pattern\glo}: devono essere descritti i design 
+			pattern\glosp utilizzati per realizzare l'architettura. Ogni design 
+			pattern\glosp deve essere accompagnato da una descrizione ed un diagramma, che 
+			ne esponga il significato e la struttura;
+		\item \textbf{tracciamento delle componenti}: ogni requisito deve riferirsi 
+			al componente che lo soddisfa;
+		\item \textbf{test di integrazione}: l'unione delle parti, intese come 
+			classi di verifica, permette di verificare che ogni componente del sistema 
+			funzioni nella maniera voluta. \newline
 	\end{itemize}
-%		\item \textbf{diagrammi UML\glo}:
-%		\begin{itemize}
-%			\item diagrammi dei casi d'uso;
-%			\item diagrammi delle classi;
-%			\item diagrammi dei package;
-%			\item diagrammi di attività;
-%			\item diagrammi di sequenza.
-%		\end{itemize}
-%		\item \textbf{tecnologie utilizzate}: devono essere descritte le tecnologie 
-%			adottate specificandone l'utilizzo nel progetto, i vantaggi e gli svantaggi;
-%		\item \textbf{design pattern\glo}: devono essere descritti i design 
-%			pattern\glosp utilizzati per realizzare l'architettura. Ogni design 
-%			pattern\glosp deve essere accompagnato da una descrizione ed un diagramma, che 
-%			ne esponga il significato e la struttura;
-%		\item \textbf{tracciamento delle componenti}: ogni requisito deve riferirsi 
-%			al componente che lo soddisfa;
-%		\item \textbf{test di integrazione}: l'unione delle parti, intese come 
-%			classi di verifica, permette di verificare che ogni componente del sistema 
-%			funzioni nella maniera voluta. \newline
-%	\end{itemize}
 			
 \paragraph*{Product baseline} \mbox{}\\
 
-\noindent A carico dei \textit{progettisti} c'è anche la product baseline che si sofferma su 
+\noindent A carico del progettista c'è anche la product baseline che si sofferma su 
 diversi aspetti tra i quali:
 	\begin{itemize}
 		\item \textbf{definizione delle classi}: ogni classe deve essere descritta 
@@ -369,9 +370,7 @@ diversi aspetti tra i quali:
 			Questa operazione è fondamentale per permettere di risalire alle classi ad esso 
 			associate;
 		\item \textbf{test di unità}: devono essere definiti al fine di verificare 
-			che le parti funzionino individualmente nel modo stabilito;
-			\item \textbf{test di integrazione}: l'unione delle parti, intese come classi di verifica, permette di verificare che ogni componente del sistema 
-			funzioni nella maniera voluta.
+			che le parti funzionino individualmente nel modo stabilito.
 	\end{itemize}
 		
 \paragraph{Codifica} 
