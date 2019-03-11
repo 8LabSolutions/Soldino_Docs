@@ -1,36 +1,42 @@
-\subsubsection{UC6 - Gestione carrello}
- \begin{figure}[h]
-	\includegraphics[width=6cm]{res/images/UC6GestioneCarrello.png}
+ \begin{figure}[H]
+	\includegraphics[width=6cm]{res/images/UC13.png}
 	\centering
-	\caption{UC6 - Gestione carrello}
+	\caption{UC13 - Gestione carrello}
 \end{figure}
+\subsubsection{UC13 - Gestione carrello}
+
 \begin{itemize}
 	\item \textbf{Attori Primari}: cittadino, azienda;
-	\item \textbf{Descrizione}: ai cittadini ed alle aziende è reso disponibile un carrello virtuale per poter organizzare i propri acquisti;
+	\item \textbf{Descrizione}: ai cittadini ed alle aziende è disponibile un carrello virtuale per poter organizzare i propri acquisti;
 	\item \textbf{Scenario principale}: l'utente effettua le operazioni necessarie all'acquisto di beni e servizi. Esse comprendono:
 	\begin{enumerate}[label=\alph*.]
-		\item l'inserimento di un bene/servizio [UC6.1];
-		\item la visualizzazione dei prodotti nel carrello [UC6.2];
-		\item la modifica della quantità relativa ad un prodotto nel carrello [UC6.3];
-		\item la rimozione di un prodotto dal carrello [UC6.4].
+		\item l'inserimento di un bene/servizio [UC13.1];
+		\item la visualizzazione dei prodotti nel carrello [UC13.2];
+		\item la modifica della quantità relativa ad un prodotto nel carrello [UC13.3];
+		\item la rimozione di un prodotto dal carrello [UC13.4].
 	\end{enumerate}
 	\item \textbf{Precondizione}: il sistema riconosce l'utente come cittadino o azienda e rende disponibile il carrello virtuale;
 	\item \textbf{Postcondizione}: l'utente può procedere all'acquisto di tutti i beni e/o servizi presenti nel carrello.
 \end{itemize} 
- \subsubsection{UC6.1 - Inserimento prodotto}
+ \begin{figure}[h]
+	\includegraphics[width=6cm]{res/images/UC13GestioneCarrello.png}
+	\centering
+	\caption{UC13 - Gestione carrello, sottocasi}
+\end{figure}
+ \subsubsection{UC13.1 - Inserimento prodotto}
 \begin{itemize}
 	\item \textbf{Attori Primari}: cittadino, azienda;
 	\item \textbf{Descrizione}: l'utente inserisce il prodotto selezionato nel carrello, nella quantità desiderata;
 	\item \textbf{Scenario principale}:
 	\begin{enumerate}[label=\alph*.]
-		\item l'utente sta visualizzando i prodotti offerti [UC5];
-		\item l'utente seleziona la quantità desiderata del prodotto [UC5.1];
+		\item l'utente sta visualizzando i prodotti offerti [UC10];
+		\item l'utente seleziona la quantità desiderata del prodotto [UC11];
 		\item l'utente preme il pulsante per l'inserimento del prodotto nel carrello.
 	\end{enumerate}
 	\item \textbf{Precondizione}: l'utente sta visualizzando i prodotti in vendita nella piattaforma dalla pagina dedicata;
 	\item \textbf{Postcondizione}: nel carrello dell'utente è presente il bene o il servizio selezionato.
 \end{itemize}
-\subsubsection{UC6.2 - Visualizzazione prodotti del carrello}
+\subsubsection{UC13.2 - Visualizzazione prodotti del carrello}
 \begin{itemize}
 	\item \textbf{Attori Primari}: cittadino, azienda;
 	\item \textbf{Descrizione}: l'utente visualizza un riepilogo di tutti i prodotti presenti all'interno del proprio carrello. Per ognuno di essi può visualizzare dei dettagli riassuntivi, che sono:
@@ -39,14 +45,14 @@
 		\item la quantità;
 		\item il prezzo unitario.
 	\end{itemize}
-	Inoltre è disponibile il prezzo totale dei prodotti.
+	Inoltre è disponibile il prezzo totale dei prodotti;
 
 	\item \textbf{Scenario principale}: l'utente si trova all'interno della pagina del proprio carrello virtuale e può visualizzare la lista dei prodotti aggiunti al carrello;
 	\item \textbf{Precondizione}: l'utente deve essere all'interno della pagina del proprio carrello;
 	\item \textbf{Postcondizione}: l'utente ha potuto controllare la lista dei prodotti all'interno del proprio carrello.
 \end{itemize}
 
-\subsubsection{UC6.3 - Modifica quantità di un prodotto nel carrello}
+\subsubsection{UC13.3 - Modifica quantità di un prodotto nel carrello}
 \begin{itemize}
 	\item \textbf{Attori Primari}: cittadino, azienda;
 	\item \textbf{Descrizione}: l'utente modifica la quantità di un prodotto presente nel proprio carrello;
@@ -55,7 +61,7 @@
 	\item \textbf{Postcondizione}: la quantità del prodotto considerato è stata modificata come indicato dall'utente.
 \end{itemize}
 
-\subsubsection{UC6.4 - Rimozione prodotto}
+\subsubsection{UC13.4 - Rimozione prodotto}
 \begin{itemize}
 	\item \textbf{Attori Primari}: cittadino, azienda;
 	\item \textbf{Descrizione}: l'utente rimuove il prodotto selezionato dal proprio carrello;

@@ -1,0 +1,55 @@
+\section{Verbale della riunione}
+Il gruppo ha esposto le domande preparate anticipatamente con l'aiuto di un 
+documento condiviso, che illustrava domande e diagrammi.
+
+\subsection{Analisi dei requisiti}
+I seguenti punti fanno riferimento al documento \textit{Analisi dei Requisiti v1.0.0} e alle correzioni suggerite nell'RR.
+\begin{itemize}
+	\item \textbf{Figura 3.2.1}: la figura in questione rappresenta i casi 
+	d'uso da UC1 a UC8, risultando sbagliata: essa infatti non rispetta il 
+	formalismo dei diagrammi UML, non essendo un caso d'uso e non avendo pre e 
+	post condizioni. Soluzioni possibili sono la sua rimozione o la sua 
+	suddivisione;
+	\item \textbf{UC3: login e UC3.1: login automatico}: nel nostro caso, l'unica forma di login è il login automatico, che attualmente è un sottocaso di login. Ciò non è corretto, quindi login automatico e login devono coincidere in UC3;
+	\item \textbf{UC5: visualizzazione beni e servizi e UC5.1: modifica quantità selezionata}: questi due casi d'uso devono essere portati allo stesso livello gerarchico (assumendo i codici UC5 e UC6). Tale modifica comporta modifiche a cascata sui numeri dei codici dei casi d'uso successivi . Si è discusso se fosse possibile creare una nuova codifica per i casi d'uso, associando una lettera alle cifre (es.: UC5A, UC5B). La proposta è stata scartata, perché non sarebbe una soluzione definitiva e peserebbe sulla leggibilità del documento. Abbiamo deciso allora di utilizzare riferimenti dinamici in \LaTeX{} per facilitare le modifiche future e la manutenibilità dell'\textit{Analisi dei Requisiti};
+	\item \textbf{Poca chiarezza sul ruolo di Metamask} dalla correzione risultava poco chiaro il ruolo di Metamask, in particolar modo il suo ruolo di attore. La soluzione è sottolinearlo inserendo Metamask in una figura sezione "Attori dei casi d'uso";
+	\item \textbf{UC15.2.1: visualizzazione fattura in dettaglio}: non era chiaro se la visualizzazione in dettaglio fosse o meno un sottocaso della visualizzazione della lista delle fatture di un trimestre (UC15.2). Abbiamo concordato con il prof. Cardin che le due funzionalità sono separate, quindi anche i due casi d'uso. Di conseguenza, UC15.2.1 cambia il proprio codice in UC15.8;
+	\item \textbf{UC2.1: Identificazione utente attraverso Metamask}: in UC2.1 ci è stato fatto notare che non esistono attori primari, dunque il caso d'uso non sussiste. In particolare, abbiamo capito che nonostante l'identificazione avvenga effettivamente, essa è svolta da Metamask e dal sistema automaticamente. L'utente non è coinvolto nella procedura. Gli errori relativi a UC2.1, detti UC2.5, UC2.6 e UC2.7 restano comunque validi e si associano all'UC2.2 (Inserimento dati account).
+	
+\end{itemize}
+
+\subsection{Pianificazione}
+Nel \textit{Piano di Progetto v1.0.0} dichiariamo di usare il modello di sviluppo incrementale. Ciò non è conforme ai diagrammi di Gantt illustrati nella sezione "Pianificazione", che rispecchiano un modello sequenziale. Abbiamo chiesto se fosse opportuno correggere anche le fasi di pianificazione già passate. Ci è stato detto di no. Di conseguenza, le modifiche saranno apportate solamente ai diagrammi successivi a RR (esclusa).
+
+\subsection{Revisione di progettazione}
+Non era chiaro quali documenti fosse necessario consegnare per la RP. Abbiamo appreso che non ci sono vincoli a proposito, e che il focus principale della RP è la produzione del Proof of Concept (PoC) in forma di programma eseguibile. Nel PoC devono essere utilizzate e interconnesse tutte le tecnologie (o la maggior parte), e deve servire da allenamento al loro uso e da dimostrazione che siano applicabili. I documenti a corredo non hanno numero e forma specifica: ciò che conta è che supportino il PoC.
+Inoltre, per la sua natura esplorativa, il PoC non richiede test formali.
+
+
+\pagebreak
+
+\section{Riepilogo delle decisioni}
+
+	%\renewcommand{\arraystretch}{1.5}
+	\rowcolors{2}{pari}{dispari}
+	
+	\begin{longtable}{ >{\centering}p{0.20\textwidth} >{}p{0.70\textwidth}}
+		\caption{Decisioni della riunione del 2019-02-19}\\	
+		\rowcolorhead
+		\textbf{\color{white}Codice} 
+		& \centering\textbf{\color{white}Decisione} 
+		\tabularnewline 
+		\endfirsthead
+		VE\_4.1 & Il documento \textit{Analisi dei Requisiti} verrà corretto secondo le indicazioni ricevute.
+		
+		\tabularnewline 
+		VE\_4.2 & Il documento \textit{Piano di Progetto} verrà corretto secondo le indicazioni ricevute.
+	
+		\tabularnewline 
+		VE\_4.3 & Il PoC si concentrerà sull'esplorazione delle tecnologie e sulla fattibilità della loro applicazione.
+	
+		\tabularnewline 
+		VE\_4.4 & Il PoC non sarà corredato di test.
+
+	\end{longtable}
+

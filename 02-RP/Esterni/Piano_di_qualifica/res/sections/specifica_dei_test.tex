@@ -20,62 +20,20 @@ Inoltre per lo stato dei test si usano le seguenti abbreviazioni:
 	\item \textbf{NS}: per indicare che il test non ha soddisfatto la richiesta.
 \end{itemize}
 
-\subsection{Tipi di test}
-Vengono individuate quattro tipologie di test:
-\begin{itemize}
-	\item \textbf{Test di Accettazione[TA]}: essi vengono fatti per verificare 
-		che il prodotto soddisfi quanto richiesto dal proponente;
-	\item \textbf{Test di Sistema [TS]}: questi test vengono utilizzati quando il 
-		sistema viene installato su una piattaforma e verificano che esso raggiunga gli 
-		obiettivi fissati e soddisfi le richieste formulate in partenza;
-	\item \textbf{Test di Integrazione [TI]}: lo scopo di questi test è quello di 
-		testare come un gruppo i singoli moduli\glo{} del software. Essi vengono svolti 
-		dopo i Test di Unità e prima dei Test di Sistema; 
-	\item \textbf{Test di Unità [TU]}: questi test hanno il compito di verificare le 
-		singole unità del software, ovvero le minime componenti del programma che hanno 
-		un funzionamento autonomo. Il successo da parte di questi test non implica il 
-		corretto funzionamento da parte del software.		
-\end{itemize}
+\noindent La codifica dei seguenti test è presente nel documento \textit{Norme di Progetto v2.0.0}.
 
-\subsubsection{Test di Accettazione}
-I test di accettazione hanno lo scopo di dimostrare che il software sviluppato 
-soddisfi i requisiti presentati nel capitolato e concordati con il proponente, essi vengono eseguiti durante il
-collaudo finale. Tali test verranno indicati nel seguente modo: \\
-	\centerline{\textbf{TA[Tipo][Importanza][Codice]}}
-dove:
-\begin{itemize}
-	\item \textbf{Tipo}: indica di che tipo si tratta il requisito. Può
-		appartenere a una delle seguenti categorie indicate con:
-		\begin{itemize}
-			\item \textbf{O} per i requisiti obbligatori;
-			\item \textbf{D} per i requisiti desiderabili;
-			\item \textbf{F} per i requisiti facoltativi.			
-		\end{itemize}
-	\item \textbf{Importanza}: indica l'importanza del requisito. L'importanza
-		che può assumere un requisito viene indicata con:
-		\begin{itemize}
-			\item \textbf{F} per indicare un requisito funzionale;
-			\item \textbf{V} per indicare un requisito di vincolo;
-			\item \textbf{Q} per indicare un requisito di qualità;
-			\item \textbf{P} per indicare un requisito prestazionale. 
-		\end{itemize}
-	\item \textbf{Codice}: rappresenta il codice identificativo crescente
-		del componente da verificare.
-\end{itemize}
-
-
-
+\subsection{Test di accettazione} 
 	\renewcommand{\arraystretch}{1.5}
 	\rowcolors{2}{pari}{dispari}
 	
-	\begin{longtable}{ >{\centering}p{0.10\textwidth} >{\centering}p{0.655\textwidth}
+	\begin{longtable}{ >{\centering}p{0.10\textwidth} >{}p{0.655\textwidth}
 			>{\centering}p{0.15\textwidth}}% >{\centering}p{0.14\textwidth}}
 			
 		%\hline
 		\caption{Riepilogo Test di Accettazione}\\	
 		\rowcolorhead
-		\textbf{\color{white}Requisito} 
-		& \textbf{\color{white}Descrizione} 
+		\textbf{\color{white}Codice} 
+		& \centering\textbf{\color{white}Descrizione} 
 		& \centering\textbf{\color{white}Esito}
 	%	& \textbf{\color{white}Fonti} 
 		\tabularnewline %\hline 
@@ -83,14 +41,14 @@ dove:
 		
 		\rowcolor{white}\caption[]{(continua)}\\	
 		\rowcolorhead
-		\textbf{\color{white}Requisito} 
-		& \textbf{\color{white}Descrizione} 
+		\textbf{\color{white}Codice} 
+		& \centering\textbf{\centering\color{white}Descrizione} 
 		& \centering\textbf{\color{white}Esito}
 		%	& \textbf{\color{white}Fonti} 
 		\tabularnewline %\hline 
 		\endhead	
 		
-		 \texttt{TSDF1}	&	L'utente deve poter accedere alla guida dell'applicazione. All'utente viene
+		 TSDF1	&	L'utente deve poter accedere alla guida dell'applicazione. All'utente viene
 		 chiesto di:
 		 \begin{itemize}
 		 	\item verificare che sia possibile accedere alla guida;
@@ -99,14 +57,14 @@ dove:
 		 	\item verificare che la guida riporti informazioni riguardanti il pagamento
 		 	delle operazioni. 
 		 \end{itemize}	&	NI	\tabularnewline
-		 \texttt{TSOF2}	&	L'utente non ancora autenticato deve poter effettuare la registrazione al
+		 TSOF2	&	L'utente non ancora autenticato deve poter effettuare la registrazione al
 		 sistema. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina di registrazione;
 		 	\item selezionare il tipo di utente;
 		 	\item inserire i dati in base al tipo scelto.
 		 \end{itemize}	&	NI	\tabularnewline
-		 \texttt{TSOF2.1}	&	L'utente deve potersi registrare come cittadino. All'utente viene chiesto di:
+		 TSOF2.1	&	L'utente deve potersi registrare come cittadino. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina di registrazione e scegliere la registrazione
 		 	come cittadino;
@@ -115,7 +73,7 @@ dove:
 		 	\item inserire il nome;
 		 	\item inserire il cognome.
 		 \end{itemize}	&	NI	\tabularnewline
-		 \texttt{TSOF2.2}	&	L'utente deve potersi registrare come azienda. All'utente viene chiesto di:
+		 TSOF2.2	&	L'utente deve potersi registrare come azienda. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina di registrazione e scegliere la registrazione
 		 	come azienda;
@@ -124,10 +82,10 @@ dove:
 		 	\item inserire la partita IVA;
 		 	\item inserire il nome.
 		 \end{itemize}	&	NI	\tabularnewline
-		 \texttt{TSOF2.3}	&	L'utente deve poter visualizzare un messaggio di errore nel caso in cui la
+		 TSOF2.3	&	L'utente deve poter visualizzare un messaggio di errore nel caso in cui la
 		 chiave reperita da MetaMask\glo{} durante la registrazione sia già presente
 		 nel sistema.	&	NI	\tabularnewline
-		 \texttt{TSOF3.1}	&	L'utente deve poter autenticarsi nel sistema in modo automatico attraverso
+		 TSOF3.1	&	L'utente deve poter autenticarsi nel sistema in modo automatico attraverso
 		 MetaMask\glo{}. All'utente è chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla sezione per il login;
@@ -282,7 +240,7 @@ dove:
 		 	\item verificare che per ogni acquisto sia visualizzato l'indirizzo di 
 		 	spedizione dell'acquisto;
 		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF15.7	&	L'utente autenticato come azienda o cittadino deve poter visualizzare la lista delle conferme d’acquisto\glosp che necessitano
+		 TSOF15.7	&	L'utente autenticato come azienda o cittadino deve poter visualizzare la lista delle conferme d'acquisto\glosp che necessitano
 		 di conferma. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina dedicata alle conferme d'acquisto;
@@ -290,14 +248,14 @@ dove:
 		 	\item verificare che per ogni conferma d'acquisto sia visualizzato il prezzo netto del prodotto;
 		 	\item verificare che per ogni conferma d'acquisto sia visualizzata l'aliquota IVA applicata al prodotto;
 		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF15.7.1	&	L'utente autenticato come azienda o cittadino deve poter rifiutare una conferma d’acquisto\glosp che necessita
+		 TSOF15.7.1	&	L'utente autenticato come azienda o cittadino deve poter rifiutare una conferma d'acquisto\glosp che necessita
 		 di conferma. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina dedicata alle conferme d'acquisto;
 		 	\item cliccare sul pulsante per rifiutare una conferma d'ordine;
 		 	\item verificare che tale conferma d'ordine venga rifiutata;
 		 \end{itemize}	&	NI	\tabularnewline
-		 TSOF15.7.2	&	L'utente autenticato come azienda o cittadino deve poter approvare una conferma d’acquisto\glosp che necessita
+		 TSOF15.7.2	&	L'utente autenticato come azienda o cittadino deve poter approvare una conferma d'acquisto\glosp che necessita
 		 di conferma. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina dedicata alle conferme d'acquisto;
@@ -485,27 +443,8 @@ dove:
 	
 	\end{longtable}
 
-\subsubsection{Test di Sistema}
-I test di sistema sono impiegati per garantire il corretto funzionamento delle 
-componenti dell'intero sistema. Tali test verranno indicati nel seguente modo:\\
-	\centerline{\textbf{TS[id]}}
-dove \textit{id} rappresenta il codice identificativo crescente del componente da
-verificare.\\
-Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla richiesta della sua istanziazione.
+\subsection{Test di sistema}
 
+\subsection{Test di integrazione}
 
-\subsubsection{Test di Integrazione}
-I test di integrazione sono usati per verificare il corretto funzionamento tra le
-varie unità dell'architettura. Tali test verranno indicati nel seguente modo:\\
-	\centerline{\textbf{TI[id]}}
-dove \textit{id} rappresenta il codice identificativo crescente del componente da
-verificare.\\
-Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla richiesta della sua istanziazione.
-
-\subsubsection{Test di Unità}
-I test di unità hanno l'obiettivo di verificare il corretto funzionamento della 
-parte più piccola autonoma del lavoro realizzato. Tali test verranno indicati nel
-seguente modo:\\
-	\centerline{\textbf{TU[id]}}
-dove \textit{id} rappresenta il codice identificativo crescente dell'unità da verificare.\\
-Tale tipologia di test verrà sviluppata in un immediato futuro, in seguito alla richiesta della sua istanziazione.
+\subsection{Test di unità}

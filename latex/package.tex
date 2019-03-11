@@ -67,8 +67,8 @@
 
 %COMANDI TABELLE
 \newcommand{\rowcolorhead}{\rowcolor[HTML]{56A5EC}} %intestazione 
-\newcommand{\rowcolorlight}{\rowcolor[HTML]{fafafa}} %righe chiare/dispari
-\newcommand{\rowcolordark}{\rowcolor[HTML]{e1f5fe}} %righe scure/pari
+\newcommand{\rowcolorlight}{\rowcolor[HTML]{FAFAFA}} %righe chiare/dispari
+\newcommand{\rowcolordark}{\rowcolor[HTML]{E1F5FE}} %righe scure/pari
 \newcommand{\colorhead}{\color[HTML]{FFFFFF}} %testo intestazione
 \newcommand{\colorbody}{\color[HTML]{000000}} %testo righe
 \newcommand{\tabitem}{~~\rlap{\textbullet}~~}
@@ -83,5 +83,13 @@
 \usepackage{lastpage}
 %\fancypagestyle{plain} {
 %	\fancyfoot[C]{Pagina \thepage\ di \pageref{LastPage}}}
+
+%label custom
+\makeatletter
+\newcommand{\uclabel}[2]{%
+	\protected@write \@auxout {}{\string \newlabel {#1}{{#2}{\thepage}{#2}{#1}{}} }%
+	\hypertarget{#1}{#2}
+}
+\makeatother
 
 
