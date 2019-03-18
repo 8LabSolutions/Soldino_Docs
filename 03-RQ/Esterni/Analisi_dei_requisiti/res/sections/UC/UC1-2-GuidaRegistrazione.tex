@@ -27,28 +27,30 @@
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Attori Secondari}: MetaMask\glo;
-	\item \textbf{Descrizione}: per effettuare il procedimento di registrazione, l'utente deve disporre di una chiave\glosp non ancora utilizzata per la registrazione all'interno del sistema, e deve compilare tutti i campi necessari;
-	\item \textbf{Scenario principale}: 
-		il sistema controlla la presenza di MetaMask\glosp e verifica che la prima chiave\glosp in esso contenuta non sia già associata ad un utente registrato alla piattaforma. Successivamente rende disponibili i campi da compilare per la registrazione. Dunque, se:
+	\item \textbf{Descrizione}: per effettuare la registrazione alla piattaforma, l'utente deve accedere alla pagina dedicata nella quale deve compilare tutti i campi necessari;
+	\item \textbf{Scenario principale}: a seguito dell'accesso dell'utente alla pagina di registrazione il sistema rende disponibili i campi da compilare per la registrazione. Dunque, se:
 	\begin{enumerate}[label=\alph*.]
 	
-		\item l'utente vuole registrarsi come normale \textbf{cittadino}: 
+		\item l'utente vuole registrarsi come \textbf{cittadino}: 
 		\begin{enumerate}[label=\roman*.]
 			\item l'utente inserisce i dati anagrafici [UC2.2];
-			\item l'utente conferma ed invia i dati inseriti [UC2.4].
+			\item l'utente conferma i dati inseriti [UC2.4].
 		\end{enumerate}
 		
 		
 		\item l'utente vuole registrare la propria \textbf{azienda}:
 		\begin{enumerate}[label=\roman*.]
 			\item l'utente inserisce i dati aziendali [UC2.3];
-			\item l'utente conferma ed invia i dati inseriti [UC2.4].
+			\item l'utente conferma i dati inseriti [UC2.4].
 		\end{enumerate}
-		
-		
-		
 	\end{enumerate}
-	\item \textbf{Precondizione}: l'utente ha MetaMask\glosp installato e correttamente impostato sul proprio browser, viene considerato dal sistema come un utente non autenticato. La prima chiave\glosp nel plug-in non risulta già associata ad alcun account nel sistema. L'utente intende registrarsi come cittadino o registrare la propria azienda; 
+	\item \textbf{Estensioni}: 
+		\begin{itemize}
+			\item\textbf{UC3}: se l'utente non dispone di MetaMask o ha disabilitato l'estensione, viene visualizzato un messaggio di errore a riguardo;
+			\item\textbf{UC4}: se l'utente non possiede una chiave\glosp su MetaMask, esso viene avvisato tramite l'apposito messaggio di errore;
+			\item\textbf{UC5}: se la chiave dell'utente, fornita da MetaMask, è già stata salvata dal sistema viene visualizzato un apposito messaggio di errore che informa l'utente che la sua chiave è già stata registrata.
+		\end{itemize}
+	\item \textbf{Precondizione}: L'utente ha acceduto alla pagina di registrazione e intende registrarsi come cittadino o registrare la propria azienda; 
 	\item \textbf{Postcondizione}: l'utente è registrato correttamente nel sistema come cittadino o azienda.
 	
 \end{itemize}
@@ -68,15 +70,14 @@
 		\item l'utente inserisce l'indirizzo di residenza (sede nel caso della registrazione di un'azienda) da associare all'account [UC2.1.2].
 	\end{enumerate}
 	\item \textbf{Specializzazione}:
-	\begin{itemize}
-		\item \textbf{UC2.2}: l'utente inserisce i dati relativi alla registrazione di un cittadino;
-		\item \textbf{UC2.3}: l'utente inserisce i dati relativi alla registrazione di un'azienda.
-		
-	\end{itemize}
-	\item \textbf{Precondizione}: l'utente è entrato nel form per eseguire la procedura di registrazione. Il sistema ha rilevato e salvato una chiave\glosp valida (non associata ad alcun utente registrato alla piattaforma) attraverso il plug-in MetaMask\glo;
+		\begin{itemize}
+			\item \textbf{UC2.2}: l'utente inserisce i dati relativi alla registrazione di un cittadino;
+			\item \textbf{UC2.3}: l'utente inserisce i dati relativi alla registrazione di un'azienda.
+			
+		\end{itemize}
+	\item \textbf{Precondizione}: l'utente ha acceduto alla pagina dedicata alla procedura di registrazione;
 	\item \textbf{Postcondizione}: l'utente ha compilato i campi relativi ai dati dell'account richiesti da ogni tipologia di registrazione.
-	
-\end{itemize}
+	\end{itemize}
 \subsubsection{UC2.1.1 - Inserimento e-mail}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
@@ -115,7 +116,7 @@
 		\item l'utente inserisce il proprio nome [UC2.2.1];
 		\item l'utente inserisce il proprio cognome [UC2.2.2].
 	\end{enumerate}
-	\item \textbf{Precondizione}: l'utente ha cliccato sul pulsante relativo alla registrazione come cittadino, il sistema rende disponibile il form di registrazione. Il sistema ha rilevato e salvato una chiave\glosp valida attraverso MetaMask\glo;
+	\item \textbf{Precondizione}: l'utente ha cliccato sul pulsante relativo alla registrazione come cittadino, il sistema rende disponibile il form di registrazione;
 	\item \textbf{Postcondizione}: l'utente ha compilato i campi relativi alla registrazione di un cittadino alla piattaforma.
 \end{itemize}
 \subsubsection{UC2.2.1 - Inserimento nome}
@@ -149,7 +150,7 @@
 		\item l'utente inserisce la partita IVA dell'azienda [UC2.3.1];
 		\item l'utente inserisce il nome dell'azienda [UC2.3.2].
 	\end{enumerate}
-	\item \textbf{Precondizione}: l'utente ha cliccato il link per la registrazione di un'azienda. Il sistema ha rilevato e salvato una chiave\glosp valida (non associata ad alcun utente registrato alla piattaforma) attraverso MetaMask\glo;
+	\item \textbf{Precondizione}: l'utente ha cliccato il link per la registrazione di un'azienda;
 	\item \textbf{Postcondizione}: l'utente ha compilato i campi relativi alla registrazione di un'azienda alla piattaforma.
 \end{itemize}
 \subsubsection{UC2.3.1 - Inserimento partita IVA}
@@ -169,12 +170,12 @@
 	\item \textbf{Postcondizione}: l'utente ha compilato il campo con il nome dell'azienda che intende registrare.
 \end{itemize}
 
-\subsubsection{UC2.4 - Conferma ed invio dei dati}
+\subsubsection{UC2.4 - Conferma dei dati di registrazione}
 \begin{itemize}
 	\item \textbf{Attori Primari}: utente non autenticato;
 	\item \textbf{Descrizione}:
 	l'utente preme il pulsante per la conferma e l'invio dei dati. A schermo viene mostrato un messaggio che conferma il successo dell'operazione;
-	\item \textbf{Scenario principale}: l'utente preme il pulsante di verifica ed invio dei dati dopo aver compilato i campi del form;
+	\item \textbf{Scenario principale}: l'utente preme il pulsante di conferma dei dati dopo aver compilato i campi del form. Successivamente il sistema controlla la presenza di MetaMask\glosp e verifica che la prima chiave\glosp in esso contenuta non sia già associata ad un utente registrato alla piattaforma.
 	\item \textbf{Precondizione}: il sistema permette all'utente di compilare il form di registrazione. \`E presente il pulsante per la conferma dei dati;
 	\item \textbf{Postcondizione}: viene visualizzato un messaggio per informare l'utente del fatto che la richiesta di registrazione è avvenuta con successo.
 \end{itemize}
