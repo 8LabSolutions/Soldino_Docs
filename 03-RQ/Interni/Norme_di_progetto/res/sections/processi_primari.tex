@@ -457,28 +457,32 @@
 			\noindent{L'uso della ricorsione va evitato quanto più possibile in  quanto potrebbe
 			indurre ad una maggiore occupazione di memoria rispetto a soluzioni iterative.}
 			
-			\subparagraph{Metriche}	
-			La metrica usata è \textbf{la percentuale di requisiti obbligatori soddisfatti} (PROS) e viene calcolata con la seguente formula:	
+			
+			
+	\subsubsection{Metriche}
+	Illustriamo a seguire le metriche utilizzate nel processo di sviluppo, divise per attività.
+		\paragraph{Metriche di analisi dei requisiti}
+		\begin{itemize}
+			\item \textbf{percentuale di requisiti obbligatori soddisfatti}:
+			La percentuale di requisiti obbligatori soddisfatti (PROS) mostra la percentuale di requisiti soddisfati sui requisiti totali, e viene calcolata con la seguente formula:	
 			\begin{center}
 				$ PROS = \frac{requisiti\ obbligatori\ soddisfatti}{requisiti\ obbligatori\ totali}$
-			\end{center}
-			
-	\paragraph{Progettazione} \mbox{}\\ \mbox{}\\
-	Seguono le metriche da utilizzare in fase di progettazione.
-	\begin{itemize}
-		\item \textbf{accoppiamento tra le classi di oggetti}:
-		l'accoppiamento tra classi e oggetti (CBO) indica se una classe è accoppiata ad una seconda, cioè se la prima usa metodi o variabili definiti nella seconda. Si calcola con un un valore intero.
-	\end{itemize}
-	\paragraph{Codifica} \mbox{}\\ \mbox{}\\
-	Questa sezione contiene le metriche che applicheremo al software prodotto.
+			\end{center}		
+		\end{itemize}		
+		\paragraph{Metriche di progettazione}
 		\begin{itemize}
-			\item \textbf{Rapporto di linee di codice per linee di commento}: il rapporto tra le linee di codice e le linee di commento, escludendo le righe vuote.  Questo rapporto aiuta a stimare la manutenibilità del codice.  Un rapporto troppo basso indica una carenza di informazioni	necessarie alla comprensione del codice scritto;
-			\item \textbf{Numero di variabili di stato per contratto}: considera il numero totale di variabili di stato presenti all'interno di un contratto. Un valore elevato può indicare, oltre a un costo elevato dovuto all'alto numero di attributi, che tale contratto si fa carico di una quantità eccessiva di responsabilità; potrebbe quindi convenire scorporare una parte di esso in un secondo contratto;
-			\item \textbf{Livello di annidamento}: il livello di annidamento nei vari metodi tenendo	conto della presenza di strutture di controllo annidate.  Un alto livello di annidamento porta a un codice di difficile manutenzione, aumentandone la complessità; potrebbe quindi convenire scorporare il metodo in più metodi distinti;
-			\item \textbf{Profondità della gerarchica}: la profondità della gerarchia va limitata in modo da limitare l'accoppiamento;
-			\item \textbf{Numero di parametri per metodo}: un numero troppo elevato di parametri in un metodo potrebbe indicare un grado di complessità troppo elevato del metodo.
+			\item \textbf{accoppiamento tra le classi di oggetti}:
+			l'accoppiamento tra classi e oggetti (CBO) indica se una classe è accoppiata ad una seconda, cioè se la prima usa metodi o variabili definiti nella seconda. Si calcola con un un valore intero.
 		\end{itemize}
-	
+		\paragraph{Metriche di codifica}
+			\begin{itemize}
+				\item \textbf{rapporto di linee di codice per linee di commento}: il rapporto tra le linee di codice e le linee di commento, escludendo le righe vuote. Questo rapporto aiuta a stimare la manutenibilità del codice. Un rapporto troppo basso indica una carenza di informazioni	necessarie alla comprensione del codice scritto;
+				\item \textbf{Numero di variabili di stato per contratto}: considera il numero totale di variabili di stato presenti all'interno di un contratto. Un valore elevato può indicare, oltre a un costo elevato dovuto all'alto numero di attributi, che tale contratto si fa carico di una quantità eccessiva di responsabilità; potrebbe quindi convenire scorporare una parte di esso in un secondo contratto;
+				\item \textbf{Livello di annidamento}: il livello di annidamento nei vari metodi tenendo	conto della presenza di strutture di controllo annidate.  Un alto livello di annidamento porta a un codice di difficile manutenzione, aumentandone la complessità; potrebbe quindi convenire scorporare il metodo in più metodi distinti;
+				\item \textbf{Profondità della gerarchica}: la profondità della gerarchia va limitata in modo da limitare l'accoppiamento;
+				\item \textbf{Numero di parametri per metodo}: un numero troppo elevato di parametri in un metodo potrebbe indicare un grado di complessità troppo elevato del metodo.
+			\end{itemize}
+			
 	\subsubsection{Strumenti}
 	Di seguito sono elencati gli strumenti utilizzati dal gruppo durante il 
 	progetto per il processo di sviluppo.
