@@ -1,15 +1,22 @@
 \section{Processi di supporto}
 \subsection{Documentazione}
 	\subsubsection{Scopo}
-	Ogni processo e attività significativi volti allo sviluppo del progetto sono documentati. Lo scopo di questa sezione è definire gli standard che riguardano i documenti prodotti durante il ciclo di vita del software.
+	Ogni processo e attività significativi volti allo sviluppo del progetto sono documentati. I documenti sono prodotti a supporto di tutte le attività di progetto. Lo scopo di questa sezione è definire gli standard che riguardano i documenti prodotti durante il ciclo di vita del software.
 	I documenti sono consultabili nelle apposite sezioni della repository\glo:\\
 	\centerline{\url{https://github.com/8LabSolutions/Soldino}} 		
 	\subsubsection{Aspettative}
-	Le aspettative su questo processo riguardano:
+	Ciò che ci aspettiamo dal processo di documentazione è costruire una body of knowledge\glosp che raccoglie la conoscenza in modo sistematico, disciplinato, quantificabile. Vogliamo che questo corpo sia:
 	\begin{itemize}
-		\item un'idea precisa relativa alla struttura della documentazione che deve essere prodotta durante il ciclo di vita del software;
-		\item l'individuazione di una serie di norme per la stesura di documenti coerenti e validi.
+		\item completo;
+		\item non ambiguo;
+		\item modulare
+		\item fatto di parti coese;
+		\item trasparente;
+		\item semplice;
+		\item disponibile esternamente;
+		\item riassumendo, adatto alla trasmissione delle informazioni nel miglior modo possibile;
 	\end{itemize}
+
 	\subsubsection{Descrizione}
 	Questo capitolo contiene le decisioni e le norme che sono state scelte per la
 	stesura, verifica e approvazione della documentazione ufficiale.  Tali norme  sono  tassative  per  tutti  i  documenti  formali.
@@ -213,20 +220,28 @@
 		Le immagini sono centrate e hanno una didascalia descrittiva. 
 		\paragraph{Diagrammi UML} \mbox{}\\ \mbox{}\\
 		Tutti i diagrammi UML\glosp vengono inseriti nei documenti sotto forma di immagine.
-	\subsubsection{Strumenti}
-		\paragraph{\LaTeX} \mbox{}\\ \mbox{}\\
-		Lo strumento scelto per la scrittura di documenti è \LaTeX{}, un linguaggio basato sul programma di composizione tipografica \TeX{} che permette di scrivere documenti in modo ordinato, modulare, collaborativo e scalabile.
-		\paragraph{\TeX{}studio} \mbox{}\\ \mbox{}\\
-		Per la stesura del codice \LaTeX{} è stato utilizzato l'editor \TeX{}studio. Questo strumento, oltre ad integrare un compilatore e un visualizzatore PDF, fornisce suggerimenti di completamento per comandi \LaTeX{}. \newline
-		\centerline{\url{https://www.texstudio.org/}}
-		\begin{figure}[H]
-			\includegraphics[width=0.99\linewidth]{res/images/latex.jpg}
-			\caption{\TeX{}studio - per la stesura dei documenti}
-		\end{figure} 
-		\paragraph{Draw.io} \mbox{}\\ \mbox{}\\
-		Draw.io, già citato in precedenza, viene utilizzato per la produzione degli UML\glo. \newline
-		\centerline{\url{https://www.draw.io/}}
-		
+		\subsubsection{Metriche}
+		Le metriche per monitorare i documenti sono le seguenti:
+		\paragraph{Indice di Gulpease}\mbox{}\\ \mbox{}\\
+			L'indice di Gulpease indica la leggibilità del testo. Si misura con la seguente formula:
+			\begin{center}
+				$I_G = 89+ \frac{(300 \cdot numero\ di\ frasi - 10 \cdot numero\ di\ lettere)}{numero\ di\ parole}$;
+			\end{center}
+			
+		\subsubsection{Strumenti}
+			\paragraph{\LaTeX} \mbox{}\\ \mbox{}\\
+			Lo strumento scelto per la scrittura di documenti è \LaTeX{}, un linguaggio basato sul programma di composizione tipografica \TeX{} che permette di scrivere documenti in modo ordinato, modulare, collaborativo e scalabile.
+			\paragraph{\TeX{}studio} \mbox{}\\ \mbox{}\\
+			Per la stesura del codice \LaTeX{} è stato utilizzato l'editor \TeX{}studio. Questo strumento, oltre ad integrare un compilatore e un visualizzatore PDF, fornisce suggerimenti di completamento per comandi \LaTeX{}. \newline
+			\centerline{\url{https://www.texstudio.org/}}
+			\begin{figure}[H]
+				\includegraphics[width=0.99\linewidth]{res/images/latex.jpg}
+				\caption{\TeX{}studio - per la stesura dei documenti}
+			\end{figure} 
+			\paragraph{Draw.io} \mbox{}\\ \mbox{}\\
+			Draw.io, già citato in precedenza, viene utilizzato per la produzione degli UML\glo. \newline
+			\centerline{\url{https://www.draw.io/}}
+			
 	\subsection{Gestione della configurazione}
 	\subsubsection{Scopo}
 	Lo scopo della configurazione è di creare ordine tra software e documenti. Tutto ciò che è configurato si trova in un posto preciso, ha uno stato identificativo, è modificato secondo procedure e posto sotto versionamento.
@@ -350,9 +365,17 @@
 		\item i processi forniti dallo standard \textbf{ISO-12207};
 		\item le metriche.
 	\end{itemize}
+
 \subsection{Verifica}
 	\subsubsection{Scopo}
-	Il processo di verifica ha per scopo la realizzazione di prodotti corretti, coesi e completi. Sono soggetti a verifica il software e i documenti. 
+	Il processo consiste nella ricerca e correzione di anomalie e difetti nei processi e prodotti del	progetto, mediante tecniche predefinite e se possibile automatiche.
+	Sono soggetti a verifica il software e i documenti.
+	Gli obiettivi della verifica sono
+	\begin{itemize}
+		\item individuare tecniche e strumenti di verifica;
+		\item individuare e correggere le anomalie applicando gli strumenti;
+		\item provare che il sistema soddisfi i requisiti.
+	\end{itemize} 
 	\subsubsection{Aspettative}
 	Il corretto svolgimento del processo di verifica rispetta i punti seguenti:	
 	\begin{itemize}
@@ -360,7 +383,7 @@
 		\item vi sono criteri chiari e affidabili da seguire per verificare;
 		\item i prodotti passano attraverso fasi successive, ognuna delle quali è verificata;
 		\item dopo la verifica il prodotto è in uno stato stabile;
-		\item rende possibile la validazione.
+		\item la verifica rende possibile la validazione.
 	\end{itemize}
 	\subsubsection{Descrizione}
 	Il processo di verifica prende in input ciò che è già stato prodotto e lo restituisce in uno stato conforme alle aspettative. Per ottenere tale risultato ci si affida a processi di analisi e test.
@@ -374,7 +397,7 @@
 				\item \textbf{Inspection}: i verificatori usano liste di controllo per fare ispezione cercando errori specifici in parti specifiche.
 			\end{itemize}
 			A seguire sono descritte le liste di controllo utilizzabili per le ispezioni. Si prevede l'ampliamento delle viste al progredire delle stesse ispezioni e degli errori trovati.
-%\begin{comment}
+
 			\begin{table}[H]
 				\centering\renewcommand{\arraystretch}{1.5}
 				\arrayrulecolor{white}
@@ -406,7 +429,7 @@
 					\\
 				\end{tabular}
 			\end{table}
-%\end{comment}
+
 			% PLACEHOLDER: lista di ispezione del codice, da aggiungere quando si fa il codice.				
 			\mbox{}\\								
 			\textbf{Analisi dinamica} \mbox{}\\ \mbox{}\\
@@ -429,14 +452,12 @@
 			\item identificare input e output richiesti;
 			\item avvertire di possibili effetti indesiderati;
 			\item fornire informazioni sui risultati dell'esecuzione in forma di file di log.
-		\end{itemize}	
-			
-		\noindent{Ci sono vari tipi di test del software, ognuno dei quali ha un diverso oggetto di verifica e scopo. La codifica dei seguenti test è presente nel documento \textit{Norme di Progetto v2.0.0}.}
+		\end{itemize}
 		
-		%\subsection{Tipi di test}
-		%Vengono individuate quattro tipologie di test:
+		\subsubsection{Codifica dei test}
+		Ci sono varie tipologie di test del software. Ogni tipologia ha un diverso oggetto di verifica e scopo. Individuiamo quattro tipologie di test:
 		\begin{itemize}
-			\item \textbf{Test di Accettazione[TA]}: anche detto "test di collaudo", è simile al test di sistema per l'oggetto testato, ma viene eseguito con la collaborazione dei committenti. Si occupa di verificare il prodotto e, in particolare, il soddisfacimento del cliente. Il superamento del test di collaudo garantisce che il software sia pronto per essere rilasciato. Tali test verranno indicati nel seguente modo: \\
+			\item \textbf{Test di Accettazione[TA]}: anche detto "test di collaudo", è simile al test di sistema per l'oggetto testato, ma viene eseguito con la collaborazione dei committenti. Si occupa di verificare il prodotto e, in particolare, il soddisfacimento del cliente. Il superamento del test di collaudo garantisce che il software sia pronto per essere rilasciato. Tali test vengono indicati nel seguente modo: \\
 			\centerline{\textbf{TA[Tipo][Importanza][Codice]}}
 			dove:
 			\begin{itemize}
@@ -487,7 +508,25 @@
 			%\textbf{Test di regressione} \mbox{}\\ \mbox{}\\
 			% \newline \newline
 			%\textbf{Test di accettazione} \mbox{}\\ \mbox{}\\
-			
+	\subsubsection{Metriche}
+	Le metriche utilizzate per la verifica sono le seguenti.
+		\paragraph{Code Coverage}\mbox{}\\ \mbox{}\\
+		La Code Coverage (CC) è una percentuale che indica il numero di righe di codice percorse dai test durante la loro	esecuzione. Per linee di codice totali si intende tutte quelle appartenenti all'unità in fase di test. La metrica si calcola con la seguente formula:
+			\begin{center}
+				$CC = \frac{linee\ di\ codice\ percorse}{linee\ di\ codice\ totali}$
+			\end{center}
+		\paragraph{Passed Test Cases Percentage}\mbox{}\\ \mbox{}\\
+		Passed test cases percentage (PTCP) indica la percentuale di test superati sul totale dei test eseguiti. Un'alta percentuale di superamento indica la tendenza del codice ad essere già corretto prima dei test. Si calcola con la seguente formula:
+		\begin{center}
+			$ PST = \frac{numero di test superati}{numero di test eseguiti} * 100$
+		\end{center}
+	
+		\paragraph{Failed Test Cases Percentage}\mbox{}\\ \mbox{}\\
+		Failed test cases percentage (PTCP) indica la percentuale di test falliti sul totale dei test eseguiti. Un'alta percentuale di fallimento indica la tendenza alla scorrettezza del codice. Si calcola con la seguente formula:
+		\begin{center}
+			$ PST = \frac{numero di test superati}{numero di test eseguiti} * 100$
+		\end{center}
+
 	\subsubsection{Strumenti}
 		\paragraph{Verifica ortografica} \mbox{}\\ \mbox{}\\
 		Viene utilizzata la verifica dell'ortografia in tempo reale, strumento integrato in \TeX{}studio che sottolinea in rosso le parole errate e in verde le ripetizioni a breve distanza secondo la lingua italiana.
@@ -530,73 +569,6 @@
 	
 
 \subsection{Metriche di qualità}
-\subsubsection{Documentazione}
-La documentazione consiste nella produzione di informazioni, la cui forma tipica è documentale, e nella loro gestione. I documenti sono prodotti a supporto di tutte le attività di progetto.
-L'obiettivo è di scrivere la documentazione affinché costituisca una body of knowledge\glosp che raccoglie la conoscenza in modo:
-\begin{itemize}
-	\item completo;
-	\item non ambiguo;
-	\item modulare e fatto di parti coese;
-	\item trasparente, adatto alla trasmissione delle informazioni;
-	\item disponibile esternamente.
-\end{itemize}
-La strategia prevede che i documenti siano: 
-\begin{itemize}
-	\item prodotti in concomitanza con tutte le attività di sviluppo;
-	\item prodotti in modo collaborativo;
-	\item supportati da un glossario;
-	\item supportati dalle Norme di Progetto;
-	\item prodotti con strumenti software adatti alla collaborazione e alla modularità in \LaTeX;
-	\item ospitati in una repository\glosp pubblica su GitHub.
-\end{itemize}
-Le metriche utilizzate sono:
-\begin{itemize}
-	\item l'\textbf{indice di Gulpease}, ossia un indice che indica la leggibilità del testo. Si misura con la seguente formula:
-	\begin{center}
-		$I_G = 89+ \frac{(300 \cdot numero\ di\ frasi - 10 \cdot numero\ di\ lettere)}{numero\ di\ parole}$;
-	\end{center}
-	\item il numero di errori ortografici o grammaticali.
-\end{itemize}
-	\subsubsection{Pianificazione}
-La pianificazione è un'attività significativa della gestione di progetto. Consiste nel governare le	risorse a disposizione, ovvero tempi, costi e ruoli, monitorarle nel tempo e reagire efficacemente ai cambiamenti. La pianificazione si esprime specificatamente all'interno del \textit{Piano di Progetto}.\\
-Gli obiettivi sono:
-\begin{itemize}
-	\item avere a disposizione piani e obiettivi ben definiti;
-	\item aver definito ruoli, responsabilità, obblighi e autorità a cui rispondere;
-	\item aver allocato le risorse e i beni necessari;
-	\item attivare il piano per sostenere il progetto.
-\end{itemize}
-La strategia prevede di: 
-\begin{itemize}
-	\item produrre la pianificazione delle attività;
-	\item mantenerla aggiornata mentre esse vengono svolte;
-	\item usarla come riferimento e supporto.
-\end{itemize}
-Le metriche utilizzate sono:
-\begin{itemize}
-	\item \textbf{Actual Cost} (AC): il denaro speso fino al momento del calcolo;
-	\item \textbf{Earned Value} (EV): metrica di utilità per il calcolo di $SV$ e $CV$ (spiegate successivamente). Si tratta del valore del lavoro fatto fino al momento del calcolo; corrisponde al denaro guadagnato fino a quel momento;
-	\item \textbf{Planned Value} (PV): metrica di utilità per il calcolo di $SV$ e $CV$ (spiegate successivamente). Si tratta del valore del lavoro pianificato al momento del calcolo: corrisponde al denaro che si dovrebbe aver guadagnato in quel momento. Si misura con $BAC \cdot \%\ di\ lavoro\ pianificato\ $;
-	\item \textbf{Schedule Variance} (SV): Esprime lo stato di anticipo o ritardo nello svolgimento del progetto rispetto alla pianificazione. Si calcola come $SV = EV - PV$
-	\item \textbf{Cost Variance} (CV): Differenza tra il costo del lavoro effettivamente completato e quello
-	pianificato. Una CV positiva indica che si sta rispettando il budget. Si calcola come $CV = EV - AC$;
-\end{itemize}
-\subsubsection{Verifica}
-Il processo consiste nella ricerca e correzione di anomalie e difetti nei processi e prodotti del	progetto, mediante tecniche predefinite e se possibile automatiche.\\
-Gli obiettivi sono:
-\begin{itemize}
-	\item individuare e correggere le anomalie;
-	\item provare che il sistema soddisfi i requisiti.
-\end{itemize}
-La strategia prevede di: 
-\begin{itemize}
-	\item individuare tecniche e strumenti di verifica;
-	\item applicarli;
-	\item affinarli con l'esperienza.
-\end{itemize}
-La metrica utilizzata è la \textbf{Code Coverage} (CC), una percentuale che indica il numero di righe di codice percorse dai test durante la loro	esecuzione. Per linee di codice totali si intende tutte quelle appartenenti all'unità in fase di test e si calcola con la seguente formula:
-\begin{center}
-	$CC = \frac{linee\ di\ codice\ percorse}{linee\ di\ codice\ totali}$
-\end{center}
 
+	
 
