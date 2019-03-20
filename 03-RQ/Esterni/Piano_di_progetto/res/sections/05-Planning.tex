@@ -98,7 +98,7 @@ Progettazione. In questo periodo verrà individuata una soluzione architetturale
 \subsection{Progettazione di dettaglio e codifica}
 \textit{Periodo: dal 2019-03-15 al 2019-04-12} \\
 L'inizio di questa fase è il giorno della scadenza della \textit{Revisione di 
-Progettazione} e la data di fine coincide con la data di consegna dei documenti 
+Progettazione} e la data di fine coincide con la data ultima per la consegna dei documenti 
 in vista della \textit{Revisione di Qualifica}. Le attività di questa fase sono:
 \begin{itemize}
 	\item \textbf{Product Baseline}: a seguito della \textit{Technology 
@@ -107,9 +107,15 @@ in vista della \textit{Revisione di Qualifica}. Le attività di questa fase sono
 	\begin{itemize}
 		\item \textbf{Codifica}: questa attività consiste nella scrittura del 
 		codice e della sua verifica con modalità e strumenti definiti nel 
-		\textit{Piano di Qualifica v2.0.0}. I \textit{programmatori} dovranno valutare la possibilità di riutilizzare il codice già prodotto durante la codifica del Proof of Concept\glosp o riscriverne una nuova versione;
-		\item \textbf{Allegato tecnico alla Product Baseline}: le decisioni prese durante questo periodo verranno documentate nell'Allegato Tecnico alla Product Baseline.
+		\textit{Piano di Qualifica v3.0.0}. I \textit{programmatori} dovranno valutare
+		la possibilità di riutilizzare il codice già prodotto durante la codifica del 
+		Proof of Concept\glosp o riadattarne una nuova versione;
+		\item \textbf{Allegato Tecnico alla Product Baseline}: le decisioni prese 
+		durante questo periodo verranno documentate nell'Allegato Tecnico alla Product Baseline.
 	\end{itemize}
+	\item \textbf{Manuale Sviluppatore}: viene redatto il documento \textit{Manuale 
+	Sviluppatore} atto a fornire tutte le informazioni necessarie al mantenimento e 
+	l'ampliamento del prodotto finale;
 	\item \textbf{Manuale Utente}: viene redatto il documento \textit{Manuale 
 	Utente} atto a fornire istruzioni e indicazioni per l'utilizzo del prodotto;
 	\item \textbf{Incremento e verifica}: se necessario vengono migliorati i 
@@ -119,6 +125,19 @@ in vista della \textit{Revisione di Qualifica}. Le attività di questa fase sono
 \begin{figure}[H]
 	\includegraphics[width=0.99\linewidth]{res/images/gantt_pd.jpg}
 	\caption{Diagramma di Gantt della fase di Progettazione di dettaglio e codifica}
+\end{figure}
+
+Ogni incremento identificato prevede degli incrementi al suo interno in cui 
+viene svolta prima l'analisi del design pattern appropriato, seguita poi dalla
+costruzione dei diagrammi di attività e di classi che vengono riportati e descritti 
+nell'\textit{Allegato Tecnico}. Quando questa parte di incremento supera la verifica,
+i programmatori procedono alla stesura del codice relativo riportando una sezione 
+dedicata in entrambi i manuali. Questa attività viene meglio descritta dal seguente
+Gantt:
+
+\begin{figure}[H]
+	\includegraphics[width=0.99\linewidth]{res/images/incremento.jpg}
+	\caption{Diagramma di Gantt degli incrementi}
 \end{figure}
 
 
@@ -136,7 +155,7 @@ previste sono:
 	valutata la coerenza del prodotto e dei requisiti specificati nel documento 
 	\textit{Analisi dei Requisiti} nella sua ultima versione;
 	\item \textbf{Codifica}: se necessario verranno modificate delle parti di codice per apportare correzioni minori e risolvere eventuali problematiche;
-	\item \textbf{Manuale Sviluppatore}: viene redatto il documento \textit{Manuale Sviluppatore} atto a fornire tutte le informazioni necessarie al mantenimento, manutenzione e ampliamento del prodotto finale;
+	\item \textbf{Manuale Sviluppatore}: viene redatto il documento \textit{Manuale Sviluppatore} atto a fornire tutte le informazioni necessarie al mantenimento e l'ampliamento del prodotto finale;
 	\item \textbf{Incremento e verifica}: se necessario vengono migliorati i 
 	documenti prodotti nelle fasi precedenti.
 \end{itemize}
