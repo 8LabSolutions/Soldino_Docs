@@ -61,10 +61,8 @@ tipologie di fattori di rischio:
 	\endhead
 	
 	%RT1---------------------------------------------------------
-	 \rowcolordark Inesperienza Tecnologica \\ RT1 & 
-	 Molte delle tecnologie da adottare nello 
-	 sviluppo del progetto richiesto sono nuove per molti componenti del team, 
-	 di conseguenza potrebbero insorgere problemi operativi. &
+	 \rowcolorlight Inesperienza tecnologica \\ RT1 & 
+	 Molte delle tecnologie da adottare nello sviluppo del progetto richiesto sono nuove per molti componenti del team, di conseguenza potrebbero insorgere problemi operativi. &
 	Il \textit{responsabile} avrà il compito di rilevare conoscenze ed 
 	eventuali lacune 
 	dei vari componenti del team. Ciascun membro del gruppo inoltre provvederà a 
@@ -72,44 +70,41 @@ tipologie di fattori di rischio:
 	 Occorrenza: \textbf{Alta} \\
 	 Pericolosità: \textbf{Alta} 
 	 \tabularnewline
-	\rowcolordark \multicolumn{1}{p{0.17\textwidth}}{\centering\textbf{Piano di contingenza}}& 
+	\rowcolorlight \multicolumn{1}{p{0.17\textwidth}}{\centering\textbf{Piano di contingenza}}& 
 	 \multicolumn{3}{p{0.7775\textwidth}}{I compiti più onerosi, o che 
 	 richiedono maggiori conoscenze tecnologiche, verranno assegnati a più 
 	 persone favorendo così l'assistenza reciproca. }
 	 \tabularnewline 
-
-		%RT2---------------------------------------------------------
-%		 Guasto tecnico \\ RT2 & 
-%		I computer del team rischiano possono guastarsi, anche a causa del frequente utilizzo e l'installazione di nuovi software  &
-%		Ogni membro del team deve monitorare il corretto funzionamento del proprio pc &
-%		Occorrenza: \textbf{Bassa} \\
-%		Pericolosità: \textbf{Media}} 
-%		\tabularnewline
-%		\rowcolorlight \multicolumn{1}{p{0.17\textwidth}}{\centering\textbf{Piano di contingenza}}& 
-%		\multicolumn{3}{p{0.7775\textwidth}}{A seconda della gravità del guasto si provvede alla reinstallazione del software, del sistema operativo o alla sostituzione della propria macchina}
-%		\tabularnewline 
-%	
-\rowcolorlight
-Guasto tecnico \\ RT2 &
-I computer del team rischiano possono guastarsi, anche a causa del frequente utilizzo e l'installazione di nuovi software. &
-Ogni membro del team deve monitorare il corretto funzionamento del proprio pc.&
-Occorrenza: \textbf{Bassa} \\
-Pericolosità: \textbf{Media}
-\tabularnewline
-\rowcolorlight\multicolumn{1}{p{0.17\textwidth}}{\centering\textbf{Piano di contingenza}}& 
-\multicolumn{3}{p{0.7775\textwidth}}{A seconda della gravità del guasto si provvede alla reinstallazione del software, del sistema operativo o alla sostituzione della propria macchina.}
-\tabularnewline		
+	 
+	 %RT2---------------------------------------------------------
+	 \rowcolordark Tecnologie instabili \\ RT2 & 
+	 Le tecnologie adoperate nel progetto sono recenti. Alcune di esse non sono stabili, e riportano bug e scarsa documentazione. L'integrazione perfetta di tutte le tecnologie appare incerta. &
+	 Gli addetti a ciascuna tecnologia segnalano le rispettive falle tecnologiche. &
+	 Occorrenza: \textbf{Alta} \\
+	 Pericolosità: \textbf{Alta} 
+	 \tabularnewline
+	 \rowcolordark \multicolumn{1}{p{0.17\textwidth}}{\centering\textbf{Piano di contingenza}}& 
+	 \multicolumn{3}{p{0.7775\textwidth}}{Se possibile, si tenta di mantenere le ultime versioni di ciascuna tecnologia, per favorire la durata del progetto nel tempo. Se no, si opta per una versione più datata ma più stabile della tecnologia in questione.}
+	 \tabularnewline 
+	
+	%RT3---------------------------------------------------------
+	\rowcolorlight
+	Guasto tecnico \\ RT3 &
+	I computer del team rischiano possono guastarsi, anche a causa del frequente utilizzo e l'installazione di nuovi software. &
+	Ogni membro del team deve monitorare il corretto funzionamento del proprio pc.&
+	Occorrenza: \textbf{Bassa} \\
+	Pericolosità: \textbf{Media}
+	\tabularnewline
+	\rowcolorlight\multicolumn{1}{p{0.17\textwidth}}{\centering\textbf{Piano di contingenza}}& 
+	\multicolumn{3}{p{0.7775\textwidth}}{A seconda della gravità del guasto si provvede alla reinstallazione del software, del sistema operativo o alla sostituzione della propria macchina.}
+	\tabularnewline		
 	
  	
 	 %RO1---------------------------------------------------------
-	\rowcolordark Calcolo Tempistiche \\ RO1 &
-	La massiccia presenza di tecnologie 
-	nuove per molti 
-	dei componenti del team, può comportare imprecisioni e variazioni nel calcolo 
+	\rowcolordark Calcolo tempistiche \\ RO1 &
+	La massiccia presenza di tecnologie nuove per molti dei componenti del team può comportare imprecisioni e variazioni nel calcolo 
 	delle tempistiche.&
-	Nel corso dello sviluppo verrà assegnata una scadenza a ciascun task; sarà 
-	responsibilità dell'owner del task comunicare problematiche, nel 
-	rispettare tali scadenze.&	
+	Nel corso dello sviluppo verrà assegnata una scadenza a ciascun task; sarà responsibilità dell'owner del task comunicare problematiche, nel rispettare tali scadenze.&	
 	Occorrenza: \textbf{Alta} \\
 	Pericolosità: \textbf{Alta}
 	\tabularnewline
@@ -139,7 +134,7 @@ Pericolosità: \textbf{Media}
 	\tabularnewline	
 	
 	%R03------------------------------------------------------------
-	\rowcolordark Impegni Accademici \\ RO3 & 
+	\rowcolordark Impegni accademici \\ RO3 & 
 	Possono verificarsi momenti in cui uno o più componenti del team siano meno disponibili a causa di alcuni impegni di tipo accademico. &
 	Al fine di prevenire rallentamenti, è stato predisposto un calendario 
 	condiviso nel quale segnalare eventuali impegni accademici.&
@@ -153,7 +148,7 @@ Pericolosità: \textbf{Media}
 	
 	%R04------------------------------------------------------------
 	\rowcolorlight
-    Impegni Personali \\ RO4 &
+    Impegni personali \\ RO4 &
 	Possono verificarsi momenti in cui uno o più componenti del team siano meno disponibili a causa di alcuni impegni di tipo personale.&
 	Ciascun componente del team utilizzerà 
 	il calendario già descritto nel caso precedente per segnalare i propri 
@@ -171,7 +166,7 @@ Pericolosità: \textbf{Media}
 	
 	%R05------------------------------------------------------------
 	\rowcolordark
-	 Ritardi \\ RO5 &
+	 Ritardi nella pianificazione \\ RO5 &
 	Una o più delle problematiche sopracitate (RO1, RO3, RO4) possono 
 	comportare ritardi.&
 	L'owner di ciascun task segnalerà in modo tempestivo l'impossibiltà di 
@@ -181,8 +176,7 @@ Pericolosità: \textbf{Media}
 	\tabularnewline
 	\rowcolordark\multicolumn{1}{p{0.17\textwidth}}{\centering\textbf{Piano di contingenza}}& 
 	\multicolumn{3}{p{0.7775\textwidth}}{ Il \textit{responsabile}, se 
-	necessario, 
-	riassegnerà le risorse al fine evitare rallentamenti.}
+	necessario, riassegna le risorse al fine evitare rallentamenti.}
 	\tabularnewline	
 	
 	%R05------------------------------------------------------------
@@ -210,15 +204,27 @@ Pericolosità: \textbf{Media}
 	\tabularnewline
 	
 	%R08------------------------------------------------------------
-	\rowcolordark
+	\rowcolorlight
 	Stallo dei task \\ RO8 &
 	I task su Trello possono ritardare di molto il loro completamento. Ciò può dipendere dal task in sè (mancanza di assegnatario, data di scadenza, definizione imprecisa o task monolitico).&
 	La bacheca di Trello risulta affollata. Alcuni task sono visibilmente fermi.&
 	Occorrenza: \textbf{Media} \\
 	Pericolosità: \textbf{Media}
 	\tabularnewline
-	\rowcolordark\multicolumn{1}{p{0.17\textwidth}}{\centering\textbf{Piano di contingenza}}& 
+	\rowcolorlight\multicolumn{1}{p{0.17\textwidth}}{\centering\textbf{Piano di contingenza}}& 
 	\multicolumn{3}{p{0.7775\textwidth}}{Il \textit{responsabile} ridefinisce i task completandoli, raffinandoli o suddividendoli.}
+	\tabularnewline
+	
+	%R09------------------------------------------------------------
+	\rowcolordark
+	Inesperienza nei ruoli \\ RO9 &
+	Effettuando la rotazione dei ruoli, i membri del team si trovano di fronte a nuovi compiti nei quali sono inesperti, dunque affrontano nuove difficoltà &
+	I membri del team faticano ad adattarsi alle nuove mansioni, di conseguenza il ritmo del lavoro è rallentato.&
+	Occorrenza: \textbf{Media} \\
+	Pericolosità: \textbf{Bassa}
+	\tabularnewline
+	\rowcolordark\multicolumn{1}{p{0.17\textwidth}}{\centering\textbf{Piano di contingenza}}& 
+	\multicolumn{3}{p{0.7775\textwidth}}{Chi ha già eseguito un lavoro affianca inizialmente chi lo esegue per la prima volta.}
 	\tabularnewline
 	
 	%RI1------------------------------------------------------------
@@ -294,6 +300,17 @@ Pericolosità: \textbf{Media}
 	\multicolumn{3}{p{0.7775\textwidth}}{Alcuni dei membri trovano efficace fare attività fisica per rilasciare la tensione, modalità consigliata anche agli altri. In casi più gravi si affronta la questione parlandone con il gruppo, con un familiare o con un supporto psicologico (a tale proposito è stato individuato il servizio gratuito SAP, offerto dall'UniPd).} 
 	\tabularnewline
 	
+	%RI6------------------------------------------------------------
+	\rowcolordark
+	Stato di malattia \\ RI6 &
+	Uno o più membri del team possono ammalarsi. La malattia può influire sul lavoro del membro interessato. Il malato potrebbe contagiare gli altri membri. &
+	Il membro malato comunica il proprio stato di poca salute. &
+	Occorrenza: \textbf{Media} \\
+	Pericolosità: \textbf{Media}
+	\tabularnewline
+	\rowcolordark\multicolumn{1}{p{0.17\textwidth}}{\centering\textbf{Piano di contingenza}}&
+	\multicolumn{3}{p{0.7775\textwidth}}{Solo se la malattia impedisce di lavorare, il membro malato è tenuto a riprendere uno stato di salute ottimale. Il suo lavoro è redistribuito tra gli altri membri con pari ruolo se possibile, o comportando un cambio di ruolo altrimenti.} 
+	\tabularnewline
 
 		
 	\end{longtable}
