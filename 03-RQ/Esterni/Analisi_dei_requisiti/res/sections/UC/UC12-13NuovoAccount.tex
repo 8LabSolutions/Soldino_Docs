@@ -42,7 +42,9 @@
 	\item \textbf{Scenario principale}: il governo visualizza la lista degli utenti, aziende [UC18.1] o cittadini [UC18.4]. Per ogni utente il cui stato dell'account risulta "abilitato", può effettuare la disabilitazione premendo sul pulsante dedicato;
 	\item \textbf{Inclusioni}: 
 	\begin{itemize}
-		\item \textbf{UC19.3}: durante la disabilitazione l'utente governativo è richiesto di inserire un messaggio personalizzato per spiegare all'utente il motivo della disabilitazione dell'account.
+		\item \textbf{UC19.2.1}: durante la disabilitazione l'utente 
+		governativo è richiesto di inserire un messaggio personalizzato per 
+		spiegare all'utente il motivo della disabilitazione dell'account.
 	\end{itemize}
 	\item \textbf{Precondizione}: l'utente governativo sta visualizzando una lista di utenti registrati al sistema, preme il pulsante di disabilitazione dell'account relativo ad un utente il quale stato dell'account risulta "abilitato";
 	\item \textbf{Postcondizione}: lo stato  dell'account utente sopra menzionato risulta "disabilitato". Durante i prossimi tentativi di autenticazione, tale utente riceverà l'errore di "account disabilitato" [UC3.3].
