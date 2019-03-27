@@ -11,9 +11,10 @@ Soldino is accessible through a web interface. The currently most recent version
 \subsubsection{Tools}
 The following tools are needed:
 \begin{itemize}
-	\item \textbf{Truffle}
-	\item \textbf{Ganache}
-	\item \textbf{Node.js}
+	\item \textbf{Node.js}: you need it to run commands and as a Truffle requirement;
+	\item \textbf{Truffle}: you need it to write and deploy contracts with ease;
+	\item \textbf{Ganache}: you need it to put up a local Ethereum network and check transactions on it;
+	\item \textbf{Metamask}: it's used as virtual wallet.
 \end{itemize}
 
 \subsubsection{Dependencies}
@@ -27,7 +28,7 @@ The packages required to execute the software \textit{Soldino} are listed below.
 		>{\centering}p{0.4\textwidth} 
 		>{\centering}p{0.4\textwidth}
 	}
-	\caption{Dipendenze per l'uso del software}\\
+	\caption{Packages required for software usage}\\
 	\rowcolorhead
 	\textbf{\color{white}Software} & 
 	\textbf{\color{white}Versione}
@@ -37,23 +38,23 @@ The packages required to execute the software \textit{Soldino} are listed below.
 	% voci prese da package.json, repo "Soldino-PoC, ramo "develop"
 
 
-	react-text-mask & \^5.4.4
+	react-text-mask & $\geq$5.4.4
 	\tabularnewline
-	commondir &\^1.0.1
+	commondir &$\geq$1.0.1
 	\tabularnewline
-	history &\^4.7.2
+	history &$\geq$4.7.2
 	\tabularnewline
-	prop-types &\^15.7.2\tabularnewline
-	react &\^16.8.3\tabularnewline
-	react-dom &\^16.8.3\tabularnewline
-	react-number-format &\^4.0.6\tabularnewline
-	react-redux &\^6.0.1\tabularnewline
-	react-router &\^4.3.1\tabularnewline
-	react-router-dom &\^4.3.1\tabularnewline
-	react-router-redux &\^4.0.8\tabularnewline
-	react-scripts &\^2.1.8\tabularnewline
-	redux &\^4.0.1\tabularnewline
-	redux-thunk &\^2.3.0\tabularnewline
+	prop-types &$\geq$15.7.2\tabularnewline
+	react &$\geq$16.8.3\tabularnewline
+	react-dom &$\geq$16.8.3\tabularnewline
+	react-number-format &$\geq$4.0.6\tabularnewline
+	react-redux &$\geq$6.0.1\tabularnewline
+	react-router &$\geq$4.3.1\tabularnewline
+	react-router-dom &$\geq$4.3.1\tabularnewline
+	react-router-redux &$\geq$4.0.8\tabularnewline
+	react-scripts &$\geq$2.1.8\tabularnewline
+	redux &$\geq$4.0.1\tabularnewline
+	redux-thunk &$\geq$2.3.0\tabularnewline
 	web3 & 1.0.0-beta.37\tabularnewline
 	
 \end{longtable}
@@ -74,18 +75,50 @@ Other packages, listed below, are required for the development.
 	
 	% voci prese da package.json, repo "Soldino-PoC, ramo "develop"
 	eslint & 5.12.0\tabularnewline
-	eslint-config-airbnb & \^17.1.0\tabularnewline
-	eslint-loader & \^2.1.2\tabularnewline
-	eslint-plugin-import & \^2.16.0\tabularnewline
-	eslint-plugin-jsx-a11y & \^6.2.1\tabularnewline
-	pre-commit & \^1.2.2\tabularnewline
-	truffle-contract & \^4.0.6
+	eslint-config-airbnb &$\geq$17.1.0\tabularnewline
+	eslint-loader & $\geq$2.1.2\tabularnewline
+	eslint-plugin-import & $\geq$2.16.0\tabularnewline
+	eslint-plugin-jsx-a11y & $\geq$6.2.1\tabularnewline
+	pre-commit & $\geq$1.2.2\tabularnewline
+	truffle-contract & $\geq$4.0.6
 	
 \end{longtable}
 
-
 \subsection{Installing}
+\subsubsection{Browser}
+The first thing is to have your browser installed. You can get the latest chrome version  \href{https://www.google.com/chrome/}{here}.\\
 
+\subsubsection{Node}
+Install Node.js. Digit on the shell the following commands:
+\begin{enumerate}
+	\item \texttt{curl -sL https://deb.nodesource.com/setup\_11.x | sudo -E bash -}
+	\item \texttt{sudo apt-get install -y nodejs}
+	\item check that \texttt{node} have been installed correctly with \texttt{node -v}.
+\end{enumerate}
+There is no need to install npm separately, since it is automatically installed with Node.
+
+\subsubsection{Truffle}
+Third thing: install Truffle.\\
+Truffle requirements are:
+\begin{itemize}
+	\item an OS among Linux, Windows and MacOS (prefer Linux);
+	\item NodeJS v8.9.4 or later (we picked version 11);
+	\item Node Package Manager (npm).
+\end{itemize}
+You can then install Truffle with the command:
+\begin{itemize}
+	\item[] \texttt{npm install -g truffle}
+\end{itemize}
+
+\subsubsection{Ganache}
+Fourth step: installing Ganache. There are three step to install Ganache:
+\begin{enumerate}
+	\item you can download the Ganache executable at this \href{https://truffleframework.com/ganache}{link}, clicking on the download button.;
+	\item give the permissions to make the Ganache file executable. This can be done on Linux with the command \texttt{chmod +x path-of-the-appimage/ganache-1.3.0-x86\_64.AppImage};
+	\item eventually, run it double clicking on the icon.
+\end{enumerate}
 
 \subsection{Running}
+Now that you have all the required software installed, it's time to get it up running.\\
+
 \subsection{Deploying}
