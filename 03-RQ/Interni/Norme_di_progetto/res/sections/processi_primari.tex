@@ -207,7 +207,7 @@
 		\paragraph{Analisi dei requisiti}
 		\mbox{}\\ \mbox{}\\
 			\textbf{Scopo}  \mbox{}\\ \mbox{}\\
-			Lo scopo dei requisiti è di:
+			Lo scopo dei requisiti è:
 				\begin{itemize}
 					\item definire la finalità del lavoro;
 					\item considerare lo scopo del progetto e le richieste degli stakeholder;
@@ -377,7 +377,7 @@
 				\end{itemize}
 			
 			
-			\noindent\textbf{Technology baseline} \mbox{}\\ \mbox{}\\
+			\noindent\textbf{Technology baseline} \mbox{}\\
 				
 			\noindent Redatta dal progettista, dovrà includere:
 				\begin{itemize}
@@ -402,7 +402,7 @@
 						funzioni nella maniera voluta. \newline
 				\end{itemize}
 						
-			\noindent\textbf{Product baseline} \mbox{}\\ \mbox{}\\
+			\noindent\textbf{Product baseline} \mbox{}\\
 	
 			\noindent A carico del progettista c'è anche la product baseline che si sofferma su diversi aspetti tra i quali:
 			\begin{itemize}
@@ -418,10 +418,6 @@
 						\item breve descrizione che include scopo e 
 						funzionalità.
 					\end{itemize}
-				\item \textbf{tracciamento delle classi}: ogni requisito deve essere 
-					tracciato in modo da garantire che per ognuno esista una classe che lo soddisfi. 
-					Questa operazione è fondamentale per permettere di risalire alle classi ad esso 
-					associate;
 				\item \textbf{test di unità}: devono essere definiti al fine di verificare 
 					che le parti funzionino individualmente nel modo stabilito.
 			\end{itemize}
@@ -475,7 +471,7 @@
 					\item \textbf{metodi}: i nomi dei metodi devono iniziare con una lettera 
 						minuscola. Nel caso siano composti da più parole, quelle successive devono iniziare con una 
 						lettera maiuscola (CamelCase\glo{});
-					\item \textbf{commenti}: deve essere presente un sintetico commento descrittivo precedente all'implementazione di metodi e classi;
+					\item \textbf{commenti}: deve essere presente un sintetico commento descrittivo precedente all'implementazione di metodi e classi. In particolare verrà introdotto l'utilizzo di JSDoc\glosp per specificare il contratto del metodo, i tipi dei parametri e dell'oggetto di ritorno;
 					\item \textbf{intestazione dei file}: ogni file deve presentare le seguenti informazioni:
 						\begin{itemize}
 							\item percorso e nome del file;
@@ -610,6 +606,10 @@
 		\paragraph{NPM} \mbox{}\\ \mbox{}\\
 		Utilizzato per poter installare i pacchetti necessari allo sviluppo dell'applicativo, quali React\glo, Redux\glo, Truffle\glo, Ganache CLI\glosp e Web3\glo. \\
 		\centerline{\url{https://www.npmjs.com/}}
+		
+		\paragraph{Infura} \mbox{}\\ \mbox{}\\
+		Utilizzato per effettuare l'accesso in modo sicuro e affidabile a IPFS\glo. \\
+		\centerline{\url{https://infura.io/}}
 		
 %	\subsection{Procedure}	
 %	% PRAGMA
