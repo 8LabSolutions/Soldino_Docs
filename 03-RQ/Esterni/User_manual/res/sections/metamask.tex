@@ -32,15 +32,15 @@
 	create a new account or import an existing one using the 12 words seed phrase
 	that was previously given to you.
 	\begin{figure}[H]
-		\includegraphics[width=10cm]{res/images/metamask_select.png}
+		\includegraphics[width=15cm]{res/images/metamask_select.png}
 		\centering
 		\caption{MetaMask setup}
 	\end{figure}
 	\noindent After setting up your account you will be able to join and use 
 	\textit{Soldino}.
-	\subsection{Transactions}
-	Every time you make a transaction MetaMask\glosp will open a pop-up window that 
-	shows you its total cost.
+	\subsection{Operations}
+	Every time you make a operation that changes the state of the Ethereum\glosp 
+	network MetaMask\glosp will open a pop-up window that shows you its total cost.
 	From this window you will be able to accept it or decline it.\\
 	\begin{figure}[H]
 		\includegraphics[width=9cm]{res/images/metamask_transaction.png}
@@ -55,3 +55,64 @@
 	quicker. We do not recommend changing the priority for transactions made 
 	in \textit{Soldino}.
 	%PLACEHOLDER mettere foto con tabella dei costi in gas
+		\subsubsection{Operations costs}
+		In the table that follows you can find an estimate of the costs of operations 
+		you can make in \textit{Soldino}.
+		\begin{table}[H]
+			\centering\renewcommand{\arraystretch}{1.5}
+			\caption{Costs of operations}
+			\vspace{0.2cm}
+			\begin{tabular}{c c c}
+				
+				\rowcolorhead
+				{\colorhead \textbf{Operation}} &
+				{\colorhead \textbf{Average gas cost}} & 
+				{\colorhead \textbf{Average Cubit cost}} \\
+				
+				\rowcolorlight
+				{\colorbody Creating a citizen account} & {\colorbody 102098} & 
+				{\colorbody 0.34}  
+				\\
+				
+				\rowcolordark
+				{\colorbody Creating a business account} & {\colorbody 104598} & 
+				{\colorbody 0.35}  
+				\\	
+				
+				\rowcolorlight
+				{\colorbody Adding a new product} & {\colorbody 182044} & 
+				{\colorbody 0.60} 
+				\\
+				
+				\rowcolordark
+				{\colorbody Modifying a product} & {\colorbody 97986} & 
+				{\colorbody 0.33} 
+				\\
+				
+				\rowcolorlight
+				{\colorbody Deleting a product} & {\colorbody 42338} & 
+				{\colorbody 0.14} 
+				\\
+				
+%				\rowcolordark
+%				{\colorbody AZIONE} & {\colorbody PREZZO IN GAS} & 
+%				{\colorbody PREZZO IN CC} 
+%				\\
+%				
+%				\rowcolorlight
+%				{\colorbody AZIONE} & {\colorbody PREZZO IN GAS} & 
+%				{\colorbody PREZZO IN CC} 
+%				\\
+%				
+%				\rowcolordark
+%				{\colorbody AZIONE} & {\colorbody PREZZO IN GAS} & 
+%				{\colorbody PREZZO IN CC} 
+%				\\
+%				
+%				\rowcolorlight
+%				{\colorbody AZIONE} & {\colorbody PREZZO IN GAS} & 
+%				{\colorbody PREZZO IN CC} 
+%				\\
+			\end{tabular}
+		\end{table}
+	\noindent The costs shown above were calculated 2019-03-25.
