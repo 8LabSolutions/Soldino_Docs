@@ -131,7 +131,15 @@ Il risultato sono i processi esposti a seguito.
 	\subsubsection{Verifica}
 		\paragraph{Metriche}
 			\paragraph*{CC: Code Coverage}\mbox{}\\
-				Indica il numero di righe di codice percorse dai test durante la loro esecuzione. Per linee di codice totali si intende tutte quelle appartenenti all'unità in fase di test.
+				Indica il numero di righe di codice percorse dai test durante la loro esecuzione. Per linee di codice totali si intende tutte quelle appartenenti all'unità in fase di test.\\
+				A granularità più fine, il CC si suddivide in quattro aspetti da misurare:
+				\begin{itemize}
+					\item \textbf{Statement coverage}: misura la percentuale di statement coperti dai test;
+					\item \textbf{Branch coverage}: misura la percentuale di ramificazioni del codice coperti dai test;
+					\item \textbf{Function coverage}: misura la percentuale di funzioni coperte dai test;
+					\item \textbf{Line coverage}: misura la percentuale di linee coperte dai test.
+				\end{itemize}
+				Ognuno dei quattro aspetti rispetta lo stesso metodo e intervallo di misurazione.
 				\begin{itemize}
 					\item misurazione: valore percentuale: $CC = \frac{linee\ di\ codice\ percorse}{linee\ di\ codice\ totali}$;
 					\item valore preferibile: $100\%$;
