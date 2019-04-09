@@ -526,7 +526,14 @@
 	Le metriche utilizzate per la verifica sono le seguenti.
 	\begin{itemize}
 		\item \textbf{Code Coverage}:
-		la Code Coverage (CC) è una percentuale che indica la percentuale di righe di codice percorse durante il test sulle righe totali durante la loro esecuzione. Per linee di codice totali si intende tutte quelle appartenenti all'unità in fase di test. La metrica si calcola con la seguente formula:
+		la Code Coverage (CC) è una percentuale che indica la percentuale di righe di codice percorse durante il test sulle righe totali durante la loro esecuzione. Per linee di codice totali si intende tutte quelle appartenenti all'unità in fase di test. A granularità più fine, la code coverage misura quattro aspetti:
+		\begin{itemize}
+			\item \textbf{statement coverage}: misura la percentuale di statement percorsi dai test;
+			\item \textbf{branch coverage}: misura la percentuale di diramazioni percorse dai test;
+			\item \textbf{function coverage}: misura la percentuale di funzioni percorse dai test;
+			\item \textbf{line coverage}: misura la percentuale di righe di codice percorsi dai test.
+		\end{itemize}
+		La metrica si calcola con la seguente formula:
 		\begin{center}
 			$CC = \frac{linee\ di\ codice\ percorse}{linee\ di\ codice\ totali}$
 		\end{center}
