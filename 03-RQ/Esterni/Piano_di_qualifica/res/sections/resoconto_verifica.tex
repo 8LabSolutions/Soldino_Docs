@@ -4,18 +4,18 @@ di verifica svolte su tutti i documenti che vengono consegnati nelle varie
 revisioni di avanzamento del progetto.
 \subsection{Revisioni}
 \subsubsection{Revisione dei requisiti}
-\paragraph{Tracciamento dei casi d'uso e dei requisiti}
+\paragraph{Tracciamento dei casi d'uso e dei requisiti}\mbox{}\\
 Per facilitare il tracciamento delle relazioni fra casi d'uso e requisiti che
 fra requisiti e fonti, il gruppo ha deciso di utilizzare il software PragmaDB.
 
-\paragraph{Analisi statica dei documenti}
+\paragraph{Analisi statica dei documenti}\mbox{}\\
 L'analisi dei documenti mediante \textit{Walkthrough}\glo{} ha portato 
 all'individuazione di alcuni errori frequenti a partire dai quali è stata 
 stilata una lista di controllo interna. In questo modo sarà possibile applicare
 l'\textit{Inspection}\glo{} per le future attività di verifica.
 
 \subsubsection{Revisione di progettazione}
-\paragraph{Analisi statica del codice}
+\paragraph{Analisi statica del codice}\mbox{}\\
 La stesura del codice è supportata dai plugin dell'editor Visual Studio Code. I plugin rilevanti in ambito di verifica sono due:
 \begin{itemize}
 	\item \textbf{ESLint v1.8.1}: linter per il linguaggio JavaScript;
@@ -24,8 +24,16 @@ La stesura del codice è supportata dai plugin dell'editor Visual Studio Code. I
  I linter hanno aiutato notevolmente la stesura di codice sintatticamente corretto e alla standardizzazione del codice scritto, che risulta più uniforme; inoltre hanno facilitato parzialmente il processo di debugging.
  
 \subsubsection{Revisione di qualifica}
+\paragraph{Test}\mbox{}\\
+Abbiamo preparato i test di accettazione e di sistema, i quali sono riportati nella Specifica dei test. Tali test verranno implementati per la revisione di accettazione.\\
+%aggiungere label a sezione Specifica dei test
+I test di integrazione e di unità sono in fase di costruzione.\\
+Abbiamo creato e implementato test di unità sui contratti di backend per controllare la correttezza del codice e guidarne l'implementazione. 
+Per la preparazione dei test sono serviti i seguenti strumenti:
+\begin{itemize}
+	\item \textbf{Truffle v5.0.4}: è usato il comando \texttt{truffle test};
+\end{itemize}
 
- 
 \subsection{Esiti delle revisioni}
 \subsubsection{Revisione dei Requisiti}
 Successivamente alla prima revisione, il gruppo, basandosi sulle 
