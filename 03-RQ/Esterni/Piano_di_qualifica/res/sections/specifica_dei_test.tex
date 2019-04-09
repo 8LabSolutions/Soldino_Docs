@@ -4,16 +4,16 @@ I test sono attività che servono a verificare che il software prodotto implemen
 	\renewcommand{\arraystretch}{1.5}
 	\rowcolors{2}{pari}{dispari}
 	
-	\begin{longtable}{ >{\centering}p{0.10\textwidth} >{}p{0.655\textwidth}
-			>{\centering}p{0.15\textwidth}}% >{\centering}p{0.14\textwidth}}
+	\begin{longtable}{ >{\centering}p{0.10\textwidth} >{}p{0.70\textwidth}
+			>{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth}}
 			
 		%\tabularnewline
 		\caption{Riepilogo Test di Accettazione}\\	
 		\rowcolorhead
 		\textbf{\color{white}Codice} 
 		& \centering\textbf{\color{white}Descrizione} 
-		& \centering\textbf{\color{white}Esito}
-	%	& \textbf{\color{white}Fonti} 
+		& \centering\textbf{\color{white}Stato}
+		& \centering\textbf{\color{white}Esito} 
 		\tabularnewline %\tabularnewline 
 		\endfirsthead	
 		
@@ -21,8 +21,8 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		\rowcolorhead
 		\textbf{\color{white}Codice} 
 		& \centering\textbf{\centering\color{white}Descrizione} 
-		& \centering\textbf{\color{white}Esito}
-		%	& \textbf{\color{white}Fonti} 
+		& \centering\textbf{\color{white}Stato}
+		& \centering\textbf{\color{white}Esito} 
 		\tabularnewline %\tabularnewline 
 		\endhead	
 		
@@ -34,14 +34,14 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	MetaMask\glo{};
 		 	\item verificare che la guida riporti informazioni riguardanti il pagamento
 		 	delle operazioni. 
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO2}{TAFO2} & L'utente non ancora autenticato deve poter effettuare la registrazione al
 		 sistema. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina di registrazione;
 		 	\item selezionare il tipo di utente;
 		 	\item inserire i dati in base al tipo scelto.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO2.1}{TAFO2.1} & L'utente deve potersi registrare come cittadino. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina di registrazione e scegliere la registrazione
@@ -50,7 +50,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item inserire l'indirizzo;
 		 	\item inserire il nome;
 		 	\item inserire il cognome.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO2.2}{TAFO2.2} & L'utente deve potersi registrare come azienda. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina di registrazione e scegliere la registrazione
@@ -59,16 +59,16 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item inserire la sede;
 		 	\item inserire la partita IVA;
 		 	\item inserire il nome.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO2.3}{TAFO2.3} & L'utente deve poter visualizzare un messaggio di errore nel caso in cui la
 		 chiave reperita da MetaMask\glo{} durante la registrazione sia già presente
-		 nel sistema. & \textit{NI}\\ \tabularnewline
+		 nel sistema. & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO3.1}{TAFO3.1} & L'utente deve poter autenticarsi nel sistema in modo automatico attraverso
 		 MetaMask\glo{}. All'utente è chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla sezione per il login;
 		 	\item verificare l'avvenuta autenticazione.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO4}{TAFO4} & L'utente deve potersi disconnettere dal sistema. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item autenticarsi correttamente nel sistema;
@@ -78,7 +78,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item confermare di voler effettuare la disconnessione premendo il tasto 
 		 	di conferma;
 		 	\item verificare che la disconnessione sia avvenuta correttamente.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO5}{TAFO5} & L'utente autenticato come governo deve poter coniare Cubit\glo{}.
 		 All'utente viene chiesto di:
 		 \begin{itemize}
@@ -86,7 +86,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item trovarsi nella pagina per la coniazione della moneta;
 		 	\item selezionare una quantità positiva di Cubit\glo{};
 		 	\item dare conferma dell'operazione. 
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO6}{TAFO6} & L'utente autenticato come governo deve poter distribuire Cubit\glo{}
 		 agli utenti registrati come aziende o cittadini. All'utente viene chiesto di:
 		 \begin{itemize}
@@ -96,7 +96,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	distribuire;
 		 	\item selezionare la lista di utenti a cui trasferire i Cubit; 
 		 	\item dare conferma dell'operazione. 
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO8}{TAFO8} & L'utente autenticato come azienda o cittadino deve poter visualizzare i
 		 prodotti in vendita nel sito. All'utente viene chiesto di:
 		 \begin{itemize}
@@ -108,13 +108,13 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	prodotto in vendita nel sito;
 		 	\item verificare che sia possibile cambiare la quantità selezionata relativa ad un prodotto in
 		 	vendita nel sito.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO9}{TAFO9} & L'utente autenticato come azienda o cittadino deve poter aggiungere
 		 al proprio carrello prodotti in vendita nel sito. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina dei prodotti in vendita nel sito;
 		 	\item aggiungere un prodotto al carrello.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO10}{TAFO10} & L'utente autenticato come azienda o cittadino deve poter visualizzare i
 		 prodotti aggiunti nel proprio carrello. All'utente viene chiesto di:
 		 \begin{itemize}
@@ -125,7 +125,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item verificare che sia visualizzato il nome del prodotto nel carrello;
 		 	\item verificare che sia visualizzato il prezzo unitario del prodotto nel carrello;
 		 	\item verificare che sia visualizzato il prezzo totale dei prodotti nel carrello.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO11}{TAFO11} & L'utente autenticato come azienda o cittadino deve poter modificare la 
 		 quantità di un certo prodotto aggiunto nel proprio carrello. All'utente viene
 		 chiesto di:
@@ -136,7 +136,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item modificare la quantità di prodotto aggiunta al carrello;
 		 	\item verificare che la quantità di prodotto aggiunta al carrello sia
 		 	effettivamente cambiata.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO12}{TAFO12} & L'utente autenticato come azienda o cittadino deve poter rimuovere un
 		 certo prodotto aggiunto nel proprio carrello. All'utente viene chiesto di:
 		 \begin{itemize}
@@ -145,7 +145,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item accedere alla pagina dedicata al carrello;
 		 	\item rimuovere il prodotto aggiunto al carrello;
 		 	\item verificare che il prodotto non sia più presente nel carrello.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFD13}{TAFD13} & L'utente autenticato come azienda o cittadino deve poter resettare il
 		 contenuto del carrello. All'utente viene chiesto di:
 		 \begin{itemize}
@@ -154,7 +154,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item accedere alla pagina dedicata al carrello;
 		 	\item premere il tasto per resettare il contenuto del carrello;
 		 	\item verificare che il carrello sia vuoto.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO14.1}{TAFO14.1} & L'utente autenticato come azienda o cittadino deve poter effettuare il
 		 checkout dei prodotti nel carrello. All'utente viene chiesto di:
 		 \begin{itemize}
@@ -164,7 +164,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item cliccare sul pulsante dedicato alla fase di checkout;
 		 	\item accedere alla pagina dedicata al checkout;
 		 	\item verificare che sia possibile procedere al pagamento.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO14.1.1}{TAFO14.1.1} & L'utente autenticato come azienda o cittadino deve poter visualizzare un
 		 messaggio di errore nel caso in cui si proceda al checkout e il carrello sia
 		 vuoto. All'utente viene chiesto di:
@@ -173,7 +173,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item verificare che non siano presenti prodotti nel carrello;
 		 	\item procedere alla fase di checkout;
 		 	\item verificare che sia visualizzato il messaggio di errore.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO14.2}{TAFO14.2} & L'utente autenticato come azienda o cittadino deve selezionare l'indirizzo di
 		 spedizione per un certo prodotto. All'utente viene chiesto di:
 		 \begin{itemize}
@@ -184,7 +184,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	spedizione il proprio indirizzo di residenza;
 		 	\item verificare che sia possibile inserire un nuovo indirizzo di
 		 	spedizione.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO14.3}{TAFO14.3} & L'utente autenticato come azienda o cittadino deve poter visualizzare un
 		 messaggio di errore nel caso in cui si proceda al pagamento e tale operazione non vada a buon fine. All'utente viene chiesto di:
 		 \begin{itemize}
@@ -192,7 +192,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item procedere alla fase di checkout;
 		 	\item procedere al pagamento cliccando sull'apposito pulsante;
 		 	\item verificare che sia visualizzato il messaggio di errore.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO14.4}{TAFO14.4}	&	L'utente autenticato come azienda o cittadino deve procedere all'acquisto di un prodotto e completare la procedura di pagamento. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina dei prodotti in vendita nel sito;
@@ -200,7 +200,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item procedere al checkout;
 		 	\item confermare l'ordine quindi procedere al pagamento;
 		 	\item verificare che sia visibile la conferma d'acquisto nella pagina dedicata.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFF15}{TAFF15} & L'utente autenticato come azienda o cittadino deve poter visualizzare lo
 		 storico degli acquisiti effettuati. All'utente viene chiesto di:
 		 \begin{itemize}
@@ -217,7 +217,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	lordo\glo{} dell'acquisto;
 		 	\item verificare che per ogni acquisto sia visualizzato l'indirizzo di 
 		 	spedizione dell'acquisto;
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFF15.7}{TAFF15.7} & L'utente autenticato come azienda o cittadino deve poter visualizzare la lista delle conferme d'acquisto\glosp che necessitano
 		 di conferma. All'utente viene chiesto di:
 		 \begin{itemize}
@@ -225,21 +225,21 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item verificare che per ogni conferma d'acquisto siano visualizzati i dettagli del prodotto;
 		 	\item verificare che per ogni conferma d'acquisto sia visualizzato il prezzo netto del prodotto;
 		 	\item verificare che per ogni conferma d'acquisto sia visualizzata l'aliquota IVA applicata al prodotto;
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFF15.7.1}{TAFF15.7.1} & L'utente autenticato come azienda o cittadino deve poter rifiutare una conferma d'acquisto\glosp che necessita
 		 di conferma. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina dedicata alle conferme d'acquisto;
 		 	\item cliccare sul pulsante per rifiutare una conferma d'ordine;
 		 	\item verificare che tale conferma d'ordine venga rifiutata;
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFF15.7.2}{TAFF15.7.2} & L'utente autenticato come azienda o cittadino deve poter approvare una conferma d'acquisto\glosp che necessita
 		 di conferma. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina dedicata alle conferme d'acquisto;
 		 	\item cliccare sul pulsante per approvare una conferma d'ordine;
 		 	\item verificare che tale conferma d'ordine venga approvata.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO16.1}{TAFO16.1} & L'utente autenticato come azienda deve poter mettere in vendita nuovi
 		 prodotti. All'utente viene chiesto di:
 		 \begin{itemize}
@@ -250,7 +250,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item inserire il prezzo lordo\glo{} del nuovo prodotto in vendita;
 		 	\item inserire l'aliquota IVA del nuovo prodotto in vendita;
 		 	\item verificare che il prodotto sia stato correttamente aggiunto al sistema.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO16.2}{TAFO16.2} & L'utente autenticato come azienda deve poter modificare i dati relativi ad
 		 un prodotto in vendita. All'utente viene chiesto di:
 		 \begin{itemize}
@@ -259,7 +259,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item modificare i dati del prodotto in vendita;
 		 	\item verificare che alla conferma i dati del prodotto siano effettivamente
 		 	modificati.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO16.2.1}{TAFO16.2.1} & L'utente autenticato come azienda deve poter verificare un errore nel caso
 		 in cui non sia effettuata alcuna modifica ad un prodotto in vendita dopo
 		 l'accesso alla pagina di modifica. All'utente viene chiesto di:
@@ -268,7 +268,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item accedere alla pagina per la modifica di uno dei prodotti;
 		 	\item non effettuare alcuna modifica quindi confermare la modifica;
 		 	\item verificare che alla conferma sia visualizzato l'errore.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO16.3}{TAFO16.3} & L'utente autenticato come azienda deve poter eliminare
 		 un prodotto in vendita. All'utente viene chiesto di:
 		 \begin{itemize}
@@ -277,7 +277,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item rimuovere il prodotto;
 		 	\item verificare che alla conferma il prodotto non sia più presente nella
 		 	lista dei prodotti in vendita.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFF17}{TAFF17} & L'utente autenticato come azienda deve poter visualizzare lo storico delle
 		 vendite. All'utente viene chiesto di:
 		 \begin{itemize}
@@ -302,20 +302,20 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	dell'acquirente qualora quest'ultimo sia un'azienda;
 		 	\item verificare che per ogni vendita sia visualizzata la partita IVA
 		 	dell'acquirente qualora quest'ultimo sia un'azienda.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO18}{TAFO18} & L'utente autenticato come azienda deve procedere alla vendita di un prodotto e attendere la conferma d'ordine da parte dell'acquirente. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item mettere in vendita un prodotto;
 		 	\item attendere la conferma d'ordine da parte dell'acquirente;
 		 	\item verificare che nel proprio wallet\glosp sia presente l'ammontare dell'ordine;
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO19.1}{TAFO19.1} & L'utente autenticato come azienda deve poter visualizzare il saldo dell'IVA
 		 relativo al trimestre corrente. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item accedere alla pagina dedicata al saldo dell'IVA;
 		 	\item verificare sia visualizzato il saldo dell'IVA relativo al trimestre
 		 	corrente.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO19.2}{TAFO19.2} & L'utente autenticato come azienda deve poter visualizzare il saldo dell'IVA
 		 relativo ad un trimestre concluso. All'utente viene chiesto di:
 		 \begin{itemize}
@@ -323,7 +323,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item selezionare un trimestre concluso;
 		 	\item verificare sia visualizzato il saldo dell'IVA relativo al trimestre
 		 	selezionato.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO19.3}{TAFO19.3} & L'utente autenticato come azienda deve poter visualizzare la lista delle
 		 fatture relative ad un trimestre selezionato. All'utente viene chiesto di:
 		 \begin{itemize}
@@ -340,7 +340,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	dell'ordine;
 		 	\item verificare sia visualizzato per ogni fattura il totale in debito/credito
 		 	dell'IVA.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO19.4}{TAFO19.4} & L'utente autenticato come azienda deve poter effettuare il versamento 
 		 dell'IVA di un trimestre nel quale il saldo di questa risulti in debito. All'utente 
 		 viene chiesto di:
@@ -351,7 +351,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	selezionato;
 		 	\item confermare il versamento dell'IVA da effettuare;
 		 	\item verificare che sia possibile procedere al versamento.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO19.5}{TAFO19.5} & L'utente autenticato come azienda deve poter effettuare la dilazionare del versamento 
 		 dell'IVA di un trimestre nel quale il saldo di questa risulti in debito. All'utente 
 		 viene chiesto di:
@@ -363,7 +363,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item selezionare la dilazione del versamento con cui si vuole procedere;
 		 	\item confermare la dilazione da effettuare;
 		 	\item verificare che il pagamento sia stato dilazionato.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO19.6}{TAFO19.6} & L'utente autenticato come azienda deve poter scaricare in formato PDF 
 		 la lista dei movimenti dell'IVA del trimestre desiderato. All'utente viene chiesto 
 		 di:
@@ -373,7 +373,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item verificare sia presente l'opzione di scaricare il PDF della lista
 		 	dei movimenti dell'IVA;
 		 	\item verificare che sia possibile possibile scaricare il PDF.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO19.7}{TAFO19.7} & L'utente autenticato come azienda deve poter 
 		 visualizzare in
 		 dettaglio una particolare fattura. All'utente viene chiesto di:
@@ -395,7 +395,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item verificare sia visualizzato il cognome dell'acquirente se è un cittadino;
 		 	\item verificare sia visualizzata la partita IVA dell'acquirente se è un'azienda;
 		 	\item verificare sia visualizzato l'indirizzo di spedizione dell'ordine.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFO19.8}{TAFO19.8} & L'utente autenticato come azienda deve poter scaricare in formato PDF 
 		 la lista dei movimenti dell'IVA del trimestre desiderato. All'utente viene chiesto 
 		 di:
@@ -405,17 +405,212 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		 	\item verificare sia presente l'opzione di scaricare il PDF della lista
 		 	dei movimenti dell'IVA;
 		 	\item verificare che sia possibile possibile scaricare il PDF.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \hypertarget{TAFF19.9}{TAFF19.9} & L'utente autenticato come azienda deve poter scaricare in formato PDF la
 		 fattura relativa ad un acquisto. All'utente viene chiesto di:
 		 \begin{itemize}
 		 	\item di accedere alla pagina dedicata alle fatture;
 		 	\item verificare di poter selezionare la fattura da scaricare in formato PDF;
 		 	\item verificare di riuscire a scaricare la fattura in formato PDF.
-		 \end{itemize} & \textit{NI}\\ \tabularnewline
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
 \end{longtable}
 
 \subsection{Test di sistema}
+	\renewcommand{\arraystretch}{1.5}
+	\rowcolors{2}{pari}{dispari}
+	
+	\begin{longtable}{ >{\centering}p{0.10\textwidth} >{}p{0.70\textwidth}
+			>{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth}}
+			
+		%\tabularnewline
+		\caption{Riepilogo Test di Sistema}\\	
+		\rowcolorhead
+		\textbf{\color{white}Codice} 
+		& \centering\textbf{\color{white}Descrizione} 
+		& \centering\textbf{\color{white}Stato}
+		& \centering\textbf{\color{white}Esito} 
+		\tabularnewline %\tabularnewline 
+		\endfirsthead	
+		
+		\rowcolor{white}\caption[]{(continua)}\\	
+		\rowcolorhead
+		\textbf{\color{white}Codice} 
+		& \centering\textbf{\centering\color{white}Descrizione} 
+		& \centering\textbf{\color{white}Stato}
+		& \centering\textbf{\color{white}Esito} 
+		\tabularnewline %\tabularnewline 
+		\endhead	
+		
+
+		\hypertarget{TSFD1}{TSFD1} & Viene verificato che il sistema permetta all'utente 
+		di leggere una breve guida riguardante l'utilizzo di MetaMask ed il pagamento 
+		delle operazioni all'interno della piattaforma. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO2}{TSFO2} & Viene verificato che il sistema permetta la 
+		registrazione di un nuovo utente. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO2.1}{TSFO2.1} & Viene verificato che il sistema permetta la 
+		registrazione come cittadino. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO2.2}{TSFO2.2} & Viene verificato che il sistema permetta la 
+		registrazione come azienda. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO2.3}{TSFO2.3} & Viene verificato che la registrazione non vada 
+		a buon fine se la chiave di MetaMask è già presente nel sistema. & 
+		\textit{NI} & \textit{NS}\\  
+
+		\tabularnewline
+		\hypertarget{TSFO3}{TSFO3} & Viene verificato che il sistema permetta di 
+		autenticarsi. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO3.1}{TSFO3.1} & Viene verificato che nel sistema il login 
+		avvenga automaticamente tramite Metamask. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO3.2}{TSFO3.2} & Viene verificato che nel sistema il login e/o 
+		registrazione non vadano a buon fine se MetaMask non è presente. & 
+		\textit{NI} & \textit{NS}\\  
+
+		\tabularnewline
+		\hypertarget{TSFO3.3}{TSFO3.3} & Viene verificato che il processo di login e/o 
+		registrazione non vada a buon fine se non vi è alcuna chiave disponibile nel 
+		plug-in. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO3.4}{TSFO3.4} & Viene verificato che il processo di login si 
+		interrompa se la chiave non è registrata nel sistema. & 
+		\textit{NI} & \textit{NS}\\  
+
+		\tabularnewline
+		\hypertarget{TSFO3.5}{TSFO3.5} & Viene verificato che il processo di login e/o 
+		registrazione non vada a buon fine se l'utente risulta "disabilitato". & 
+		\textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO4}{TSFO4} & Viene verificato che il sistema permetta di 
+		eseguire il logout. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO5}{TSFO5} & Viene verificato che governo possa coniare Cubit. & 
+		\textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO6}{TSFO6} & Viene verificato che il governo possa distribuire 
+		Cubit a cittadini ed aziende. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO7}{TSFO7} & Viene verificato che il governo posso visualizzare 
+		e gestire la lista degli utenti registrati. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO8}{TSFO8} & Viene verificato che aziende e cittadini possano 
+		visualizzare i prodotti in vendita nel sito. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO9}{TSFO9} & Viene verificato che aziende e cittadini possano 
+		aggiungere prodotti nel carrello. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO10}{TSFO10} & Viene verificato che il sistema permetta di 
+		visualizzare i prodotti nel carrello. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO11}{TSFO11} & Viene verificato che il sistema permetta di 
+		modificare la quantità di un bene presente nel carrello. & 
+		\textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO12}{TSFO12} & Viene verificato che il sistema permetta di 
+		rimuovere prodotti dal carrello. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFD13}{TSFD13} & Viene verificato che il sistema permetta di 
+		resettare il contenuto del carrello. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO14}{TSFO14} & Viene verificato che il sistema permetta a 
+		cittadini ed aziende di acquistare prodotti venduti nella piattaforma. & 
+		\textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFF15}{TSFF15} & Viene verificato che il sistema permetta a 
+		cittidani ed aziende di visualizzare la lista degli acquisti effettuati. & 
+		\textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO16}{TSFO16} & Viene verificato che un'azienda possa gestire i 
+		prodotti in vendita. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO16.1}{TSFO16.1} & Viene verificato che il sistema permetta ad 
+		un'azienda di mettere in vendita beni e servizi. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO16.2}{TSFO16.2} & Viene verificato che un'azienda possa 
+		modificare i dati relativi ad un proprio bene o servizio in vendita. & 
+		\textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO16.3}{TSFO16.3} & Verificare che un'azienda possa eliminare un 
+		proprio bene o servizio in vendita. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFF17}{TSFF17} & Viene verificato che un'azienda possa 
+		visualizzare la lista delle vendite. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO18}{TSFO18} & Viene verificato che un'azienda riceva il 
+		pagamento a seguito della conferma dell'ordine. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO19.1}{TSFO19.1} & Viene verificato che un'azienda possa 
+		visualizzare il saldo IVA relativo al trimestre corrente. & 
+		\textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO19.2}{TSFO19.2} & Viene verificato che un'azienda possa 
+		visualizzare il saldo IVA relativo ad un trimestre concluso selezionato. & 
+		\textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO19.4}{TSFO19.4} & Viene verificato che un'azienda possa 
+		effettuare il versamento IVA di un trimestre nel quale il saldo IVA risulti a 
+		debito. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO19.5}{TSFO19.5} & Viene verificato che un'azienda possa 
+		effettuare la dilazione del versamento IVA di un trimestre nel quale il saldo 
+		IVA risulti a debito. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO19.7}{TSFO19.7} & Viene verificato che un'azienda possa 
+		visualizzare in dettaglio una particolare fattura. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO20}{TSFO20} & Viene verificato che gli smart contracts siano 
+		upgradable. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSFO21}{TSFO21} & Viene verificato che il sistema impedisca 
+		all'utente di compiere alcuna azione prima di essersi autenticato al sistema con 
+		MetaMask. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TSVO9}{TSVO9} & Viene verificato che la Dapp sia accessibile 
+		utilizzando il browser Google Chrome, dalla versione. 71 & 
+		\textit{I} & \textit{S}\\
+
+		\tabularnewline
+		\hypertarget{TSVO10}{TSVO10} & Viene verificato che la Dapp sia accessibile 
+		utilizzando il browser Mozilla Firefox, dalla versione. 64 & \textit{NI} & \textit{NS}\\  
+		\tabularnewline
+		\end{longtable}
+
 
 \subsection{Test di integrazione}
 
