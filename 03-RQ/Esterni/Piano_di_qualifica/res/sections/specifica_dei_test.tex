@@ -643,11 +643,81 @@ I test sono attività che servono a verificare che il software prodotto implemen
 			
 			
 			\hypertarget{TU1}{TU1} & Viene verificata la corretta 
-			registrazione di un cittadino. & \textit{NI} & \textit{NS}\\ 
+			registrazione di un cittadino. & \textit{I} & \textit{S}\\ 
 			
 			\tabularnewline
 			\hypertarget{TU2}{TU2} & Viene verificata la corretta 
-			registrazione di un'azienda. & \textit{NI} & \textit{NS}\\ 
+			registrazione di un'azienda. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU3}{TU3} & Viene verificato che il login di un utente 
+			avvenga correttamente se esso è già registrato nel sistema. & 
+			\textit{I} & \textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU4}{TU4} & Viene verificato che il login di un utente 
+			non avvenga correttamente se esso non è già registrato nel sistema. 
+			& \textit{I} & \textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU5}{TU5} & Viene verificata la possibilità di un 
+			utente registrato come azienda di inserire correttamente un 
+			prodotto. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU6}{TU6} & Viene verificato che un'azienda possa 
+			modificare correttamente un proprio prodotto. & \textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU7}{TU7} & Viene verificato che un'azienda possa 
+			eliminare un proprio prodotto. & \textit{I} & \textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU8}{TU8} &Viene verificato che un'azienda non possa 
+			modificare un prodotto inserito da un'altra azienda. & \textit{I} & 
+			\textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU9}{TU9} & Viene verificato che un'azienda non possa 
+			eliminare un prodotto inserito da un'altra azienda. & \textit{I} & 
+			\textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU10}{TU10} & Viene verificato che un cittadino non 
+			possa aggiungere, eliminare, modificare un prodotto. & \textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU11}{TU11} & Viene verificato che sia possibile 
+			effettuare un ordine. & \textit{I} & \textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU12}{TU12} & Viene verificato che il calcolo del 
+			totale relativo ad un ordine avvenga correttamente. & \textit{I} & 
+			\textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU13}{TU13} & Viene verificato il corretto rimborso 
+			dell'IVA da parte del governo. & \textit{I} & \textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU14}{TU14} & Viene verificato il corretto pagamento 
+			dell'IVA da parte di un'azienda. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU15}{TU15} & Viene verificato il corretto 
+			trasferimento di Cubit dall'account corrente. & \textit{I} & 
+			\textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU16}{TU16} & Viene verificato il corretto 
+			trasferimento di Cubit da uno specifico account verso un secondo 
+			account. & \textit{I} & \textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU17}{TU17} & Viene verificata la corretta coniazione 
+			di un certo quantitativo di Cubit. & \textit{I} & \textit{S}\\  
 			
 			\tabularnewline
 		\end{longtable}
@@ -659,7 +729,7 @@ I test sono attività che servono a verificare che il software prodotto implemen
 		\begin{longtable}{ >{\centering}p{0.10\textwidth} >{}p{0.95\textwidth}}
 			
 			%\tabularnewline
-			\caption{Riepilogo Test di Unità}\\	
+			\caption{Tracciamento Test di Unità-Metodi}\\	
 			\rowcolorhead
 			\textbf{\color{white}Codice} 
 			& \centering\textbf{\color{white}Metodo}  
@@ -678,7 +748,68 @@ I test sono attività che servono a verificare che il software prodotto implemen
 			\hypertarget{TU1}{TU1} & \texttt{UserLogic::addCitizen(bytes32 \_hashIpfs, uint8 \_hashSize, uint8 \_hashFun)}\\ 
 			
 			%\tabularnewline
-			\hypertarget{TU2}{TU2} & \texttt{UserLogic::addBusiness(bytes32 \_hashIpfs,uint8 \_hashSize,uint8 \_hashFun)}\\ 
+			\hypertarget{TU2}{TU2} & \texttt{UserLogic::addBusiness(bytes32 
+			\_hashIpfs,uint8 \_hashSize,uint8 \_hashFun)}\\
+			
+			\hypertarget{TU3}{TU3} & \texttt{UserLogic::login(address 
+			\_userAddress)}\\
+			
+			\hypertarget{TU4}{TU4} & \texttt{UserLogic::login(address 
+			\_userAddress)}\\
+			
+			\hypertarget{TU5}{TU5} & \texttt{ProductLogic::addProduct(bytes32 
+			\_hashIPFS, uint8 \_hashSize, uint8 \_hashFunction, uint8 
+			\_vatPercentage, uint256 \_netPrice)}\\
+			
+			\hypertarget{TU6}{TU6} & \texttt{ProductLogic::function 
+			modifyProduct(bytes32 \_keyHash, bytes32 \_hashIPFS, uint8 
+			\_hashSize, uint8 \_hashFunction, uint8 \_vatPercentage, uint256 
+			\_netPrice)}\\
+			
+			\hypertarget{TU7}{TU7} & 
+			\texttt{ProductLogic::deleteProduct(bytes32 \_keyHash)}\\
+			
+			\hypertarget{TU8}{TU8} & \texttt{ProductLogic::function 
+			modifyProduct(bytes32 \_keyHash, bytes32 \_hashIPFS, uint8 
+			\_hashSize, uint8 \_hashFunction, uint8 \_vatPercentage, uint256 
+			\_netPrice)}\\
+			
+			\hypertarget{TU9}{TU9} & 
+			\texttt{ProductLogic::deleteProduct(bytes32 \_keyHash)}\\
+			
+			\hypertarget{TU10}{TU10} & \texttt{ 
+			ProductLogic::addProduct(bytes32 \_hashIPFS, uint8 \_hashSize, 
+			uint8 \_hashFunction, uint8 \_vatPercentage, uint256 
+			\_netPrice) \newline
+			ProductLogic::function modifyProduct(bytes32 \_keyHash, 
+			bytes32 \_hashIPFS, uint8 \_hashSize, uint8 \_hashFunction, uint8 
+			\_vatPercentage, uint256 \_netPrice)\newline
+			ProductLogic::deleteProduct(bytes32 \_keyHash)}\\
+			
+			\hypertarget{TU11}{TU11} & 
+			\texttt{OrderLogic::registerOrder(bytes32 \_hashIpfs, uint8 
+			\_hashFun, uint8 \_hashSize, address \_buyer, string calldata 
+			\_period, bytes32[] calldata \_productsHash)}\\
+			
+			\hypertarget{TU12}{TU12} & 
+			\texttt{OrderLocic::calculateOrderTotal(bytes32[] memory 
+			\_productsHash)}\\
+			
+			\hypertarget{TU13}{TU13} & \texttt{VatLogic::refundVat(bytes32 
+			\_key)}\\
+			
+			\hypertarget{TU14}{TU14} & \texttt{VatLogic::payVat(address \_from, 
+			bytes32 \_key)}\\
+			
+			\hypertarget{TU15}{TU15} & \texttt{TokenCubit::transfer(address 
+			\_to, uint256 \_value)}\\
+			
+			\hypertarget{TU16}{TU16} & \texttt{TokenCubit::transferFrom(address 
+			\_from, address \_to, uint256 \_value)}\\
+			
+			\hypertarget{TU17}{TU17} & \texttt{TokenCubit::mintToken(address 
+			target, uint256 mintedAmount)}\\
+			
 			
 			%\tabularnewline
 			
