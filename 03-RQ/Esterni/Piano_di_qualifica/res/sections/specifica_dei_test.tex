@@ -613,10 +613,11 @@ I test sono attività che servono a verificare che il software prodotto implemen
 
 
 \subsection{Test di integrazione}
-\pagebreak
+%TODO
+
 \subsection{Test di unità}
-		\renewcommand{\arraystretch}{1.5}
-		\rowcolors{2}{pari}{dispari}
+	\renewcommand{\arraystretch}{1.5}
+	\rowcolors{2}{pari}{dispari}	
 		
 		\begin{longtable}{ >{\centering}p{0.10\textwidth} >{}p{0.70\textwidth}
 				>{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth}}
@@ -650,7 +651,8 @@ I test sono attività che servono a verificare che il software prodotto implemen
 			
 			\tabularnewline
 		\end{longtable}
-	
+
+%TRACCIAMENTO TEST-METODI
 		\renewcommand{\arraystretch}{1.5}
 		\rowcolors{2}{pari}{dispari}
 		
@@ -660,22 +662,24 @@ I test sono attività che servono a verificare che il software prodotto implemen
 			\caption{Riepilogo Test di Unità}\\	
 			\rowcolorhead
 			\textbf{\color{white}Codice} 
-			& \centering\textbf{\color{white}Descrizione}  
+			& \centering\textbf{\color{white}Metodo}  
 			\tabularnewline %\tabularnewline 
 			\endfirsthead	
 			
 			\rowcolor{white}\caption[]{(continua)}\\	
 			\rowcolorhead
 			\textbf{\color{white}Codice} 
-			& \centering\textbf{\centering\color{white}Descrizione} 
+			& \centering\textbf{\centering\color{white}Metodo} 
 			\tabularnewline %\tabularnewline 
 			\endhead	
 			
-			\hypertarget{TU1}{TU1} & \texttt{UserLogic::addCitizen(bytes32 
-			\_hashIpfs, uint8 \_hashSize, uint8 \_hashFun)}\\ 
 			
-			\tabularnewline
-			\hypertarget{TU2}{TU2} & \texttt{UserLogic::addBusiness(bytes32 
-			\_hashIpfs,uint8 \_hashSize,uint8 \_hashFun)}\\ 
+			
+			\hypertarget{TU1}{TU1} & \texttt{UserLogic::addCitizen(bytes32 \_hashIpfs, uint8 \_hashSize, uint8 \_hashFun)}\\ 
+			
+			%\tabularnewline
+			\hypertarget{TU2}{TU2} & \texttt{UserLogic::addBusiness(bytes32 \_hashIpfs,uint8 \_hashSize,uint8 \_hashFun)}\\ 
+			
+			%\tabularnewline
 			
 		\end{longtable}
