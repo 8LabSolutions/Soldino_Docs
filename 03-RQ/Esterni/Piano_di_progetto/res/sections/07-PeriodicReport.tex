@@ -250,8 +250,7 @@ Il bilancio economico risultante è positivo, ovvero sono stati risparmiati {\EU
 \subsection{Periodo di progettazione di dettaglio e codifica}
 Le ore sostenute durante questo periodo sono relative alla codifica necessaria 
 per la realizzazione della Product Baseline\glo. Tale periodo è da considerarsi 
-rendicontato in quanto il capitolato è stato precedentemente aggiudicato 
-e quindi il lavoro è svolto con lo scopo di sviluppare il progetto finale.
+rendicontato in quanto il lavoro è svolto con lo scopo di sviluppare il prodotto finale.
 
 \begin{table}[H]
 	\centering\renewcommand{\arraystretch}{1.5}
@@ -264,64 +263,67 @@ e quindi il lavoro è svolto con lo scopo di sviluppare il progetto finale.
 		{\colorhead \textbf{Costo}} \\
 		
 		\rowcolorlight
-		{\colorbody Responsabile} & {\colorbody PLACEHOLDER} & 
-		{\colorbody \EUR{PLACEHOLDER}}  
+		{\colorbody Responsabile} & {\colorbody 21(+0)} & 
+		{\colorbody \EUR{630,00} (+\EUR{0,00})}  
 		\\
 		
 		\rowcolordark
-		{\colorbody Amministratore} & {\colorbody PLACEHOLDER} & 
-		{\colorbody \EUR{PLACEHOLDER}}
+		{\colorbody Amministratore} & {\colorbody 29(+0)} & 
+		{\colorbody \EUR{580,00} (+\EUR{0,00})}
 		\\	
 		
 		\rowcolorlight
-		{\colorbody Analista} & {\colorbody PLACEHOLDER} & 
-		{\colorbody \EUR{PLACEHOLDER}} 
+		{\colorbody Analista} & {\colorbody 0(+4)} & 
+		{\colorbody \EUR{0,00} (+\EUR{100,00})} 
 		\\
 		
 		\rowcolordark
-		{\colorbody Progettista} & {\colorbody PLACEHOLDER} & 
-		{\colorbody \EUR{PLACEHOLDER}} 
+		{\colorbody Progettista} & {\colorbody 90(+30)} & 
+		{\colorbody \EUR{1980,00} (+\EUR{660,00})} 
 		\\
 		
 		\rowcolorlight
-		{\colorbody Programmatore} & {\colorbody PLACEHOLDER} & 
-		{\colorbody \EUR{PLACEHOLDER}} 
+		{\colorbody Programmatore} & {\colorbody 157(-27)} & 
+		{\colorbody \EUR{2355,00} (-\EUR{405,00})} 
 		\\
 		
 		\rowcolordark
-		{\colorbody Verificatore} & {\colorbody PLACEHOLDER} & 
-		{\colorbody \EUR{PLACEHOLDER}} 
+		{\colorbody Verificatore} & {\colorbody 103(+0)} & 
+		{\colorbody \EUR{1545,00} (+\EUR{0,00})} 
 		\\
 		
 		\rowcolorlight
-		{\colorbody \textbf{Totale Preventivo}} & {\colorbody \textbf{PLACEHOLDER}} & 
-		{\colorbody \textbf{\EUR{PLACEHOLDER}}} 
+		{\colorbody \textbf{Totale Preventivo}} & {\colorbody \textbf{400}} & 
+		{\colorbody \textbf{\EUR{7.090,00}}} 
 		\\
 		
 		\rowcolordark
-		{\colorbody \textbf{Totale Consuntivo}} & {\colorbody \textbf{PLACEHOLDER}} & 
-		{\colorbody \textbf{\EUR{PLACEHOLDER}}} 
+		{\colorbody \textbf{Totale Consuntivo}} & {\colorbody \textbf{407}} & 
+		{\colorbody \textbf{\EUR{7.445,00}}} 
 		\\
 		
 		\rowcolorlight
-		{\colorbody \textbf{Differenza}} & {\colorbody \textbf{PLACEHOLDER}} & 
-		{\colorbody \textbf{\EUR{PLACEHOLDER}}} 
-		\\		
+		{\colorbody \textbf{Differenza}} & {\colorbody \textbf{7}} & 
+		{\colorbody \textbf{\EUR{+355,00}}} 
+		\\
+		
+		\rowcolordark
+		{\colorbody \textbf{Totale con risparmio(-\EUR{144,00})}} &  & 
+		{\colorbody \textbf{\EUR{211,00}}} 
+		\\	
 	\end{tabular}
 \end{table}
 
 \subsubsection{Conclusioni}
-Dai dati riportati nella tabella soprastante si evince che %PLACEHOLDER continuare
-\subsubsection{Preventivo a finire}
-Il bilancio economico risultante è %PLACEHOLDER continuare
-\\
+Dai dati riportati nella tabella soprastante si evince che la progettazione ha subito una sostanziale modifica, di conseguenza le ore del programmatore hanno subito un notevole ridimensionamento. 
 Di seguito sono riportate le motivazioni delle variazioni del monte ore di 
 lavoro ricoperto dai diversi ruoli:
 \begin{itemize}
-%	\item \textbf{\textit{Responsabile}}: ;
-	\item \textbf{\textit{Amministratori}}: ;
-%	\item \textbf{\textit{Analisti}}: ;
-	\item \textbf{\textit{Progettisti}}: ;
-	\item \textbf{\textit{Programmatori}}: ;
-	\item \textbf{\textit{Verificatori}}: .
+	\item \textbf{\textit{Amministratori}}: alcuni problemi si sono riscontrati durante il settaggio di Solidity-coverage, fortunatamente risolti in tempi contenuti;
+	\item \textbf{\textit{Analisti}}: sono state aggiunte alcune ore all'Analista non preventivate, in quanto c'è stato bisogno di effettuare le correzioni segnalate sull'\textit{Analisi dei Requisiti} e, come indicato nel \textit{Piano di Qualifica v3.0.0}, alcune ore sono state dedicate al supporto dei Progettisti nella stesura di diagrammi relativi dunque, alla progettazione;
+	\item \textbf{\textit{Progettisti}}: alcuni problemi si sono riscontrati con l'identificazione dei design pattern da applicare al backend, in quanto per incompatibilità, si è dovuto procedere con la ricerca di ulteriori pattern, oltre a quelli studiati a lezione. Inoltre si sono riscontrate difficoltà nella progettazione dei moduli per l'ottimizzazione delle transazioni, e nella sicurezza legata all'accesso ai dati. Nella definizione dei prodotti si sono riscontrati problemi legati a limiti del linguaggio Solidity, dunque si è proceduto con l'agire sul problema con nuovi costrutti e la modifica della logica. L'introduzione di IPFS ha richiesto un numero di ore necessario allo studio della tecnologia;
+	\item \textbf{\textit{Programmatori}}: a seguito di quanto specificato relativamente alla progettazione, la programmazione ha subito un periodo di stallo in attesa del termine della rivisitazione della progettazione e la risoluzione dei problemi con Solidity. D'altra parte, una volta terminata la rivisitazione della progettazione, è stato possibile procedere più speditamente nel lavoro di implementazione.
 \end{itemize}
+\subsubsection{Preventivo a finire}
+Il bilancio economico risultante è negativo, mitigato dal fatto di aver un fondo cuscinetto dalla fase precedente di \EUR{144,00} che porta ad avere una perdita di \EUR{211,00}. Tale perdita sarà tenuta in considerazione nella fase successiva, in quanto si prevede di recuperare il debito di questa fase grazie alla rivisitazione della progettazione effettuata che ci consentirà di risparmiare ore nella fase di testing e codifica in generale.
+\\
