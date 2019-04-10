@@ -613,5 +613,69 @@ I test sono attività che servono a verificare che il software prodotto implemen
 
 
 \subsection{Test di integrazione}
-
+\pagebreak
 \subsection{Test di unità}
+		\renewcommand{\arraystretch}{1.5}
+		\rowcolors{2}{pari}{dispari}
+		
+		\begin{longtable}{ >{\centering}p{0.10\textwidth} >{}p{0.70\textwidth}
+				>{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth}}
+			
+			%\tabularnewline
+			\caption{Riepilogo Test di Unità}\\	
+			\rowcolorhead
+			\textbf{\color{white}Codice} 
+			& \centering\textbf{\color{white}Descrizione} 
+			& \centering\textbf{\color{white}Stato}
+			& \centering\textbf{\color{white}Esito} 
+			\tabularnewline %\tabularnewline 
+			\endfirsthead	
+			
+			\rowcolor{white}\caption[]{(continua)}\\	
+			\rowcolorhead
+			\textbf{\color{white}Codice} 
+			& \centering\textbf{\centering\color{white}Descrizione} 
+			& \centering\textbf{\color{white}Stato}
+			& \centering\textbf{\color{white}Esito} 
+			\tabularnewline %\tabularnewline 
+			\endhead	
+			
+			
+			\hypertarget{TU1}{TU1} & Viene verificata la corretta 
+			registrazione di un cittadino. & \textit{NI} & \textit{NS}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU2}{TU2} & Viene verificata la corretta 
+			registrazione di un'azienda. & \textit{NI} & \textit{NS}\\ 
+			
+			\tabularnewline
+		\end{longtable}
+	
+		\renewcommand{\arraystretch}{1.5}
+		\rowcolors{2}{pari}{dispari}
+		
+		\begin{longtable}{ >{\centering}p{0.10\textwidth} >{}p{0.95\textwidth}}
+			
+			%\tabularnewline
+			\caption{Riepilogo Test di Unità}\\	
+			\rowcolorhead
+			\textbf{\color{white}Codice} 
+			& \centering\textbf{\color{white}Descrizione}  
+			\tabularnewline %\tabularnewline 
+			\endfirsthead	
+			
+			\rowcolor{white}\caption[]{(continua)}\\	
+			\rowcolorhead
+			\textbf{\color{white}Codice} 
+			& \centering\textbf{\centering\color{white}Descrizione} 
+			\tabularnewline %\tabularnewline 
+			\endhead	
+			
+			\hypertarget{TU1}{TU1} & \texttt{UserLogic::addCitizen(bytes32 
+			\_hashIpfs, uint8 \_hashSize, uint8 \_hashFun)}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU2}{TU2} & \texttt{UserLogic::addBusiness(bytes32 
+			\_hashIpfs,uint8 \_hashSize,uint8 \_hashFun)}\\ 
+			
+		\end{longtable}
