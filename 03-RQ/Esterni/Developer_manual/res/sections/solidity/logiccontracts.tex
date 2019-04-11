@@ -33,7 +33,7 @@ In order to store VAT movements broken down by business and quarter, the functio
 \pagebreak
 \paragraph{OrderLogic}\mbox{}\\
 
-\noindent This contract allows to register an order, the function \texttt{registerOrder} can be called only by the \texttt{Purchase} contract because when a purchase is made on \textit{Soldino} the latter contract is called and forwards the request to this contract. In other words, if a purchase contains products of different sellers, the \texttt{Purchase} contract call \texttt{registerOrder} for every seller in ... \\
+\noindent This contract allows to register an order, the function \texttt{registerOrder} can be called only by the \texttt{Purchase} contract because when a purchase is made on \textit{Soldino} the latter contract is called and forwards the request to this contract. In other words, if a purchase contains products of different sellers, the \texttt{Purchase} contract call \texttt{registerOrder} for every different seller. \\
 \texttt{registerOrder} in addition register the VAT movement for the seller and the seller if the latter is a business.
 \begin{figure}[H]
 	\centering
