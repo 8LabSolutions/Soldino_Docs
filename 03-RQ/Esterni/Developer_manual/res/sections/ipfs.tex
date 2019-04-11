@@ -1,0 +1,23 @@
+\section{IPFS} 
+
+\subsection{Overview}
+It is well known that the Ethereum blockchain is not suited for saving data. You just need to know that for hypothetically uploading a file on Ethereum, you would have to pay about 2\$ per kilobyte. 
+\\
+For these reasons, we adopted the InterPlanetary File System (IPFS) protocol, to store all the information that is not involved in VAT management, in the homonymous peer-to-peer network. Specifically, for security purposes, all the data used to make payments between the clients are exclusively stored in the Ethereum blockchain. All the remaining data, such as not sensitive clients' data, products' data, orders' data, are stored into IPFS since it is a free and distributed technology born with the aim of sharing every kind of content.
+
+
+\subsection{Architecture overview}
+
+To establish a connection to the IPFS network, we developed a small package, that is responsible for hiding the IPFS connection implementation (\texttt{ipfs-mini} API). The available interface contains two methods: one for adding new data into the blockchain, and the other one for retrieving them starting from the IPFS content identifier (CID).
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{res/images/IPFS.png}
+	\caption{Class diagram of the IPFS package}
+\end{figure}
+\subsection{Methods}
+The package provides the following methods:
+\begin{itemize}
+	\item \textbf{getJSONfromHash}: it uses the \texttt{ipfs-mini} API to retreive the JSON object corresponding to the passed IPFS CID;
+	\item \textbf{insertJSONintoIPFS}: it uses the \texttt{ipfs-mini} API to upload the JSON passed to the function, then returns the IPFS CID.
+\end{itemize}
+
