@@ -1,1 +1,4 @@
 \subsection{Contracts}
+\subsubsection{Storage contracts}
+In this section we will illustrate the storage contracts. As mentioned before the storage contracts are immutable becaouse they store all the critical data. In fact if a contract is upgraded, which means that a new version(using inheritance) is deployed, then all its state variable are new and the data of the previous version should be copied into the new contract, which translate in high cost transaction.\\
+To avoid that, storage contracts implements none business logic of any kind. Their purpose is to store data and allow specific contract to modify their state. For data retrival, on the other hand, the are no limitation because getter methods don't modify the storage contract's state.
