@@ -1,9 +1,10 @@
 \subsection{Contracts}
+\textit{Disclamer: the class diagram for each contract may be updated in the future to better represent the final product. Updates concern cost or performance optimization.}
 \subsubsection{Generic contracts}
 \paragraph{Security contracts}
 \subparagraph{Owned}
-This contract is used to define the owner of a contract, in Soldino the owner is the address which 
-do the deployment. The contract defines a modifier used to allow only the owner to call a function which uses the modifier.
+This contract defines the owner of a contract.In Soldino the owner is the address which deploy all contracts. The contract defines a modifier, \texttt{onlyOwner}, used to allow only the owner to call a function which uses 
+the above-mentioned modifier.
 \begin{figure}[H]
 	\centering
 	\frame{\includegraphics[scale=0.132]{res/images/solidity/owned.png}}
@@ -11,8 +12,9 @@ do the deployment. The contract defines a modifier used to allow only the owner 
 \end{figure}
 
 \subparagraph{Authorizable}
-This contract is used by all storage contracts. It's a derivate class of \texttt{Owned} and stores 
-all the address which are authorized to call the functions that use the modifier \texttt{onlyAuthorized} defined in this contract.
+This contract is used by all storage contracts. It's a derivate contract of \texttt{Owned} and stores 
+all address authorized to call the functions that use the modifier \texttt{onlyAuthorized} defined in this contract.
+To authorize a contract the function \texttt{addAuthorized} needs to be called from the owner.
 \begin{figure}[H]
 	\centering
 	\frame{\includegraphics[scale=0.2]{res/images/solidity/authorizable.png}}
@@ -56,10 +58,12 @@ With the \texttt{Purchase} contract, the user has to confirm only two transactio
 In this section we will illustrate the storage contracts. As mentioned before the storage contracts are immutable because they store all the critical data. In fact if a contract is upgraded, which means that a new version(using inheritance) is deployed, then all its state variable are new and the data of the previous version should be copied into the new contract, which translate in high cost transaction.\\
 To avoid that, storage contracts implement no business logic of any kind. Their purpose is to store data and allow specific contract to modify their state. For data retrieval, on the other hand, the are no limitation because getter methods don't modify the storage contract's state.
 All storage contracts inherit from \texttt{Authorizable} in order to use the \texttt{onlyAuthorized} modifier in the setter methods.
-\paragraph*{Note: struct in the storage contract}
-
+\paragraph*{Note: struct in the storage contracts}
+All contracts, except for \texttt{VatStorage}, in their struct have three state variables: \texttt{hashIpfs, hashFunction} and \texttt{hashSize}, which represent the \texttt{IPFS CID} used to locate additional data on the \texttt{IPFS} network such as name and surname for users. The choice to separate critical data from additional data has been made in order to optimize storage costs.
+\pagebreak
 \paragraph{UserStorage}\mbox{}\\
-This contract stores all the critical data of the users 
+
+\noindent This contract stores all the critical data of the users. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.25]{res/images/solidity/userstorage.png}
@@ -67,6 +71,8 @@ This contract stores all the critical data of the users
 \end{figure}
 \pagebreak
 \paragraph{ProductStorage}\mbox{}\\
+
+\noindent The \texttt{ProductStorage} contract stores all the data needed to be secured (e.g. net price). Furthermore, the contract defines all methods used to maintain the data. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.45]{res/images/solidity/productstorage.png}
@@ -74,13 +80,19 @@ This contract stores all the critical data of the users
 \end{figure}
 \pagebreak
 \paragraph{VatStorage}\mbox{}\\
+This contract maintain the VAT amount of every business for every quarter. Each time a business buy or sell some products, the vat amount of each product is added or subtracted to the amount in this contract. If the product is sold, its VAT is added, whereas if the product is sold the vat is subtracted. \\
+\texttt{VatStorage} has an array of map keys in order to iterate the map and enumerate it.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.30]{res/images/solidity/vatstorage.png}
 	\caption{class diagram of the VatStorage contract}
 \end{figure}
 \pagebreak
+
 \paragraph{OrderStorage}\mbox{}\\
+
+\noindent This contract stores all the information of an order. In its struct are saved also the products of the order.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.35]{res/images/solidity/orderstorage.png}

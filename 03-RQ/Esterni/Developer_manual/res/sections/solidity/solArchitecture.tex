@@ -1,5 +1,5 @@
 \subsection{Architecture overview}
-As you know the main feature of the blockchain is its immutability. It means that once a contract is 
+As you know the main feature of the blockchain is its immutability. It means that once a smart contract (reffered as contract from now on) is 
 deployed, it's not possible to modify or update it. In order to update a contract you need to deploy 
 a new contract on the blockchain.\\
 In view of this fact and the proponent's request to develop upgradeable smart contracts, the architecture ideated and developed reflects these two aspects. In fact the smarts contracts in Soldino
@@ -16,11 +16,12 @@ are essentially of three types:
 		\item\textbf{ContractManager}: contract used to achieve simple upgradeablilty of the system.
 		\item\textbf{Purchase}: contract to allows the user to buy several products with minimum number of transaction.
 		\item\textbf{Owned} and \textbf{Authorizable}: contracts used for the system's security.
+		\item\textbf{Migration}: contract provided by Truffle framework, it's used to deploy all contracts. 
 	\end{itemize}
 \end{itemize}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.369]{res/images/architecture.png}
+	\includegraphics[scale=0.365]{res/images/architecture.png}
 	\caption{Simplified class diagram of the contracts (state variables and methods are omitted)}
 \end{figure}
