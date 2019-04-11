@@ -96,8 +96,36 @@ Legenda per le abbreviazioni presenti in grafici e tabelle:
 \end{itemize}
 
 \subsubsection{PROS - Percentuale di Requisiti Obbligatori Sodisfatti}
+% PB In questo calcolo si tiene traccia dei requisiti associati ai test di sistema, tramite i test di sistema superati.
+% 16/38
+\begin{longtable}
+	{ >{\centering}p{0.15\textwidth}
+		>{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth}}
+	%\hline
+	\rowcolor{white}\caption{PROS}\\
+	\rowcolorhead
+	\textbf{\color{white}RR} 
+	& \textbf{\color{white}C} 
+	& \textbf{\color{white}TB}
+	& \textbf{\color{white}PD}
+	& \textbf{\color{white}VC}
+	\tabularnewline %\hline  
+	\endhead
+	
+	0
+	& 0\%
+	& 0\%
+	& 42\%
+	& -
+	\tabularnewline %\hline 
+\end{longtable}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{res/images/eac.pdf}
+	\caption{Estimated At Completion durante i periodi da RR a TB}
+\end{figure}
 
-\subsubsection{Profondità della gerarchia}
+%\subsubsection{Profondità della gerarchia}
 
 \subsubsection{EAC - Estimated At Completion}
 \begin{longtable}
@@ -121,11 +149,7 @@ Legenda per le abbreviazioni presenti in grafici e tabelle:
 	& -
 	\tabularnewline %\hline 
 \end{longtable}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{res/images/eac.pdf}
-	\caption{Estimated At Completion durante i periodi da RR a TB}
-\end{figure}
+
 
 \subsubsection{VAC - Variance At Completion}
 \begin{longtable}{ >{\centering}p{0.15\textwidth}
