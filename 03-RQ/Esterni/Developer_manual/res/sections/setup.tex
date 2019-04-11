@@ -135,14 +135,15 @@ This section shows how to configure your work environment, so that it's the same
 Make sure to configure the tools in order. In particular, Truffle requires that Ganache is opened and is configured to execute successfully.
 % clona la repo; apri truffle, apri ganache, apri browser con metamask, setta
 \subsubsection{Cloning the repo}
-You have to clone the \textit{Soldino} repository on GitHub: open the shell, move to the directory where you want Soldino to be, then use \texttt{git clone https://github.com/8LabSolutions/Soldino-PoC}. \textbf{LINK DA MODIFICARE CON IL LINK ALLA REPOSITORY FINALE}
+You have to clone the \textit{Soldino} repository on GitHub: open the shell, move to the directory where you want Soldino to be, then use \texttt{git clone https://github.com/8LabSolutions/Soldino-PoC} and then use \texttt{git checkout final
+}.  
 
 \subsubsection{Ganache}
 You have to go to the folder where you've put Ganache, and open it with double click.
 \begin{figure}
 	\centering
-	\caption{Ganache UI: from top to bottom you can see the menu bar, the current configuration, the mnemonic, and the interface of the selected menu option}
 	\includegraphics[scale=0.25]{res/images/ganache-ui.png}
+	\caption{Ganache UI: from top to bottom you can see the menu bar, the current configuration, the mnemonic, and the interface of the selected menu option}
 \end{figure}
 Then you have to click on the cog at the top left corner to access Ganache settings and make sure you've matched the following settings (most of which are defined in \texttt{truffle-config.js}) on each respective window:
 \begin{itemize}
