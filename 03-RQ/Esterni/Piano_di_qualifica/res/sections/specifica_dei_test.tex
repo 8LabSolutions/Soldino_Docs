@@ -801,34 +801,73 @@ I test sono attività che servono a verificare che il software prodotto implemen
 			\textit{S}\\
 			
 			\tabularnewline
-			\hypertarget{TU11}{TU11} & Viene verificato che sia possibile 
-			effettuare un ordine. & \textit{I} & \textit{S}\\ 
+			\hypertarget{TU11}{TU11} & Viene verificato che il calcolo del 
+			valore IVA su un prodotto avvenga correttamente. & \textit{I} 
+			& \textit{S}\\
 			
 			\tabularnewline
 			\hypertarget{TU12}{TU12} & Viene verificato che il calcolo del 
+			prezzo lordo di un prodotto sia corretto. & \textit{I} 
+			& \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU13}{TU13} & Viene verificato che sia possibile 
+			effettuare un ordine. & \textit{I} & \textit{S}\\ 
+			
+			
+			\tabularnewline
+			\hypertarget{TU14}{TU14} & Viene verificato che la creazione 
+			dell'ordine non avvenga correttamente se esso non contiene almeno 
+			un prodotto. & \textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU15}{TU15} & Viene verificato che la creazione 
+			dell'ordine non avvenga correttamente se gli indirizzi del 
+			compratore e del venditore non sono validi o se essi coincidono. & 
+			\textit{I} & 
+			\textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU16}{TU16} & Viene verificato che il calcolo del 
 			totale relativo ad un ordine avvenga correttamente. & \textit{I} & 
 			\textit{S}\\ 
 			
 			\tabularnewline
-			\hypertarget{TU13}{TU13} & Viene verificato il corretto rimborso 
-			dell'IVA da parte del governo. & \textit{I} & \textit{S}\\ 
+			\hypertarget{TU17}{TU17} & Viene verificato che il calcolo dello 
+			stato IVA corrisponda alla situazione attuale. & \textit{I} & 
+			\textit{S}\\
 			
 			\tabularnewline
-			\hypertarget{TU14}{TU14} & Viene verificato il corretto pagamento 
+			\hypertarget{TU18}{TU18} & Viene verificato il corretto rimborso 
+			dell'IVA da parte del governo. & \textit{I} & \textit{S}\\ 
+				
+			\tabularnewline
+			\hypertarget{TU19}{TU19} & Viene verificato che il rimborso 
+			dell'IVA da parte del governo avvenga solamente se lo stato della 
+			stessa risulta a credito. & \textit{I} & \textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU20}{TU20} & Viene verificato il corretto pagamento 
 			dell'IVA da parte di un'azienda. & \textit{I} & \textit{S}\\
 			
 			\tabularnewline
-			\hypertarget{TU15}{TU15} & Viene verificato il corretto 
-			trasferimento di Cubit dall'account corrente. & \textit{I} & 
+			\hypertarget{TU21}{TU21} & Viene verificato il corretto 
+			trasferimento di Cubit. & \textit{I} & 
 			\textit{S}\\ 
 			
 			\tabularnewline
-			\hypertarget{TU16}{TU16} & Viene verificato il corretto 
-			trasferimento di Cubit da uno specifico account verso un secondo 
-			account. & \textit{I} & \textit{S}\\ 
+			\hypertarget{TU22}{TU22} & Viene verificato che il trasferimento di 
+			Cubit avvenga solo se l'indirizzo di destinazione è valido. & 
+			\textit{I} & \textit{S}\\
 			
 			\tabularnewline
-			\hypertarget{TU17}{TU17} & Viene verificata la corretta coniazione 
+			\hypertarget{TU23}{TU23} & Viene verificato che il trasferimento di 
+			Cubit avvenga solo se il mittente possiede tale somma. & \textit{I} 
+			& \textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU24}{TU24} & Viene verificata la corretta coniazione 
 			di un certo quantitativo di Cubit. & \textit{I} & \textit{S}\\  
 			
 			\tabularnewline
@@ -892,34 +931,60 @@ I test sono attività che servono a verificare che il software prodotto implemen
 			\hypertarget{TU10}{TU10} & \texttt{ 
 			ProductLogic::addProduct(bytes32 \_hashIPFS, uint8 \_hashSize, 
 			uint8 \_hashFunction, uint8 \_vatPercentage, uint256 
-			\_netPrice) \newline
-			ProductLogic::function modifyProduct(bytes32 \_keyHash, 
+			\_netPrice) \newline \newline
+			ProductLogic::modifyProduct(bytes32 \_keyHash, 
 			bytes32 \_hashIPFS, uint8 \_hashSize, uint8 \_hashFunction, uint8 
-			\_vatPercentage, uint256 \_netPrice)\newline
+			\_vatPercentage, uint256 \_netPrice)\newline \newline
 			ProductLogic::deleteProduct(bytes32 \_keyHash)}\\
 			
 			\hypertarget{TU11}{TU11} & 
+			\texttt{ProductLogic::calculateProductVat(bytes32 \_keyHash)}\\
+			
+			\hypertarget{TU12}{TU12} & 
+			\texttt{ProductLogic::calculateProductGrossPrice(bytes32 
+			\_keyHash)}\\
+		
+			\hypertarget{TU13}{TU13} & 
 			\texttt{OrderLogic::registerOrder(bytes32 \_hashIpfs, uint8 
 			\_hashFun, uint8 \_hashSize, address \_buyer, string calldata 
 			\_period, bytes32[] calldata \_productsHash)}\\
+		
+			\hypertarget{TU14}{TU14} & 
+			\texttt{OrderLogic::registerOrder(bytes32 \_hashIpfs, uint8 
+				\_hashFun, uint8 \_hashSize, address \_buyer, string calldata 
+				\_period, bytes32[] calldata \_productsHash)}\\
 			
-			\hypertarget{TU12}{TU12} & 
+			\hypertarget{TU15}{TU15} & 
+			\texttt{OrderLogic::registerOrder(bytes32 \_hashIpfs, uint8 
+				\_hashFun, uint8 \_hashSize, address \_buyer, string calldata 
+				\_period, bytes32[] calldata \_productsHash)}\\
+			
+			\hypertarget{TU16}{TU16} & 
 			\texttt{OrderLocic::calculateOrderTotal(bytes32[] memory 
 			\_productsHash)}\\
 			
-			\hypertarget{TU13}{TU13} & \texttt{VatLogic::refundVat(bytes32 
+			\hypertarget{TU17}{TU17} & \texttt{VatLogic::registerVat(address 
+			\_business, int256 \_vatAmount, string calldata \_period)}\\
+			
+			\hypertarget{TU18}{TU18} & \texttt{VatLogic::refundVat(bytes32 
 			\_key)}\\
 			
-			\hypertarget{TU14}{TU14} & \texttt{VatLogic::payVat(address \_from, 
+			\hypertarget{TU19}{TU19} & \texttt{VatLogic::refundVat(bytes32 
+				\_key)}\\
+			
+			\hypertarget{TU20}{TU20} & \texttt{VatLogic::payVat(address \_from, 
 			bytes32 \_key)}\\
 			
-			\hypertarget{TU15}{TU15} & \texttt{TokenCubit::transfer(address 
+			\hypertarget{TU21}{TU21} & \texttt{TokenCubit::transfer(address 
 			\_to, uint256 \_value)}\\
 			
-			\hypertarget{TU16}{TU16} & \texttt{TokenCubit::transferFrom(address 
-			\_from, address \_to, uint256 \_value)}\\
+			\hypertarget{TU22}{TU22} & \texttt{TokenCubit::transfer(address 
+				\_to, uint256 \_value)}\\
 			
-			\hypertarget{TU17}{TU17} & \texttt{TokenCubit::mintToken(address 
+			\hypertarget{TU23}{TU23} & \texttt{TokenCubit::transfer(address 
+				\_to, uint256 \_value)}\\
+			
+			\hypertarget{TU24}{TU24} & \texttt{TokenCubit::mintToken(address 
 			target, uint256 mintedAmount)}\\
 			
 			
