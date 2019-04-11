@@ -613,7 +613,119 @@ I test sono attività che servono a verificare che il software prodotto implemen
 
 
 \subsection{Test di integrazione}
-%TODO
+	\renewcommand{\arraystretch}{1.5}
+	\rowcolors{2}{pari}{dispari}	
+		
+		\begin{longtable}{ >{\centering}p{0.10\textwidth} >{}p{0.70\textwidth}
+				>{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth}}
+			
+			%\tabularnewline
+			\caption{Riepilogo Test di Integrazione}\\	
+			\rowcolorhead
+			\textbf{\color{white}Codice} 
+			& \centering\textbf{\color{white}Descrizione} 
+			& \centering\textbf{\color{white}Stato}
+			& \centering\textbf{\color{white}Esito} 
+			\tabularnewline %\tabularnewline 
+			\endfirsthead	
+			
+			\rowcolor{white}\caption[]{(continua)}\\	
+			\rowcolorhead
+			\textbf{\color{white}Codice} 
+			& \centering\textbf{\centering\color{white}Descrizione} 
+			& \centering\textbf{\color{white}Stato}
+			& \centering\textbf{\color{white}Esito} 
+			\tabularnewline %\tabularnewline 
+			\endhead	
+			
+			
+			\hypertarget{TI1}{TI1} & Viene verificato che sia lanciato un messaggio di 
+			errore se un utente è già presente nel sistema. & \textit{I} & \textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TI2}{TI2} & Viene verificato che un utente venga rimosso 
+			correttamente. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI3}{TI3} & Viene verificato che sia lanciato un messaggio di 
+			errore se si vuole eliminare un utente non presente nel sistema. & \textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI4}{TI4} & Viene verificato che venga ritornata la lista di 
+			utenti. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI5}{TI5} & Viene verificato che venga ritornata la lista dei 
+			prodotti correttamente. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI6}{TI6} & Viene verificato che venga fatto il login di un 
+			cittadino dopo aver effettuato la registrazione. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI7}{TI7} & Viene verificato che venga fatto il login di 
+			un'azienda dopo aver effettuato la registrazione. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI8}{TI8} & Viene verificato che i dati di un cittadino siano 
+			correttamente visualizzati nel suo profilo. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI9}{TI9} & Viene verificato che i dati di un'azienda siano 
+			correttamente visualizzati nel suo profilo. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI10}{TI10} & Viene verificato che sia visualizzata la lista dei 
+			prodotti di una specifica azienda. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI11}{TI11} & Viene verificato che sia visualizzata la lista dei 
+			prodotti vuota di una specifica azienda che non ha ancora inserito dei prodotti. 
+			& \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI12}{TI12} & Viene verificato che la lista degli utenti sia 
+			aggiornata dopo aver inserito un nuovo utente. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI13}{TI13} & Viene verificato che la lista dei prodotti sia 
+			aggiornata dopo che un'azienda aggiunge un nuovo prodotto. & \textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI14}{TI14} & Viene verificato che la lista dei prodotti di una 
+			specifica azienda venga aggiornata dopo l'inserimento di un nuovo prodotto. & 
+			\textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI15}{TI15} & Viene verificato che venga ritornata la lista 
+			delle aziende che vende uno specifico prodotto. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI16}{TI16} & Viene verificato che l'utente possa visualizzare 
+			la lista degli ordini. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI17}{TI17} & Viene verificato che l'azienda possa visualizzare 
+			la lista delle fatture. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI18}{TI18} & Viene verificato che sia lanciato un messaggio di 
+			errore se un utente cerca di eseguire un operazione a cui non è abilitato. & 
+			\textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI19}{TI19} & Viene verificato che l'utente possa modificare i 
+			propri dati personali. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI20}{TI20} & Viene verificato che l'azienda possa visualizzare 
+			la lista del rimborso dell'IVA. & \textit{I} & \textit{S}\\
+
+				
+			\tabularnewline
+		\end{longtable}
 
 \subsection{Test di unità}
 	\renewcommand{\arraystretch}{1.5}
