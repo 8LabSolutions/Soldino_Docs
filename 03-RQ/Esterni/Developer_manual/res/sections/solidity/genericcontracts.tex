@@ -1,22 +1,22 @@
 \subsubsection{Generic contracts}
 \paragraph{Security contracts}
 \subparagraph{Owned}
-This contract defines the owner of a contract.In Soldino the owner is the address which deploy all contracts. The contract defines a modifier, \texttt{onlyOwner}, used to allow only the owner to call a function which uses 
+This contract defines the owner of a contract. In Soldino the owner is the address which deploy all contracts. The contract defines a modifier, \texttt{onlyOwner}, used to allow only the owner to call a function which uses 
 the above-mentioned modifier.
 \begin{figure}[H]
 	\centering
 	\frame{\includegraphics[scale=0.132]{res/images/solidity/owned.png}}
-	\caption{class diagram of the Owned contract}
+	\caption{class diagram of the \texttt{Owned} contract}
 \end{figure}
 
 \subparagraph{Authorizable}
 This contract is used by all storage contracts. It's a derivate contract of \texttt{Owned} and stores 
 all address authorized to call the functions that use the modifier \texttt{onlyAuthorized} defined in this contract.
-To authorize a contract the function \texttt{addAuthorized} needs to be called from the owner.
+To authorize a contract the owner needs to call the function \texttt{addAuthorized}.
 \begin{figure}[H]
 	\centering
 	\frame{\includegraphics[scale=0.2]{res/images/solidity/authorizable.png}}
-	\caption{class diagram of the Authorizable contract}
+	\caption{class diagram of the \texttt{Authorizable} contract}
 \end{figure}
 \pagebreak
 \paragraph{Token ERC20}\mbox{}\\
@@ -45,8 +45,8 @@ When contract $A$ needs to communicate with another contract $B$, contract $A$ g
 \paragraph{Purchase}\mbox{}\\ 
 
 \noindent The \texttt{Purchase} contract acts as a façade when it comes to buy products on Soldino.
-Usually for every order (intended as one order for each seller) the user needs to confirm $n$ transaction, $n =$ number of orders, to buy all the products in his cart.\\
-With the \texttt{Purchase} contract, the user has to confirm only two transaction independently how many products are in his cart. 
+Usually for every order (intended as one order for each seller) the user needs to confirm $n$ transactions, $n =$ number of orders, to buy all the products in his cart.\\
+With the \texttt{Purchase} contract, the user has to confirm always two transactions, no matter how many products are in his cart. 
 \begin{figure}[H]
 	\centering
 	\frame{\includegraphics[scale=0.25]{res/images/solidity/purchase.png}}
