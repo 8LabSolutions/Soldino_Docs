@@ -4,8 +4,23 @@ deployed, it's not possible to modify or update it. In order to update a contrac
 a new contract on the blockchain.\\
 In view of this fact and the proponent's request to develop upgradeable smart contracts, the architecture ideated and developed reflects these two aspects. In fact the smarts contracts in Soldino
 are essentially of three types:
-\begin{enumerate}
-	\item\textbf{Storage contract}: this type of contracts aren't upgreadable because they are used
+\begin{itemize}
+	\item\textbf{Storage contract}: this type of contract isn't upgreadable because it's used
 		to save all the critical data like products, orders, vat movements. 
-\end{enumerate}
+	\item\textbf{Logic contract}: this type of contract implements the business logic. In addition
+	a logic contract as a reference to its storage contract (e.g. UserLogic has a reference to UserStorage). This choice has been made to improve the security of the storage contract (it will be explained in section [DA INSERIRE]).
+	\item\textbf{Generic contract}: this type defines the contracts that aren't logic nor storage.
+	These are:
+	\begin{itemize}
+		\item\textbf{TokenCubit}: contract to implement a custom token ERC20 complaint.
+		\item\textbf{ContractManager}: contract used to achieve simple upgradeablilty of the system.
+		\item\textbf{Purchase}: contract to allows the user to buy several products with minimum number of transaction.
+		\item\textbf{Owned} and \textbf{Authorizable}: contracts used for the system's security.
+	\end{itemize}
+\end{itemize}
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.369]{res/images/architecture.png}
+	\caption{Simplified class diagram of the contracts (state variables and methods are omitted)}
+\end{figure}
