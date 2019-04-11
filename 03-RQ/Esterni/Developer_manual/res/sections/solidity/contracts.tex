@@ -1,4 +1,53 @@
 \subsection{Contracts}
+\subsubsection{Generic contracts}
+\paragraph{Security contracts}
+\subparagraph{Owned}
+This contract is used to define the owner of a contract, in Soldino the owner is the address which 
+do the deployment. The contract defines a modifier used to allow only the owner to call a function which uses the modifier.
+\begin{figure}[H]
+	\centering
+	\frame{\includegraphics[scale=0.132]{res/images/solidity/owned.png}}
+	\caption{class diagram of the Owned contract}
+\end{figure}
+
+\subparagraph{Authorizable}
+This contract is used by all storage contracts. It's a derivate class of \texttt{Owned} and stores 
+all the address which are authorized to call the functions that use the modifier \texttt{onlyAuthorized} defined in this contract.
+\begin{figure}[H]
+	\centering
+	\frame{\includegraphics[scale=0.2]{res/images/solidity/authorizable.png}}
+	\caption{class diagram of the Authorizable contract}
+\end{figure}
+\pagebreak
+\paragraph{Token ERC20}\mbox{}\\
+
+\noindent The contract \texttt{TokenCubit} implements the custom token \textit{Cubit}, this contract stores all the users' balance and defines all the methods in order to be ERC20 compliant.
+\begin{figure}[H]
+	\centering
+	\frame{\includegraphics[scale=0.2]{res/images/solidity/tokencubit.png}}
+	\caption{class diagram of the TokenCubit contract}
+\end{figure}
+
+\paragraph{ContractManager}\mbox{}\\ 
+
+\noindent In order to achieve simple and cost effective upgradeability of the logic contracts \texttt{ContractManager} is used. This contract store a map in which the entries are composed in the following way:
+\begin{itemize}
+	\item\textbf{Key}: the contract name.
+	\item\textbf{Value}: the last version of the contract deployment address.
+\end{itemize}
+When contract $A$ needs to communicate with another contract $B$, contract $A$ get the address of the last version of the contract $B$ from \texttt{ContractManager}. In this way there's no need to manage all references in the contracts. 
+\begin{figure}[H]
+	\centering
+	\frame{\includegraphics[scale=0.15]{res/images/solidity/contractmanager.png}}
+	\caption{class diagram of the ContractManager contract}
+\end{figure}
+
 \subsubsection{Storage contracts}
-In this section we will illustrate the storage contracts. As mentioned before the storage contracts are immutable becaouse they store all the critical data. In fact if a contract is upgraded, which means that a new version(using inheritance) is deployed, then all its state variable are new and the data of the previous version should be copied into the new contract, which translate in high cost transaction.\\
-To avoid that, storage contracts implements none business logic of any kind. Their purpose is to store data and allow specific contract to modify their state. For data retrival, on the other hand, the are no limitation because getter methods don't modify the storage contract's state.
+In this section we will illustrate the storage contracts. As mentioned before the storage contracts are immutable because they store all the critical data. In fact if a contract is upgraded, which means that a new version(using inheritance) is deployed, then all its state variable are new and the data of the previous version should be copied into the new contract, which translate in high cost transaction.\\
+To avoid that, storage contracts implement no business logic of any kind. Their purpose is to store data and allow specific contract to modify their state. For data retrieval, on the other hand, the are no limitation because getter methods don't modify the storage contract's state.
+All storage contrats inherit from \texttt{Authorizable} in order to use the \texttt{onlyAuthorized} modifier in the setter methods.
+
+\paragraph{UserStorage}\mbox{}\\
+\paragraph{ProductStorage}\mbox{}\\
+\paragraph{VatStorage}\mbox{}\\
+\paragraph{OrderStorage}\mbox{}\\

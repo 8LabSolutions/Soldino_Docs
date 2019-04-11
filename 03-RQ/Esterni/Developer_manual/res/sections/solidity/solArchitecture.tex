@@ -10,9 +10,9 @@ are essentially of three types:
 	\item\textbf{Logic contract}: this type of contract implements the business logic. In addition
 	a logic contract as a reference to its storage contract (e.g. UserLogic has a reference to UserStorage). This choice has been made to improve the security of the storage contract (it will be explained in section [DA INSERIRE]).
 	\item\textbf{Generic contract}: this type defines the contracts that aren't logic nor storage.
-	These are:
+	They are:
 	\begin{itemize}
-		\item\textbf{TokenCubit}: contract to implement a custom token ERC20 complaint.
+		\item\textbf{TokenCubit}: contract to implement the custom token ERC20 compliant \textit{Cubit}.
 		\item\textbf{ContractManager}: contract used to achieve simple upgradeablilty of the system.
 		\item\textbf{Purchase}: contract to allows the user to buy several products with minimum number of transaction.
 		\item\textbf{Owned} and \textbf{Authorizable}: contracts used for the system's security.
