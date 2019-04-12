@@ -1,5 +1,5 @@
 \hypertarget{st}{\subsubsection{Storage contracts}}
-In this section we will illustrate the storage contracts. As mentioned before the storage contracts are immutable because they store all the critical data. When a contract is upgraded a new version of itself (using inheritance) is deployed, and all its state variables are new. To avoid data loss, all the data stored in the previous version of the contract should be copied into the new version. This copy is very expensive, due to high costs of writing on storage variables.\\
+In this section we will illustrate how the storage contracts work. As mentioned before the storage contracts are immutable because they store all the critical data. When a contract is upgraded a new version of itself is deployed using inheritance, and all its state variables are new. To avoid data loss, all the data stored in the previous version of the contract should be copied into the new version. This copy is very expensive, due to high costs of writing on storage variables.\\
 To avoid that, storage contracts implement don't implement any kind of business logic. Their purpose is to store data and to allow specific contracts to modify their state. For data retrieval, on the other hand, the are no limitations because getter methods don't modify the state of storage contracts.
 All storage contracts inherit from \texttt{Authorizable} in order to use the \texttt{onlyAuthorized} modifier in the setter methods.
 \paragraph*{Note: struct in the storage contracts}
@@ -7,7 +7,7 @@ All contracts, except for \texttt{VatStorage}, in their struct have three state 
 \pagebreak
 \paragraph{UserStorage}\mbox{}\\
 
-\noindent This contract maintain the VAT amount of every business for every quarter. Each time a business buy or sell some products, the vat amount of each product is added or subtracted to the amount in this contract. If the product is sold, its VAT is added, whereas if the product is sold the vat is subtracted. \\
+\noindent This contract maintains the VAT amount of every business for every quarter. Each time a business buys or sells some products, the VAT amount of each product is added or subtracted to the amount in this contract. If the product is sold, its VAT is added, whereas if the product is sold the VAT is subtracted. \\
 
 \noindent This contract stores all the critical data of the users. 
 \begin{figure}[H]
@@ -18,7 +18,7 @@ All contracts, except for \texttt{VatStorage}, in their struct have three state 
 \pagebreak
 \paragraph{ProductStorage}\mbox{}\\
 
-\noindent The \texttt{ProductStorage} contract stores all the data needed to be secured (e.g. net price). Furthermore, the contract defines all methods used to maintain the data. 
+\noindent The \texttt{ProductStorage} contract stores all the data needed to be secured (e.g. net price). Furthermore, the contract defines all the methods used to maintain the data. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.45]{res/images/solidity/productstorage.png}
