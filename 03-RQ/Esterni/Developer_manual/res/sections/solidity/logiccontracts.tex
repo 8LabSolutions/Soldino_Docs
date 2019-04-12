@@ -39,7 +39,7 @@ In order to store VAT movements broken down by business and quarter, the functio
 \paragraph{OrderLogic}\mbox{}\\
 
 \noindent This contract allows to register an order. The function \texttt{registerOrder} can be called only by the \texttt{Purchase} contract because when a purchase is made on \textit{Soldino} the latter contract is called and forwards the request to this contract. In other words, if a purchase contains products from different sellers, the \texttt{Purchase} contract calls \texttt{registerOrder} for every different seller. \\
-\textttin In addition, {registerOrder}  registers the VAT movements related to the businesses involved in the purchase.
+\texttt In addition, {registerOrder}  registers the VAT movements related to the businesses involved in the purchase.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.25]{res/images/solidity/orderlogic.png}
