@@ -16,12 +16,12 @@ Basically some actions are mapped by \texttt{container components} into specific
 \end{figure}
 
 \subsection{Actions}
-There are twelve different actions inside \texttt{src/actions/} folder. Each action is called by the \texttt{action creator} when a container component request it's dispatch. Here there is the list of actions and what them do when they are invoked.
+There are twelve different actions inside the \texttt{src/actions/} folder. Each action is called by the \texttt{action creator} when a container component request it's dispatch. Here there is the list of actions and what them do when they are invoked.
 \begin{itemize}
 	\item \textbf{ACLogin}: it changes the \texttt{logged} state value;
 	\item \textbf{ACIncreaseQuantity}: it increases the quantity of a product that is inside the cart, by changing the \texttt{quantity} value of a specified product inside \texttt{cart} state value;
 	\item \textbf{ACCartToOrders}: it copies all the content of \texttt{cart} state value to \texttt{ordersList} state value, finally it resets the \texttt{cart} state value;
-	\item \textbf{ACSignUp}: it provides to save into the store all of the user informations after them are successfully saved into IPFS;
+	\item \textbf{ACSignUp}: it provides to save into the store all of the user informations after they are successfully saved into IPFS;
 	\item \textbf{ACAddToCart}: it puts the selected product with selected quantity into \texttt{cart} state value;
 	\item \textbf{ACSearch}: it changes \texttt{searchProduct} state value for making a dynamic search inside store page;
 	\item \textbf{ACLogout}: it changes the \texttt{logged} state value;

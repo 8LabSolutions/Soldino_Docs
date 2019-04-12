@@ -1,19 +1,19 @@
 \section{React} 
 
 \subsection{Overview}
-React is a JavaScript library, based on \texttt{npm} and made by Facebook, for building user intrerfaces by assembling user-defined components.
+React is a JavaScript library, based on \texttt{npm} and made by Facebook, for building user interfaces by assembling user-defined components.
 \subsection{Components}
-Components are the key of this \texttt{npm} module, \textit{Soldino} is made by two types of component:
+Components are the core of this \texttt{npm} module. \textit{Soldino} is made of two types of component:
 \begin{itemize}
 	\item Presentational components;
 	\item Container components.
 \end{itemize}
 \subsubsection{Presentational}
-Each presentational component implements \texttt{Component} interface provided by the library. According to this interface, some methods are inherited to the presentational components, in particular our components uses \texttt{Render()} method for rendering themselves.
-Most components can be customized when they are created, with different parameters. These creation parameters are called \texttt{props}. Each presentational component returns a single HTML tag, here we can customize the returned tag with some Bootstrap classes. The props are accessible, by components which own them, referencing to them with \texttt{this.props.propsName}.
+Each presentational component implements \texttt{Component} interface provided by the library. According to this interface, some methods are inherited from the presentational components: in particular our components uses \texttt{Render()} method to render themselves.
+Most components can be customized with different parameters when they are created. These creation parameters are called \texttt{props}. Each presentational component returns a single HTML tag, here we can customize the returned tag with some Bootstrap classes. The props are accessible by the components that own them, referencing them with \texttt{this.props.propsName}.
 
 \subsubsection{Containers} 
-This type of component is like a wrapper of presentational components. A function called \texttt{Connect(arg1, arg2)} is needed for connecting a container component to a presentational component, in this way we are able to map inside the presentational component some actions and some application state variables passing them through props. The \texttt{arg1} is a function called \texttt{mapStateToProps()} and the \texttt{arg2} is another function called \texttt{mapDispatchToProps()}.
+This type of component is like a wrapper of presentational components. A function called \texttt{Connect(arg1, arg2)} is needed for connecting a container component to a presentational component: in this way we can map some actions and some application state variables inside the presentational component, passing them through props. The \texttt{arg1} is a function called \texttt{mapStateToProps()} and the \texttt{arg2} is another function called \texttt{mapDispatchToProps()}.
 \subsection{React-Router} 
 React-router-dom is a \texttt{npm} module used for rendering different pages without reloading the entire website, this module works with \texttt{Render()} method provided by each presentational component. \textit{Soldino} is a single page application, so the router, implemented into a JavaScript file called \texttt{App.js}, is responsible to manage which components should be rendered.
 
