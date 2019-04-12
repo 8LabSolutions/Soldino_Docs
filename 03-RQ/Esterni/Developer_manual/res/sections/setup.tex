@@ -5,13 +5,13 @@ In this section all of the requirements needed are described.
 \textit{Soldino} is accessible through a web interface. The currently most recent versions of the following broswers are supported:
 \begin{itemize}
 	\item \textbf{Mozilla Firefox}: version 64 or later;
-	\item \textbf{Google Chrome} version 71 or later.
+	\item \textbf{Google Chrome}: version 71 or later.
 \end{itemize}
 
 \subsubsection{Tools}
 The following tools are needed:
 \begin{itemize}
-	\item \textbf{Git}: a famous control version system: \textit{Soldino} is hosted on GitHub;
+	\item \textbf{Git}: a famous control version system: \textit{Soldino}'s repository is hosted on GitHub;
 	\item \textbf{Node.js}: a framework needed for installing dependencies;
 	\item \textbf{Truffle}: needed to write and deploy contracts with ease;
 	\item \textbf{Ganache}: needed to put up a local Ethereum network and check transactions in it;
@@ -21,7 +21,7 @@ The following tools are needed:
 
 \subsubsection{Dependencies}
 Soldino depends on many different packages, some for use and others for development.\\
-All these packages are located in the file \texttt{package.json} which is in the root folder of the project.\\
+All these dependencies can be found in the file \texttt{package.json} which is in the root folder of the project.\\
 The packages required to execute the software \textit{Soldino} are listed below.\\
 
 \renewcommand{\arraystretch}{1.5}
@@ -88,7 +88,7 @@ Other packages, listed below, are required for the development.
 
 \subsection{Installing}
 \subsubsection{Browser}
-The first thing is to have your browser installed. You can get the latest chrome version  \href{https://www.google.com/chrome/}{here}.\\
+The first thing is to have your browser installed. You can get the latest Chrome version  \href{https://www.google.com/chrome/}{here} or the latest Firefox version \href{https://www.mozilla.org/en-US/firefox/new/}{here}\\
 
 \subsubsection{Git}
 You should type this script in the shell for installing Git packet: \texttt{sudo apt install git}.
@@ -145,13 +145,13 @@ You have to go to the folder where you've put Ganache, and open it with double c
 	\includegraphics[scale=0.25]{res/images/ganache-ui.png}
 	\caption{Ganache UI: from top to bottom you can see the menu bar, the current configuration, the mnemonic, and the interface of the selected menu option}
 \end{figure}
-Then you have to click on the cog at the top left corner to access Ganache settings and make sure you've matched the following settings (most of which are defined in \texttt{truffle-config.js}) on each respective window:
+Then you have to click on the cogwheel at the top left corner to access Ganache settings and make sure you've matched the following settings (most of which are defined in \texttt{truffle-config.js}) on each respective window:
 \begin{itemize}
 	\item Server:
 	\begin{itemize}
 		\item hostname: \texttt{127.0.0.1};
 		\item port number: \texttt{9545};
-		\item network it: any (you can keep the default one).
+		\item network id: any (you can keep the default one).
 	\end{itemize}
 	\item Account \& keys:
 	\begin{itemize}
