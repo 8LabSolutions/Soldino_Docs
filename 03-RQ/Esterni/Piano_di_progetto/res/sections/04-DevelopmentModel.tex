@@ -1,0 +1,64 @@
+\section{Modello di sviluppo}
+La scelta di un modello di sviluppo è fondamentale per la pianificazione di 
+progetto e a tal fine è stato adottato il \textbf{modello incrementale}.
+
+\subsection{Modello incrementale}
+Il modello di sviluppo incrementale permette di suddividere lo sviluppo del sistema per 
+incrementi, ognuno dei quali incorpora una funzionalità. \\
+L'aggiunta, modifica e cancellazione di requisiti sono consentite previa discussione con il proponente e sua 
+approvazione; tuttavia non sono permesse durante la fase di sviluppo dell'incremento corrente.\\
+Questo modello di sviluppo si combina bene con il versionamento del sistema, che traccia le modifiche rendendole più visibili.\\
+L'adozione di questo modello comporta i seguenti vantaggi:
+\begin{itemize}
+	\item le funzionalità primarie hanno priorità nello sviluppo, così che il proponente possa subito valutarle;
+	\item si può ricevere il feedback del cliente frequentemente, anche ad ogni incremento;
+	\item sviluppare per incrementi successivi limita gli errori al singolo incremento;
+	\item le modifiche, l'individuazione e la correzione degli errori sono più economiche;
+	\item anche le fasi di verifica e test sono facilitate, perché più mirate.
+\end{itemize}
+\subsubsection{Incrementi individuati} Durante i periodi di Progettazione e Codifica per la Technology Baseline e Progettazione di Dettaglio sono stati individuati alcuni incrementi. Di seguito è riportato il tracciamento incremento-requisiti, in maniera tale da comprendere meglio quali requisiti vengono soddisfatti in ciascun incremento. \\ \\
+I requisiti riportati nella tabella includono tutti i requisiti figli. Tutti i requisiti non riportati nella tabella sono da intendersi soddisfatti, in parte, da ogni incremento. Tali requisiti sono reperibili all'interno del documento \textit{Analisi dei Requisiti}.
+
+%tabella tracciamento incremento-requisiti
+
+
+\rowcolors{2}{pari}{dispari}
+
+\begin{longtable}{ >{\centering}p{0.5\textwidth}
+		>{\centering}p{0.5\textwidth}}
+	\caption{Tabella di tracciamento incremento-requisiti}\\
+	\rowcolorhead 
+	\textbf{\color{white}Incremento}
+	& \textbf{\color{white}Requisiti} 
+	\tabularnewline 	
+	\endfirsthead
+	\rowcolor{white}\caption[]{(continua)} \\
+	\rowcolorhead 
+	\textbf{\color{white}Fonte}
+	& \textbf{\color{white}Requisiti} 
+	\tabularnewline 
+	\endhead
+
+	Incremento 1 - Registrazione	&	R2F1 \\
+	R1F2	\tabularnewline
+	Incremento 2 - Login	&	R1F3 \\
+	R1F4	\tabularnewline
+	Incremento 3 - Home	&	R1F8 \\
+	R1F9 \\
+	R1F10 \\
+	R1F11 \\
+	R1F12 \\
+	R2F13 \\
+	R1F14 \\
+	R1F18 	\tabularnewline
+	Incremento 4 - Pagina Governativa	&	R1F5 \\
+	R1F6 \\
+	R1F7	\tabularnewline
+	Incremento 5 - Pagina Azienda	&	R1F15 \\
+	R1F16 \\
+	R3F17 \\
+	R1F19	\tabularnewline
+	Incremento 6 - Pagina Cittadino	&	R1F15	\tabularnewline
+	
+\end{longtable}
+
