@@ -63,13 +63,7 @@ Il risultato sono i processi esposti a seguito.
 				\item valore preferibile: $ 1 \leq x \leq3$ ;
 				\item valore accettabile: $1 \leq x\leq 7$.
 			\end{itemize}
-		
-			\paragraph*{Profondità della gerarchica}
-			\begin{itemize}
-				\item misurazione: numero intero;
-				\item valore preferibile: $ \leq 2$ ;
-				\item valore accettabile: $ \leq 3$.
-			\end{itemize}
+	
 		
 			\paragraph*{Numero di parametri per metodo}
 			\begin{itemize}
@@ -113,7 +107,7 @@ Il risultato sono i processi esposti a seguito.
 				\item  valore accettabile: $ \geq 0$.
 			\end{itemize}
 			\paragraph*{PV: Planned Value}\mbox{}\\
-			Metrica di utilità per il calcolo di $SV$ e $CV$ (spiegate successivamente). Si tratta del valore del lavoro pianificato al momento del calcolo: corrisponde al denaro che si dovrebbe aver guadagnato in quel momento.
+			Metrica di utilità per il calcolo di $SV$ e $CV$ (spiegate successivamente). Si tratta del costo pianificato in euro per realizzare le attività di progetto alla data corrente.
 			\begin{itemize}
 				\item  misurazione: $preventivo \cdot \%\ di\ lavoro\ pianificato\ $;
 				\item  valore preferibile: $ \geq 0$;
@@ -137,7 +131,15 @@ Il risultato sono i processi esposti a seguito.
 	\subsubsection{Verifica}
 		\paragraph{Metriche}
 			\paragraph*{CC: Code Coverage}\mbox{}\\
-				Indica il numero di righe di codice percorse dai test durante la loro esecuzione. Per linee di codice totali si intende tutte quelle appartenenti all'unità in fase di test.
+				Indica il numero di righe di codice percorse dai test durante la loro esecuzione. Per linee di codice totali si intende tutte quelle appartenenti all'unità in fase di test.\\
+				A granularità più fine, il CC si suddivide in quattro aspetti da misurare:
+				\begin{itemize}
+					\item \textbf{Statement coverage}: misura la percentuale di statement coperti dai test;
+					\item \textbf{Branch coverage}: misura la percentuale di ramificazioni del codice coperti dai test;
+					\item \textbf{Function coverage}: misura la percentuale di funzioni coperte dai test;
+					\item \textbf{Line coverage}: misura la percentuale di linee coperte dai test.
+				\end{itemize}
+				Ognuno dei quattro aspetti rispetta lo stesso metodo e intervallo di misurazione.
 				\begin{itemize}
 					\item misurazione: valore percentuale: $CC = \frac{linee\ di\ codice\ percorse}{linee\ di\ codice\ totali}$;
 					\item valore preferibile: $100\%$;

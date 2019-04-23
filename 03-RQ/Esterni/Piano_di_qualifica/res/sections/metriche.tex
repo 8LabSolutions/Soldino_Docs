@@ -1,7 +1,7 @@
 \section{Calcolo delle metriche}
 \subsubsection{Premessa relativa al periodo di progettazione e codifica della Technology Baseline}
 Data la natura fortemente mutevole del Proof of Concept è stato deciso di non tenere traccia delle metriche di prodotto durante il suo sviluppo. Infatti, nella fase di progettazione di dettaglio e codifica il prodotto cambierà radicalmente, e non ci sarà una vera e propria continuità rispetto al PoC. \newline
-Alcune delle metriche sulla pianificazione non erano calcolabili, in quanto non si può dire di aver effettivamente soddisfatto dei requisiti, dunque si è rinunciato ad utliizzarle.
+Alcune delle metriche sulla pianificazione non erano calcolabili, in quanto non si può dire di aver effettivamente soddisfatto dei requisiti, dunque si è rinunciato ad utilizzarle.
 Cionondimeno, poiché è necessario poter avere una visione dell'andamento del progetto nel tempo, si è deciso di tenere traccia di tutte le metriche a partire dalla fase di progettazione in dettaglio e codifica. Saranno considerate le serie storiche con una quantità maggiore di dati a disposizione.
 
 \subsection{Legenda}
@@ -12,8 +12,8 @@ Legenda:
 	\item \textbf{RR}: periodo di revisione dei requisiti;
 	\item \textbf{C}: periodo di consolidamento dei requisiti;
 	\item \textbf{TB}: periodo di progettazione e codifica della Technology Baseline;
-	\item \textbf{PD}: periodo di progettazione di dettaglio e codifica;
-	\item \textbf{VC}: periodo di validazione e collaudo.
+	\item \textbf{PD}: periodo di progettazione di dettaglio e codifica.
+	%\item \textbf{VC}: periodo di validazione e collaudo.
 \end{itemize}
 
 
@@ -22,79 +22,80 @@ Legenda:
 	{ >{\centering}p{0.15\textwidth}
 			>{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth}}
 		%\hline
-		\rowcolor{white}\caption{EAC nei periodi da RR a TB}\\
+		\rowcolor{white}
+		\caption{EAC - Estimated At Completion}\\
 		\rowcolorhead
 		\textbf{\color{white}RR} 
 		& \textbf{\color{white}C} 
 		& \textbf{\color{white}TB}
 		& \textbf{\color{white}PD}
-		& \textbf{\color{white}VC}
+		%& \textbf{\color{white}VC}
 		\tabularnewline %\hline  
 		\endhead
 			
 	-
 	& \EUR{820,00}
 	& \EUR{4245,00}
-	& -
-	& -
+	& - 
+	%& -
 	\tabularnewline %\hline 
 \end{longtable}
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{res/images/eac.pdf}
-	\caption{Estimated At Completion durante i periodi da RR a TB}
+	\caption{EAC - Estimated At Completion}
 \end{figure}
 
 \subsection{VAC - Variance At Completion}
 \begin{longtable}{ >{\centering}p{0.15\textwidth}
 		>{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth}}
 	%\hline
-	\rowcolor{white}\caption{VAC nei periodi da RR a TB}\\
+	\rowcolor{white}\caption{VAC - Variance At Completion}\\
 	\rowcolorhead
 	\textbf{\color{white}RR} 
 	& \textbf{\color{white}C} 
 	& \textbf{\color{white}TB}
 	& \textbf{\color{white}PD}
-	& \textbf{\color{white}VC}
+	%& \textbf{\color{white}VC}
 	\tabularnewline %\hline
 	\endhead 	
 	-
 	& 0\%
 	& 1.44\%
 	& -
-	& -
+	%& -
 	\tabularnewline %\hline 
 	
 \end{longtable}
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{res/images/vac.pdf}
-	\caption{Variance At Completion}
+	\caption{VAC - Variance At Completion}
 \end{figure}
 \pagebreak
 \subsection{AC - Actual Cost}
 \begin{longtable}{ >{\centering}p{0.15\textwidth}
 		 >{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth} >{\centering}p{0.15\textwidth}}
 	%\hline
-	\rowcolor{white}\caption{AC nei periodi da RR a TB}\\
+	\rowcolor{white}\caption{AC - Actual Cost}\\
 	\rowcolorhead
 	\textbf{\color{white}RR} 
 	& \textbf{\color{white}C} 
 	& \textbf{\color{white}TB}
 	& \textbf{\color{white}PD}
-	& \textbf{\color{white}VC}
+	%& \textbf{\color{white}VC}
 	\tabularnewline %\hline 	
 	-
 	& \EUR{820,00}
 	& \EUR{4245,00}
 	& -
-	& -
+	%& -
 	\tabularnewline %\hline 	
 \end{longtable}
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{res/images/ac.pdf}
-	\caption{Actual Cost}
+	\caption{AC - Actual Cost}
 \end{figure}
 
 
@@ -104,14 +105,14 @@ Legenda:
 \begin{longtable}{ >{\centering}p{0.15\textwidth} >{\centering}p{0.10\textwidth}	>{\centering}p{0.1075\textwidth} >{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth}}
 	
 	%\hline
-	\rowcolor{white}\caption{Indice di Gulpease raggruppato per documento, lungo i periodi da RR a TB}\\
+	\rowcolor{white}\caption{Indice di Gulpease raggruppato per documento}\\
 	\rowcolorhead
 	\textbf{\color{white}N} 
 	& \textbf{\color{white}RR} 
 	& \centering\textbf{\color{white}C}
 	& \textbf{\color{white}TB}
 	& \textbf{\color{white}PD}
-	& \textbf{\color{white}VC} 
+	%& \textbf{\color{white}VC} 
 	\tabularnewline %\hline 	
 	
 	\textit{Analisi dei requisiti}
@@ -119,7 +120,7 @@ Legenda:
 	& 66
 	& 63
 	& -
-	& -
+	%& -
 	\tabularnewline %\hline 
 	
 	\textit{Glossario}
@@ -127,7 +128,7 @@ Legenda:
 	& 71
 	& 71
 	& -
-	& -
+	%& -
 	\tabularnewline %\hline 
 	
 	\textit{Norme di progetto}
@@ -135,7 +136,7 @@ Legenda:
 	& 65
 	& 63
 	& -
-	& -
+	%& -
 	\tabularnewline %\hline 
 	
 	\textit{Piano di progetto}
@@ -143,7 +144,7 @@ Legenda:
 	& 68
 	& 66
 	& -
-	& -
+	%& -
 	\tabularnewline %\hline 
 	
 	\textit{Piano di qualifica}
@@ -151,7 +152,7 @@ Legenda:
 	& 70
 	& 67
 	& -
-	& -
+	%& -
 	\tabularnewline %\hline 
 	
 	\textit{Studio di Fattibilità}
@@ -159,7 +160,7 @@ Legenda:
 	& -
 	& -
 	& -
-	& -
+	%& -
 	\tabularnewline %\hline 
 	
 	\textit{Verbali esterni (media)}
@@ -175,7 +176,7 @@ Legenda:
 	& 74
 	& 70
 	& -
-	& -
+	%& -
 \end{longtable}
 \begin{figure}[H]
 	\centering
