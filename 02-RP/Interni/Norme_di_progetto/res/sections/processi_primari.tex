@@ -478,11 +478,15 @@ La metrica usata è l'\textbf{accoppiamento tra le classi di oggetti} (CBO).
 \paragraph{Codifica} \mbox{}\\ \mbox{}\\
 Questa sezione contiene le metriche che applicheremo al software prodotto. Tali  valori  sono  una  dichiarazione  di  intenti  per  la qualità del software e potrebbero essere rivisti con le successive revisioni.
 	\begin{itemize}
+		\begin{comment}
 		\item \textbf{Rapporto di linee di codice per linee di commento}: il rapporto tra le linee di codice e le linee di commento, escludendo le righe vuote.  Questo rapporto aiuta a stimare la manutenibilità del codice.  Un rapporto troppo basso indica una carenza di informazioni	necessarie alla comprensione del codice scritto;
+		\end{comment}
 		\item \textbf{Numero di variabili di stato per contratto}: considera il numero totale di variabili di stato presenti all'interno di un contratto. Un valore elevato può indicare, oltre a un costo elevato dovuto all'alto numero di attributi, che tale contratto si fa carico di una quantità eccessiva di responsabilità; potrebbe quindi convenire scorporare una parte di esso in un secondo contratto;
 		\item \textbf{Livello di annidamento}: il livello di annidamento nei vari metodi tenendo	conto della presenza di strutture di controllo annidate.  Un alto livello di annidamento porta a un codice di difficile manutenzione, aumentandone la complessità; potrebbe quindi convenire scorporare il metodo in più metodi distinti;
-		\item \textbf{Profondità della gerarchica}: la profondità della gerarchia va limitata in modo da limitare l'accoppiamento;
+		\item \textbf{Profondità della gerarchia}: la profondità della gerarchia va limitata in modo da limitare l'accoppiamento;
+		\begin{comment}
 		\item \textbf{Numero di parametri per metodo}: un numero troppo elevato di parametri in un metodo potrebbe indicare un grado di complessità troppo elevato del metodo.
+		\end{comment}
 	\end{itemize}
 
 \subsubsection{Strumenti}

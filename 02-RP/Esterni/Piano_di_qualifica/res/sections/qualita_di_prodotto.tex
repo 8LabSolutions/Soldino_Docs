@@ -84,13 +84,23 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 			\item valore preferibile $\leq$ 3;
 			\item valore accettabile $\leq$ 6.
 			\end{itemize}
-			\paragraph{Semplicità delle classi}\mbox{}\\
-			La facilità di una classe può essere rappresentata dal numero di metodi per classe: una classe con pochi metodi ha uno scopo ben preciso e facilmente comprensibile.
+		
+			\paragraph{Semplicità dei componenti}\mbox{}\\
+			In JavaScript, si intende il numero di metodi in un oggetto, o componente. Un componente con pochi metodi ha uno scopo ben preciso e facilmente comprensibile.
 			\begin{itemize}
-			\item misurazione: numero di metodi per classe;
+			\item misurazione: numero di metodi per componente;
 			\item valore preferibile $\leq$ 8;
 			\item valore accettabile $\leq$ 15.
 			\end{itemize}
+		
+			\paragraph{Semplicità dei contratti}\mbox{}\\
+			La facilità di un contratto può essere rappresentata dal numero di funzioni per contratto. Un contratto con poche funzioni ha uno scopo ben preciso e facilmente comprensibile.
+			\begin{itemize}
+				\item misurazione: numero di funzioni per contratto;
+				\item valore preferibile $\leq$ 8;
+				\item valore accettabile $\leq$ 15.
+			\end{itemize}
+			
 			\paragraph{Structural fan-in}\mbox{}\\ 
 			Indica quante componenti utilizzano un dato modulo. Un alto	valore indica un alto riuso della componente.
 			\begin{itemize}
