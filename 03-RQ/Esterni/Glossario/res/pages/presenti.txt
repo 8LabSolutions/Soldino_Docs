@@ -53,6 +53,9 @@ gigacore
 gitlab
 governo
 hunpos
+infura
+ipfs
+jsdoc
 json
 lint
 linter
