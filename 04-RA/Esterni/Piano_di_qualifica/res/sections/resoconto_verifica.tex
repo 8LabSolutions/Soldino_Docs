@@ -121,99 +121,121 @@ Legenda per le abbreviazioni presenti in grafici e tabelle:
 \end{longtable}
 \paragraph*{Valutazione}
 Fino alla TB il prodotto era instabile e soggetto a forti cambiamenti, dunque non si è calcolato il numero di requisiti soddisfatti.\\
+Durante la PB abbiamo implementato il 72\% dei requisiti, di cui però solamente il 54\% sono stati verificati tramite test; dunque siamo indietro rispetto alla dimostrabilità del completamento totale del prodotto.
+
 \subsubsection{EAC - Estimated At Completion}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{res/images/eac.pdf}
-	\caption{Estimated At Completion durante i periodi da RR a PD}
+	\includegraphics[scale=0.7]{res/images/RA/eac.pdf}
+	\caption{Andamento dell'Estimated At Completion durante il progetto}
 \end{figure}
+\paragraph*{Valutazione}
+
+Le differenze nelle spese sostenute (-144\euro in TB, +355\euro in PB) non sono state tanto gravi da inficiare il preventivo a finire, ragion per cui EAC rimane invariato e di valore pari al preventivo.\\
+La soglia prevista del 5\% è pienamente rispettata.
 
 %\subsubsection{Profondità della gerarchia}
 
-
 \subsubsection{VAC - Variance At Completion}
-
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{res/images/RQ/vac.pdf}
-	\caption{Variance At Completion durante i periodi da RR a PD}
+	\includegraphics[scale=0.7]{res/images/RA/vac.pdf}
+	\caption{Andamento della Variance At Completion durante il progetto}
 \end{figure}
-\pagebreak
-
-\subsubsection{AC - Actual Cost}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.7]{res/images/RQ/ac.pdf}
-	\caption{Actual Cost durante i periodi da RR a PD}
-\end{figure}
+\paragraph*{Valutazione}
+La differenza tra preventivo e EAC rimane invariata nei periodi e pari a zero; dunque VAC, cioè la percentuale della differenza, è ugualmente invariata e pari a zero. \\
+L'obiettivo di avere $VAC \geq 0\%$ è raggiunto.
 
 \subsubsection{EV - Earned Value}
-
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{res/images/RQ/ev.pdf}
-	\caption{Earned Value durante i periodi da RR a PD}
+	\includegraphics[scale=0.7]{res/images/RA/ev.pdf}
+	\caption{Andamento dell'Earned Value durante il progetto}
 \end{figure}
+\paragraph*{Valutazione}
+Possiamo notare che, nonostante il lavoro svolto non ci sia stato alcun guadagno prima della PB. L'EV dipende dalla quantità di obiettivi raggiunti, misurata dal numero di requisiti soddisfatti: ecco spiegata la tardiva produzione di valore.\\
+Durante la PB sarebbe stato preferibile aver soddisfatto dimostrabilmente un numero maggiore di requisiti: in mancanza di ciò, in RA avremo un carico di lavoro maggiore rispetto alle attività previste. 
+
+\subsubsection{AC - Actual Cost}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{res/images/RA/ac.pdf}
+	\caption{Andamento dell'Actual Cost durante il progetto}
+\end{figure}
+\paragraph*{Valutazione}
+Il costo effettivo del lavoro, durante ogni fase, non si è molto discostato da quanto preventivato: dunque la pianificazione svolta risulta adeguata rispetto ai costi del lavoro previsti. \\
+Durante la fase di PB, AC ha superato PV, dunque la soglia di ottimalità $0 \leq AC < PV$ è stata infranta. La soglia di accettabilità invece è sempre stata rispettata.
 
 \subsubsection{PV - Planned Value}
-
+% IPOTESI: 20% dei req soddisfatti in TB, 80% in PB, 100% in VC
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{res/images/RQ/pv.pdf}
-	\caption{Planned Value durante i periodi da RR a PD}
+	\includegraphics[scale=0.7]{res/images/RA/pv.pdf}
+	\caption{Andamento del Planned Value durante il progetto}
 \end{figure}
+\paragraph*{Valutazione}
+Il PV riporta semplicemente il valore del lavoro preventivato fino al momento del calcolo.
 
 \subsubsection{SV - Schedule Variance}
-
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{res/images/RQ/sv.pdf}
-	\caption{Schedule Variance durante i periodi da RR a PD}
+	\includegraphics[scale=0.7]{res/images/RA/sv.pdf}
+	\caption{Andamento della Schedule Variance durante il progetto}
 \end{figure}
+\paragraph*{Valutazione}
+Durante il periodo di TB il valore è preoccupante: il fatto è che non è stato considerato completato alcun requisito, mentre molte spese erano previste.\\
+Durante il periodo di PB sono stati soddisfatti molti requisiti, quindi EV è cresciuto, ma non a sufficienza da coprire le spese previste.\\
+Le soglie imposte per la metrica appaiono troppo restrittive, quindi inadeguate rispetto alla pianificazione del progetto.
 
 \subsubsection{CV - Cost Variance}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{res/images/RQ/cv.pdf}
-	\caption{Schedule Variance durante i periodi da RR a PD}
+	\includegraphics[scale=0.7]{res/images/RA/cv.pdf}
+	\caption{Andamento della Cost Variance durante il progetto}
 \end{figure}
+\paragraph*{Valutazione}
+Valgono i ragionamenti fatti in SV per quanto riguarda EV.
 
 %\pagebreak
 \subsubsection{Code Coverage}
 \paragraph{Statement coverage}\mbox{}\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{res/images/RQ/statement-coverage-RQ.pdf}
+	\includegraphics[scale=0.6]{res/images/RA/statement-coverage-RQ.pdf}
 	\caption{Statement coverage}
 \end{figure}	
 \paragraph{Branch coverage}\mbox{}\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{res/images/RQ/branch-coverage-RQ.pdf}
+	\includegraphics[scale=0.6]{res/images/RA/branch-coverage-RQ.pdf}
 	\caption{Branch coverage}
 \end{figure}
 \paragraph{Function coverage}\mbox{}\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{res/images/RQ/function-coverage-RQ.pdf}
+	\includegraphics[scale=0.6]{res/images/RA/function-coverage-RQ.pdf}
 	\caption{Function coverage}
 \end{figure}
 \paragraph{Line coverage}\mbox{}\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{res/images/RQ/line-coverage-RQ.pdf}
+	\includegraphics[scale=0.6]{res/images/RA/line-coverage-RQ.pdf}
 	\caption{Line coverage}
 \end{figure}
-
+\paragraph*{Valutazione complessiva}
+Complessivamente la metrica del coverage ha un'andamento prevedibile e si avvicina alle soglie desiderate.
+La metrica è stata messa in opera mentre codice e test venivano implementati parallelamente: ecco perché nel periodo iniziale l'andamento del coverage è altalenante.
+L'aumento della copertura, a partire dal 10 aprile, corrisponde a una progressione nei test mentre l'ampiezza della codebase rimaneva invariata.
 %\subsubsection{Facilità di utilizzo}
 
 \subsubsection{Facilità di comprensione} % == CCR
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{res/images/RQ/facilita-di-comprensione.pdf}
+	\includegraphics[scale=0.6]{res/images/RA/facilita-di-comprensione.pdf}
 	\caption{Facilità di comprensione}
 \end{figure}
+\paragraph*{Valutazione}
+La quantità di commenti rispetto al codice, inizialmente bassa e sregolata, tende alla soglia di accettabilità del 10\% per volere del gruppo di avere un codice chiaro e comprensibile. 
 
 \pagebreak
 \subsubsection{Indice di Gulpease}
@@ -296,21 +318,26 @@ Fino alla TB il prodotto era instabile e soggetto a forti cambiamenti, dunque no
 \end{longtable}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{res/images/RQ/gulpease.pdf}
+	\includegraphics[scale=0.8]{res/images/RA/gulpease.pdf}
 	\caption{Indice di Gulpease}
 \end{figure}
 
-
+\paragraph*{Valutazione}
+Fino alla fase C l'indice è stato calcolato con uno strumento diverso rispetto alle fasi successive: questo spiega la discordanza tra i valori prima e dopo.
+In generale, nonostante l'impegno del gruppo nella semplificazione della sintassi, l'indice non sembra migliorare molto.
+Questo può indicare una generale difficoltà nel semplificare documenti di natura tecnica.\\
+A una valutazione posteriore, la soglia di ottimalità imposta appare eccessivamente ottimistica: un valore $>80$ infatti indica un testo leggibile con facilità da bambini delle elementari.\\
+La soglia di accettabilità invece sono plausibili e rispettate. 
 
 %\subsubsection{Semplicità delle classi}
 
 \subsubsection{SLOC}
-
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{res/images/RQ/sloc.pdf}
+	\includegraphics[scale=0.6]{res/images/RA/sloc.pdf}
 	\caption{Source lines of code}
 \end{figure}
-
+\paragraph*{Valutazione}
+Lo SLOC ha un'andamento prevedibile tendente al logaritmo, che indica una stabilità delle righe totali di codice del prodotto man mano che il progetto si avvicina alla fine. Le soglie di accettabilità e ottimalità sono rispettate.
 
 
