@@ -1,0 +1,14 @@
+\subsection{How to extend}
+As described above, smart contracts have been developed with the aim of being upgradable. This means that all the logic contracts can be upgraded without losing the stored data. In order to upgrade a logic contract you have to deploy the new contract, and update the contract manager, changing the address associated with the upgraded contract:
+\begin{lstlisting}[language=JavaScript]
+//import the new version of the contract
+var Contract_v2 = artifacts.require("Name_of_the_contract");
+//deploy the new contract
+deployer.deploy(Contract_v2, contractManagerInstance.address)
+.then((newContractInstance)=>{
+	//change the deployment address of the upgraded contract
+	//in the contract manager
+	return contractManagerInstance.setContractAddress("Name_of_the_contract", newContractInstance.address);
+});
+\end{lstlisting}
+

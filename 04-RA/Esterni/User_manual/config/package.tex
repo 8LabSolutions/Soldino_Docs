@@ -1,0 +1,90 @@
+%Tutti gli usepackage vanno qui
+
+\usepackage{geometry}
+\usepackage[british]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,      
+	urlcolor=blue,
+}
+% Numerazione figure 
+\let\counterwithout\relax
+\let\counterwithin\relax
+\usepackage{chngcntr}
+
+\counterwithin{table}{subsection}
+\counterwithin{figure}{subsection}
+
+\usepackage[bottom]{footmisc}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+\usepackage{amsmath, amssymb}
+\usepackage{array}
+\usepackage{graphicx}
+
+%\usepackage{float}
+\usepackage{layouts}
+\usepackage{url}
+\usepackage{comment}
+\usepackage{float}
+\usepackage{eurosym}
+
+
+%Comandi di impaginazione uguale per tutti i documenti
+\pagestyle{fancy}
+\lhead{\includegraphics[scale=0.07]{res/images/logo8_crop.png}}
+%Titolo del documento
+\rhead{\doctitle{}}
+%\rfoot{\thepage}
+\cfoot{Page \thepage\ of \pageref{LastPage}}
+\setlength{\headheight}{35pt}
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% multirow per tabelle
+\usepackage{multirow}
+
+% Permette tabelle su più pagine
+%\usepackage{longtable}
+
+
+% colore di sfondo per le celle
+\usepackage[table]{xcolor}
+
+%COMANDI TABELLE
+\newcommand{\rowcolorhead}{\rowcolor[HTML]{56A5EC}} %intestazione 
+\newcommand{\rowcolorlight}{\rowcolor[HTML]{FAFAFA}} %righe chiare/dispari
+\newcommand{\rowcolordark}{\rowcolor[HTML]{E1F5FE}} %righe scure/pari
+\newcommand{\colorhead}{\color[HTML]{FFFFFF}} %testo intestazione
+\newcommand{\colorbody}{\color[HTML]{000000}} %testo righe
+\newcommand{\tabitem}{~~\rlap{\textbullet}~~}
+
+\newcommand{\glo}{$_{G}$}
+\newcommand{\glosp}{$_{G}$ }
+
+\definecolor{pari}{HTML}{E1F5FE}
+\definecolor{dispari}{HTML}{FAFAFA}
+
+%mettere il totale di pagine del doc a piè di pagina
+\usepackage{lastpage}
+%\fancypagestyle{plain} {
+%	\fancyfoot[C]{Pagina \thepage\ di \pageref{LastPage}}}
+
+%label custom
+\makeatletter
+\newcommand{\uclabel}[2]{%
+	\protected@write \@auxout {}{\string \newlabel {#1}{{#2}{\thepage}{#2}{#1}{}} }%
+	\hypertarget{#1}{#2}
+}
+\makeatother
+
+

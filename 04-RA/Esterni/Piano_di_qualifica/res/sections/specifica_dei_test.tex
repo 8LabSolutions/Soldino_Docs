@@ -1,0 +1,1648 @@
+\section{Test}
+I test sono attività che servono a verificare che il software prodotto implementi le funzionalità richieste.
+\subsection{Test di accettazione} 
+	\renewcommand{\arraystretch}{1.5}
+	\rowcolors{2}{pari}{dispari}
+	
+	\begin{longtable}{ >{\centering}p{0.10\textwidth} >{}p{0.70\textwidth}
+			>{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth}}
+			
+		%\tabularnewline
+		\caption{Riepilogo test di accettazione}\\	
+		\rowcolorhead
+		\textbf{\color{white}Codice} 
+		& \centering\textbf{\color{white}Descrizione} 
+		& \centering\textbf{\color{white}Stato}
+		& \centering\textbf{\color{white}Esito} 
+		\tabularnewline %\tabularnewline 
+		\endfirsthead	
+		
+		\rowcolor{white}\caption[]{(continua)}\\	
+		\rowcolorhead
+		\textbf{\color{white}Codice} 
+		& \centering\textbf{\centering\color{white}Descrizione} 
+		& \centering\textbf{\color{white}Stato}
+		& \centering\textbf{\color{white}Esito} 
+		\tabularnewline %\tabularnewline 
+		\endhead	
+		
+\hypertarget{TAFD1}{TAFD1} & L'utente deve poter accedere alla guida dell'applicazione. All'utente viene
+		 chiesto di:
+		 \begin{itemize}
+		 	\item verificare che sia possibile accedere alla guida;
+		 	\item verificare che la guida riporti informazioni riguardanti l'utilizzo di
+		 	MetaMask\glo{};
+		 	\item verificare che la guida riporti informazioni riguardanti il pagamento
+		 	delle operazioni. 
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO2}{TAFO2} & L'utente non ancora autenticato deve poter effettuare la registrazione al
+		 sistema. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina di registrazione;
+		 	\item selezionare il tipo di utente;
+		 	\item inserire i dati in base al tipo scelto.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO2.1}{TAFO2.1} & L'utente deve potersi registrare come cittadino. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina di registrazione e scegliere la registrazione
+		 	come cittadino;
+		 	\item inserire l'email;
+		 	\item inserire l'indirizzo;
+		 	\item inserire il nome;
+		 	\item inserire il cognome.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO2.2}{TAFO2.2} & L'utente deve potersi registrare come azienda. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina di registrazione e scegliere la registrazione
+		 	come azienda;
+		 	\item inserire l'email;
+		 	\item inserire la sede;
+		 	\item inserire la partita IVA;
+		 	\item inserire il nome.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO2.3}{TAFO2.3} & L'utente deve poter visualizzare un messaggio di errore nel caso in cui la
+		 chiave reperita da MetaMask\glo{} durante la registrazione sia già presente
+		 nel sistema. & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO3.1}{TAFO3.1} & L'utente deve poter autenticarsi nel sistema in modo automatico attraverso
+		 MetaMask\glo{}. All'utente è chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla sezione per il login;
+		 	\item verificare l'avvenuta autenticazione.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO4}{TAFO4} & L'utente deve potersi disconnettere dal sistema. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item autenticarsi correttamente nel sistema;
+		 	\item trovarsi in una qualsiasi delle pagine di navigazione destinate 
+		 	all'utente;
+		 	\item premere il tasto di logout;
+		 	\item confermare di voler effettuare la disconnessione premendo il tasto 
+		 	di conferma;
+		 	\item verificare che la disconnessione sia avvenuta correttamente.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO5}{TAFO5} & L'utente autenticato come governo deve poter coniare Cubit\glo{}.
+		 All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item autenticarsi correttamente nel sistema;
+		 	\item trovarsi nella pagina per la coniazione della moneta;
+		 	\item selezionare una quantità positiva di Cubit\glo{};
+		 	\item dare conferma dell'operazione. 
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO6}{TAFO6} & L'utente autenticato come governo deve poter distribuire Cubit\glo{}
+		 agli utenti registrati come aziende o cittadini. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item autenticarsi correttamente nel sistema;
+		 	\item trovarsi nella pagina per la distribuzione della moneta;
+		 	\item selezionare una quantità positiva di Cubit da 
+		 	distribuire;
+		 	\item selezionare la lista di utenti a cui trasferire i Cubit; 
+		 	\item dare conferma dell'operazione. 
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO8}{TAFO8} & L'utente autenticato come azienda o cittadino deve poter visualizzare i
+		 prodotti in vendita nel sito. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dei prodotti in vendita nel sito;
+		 	\item verificare che sia visualizzato il nome del prodotto;
+		 	\item verificare che sia visualizzato il prezzo lordo\glo{} del prodotto;
+		 	\item verificare che sia visualizzata la descrizione del prodotto;
+		 	\item verificare che sia visualizzata la quantità relativa ad un certo
+		 	prodotto in vendita nel sito;
+		 	\item verificare che sia possibile cambiare la quantità selezionata relativa ad un prodotto in
+		 	vendita nel sito.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO9}{TAFO9} & L'utente autenticato come azienda o cittadino deve poter aggiungere
+		 al proprio carrello prodotti in vendita nel sito. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dei prodotti in vendita nel sito;
+		 	\item aggiungere un prodotto al carrello.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO10}{TAFO10} & L'utente autenticato come azienda o cittadino deve poter visualizzare i
+		 prodotti aggiunti nel proprio carrello. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dei prodotti in vendita nel sito;
+		 	\item aggiungere un prodotto al carrello;
+		 	\item accedere alla pagina dedicata al carrello;
+		 	\item verificare che il prodotto sia stato aggiunto al carrello;
+		 	\item verificare che sia visualizzato il nome del prodotto nel carrello;
+		 	\item verificare che sia visualizzato il prezzo unitario del prodotto nel carrello;
+		 	\item verificare che sia visualizzato il prezzo totale dei prodotti nel carrello.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO11}{TAFO11} & L'utente autenticato come azienda o cittadino deve poter modificare la 
+		 quantità di un certo prodotto aggiunto nel proprio carrello. All'utente viene
+		 chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dei prodotti in vendita nel sito;
+		 	\item aggiungere un prodotto al carrello;
+		 	\item accedere alla pagina dedicata al carrello;
+		 	\item modificare la quantità di prodotto aggiunta al carrello;
+		 	\item verificare che la quantità di prodotto aggiunta al carrello sia
+		 	effettivamente cambiata.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO12}{TAFO12} & L'utente autenticato come azienda o cittadino deve poter rimuovere un
+		 certo prodotto aggiunto nel proprio carrello. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dei prodotti in vendita nel sito;
+		 	\item aggiungere un prodotto al carrello;
+		 	\item accedere alla pagina dedicata al carrello;
+		 	\item rimuovere il prodotto aggiunto al carrello;
+		 	\item verificare che il prodotto non sia più presente nel carrello.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFD13}{TAFD13} & L'utente autenticato come azienda o cittadino deve poter resettare il
+		 contenuto del carrello. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dei prodotti in vendita nel sito;
+		 	\item aggiungere un prodotto al carrello;
+		 	\item accedere alla pagina dedicata al carrello;
+		 	\item premere il tasto per resettare il contenuto del carrello;
+		 	\item verificare che il carrello sia vuoto.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO14.1}{TAFO14.1} & L'utente autenticato come azienda o cittadino deve poter effettuare il
+		 checkout dei prodotti nel carrello. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dei prodotti in vendita nel sito;
+		 	\item aggiungere un prodotto al carrello;
+		 	\item accedere alla pagina dedicata al carrello;
+		 	\item cliccare sul pulsante dedicato alla fase di checkout;
+		 	\item accedere alla pagina dedicata al checkout;
+		 	\item verificare che sia possibile procedere al pagamento.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO14.1.1}{TAFO14.1.1} & L'utente autenticato come azienda o cittadino deve poter visualizzare un
+		 messaggio di errore nel caso in cui si proceda al checkout e il carrello sia
+		 vuoto. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dedicata al carrello;
+		 	\item verificare che non siano presenti prodotti nel carrello;
+		 	\item procedere alla fase di checkout;
+		 	\item verificare che sia visualizzato il messaggio di errore.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO14.2}{TAFO14.2} & L'utente autenticato come azienda o cittadino deve selezionare l'indirizzo di
+		 spedizione per un certo prodotto. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dei prodotti in vendita nel sito;
+		 	\item aggiungere un prodotto al carrello;
+		 	\item procedere al checkout;
+		 	\item verificare che sia possibile selezionare come indirizzo di
+		 	spedizione il proprio indirizzo di residenza;
+		 	\item verificare che sia possibile inserire un nuovo indirizzo di
+		 	spedizione.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO14.3}{TAFO14.3} & L'utente autenticato come azienda o cittadino deve poter visualizzare un
+		 messaggio di errore nel caso in cui si proceda al pagamento e tale operazione non vada a buon fine. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dedicata al carrello;
+		 	\item procedere alla fase di checkout;
+		 	\item procedere al pagamento cliccando sull'apposito pulsante;
+		 	\item verificare che sia visualizzato il messaggio di errore.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO14.4}{TAFO14.4}	&	L'utente autenticato come azienda o cittadino deve procedere all'acquisto di un prodotto e completare la procedura di pagamento. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dei prodotti in vendita nel sito;
+		 	\item aggiungere un prodotto al carrello;
+		 	\item procedere al checkout;
+		 	\item confermare l'ordine quindi procedere al pagamento;
+		 	\item verificare che sia visibile la conferma d'acquisto nella pagina dedicata.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFF15}{TAFF15} & L'utente autenticato come azienda o cittadino deve poter visualizzare lo
+		 storico degli acquisiti effettuati. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dedicata agli acquisti effettuati nel sito;
+		 	\item verificare che per ogni acquisto sia visualizzata la data di quando
+		 	è stato effettuato;
+		 	\item verificare che per ogni acquisto sia visualizzato il numero
+		 	dell'acquisto;
+		 	\item verificare che per ogni acquisto siano visualizzati i prodotti
+		 	acquistati;
+		 	\item verificare che per ogni acquisto sia visualizzato il totale dell'IVA
+		 	dell'acquisto;
+		 	\item verificare che per ogni acquisto sia visualizzato il prezzo
+		 	lordo\glo{} dell'acquisto;
+		 	\item verificare che per ogni acquisto sia visualizzato l'indirizzo di 
+		 	spedizione dell'acquisto;
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFF15.7}{TAFF15.7} & L'utente autenticato come azienda o cittadino deve poter visualizzare la lista delle conferme d'acquisto\glosp che necessitano
+		 di conferma. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dedicata alle conferme d'acquisto;
+		 	\item verificare che per ogni conferma d'acquisto siano visualizzati i dettagli del prodotto;
+		 	\item verificare che per ogni conferma d'acquisto sia visualizzato il prezzo netto del prodotto;
+		 	\item verificare che per ogni conferma d'acquisto sia visualizzata l'aliquota IVA applicata al prodotto;
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFF15.7.1}{TAFF15.7.1} & L'utente autenticato come azienda o cittadino deve poter rifiutare una conferma d'acquisto\glosp che necessita
+		 di conferma. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dedicata alle conferme d'acquisto;
+		 	\item cliccare sul pulsante per rifiutare una conferma d'ordine;
+		 	\item verificare che tale conferma d'ordine venga rifiutata;
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFF15.7.2}{TAFF15.7.2} & L'utente autenticato come azienda o cittadino deve poter approvare una conferma d'acquisto\glosp che necessita
+		 di conferma. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dedicata alle conferme d'acquisto;
+		 	\item cliccare sul pulsante per approvare una conferma d'ordine;
+		 	\item verificare che tale conferma d'ordine venga approvata.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO16.1}{TAFO16.1} & L'utente autenticato come azienda deve poter mettere in vendita nuovi
+		 prodotti. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dedicata all'aggiunta di un prodotto in
+		 	vendita;
+		 	\item inserire il nome del nuovo prodotto in vendita;
+		 	\item inserire la descrizione del nuovo prodotto in vendita;
+		 	\item inserire il prezzo lordo\glo{} del nuovo prodotto in vendita;
+		 	\item inserire l'aliquota IVA del nuovo prodotto in vendita;
+		 	\item verificare che il prodotto sia stato correttamente aggiunto al sistema.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO16.2}{TAFO16.2} & L'utente autenticato come azienda deve poter modificare i dati relativi ad
+		 un prodotto in vendita. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dedicata ai propri prodotti in vendita;
+		 	\item accedere alla pagina per la modifica di uno dei prodotti;
+		 	\item modificare i dati del prodotto in vendita;
+		 	\item verificare che alla conferma i dati del prodotto siano effettivamente
+		 	modificati.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO16.2.1}{TAFO16.2.1} & L'utente autenticato come azienda deve poter verificare un errore nel caso
+		 in cui non sia effettuata alcuna modifica ad un prodotto in vendita dopo
+		 l'accesso alla pagina di modifica. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dedicata ai propri prodotti in vendita;
+		 	\item accedere alla pagina per la modifica di uno dei prodotti;
+		 	\item non effettuare alcuna modifica quindi confermare la modifica;
+		 	\item verificare che alla conferma sia visualizzato l'errore.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO16.3}{TAFO16.3} & L'utente autenticato come azienda deve poter eliminare
+		 un prodotto in vendita. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dedicata ai propri prodotti in vendita;
+		 	\item accedere alla pagina per la modifica di uno dei prodotti;
+		 	\item rimuovere il prodotto;
+		 	\item verificare che alla conferma il prodotto non sia più presente nella
+		 	lista dei prodotti in vendita.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFF17}{TAFF17} & L'utente autenticato come azienda deve poter visualizzare lo storico delle
+		 vendite. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dedicata alle vendite nel sito;
+		 	\item verificare che per ogni vendita sia visualizzata la data di quando
+		 	è stato effettuata;
+		 	\item verificare che per ogni vendita sia visualizzato il numero
+		 	della vendita;
+		 	\item verificare che per ogni vendita siano visualizzati i prodotti
+		 	venduti;
+		 	\item verificare che per ogni vendita sia visualizzato il totale dell'IVA
+		 	della vendita;
+		 	\item verificare che per ogni vendita sia visualizzato il prezzo
+		 	lordo\glo{} della vendita;
+		 	\item verificare che per ogni vendita sia visualizzato l'indirizzo di 
+		 	spedizione della vendita;
+		 	\item verificare che per ogni vendita sia visualizzato il nome
+		 	dell'acquirente qualora quest'ultimo sia un cittadino;
+		 	\item verificare che per ogni vendita sia visualizzato il cognome
+		 	dell'acquirente qualora quest'ultimo sia un cittadino;
+		 	\item verificare che per ogni vendita sia visualizzato il nome
+		 	dell'acquirente qualora quest'ultimo sia un'azienda;
+		 	\item verificare che per ogni vendita sia visualizzata la partita IVA
+		 	dell'acquirente qualora quest'ultimo sia un'azienda.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO18}{TAFO18} & L'utente autenticato come azienda deve procedere alla vendita di un prodotto e attendere la conferma d'ordine da parte dell'acquirente. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item mettere in vendita un prodotto;
+		 	\item attendere la conferma d'ordine da parte dell'acquirente;
+		 	\item verificare che nel proprio wallet\glosp sia presente l'ammontare dell'ordine;
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO19.1}{TAFO19.1} & L'utente autenticato come azienda deve poter visualizzare il saldo dell'IVA
+		 relativo al trimestre corrente. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dedicata al saldo dell'IVA;
+		 	\item verificare sia visualizzato il saldo dell'IVA relativo al trimestre
+		 	corrente.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO19.2}{TAFO19.2} & L'utente autenticato come azienda deve poter visualizzare il saldo dell'IVA
+		 relativo ad un trimestre concluso. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dedicata al saldo dell'IVA;
+		 	\item selezionare un trimestre concluso;
+		 	\item verificare sia visualizzato il saldo dell'IVA relativo al trimestre
+		 	selezionato.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO19.3}{TAFO19.3} & L'utente autenticato come azienda deve poter visualizzare la lista delle
+		 fatture relative ad un trimestre selezionato. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dedicata al saldo dell'IVA;
+		 	\item selezionare un trimestre;
+		 	\item verificare sia visualizzato per ogni fattura la data in cui è stata
+		 	effettuata;
+		 	\item verificare sia visualizzato per ogni fattura il numero identificativo;
+		 	\item verificare sia visualizzato per ogni fattura il nome dell'azienda che
+		 	l'ha emessa;
+		 	\item verificare sia visualizzato per ogni fattura le informazioni relative
+		 	all'acquirente;
+		 	\item verificare sia visualizzato per ogni fattura l'importo totale
+		 	dell'ordine;
+		 	\item verificare sia visualizzato per ogni fattura il totale in debito/credito
+		 	dell'IVA.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO19.4}{TAFO19.4} & L'utente autenticato come azienda deve poter effettuare il versamento 
+		 dell'IVA di un trimestre nel quale il saldo di questa risulti in debito. All'utente 
+		 viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dedicata al saldo dell'IVA;
+		 	\item selezionare un trimestre;
+		 	\item verificare sia visualizzato il saldo dell'IVA relativo al trimestre
+		 	selezionato;
+		 	\item confermare il versamento dell'IVA da effettuare;
+		 	\item verificare che sia possibile procedere al versamento.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO19.5}{TAFO19.5} & L'utente autenticato come azienda deve poter effettuare la dilazionare del versamento 
+		 dell'IVA di un trimestre nel quale il saldo di questa risulti in debito. All'utente 
+		 viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dedicata al saldo dell'IVA;
+		 	\item selezionare un trimestre;
+		 	\item verificare sia visualizzato il saldo dell'IVA relativo al trimestre
+		 	selezionato;
+		 	\item selezionare la dilazione del versamento con cui si vuole procedere;
+		 	\item confermare la dilazione da effettuare;
+		 	\item verificare che il pagamento sia stato dilazionato.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO19.6}{TAFO19.6} & L'utente autenticato come azienda deve poter scaricare in formato PDF 
+		 la lista dei movimenti dell'IVA del trimestre desiderato. All'utente viene chiesto 
+		 di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dedicata al saldo dell'IVA;
+		 	\item selezionare il trimestre che desidera;
+		 	\item verificare sia presente l'opzione di scaricare il PDF della lista
+		 	dei movimenti dell'IVA;
+		 	\item verificare che sia possibile possibile scaricare il PDF.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO19.7}{TAFO19.7} & L'utente autenticato come azienda deve poter 
+		 visualizzare in
+		 dettaglio una particolare fattura. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dedicata al saldo dell'IVA;
+		 	\item selezionare un trimestre;
+		 	\item verificare sia visualizzato per ogni fattura la data in cui è stata
+		 	effettuata;
+		 	\item verificare sia visualizzato per ogni fattura il numero identificativo;
+		 	\item verificare sia visualizzata la data dell'ordine relativo alla fattura;
+		 	\item verificare sia visualizzato in numero identificativo dell'ordine 
+		 	relativo alla fattura;
+		 	\item verificare siano visualizzati tutti i prodotti acquistati;
+		 	\item verificare sia visualizzato l'importo totale dell'IVA relativa alla fattura;
+		 	\item verificare sia visualizzato l'importo totale della fattura;
+		 	\item verificare sia visualizzato il nome dell'azienda emittente;
+		 	\item verificare sia visualizzata la partita IVA dell'azienda emittente;
+		 	\item verificare sia visualizzato il nome dell'acquirente se è un cittadino;
+		 	\item verificare sia visualizzato il cognome dell'acquirente se è un cittadino;
+		 	\item verificare sia visualizzata la partita IVA dell'acquirente se è un'azienda;
+		 	\item verificare sia visualizzato l'indirizzo di spedizione dell'ordine.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFO19.8}{TAFO19.8} & L'utente autenticato come azienda deve poter scaricare in formato PDF 
+		 la lista dei movimenti dell'IVA del trimestre desiderato. All'utente viene chiesto 
+		 di:
+		 \begin{itemize}
+		 	\item accedere alla pagina dedicata al saldo dell'IVA;
+		 	\item selezionare il trimestre che desidera;
+		 	\item verificare sia presente l'opzione di scaricare il PDF della lista
+		 	dei movimenti dell'IVA;
+		 	\item verificare che sia possibile possibile scaricare il PDF.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\hypertarget{TAFF19.9}{TAFF19.9} & L'utente autenticato come azienda deve poter scaricare in formato PDF la
+		 fattura relativa ad un acquisto. All'utente viene chiesto di:
+		 \begin{itemize}
+		 	\item di accedere alla pagina dedicata alle fatture;
+		 	\item verificare di poter selezionare la fattura da scaricare in formato PDF;
+		 	\item verificare di riuscire a scaricare la fattura in formato PDF.
+		 \end{itemize} & \textit{NI} & \textit{NS}\\ \tabularnewline
+\end{longtable}
+
+\subsection{Test di sistema}
+	\renewcommand{\arraystretch}{1.5}
+	\rowcolors{2}{pari}{dispari}
+	
+	\begin{longtable}{ >{\centering}p{0.10\textwidth} >{}p{0.70\textwidth}
+			>{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth}}
+			
+		%\tabularnewline
+		\caption{Riepilogo test di sistema}\\	
+		\rowcolorhead
+		\textbf{\color{white}Codice} 
+		& \centering\textbf{\color{white}Descrizione} 
+		& \centering\textbf{\color{white}Stato}
+		& \centering\textbf{\color{white}Esito} 
+		\tabularnewline %\tabularnewline 
+		\endfirsthead	
+		
+		\rowcolor{white}\caption[]{(continua)}\\	
+		\rowcolorhead
+		\textbf{\color{white}Codice} 
+		& \centering\textbf{\centering\color{white}Descrizione} 
+		& \centering\textbf{\color{white}Stato}
+		& \centering\textbf{\color{white}Esito} 
+		\tabularnewline %\tabularnewline 
+		\endhead	
+		
+
+		\hypertarget{TS1}{TS1} & Viene verificato che il sistema permetta all'utente 
+		di leggere una breve guida riguardante l'utilizzo di MetaMask ed il pagamento 
+		delle operazioni all'interno della piattaforma. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TS2}{TS2} & Viene verificato che il sistema permetta la 
+		registrazione di un nuovo utente. & \textit{I} & \textit{S}\\ 
+
+		\tabularnewline
+		\hypertarget{TS3}{TS3} & Viene verificato che il sistema permetta la 
+		registrazione come cittadino. & \textit{I} & \textit{S}\\ 
+
+		\tabularnewline
+		\hypertarget{TS4}{TS4} & Viene verificato che il sistema permetta la 
+		registrazione come azienda. & \textit{I} & \textit{S}\\ 
+
+		\tabularnewline
+		\hypertarget{TS5}{TS5} & Viene verificato che la registrazione non vada 
+		a buon fine se la chiave di MetaMask è già presente nel sistema. & 
+		\textit{I} & \textit{S}\\  
+
+		\tabularnewline
+		\hypertarget{TS6}{TS6} & Viene verificato che il sistema permetta di 
+		autenticarsi. & \textit{I} & \textit{S}\\ 
+
+		\tabularnewline
+		\hypertarget{TS7}{TS7} & Viene verificato che nel sistema il login 
+		avvenga automaticamente tramite Metamask. & \textit{I} & \textit{S}\\ 
+
+		\tabularnewline
+		\hypertarget{TS8}{TS8} & Viene verificato che nel sistema il login e/o 
+		registrazione non vadano a buon fine se MetaMask non è presente. & 
+		\textit{I} & \textit{S}\\  
+
+		\tabularnewline
+		\hypertarget{TS9}{TS9} & Viene verificato che il processo di login e/o 
+		registrazione non vada a buon fine se non vi è alcuna chiave disponibile nel 
+		plug-in. & \textit{I} & \textit{S}\\ 
+
+		\tabularnewline
+		\hypertarget{TS10}{TS10} & Viene verificato che il processo di login si 
+		interrompa se la chiave non è registrata nel sistema. & 
+		\textit{I} & \textit{S}\\  
+
+		\tabularnewline
+		\hypertarget{TS11}{TS11} & Viene verificato che il processo di login e/o 
+		registrazione non vada a buon fine se l'utente risulta "disabilitato". & 
+		\textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TS12}{TS12} & Viene verificato che il sistema permetta di 
+		eseguire il logout. & \textit{I} & \textit{S}\\ 
+
+		\tabularnewline
+		\hypertarget{TS13}{TS13} & Viene verificato che governo possa coniare Cubit. & 
+		\textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TS14}{TS14} & Viene verificato che il governo possa distribuire 
+		Cubit a cittadini ed aziende. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TS15}{TS15} & Viene verificato che il governo posso visualizzare 
+		e gestire la lista degli utenti registrati. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TS16}{TS16} & Viene verificato che aziende e cittadini possano 
+		visualizzare i prodotti in vendita nel sito. & \textit{I} & 
+		\textit{S}\\ 
+
+		\tabularnewline
+		\hypertarget{TS17}{TS17} & Viene verificato che aziende e cittadini possano 
+		aggiungere prodotti nel carrello. & \textit{I} & \textit{S}\\ 
+
+		\tabularnewline
+		\hypertarget{TS18}{TS18} & Viene verificato che il sistema permetta di 
+		visualizzare i prodotti nel carrello. & \textit{I} & \textit{S}\\ 
+
+		\tabularnewline
+		\hypertarget{TS19}{TS19} & Viene verificato che il sistema permetta di 
+		modificare la quantità di un bene presente nel carrello. & 
+		\textit{I} & \textit{S}\\ 
+
+		\tabularnewline
+		\hypertarget{TS20}{TS20} & Viene verificato che il sistema permetta di 
+		rimuovere prodotti dal carrello. & \textit{I} & \textit{S}\\ 
+
+		\tabularnewline
+		\hypertarget{TS21}{TS21} & Viene verificato che il sistema permetta di 
+		resettare il contenuto del carrello. & \textit{I} & \textit{S}\\ 
+
+		\tabularnewline
+		\hypertarget{TS22}{TS22} & Viene verificato che il sistema permetta 
+		a 
+		cittadini ed aziende di acquistare prodotti venduti nella piattaforma. & 
+		\textit{I} & \textit{S}\\ 
+
+		\tabularnewline
+		\hypertarget{TS23}{TS23} & Viene verificato che il sistema permetta a 
+		cittadini ed aziende di visualizzare la lista degli acquisti effettuati. & 
+		\textit{I} & \textit{S}\\ 
+
+		\tabularnewline
+		\hypertarget{TS24}{TS24} & Viene verificato che un'azienda possa gestire i 
+		prodotti in vendita. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TS25}{TS25} & Viene verificato che il sistema permetta ad 
+		un'azienda di mettere in vendita beni e servizi. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TS26}{TS26} & Viene verificato che un'azienda possa 
+		modificare i dati relativi ad un proprio bene o servizio in vendita. & 
+		\textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TS27}{TS27} & Verificare che un'azienda possa eliminare un 
+		proprio bene o servizio in vendita. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TS28}{TS28} & Viene verificato che un'azienda possa 
+		visualizzare la lista delle vendite. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TS29}{TS29} & Viene verificato che un'azienda riceva il 
+		pagamento a seguito della conferma dell'ordine. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TS30}{TS30} & Viene verificato che un'azienda possa 
+		visualizzare il saldo IVA relativo al trimestre corrente. & 
+		\textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TS31}{TS31} & Viene verificato che un'azienda possa 
+		visualizzare il saldo IVA relativo ad un trimestre concluso selezionato. & 
+		\textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TS32}{TS32} & Viene verificato che un'azienda possa 
+		effettuare il versamento IVA di un trimestre nel quale il saldo IVA risulti a 
+		debito. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TS33}{TS33} & Viene verificato che un'azienda possa 
+		effettuare la dilazione del versamento IVA di un trimestre nel quale il saldo 
+		IVA risulti a debito. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TS34}{TS34} & Viene verificato che un'azienda possa 
+		visualizzare in dettaglio una particolare fattura. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TS35}{TS35} & Viene verificato che gli smart contracts siano 
+		upgradable. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TS36}{TS36} & Viene verificato che il sistema impedisca 
+		all'utente di compiere alcuna azione prima di essersi autenticato al sistema con 
+		MetaMask. & \textit{NI} & \textit{NS}\\ 
+
+		\tabularnewline
+		\hypertarget{TS37}{TS37} & Viene verificato che la Dapp sia accessibile 
+		utilizzando il browser Google Chrome dalla versione 71. & 
+		\textit{I} & \textit{S}\\
+
+		\tabularnewline
+		\hypertarget{TS38}{TS38} & Viene verificato che la Dapp sia accessibile 
+		utilizzando il browser Mozilla Firefox dalla versione 64. & \textit{I} 
+		& \textit{S}\\  
+		\tabularnewline
+		\end{longtable}
+
+
+\subsection{Test di integrazione}
+	\renewcommand{\arraystretch}{1.5}
+	\rowcolors{2}{pari}{dispari}	
+		
+		\begin{longtable}{ >{\centering}p{0.10\textwidth} >{}p{0.70\textwidth}
+				>{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth}}
+			
+			%\tabularnewline
+			\caption{Riepilogo test di integrazione}\\	
+			\rowcolorhead
+			\textbf{\color{white}Codice} 
+			& \centering\textbf{\color{white}Descrizione} 
+			& \centering\textbf{\color{white}Stato}
+			& \centering\textbf{\color{white}Esito} 
+			\tabularnewline %\tabularnewline 
+			\endfirsthead	
+			
+			\rowcolor{white}\caption[]{(continua)}\\	
+			\rowcolorhead
+			\textbf{\color{white}Codice} 
+			& \centering\textbf{\centering\color{white}Descrizione} 
+			& \centering\textbf{\color{white}Stato}
+			& \centering\textbf{\color{white}Esito} 
+			\tabularnewline %\tabularnewline 
+			\endhead	
+			
+			
+			\hypertarget{TI1}{TI1} & Viene verificato che sia lanciato un messaggio di 
+			errore se un utente è già presente nel sistema. & \textit{I} & \textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TI2}{TI2} & Viene verificato che un utente venga rimosso 
+			correttamente. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI3}{TI3} & Viene verificato che sia lanciato un messaggio di 
+			errore se si vuole eliminare un utente non presente nel sistema. & \textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI4}{TI4} & Viene verificato che venga ritornata la lista di 
+			utenti. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI5}{TI5} & Viene verificato che venga ritornata la lista dei 
+			prodotti correttamente. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI6}{TI6} & Viene verificato che venga fatto il login di un 
+			cittadino dopo aver effettuato la registrazione. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI7}{TI7} & Viene verificato che venga fatto il login di 
+			un'azienda dopo aver effettuato la registrazione. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI8}{TI8} & Viene verificato che i dati di un cittadino siano 
+			correttamente visualizzati nel suo profilo. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI9}{TI9} & Viene verificato che i dati di un'azienda siano 
+			correttamente visualizzati nel suo profilo. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI10}{TI10} & Viene verificato che sia visualizzata la lista dei 
+			prodotti di una specifica azienda. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI11}{TI11} & Viene verificato che sia visualizzata la lista dei 
+			prodotti vuota di una specifica azienda che non ha ancora inserito dei prodotti. 
+			& \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI12}{TI12} & Viene verificato che la lista degli utenti sia 
+			aggiornata dopo aver inserito un nuovo utente. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI13}{TI13} & Viene verificato che la lista dei prodotti sia 
+			aggiornata dopo che un'azienda aggiunge un nuovo prodotto. & \textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI14}{TI14} & Viene verificato che la lista dei prodotti di una 
+			specifica azienda venga aggiornata dopo l'inserimento di un nuovo prodotto. & 
+			\textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI15}{TI15} & Viene verificato che venga ritornata la lista 
+			delle aziende che vende uno specifico prodotto. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI16}{TI16} & Viene verificato che l'utente possa visualizzare 
+			la lista degli ordini. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI17}{TI17} & Viene verificato che l'azienda possa visualizzare 
+			la lista delle fatture. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI18}{TI18} & Viene verificato che sia lanciato un messaggio di 
+			errore se un utente cerca di eseguire un operazione a cui non è abilitato. & 
+			\textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI19}{TI19} & Viene verificato che l'utente possa modificare i 
+			propri dati personali. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TI20}{TI20} & Viene verificato che l'azienda possa visualizzare 
+			la lista del rimborso dell'IVA. & \textit{I} & \textit{S}\\
+
+				
+			\tabularnewline
+		\end{longtable}
+
+\subsection{Test di unità}
+	\renewcommand{\arraystretch}{1.5}
+	\rowcolors{2}{pari}{dispari}	
+		
+		\begin{longtable}{ >{\centering}p{0.10\textwidth} >{}p{0.70\textwidth}
+				>{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth}}
+			
+			%\tabularnewline
+			\caption{Riepilogo test di unità}\\	
+			\rowcolorhead
+			\textbf{\color{white}Codice} 
+			& \centering\textbf{\color{white}Descrizione} 
+			& \centering\textbf{\color{white}Stato}
+			& \centering\textbf{\color{white}Esito} 
+			\tabularnewline %\tabularnewline 
+			\endfirsthead	
+			
+			\rowcolor{white}\caption[]{(continua)}\\	
+			\rowcolorhead
+			\textbf{\color{white}Codice} 
+			& \centering\textbf{\centering\color{white}Descrizione} 
+			& \centering\textbf{\color{white}Stato}
+			& \centering\textbf{\color{white}Esito} 
+			\tabularnewline %\tabularnewline 
+			\endhead	
+			
+			
+			\hypertarget{TU1}{TU1} & Viene verificata la corretta 
+			registrazione di un cittadino. & \textit{I} & \textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU2}{TU2} & Viene verificata la corretta 
+			registrazione di un'azienda. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU3}{TU3} & Viene verificato che il login di un utente 
+			avvenga correttamente se esso è già registrato nel sistema. & 
+			\textit{I} & \textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU4}{TU4} & Viene verificato che il login di un utente 
+			non avvenga correttamente se esso non è già registrato nel sistema. 
+			& \textit{I} & \textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU5}{TU5} & Viene verificata la possibilità di un 
+			utente registrato come azienda di inserire correttamente un 
+			prodotto. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU6}{TU6} & Viene verificato che un'azienda possa 
+			modificare correttamente un proprio prodotto. & \textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU7}{TU7} & Viene verificato che un'azienda possa 
+			eliminare un proprio prodotto. & \textit{I} & \textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU8}{TU8} &Viene verificato che un'azienda non possa 
+			modificare un prodotto inserito da un'altra azienda. & \textit{I} & 
+			\textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU9}{TU9} & Viene verificato che un'azienda non possa 
+			eliminare un prodotto inserito da un'altra azienda. & \textit{I} & 
+			\textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU10}{TU10} & Viene verificato che un cittadino non 
+			possa aggiungere, eliminare, modificare un prodotto. & \textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU11}{TU11} & Viene verificato che il calcolo del 
+			valore IVA su un prodotto avvenga correttamente. & \textit{I} 
+			& \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU12}{TU12} & Viene verificato che il calcolo del 
+			prezzo lordo di un prodotto sia corretto. & \textit{I} 
+			& \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU13}{TU13} & Viene verificato che sia possibile 
+			effettuare un ordine. & \textit{I} & \textit{S}\\ 
+			
+			
+			\tabularnewline
+			\hypertarget{TU14}{TU14} & Viene verificato che la creazione 
+			dell'ordine non avvenga correttamente se esso non contiene almeno 
+			un prodotto. & \textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU15}{TU15} & Viene verificato che la creazione 
+			dell'ordine non avvenga correttamente se gli indirizzi del 
+			compratore e del venditore non sono validi o se essi coincidono. & 
+			\textit{I} & 
+			\textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU16}{TU16} & Viene verificato che il calcolo del 
+			totale relativo ad un ordine avvenga correttamente. & \textit{I} & 
+			\textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU17}{TU17} & Viene verificato che il calcolo dello 
+			stato IVA corrisponda alla situazione attuale. & \textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU18}{TU18} & Viene verificato il corretto rimborso 
+			dell'IVA da parte del governo. & \textit{I} & \textit{S}\\ 
+				
+			\tabularnewline
+			\hypertarget{TU19}{TU19} & Viene verificato che il rimborso 
+			dell'IVA da parte del governo avvenga solamente se lo stato della 
+			stessa risulta a credito. & \textit{I} & \textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU20}{TU20} & Viene verificato il corretto pagamento 
+			dell'IVA da parte di un'azienda. & \textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU21}{TU21} & Viene verificato il corretto 
+			trasferimento di Cubit. & \textit{I} & 
+			\textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU22}{TU22} & Viene verificato che il trasferimento di 
+			Cubit avvenga solo se l'indirizzo di destinazione è valido. & 
+			\textit{I} & \textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU23}{TU23} & Viene verificato che il trasferimento di 
+			Cubit avvenga solo se il mittente possiede tale somma. & \textit{I} 
+			& \textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU24}{TU24} & Viene verificata la corretta coniazione 
+			di un certo quantitativo di Cubit. & \textit{I} & \textit{S}\\  
+			
+			\tabularnewline
+			\hypertarget{TU25}{TU25} &Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{AddProductsManager} 
+			comporti la corretta renderizzazione del componente. & \textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU26}{TU26} & Viene verificato che venga costruito 
+			correttamente il componente \texttt{AddProductManager} per la 
+			gestione da parte di una azienda dei prodotti in vendita. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU27}{TU27} & Viene verificato che il metodo 
+			\texttt{handleChange()} catturi correttamente l'evento scatenato e 
+			setti di conseguenza lo stato del componente. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU28}{TU28} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{BusinessProduct} comporti 
+			la corretta renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU29}{TU29} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{Button} comporti la 
+			corretta renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU30}{TU30} & Viene verificato che il metodo 
+			\texttt{printProduct()} ritorni correttamente il componente 
+			\texttt{CartProduct} con le informazioni relative al prodotto. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU31}{TU31} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{Cart} comporti la corretta 
+			renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU32}{TU32} & Viene verificato che il metodo 
+			\texttt{enableRemove()} visualizzi correttamente il bottone per la 
+			diminuzione della quantità di un prodotto presente nel carrello. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU33}{TU33} & Viene verificato che il metodo 
+			\texttt{disableRemove()} disabiliti correttamente il bottone per la 
+			diminuzione della quantità di prodotto. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU34}{TU34} & Viene verificato che venga costruito 
+			correttamente il componente \texttt{Checkout} per la gestione del 
+			checkout dell'acquisto. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU35}{TU35} & Viene verificato che il metodo 
+			\texttt{handleOptionChange()} catturi correttamente l'evento 
+			scatenato e setti di conseguenza lo stato del componente. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU36}{TU36} & Viene verificato che il metodo 
+			\texttt{oldShipment()} visualizzi l' impossibilità di inserire dati 
+			per l'indirizzo di spedizione(utilizzo dell'indirizzo di 
+			iscrizione). & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU37}{TU37} & Viene verificato che il metodo 
+			\texttt{newShipment()} visualizzi correttamente la possibilità di 
+			inserire dati per il nuovo indirizzo di spedizione. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU38}{TU38} & Viene verificato che il metodo 
+			\texttt{handleInputChange()} catturi correttamente l'evento 
+			scatenato e setti di conseguenza lo stato del componente. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU39}{TU39} & Viene verificato che il metodo 
+			\texttt{getAddress()} restituisca correttamente l'indirizzo 
+			corretto. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU40}{TU40} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{Checkout} comporti la 
+			corretta renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU41}{TU41} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{CubitManager} comporti la 
+			corretta renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU42}{TU42} & Viene verificato che venga costruito 
+			correttamente il componente \texttt{EditProductsManager} per la 
+			modifica da parte di una azienda dei prodotti in vendita. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU43}{TU43} & Viene verificato che il metodo 
+			\texttt{handleChange()} catturi correttamente l'evento scatenato e 
+			setti di conseguenza lo stato del componente. & 
+			\textit{I} & 
+			\textit{S}\\                    
+			
+			\tabularnewline
+			\hypertarget{TU44}{TU44} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{EdiProductsManager} 
+			comporti la corretta renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU45}{TU45} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{Error} comporti la 
+			corretta renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU46}{TU46} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{Footer} comporti la 
+			corretta renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU47}{TU47} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{FormCubitManager} comporti 
+			la corretta renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU48}{TU48} & Viene verificato che venga costruito 
+			correttamente il componente \texttt{FormRegistration} per la 
+			registrazione di un utente. & 
+			\textit{I} & 
+			\textit{S}\\ 
+			
+			\tabularnewline
+			\hypertarget{TU49}{TU49} & Viene verificato che il metodo 
+			\texttt{citizenFormMaker()} restituisca correttamente il form per 
+			la registrazione del cittadino. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU50}{TU50} & Viene verificato che il metodo 
+			\texttt{businessFormMaker()} restituisca correttamente il form per  
+			la registrazione dell'azienda. & 
+			\textit{I} & 
+			\textit{S}\\        
+			     
+			\tabularnewline
+			\hypertarget{TU51}{TU51} & Viene verificato che il metodo 
+			\texttt{handleOptionChange()} catturi correttamente l'evento scatenato 
+			e setti di conseguenza lo stato del componente. & 
+			\textit{I} & 
+			\textit{S}\\        
+						     
+			\tabularnewline
+			\hypertarget{TU52}{TU52} & Viene verificato che il metodo 
+			\texttt{handleChange()} catturi correttamente l'evento scatenato e setti 
+			di conseguenza lo stato del componente. & 
+			\textit{I} & 
+			\textit{S}\\        
+						     
+			\tabularnewline
+			\hypertarget{TU53}{TU53} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{FormRegistration} comporti la 
+			corretta renderizzazione del componente & 
+			\textit{I} & 
+			\textit{S}\\        
+						     
+			\tabularnewline
+			\hypertarget{TU54}{TU54} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{Guide} comporti la corretta 
+			renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\        
+						     
+			\tabularnewline
+			\hypertarget{TU55}{TU55} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{Home} comporti la corretta 
+			renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\        
+						     
+			\tabularnewline
+			\hypertarget{TU56}{TU56} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{NavBar} comporti la corretta 
+			renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\        
+						     
+			\tabularnewline
+			\hypertarget{TU57}{TU57} & Viene verificato che il metodo 
+			\texttt{printSeller()} restituisca correttamente i dati relativi 
+			al venditore. & 
+			\textit{I} & 
+			\textit{S}\\        
+						     
+			\tabularnewline
+			\hypertarget{TU58}{TU58} & Viene verificato che il metodo 
+			\texttt{printProduct()} restituisca correttamente i dati relativi 
+			al prodotto. & 
+			\textit{I} & 
+			\textit{S}\\        
+						     
+			\tabularnewline
+			\hypertarget{TU59}{TU59} & Viene verificato che il metodo 
+			\texttt{printOrder()} restituisca correttamente i dati relativi 
+			all'ordine. & 
+			\textit{I} & 
+			\textit{S}\\        
+						     
+			\tabularnewline
+			\hypertarget{TU60}{TU60} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{Orders} comporti la 
+			corretta renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\        
+						     
+			\tabularnewline
+			\hypertarget{TU61}{TU61} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{PendingOrder} comporti 
+			la corretta renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\        
+						     
+			\tabularnewline
+			\hypertarget{TU62}{TU62} & Viene verificato che venga costruito 
+			correttamente il componente \texttt{Product} per la visualizzazione 
+			di un prodotto nello store. & 
+			\textit{I} & 
+			\textit{S}\\        
+						     
+			\tabularnewline
+			\hypertarget{TU63}{TU63} & Viene verificato che il metodo 
+			\texttt{handleChange()} catturi correttamente l'evento scatenato 
+			e setti di conseguenza lo stato del componente. & 
+			\textit{I} & 
+			\textit{S}\\        
+						     
+			\tabularnewline
+			\hypertarget{TU64}{TU64} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{Product} comporti la 
+			corretta renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\        
+						     
+			\tabularnewline
+			\hypertarget{TU65}{TU65} & Viene verificato che il metodo 
+			\texttt{printProduct()} restituisca correttamente i dati 
+			relativi al prodotto. & 
+			\textit{I} & 
+			\textit{S}\\        
+						     
+			\tabularnewline
+			\hypertarget{TU66}{TU66} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{ProductManager} 
+			comporti la corretta renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\        
+						     
+			\tabularnewline
+			\hypertarget{TU67}{TU67} & Viene verificato che il metodo 
+			\texttt{printProduct()} restituisca correttamente i dati 
+			relativi al prodotto. & 
+			\textit{I} & 
+			\textit{S}\\        
+						     
+			\tabularnewline
+			\hypertarget{TU68}{TU68} & Viene verificato che il metodo 
+			\texttt{printOrder()} restituisca correttamente i dati relativi 
+			all'ordine. & 
+			\textit{I} & 
+			\textit{S}\\        
+			
+			\tabularnewline
+			\hypertarget{TU69}{TU69} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{PurchaseConfirmation} 
+			comporti la corretta renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\
+						
+			\tabularnewline
+			\hypertarget{TU70}{TU70} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{Search} comporti 
+			la corretta renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\
+						
+			\tabularnewline
+			\hypertarget{TU71}{TU71} & Viene verificato che il metodo 
+			\texttt{printProduct()} restituisca correttamente i dati 
+			relativi al prodotto. & 
+			\textit{I} & 
+			\textit{S}\\
+						
+			\tabularnewline
+			\hypertarget{TU72}{TU72} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{Search} comporti 
+			la corretta renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\
+						
+			\tabularnewline
+			\hypertarget{TU73}{TU73} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{Success} comporti 
+			la corretta renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\
+						
+			\tabularnewline
+			\hypertarget{TU74}{TU74} & Viene verificato che venga 
+			costruito correttamente il componente \texttt{TransactionsManager} 
+			per la gestione delle fatture e del credito/debito IVA. & 
+			\textit{I} & 
+			\textit{S}\\
+						
+			\tabularnewline
+			\hypertarget{TU75}{TU75} & Viene verificato che il metodo 
+			\texttt{downloadPDF()} permetta di scaricare il pdf delle 
+			fatture. & 
+			\textit{I} & 
+			\textit{S}\\
+						
+			\tabularnewline
+			\hypertarget{TU76}{TU76} & Viene verificato che il metodo 
+			\texttt{printQuarters()} ritorni il trimestre correttamente. & 
+			\textit{I} & 
+			\textit{S}\\
+						
+			\tabularnewline
+			\hypertarget{TU77}{TU77} & Viene verificato che il metodo 
+			\texttt{handleChange()} catturi correttamente l'evento scatenato 
+			e setti di conseguenza lo stato del componente. & 
+			\textit{I} & 
+			\textit{S}\\
+						
+			\tabularnewline
+			\hypertarget{TU78}{TU78} & Viene verificato che il metodo 
+			\texttt{printDebitButtons()} mostri correttamente la possibilità 
+			di gestione del pagamento nel caso di debito nel trimestre. & 
+			\textit{I} & 
+			\textit{S}\\
+						
+			\tabularnewline
+			\hypertarget{TU79}{TU79} & Viene verificato che il metodo 
+			\texttt{printStatus()} mostri correttamente la stato del saldo 
+			IVA. & 
+			\textit{I} & 
+			\textit{S}\\
+						
+			\tabularnewline
+			\hypertarget{TU80}{TU80} & Viene verificato che il metodo 
+			\texttt{printInvoices()} mostri correttamente i dati relativi 
+			alle fatture. & 
+			\textit{I} & 
+			\textit{S}\\
+
+			\tabularnewline
+			\hypertarget{TU81}{TU81} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{TransactionsManager} 
+			comporti la corretta renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU82}{TU82} & Viene verificato che il metodo 
+			\texttt{printUsers()} mostri correttamente la lista degli 
+			utenti. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU83}{TU83} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{UsersList} comporti la 
+			corretta renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU84}{TU84} & Viene verificato che il metodo 
+			\texttt{printBusiness()} mostri correttamente i dati relativi 
+			alle aziende e alle loro situazioni di rimborso IVA. & 
+			\textit{I} & 
+			\textit{S}\\
+
+			\tabularnewline
+			\hypertarget{TU85}{TU85} & Viene verificato che il metodo 
+			\texttt{render()} del componente \texttt{VATRefund} comporti 
+			la corretta renderizzazione del componente. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU86}{TU86} & Viene verificato che il metodo 
+			\texttt{reducerAuth()} modifichi correttamente lo stato dello store 
+			in base all'autenticazione dell'utente. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU87}{TU87} & Viene verificato che il metodo 
+			\texttt{reducerSearch()} modifichi correttamente lo stato dello 
+			store in base alla ricerca di un prodotto. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU88}{TU88} & Viene verificato che il metodo 
+			\texttt{reducerCart()} modifichi correttamente lo stato dello store 
+			in base ai prodotti inseriti nel carrello. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+			\tabularnewline
+			\hypertarget{TU89}{TU89} & Viene verificato che il metodo 
+			\texttt{reducerGovernment()} modifichi correttamente lo stato dello 
+			store in base all'abilitazione/disabilitazione degli account utente. & 
+			\textit{I} & 
+			\textit{S}\\
+			
+
+			\tabularnewline
+		\end{longtable}
+
+\subsubsection{Tracciamento test d'unità - metodi}
+Segue il tracciamento dei test con i metodi che testano:
+%TRACCIAMENTO TEST-METODI
+		\renewcommand{\arraystretch}{1.5}
+		\rowcolors{2}{pari}{dispari}
+		
+		\begin{longtable}{ >{\centering}p{0.10\textwidth} >{}p{0.95\textwidth}}
+			
+			%\tabularnewline
+			\caption{Tracciamento test di unità - metodi}\\	
+			\rowcolorhead
+			\textbf{\color{white}Codice} 
+			& \centering\textbf{\color{white}Metodo}  
+			\tabularnewline %\tabularnewline 
+			\endfirsthead	
+			
+			\rowcolor{white}\caption[]{(continua)}\\	
+			\rowcolorhead
+			\textbf{\color{white}Codice} 
+			& \centering\textbf{\centering\color{white}Metodo} 
+			\tabularnewline %\tabularnewline 
+			\endhead	
+			
+			
+			
+			\hypertarget{TU1}{TU1} & \texttt{UserLogic::addCitizen(bytes32 \_hashIpfs, uint8 \_hashSize, uint8 \_hashFun)}\\ 
+			
+			%\tabularnewline
+			\hypertarget{TU2}{TU2} & \texttt{UserLogic::addBusiness(bytes32 
+			\_hashIpfs,uint8 \_hashSize,uint8 \_hashFun)}\\
+			
+			\hypertarget{TU3}{TU3} & \texttt{UserLogic::login(address 
+			\_userAddress)}\\
+			
+			\hypertarget{TU4}{TU4} & \texttt{UserLogic::login(address 
+			\_userAddress)}\\
+			
+			\hypertarget{TU5}{TU5} & \texttt{ProductLogic::addProduct(bytes32 
+			\_hashIPFS, uint8 \_hashSize, uint8 \_hashFunction, uint8 
+			\_vatPercentage, uint256 \_netPrice)}\\
+			
+			\hypertarget{TU6}{TU6} & \texttt{ProductLogic::function 
+			modifyProduct(bytes32 \_keyHash, bytes32 \_hashIPFS, uint8 
+			\_hashSize, uint8 \_hashFunction, uint8 \_vatPercentage, uint256 
+			\_netPrice)}\\
+			
+			\hypertarget{TU7}{TU7} & 
+			\texttt{ProductLogic::deleteProduct(bytes32 \_keyHash)}\\
+			
+			\hypertarget{TU8}{TU8} & \texttt{ProductLogic::function 
+			modifyProduct(bytes32 \_keyHash, bytes32 \_hashIPFS, uint8 
+			\_hashSize, uint8 \_hashFunction, uint8 \_vatPercentage, uint256 
+			\_netPrice)}\\
+			
+			\hypertarget{TU9}{TU9} & 
+			\texttt{ProductLogic::deleteProduct(bytes32 \_keyHash)}\\
+			
+			\hypertarget{TU10}{TU10} & \texttt{ 
+			ProductLogic::addProduct(bytes32 \_hashIPFS, uint8 \_hashSize, 
+			uint8 \_hashFunction, uint8 \_vatPercentage, uint256 
+			\_netPrice) \newline \newline
+			ProductLogic::modifyProduct(bytes32 \_keyHash, 
+			bytes32 \_hashIPFS, uint8 \_hashSize, uint8 \_hashFunction, uint8 
+			\_vatPercentage, uint256 \_netPrice)\newline \newline
+			ProductLogic::deleteProduct(bytes32 \_keyHash)}\\
+			
+			\hypertarget{TU11}{TU11} & 
+			\texttt{ProductLogic::calculateProductVat(bytes32 \_keyHash)}\\
+			
+			\hypertarget{TU12}{TU12} & 
+			\texttt{ProductLogic::calculateProductGrossPrice(bytes32 
+			\_keyHash)}\\
+		
+			\hypertarget{TU13}{TU13} & 
+			\texttt{OrderLogic::registerOrder(bytes32 \_hashIpfs, uint8 
+			\_hashFun, uint8 \_hashSize, address \_buyer, string calldata 
+			\_period, bytes32[] calldata \_productsHash)}\\
+		
+			\hypertarget{TU14}{TU14} & 
+			\texttt{OrderLogic::registerOrder(bytes32 \_hashIpfs, uint8 
+				\_hashFun, uint8 \_hashSize, address \_buyer, string calldata 
+				\_period, bytes32[] calldata \_productsHash)}\\
+			
+			\hypertarget{TU15}{TU15} & 
+			\texttt{OrderLogic::registerOrder(bytes32 \_hashIpfs, uint8 
+				\_hashFun, uint8 \_hashSize, address \_buyer, string calldata 
+				\_period, bytes32[] calldata \_productsHash)}\\
+			
+			\hypertarget{TU16}{TU16} & 
+			\texttt{OrderLocic::calculateOrderTotal(bytes32[] memory 
+			\_productsHash)}\\
+			
+			\hypertarget{TU17}{TU17} & \texttt{VatLogic::registerVat(address 
+			\_business, int256 \_vatAmount, string calldata \_period)}\\
+			
+			\hypertarget{TU18}{TU18} & \texttt{VatLogic::refundVat(bytes32 
+			\_key)}\\
+			
+			\hypertarget{TU19}{TU19} & \texttt{VatLogic::refundVat(bytes32 
+				\_key)}\\
+			
+			\hypertarget{TU20}{TU20} & \texttt{VatLogic::payVat(address \_from, 
+			bytes32 \_key)}\\
+			
+			\hypertarget{TU21}{TU21} & \texttt{TokenCubit::transfer(address 
+			\_to, uint256 \_value)}\\
+			
+			\hypertarget{TU22}{TU22} & \texttt{TokenCubit::transfer(address 
+				\_to, uint256 \_value)}\\
+			
+			\hypertarget{TU23}{TU23} & \texttt{TokenCubit::transfer(address 
+				\_to, uint256 \_value)}\\
+			
+			\hypertarget{TU24}{TU24} & \texttt{TokenCubit::mintToken(address 
+			target, uint256 mintedAmount)}\\
+		
+			\hypertarget{TU25}{TU25} & \texttt{AddProductsManager::render()}\\
+			
+			\hypertarget{TU26}{TU26} & 
+			\texttt{AddProductsManager::constructor(props: object)}\\
+			
+			\hypertarget{TU27}{TU27} & 
+			\texttt{AddProductsManager::handleChange(event: event)}\\
+			
+			\hypertarget{TU28}{TU28} & 
+			\texttt{BusinessProduct::render()}\\
+			
+			\hypertarget{TU29}{TU29} & 
+			\texttt{Button::render()}\\
+			
+			\hypertarget{TU30}{TU30} & 
+			\texttt{CartProduct::printProduct(product: object)}\\
+			
+			\hypertarget{TU31}{TU31} & 
+			\texttt{Cart::render()}\\
+			
+			\hypertarget{TU32}{TU32} & 
+			\texttt{CartProduct::enableRemove(title: string, quantity: int, 
+			price: double)}\\
+		
+			\hypertarget{TU33}{TU33} & 
+			\texttt{CartProduct::disableRemove()}\\
+			
+			\hypertarget{TU34}{TU34} & 
+			\texttt{Checkout::constructor(props: object)}\\
+			
+			\hypertarget{TU35}{TU35} & 
+			\texttt{Checkout::handleOptionChange(event: event)}\\
+			
+			\hypertarget{TU36}{TU36} & 
+			\texttt{Checkout::oldShipment()}\\
+			
+			\hypertarget{TU37}{TU37} & 
+			\texttt{Checkout::newShipment()}\\
+			
+			\hypertarget{TU38}{TU38} & 
+			\texttt{Checkout::handleInputChange(event: event)}\\
+			
+			\hypertarget{TU39}{TU39} & 
+			\texttt{Checkout::getAddress()}\\
+			
+			\hypertarget{TU40}{TU40} & 
+			\texttt{Checkout::render()}\\
+			
+			\hypertarget{TU41}{TU41} & 
+			\texttt{CubitManager::render()}\\
+			
+			\hypertarget{TU42}{TU42} & 
+			\texttt{EditProductsManager::constructor(props: object)}\\
+			
+			\hypertarget{TU43}{TU43} & 
+			\texttt{EditProductsManager::handleChange(event: event)}\\
+			
+			\hypertarget{TU44}{TU44} & 
+			\texttt{EditProductsManager::render()}\\
+			
+			\hypertarget{TU45}{TU45} & 
+			\texttt{Error::render()}\\
+			
+			\hypertarget{TU46}{TU46} & 
+			\texttt{Footer::render()}\\
+			
+			\hypertarget{TU47}{TU47} & 
+			\texttt{FormCubitManager::render()}\\
+			
+			\hypertarget{TU48}{TU48} & 
+			\texttt{FormRegistration::constructor(props: object)}\\
+			
+			\hypertarget{TU49}{TU49} & 
+			\texttt{FormRegistration::citizenFormMaker()}\\
+			
+			\hypertarget{TU50}{TU50} & 
+			\texttt{FormRegistration::businessFormMaker()}\\
+			%\tabularnewline
+
+			\hypertarget{TU51}{TU51} & 
+			\texttt{FormRegistration::handleOptionChange(event: event)}\\
+			
+			\hypertarget{TU52}{TU52} & 
+			\texttt{FormRegistration::handleChange(event: event)}\\
+
+			\hypertarget{TU53}{TU53} & 
+			\texttt{FormRegistration::render()}\\
+
+			\hypertarget{TU54}{TU54} & 
+			\texttt{Guide::render()}\\
+
+			\hypertarget{TU55}{TU55} & 
+			\texttt{Home::render()}\\
+
+			\hypertarget{TU56}{TU56} & 
+			\texttt{NavBar::render()}\\
+
+			\hypertarget{TU57}{TU57} & 
+			\texttt{Orders::printSeller(product: object)}\\
+
+			\hypertarget{TU58}{TU58} & 
+			\texttt{Orders::printProduct(product: object)}\\
+
+			\hypertarget{TU59}{TU59} & 
+			\texttt{Orders::printOrder(order: object)}\\
+
+			\hypertarget{TU60}{TU60} & 
+			\texttt{Orders::render()}\\
+
+			\hypertarget{TU61}{TU61} & 
+			\texttt{PendingOrder::render()}\\
+
+			\hypertarget{TU62}{TU62} & 
+			\texttt{Product::constructor(props: object)}\\
+
+			\hypertarget{TU63}{TU63} & 
+			\texttt{Product::handleChange(event: event)}\\
+
+			\hypertarget{TU64}{TU64} & 
+			\texttt{Product::render()}\\
+
+			\hypertarget{TU65}{TU65} & 
+			\texttt{ProductManager::printProduct(product: object)}\\
+
+			\hypertarget{TU66}{TU66} & 
+			\texttt{ProductManager::render()}\\
+
+			\hypertarget{TU67}{TU67} & 
+			\texttt{PurchaseConfirmation::printProduct(product: object)}\\
+
+			\hypertarget{TU68}{TU68} & 
+			\texttt{PurchaseConfirmation::printOrder(order: object)}\\
+
+			\hypertarget{TU69}{TU69} & 
+			\texttt{PurchaseConfirmation::render()}\\
+
+			\hypertarget{TU70}{TU70} & 
+			\texttt{Search::render()}\\
+
+			\hypertarget{TU71}{TU71} & 
+			\texttt{Store::printProduct(product: object)}\\
+
+			\hypertarget{TU72}{TU72} & 
+			\texttt{Store::render()}\\
+
+			\hypertarget{TU73}{TU73} & 
+			\texttt{Success::render()}\\
+
+			\hypertarget{TU74}{TU74} & 
+			\texttt{TransactionsManager::constructor(props: object)}\\
+
+			\hypertarget{TU75}{TU75} & 
+			\texttt{TransactionsManager::downloadPDF()}\\
+
+			\hypertarget{TU76}{TU76} & 
+			\texttt{TransactionsManager::printQuarters(quarter: string)}\\
+
+			\hypertarget{TU77}{TU77} & 
+			\texttt{TransactionsManager::handleChange(event: event)}\\
+
+			\hypertarget{TU78}{TU78} & 
+			\texttt{TransactionsManager::printDebitButtons()}\\
+
+			\hypertarget{TU79}{TU79} & 
+			\texttt{TransactionsManager::printStatus()}\\
+
+			\hypertarget{TU80}{TU80} & 
+			\texttt{TransactionsManager::printInvoices()}\\
+
+			\hypertarget{TU81}{TU81} & 
+			\texttt{TransactionsManager::render()}\\
+
+			\hypertarget{TU82}{TU82} & 
+			\texttt{UsersList::printUser(user: object)}\\
+
+			\hypertarget{TU83}{TU83} & 
+			\texttt{UsersList::render()}\\
+
+			\hypertarget{TU84}{TU84} & 
+			\texttt{VATRefund::printBusiness(business: object)}\\
+
+			\hypertarget{TU85}{TU85} & 
+			\texttt{VATRefund::render()}\\
+			
+			\hypertarget{TU86}{TU86} & 
+			\texttt{ReducerAuth::reducerAuth( state: object, action: object)}\\
+			
+			\hypertarget{TU87}{TU87} & 
+			\texttt{ReducerSearch::reducerSearch( state: object, action: 
+			object)}\\
+		
+			\hypertarget{TU88}{TU88} & 
+			\texttt{ReducerCart::reducerCart( state: object, action: object)}\\
+			
+			\hypertarget{TU89}{TU89} & 
+			\texttt{ReducerGovernment::reducerGovernment( state: object, 
+			action: object)}\\
+
+		\end{longtable}
