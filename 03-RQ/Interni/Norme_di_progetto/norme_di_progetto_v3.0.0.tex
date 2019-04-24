@@ -4,8 +4,6 @@
 \input{config/config.tex}
 \makeindex
 
-\usepackage{hyperref}	%queste due linee le ho aggiunte altrimenti non funzionano i link
-
 
 \begin{document}
 	\input{res/sections/frontispiece.tex}
@@ -15,19 +13,15 @@
 
 	\counterwithin{table}{subsection}
 	\counterwithin{figure}{subsection}
-	
 	\pagebreak
 	
 	\tableofcontents
-	
 	\pagebreak
 	
 	\listoffigures
-	
 	\pagebreak
 	
 	\listoftables
-	
 	\pagebreak
 	
 	\input{res/sections/introduzione.tex}
@@ -42,5 +36,13 @@
 	\input{res/sections/processi_organizzativi.tex}
 	\pagebreak
 	
+	\appendix
+	\input{res/sections/standard_qualita.tex}
+	\pagebreak
+	
+	\input{res/sections/procedure_pragmadb.tex}
+	\pagebreak
+	
+	\input{res/sections/procedure_stile_vancouver.tex}
 	
 \end{document}
