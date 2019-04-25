@@ -68,14 +68,14 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 		\end{itemize}
 		\subsubsection{Metriche}
 			\paragraph{Facilità di comprensione}\mbox{}\\
-			La facilità con cui è possibile comprendere cosa fa il codice può rappresentata dal numero di linee di commento nel codice.
+			La facilità con cui è possibile comprendere cosa fa il codice. Equivale al rapporto tra numero di linee di commento su numero di linee totali di codice. % sarebbe la CCR
 			\begin{itemize}
 			\item misurazione: si può calcolare con la seguente formula: \\
 			$$ R = \frac{N\textsubscript{LCOM}}{N\textsubscript{LCOD}}  $$
 		
 			dove N\textsubscript{LCOM} indica le linee di commento e N\textsubscript{LCOD} indica le linee di codice;
-			\item valore preferibile: $\geq$ 0.20;
-			\item valore accettabile: $\geq$ 0.10.
+			\item valore preferibile: $0.10 \leq R \leq 0.20$;
+			\item valore accettabile: $R \geq 0.10$ .
 			\end{itemize}
 			\paragraph{Semplicità delle funzioni}
 			La facilità di un metodo può essere rappresentata dal numero di parametri per metodo: meno parametri ha una funzione più è semplice e intuitiva.
