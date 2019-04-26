@@ -18,6 +18,20 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 			\item valore preferibile: 100\%;
 			\item valore accettabile: 100\%.
 			\end{itemize}
+			\paragraph{Passed Test Cases Percentage}\mbox{}\\
+			Assicurare il superamento dei test è fondamentale per poter verificare la corretta implementazione delle funzionalità previste dai requisiti.
+			\begin{itemize}
+				\item misurazione: percentuale superamento dei Test (PTCP);
+				\item valore preferibile: 90\% $\leq$ PTCP $\leq$ 100\%;
+				\item valore accettabile: 80\% $\leq$ PTCP $\leq$ 90\%.
+			\end{itemize}
+			\paragraph{Failed Test Cases Percentage}\mbox{}\\
+			Assicurare che il numero di test falliti sia inferiore a una certa soglia garantisce la corretta implementazione delle funzionalità previste.
+			\begin{itemize}
+				\item misurazione: percentuale fallimento dei Test (FTCP);
+				\item valore preferibile: 0\% $\leq$ FTCP $\leq$ 10\%;
+				\item valore accettabile: 10\% $\leq$ FTCP $\leq$ 20\%.
+			\end{itemize}
 	\subsection{Affidabilità}
 	Capacità del prodotto di mantenere prestazioni elevate anche in caso di situazioni anomale o critiche.
 		\subsubsection{Obiettivi}
@@ -58,7 +72,7 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 			\item valore preferibile: $\leq$ 3;
 			\item valore accettabile: $\leq$ 5.
 			\end{itemize}
-\pagebreak
+		
 	\subsection{Manutenibilità}
 	Capacità del prodotto di essere modificato, includendo correzioni, miglioramenti o adattamenti.
 		\subsubsection{Obiettivi}
@@ -112,32 +126,39 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 				\item valore preferibile: $\leq5000$;
 				\item valore accettabile: $\leq10000$.
 			\end{itemize}
-
-\subsection{Specifica dei test}
-Capacità del prodotto di soddisfare le richieste. \\
-Per assicurare la qualità del software prodotto, il gruppo \textit{8Lab 	Solutions} adotta come modello di sviluppo del software il \textbf{Modello a V\glo}, il quale prevede lo sviluppo dei test in parallelo alle attività di analisi e progettazione.
-In questo modo i test permettono di verificare sia la correttezza delle parti di programma sviluppati, sia che tutti gli aspetti del progetto siano implementati e corretti.\\
-\subsubsection{Obiettivi}
-\begin{itemize}
-	\item accettazione: dimostrazione della conformità del prodotto sulla base di casi di prova;
-	\item sistema: accertamento della totale copertura dei requisiti software;
-	\item integrazione: costruzione incrementale del sistema e rilevamento dei problemi derivanti dall'integrazione e dal riutilizzo dei vari componenti;
-	\item unità: verifica della correttezza del codice implementato.
-\end{itemize}
-\subsubsection{Metriche}
-\paragraph{Passed Test Cases Percentage}\mbox{}\\
-Assicurare il superamento dei test è fondamentale per poter verificare la corretta implementazione delle funzionalità previste dai requisiti.
-\begin{itemize}
-	\item misurazione: percentuale superamento dei Test (PTCP);
-	\item valore preferibile: 90\% $\leq$ PTCP $\leq$ 100\%;
-	\item valore accettabile: 80\% $\leq$ PTCP $\leq$ 90\%.
-\end{itemize}
-\paragraph{Failed Test Cases Percentage}\mbox{}\\
-Assicurare che il numero di test falliti sia inferiore a una certa soglia garantisce la corretta implementazione delle funzionalità previste.
-\begin{itemize}
-	\item misurazione: percentuale fallimento dei Test (FTCP);
-	\item valore preferibile: 0\% $\leq$ FTCP $\leq$ 10\%;
-	\item valore accettabile: 10\% $\leq$ FTCP $\leq$ 20\%.
-\end{itemize}
 		
 \pagebreak
+
+\subsection{Tabella riassuntiva delle metriche adottate}
+\begin{longtable}{ >{\centering}p{0.4\textwidth}
+		>{\centering}p{0.6\textwidth}}
+	\rowcolor{white}\caption{Tabella riassuntiva delle metriche adottate}\\
+	\rowcolorhead
+	\textbf{\color{white}Caratteristiche}
+	& \textbf{\color{white}Metriche}
+	\tabularnewline 	
+	\endfirsthead
+	\rowcolor{white}\caption[]{(continua)} \\
+	\rowcolorhead 
+	\textbf{\color{white}Caratteristiche}
+	& \textbf{\color{white}Metriche} 
+	\tabularnewline
+	\endhead
+	
+	Funzionalità & Completezza dell'implementazione\\ Passed Test Cases Percentage \\ Failed Test Cases Percentage
+	
+	\tabularnewline
+	\rowcolordark
+	Affidabilità & Densità errori 
+	
+	\tabularnewline
+	\rowcolorlight
+	Usabilità & Facilità di utilizzo\\ Facilità di apprendimento
+	
+	\tabularnewline
+	\rowcolordark
+	Manutenibilità & Facilità di comprensione\\
+	Semplicità delle funzioni \\Semplicità delle classi \\ Structural fan-in \\Structural fan-out \\Source Lines of Code (SLOC)
+	\tabularnewline
+	
+\end{longtable}
