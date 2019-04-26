@@ -206,7 +206,7 @@
 	\subsubsection{Attività}
 		\paragraph{Analisi dei requisiti}
 		\mbox{}\\ \mbox{}\\
-			\textbf{Scopo}  \mbox{}\\ \mbox{}\\
+			\subparagraph{Scopo}  \mbox{}\\ \mbox{}\\
 			Lo scopo dei requisiti è di:
 				\begin{itemize}
 					\item definire la finalità del lavoro;
@@ -218,9 +218,9 @@
 					\item fornire ai verificatori riferimenti per l'attività di controllo dei test;
 					\item calcolare la mole di lavoro per tracciare dei riferimenti per un stima dei costi.
 				\end{itemize}
-			\textbf{Aspettative} \mbox{}\\ \mbox{}\\
+			\subparagraph{Aspettative} \mbox{}\\ \mbox{}\\
 			\noindent Obiettivo dell'attività è la creazione della documentazione formale contenente tutti i requisiti richiesti dal proponente. \\ \\		
-			\textbf{Descrizione} \mbox{}\\ \mbox{}\\
+			\subparagraph{Descrizione} \mbox{}\\ \mbox{}\\
 			Durante l'analisi le informazioni ottenute dalle varie fonti sono trasformate in forma di casi d'uso e requisiti. Questa forma fornisce una descrizione dettagliata del sistema e definisce il funzionamento e le caratteristiche di ogni sua parte.\newline
 			Gli analisti individuano i requisiti del progetto attraverso lo studio del capitolato, gli incontri con il proponente e i casi d'uso. Tali requisiti sono 	presenti nel documento formale \textit{Analisi dei Requisiti}, in cui viene riportata 	anche la lista dei casi d'uso. \newline
 			\noindent I requisiti si raccolgono secondo modalità predefinite:
@@ -231,7 +231,7 @@
 				\item analisi di uno o più casi d'uso.  \\
 			\end{itemize}
 			
-			\noindent\textbf{Classificazione dei casi d'uso} \mbox{}\\ \mbox{}\\
+			\subparagraph{Classificazione dei casi d'uso} \mbox{}\\ \mbox{}\\
 			\noindent Ogni caso d'uso viene classificato secondo la seguente notazione: \newline \newline
 			\centerline{\textbf{UC[codice\_padre].[codice\_figlio]}} \\
 			Dove:
@@ -260,7 +260,7 @@
 					\item postcondizione. \\
 				\end{itemize}
 				
-			\noindent\textbf{Classificazione dei requisiti} \mbox{}\\ \label{sec:UC}
+			\subparagraph{Classificazione dei requisiti} \mbox{}\\ \label{sec:UC}
 			
 			\noindent Ogni requisito viene classificato secondo la seguente notazione: \newline \newline
 			\centerline{\textbf{R[Importanza][Tipologia][Codice]}} \\ 
@@ -311,7 +311,7 @@
 					\end{itemize}
 				\end{itemize}
 			
-			\noindent\textbf{Diagrammi UML} \mbox{}\\ \label{sec:UML}
+			\subparagraph{Diagrammi UML} \mbox{}\\ \label{sec:UML}
 			
 			\noindent I diagrammi UML\glosp devono essere realizzati usando la versione del 
 			linguaggio v2.0 e per garantirne la leggibilità è necessario:
@@ -324,7 +324,7 @@
 				\end{itemize}
 
 			
-			\noindent\textbf{Produzione dei diagrammi UML} \mbox{}\\ \mbox{}\\
+			\subparagraph{Produzione dei diagrammi UML} \mbox{}\\ \mbox{}\\
 			Per la creazione dei casi d'uso utilizziamo il linguaggio UML 2.0.
 			Lo strumento adibito alla produzione dei diagrammi è \textbf{Draw.io}.
 			Vi si accede tramite Google Drive con le credenziali dell'account google del gruppo.
@@ -342,9 +342,26 @@
 				nella cartella apposita denominata \texttt{png} (il percorso è 
 				\texttt{Analisi dei requisiti > UML Draw.io > png}).
 			\end{itemize}
-			Nella cartella \texttt{UML Draw.io} sono presente sia i file .io sia la cartella \texttt{png} con gli stessi file in formato .png.
+			Nella cartella \texttt{UML Draw.io} sono presente sia i file .io sia la cartella \texttt{png}
+			con gli stessi file in formato .png.
 			Questa scelta permette di portare rapidamente delle modifiche ai diagrammi precedentemente disegnati.
-			Inoltre, qualora venga effettuata una modifica, l'autore di tale modifica ha il compito di sostituire il file .png aggiornato con quello precedente. 
+			Inoltre, qualora venga effettuata una modifica, l'autore di tale modifica ha il compito di 
+			sostituire il file .png aggiornato con quello precedente. 
+			
+			\subparagraph{Qualità dei requisiti}
+			In seguito all'analisi dei requisiti in cui si valutano le necessità del proponente,
+			vengono schematizzati i requisiti che descrivono il sistema. 
+			La specifica dei requisiti deve avere le seguenti qualità:
+			\begin{itemize}
+			\item evitare le ambiguità fornendo ad ogni requisito una sola interpretazione formale;
+			\item garantire la correttezza, ovvero ogni requisito è realmente richiesto e o necessario;
+ 			\item essere completo, quindi specificare ogni possibili input per ogni funzione richiesta;
+ 			\item verificare che il sistema realizzi ogni requisito, per questo è necessario che i requisiti non siano
+ 			ambigui;
+			\item evitare che ci sia contraddizione tra i requisiti;
+ 			\item permettere di modificare facilmente la struttura e lo stile dei requisiti preservando consistenza e completezza;
+ 			\item mantenere la tracciabilità di ogni requisito per poter monitorare il suo futuro sviluppo.
+			\end{itemize}
 					
 		\paragraph{Progettazione} \mbox{}\\ \mbox{}\\
 			\noindent\textbf{Scopo} \mbox{}\\
