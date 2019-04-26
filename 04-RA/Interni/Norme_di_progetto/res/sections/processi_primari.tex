@@ -348,7 +348,7 @@
 			Inoltre, qualora venga effettuata una modifica, l'autore di tale modifica ha il compito di 
 			sostituire il file .png aggiornato con quello precedente. 
 			
-			\subparagraph{Qualità dei requisiti}
+			\subparagraph{Qualità dei requisiti} \mbox{}\\ \mbox{}\\
 			In seguito all'analisi dei requisiti in cui si valutano le necessità del proponente,
 			vengono schematizzati i requisiti che descrivono il sistema. 
 			La specifica dei requisiti deve avere le seguenti qualità:
@@ -364,7 +364,7 @@
 			\end{itemize}
 					
 		\paragraph{Progettazione} \mbox{}\\ \mbox{}\\
-			\noindent\textbf{Scopo} \mbox{}\\
+		\subparagraph{Scopo} \mbox{}\\
 			
 			\noindent L'attività di progettazione definisce, in funzione dei requisiti specificati 
 			nel documento \textit{Analisi dei Requisiti}, le caratteristiche del prodotto 
@@ -376,12 +376,12 @@
 			dei sottosistemi in modo da ricondurre ad un'unica possibile soluzione. \newline 
 			
 			
-			\noindent\textbf{Aspettative} \mbox{}\\ \mbox{}\\
+			\subparagraph{Aspettative} \mbox{}\\ \mbox{}\\
 			\noindent Il processo ha come risultato la realizzazione dell'architettura del sistema così 
 			da fornire le istruzioni necessarie ai programmatori per sviluppare il prodotto finito.
 			\newline
 			
-			\noindent\textbf{Descrizione}  \mbox{}\\ \mbox{}\\
+			\subparagraph{Descrizione}  \mbox{}\\ \mbox{}\\
 			\noindent Le parti principali sono due:
 				\begin{itemize}
 					\item \textbf{technology baseline}: contiene le specifiche della 
@@ -394,7 +394,7 @@
 				\end{itemize}
 			
 			
-			\noindent\textbf{Technology baseline} \mbox{}\\ \mbox{}\\
+		\subparagraph{Technology baseline} \mbox{}\\ \mbox{}\\
 				
 			\noindent Redatta dal progettista, dovrà includere:
 				\begin{itemize}
@@ -419,7 +419,7 @@
 						funzioni nella maniera voluta. \newline
 				\end{itemize}
 						
-			\noindent\textbf{Product baseline} \mbox{}\\ \mbox{}\\
+		\subparagraph{Product baseline} \mbox{}\\ \mbox{}\\
 	
 			\noindent A carico del progettista c'è anche la product baseline che si sofferma su diversi aspetti tra i quali:
 			\begin{itemize}
@@ -439,19 +439,46 @@
 					che le parti funzionino individualmente nel modo stabilito.
 			\end{itemize}
 			
-		\noindent I progettisti devono porre attenzione a:
-		\begin{itemize}
-			\item garantire modularità e flessibilità all'architettura così che possa
-			essere facilmente manutenibile;
-			\item utilizzare nomi significativi per package, classi e metodi;
-			\item ogni modulo deve essere il più semplice possibile per poter garantire
-			chiarezza ed evitare componenti superflue;
-			\item rispettare il principio dell'information hiding così che i dettagli 
-			implementativi siano nascosti all'utente;
-			\item evitare le dipendenze per facilitare la manutenibilità delle parti.
-		\end{itemize}
-			
-				
+		\subparagraph{Qualità dell'architettura} \mbox{}\\ \mbox{}\\
+		In seguito alla specifica dei requisiti che consolida le funzionalità 
+		richieste, viene realizzata l'architettura del sistema. Tale architettura deve 
+ 		perseguire le seguenti caratteristiche:
+ 			\begin{itemize}
+ 				\item sufficienza: l'architettura soddisfa tutti i requisiti; 
+ 				\item  modularità: l'architettura è suddivisa in parti ben 
+					distinte;
+				\item robustezza: l'architettura può sopportare diversi ingressi dall'utente e 
+					dall'ambiente;
+				\item affidabilità: l'architettura garantisce una buona usabilità del prodotto 
+					quando viene implementata;
+				\item manutenibilità: l'architettura può subire modifiche a costi contenuti.
+ 			\end{itemize}
+ 		
+ 		In particolare, riguardo alla modularità, il progettista deve scomporre il sistema in
+ 		moduli, fornendo una descrizione precisa della struttura modulare e delle relazioni 
+ 		che esistono tra essi. Questo porta ai seguenti vantaggi:
+ 			\begin{itemize}
+ 				\item maggiore leggibilità e riusabilità del codice;
+ 				\item semplificazione dell'individuazione e della correzione degli errori;
+ 				\item possibilità di realizzazione di prototipi.
+ 			\end{itemize}
+ 		   
+		Per perseguire le qualità sopra elencate, è richiesta l'implementazione di design pattern
+		ove necessario. 
+		\newline
+		
+		Al fine di implementare le qualità dell'architettura appena descritte, 
+		ai progettisti viene richiesto di seguire le seguenti regole:
+			\begin{itemize}
+				\item evitare package vuoti, classi e parametri non utilizzati e parametri senza tipo;
+				\item evitare la presenza di dipendenze circolari;
+				\item evitare modifiche ai servizi offerti dalle librerie esterne utilizzate;
+				\item utilizzare ove possibile interfacce e classi astratte;
+				\item utilizzare nomi significativi per le classi e i metodi in esse contenuti, 
+					in modo da facilitare la comprensione immediata di ogni componente;
+				\item assegnare ad ogni metodo e attributo la visibilità strettamente necessaria.
+
+	
 		\paragraph{Codifica}
 			\mbox{}\\ \mbox{}\\
 			\noindent\textbf{Scopo} \mbox{}\\
