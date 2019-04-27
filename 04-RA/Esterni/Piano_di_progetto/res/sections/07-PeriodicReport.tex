@@ -327,3 +327,81 @@ lavoro preventivato:
 \subsubsection{Preventivo a finire}
 Il bilancio economico risultante è negativo, mitigato dal fatto di aver un fondo cuscinetto dalla fase precedente di \EUR{144,00} che porta ad avere una perdita di \EUR{211,00}. Tale perdita sarà tenuta in considerazione nella fase successiva, in quanto si prevede di recuperare il debito grazie alla rivisitazione della progettazione effettuata che ci consentirà di risparmiare ore nella fase di testing e codifica in generale che attualmente si trova ad uno stato avanzato.
 \\
+
+
+\subsection{Periodo di validazione e collaudo}
+Le ore sostenute durante questo periodo sono relative alla codifica necessaria al completamento del prodotto finale e alla verifica su di esso applicata tramite l'implementazione dei test. Tale periodo è da considerarsi 
+rendicontato in quanto il lavoro è svolto con lo scopo di sviluppare il prodotto finale.
+
+\begin{table}[H]
+	\centering\renewcommand{\arraystretch}{1.5}
+	\caption{Consuntivo di periodo della fase di validazione e collaudo}
+	\vspace{0.2cm}
+	\begin{tabular}{c c c}
+		\rowcolorhead
+		{\colorhead \textbf{Ruolo}} &
+		{\colorhead \textbf{Ore}} & 
+		{\colorhead \textbf{Costo}} \\
+		
+		\rowcolorlight
+		{\colorbody Responsabile} & {\colorbody 17(+0)} & 
+		{\colorbody \EUR{510,00} (+\EUR{0,00})}  
+		\\
+		
+		\rowcolordark
+		{\colorbody Amministratore} & {\colorbody 16(+0)} & 
+		{\colorbody \EUR{320,00} (+\EUR{0,00})}
+		\\	
+		
+		\rowcolorlight
+		{\colorbody Analista} & {\colorbody -} & 
+		{\colorbody -} 
+		\\
+		
+		\rowcolordark
+		{\colorbody Progettista} & {\colorbody 14(-4)} & 
+		{\colorbody \EUR{308,00} (-\EUR{88,00})} 
+		\\
+		
+		\rowcolorlight
+		{\colorbody Programmatore} & {\colorbody 41(-9)} & 
+		{\colorbody \EUR{615,00} (-\EUR{135,00})} 
+		\\
+		
+		\rowcolordark
+		{\colorbody Verificatore} & {\colorbody 72(+0)} & 
+		{\colorbody \EUR{1080,00} (+\EUR{0,00})} 
+		\\
+		
+		\rowcolorlight
+		{\colorbody \textbf{Totale Preventivo}} & {\colorbody \textbf{160}} & 
+		{\colorbody \textbf{\EUR{2.833,00}}} 
+		\\
+		
+		\rowcolordark
+		{\colorbody \textbf{Totale Consuntivo}} & {\colorbody \textbf{147}} & 
+		{\colorbody \textbf{\EUR{2.610,00}}} 
+		\\
+		
+		\rowcolorlight
+		{\colorbody \textbf{Differenza}} & {\colorbody \textbf{13}} & 
+		{\colorbody \textbf{-\EUR{223,00}}} 
+		\\
+		
+		\rowcolordark
+		{\colorbody \textbf{Totale con perdita(+\EUR{211,00})}} &  & 
+		{\colorbody \textbf{-\EUR{12,00}}} 
+		\\	
+	\end{tabular}
+\end{table}
+
+\subsubsection{Conclusioni}
+Dai dati riportati nella tabella soprastante si evince che le ore da progettista e le ore da programmatore hanno subito un ridimensionamento. In questo periodo infatti, grazie alla progettazione svolta nel periodo di progettazione di dettaglio e codifica, sono state risparmiate ore per la fase di testing e codifica del prodotto finale.
+Di seguito sono riportate le problematiche sorte durante questa fase di lavoro e le motivazioni degli scostamenti del mantenimento del monte ore di lavoro preventivato:
+\begin{itemize}
+	\item \textbf{\textit{Progettisti}}: alcuni problemi riscontrati riguardano le librerie di IPFS\glosp adottate. Inizialmente risultavano perfettamente funzionanti, ma hanno causato problemi a distanza di una settimana dalla loro scelta, in quanto hanno smesso di funzionare. Si è provveduto dunque alla ricerca di nuove librerie da adottare;
+	\item \textbf{\textit{Programmatori}}: la rivisitazione della progettazione nel periodo precedente, ha permesso una codifica, mirata alla realizzazione del prodotto finale, più rapida, seguita dall'implementazione delle componenti di ausilio necessarie all'esecuzione delle prove di verifica e validazione.
+\end{itemize}
+\subsubsection{Preventivo a finire}
+Il bilancio economico risultante è positivo, in quanto è stato raggiunto l'obiettivo previsto nel periodo precedente riguardante il risparmio di alcune ore legate a progettazione e codifica generale. Tutto ciò ha permesso di rientrare nel monte ore preventivato per la fase di validazione e collaudo, portando anche un guadagno finale \EUR{12,00}. Questo deriva da un risparmio di ore totali pari a 13 che avrebbero portato ad un guadagno di \EUR{223,00}, ma considerando il debito del periodo di progettazione di dettaglio e codifica pari a \EUR{211,00}, il guadagno finale sopracitato è minimo.
+\\
