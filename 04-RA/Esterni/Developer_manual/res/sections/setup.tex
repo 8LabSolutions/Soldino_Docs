@@ -1,27 +1,31 @@
 \section{Setup} 
 \subsection{Requirements}
-In this section all of the requirements needed are described.
+In this section all of the requirements are described.
 \subsubsection{Browser}
-\textit{Soldino} is accessible through a web interface. The currently most recent versions of the following broswers are supported:
+\textit{Soldino} is accessible through a web interface. The currently most 
+recent versions of the following broswers are supported:
 \begin{itemize}
-	\item \textbf{Mozilla Firefox}: version 64 or later;
-	\item \textbf{Google Chrome}: version 71 or later.
+	\item \textbf{Mozilla Firefox}: version 64 or newer;
+	\item \textbf{Google Chrome}: version 71 or newer.
 \end{itemize}
 
 \subsubsection{Tools}
 The following tools are needed:
 \begin{itemize}
-	\item \textbf{Git}: a famous control version system: \textit{Soldino}'s repository is hosted on GitHub;
+	\item \textbf{Git}: a famous control version system: \textit{Soldino}'s 
+	repository is hosted on GitHub;
 	\item \textbf{Node.js}: a framework needed for installing dependencies;
 	\item \textbf{Truffle}: needed to write and deploy contracts with ease;
-	\item \textbf{Ganache}: needed to put up a local Ethereum network and check transactions in it;
+	\item \textbf{Ganache}: needed to put up a local Ethereum network and check 
+	transactions in it;
 	\item \textbf{Metamask}: a browser plugin used as a virtual wallet;
-	\item \textbf{Surge.sh}: a web platform chosen for hosting the website interface of Soldino.
+	\item \textbf{Surge.sh}: a web platform chosen for hosting the website 
+	interface of Soldino.
 \end{itemize}
 
 \subsubsection{Dependencies}
-Soldino depends on many different packages, some for use and others for development.\\
-All these dependencies can be found in the file \texttt{package.json} which is in the root folder of the project.\\
+\textit{Soldino} depends on many packages. All these dependencies can be found 
+in the file \texttt{package.json} which is in the root folder of the project.\\
 The packages required to execute the software \textit{Soldino} are listed below.\\
 
 \renewcommand{\arraystretch}{1.5}
@@ -87,20 +91,28 @@ Other packages, listed below, are required for the development.
 \end{longtable}
 
 \subsection{Installing}
+\textit{Soldino} can be installed on multiple OS but we recommend you use a 
+Unix environment since some functionalities do not work on, for example, 
+Windows.\\
+Please follow this section with order otherwise you might encounter 
+errors during the installation.
 \subsubsection{Browser}
-The first thing is to have your browser installed. You can get the latest Chrome version  \href{https://www.google.com/chrome/}{here} or the latest Firefox version \href{https://www.mozilla.org/en-US/firefox/new/}{here}\\
+You can get the latest Google Chrome version 
+\href{https://www.google.com/chrome/}{here} or the latest Firefox version \href{https://www.mozilla.org/en-US/firefox/new/}{here}\\
 
 \subsubsection{Git}
-You should type this script in the shell for installing Git packet: \texttt{sudo apt install git}.
+You have to type this script in the shell to install Git: 
+\texttt{sudo apt install git}.
 
-\subsubsection{Node}
-For installing Node.js you have to digit in the shell the following commands:
+\subsubsection{Node.js}
+To install the latest Node.js version copy in the terminal the following commands:
 \begin{enumerate}
 	\item \texttt{curl -sL https://deb.nodesource.com/setup\_11.x | sudo -E bash -}
 	\item \texttt{sudo apt install -y nodejs}
-	\item check that \texttt{node} have been installed correctly with \texttt{node -v}.
-\end{enumerate}
-There is no need to install npm separately, since it is automatically installed with Node.
+\end{enumerate} 
+You can check if \texttt{node} was installed correctly by typing in the 
+terminal: \texttt{node -v}.\\
+Note that npm is installed with the previous commands.
 
 \subsubsection{Truffle}
 You should check you have the truffle requirements:
@@ -110,6 +122,8 @@ You should check you have the truffle requirements:
 	\item Node Package Manager (npm).
 \end{itemize}
 then you can install Truffle by running the command: \texttt{npm install -g truffle}
+
+%Non credo Ganche serva nella versione finale
 
 \subsubsection{Ganache}
 There are three step to install Ganache:
