@@ -394,8 +394,7 @@
 				\end{itemize}
 			
 			
-		\subparagraph{Technology baseline} \mbox{}\\ \mbox{}\\
-				
+		\subparagraph{Technology baseline} \mbox{}\\ \mbox{}\\	
 			\noindent Redatta dal progettista, dovrà includere:
 				\begin{itemize}
 					\item \textbf{diagrammi UML\glo}:
@@ -420,7 +419,6 @@
 				\end{itemize}
 						
 		\subparagraph{Product baseline} \mbox{}\\ \mbox{}\\
-	
 			\noindent A carico del progettista c'è anche la product baseline che si sofferma su diversi aspetti tra i quali:
 			\begin{itemize}
 				\item \textbf{definizione delle classi}: ogni classe deve essere descritta 
@@ -480,74 +478,117 @@
 			\end{itemize}
 	
 		\paragraph{Codifica}
-			\mbox{}\\ \mbox{}\\
-			\noindent\textbf{Scopo} \mbox{}\\
-	
-			\noindent{Questa attività ha come obiettivo normare l'effettiva realizzazione 
-			del 
+			
+			\subparagraph{Scopo} \mbox{}\\ \mbox{}\\
+			Questa attività ha come obiettivo normare l'effettiva realizzazione del 
 			prodotto software richiesto. In questa fase si concretizza la soluzione 
 			attraverso la programmazione. I programmatori dovranno attenersi a queste norme 
-			durante la fase di programmazione ed implementazione.} \newline
+			durante la fase di programmazione ed implementazione. \newline
 						
-			\noindent\textbf{Aspettative} \mbox{}\\
-			
-			\noindent{Obiettivo dell'attività è la creazione di un prodotto software conforme alle 
+			\subparagraph{Aspettative} \mbox{}\\ \mbox{}\\
+			Obiettivo dell'attività è la creazione di un prodotto software conforme alle 
 			richieste prefissate con il proponente.
 			L'uso di norme e convenzioni in questa fase, è fondamentale per permettere la 
 			generazione di codice leggibile ed uniforme,  agevolare le fasi di manutenzione, 
-			verifica e validazione e migliorare la qualità di prodotto.} \newline 
+			verifica e validazione e migliorare la qualità di prodotto. \newline 
 			
-			\noindent\textbf{Descrizione} \mbox{}\\
-			
-			\noindent{La scrittura del codice dovrà rispettare quanto stabilito nella 
+			\subparagraph{Descrizione} \mbox{}\\ \mbox{}\\
+			La scrittura del codice dovrà rispettare quanto stabilito nella 
 			documentazione di prodotto. Dovrà perseguire gli obiettivi di qualità definiti 
 			all'interno del documento \textit{Piano di Qualifica v4.0.0} per 
 			poter garantire 
-			una buona qualità del codice.} \newline 
+			una buona qualità del codice. \newline 
 			
-			\noindent\textbf{Stile di codifica} \mbox{}\\
-			
-			\noindent{Al fine di garantire uniformità, leggibilità e manutenibilità del codice del progetto,
-			ciascun membro del gruppo è tenuto a rispettare le seguenti norme:}
+			\subparagraph{Stile di codifica} \mbox{}\\ \mbox{}\\
+			Al fine di garantire uniformità, leggibilità e manutenibilità del codice del progetto,
+			ciascun membro del gruppo è tenuto a rispettare le seguenti norme:
 				\begin{itemize}
 					\item \textbf{indentazione}: i blocchi innestati devono essere correttamente 
 						indentati, usando per ciascun livello di indentazione quattro (4) spazi (fanno 
 						eccezione i commenti). Al fine di assicurare il rispetto di questa regola si 
-						consiglia di configurare adeguatamente il proprio editor o IDE;
+						consiglia di configurare adeguatamente il proprio editor o IDE, per esempio:
+					\begin{figure}[H]
+						\includegraphics[width=0.99\linewidth]{res/images/indent.png}
+						\caption{Esempio di indentazione}
+					\end{figure}
 					\item \textbf{parentesizzazione}: è richiesto di inserire 
 					le parentesi di delimitazione dei costrutti in linea e non 
-					al di sotto di essi, separando le parentesi con uno spazio;
+					al di sotto di essi, separando le parentesi con uno spazio, come si può
+					vedere nei seguenti metodi:
+					\begin{figure}[H]
+						\includegraphics[width=0.99\linewidth]{res/images/parentesi.png}
+						\caption{Esempio di parentesizzazione}
+					\end{figure}
 					\item \textbf{scrittura dei metodi}: è preferibile, ove possibile, 
-						mantenere i metodi brevi (poche righe di codice);
+						mantenere i metodi brevi (poche righe di codice), come nell'esempio:
+					\begin{figure}[H]
+						\includegraphics[width=0.99\linewidth]{res/images/moremethods.png}
+						\caption{Esempio di scrittura dei metodi}
+					\end{figure}
 					\item \textbf{univocità dei nomi}: classi, metodi, variabili devono avere un 
-						nome univoco	ed esplicativo al fine di evitare ambiguità e incomprensione;
-					\item \textbf{classi}: i nomi delle classi devono iniziare sempre con una 
-						lettera maiuscola;		
+						nome univoco	ed esplicativo al fine di evitare ambiguità e incomprensione,
+						come nell'esempio:
+					\begin{figure}[H]
+						\includegraphics[width=0.99\linewidth]{res/images/functionName.png}
+						\caption{Esempio di nomi per i metodi}
+					\end{figure}
+					\item \textbf{contratti e componenti}: i nomi dei contratti e dei componenti
+					devono iniziare sempre con una lettera maiuscola, per esempio:
+					\begin{figure}[H]
+						\centering
+						\includegraphics[width=0.5\linewidth]{res/images/contract.png}
+						\caption{Esempio di contratto}
+					\end{figure}
+					
+					\begin{figure}[H]
+						\includegraphics[width=0.99\linewidth]{res/images/component.png}
+						\caption{Esempio di componente}
+					\end{figure}
+					
 					\item \textbf{costanti}: i nomi delle costanti devono essere scritti usando 
-						solo maiuscole;
+						solo maiuscole, per esempio:
+					\begin{figure}[H]
+						\includegraphics[width=0.99\linewidth]{res/images/constants.png}
+						\caption{Esempio di costanti}
+					\end{figure}
+					
 					\item \textbf{metodi}: i nomi dei metodi devono iniziare con una lettera 
 						minuscola. Nel caso siano composti da più parole, quelle successive devono iniziare con una 
-						lettera maiuscola (CamelCase\glo{});
-					\item \textbf{commenti}: deve essere presente un sintetico commento descrittivo precedente all'implementazione di metodi e classi;
+						lettera maiuscola (CamelCase\glo{}), come si può vedere dalla funzione che viene
+						implementata e da quelle che vengono chiamate:
+					\begin{figure}[H]
+						\includegraphics[width=0.99\linewidth]{res/images/sonostanca.png}
+						\caption{Esempio di scrittura nome dei metodi}
+					\end{figure}
+					\item \textbf{commenti}: deve essere presente un sintetico commento descrittivo precedente 
+					all'implementazione di metodi e classi, per esempio: 
+					\begin{figure}[H]
+						\includegraphics[width=0.99\linewidth]{res/images/commento.png}
+						\caption{Esempio di commento}
+					\end{figure}
 					\item \textbf{intestazione dei file}: ogni file deve presentare le seguenti informazioni:
 						\begin{itemize}
-							\item percorso e nome del file;
-							\item nome e cognome dell'autore;
 							\item data di creazione;
-							\item data ultima modifica;
+							\item nome e cognome dell'autore;
+							\item titolo del file;
 							\item breve descrizione del contenuto del file.
 						\end{itemize}
+						Per esempio:
+						\begin{figure}[H]
+						\includegraphics[width=0.99\linewidth]{res/images/initialization.png}
+						\caption{Esempio di intestazione del file}
+					\end{figure}
 					\item \textbf{lingua}: il codice, come anche i commenti, deve essere scritto 
-						in lingua inglese.
+						in lingua inglese come si può vedere dagli esempi presentati precedentemente.
 				\end{itemize}
 			Una parte del front-end\glosp è normata dalla \href{https://github.com/airbnb/javascript/blob/master/README.md}{Airbnb JavaScript Style Guide}, il cui uso è implementato attraverso ESLint\glo.\newline
 			Il back-end è scritto invece seguendo la \href{https://solidity.readthedocs.io/en/v0.5.7/style-guide.html}{Style Guide} presente nella documentazione ufficiale di Solidity.
 			 \newline \newline
 			%\subparagraph{Intestazione} \mbox{}\\
-			\noindent\textbf{Ricorsione}  \mbox{}\\
 			
-			\noindent{L'uso della ricorsione va evitato quanto più possibile in  quanto potrebbe
-			indurre ad una maggiore occupazione di memoria rispetto a soluzioni iterative.}
+			\subparagraph{Ricorsione}  \mbox{}\\ \mbox{}\\
+			L'uso della ricorsione va evitato quanto più possibile in  quanto potrebbe
+			indurre ad una maggiore occupazione di memoria rispetto a soluzioni iterative.
 			
 			
 			
