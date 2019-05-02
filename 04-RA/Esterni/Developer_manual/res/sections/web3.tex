@@ -19,10 +19,10 @@ This module groups some utility functions that are used by the other modules to 
 	\item \textbf{recomposeIPFSHash}: it's the the inverse of the function descripted above, it recomposes the IPFS CID.
 \end{itemize} 
 
-\subsubsection{authentication}
+\subsubsection{authentication\glo}
 This module manages the registration and login of all the types of users:
 \begin{itemize}
-	\item \textbf{addCitizen}: registers a new citizen using the Ethereum address provided by MetaMask, and saves the IPFS CID, that represents the related information saved in the peer-to-peer network;
+	\item \textbf{addCitizen}: registers a new citizen using the Ethereum address provided by MetaMask, and saves the IPFS CID, that represents the related information saved in the peer-to-peer\glosp network;
 	\item \textbf{addBusiness}: registers a new business using the Ethereum address provided by MetaMask, and saves the IPFS CID, that represents the related information saved in the peer-to-peer network;
 	\item \textbf{getUser}: returns the IPFS CID corresponding to the current Ethereum address of the user provided by MetaMask.
 \end{itemize}
