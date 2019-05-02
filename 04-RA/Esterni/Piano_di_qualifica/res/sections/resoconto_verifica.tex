@@ -115,6 +115,8 @@ Legenda per le abbreviazioni presenti in grafici e tabelle:
 	\item \textbf{VC}: periodo di validazione e collaudo.
 \end{itemize}
 
+% METRICHE DI PROCESSO
+
 \subsubsection{PROS - Percentuale di Requisiti Obbligatori Soddisfatti}
 % PB In questo calcolo si tiene traccia dei requisiti associati ai test di sistema, tramite i test di sistema superati.
 % 16/38
@@ -135,86 +137,42 @@ Legenda per le abbreviazioni presenti in grafici e tabelle:
 	0
 	& 0\%
 	& 0\%
-	& 52\%
-	& -
+	& 56\%
+	& 100\%
 	\tabularnewline %\hline 
 \end{longtable}
 \paragraph*{Valutazione}
 Fino alla TB il prodotto era instabile e soggetto a forti cambiamenti, dunque non si è calcolato il numero di requisiti soddisfatti.\\
 Durante la PB abbiamo implementato il 72\% dei requisiti, di cui però solamente il 54\% sono stati verificati tramite test; dunque siamo indietro rispetto alla dimostrabilità del completamento totale del prodotto.
+Durante il periodo di VC abbiamo completato i requisiti rimanenti, rientrando nella soglia prevista.
 
-\subsubsection{EAC - Estimated At Completion}
+% CBO
+
+\subsubsection{Profondità della gerarchia}
+A seconda della tipologia di utente cambiano le pagine visitabili del sito, quindi anche la gerarchia e la relativa profondità.
+
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.7]{res/images/RA/eac.pdf}
-	\caption{Andamento dell'Estimated At Completion durante il progetto}
+	\includegraphics[scale=0.6]{res/images/RA/profondita0}
+	\caption{Gerarchia del sito per i cittadini}
 \end{figure}
-\paragraph*{Valutazione}
 
-Le differenze nelle spese sostenute (-144\euro in TB, +355\euro in PB) non sono state tanto gravi da inficiare il preventivo a finire, ragion per cui EAC rimane invariato e di valore pari al preventivo.\\
-La soglia prevista del 5\% è pienamente rispettata.
-
-%\subsubsection{Profondità della gerarchia}
-
-\subsubsection{VAC - Variance At Completion}
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.7]{res/images/RA/vac.pdf}
-	\caption{Andamento della Variance At Completion durante il progetto}
+	\includegraphics[scale=0.6]{res/images/RA/profondita1}
+	\caption{Gerarchia del sito per le aziende}
 \end{figure}
-\paragraph*{Valutazione}
-La differenza tra preventivo e EAC rimane invariata nei periodi e pari a zero; dunque VAC, cioè la percentuale della differenza, è ugualmente invariata e pari a zero. \\
-L'obiettivo di avere $VAC \geq 0\%$ è raggiunto.
 
-\subsubsection{EV - Earned Value}
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.7]{res/images/RA/ev.pdf}
-	\caption{Andamento dell'Earned Value durante il progetto}
+	\includegraphics[scale=0.6]{res/images/RA/profondita2}		\caption{Gerarchia del sito per il governo}
 \end{figure}
-\paragraph*{Valutazione}
-Possiamo notare che, nonostante il lavoro svolto non ci sia stato alcun guadagno prima della PB. L'EV dipende dalla quantità di obiettivi raggiunti, misurata dal numero di requisiti soddisfatti: ecco spiegata la tardiva produzione di valore.\\
-Durante la PB sarebbe stato preferibile aver soddisfatto dimostrabilmente un numero maggiore di requisiti: in mancanza di ciò, in RA avremo un carico di lavoro maggiore rispetto alle attività previste. 
 
-\subsubsection{AC - Actual Cost}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.7]{res/images/RA/ac.pdf}
-	\caption{Andamento dell'Actual Cost durante il progetto}
-\end{figure}
-\paragraph*{Valutazione}
-Il costo effettivo del lavoro, durante ogni fase, non si è molto discostato da quanto preventivato: dunque la pianificazione svolta risulta adeguata rispetto ai costi del lavoro previsti. \\
-Durante la fase di PB, AC ha superato PV, dunque la soglia di ottimalità $0 \leq AC < PV$ è stata infranta. La soglia di accettabilità invece è sempre stata rispettata.
+\textbf{Valutazione}
+In tutti e tre i casi il livello di profondità della gerarchia non supera i 3 livelli, restando all'interno della soglia di preferibilità stabilita. 
 
-\subsubsection{PV - Planned Value}
-% IPOTESI: 20% dei req soddisfatti in TB, 80% in PB, 100% in VC
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.7]{res/images/RA/pv.pdf}
-	\caption{Andamento del Planned Value durante il progetto}
-\end{figure}
-\paragraph*{Valutazione}
-Il PV riporta semplicemente il valore del lavoro preventivato fino al momento del calcolo.
+% numero attributi per contratto
 
-\subsubsection{SV - Schedule Variance}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.7]{res/images/RA/sv.pdf}
-	\caption{Andamento della Schedule Variance durante il progetto}
-\end{figure}
-\paragraph*{Valutazione}
-Durante il periodo di TB il valore è preoccupante: il fatto è che non è stato considerato completato alcun requisito, mentre molte spese erano previste.\\
-Durante il periodo di PB sono stati soddisfatti molti requisiti, quindi EV è cresciuto, ma non a sufficienza da coprire le spese previste.\\
-Le soglie imposte per la metrica appaiono troppo restrittive, quindi inadeguate rispetto alla pianificazione del progetto.
+% livello di annidamento
 
-\subsubsection{CV - Cost Variance}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.7]{res/images/RA/cv.pdf}
-	\caption{Andamento della Cost Variance durante il progetto}
-\end{figure}
-\paragraph*{Valutazione}
-Valgono i ragionamenti fatti in SV per quanto riguarda EV.
+% numero parametri per metodo
 
 %\pagebreak
 \subsubsection{Code Coverage}
@@ -248,39 +206,8 @@ La metrica è stata messa in opera mentre codice e test venivano implementati pa
 L'aumento della copertura, a partire dal 10 aprile, corrisponde a una progressione nei test mentre l'ampiezza della codebase rimaneva invariata.
 %\subsubsection{Facilità di utilizzo}
 
-\subsection{Facilità di utilizzo}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.6]{res/images/RA/facilita-di-utilizzo.pdf}
-	\caption{Facilità di utilizzo}
-\end{figure}
-\paragraph*{Valutazione}
-Il numero di click è sufficientemente basso, considerando che il loro conteggio parte dalla registrazione.
-La metrica rispetta la soglia preferibile desiderata di 10 click.
- 
-\subsection{Facilità di apprendimento}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.7]{res/images/RA/facilita-di-apprendimento.pdf}
-	\caption{Facilità di apprendimento}
-\end{figure}
-\paragraph*{Valutazione}
-Anche in questo caso il conteggio comincia dalla registrazione. Il tempo richiesto a completare l'acquisto supera ampiamente la soglia preferibile di 3 minuti di tempo. 
-
-\subsubsection{Facilità di comprensione} % == CCR
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.6]{res/images/RA/facilita-di-comprensione.pdf}
-	\caption{Facilità di comprensione}
-\end{figure}
-\paragraph*{Valutazione}
-La quantità di commenti rispetto al codice, inizialmente bassa e sregolata, tende alla soglia di accettabilità del 10\% per volere del gruppo di avere un codice chiaro e comprensibile. 
-
-\pagebreak
 \subsubsection{Indice di Gulpease}
-
 \begin{longtable}{ >{\centering}p{0.15\textwidth} >{\centering}p{0.10\textwidth}	>{\centering}p{0.1075\textwidth} >{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth} >{\centering}p{0.10\textwidth}}
-	
 	%\hline
 	\rowcolor{white}\caption{Indice di Gulpease raggruppato per documento, lungo i periodi da RR a TB}\\
 	\rowcolorhead
@@ -360,7 +287,6 @@ La quantità di commenti rispetto al codice, inizialmente bassa e sregolata, ten
 	\includegraphics[scale=0.8]{res/images/RA/gulpease.pdf}
 	\caption{Indice di Gulpease}
 \end{figure}
-
 \paragraph*{Valutazione}
 Fino alla fase C l'indice è stato calcolato con uno strumento diverso rispetto alle fasi successive: questo spiega la discordanza tra i valori prima e dopo.
 In generale, nonostante l'impegno del gruppo nella semplificazione della sintassi, l'indice non sembra migliorare molto.
@@ -369,6 +295,126 @@ A una valutazione posteriore, la soglia di ottimalità imposta appare eccessivam
 La soglia di accettabilità invece sono plausibili e rispettate. 
 
 %\subsubsection{Semplicità delle classi}
+
+\subsubsection{EAC - Estimated At Completion}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{res/images/RA/eac.pdf}
+	\caption{Andamento dell'Estimated At Completion durante il progetto}
+\end{figure}
+\paragraph*{Valutazione}
+Le differenze nelle spese sostenute (-144\euro in TB, +355\euro in PB) non sono state tanto gravi da inficiare il preventivo a finire, ragion per cui EAC rimane invariato e di valore pari al preventivo.\\
+La soglia prevista del 5\% è pienamente rispettata.
+
+\subsubsection{VAC - Variance At Completion}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{res/images/RA/vac.pdf}
+	\caption{Andamento della Variance At Completion durante il progetto}
+\end{figure}
+\paragraph*{Valutazione}
+La differenza tra preventivo e EAC rimane invariata nei periodi e pari a zero; dunque VAC, cioè la percentuale della differenza, è ugualmente invariata e pari a zero. \\
+L'obiettivo di avere $VAC \geq 0\%$ è raggiunto.
+
+\subsubsection{EV - Earned Value}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{res/images/RA/ev.pdf}
+	\caption{Andamento dell'Earned Value durante il progetto}
+\end{figure}
+\paragraph*{Valutazione}
+Possiamo notare che, nonostante il lavoro svolto non ci sia stato alcun guadagno prima della PB. L'EV dipende dalla quantità di obiettivi raggiunti, misurata dal numero di requisiti soddisfatti: ecco spiegata la tardiva produzione di valore.\\
+Durante la PB sarebbe stato preferibile aver soddisfatto dimostrabilmente un numero maggiore di requisiti: in mancanza di ciò, in RA avremo un carico di lavoro maggiore rispetto alle attività previste. 
+
+\subsubsection{AC - Actual Cost}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{res/images/RA/ac.pdf}
+	\caption{Andamento dell'Actual Cost durante il progetto}
+\end{figure}
+\paragraph*{Valutazione}
+Il costo effettivo del lavoro, durante ogni fase, non si è molto discostato da quanto preventivato: dunque la pianificazione svolta risulta adeguata rispetto ai costi del lavoro previsti. \\
+Durante la fase di PB, AC ha superato PV, dunque la soglia di ottimalità $0 \leq AC < PV$ è stata infranta. La soglia di accettabilità invece è sempre stata rispettata.
+
+\subsubsection{PV - Planned Value}
+% IPOTESI: 20% dei req soddisfatti in TB, 80% in PB, 100% in VC
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{res/images/RA/pv.pdf}
+	\caption{Andamento del Planned Value durante il progetto}
+\end{figure}
+\paragraph*{Valutazione}
+Il PV riporta semplicemente il valore del lavoro preventivato fino al momento del calcolo.
+
+\subsubsection{SV - Schedule Variance}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{res/images/RA/sv.pdf}
+	\caption{Andamento della Schedule Variance durante il progetto}
+\end{figure}
+\paragraph*{Valutazione}
+Durante il periodo di TB il valore è preoccupante: il fatto è che non è stato considerato completato alcun requisito, mentre molte spese erano previste.\\
+Durante il periodo di PB sono stati soddisfatti molti requisiti, quindi EV è cresciuto, ma non a sufficienza da coprire le spese previste.\\
+Le soglie imposte per la metrica appaiono troppo restrittive, quindi inadeguate rispetto alla pianificazione del progetto.
+
+\subsubsection{CV - Cost Variance}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{res/images/RA/cv.pdf}
+	\caption{Andamento della Cost Variance durante il progetto}
+\end{figure}
+\paragraph*{Valutazione}
+Valgono i ragionamenti fatti in SV per quanto riguarda EV.
+
+% METRICHE DI PRODOTTO
+
+% correttezza dell'implementazione
+
+% passed test case percentage
+
+% failed test case percentage
+
+% densità degli errori
+
+% deployment cost
+
+% call cost
+
+\subsection{Facilità di utilizzo}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{res/images/RA/facilita-di-utilizzo.pdf}
+	\caption{Facilità di utilizzo}
+\end{figure}
+\paragraph*{Valutazione}
+Il numero di click è sufficientemente basso, considerando che il loro conteggio parte dalla registrazione.
+La metrica rispetta la soglia preferibile desiderata di 10 click.
+
+\subsection{Facilità di apprendimento}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{res/images/RA/facilita-di-apprendimento.pdf}
+	\caption{Facilità di apprendimento}
+\end{figure}
+\paragraph*{Valutazione}
+Anche in questo caso il conteggio comincia dalla registrazione. Il tempo richiesto a completare l'acquisto supera ampiamente la soglia preferibile di 3 minuti di tempo. 
+
+\subsubsection{Facilità di comprensione} % == CCR
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{res/images/RA/facilita-di-comprensione.pdf}
+	\caption{Facilità di comprensione}
+\end{figure}
+\paragraph*{Valutazione}
+La quantità di commenti rispetto al codice, inizialmente bassa e sregolata, tende alla soglia di accettabilità del 10\% per volere del gruppo di avere un codice chiaro e comprensibile. 
+
+% semplicità delle funzioni
+
+% semplicità delle classi
+
+% sfin
+
+% sfout
 
 \subsubsection{SLOC}
 \begin{figure}[H]
