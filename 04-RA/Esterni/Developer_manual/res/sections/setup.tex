@@ -94,7 +94,7 @@ Other packages, listed below, are required for the development.
 \subsection{Installing}
 \textit{Soldino} can be installed on multiple Operating System but we recommend to use a 
 Unix environment because some functionalities do not work on Windows, for example solidity-coverage.\\
-To start \textit{Soldino} follow these instructions to avoid errors during the installation.
+To start \textit{Soldino} follow these instructions to avoid errors during the installation. Instructions are grouped by technology. Each of those can contain references to a particular OS. Where the steps are the same we have not indicate nothing; otherwise we divided the steps in different paragraphs.
 \subsubsection{Browser}
 You can get the latest Google Chrome version 
 \href{https://www.google.com/chrome/}{here} or the latest Firefox version \href{https://www.mozilla.org/en-US/firefox/new/}{here}\\
@@ -139,12 +139,24 @@ then you can install Truffle by running the command: \texttt{npm install -g truf
 %Non credo Ganche serva nella versione finale
 
 \subsubsection{Ganache}
-There are three step to install Ganache:
+\paragraph{Linux - Ganache GUI} \mbox{} \\ \mbox{} \\
+Ganache is a part of Truffle suite and is used to put up a local blockchain.
+There are three steps to install Ganache GUI:
 \begin{enumerate}
-	\item you can download the Ganache executable at this \href{https://truffleframework.com/ganache}{link}, clicking on the download button;
-	\item if you have a Linux operating system, you have to give the permissions to make the Ganache file executable. This can be done with the command \\\texttt{chmod +x path-of-the-appimage/name-of-downloaded-file.AppImage};
+	\item you can download the Ganache executable at this link \url{https://truffleframework.com/ganache}, clicking on the download button;
+	\item now you have to give the permissions to make the Ganache file executable. Go to download destination directory and open new terminal. Then run this command: \\\texttt{chmod +x path-of-the-appimage/name-of-downloaded-file.AppImage};
+	\item double click on executable file and follow the instructions until the end.
 \end{enumerate}
-
+\paragraph{Linux - ganache-cli} \mbox{} \\ \mbox{} \\
+Ganache-cli is the same things as previous one, but you can use Ganache only by command line.
+To install ganache-cli, open a terminal and run: \\ \texttt{sudo npm install -g ganache-cli} .
+\paragraph{Windows - Ganache GUI} \mbox{} \\ \mbox{} \\
+On Windows download from here: \\
+\url{https://truffleframework.com/ganache}. \\
+Then, double click on executable file and follow instructions until the end.
+\paragraph{Windows - ganache-cli} \mbox{} \\ \mbox{} \\ 
+For \textbf{ganache-cli} run these on eleveted command prompt (admin):\\
+\texttt{npm install -g ganache-cli} .
 \subsubsection{MetaMask}
 You can add it to your browser in this way:
 \begin{itemize}
@@ -161,16 +173,16 @@ You have to install Surge\glosp by executing the shell command: \texttt{npm inst
 This section shows how to configure your work environment, so that it's the same as ours, in order to minimize the number and entity of troubles you will occur in.\\
 Make sure to configure the tools in order. In particular, Truffle requires that Ganache is opened and is configured to execute successfully.
 % clona la repo; apri truffle, apri ganache, apri browser con metamask, setta
-\subsubsection{Cloning the repo}
-You have to clone the \textit{Soldino} repository on GitHub: open the shell, move to the directory where you want Soldino to be, then use \texttt{git clone https://github.com/8LabSolutions/Soldino-PoC} and then use \texttt{git checkout final
-}.  
+\subsubsection{Cloning the repository}
+You have to clone the \textit{Soldino} repository on GitHub: open the command line, move to the directory where you want place Soldino, then use \texttt{git clone https://github.com/8LabSolutions/Soldino-PoC}.
+% and then use \texttt{git checkout final}.  
 
-\subsubsection{Ganache}
+\subsubsection{Ganache GUI}
 You have to go to the folder where you've put Ganache, and open it with double click.
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.25]{res/images/ganache-ui.png}
-	\caption{Ganache UI: from top to bottom you can see the menu bar, the current configuration, the mnemonic, and the interface of the selected menu option}
+	\caption{Ganache GUI: from top to bottom you can see the menu bar, the current configuration, the mnemonic, and the interface of the selected menu option}
 \end{figure}
 Then you have to click on the cogwheel at the top left corner to access Ganache settings and make sure you've matched the following settings (most of which are defined in \texttt{truffle-config.js}) on each respective window:
 \begin{itemize}
@@ -186,9 +198,15 @@ Then you have to click on the cogwheel at the top left corner to access Ganache 
 	\end{itemize}
 \end{itemize}
 
+\subsubsection{Ganache-cli}
+If you use \textbf{ganache-cli} open terminal on your project directory and run this command: \\
+\texttt{ganache-cli -p \#portnumber} (9545 recommended)\\
+Keep open this terminal during use \textit{Soldino} and use for other steps another command line.
+You can exit by typing \texttt{ctrl + C}.
+
 \subsubsection{Truffle}
 The configuration of Truffle is defined in the file \texttt{truffle-config.js} in the root directory of \textit{Soldino}.
-On your shell type the following shell commands:
+On your command line type the following commands:
 \begin{itemize}
 	\item \texttt{truffle console}\\
 	opens the truffle environment in the shell under the configuration defined in truffle-config.js. From now on, every command is executed in the truffle environment, from which you can exit double typing \texttt{ctrl + C}.
@@ -204,10 +222,10 @@ It's necessary to create an account.
 	\item open MetaMask on your browser
 	\item select get started
 	\item select import wallet
-	\item use the seed frase (AKA the mnemonic) copy pasting the one \item from ganache and put your password
+	\item use the seed phrase (MNEMONIC), copy and paste it from ganache(GUI) or terminal(ganache-cli) to metamask's textbox, then put your password and confirm.
 \end{itemize}
 Now your account is up and synchronized with Ganache.
-Now you have to connect the wallet to Ganache network. Ganache settings are exposed in the Ganache UI just above the mnemonic.
+Now you have to connect the wallet to Ganache network. Ganache settings are exposed in the Ganache GUI just above the mnemonic.
 Let's synchronize MetaMask to the same network. On the top right corner there is a drop-down menu to select the network. Select \texttt{Custom RPC} to set your own local network.\\
 You are now in the MetaMask advanced settings screen. In the field \texttt{Net Network} click on \texttt{Show Advanced Options} to open the form, then insert these data:
 \begin{enumerate}
@@ -217,17 +235,24 @@ You are now in the MetaMask advanced settings screen. In the field \texttt{Net N
 \end{enumerate}
 MetaMask is now connected to Ganache.\\
 
-To enable transactions on your local test network, you can find free ether\glosp for testing networks on this site: \href{https://faucet.metamask.io/}{https://faucet.metamask.io/}.
+\noindent To enable transactions on your local test network, you can find free ether\glosp for testing networks on this site: \href{https://faucet.metamask.io/}{https://faucet.metamask.io/}.
 
+\subsubsection{Npm}
+\paragraph{Linux} \mbox{} \\ \mbox{} \\
+Open terminal on \textit{Soldino} project directory and run:
+\texttt{sudo apt-get install build-essential} \\
+It's time to install all dependencies by running: \texttt{npm install}
+\paragraph{Windows} \mbox{} \\ \mbox{} \\
+Install all dependecies in the same way of Linux: open terminal on \textit{Soldino} project directory and run: \texttt{npm install}.
 % PUT CUBIT TO METAMASK
 
 \subsection{Running}
 Now that you have all the required software installed and configured, it's time to get it up running.\\
 All you have to do is moving to the root directory of Soldino and prompt
 \begin{itemize}
-	\item[]\texttt{npm run start}
+	\item[]\texttt{npm start}
 \end{itemize}
-This will open the website on your browser at the address \texttt{http://127.0.0.1:3000} and allow you to explore it. 
+This will open the website on your default browser at the address \texttt{http://127.0.0.1:3000} and allow you to explore it. 
 
 
 %\subsection{Deploying}
