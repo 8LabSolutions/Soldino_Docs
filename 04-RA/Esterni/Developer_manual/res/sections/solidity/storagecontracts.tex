@@ -27,7 +27,7 @@ All contracts, except for \texttt{VatStorage}, in their struct have three state 
 \pagebreak
 \paragraph{VatStorage}\mbox{}\\
 
-\noindent This contract maintains the VAT amount of every business for every quarter. Each time a business buys or sell some products, the VAT amount of each product is added or subtracted to the amount in this contract. If the product is sold, its VAT is added, while if the product is sold the VAT is subtracted. \\
+\noindent This contract maintains the VAT amount of every business for every quarter. Each time a business buys or sell some products, the VAT amount of each product is added or subtracted to the amount in this contract. If the product is sold, its VAT is added, while if the product is purchased the VAT is subtracted. \\
 \texttt{VatStorage} has an array of map keys in order to iterate the map and enumerate its elements. 
 
 \begin{figure}[H]
