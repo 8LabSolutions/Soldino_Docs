@@ -8,6 +8,15 @@ In this section all of the requirements are described.
 	\item\textbf{Windows 10} all versions.
 \end{itemize}
 In the manual all instructions are provided in order to configure and run \textit{Soldino} on both operating system.
+\subsubsection{Hardware}
+ 
+\begin{itemize}
+	\item  \textbf{Processor}: Pentium 4 (dual core) or newer;
+	\item \textbf{RAM}: 2GB or more;
+	\item \textbf{Hard drive}: 1GB of hard drive space;
+	\item \textbf{Internet connection}: required for run Soldino DApp;
+\end{itemize}
+
 \subsubsection{Browser}
 \textit{Soldino} is accessible through a web interface. The currently most 
 recent versions of the following browsers are supported:
@@ -104,7 +113,7 @@ Unix environment because some functionalities do not work on Windows, for exampl
 To start \textit{Soldino} follow these instructions to avoid errors during the installation. Instructions are grouped by technology. Each of those can contain references to a particular OS. Where the steps are the same we have not indicate nothing; otherwise we divided the steps in different paragraphs.
 \subsubsection{Browser}
 You can get the latest Google Chrome version 
-\href{https://www.google.com/chrome/}{here} or the latest Firefox version \href{https://www.mozilla.org/en-US/firefox/new/}{here}\\
+\href{https://www.google.com/chrome/}{here} or the latest Firefox version \href{https://www.mozilla.org/en-US/firefox/new/}{here}
 \subsubsection{Git}
 \paragraph{Linux} \mbox{} \\ \mbox{} \\
 You have to type this script in the shell to install Git: 
@@ -180,7 +189,7 @@ This section shows how to configure your work environment, so that it's the same
 Make sure to configure the tools in order. In particular, Truffle requires that Ganache is opened and is configured to execute successfully.
 % clona la repo; apri truffle, apri ganache, apri browser con metamask, setta
 \subsubsection{Cloning the repository}
-You have to clone the \textit{Soldino} repository on GitHub: open the command line, move to the directory where you want place Soldino, then use \texttt{git clone https://github.com/8LabSolutions/Soldino-PoC}.
+You have to clone the \textit{Soldino} repository on GitHub: open the command line, move to the directory where you want place Soldino, then use \texttt{git clone https://github.com/8LabSolutions/Soldino-PoC}. After that use command: \texttt{cd Soldino-PoC} to move into directory.
 % and then use \texttt{git checkout final}.  
 
 \subsubsection{Ganache GUI}
@@ -258,7 +267,11 @@ All you have to do is moving to the root directory of Soldino and prompt
 \begin{itemize}
 	\item[]\texttt{npm start}
 \end{itemize}
-This will open the website on your default browser at the address \texttt{http://127.0.0.1:3000} and allow you to explore it. 
+This will open the website on your default browser at the address \texttt{http://127.0.0.1:3000} and allow you to explore it.
+\paragraph{Coverage} \mbox{} \\ \mbox{} \\
+\textbf{Note}: Not available for Windows. \\
+To run test coverage open new shell into the \textit{Soldino} project directory and run: \texttt{npm run coverage}. After a while it will show you every successfully tests and costs of transactions. The port that is used for test newtork is 8545.
+\subsection{Deploy on Ropsten Infura}
 
 
 %\subsection{Deploying}
