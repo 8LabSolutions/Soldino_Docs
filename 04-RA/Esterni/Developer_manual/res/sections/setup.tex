@@ -1,6 +1,13 @@
 \section{Setup} 
 \subsection{Requirements}
 In this section all of the requirements are described.
+\subsubsection{Operating system}
+\textit{Soldino}'s development environment is available for the following operating systems:
+\begin{itemize}
+	\item\textbf{Ubuntu 18.04.2 LTS} or later;
+	\item\textbf{Windows 10} all versions.
+\end{itemize}
+In the manual all instructions are provided in order to configure and run \textit{Soldino} on both operating system.
 \subsubsection{Browser}
 \textit{Soldino} is accessible through a web interface. The currently most 
 recent versions of the following browsers are supported:
@@ -68,7 +75,7 @@ The packages required to execute the software \textit{Soldino} are listed below.
 
 Other packages, listed below, are required for the development.
 \renewcommand{\arraystretch}{1.5}
-\rowcolors{2}{pari}{dispari}
+\rowcolors{2}{dispari}{pari}
 \begin{longtable}{ 
 		>{\centering}p{0.4\textwidth} 
 		>{\centering}p{0.4\textwidth}
@@ -88,9 +95,9 @@ Other packages, listed below, are required for the development.
 	eslint-plugin-jsx-a11y & $\geq$6.2.1\tabularnewline
 	pre-commit & $\geq$1.2.2\tabularnewline
 	truffle-contract & $\geq$4.0.6\tabularnewline
-	
+	ganache-cli & $\geq$6.4.3
 \end{longtable}
-
+\pagebreak
 \subsection{Installing}
 \textit{Soldino} can be installed on multiple Operating System but we recommend to use a 
 Unix environment because some functionalities do not work on Windows, for example solidity-coverage.\\
@@ -98,7 +105,6 @@ To start \textit{Soldino} follow these instructions to avoid errors during the i
 \subsubsection{Browser}
 You can get the latest Google Chrome version 
 \href{https://www.google.com/chrome/}{here} or the latest Firefox version \href{https://www.mozilla.org/en-US/firefox/new/}{here}\\
-
 \subsubsection{Git}
 \paragraph{Linux} \mbox{} \\ \mbox{} \\
 You have to type this script in the shell to install Git: 
