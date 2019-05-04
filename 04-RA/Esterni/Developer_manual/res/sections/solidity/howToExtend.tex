@@ -11,4 +11,6 @@ deployer.deploy(Contract_v2, contractManagerInstance.address)
 	return contractManagerInstance.setContractAddress("Name_of_the_contract", newContractInstance.address);
 });
 \end{lstlisting}
+At line 4 the object \texttt{deployer}, provided by Truffle framework, is used to deploy the contract on the blockchain$^{1}$. \texttt{deployer.deploy} returns a JavaScript Promise\glosp which if resolved returns an instance of the contract deployed. In fact at line 5 \texttt{then} is used to construct an anonymous function with the contract instance as parameter. The parameter is used to get its address used as parameter for the \texttt{setContractAddress} function. \\
+As mentioned in  
 
