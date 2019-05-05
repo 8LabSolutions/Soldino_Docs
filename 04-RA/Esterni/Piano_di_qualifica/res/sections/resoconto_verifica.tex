@@ -370,15 +370,58 @@ Valgono i ragionamenti fatti in SV per quanto riguarda EV.
 
 % correttezza dell'implementazione
 
-% passed test case percentage
+\subsubsection{Passed test case percentage}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{res/images/RA/ptcp.pdf}
+	\caption{Percentuale di test superati sul numero di test totale}
+\end{figure}
+\paragraph*{Valutazione}
+Il numero di test superati è prossimo al 100\%, con variazioni minime del 3\%. Questo indica che i test implementati funzionano correttamente, con minime imperfezioni. Le soglie imposte sono rispettate.
 
-% failed test case percentage
+\subsubsection{Failed test case percentage}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{res/images/RA/ftcp.pdf}
+	\caption{Percentuale di test falliti sul numero di test totale}
+\end{figure}
+\paragraph*{Valutazione}
+In modo complementare alla PTCP, qui si verifica che i test falliscono raramente. Anche in questo caso le soglie imposte sono rispettate.
 
 % densità degli errori
 
-% deployment cost
+\subsubsection{Deployment cost}
+Per questa metrica si presenta il costo attuale di deployment dei contratti, e l'andamento nel tempo del costo medio di deploy.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{res/images/RA/deployment-cost.pdf}
+	\caption{Stima del costo di deploy dei contratti su Ethereum}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{res/images/RA/average-deployment-cost.pdf}
+	\caption{Serie temporale della stima del costo medio di deploy dei contratti su Ethereum}
+\end{figure}
+\paragraph*{Valutazione}
+I costi di deploy dei contratti sono abbastanza omogenei e vincolati alla grandezza dei contratti. I costi rispettano le soglie previste. In media il costo di deployment si trova al di sotto della soglia preferibile.
 
-% call cost
+\subsubsection{Call cost}
+Per questa metrica si presentano il costo attuale di chiamata a funzione nei contratti, e l'andamento nel tempo del costo medio delle chiamate.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{res/images/RA/call-cost.pdf}
+	\caption{Stima del costo di chiamata a funzione dei contratti su Ethereum}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{res/images/RA/average-call-cost.pdf}
+	\caption{Serie temporale della stima del costo medio di chiamata a funzione dei contratti su Ethereum}
+\end{figure}
+\paragraph*{Valutazione}
+Le funzioni hanno un carico di responsabilità variabile, e di conseguenza costi mutevoli.
+Le più semplici hanno costo relativamente basso, che si aggira sui 100.000 gas. 
+Le più complesse concernono la gestione degli ordini, ed eseguono varie chiamate sulle funzioni più semplici che operano sui prodotti, chiamate che determinano un costo economico oltre le aspettative.
+In generale le funzioni rispettano la soglia di accettabilità; due funzioni si avvicinano al limite di accettabilità di 200.000 gas; una funzione supera il limite, costando più del previsto.
 
 \subsection{Facilità di utilizzo}
 \begin{figure}[H]
