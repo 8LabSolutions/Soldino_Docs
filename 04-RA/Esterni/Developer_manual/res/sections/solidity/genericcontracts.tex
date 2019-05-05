@@ -1,7 +1,7 @@
 \subsubsection{Generic contracts}
 \paragraph{Security contracts}
 \subparagraph{Owned}
-This contract defines the owner of a contract. In Soldino the owner is the address which deploy all contracts. The contract defines a modifier, \texttt{onlyOwner}, used to allow only the owner to call a function which uses 
+This contract defines the owner of a contract. In Soldino the owner is the address which deploys all contracts. The contract defines a modifier, \texttt{onlyOwner}, used to allow only the owner to call a function which uses 
 the above-mentioned modifier.
 \begin{figure}[H]
 	\centering
@@ -18,7 +18,7 @@ To authorize a contract the owner needs to call the function \texttt{addAuthoriz
 	\frame{\includegraphics[scale=0.2]{res/images/solidity/authorizable.png}}
 	\caption{class diagram of the Authorizable contract}
 \end{figure}
-\pagebreak
+
 \paragraph{Token ERC20}\mbox{}\\
 
 \noindent The contract \texttt{TokenCubit} implements the custom token \textit{Cubit}, stores all the users' balances and defines all the methods in order to be ERC20 compliant.
@@ -28,7 +28,7 @@ To authorize a contract the owner needs to call the function \texttt{addAuthoriz
 	\caption{class diagram of the TokenCubit contract}
 \end{figure}
 
-\paragraph{ContractManager}\mbox{}\\ 
+\hypertarget{cm}{\paragraph{ContractManager}}\mbox{}\\ 
 
 \noindent The purpose of the \texttt{ContractManager} is to achieve simple and cost effective upgradeability of the logic contracts. This contract stores a map in which the entries are composed in the following way:
 \begin{itemize}
@@ -41,11 +41,11 @@ When contract $A$ needs to communicate with another contract $B$, contract $A$ g
 	\frame{\includegraphics[scale=0.2]{res/images/solidity/contractmanager.png}}
 	\caption{class diagram of the ContractManager contract}
 \end{figure}
-\pagebreak
+
 \paragraph{Purchase}\mbox{}\\ 
 
 \noindent The \texttt{Purchase} contract acts as a façade when it comes to buy products on Soldino.
-Usually the user needs to confirm $n$ transactions for each order (intended as one order for each seller) to buy all the products in his cart, where $n$ is the number of orders.\\
+Usually the user needs to confirm $n$ transactions (intended as one order for each seller) to buy all the products in his cart, where $n$ is the number of orders.\\
 With the \texttt{Purchase} contract, the user has to confirm always two transactions, no matter how many products are in his cart. 
 \begin{figure}[H]
 	\centering

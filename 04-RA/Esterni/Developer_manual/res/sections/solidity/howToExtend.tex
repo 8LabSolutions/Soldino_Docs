@@ -8,7 +8,11 @@ deployer.deploy(Contract_v2, contractManagerInstance.address)
 .then((newContractInstance)=>{
 	//change the deployment address of the upgraded contract
 	//in the contract manager
-	return contractManagerInstance.setContractAddress("Name_of_the_contract", newContractInstance.address);
+	return contractManagerInstance.setContractAddress(
+		"Name_of_the_contract", 
+		newContractInstance.address);
 });
 \end{lstlisting}
+At line 4 the object \texttt{deployer}, provided by Truffle framework, is used to deploy the contract on the blockchain. \texttt{deployer.deploy} returns a JavaScript Promise\glosp which if resolved returns an instance of the contract deployed. In fact at line 5 \texttt{then} is used to construct an anonymous function with the contract instance as parameter. The parameter is used to get its address used as parameter for the \texttt{setContractAddress} function. \\
+As mentioned in  \hyperlink{cm}{\underline{section 8.2.1.3}} the contract manager provides to all contracts the address of each contract at its latest version. In this way, when a contract \texttt{A} needs some function provided by contract \texttt{B}, \texttt{A} simply asks the contract manager the address of \texttt{B} and then use the address returned to call \texttt{B}'s functions.
 

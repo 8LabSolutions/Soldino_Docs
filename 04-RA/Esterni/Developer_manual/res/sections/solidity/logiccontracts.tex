@@ -18,13 +18,14 @@ However each \texttt{xLogic} contract has a direct reference to its \texttt{xSto
 \end{figure}
 
 \paragraph{ProductLogic}\mbox{}\\
+
 \noindent This contract allows business to insert new products, modify or delete exiting ones. Obviously, only businesses can insert products in \textit{Soldino}: to comply this requirement \texttt{ProductLogic} defines the modifier \texttt{onlyBusiness} which checks if the address of the contract that is trying to insert a product is a business. Furthermore, products can be modified and deleted only by their sellers and the modifier \texttt{onlyProductOwner} is responsible for that.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.25]{res/images/solidity/productlogic.png}
 	\caption{class diagram of the ProductLogic contract}
 \end{figure}
-
+\pagebreak
 \paragraph{VatLogic}\mbox{}\\
 
 \noindent This contract defines the logic to interact with the \texttt{VatStorage} contract. 
