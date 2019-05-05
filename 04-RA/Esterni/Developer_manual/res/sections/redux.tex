@@ -40,8 +40,22 @@ There are three different type of Actions Creator:
 		\item getStoreProducts(): generates a list of products in sale and returns it as param by returning a redux action;
 	\end{itemize}
 	\item \textbf{User actions creator};
-	\item \textbf{Government actions creator}.
-\end{itemize}
+	\item \textbf{Government actions creator}:
+	\begin{itemize}
+		\item getUserList(): Returns the list of all registered users;
+		\item setVATrefund(): Returns an array of the business with the VAT quarter info;
+		\item getVATPeriods(): Get the list of all quarters;
+		\item getBalanceAndTotalAmount(): Get the government current balance in Cubit and the total amount;
+		\item mint(): Mint an amount of Cubit;
+		\item distribute(): Distribute an amount of Cubit to a specific address;
+		\item changeUserState(): Enable or disable a user;
+		\item refund(): Refund a business period;
+		\item resetPeriods(): Reset the list of periods into the redux store;
+		\item resetVAT(): Reset the invoices list into the redux store;
+		\item resetSearch(): Reset the searched string into the redux store;
+		\item resetPeriod(): Reset the selected period into the redux store;
+		\item setStatus(): Set a specific status into the redux store, for optimizing the search of the VAT list.
+	\end{itemize}
 Each of them interacts with Facade (cf. §9) and returns to the related contanier a specific action otherwise rejects an error.
 \subsection{Reducers}
 \begin{itemize}
