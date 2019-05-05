@@ -16,6 +16,15 @@ Most components can be customized with different parameters when they are create
 This type of component is like a wrapper of presentational components. A function called \texttt{Connect(arg1, arg2)} is needed for connecting a container component to a presentational component: in this way we can map some actions and some application state variables inside the presentational component, passing them through props. The \texttt{arg1} is a function called \texttt{mapStateToProps()} and the \texttt{arg2} is another function called \texttt{mapDispatchToProps()}.
 \subsection{React-Router} 
 React-router-dom is a \texttt{npm} module used for rendering different pages without reloading the entire website, this module works with \texttt{Render()} method provided by each presentational component. \textit{Soldino} is a single page application, so the router, implemented into a JavaScript file called \texttt{App.js}, is responsible to manage which components should be rendered.
+\subsection{How to extend with new React component}
+To implement a new component with react you have to:
+\begin{itemize}
+	\item create a new .js file inside \texttt{components/presentational/} and rename it with component's name;
+	\item define the render method that returns the GUI of the component, you can use HTML tags or other react components;
+	\item you can create its container inside \texttt{components/containers/} and map some props to the component (cf. §6.8);
+	\item if you have created a new container you can put it, wherever you want to display it, otherwise you can put the new component;
+	\item if you define the new component with some \texttt{args} (e.g. \texttt{<newComponent args="..." />}) you can access to them from component with \texttt{this.props.args}.
+\end{itemize}
 
 \subsection{UML} 
 \begin{figure}[H]
