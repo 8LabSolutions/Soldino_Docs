@@ -37,7 +37,17 @@ There are three different type of Actions Creator:
 \begin{itemize}
 	\item \textbf{Business actions creator}: contains the following functions: 
 	\begin{itemize}
-		\item getStoreProducts(): generates a list of products in sale and returns it as param by returning a redux action;
+		\item getStoreProducts(): generates a list of products on sale and returns it as param by returning a redux action;
+		\item getMyProducts(): generates a list of products on sale that were added to sell by current logged business and returns it as param by returning a redux action;
+		\item addProduct(): add a product to the store;
+		\item modifyProduct(): modify a product to the store;
+		\item deleteProduct(): remove a product from the store;
+		\item getTotalStoreProduct(): get the number of total products into the store;
+		\item getTotalMyProduct(): get the number of total products into the store that were added to sell by current logged business;
+		\item getInvoices(): get all the invoices in a quarter;
+		\item getBusinessPeriod(): get all the invoices in a quarter related to the current logged business;
+		\item payVATPeriod(): execute the instant payment for a quarter to the government;
+		\item putOnHoldVATPeriod(): defer the debt of a quarter to the next quarter.
 	\end{itemize}
 	\item \textbf{User actions creator};
 	\item \textbf{Government actions creator}.
