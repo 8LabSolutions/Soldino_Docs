@@ -3,6 +3,7 @@
 Redux\glosp is a \texttt{npm} module which manage the entire state of the website from client-side. It consists of:
 \begin{itemize}
 	\item Actions;
+	\item Actions Creators;
 	\item Reducers;
 	\item Store.
 \end{itemize}
@@ -31,6 +32,17 @@ There are twelve different actions inside the \texttt{src/actions/} folder. Each
 	\item \textbf{ACDecreaseQuantity}: it decreases the quantity of a product that is inside the cart, by changing the \texttt{quantity} value of a specified product inside \texttt{cart} state value;
 	\item \textbf{ACDisableAccount}: it sets a value different from 0 to \texttt{error} state value if something goes wrong, otherwise it sets 0 into \texttt{error} state value.
 \end{itemize}
+\subsection{Actions Creators}
+There are three different type of Actions Creator:
+\begin{itemize}
+	\item \textbf{Business actions creator}: contains the following functions: 
+	\begin{itemize}
+		\item getStoreProducts(): generates a list of products in sale and returns it as param by returning a redux action;
+	\end{itemize}
+	\item \textbf{User actions creator};
+	\item \textbf{Government actions creator}.
+\end{itemize}
+Each of them interacts with Facade (cf. §9) and returns to the related contanier a specific action otherwise rejects an error.
 \subsection{Reducers}
 \begin{itemize}
 	\item \textbf{ReducerAuth}: it makes the dispatch of the actions inside:
