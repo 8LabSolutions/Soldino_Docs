@@ -4,11 +4,13 @@ aliquota
 apache kafka
 api
 area di staging
+architettura
 artefatti
 attore
 autenticazione
 aws
 back end
+baseline
 blockchain
 body of knowledge
 boilerplate
@@ -50,9 +52,11 @@ ganache cli
 gantt
 gas
 gigacore
+github
 gitlab
 governo
 hunpos
+incremento
 infura
 ipfs
 jsdoc
@@ -60,6 +64,7 @@ json
 lint
 linter
 metamask
+metrica
 milestone
 modello a v
 modello di sviluppo
@@ -98,6 +103,7 @@ staging
 stand-up
 stub
 surge.sh
+tracciamento
 technology baseline
 telegram
 testrpc
