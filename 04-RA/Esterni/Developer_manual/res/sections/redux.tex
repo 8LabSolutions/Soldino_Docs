@@ -72,7 +72,8 @@ There are seven main categories of actions inside the \texttt{src/actions/} fold
 	\item \textbf{user}:
 	\begin{itemize}
 		\item getMyProducts();
-		\item setLoadingMessage().
+		\item setLoadingMessage();
+		\item updateBalance().
 	\end{itemize}
 \end{itemize}
 
@@ -103,7 +104,8 @@ There are three different type of Actions Creator. Each of them interacts with F
 	\end{itemize}
 	\item \textbf{User actions creator} that contains the following functions:
 	\begin{itemize}
-		\item getOrdersList(): returns an action that sets into the redux store all the orders.
+		\item getOrdersList(): returns an action that sets into the redux store all the orders;
+		\item updateBalance(): returns an action that sets into redux store the updated balance of the logged user.
 	\end{itemize}
 	\item \textbf{Government actions creator} that contains the following functions:
 	\begin{itemize}
@@ -191,12 +193,10 @@ To implement a new feature with redux store you have to:
 	\item map the actions creator with \texttt{mapDispatchToProps()} to the props of the component and also map the field of the state with \texttt{mapStateToProps()}, then connect them to a react component through \texttt{connect(mapStateToProps, mapDispatchToProps)(component)};
 	\item call the actions creator inside the \texttt{mapDispatchToProps()} and with returned action, dispatch it for changing the state of the application, you can check the changed field by accessing it from the component with \texttt{this.props.fieldname}. 
 \end{itemize}
-
 \begin{landscape}
 	\subsection{UML} 
-	
 	\begin{figure}[H]
-		\centering\includegraphics[scale = 0.3]{res/images/ReduxDiagram.png}
+		\centering\includegraphics[scale = 0.365]{res/images/ReduxDiagram.png}
 		\caption{Redux architecture}
 	\end{figure}
 \end{landscape}
