@@ -25,3 +25,10 @@ All the methods described in the picture below consist of two different steps:
 
 \noindent Since the methods are just a combination of the already described methods of the web3 and IPFS packages, we omit their description.
 
+\subsection{How to extend with new features}
+This package should be used to organize information retrieved from different sources before passing them to the front-end. This package hides the interactions between the different technologies, but should not be used to interact directly with the blockchain or IPFS. Two important aspects the developer must keep in consideration are:
+\begin{itemize}
+	\item if new functionality is added in the Solidity back-end and in the web3 package, the facade package should be updated only if the user could interact directly with this functionality;
+	\item even if the purpose of this package is to transform and organize data to make them more readable and usable, it is not responsible for preparing data as they will be shown/used by the front-end, that is containers/actionCreators' responsibility.
+\end{itemize}
+

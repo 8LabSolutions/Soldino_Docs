@@ -19,3 +19,9 @@ The package provides the following methods:
 	\item \textbf{insertJSONintoIPFS}: it uses the \texttt{ipfs-mini} API to upload the JSON passed to the function, then returns the IPFS CID.
 \end{itemize}
 
+\subsection{How to extend with new features}
+The two functions we are providing lets the user save any kind of information in the JSON format. Since the aim of this package is to interact with IPFS, the possible changes that could be done are:
+\begin{itemize}
+	\item the implementation of the addition of data saved in formats different from JSON. In this case, we suggest to look at the documentation of the package \texttt{ipfs\_mini}, which API is actually used to retrieve data since it offers a large variety of functions;
+	\item the change of the API package. If it is appropriate to use another package in order to carry out the writings and readings from IPFS, the developer must be sure not to alter the signature and the behaviour of the already offered functions.
+\end{itemize}
