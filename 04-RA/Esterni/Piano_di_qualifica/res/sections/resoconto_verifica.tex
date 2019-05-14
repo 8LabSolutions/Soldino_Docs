@@ -304,7 +304,7 @@ La soglia di accettabilità invece sono plausibili e rispettate.
 	\caption{Andamento dell'Estimated At Completion durante il progetto}
 \end{figure}
 \paragraph*{Valutazione}
-Le differenze nelle spese sostenute (-144\euro in TB, +355\euro in PB) non sono state tanto gravi da inficiare il preventivo a finire, ragion per cui EAC rimane invariato e di valore pari al preventivo.\\
+Le differenze nelle spese sostenute (-144\euro{} in TB ,+355\euro{} in PB) non sono state tanto gravi da inficiare il preventivo a finire, ragion per cui EAC rimane invariato e di valore pari al preventivo.\\
 La soglia prevista del 5\% è pienamente rispettata.
 
 \subsubsection{VAC - Variance At Completion}
@@ -356,7 +356,7 @@ Il PV riporta semplicemente il valore del lavoro preventivato fino al momento de
 \paragraph*{Valutazione}
 Durante il periodo di TB il valore è preoccupante: il fatto è che non è stato considerato completato alcun requisito, mentre molte spese erano previste.\\
 Durante il periodo di PB sono stati soddisfatti molti requisiti, quindi EV è cresciuto, ma non a sufficienza da coprire le spese previste.\\
-Le soglie imposte per la metrica appaiono troppo restrittive, quindi inadeguate rispetto alla pianificazione del progetto.
+La soglia impone che la misura sia positiva: ciò non è stato valido durante il progetto, ma è rispettato al suo termine.
 
 \subsubsection{CV - Cost Variance}
 \begin{figure}[H]
@@ -365,7 +365,7 @@ Le soglie imposte per la metrica appaiono troppo restrittive, quindi inadeguate 
 	\caption{Andamento della Cost Variance durante il progetto}
 \end{figure}
 \paragraph*{Valutazione}
-Valgono i ragionamenti fatti in SV per quanto riguarda EV.
+Valgono ragionamenti analoghi fatti in SV.
 
 % METRICHE DI PRODOTTO
 
@@ -378,7 +378,7 @@ Valgono i ragionamenti fatti in SV per quanto riguarda EV.
 	\caption{Percentuale di test superati sul numero di test totale}
 \end{figure}
 \paragraph*{Valutazione}
-Il numero di test superati è prossimo al 100\%, con variazioni minime del 3\%. Questo indica che i test implementati funzionano correttamente, con minime imperfezioni. Le soglie imposte sono rispettate.
+Il numero di test superati è prossimo al 100\%, con variazioni minime del 3\% circa. Questo indica che i test implementati funzionano correttamente, con minime imperfezioni. La soglia di preferibilità è stata raggiunta e superata.
 
 \subsubsection{Failed test case percentage}
 \begin{figure}[H]
@@ -387,24 +387,24 @@ Il numero di test superati è prossimo al 100\%, con variazioni minime del 3\%. 
 	\caption{Percentuale di test falliti sul numero di test totale}
 \end{figure}
 \paragraph*{Valutazione}
-In modo complementare alla PTCP, qui si verifica che i test falliscono raramente. Anche in questo caso le soglie imposte sono rispettate.
+In modo complementare alla PTCP, FTCP mostra che i test falliscono raramente. Anche in questo caso le soglie imposte sono rispettate.
 
 % densità degli errori
 
 \subsubsection{Deployment cost}
-Per questa metrica si presenta il costo attuale di deployment dei contratti, e l'andamento nel tempo del costo medio di deploy.
+Per questa metrica si presenta il costo attuale di deployment dei contratti, e l'andamento nel tempo del costo medio di deployment.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{res/images/RA/deployment-cost.pdf}
-	\caption{Stima del costo di deploy dei contratti su Ethereum}
+	\includegraphics[scale=0.45]{res/images/RA/deployment-cost.pdf}
+	\caption{Stima del costo di deployment dei contratti su Ethereum}
 \end{figure}
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.6]{res/images/RA/average-deployment-cost.pdf}
-	\caption{Serie temporale della stima del costo medio di deploy dei contratti su Ethereum}
+	\caption{Serie temporale della stima del costo medio di deployment dei contratti su Ethereum}
 \end{figure}
 \paragraph*{Valutazione}
-I costi di deploy dei contratti sono abbastanza omogenei e vincolati alla grandezza dei contratti. I costi rispettano le soglie previste. In media il costo di deployment si trova al di sotto della soglia preferibile.
+I costi di deployment dei contratti sono abbastanza simili tra loro, con qualche eccezione nel caso di contratti più semplici (come \texttt{Owned}) o dalla logica più complessa (come quelli che gestiscono gli ordini di prodotti, cioè \texttt{OrderStorage} e \texttt{OrderLogic}). In tutti i casi i costi di deployment rispettano la soglia di accettabilità. 
 
 \subsubsection{Call cost}
 Per questa metrica si presentano il costo attuale di chiamata a funzione nei contratti, e l'andamento nel tempo del costo medio delle chiamate.
@@ -421,8 +421,7 @@ Per questa metrica si presentano il costo attuale di chiamata a funzione nei con
 \paragraph*{Valutazione}
 Le funzioni hanno un carico di responsabilità variabile, e di conseguenza costi mutevoli.
 Le più semplici hanno costo relativamente basso, che si aggira sui 100.000 gas. 
-Le più complesse concernono la gestione degli ordini, ed eseguono varie chiamate sulle funzioni più semplici che operano sui prodotti, chiamate che determinano un costo economico oltre le aspettative.
-In generale le funzioni rispettano la soglia di accettabilità; due funzioni si avvicinano al limite di accettabilità di 200.000 gas; una funzione supera il limite, costando più del previsto.
+In generale, nonostante la varietà di compiti eseguiti, le funzioni non superano la soglia di accettabilità di 400.000 gas, con la sola eccezione della funzione \texttt{saveAndPayOrder}, che rappresenta una criticità superando il costo previsto.
 
 \subsection{Facilità di utilizzo}
 \begin{figure}[H]
@@ -467,6 +466,7 @@ La quantità di commenti rispetto al codice, inizialmente bassa e sregolata, ten
 	\caption{Source lines of code}
 \end{figure}
 \paragraph*{Valutazione}
-Lo SLOC ha un'andamento prevedibile tendente al logaritmo, che indica una stabilità delle righe totali di codice del prodotto man mano che il progetto si avvicina alla fine. Le soglie di accettabilità e ottimalità sono rispettate.
+La taglia del progetto è cresciuta per tutta la sua durata, tipicamente in modo graduale, con qualche burst occasionale. La crescita di taglia nella fase di VC è dovuta all'implementazione dei test che mancavano durante la precedente fase.\\
+La soglia di accettabilità è rispettata.
 
 
