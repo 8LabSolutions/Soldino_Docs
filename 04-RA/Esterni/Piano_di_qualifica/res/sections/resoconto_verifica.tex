@@ -179,31 +179,32 @@ In tutti e tre i casi il livello di profondità della gerarchia non supera i 3 l
 \paragraph{Statement coverage}\mbox{}\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{res/images/RA/statement-coverage-RQ.pdf}
+	\includegraphics[scale=0.7]{res/images/RA/statement-coverage.pdf}
 	\caption{Statement coverage}
 \end{figure}	
 \paragraph{Branch coverage}\mbox{}\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{res/images/RA/branch-coverage-RQ.pdf}
+	\includegraphics[scale=0.7]{res/images/RA/branch-coverage.pdf}
 	\caption{Branch coverage}
 \end{figure}
 \paragraph{Function coverage}\mbox{}\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{res/images/RA/function-coverage-RQ.pdf}
+	\includegraphics[scale=0.7]{res/images/RA/function-coverage.pdf}
 	\caption{Function coverage}
 \end{figure}
 \paragraph{Line coverage}\mbox{}\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{res/images/RA/line-coverage-RQ.pdf}
+	\includegraphics[scale=0.7]{res/images/RA/line-coverage.pdf}
 	\caption{Line coverage}
 \end{figure}
 \paragraph*{Valutazione complessiva}
-Complessivamente la metrica del coverage ha un'andamento prevedibile e si avvicina alle soglie desiderate.
+Complessivamente la metrica del coverage ha un'andamento prevedibile e rispetta le soglie di accettabilità imposte, in alcuni casi (statement e line coverage) avvicinandosi alle soglia di preferibilità, superando il 90\% di copertura.
 La metrica è stata messa in opera mentre codice e test venivano implementati parallelamente: ecco perché nel periodo iniziale l'andamento del coverage è altalenante.
 L'aumento della copertura, a partire dal 10 aprile, corrisponde a una progressione nei test mentre l'ampiezza della codebase rimaneva invariata.
+Verso le fasi finali del progetto le modifiche alla codebase sono state minori, quindi il coverage risulta più stabile. SI può notare  un lieve ma progressivo aumento dei valori di statement e line coverage, mentre si è lavorato più intensamente per portare a un livello di accettabilità anche i valori di branch e function coverage, dunque qui l'aumento di valore è più marcato.
 %\subsubsection{Facilità di utilizzo}
 
 \subsubsection{Indice di Gulpease}
@@ -224,7 +225,7 @@ L'aumento della copertura, a partire dal 10 aprile, corrisponde a una progressio
 	& 66
 	& 63
 	& 63
-	& -
+	& 63
 	\tabularnewline %\hline 
 	
 	\textit{Glossario}
@@ -232,7 +233,7 @@ L'aumento della copertura, a partire dal 10 aprile, corrisponde a una progressio
 	& 71
 	& 71
 	& 71
-	& -
+	& 71
 	\tabularnewline %\hline 
 	
 	\textit{Norme di progetto}
@@ -240,7 +241,7 @@ L'aumento della copertura, a partire dal 10 aprile, corrisponde a una progressio
 	& 65
 	& 63
 	& 66
-	& -
+	& 68
 	\tabularnewline %\hline 
 	
 	\textit{Piano di progetto}
@@ -248,7 +249,7 @@ L'aumento della copertura, a partire dal 10 aprile, corrisponde a una progressio
 	& 68
 	& 66
 	& 67
-	& -
+	& 67
 	\tabularnewline %\hline 
 	
 	\textit{Piano di qualifica}
@@ -256,7 +257,7 @@ L'aumento della copertura, a partire dal 10 aprile, corrisponde a una progressio
 	& 70
 	& 67
 	& 65
-	& -
+	& 66
 	\tabularnewline %\hline 
 	
 	\textit{Studio di Fattibilità}
@@ -272,7 +273,7 @@ L'aumento della copertura, a partire dal 10 aprile, corrisponde a una progressio
 	& 72
 	& 66
 	& 69
-	& -
+	& 68
 	\tabularnewline %\hline 
 	
 	\textit{Verbali interni (media)}
@@ -280,7 +281,7 @@ L'aumento della copertura, a partire dal 10 aprile, corrisponde a una progressio
 	& 74
 	& 70
 	& 73
-	& -
+	& 74
 \end{longtable}
 \begin{figure}[H]
 	\centering
@@ -288,7 +289,7 @@ L'aumento della copertura, a partire dal 10 aprile, corrisponde a una progressio
 	\caption{Indice di Gulpease}
 \end{figure}
 \paragraph*{Valutazione}
-Fino alla fase C l'indice è stato calcolato con uno strumento diverso rispetto alle fasi successive: questo spiega la discordanza tra i valori prima e dopo.
+Fino alla fase C l'indice è stato calcolato con uno strumento diverso rispetto alle fasi successive: questo spiega la discordanza tra i valori prima e dopo.\\
 In generale, nonostante l'impegno del gruppo nella semplificazione della sintassi, l'indice non sembra migliorare molto.
 Questo può indicare una generale difficoltà nel semplificare documenti di natura tecnica.\\
 A una valutazione posteriore, la soglia di ottimalità imposta appare eccessivamente ottimistica: un valore $>80$ infatti indica un testo leggibile con facilità da bambini delle elementari.\\
