@@ -1,6 +1,6 @@
 \section{Testing}
 % questo cap effettivamente ha questo scopo nei 353 (2 pagine). In sostanza parla piu` di metriche che di test
-This section shows how to test the javascript and solidity code automatically
+This section shows how to test the javascript and solidity code automatically.
 %	\item check if the code syntax is complied to the rules given.
 
 \subsection{Test Javascript Code}
@@ -12,7 +12,7 @@ To run tests on your Javascript code, type
 	\item[]\texttt{npm run js-test}
 \end{itemize}
 on your shell. 
-This will execute all the tests defined for javascript and lay out the results, showing:
+This will execute all the tests defined for javascript and produce the results, showing:
 \begin{itemize}
 	\item the number of suites runned, passed and executed;
 	\item the number of tests runned, passed and executed;
@@ -26,7 +26,7 @@ There are two ways of running these tests.
 \subsection{Truffle test}
 The standard way is using the command \texttt{truffle test} provided by the framework itself. The command requires an istance of Ganache opened. We recommend using Ganache-cli on a separate shell and launching 
 \begin{itemize}
-	\item[]\texttt{ganache-cli -a 10 -m "maze pass company priority vacuum brain valley fade image winner entry lock"  -p 9545 \&}
+	\item[]\texttt{ganache-cli -a 10 -m "maze pass company priority vacuum brain valley fade\\ image winner entry lock"  -p 9545 \&}
 \end{itemize}
 After Ganache-cli running, you can run \texttt{truffle test} on a second shell and wait for the results. You get not only the results of the tests, but also the costs of function calls and deployment on Ganache network.
 

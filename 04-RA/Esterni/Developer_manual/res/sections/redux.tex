@@ -17,7 +17,7 @@ Basically some actions are mapped by \texttt{container components} into specific
 \end{figure}
 
 \subsection{Actions}
-There are seven main categories of actions inside the \texttt{src/actions/} folder. Each action is called by the \texttt{action creator} when a container component request it's dispatch. Here there is the list of actions and what them do when they are invoked.
+There are seven main categories of actions inside the \texttt{src/actions/} folder. Each action is called by the \texttt{action creator} when a container component request it's dispatch. Here there is the list of actions and what they do when they are invoked.
 \begin{itemize}
 	\item \textbf{business}: \begin{itemize}
 		\item getMyProducts();
@@ -135,7 +135,7 @@ There are three different type of Actions Creator. Each of them interacts with F
 	\item \textbf{ReducerUser}: it makes the dispatch of the actions inside \texttt{actions/user.js}.
 \end{itemize}
 \subsection{Store}
-It's configuration resides into root reducer file, the initial configuration is:
+Its configuration resides into root reducer file, the initial configuration is:
 \begin{itemize}
 	\item logged: false;
 	
@@ -191,7 +191,7 @@ To implement a new feature with redux store you have to:
 	\item create a new function into the appropriate actions creator that returns the action that was created before. If actions creator doesn't exist, create also a new actions creator (\texttt{actionsCreator/});
 	\item insert a new reducer into \texttt{reducers/index.js}, it fetches the action and changes the field created before;
 	\item map the actions creator with \texttt{mapDispatchToProps()} to the props of the component and also map the field of the state with \texttt{mapStateToProps()}, then connect them to a react component through \texttt{connect(mapStateToProps, mapDispatchToProps)(component)};
-	\item call the actions creator inside the \texttt{mapDispatchToProps()} and with returned action, dispatch it for changing the state of the application, you can check the changed field by accessing it from the component with \texttt{this.props.fieldname}. 
+	\item call the actions creator inside the \texttt{mapDispatchToProps()} and with the returned action, dispatch it for changing the state of the application. You can check the changed field by accessing it from the component with \texttt{this.props.fieldname}. 
 \end{itemize}
 \begin{landscape}
 	\subsection{UML} 
