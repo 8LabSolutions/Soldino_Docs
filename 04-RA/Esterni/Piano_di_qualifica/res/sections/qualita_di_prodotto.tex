@@ -59,14 +59,14 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 			\paragraph{Deployment cost}
 			Il costo di deployment degli smart contracts\glosp.
 			\begin{itemize}
-				\item misurazione: valore decimale (\euro);
+				\item misurazione: valore decimale (gas);
 				\item valore preferibile: $ \leq 1.500.000$ gas;
 				\item valore accettabile: $ \leq 3.000.000$ gas.
 			\end{itemize}
 			\paragraph{Call cost}
 			Il costo di chiamata alle funzioni degli smart contracts\glosp.
 			\begin{itemize}
-				\item misurazione: valore decimale (\euro);
+				\item misurazione: valore decimale (gas);
 				\item valore preferibile: $ \leq 200.000$ gas;
 				\item valore accettabile: $ \leq 400.000$ gas.
 			\end{itemize}
@@ -152,7 +152,7 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 \pagebreak
 
 \subsection{Tabella riassuntiva delle metriche adottate}
-\begin{longtable}{ >{\centering}p{0.4\textwidth}
+\begin{longtable}{ >{\centering}p{0.3\textwidth}
 		>{\centering}p{0.6\textwidth}}
 	\rowcolor{white}\caption{Tabella riassuntiva delle metriche adottate}\\
 	\rowcolorhead
@@ -168,19 +168,15 @@ Per valutare la qualità del prodotto il gruppo ha deciso di far riferimento all
 	\endhead
 	
 	Funzionalità & Completezza dell'implementazione\\ Passed Test Cases Percentage \\ Failed Test Cases Percentage
-	
 	\tabularnewline
 	\rowcolordark
 	Affidabilità & Densità errori 
-	
 	\tabularnewline
 	\rowcolorlight
 	Usabilità & Facilità di utilizzo\\ Facilità di apprendimento
-	
 	\tabularnewline
 	\rowcolordark
 	Manutenibilità & Facilità di comprensione\\
 	Semplicità delle funzioni \\Semplicità delle classi \\ Structural fan-in \\Structural fan-out \\Source Lines of Code (SLOC)
 	\tabularnewline
-	
 \end{longtable}
