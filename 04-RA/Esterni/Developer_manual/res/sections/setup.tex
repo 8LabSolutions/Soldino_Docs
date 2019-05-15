@@ -14,7 +14,7 @@ In the manual all instructions are provided in order to configure and run \texti
 	\item  \textbf{Processor}: Pentium 4 (dual core) or newer;
 	\item \textbf{RAM}: 2GB or more;
 	\item \textbf{Hard drive}: 1GB of hard drive space;
-	\item \textbf{Internet connection}: required for run Soldino DApp;
+	\item \textbf{Internet connection}: required to run Soldino DApp;
 \end{itemize}
 
 \subsubsection{Browser}
@@ -34,7 +34,7 @@ The following tools are needed:
 	\item \textbf{Npm\glo}: a packets manager for JavaScript language, used by default by node.js;
 	\item \textbf{Truffle\glo}: needed to write and deploy contracts with ease;
 	\item \textbf{Ganache\glo}: needed to put up a local Ethereum network and check 
-	transactions in it. You can choose between Ganache GUI(UI) and ganache-cli(command-line) or have both;
+	transactions in it. You can choose between Ganache GUI (UI) and ganache-cli (command-line) or have both;
 	\item \textbf{Metamask\glo}: a browser plugin\glosp used as a virtual wallet;
 	\item \textbf{Surge.sh\glo}: a web platform chosen for hosting the website 
 	interface of Soldino.
@@ -110,7 +110,7 @@ Other packages, listed below, are required for the development.
 \subsection{Installing}
 \textit{Soldino} can be installed on multiple Operating System but we recommend to use a 
 Unix environment because some functionalities do not work on Windows, for example solidity-coverage.\\
-To start \textit{Soldino} follow these instructions to avoid errors during the installation. Instructions are grouped by technology. Each of those can contain references to a particular OS. Where the steps are the same we have not indicate nothing; otherwise we divided the steps in different paragraphs.
+To start \textit{Soldino} follow these instructions to avoid errors during the installation. Instructions are grouped by technology. Each of those can contain references to a particular OS. Where the steps are the same, we describe the procedure only once; otherwise we divided the steps in different paragraphs.
 \subsubsection{Browser}
 You can get the latest Google Chrome version 
 \href{https://www.google.com/chrome/}{here} or the latest Firefox version \href{https://www.mozilla.org/en-US/firefox/new/}{here}
@@ -135,7 +135,7 @@ terminal: \texttt{node -v}.\\ \\
 terminal: \texttt{npm -v}.\\
 \paragraph{Windows} \mbox{} \\ \mbox{} \\
 To install the last Node.js\glosp version go to the following link: \url{https://nodejs.org/it/} and take recommended version.
-Choose "Save file" and at the end of download go to the destination directory, launch \texttt{.msi} file and follow the instructions until the end.
+Choose "Save file" and at the end of download go to the destination directory, launch the \texttt{.msi} file and follow the instructions until the end.
 For \textbf{npm} run these on eleveted command prompt (admin):
 \begin{itemize}
 	\item \texttt{npm install npm@latest -g};
@@ -163,7 +163,7 @@ There are three steps to install Ganache GUI:
 	\item double click on the executable file and follow the instructions until the end.
 \end{enumerate}
 \paragraph{Linux - ganache-cli} \mbox{} \\ \mbox{} \\
-Ganache-cli is the same things as the previous one, but you can use Ganache only by command line.
+Ganache-cli offers the same features as just described, without the user interface (executable only from the command line prompt).
 To install ganache-cli, open a terminal and run: \\ \texttt{sudo npm install -g ganache-cli} .
 \paragraph{Windows - Ganache GUI} \mbox{} \\ \mbox{} \\
 On Windows download from here: \\
@@ -189,11 +189,11 @@ This section shows how to configure your work environment, so that it's the same
 Make sure to configure the tools in order. In particular, Truffle requires that Ganache is opened and is configured to execute successfully.
 % clona la repo; apri truffle, apri ganache, apri browser con metamask, setta
 \subsubsection{Cloning the repository}
-You have to clone the \textit{Soldino} repository on GitHub: open the command line, move to the directory where you want place Soldino, then use \texttt{git clone https://github.com/8LabSolutions/Soldino-PoC}. After that use the command: \texttt{cd Soldino-PoC} to move into the directory.
+You have to clone the \textit{Soldino} repository on GitHub: open the command line, move to the directory where you want place Soldino, then use \texttt{git clone https://github.com/8LabSolutions/Soldino}. After that use the command: \texttt{cd Soldino} to move into the directory.
 % and then use \texttt{git checkout final}.  
 
 \subsubsection{Ganache GUI}
-You have to go to the folder where you've put Ganache, and open it with a double click.
+You have to go to the folder where you've placed Ganache, and open the executable with a double click.
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.25]{res/images/ganache-ui.png}
@@ -220,13 +220,13 @@ Keep open this terminal during use \textit{Soldino} and use for other steps anot
 You can exit by typing \texttt{ctrl + C}.
 
 \subsubsection{Truffle}
-The configuration of Truffle is defined in the file \texttt{truffle-config.js} in the root directory of \textit{Soldino}.
-On your command line type the following commands:
+Truffle's configuration is defined in the file \texttt{truffle-config.js} in the root directory of \textit{Soldino}.
+From your command line type the following commands:
 \begin{itemize}
 	\item \texttt{truffle console}\\
-	opens the truffle environment in the shell under the configuration defined in truffle-config.js. From now on, every command is executed in the truffle environment, from which you can exit double typing \texttt{ctrl + C}.
+	opens the Truffle environment in the shell with the configuration defined in truffle-config.js. From now on, every command is executed in the truffle environment, from which you can exit double typing \texttt{ctrl + C}.
 	\item \texttt{compile}\\
-	to compile the contracts: these are compiled in in a .json\glosp format (which enables interaction with the frontend) and put into the folder defined in \texttt{truffle-config.js} at \texttt{contracts\_build\_directory} (in our case the location is \texttt{./src/contracts\_build})
+	to compile the contracts: they are compiled in the JSON\glosp format (which enables interaction with the frontend) and put into the folder defined in \texttt{truffle-config.js} at \texttt{contracts\_build\_directory} (in our case the location is \texttt{./src/contracts\_build})
 	\item \texttt{migrate -{}-network development}\\
 	puts the contracts runnning on the blockchain\glo. 
 \end{itemize}
@@ -234,18 +234,18 @@ On your command line type the following commands:
 \subsubsection{MetaMask}
 It's necessary to create an account.
 \begin{itemize}
-	\item open MetaMask on your browser
-	\item select get started
-	\item select import wallet
-	\item use the seed phrase (MNEMONIC), copy and paste it from ganache(GUI) or terminal(ganache-cli) to MetaMask's textbox, then put your password and confirm.
+	\item open MetaMask on your browser;
+	\item select "get started";
+	\item select import wallet;
+	\item use the seed phrase (MNEMONIC), copy and paste it from ganache (GUI) or terminal (ganache-cli) to MetaMask's textbox, then choose your password and confirm.
 \end{itemize}
 Now your account is up and synchronized with Ganache.
 Now you have to connect the wallet to Ganache network. Ganache settings are exposed in the Ganache GUI just above the mnemonic.
 Let's synchronize MetaMask to the same network. On the top right corner, there is a drop-down menu to select the network. Select \texttt{Custom RPC} to set your own local network.\\
-You are now in the MetaMask advanced settings screen. In the field \texttt{Net Network} click on \texttt{Show Advanced Options} to open the form, then insert these data:
+You are now in the MetaMask advanced settings screen. In the field \texttt{Network} click on \texttt{Show Advanced Options} to open the form, then insert these data:
 \begin{enumerate}
-	\item \textbf{New RPC URL}: http://127.0.0.1:9545 (the port number matches the one in truffle-config.js);
-	\item \textbf{Nickname}: the name you wanna give to your network;
+	\item \textbf{New RPC URL}: http://127.0.0.1:9545 (the port number must match the one defined in truffle-config.js);
+	\item \textbf{Nickname}: the name you want to give to your network;
 	\item \textbf{save} when you're done.
 \end{enumerate}
 MetaMask is now connected to Ganache.\\
@@ -256,9 +256,9 @@ MetaMask is now connected to Ganache.\\
 \paragraph{Linux} \mbox{} \\ \mbox{} \\
 Open terminal on \textit{Soldino} project directory and run:
 \texttt{sudo apt-get install build-essential} \\
-It's time to install all dependencies by running: \texttt{npm install}
+It's time to install all the dependencies by running: \texttt{npm install}
 \paragraph{Windows} \mbox{} \\ \mbox{} \\
-Install all dependecies in the same way of Linux: open terminal on \textit{Soldino} project directory and run: \texttt{npm install}.
+Install all the dependecies in the same way as Linux: open the terminal on \textit{Soldino} project directory and run: \texttt{npm install}.
 % PUT CUBIT TO METAMASK
 
 \subsection{Running}
@@ -271,16 +271,16 @@ This will open the website on your default browser at the address \texttt{http:/
 \subsection{Deploy to the Ropsten network}
 If you want to deploy the project on the test network \texttt{Ropsten} you have to follow the following steps:
 \begin{itemize}
-	\item run the command:     \texttt{truffle deploy ---network ropsten}. This command will check if there are any changes between the compiled local contract and the currently deployed version on the network. If so, it will migrate them in the network. This operation could last for some minutes;
+	\item run the command:     \texttt{truffle deploy ---network ropsten}. This command will check if there are any changes between the compiled local contracts and their currently deployed version on the network. If so, it will migrate them in the network. This operation could last for some minutes;
 	\item if the above command gives the "Network up to date" warning, even if you apply some changes to the smart-contract, it is possible to re-deploy them with the command: \texttt{truffle deploy ---network ropsten ---reset};    
 \end{itemize}
-These commands will deploy the contracts that are correctly deployed in the file inside the \texttt{migrations} folder, called \texttt{2\_deploy\_contracts.js}. In the case you update only some contracts, remember to update also the allowance between the contracts and the addresses in the contract-manager.
+These commands will deploy the contracts that are correctly deployed in the file inside the \texttt{migrations} folder, called \texttt{2\_deploy\_contracts.js}. In case you update only some contracts, remember to update also the authorizations between the contracts and the addresses in the contract-manager.
 
 \subsection{Deploy to Surge}
 In order to deploy Soldino in the hosting service Surge, follow these steps:
 \begin{itemize}
 	\item check that the smart-contracts were correctly deployed on the desired network. To do so, check if there is the \texttt{contracts\_build} folder inside the \texttt{src} folder;
-	\item create an optimized build of the project by running the command \texttt{rpm run build} from the root folder;
-	\item once the building process is over, move inside the \texttt{build} folder, with the command \texttt{cd build/};
+	\item create an optimized build of the project by running the command \texttt{npm run build} from the root folder;
+	\item once the building process is over, move inside the \texttt{build} folder, with the command \texttt{cd build};
 	\item finally, run the command \texttt{surge}, and follow the wizard that will spawn.
 \end{itemize}
