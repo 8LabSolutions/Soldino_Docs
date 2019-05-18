@@ -50,8 +50,8 @@
 %\rfoot{\thepage}
 \cfoot{Pagina \thepage\ di \pageref{LastPage}}
 \setlength{\headheight}{35pt}
-\setcounter{tocdepth}{4}
-\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
 \renewcommand{\footrulewidth}{0.4pt}
 
 % multirow per tabelle
@@ -91,5 +91,9 @@
 	\hypertarget{#1}{#2}
 }
 \makeatother
+
+%riportare pezzi di codice
+\definecolor{codegray}{gray}{0.9}
+\newcommand{\code}[1]{\colorbox{codegray}{\texttt{#1}}}
 
 

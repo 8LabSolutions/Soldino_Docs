@@ -1,0 +1,98 @@
+
+\documentclass[a4paper]{article}
+\usepackage{pdflscape}
+\input{config/package.tex}
+\input{config/config.tex}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+%define Javascript language
+\lstdefinelanguage{JavaScript}{
+	keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break, then, deployer, deploy, artifacts, require},
+	keywordstyle=\color{blue}\bfseries,
+	ndkeywords={class, export, boolean, throw, implements, import, this},
+	ndkeywordstyle=\color{darkgray}\bfseries,
+	identifierstyle=\color{black},
+	sensitive=false,
+	comment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	commentstyle=\color{purple}\ttfamily,
+	stringstyle=\color{red}\ttfamily,
+	morestring=[b]',
+	morestring=[b]"
+}
+\lstset{
+	language=JavaScript,
+	extendedchars=true,
+	basicstyle=\footnotesize\ttfamily,
+	showstringspaces=false,
+	showspaces=false,
+	numbers=left,
+	numberstyle=\footnotesize,
+	numbersep=9pt,
+	tabsize=2,
+	breaklines=true,
+	showtabs=false,
+	captionpos=b
+}
+
+
+
+\makeindex
+\begin{document}
+\input{res/sections/frontispiece.tex}
+
+\pagebreak
+\input{res/sections/changelog.tex}
+
+\pagebreak
+\tableofcontents
+
+\pagebreak
+\listoffigures
+
+\pagebreak
+\listoftables
+
+\pagebreak
+\input{res/sections/introduction.tex}
+
+\pagebreak
+\input{res/sections/setup.tex}
+
+\pagebreak
+\input{res/sections/develop.tex}
+
+\pagebreak
+\input{res/sections/testing.tex}
+% La struttura interna delle sezioni di React, Redux, Web3 e Solidity e` indicativa, non tassativa. Specie per Web3, che e` quello meno strutturato, e che i 353 non hanno descritto in questo documento
+
+\pagebreak
+\input{res/sections/react.tex}
+
+\input{res/sections/redux.tex}
+
+\pagebreak
+\input{res/sections/web3.tex}
+
+\pagebreak
+\input{res/sections/ipfs.tex}
+
+\input{res/sections/facade.tex}
+
+\pagebreak
+\input{res/sections/solidity.tex}
+
+
+%\pagebreak
+%\input{res/sections/testing.tex}
+
+\pagebreak
+\appendix
+\input{res/sections/glossary.tex}
+
+
+\end{document}

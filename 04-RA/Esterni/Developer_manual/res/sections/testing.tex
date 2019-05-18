@@ -1,0 +1,36 @@
+\section{Testing}
+% questo cap effettivamente ha questo scopo nei 353 (2 pagine). In sostanza parla piu` di metriche che di test
+This section shows how to test the javascript and solidity code automatically.
+%	\item check if the code syntax is complied to the rules given.
+
+\subsection{Test Javascript Code}
+\textbf{Note}: Not available on Windows. \\
+We have chosen the framework Jest(\url{https://jestjs.io/}) to write tests on Javascript code for it's focus on simplicity. 
+The tests implemented can be found in the \texttt{test} folder in the root folder of the project; further tests to be added must should be put here.
+To run tests on your Javascript code, type
+\begin{itemize}
+	\item[]\texttt{npm run js-test}
+\end{itemize}
+on your shell. 
+This will execute all the tests defined for javascript and produce the results, showing:
+\begin{itemize}
+	\item the number of suites runned, passed and executed;
+	\item the number of tests runned, passed and executed;
+	\item possible errors about the tests that failed.
+\end{itemize}
+
+\subsection{Test Solidity Code}
+\textbf{Note}: Not available on Windows. \\
+All the tests for Solidity code can be found on the \texttt{test} folder of the project directory. Tests are written in JavaScript and using the framework Truffle (\url{https://truffleframework.com/}).\\
+There are two ways of running these tests.
+\subsection{Truffle test}
+The standard way is using the command \texttt{truffle test} provided by the framework itself. The command requires an istance of Ganache opened. We recommend using Ganache-cli on a separate shell and launching 
+\begin{itemize}
+	\item[]\texttt{ganache-cli -a 10 -m "maze pass company priority vacuum brain valley fade\\ image winner entry lock"  -p 9545 \&}
+\end{itemize}
+After Ganache-cli running, you can run \texttt{truffle test} on a second shell and wait for the results. You get not only the results of the tests, but also the costs of function calls and deployment on Ganache network.
+
+\subsection{Coverage}
+Another way of having the results of your tests is using the tool solidity-coverage (\url{https://www.npmjs.com/package/solidity-coverage}), an npm package including both tests and code coverage.\\
+To execute the tool, open a new shell, move to the \textit{Soldino} project directory and run: \\ \\ \texttt{npm run coverage}.\\
+It's not the standard way of running tests, since it also does additional works, but it's convenient. You don't have to open yourself Ganache or Ganache-cli to have an available network for tests: this tool creates his own networkon port 8545 and requires no further effort.

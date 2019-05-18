@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}
+
+\input{../../../latex/package.tex}
+\input{config/config.tex}
+\makeindex
+
+
+\begin{document}
+	\input{res/sections/frontispiece.tex}
+	\pagebreak	
+	
+	\input{res/sections/changelog.tex}
+
+	\counterwithin{table}{subsection}
+	\counterwithin{figure}{subsection}
+	\pagebreak
+	
+	\tableofcontents
+	\pagebreak
+	
+	\listoffigures
+	\pagebreak
+	
+	\listoftables
+	\pagebreak
+	
+	\input{res/sections/introduzione.tex}
+	\pagebreak
+	
+	\input{res/sections/processi_primari.tex}
+	\pagebreak
+	
+	\input{res/sections/processi_di_supporto.tex}
+	\pagebreak
+	
+	\input{res/sections/processi_organizzativi.tex}
+	\pagebreak
+	
+	\appendix
+	\input{res/sections/standard_qualita.tex}
+	\pagebreak
+	
+	\input{res/sections/procedure_pragmadb.tex}
+	\pagebreak
+	
+	\input{res/sections/procedure_stile_vancouver.tex}
+	
+\end{document}
